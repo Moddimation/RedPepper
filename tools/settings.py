@@ -1,0 +1,10 @@
+def getBuildPath():
+    return 'build'
+def getFuncSymFile():
+    return "data/redpepper_functions.csv"
+def getDataSymFile():
+    return "data/data_symbols.csv"
+def getElfName():
+    return 'RedPepper.axf'
+def getElfPath():
+    return f"{getBuildPath()}/{getElfName()}"

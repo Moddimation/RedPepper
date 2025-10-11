@@ -13,9 +13,9 @@ find_program(ARM_CC NAMES armcc.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAU
 find_program(ARM_LINK NAMES armlink.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH)
 # find_program(ARM_FROMELF NAMES fromelf.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH) # not important
 
-add_subdirectory(Library/nnsdk)
-add_subdirectory(Library/sead)
-add_subdirectory(Library/LibMessageStudio)
+add_subdirectory(lib/nnsdk)
+add_subdirectory(lib/sead)
+add_subdirectory(lib/LibMessageStudio)
 
 macro (set_compilers)
     set(CMAKE_CXX_COMPILER_ID ARMCC)
@@ -46,8 +46,8 @@ __compiler_armcc(C)
 __compiler_armcc(CXX)
 __compiler_armcc(ASM)
 
-file(GLOB_RECURSE csourcefiles "Source/*.c")
-file(GLOB_RECURSE cxxsourcefiles "Source/*.cpp")
+file(GLOB_RECURSE csourcefiles "src/*.c")
+file(GLOB_RECURSE cxxsourcefiles "src/*.cpp")
 
 add_executable(RedPepper ${csourcefiles} ${cxxsourcefiles})
 
@@ -63,7 +63,7 @@ target_link_options(RedPepper PUBLIC
     --tailreorder --no_remove --datacompressor=off --arm_only
     --inline 
     --verbose --mangled --symbols --paged
-    --scatter=${CMAKE_CURRENT_BINARY_DIR}/Linker.ld
+    --scatter=${CMAKE_CURRENT_BINARY_DIR}/linker.ld
     )
 
 target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:CXX>:
@@ -80,4 +80,4 @@ target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
 
 target_compile_definitions(RedPepper PUBLIC NON_MATCHING=)
 
-target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/Include)
+target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/include)
