@@ -19,6 +19,8 @@ if elf_exists:
 def get_elf_symbol(sym_name: str):
     if not elf_exists:
         fail(f"{getElfPath()} not found")
+    if not sym_name:
+        return None
     # find Stubs.c range (horrible)
     with open(f"{getBuildPath()}/RedPepper.map") as f:
         s = StringIO(f.read())
@@ -40,6 +42,8 @@ def read_sym_file():
         syms = []
         reader = csv.reader(f, delimiter=',',quotechar='"')
         for row in reader:
+            if not row[0].startswith("0x"):
+                continue
             syms.append((int(row[0], 0), row[1], int(row[2]), row[3], row[4]))
         return syms
 
@@ -47,8 +51,10 @@ def get_symbol(symbol: str):
     with open(getFuncSymFile(), newline='') as f:
         reader = csv.reader(f, delimiter=',',quotechar='"')
         for row in reader:
+            if not row[0].startswith("0x"):
+                continue
             if row[3] == symbol:
-                return (int(row[0], 0), row[1], int(sym[2]), row[3], row[4])
+                return (int(row[0], 0), row[1], int(row[2]), row[3], row[4])
     return None
 
 def rank_symbol(sym, decomp_sym):
@@ -58,7 +64,7 @@ def rank_symbol(sym, decomp_sym):
     if decomp_size == 0:
         decomp_size = sym_size
 
-    out = str(subprocess.check_output(f"\"{sys.executable}\" tools/asm-differ/diff.py --format json {sym[1] - 0x00100000} {decomp_sym[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True))
+    out = str(subprocess.check_output(f"\"{sys.executable}\" tools/asm-differ/diff.py --format json {sym[0] - 0x00100000} {decomp_sym[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True))
 
     rank = 'O'
     if "diff_change" in out:

@@ -2,7 +2,7 @@ import diff
 import check
 import sys
 import os
-import cxxfilt
+#import cxxfilt
 
 def main():
     syms = []
@@ -14,14 +14,14 @@ def main():
     syms.sort(key=lambda a: a[1])
     for sym in syms:
         a = "{:08X}".format(sym[0])
-        name = "(undef)"
-        try:
-            name = cxxfilt.demangle(sym[3])
-        except cxxfilt.InvalidName:
-            name = sym[3]
+        #name = "(undef)"
+        #try:
+        #    name = cxxfilt.demangle(sym[3])
+        #except cxxfilt.InvalidName:
+        #    name = sym[3]
         if not name:
             continue
-        print(f"0x{a},{sym[2]},{sym[1]},{sym[4]},{name}")
+        print(f"0x{a},{sym[2]},{sym[1]},{sym[4]},{sym[3]}")
 
 if __name__ == "__main__":
     main()

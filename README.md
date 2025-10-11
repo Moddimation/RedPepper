@@ -14,9 +14,10 @@ Visit [the Wiki](https://al.littun.co/decomp) for instructions on how to build a
 
 ## Links
 
-- [Discord Server](https://discord.gg/wK4ZKa9QXq)
+- [Discord Server (now dead)](https://discord.gg/wK4ZKa9QXq)
 - [Wiki](https://al.littun.co/decomp)
 - [decomp.me](https://decomp.me/)
 
 ## Credits
 - [open-ead/sead](https://github.com/open-ead/sead)
+- [original repo on 3dsdecump](https://github.com/3dsdecomp/RedPepper)

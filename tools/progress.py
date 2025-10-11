@@ -31,7 +31,7 @@ def main():
     bytes_ok = get_matching_bytes("data/code.bin", getBuildPath() + "/code.bin")
     code_bin_size = os.path.getsize('data/code.bin')
 
-    syms = read_sym_file(getFuncSymFile())
+    syms = read_sym_file()
     for sym in syms:
         if len(sym[3]) == 0: # if no name, skip.
             continue

@@ -24,30 +24,31 @@ def check_syms():
     syms = read_sym_file()
     newsyms = []
     for sym in syms:
-        decomp_symbol = get_elf_symbol(sym[0])
+        decomp_symbol = get_elf_symbol(sym[3])
         if (decomp_symbol is None): # If decomp doesnt contain it, mark as U (undecompiled) and skip.
-            newsyms.append((sym[0], 'U', sym[2], sym[3], row[4]))
+            newsyms.append((sym[0], 'U', sym[2], sym[3], sym[4]))
             if (sym[1] != 'U'):
                 clear_line()
                 print(sym[3] + ' ' + getRankName(sym[1]) + ' -> ' + getRankName('U'))
         else: # Symbol found, check continues
             clear_line()
-          # print("Checking " + sym[0], end='\r')
+            print("Checking " + sym[3], end='\r')
             rank = rank_symbol(sym, decomp_symbol) # check and update rank by size
-            newsyms.append((sym[0], rank, sym[2], sym[3], row[4]))
+            newsyms.append((sym[0], rank, sym[2], sym[3], sym[4]))
             if (sym[1] != rank):
                 clear_line()
                 print(sym[3] + ' ' + getRankName(sym[1]) + ' -> ' + getRankName(rank))
-    copy(getFuncSymFile(), getFuncSymFile() + '_b')
+
+    with open(getFuncSymFile(), 'r') as src, open(getFuncSymFile() + '_b', 'w') as dst:
+        dst.write(src.read())
+
     with open(getFuncSymFile(), 'w') as f:
         for sym in newsyms:
-            f.write("0x{:08X}".format(int(sym[0], 0)) + ',' + sym[1] + ',' + "{:06X}".format(int(sym[2])) + ',' + sym[3], row[4])
+            f.write("0x{:08X}".format(sym[0]) + ',' + sym[1] + ',' + "{:06d}".format(sym[2]) + ',' + sym[3] + ',' + sym[4])
             f.write('\n')
 
 def main():
     start = time.time()
-
-    print('Checking functions, please wait ...')
     
     check_syms()
 
