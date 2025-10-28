@@ -49,4 +49,5 @@ if os.path.exists('data/code.bin'):
 else:
     fromelf()
 
-os.chdir('..')
+if os.path.exists(f'compile_commands.json'):
+    shutil.copyfile(f'compile_commands.json', '../compile_commands.json')
