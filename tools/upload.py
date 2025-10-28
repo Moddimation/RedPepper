@@ -2,6 +2,7 @@ import sys
 import os
 import re
 import json
+import requests
 from io import StringIO
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
@@ -52,7 +53,7 @@ def find_source_path(str):
 
                     return last_file
 
-def find_file(str):
+def find_src_file(str):
     for path in (f"lib/{str}", f"include/{str}", f"src/{str}", f"lib/sead/Include/{str}", f"lib/nnsdk/Include/{str}", f"lib/LibMessageStudio/Include/{str}", f"{os.environ.get("ARMCC41INC")}/{str}"):
         #print(f"{str}: {path}")
         if os.path.exists(path):
@@ -61,10 +62,11 @@ def find_file(str):
     return str
 
 traversed_files = []
+main_data = []
 
-def traverse_file(str):
+def traverse_file(str, sym):
     content = []
-    file_path = find_file(str)
+    file_path = find_src_file(str)
 
     if not os.path.exists(file_path):
         return ""
@@ -73,14 +75,23 @@ def traverse_file(str):
         return ""
 
     #print (f"File: {file_path}")
-    content.append(f"File: {file_path}")
     traversed_files.append(file_path)
+
+    is_main_data = True if main_data is None or len(main_data) <= 0 else False
+    if is_main_data == True:
+        content.append (f'// Context for {sym} in {file_path}\n')
+        main_data.append (f'// Source for {sym}')
+    else:
+        content.append (f"// File: {file_path}\n")
 
     with open(file_path, "r", encoding="shift-jis") as f:
         s = StringIO(f.read())
         for line in s:
             if not "#include" in line:
-                content.append (line)
+                if is_main_data:
+                    main_data.append(line)
+                else:
+                    content.append (line)
             else:
                 if not '<' in line and not '>' in line:
                     if not '\"' in line:
@@ -94,7 +105,7 @@ def traverse_file(str):
                 incl_path = match.group(1) or match.group(2)
 
 
-                included = traverse_file (incl_path)
+                included = traverse_file (incl_path, sym)
                 for incl_line in included:
                     content.append(incl_line)
 
@@ -111,6 +122,46 @@ def get_obj_path (str):
         if e.get("file") == (str):
             return f'{getBuildPath()}/{e.get("output")}'
 
+def upload (sym_name, show_name, ctx, src, obj_path):
+    print ("Uploading ...")
+
+    api_base = "https://decomp.me"
+    url = f"{api_base}/api/scratch"
+    
+    files = {
+        "target_obj": open (obj_path, 'rb')
+    }
+    data = {
+        "name": show_name,
+        "context": ctx,
+        "source_code": src,
+        "diff_label": sym_name,
+        "preset": getPresetId ()
+    }
+
+    r = requests.post(url, files=files, data=data)
+
+    if not r.ok:
+        print("Error:", r.status_code, r.text)
+        return None
+
+    res = r.json()
+
+    slug = res.get("slug")
+    claim_token = res.get("claim_token")
+
+    if not slug or not claim_token:
+        print("Unexpected response:", res)
+        return None
+    
+    base_url = f"{api_base}/scratch/{slug}/"
+    claim_url = f"{api_base}/scratch/{slug}/claim?token={claim_token}"
+
+    return {
+        "base_url": base_url,
+        "claim_url": claim_url
+    }
+
 def main():
     if len(sys.argv) <= 1:
         print ("Missing argument: Symbol")
@@ -123,9 +174,13 @@ def main():
         return
 
     print ("Collecting code ...")
-    data = traverse_file (path)
+    data = "".join(traverse_file (path, sym))
+
+    main = "".join(main_data)
 
     #for line in data:
+    #    print (line.rstrip('\n'))
+    #for line in main:
     #    print (line.rstrip('\n'))
 
     path_obj = get_obj_path (path)
@@ -133,10 +188,13 @@ def main():
         print ("compile_commands.json missing, please build!")
         return
 
-    print(path_obj)
+    response = upload (sym, sym, data, main, path_obj)
+
+    print ("Scratch created.")
+    print (f" -> Claim: {response["claim_url"]}")
+    print (f" -> Url: {response["base_url"]}")
   
     print ("KTHXBYE")
-
 
 if __name__ == "__main__":
     main()

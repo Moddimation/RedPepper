@@ -8,3 +8,5 @@ def getElfName():
     return 'RedPepper.axf'
 def getElfPath():
     return f"{getBuildPath()}/{getElfName()}"
+def getPresetId():
+    return 8
