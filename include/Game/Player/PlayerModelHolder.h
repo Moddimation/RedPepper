@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Game/Player/PlayerActorInitInfo.h"
-#include "PlayerFigureDirector.h"
+#include "Game/Player/PlayerFigureDirector.h"
 #include "al/LiveActor/ActorInitInfo.h"
 #include <sead/math/seadVector.h>
 

@@ -2,6 +2,7 @@ import sys
 import os
 import re
 import json
+import cxxfilt
 import requests
 from io import StringIO
 from elftools.elf.elffile import ELFFile
@@ -78,6 +79,7 @@ def traverse_file(str, sym):
     traversed_files.append(file_path)
 
     is_main_data = True if main_data is None or len(main_data) <= 0 else False
+    is_skipping = False
     if is_main_data == True:
         content.append (f'// Context for {sym} in {file_path}\n')
         main_data.append (f'// Source for {sym}')
@@ -87,27 +89,38 @@ def traverse_file(str, sym):
     with open(file_path, "r", encoding="shift-jis") as f:
         s = StringIO(f.read())
         for line in s:
-            if not "#include" in line:
+            if "NON_MATCHING" in line:
+                if is_skipping == False:
+                    is_skipping = True
+                    continue
+                else:
+                    is_skipping = False
+                    continue
+            if is_skipping == True:
+                continue
+
+            if not "#include" in line: # main append
                 if is_main_data:
                     main_data.append(line)
                 else:
                     content.append (line)
-            else:
-                if not '<' in line and not '>' in line:
-                    if not '\"' in line:
-                        continue
-
-                incl_path = ""
-                match = re.search(r'"([^"]*)"|<([^>]*)>', line)
-                if not match:
+                continue
+            
+            if not '<' in line and not '>' in line:
+                if not '\"' in line:
                     continue
 
-                incl_path = match.group(1) or match.group(2)
+            incl_path = ""
+            match = re.search(r'"([^"]*)"|<([^>]*)>', line)
+            if not match:
+                continue
+
+            incl_path = match.group(1) or match.group(2)
 
 
-                included = traverse_file (incl_path, sym)
-                for incl_line in included:
-                    content.append(incl_line)
+            included = traverse_file (incl_path, sym)
+            for incl_line in included:
+                content.append(incl_line)
 
     return content
 
@@ -188,13 +201,13 @@ def main():
         print ("compile_commands.json missing, please build!")
         return
 
-    response = upload (sym, sym, data, main, path_obj)
+    name = cxxfilt.demangle (sym)
 
-    print ("Scratch created.")
+    response = upload (sym, name, data, main, path_obj)
+
+    print (f"Scratch created. Good luck matching {name}!.")
     print (f" -> Claim: {response["claim_url"]}")
     print (f" -> Url: {response["base_url"]}")
-  
-    print ("KTHXBYE")
 
 if __name__ == "__main__":
     main()
