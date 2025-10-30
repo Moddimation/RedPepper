@@ -80,6 +80,7 @@ def traverse_file(str, sym):
 
     is_main_data = True if main_data is None or len(main_data) <= 0 else False
     is_skipping = False
+    is_ns_al = False
     if is_main_data == True:
         content.append (f'// Context for {sym} in {file_path}\n')
         main_data.append (f'// Source for {sym}')
@@ -90,7 +91,7 @@ def traverse_file(str, sym):
         s = StringIO(f.read())
         for line in s:
             if "NON_MATCHING" in line:
-                if is_skipping == False:
+                if is_skipping == False and is_main_data == False:
                     is_skipping = True
                     continue
                 else:
@@ -104,6 +105,8 @@ def traverse_file(str, sym):
                     main_data.append(line)
                 else:
                     content.append (line)
+                if "namespace al" in line:
+                    is_ns_al = True
                 continue
             
             if not '<' in line and not '>' in line:
@@ -117,10 +120,16 @@ def traverse_file(str, sym):
 
             incl_path = match.group(1) or match.group(2)
 
-
             included = traverse_file (incl_path, sym)
             for incl_line in included:
                 content.append(incl_line)
+
+    if is_skipping == True and is_ns_al == True:
+        if is_main_data:
+            main_data.append ("Insert code here ...")
+            main_data.append ("}")
+        else:
+            content.append ("}")
 
     return content
 
