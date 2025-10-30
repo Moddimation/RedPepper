@@ -8,6 +8,7 @@ import shutil
 from settings import *
 import hashlib
 from pathlib import Path
+import argparse
 
 def status(msg: str):
     print(Style.BRIGHT + Fore.CYAN + msg + Fore.RESET + Style.RESET_ALL)
@@ -18,14 +19,26 @@ if not os.path.exists("data/code.bin"):
 if hashlib.sha256(Path("data/code.bin").read_bytes()).hexdigest() != "e1d7e188ff88467df776c17cec45c44857fadf5b699944baa8cddcae7d939e64":
     fail("data/code.bin is invalid. Did you dump the right version, correctly? (EU)")
 
-if len(sys.argv) >= 2 and sys.argv[1] == 'clean':
-    shutil.rmtree(getBuildPath())
+parser = argparse.ArgumentParser(
+    'build.py', description="Build the Super Mario 3D Land decompilation project")
+parser.add_argument('-c', action='store_true',
+                    help="Clean before building")
+parser.add_argument('-v', action='store_true',
+                    help="Give verbose output")
+args = parser.parse_args()
 
-if not os.path.exists(getBuildPath()):
+if not os.path.isdir(getBuildPath()):
     os.mkdir(getBuildPath())
     os.chdir(getBuildPath())
-    subprocess.run("cmake .. -G \"Unix Makefiles\"", shell=True)
-    os.chdir('..')
+    cmake_args = ['cmake', "..", '-G', 'Unix Makefiles']
+    if args.c:
+        cmake_args.append('--clean-first')
+
+    try:
+        subprocess.run(cmake_args, check=True)
+    except subprocess.CalledProcessError:
+        exit(1)  # silently exit with failure if build failed
+    os.chdir("..")
 
 status("Generating Linker Script")
 genLDScript()
@@ -33,7 +46,7 @@ genLDScript()
 os.chdir(getBuildPath())
 
 verbose = ''
-if len(sys.argv) >= 2 and sys.argv[1] == 'verbose':
+if args.v:
     verbose = 'VERBOSE=1'
 result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}', shell=True)
 if result.returncode != 0:

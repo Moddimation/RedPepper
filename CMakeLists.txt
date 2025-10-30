@@ -15,7 +15,7 @@ find_program(ARM_LINK NAMES armlink.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_D
 
 add_subdirectory(lib/nnsdk)
 add_subdirectory(lib/sead)
-add_subdirectory(lib/LibMessageStudio)
+add_subdirectory(lib/libms)
 
 macro (set_compilers)
     set(CMAKE_CXX_COMPILER_ID ARMCC)
@@ -46,15 +46,15 @@ __compiler_armcc(C)
 __compiler_armcc(CXX)
 __compiler_armcc(ASM)
 
-file(GLOB_RECURSE csourcefiles "src/*.c")
-file(GLOB_RECURSE cxxsourcefiles "src/*.cpp")
+file(GLOB_RECURSE csourcefiles "Game/*.c" "ActionLib/*.c")
+file(GLOB_RECURSE cxxsourcefiles "Game/*.cpp" "ActionLib/*.cpp")
 
-add_executable(RedPepper ${csourcefiles} ${cxxsourcefiles})
+add_executable(RedPepper $<TARGET_OBJECTS:crt0> ${csourcefiles} ${cxxsourcefiles})
 
 target_link_libraries(RedPepper PUBLIC 
                                 nnsdk
                                 sead
-                                LibMessageStudio
+                                libms
                                 )
 
 target_link_options(RedPepper PUBLIC
@@ -80,4 +80,4 @@ target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
 
 target_compile_definitions(RedPepper PUBLIC NON_MATCHING=)
 
-target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/Game/include  ${CMAKE_SOURCE_DIR}/ActionLib/include)
