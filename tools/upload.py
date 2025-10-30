@@ -100,6 +100,9 @@ def traverse_file(str, sym):
             if is_skipping == True:
                 continue
 
+            if "#pragma once" in line:
+                continue
+
             if not "#include" in line: # main append
                 if is_main_data:
                     main_data.append(line)

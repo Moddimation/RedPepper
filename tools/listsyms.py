@@ -1,5 +1,5 @@
-import diff
 import check
+import diff
 import sys
 import argparse
 try:
@@ -7,9 +7,12 @@ try:
     is_filter = True
 except ImportError:
     is_filter = False
+from settings import *
+from io import StringIO
 
 def main():
     argbase = argparse.ArgumentParser(description="List Symbols")
+    argbase.add_argument('-e', action='store_true', help='List compiled symbols instead of csv symbols')
     argbase.add_argument('-n', action='store_true', help='Only list names')
     argbase.add_argument('-a', action='store_true', help='Only list addr+name')
     argbase.add_argument('-A', action='store_true', help='Only list name+addr')
@@ -23,65 +26,100 @@ def main():
     args = argbase.parse_args()
 
     has_found = False
-    syms = []
-    filesyms = diff.read_sym_file()
 
-    for sym in filesyms:
-        syms.append(sym)
-            
-    if args.s:
-        syms.sort(key=lambda a: a[1])
-    for sym in syms:
-        addr = sym[0]
-        rank = sym[1]
-        size = sym[2]
-        name = sym[3]
+    if args.e:
+        for line in StringIO(diff.readelf_data):
+            if "FUNC" in line:
+                sym = line.split()
 
-        if not name or name is None:
-            continue
-        if not args.r is None:
-            if rank != args.r:
+                name = sym[7]
+                addr = int(sym[1], 16)
+                size = sym[2]
+
+                if not args.zs:
+                    size = "0x{:04X}".format(int(sym[2]))
+                if not args.za:
+                    addr = "0x{:08X}".format(int(sym[1], 16))
+                if args.d and is_filter:
+                    try:
+                        name = cxxfilt.demangle(sym[3])
+                    except cxxfilt.InvalidName:
+                        name = sym[3]
+
+                if not name or name is None:
+                    continue
+                has_found = True
+
+                csv_sym = diff.get_symbol(sym[7])
+                ex = ""
+                if csv_sym == None or csv_sym[1] != 'O':
+                    ex = " (U)"
+                if args.n:
+                    print(f"{name}{ex}")
+                    continue
+                if args.a:
+                    print(f"{addr}: {size}{ex}")
+                    continue
+                if args.A:
+                    print(f"{size}: {addr}{ex}")
+                    continue
+                    
+                print(f"{addr}: {size}, {name}{ex}")
+    else:
+        syms = diff.read_sym_file()
+        if args.s:
+            syms.sort(key=lambda a: a[1])
+        for sym in syms:
+            addr = sym[0]
+            rank = sym[1]
+            size = sym[2]
+            name = sym[3]
+
+            if not name or name is None:
                 continue
-        has_found = True
+            if not args.r is None:
+                if rank != args.r:
+                    continue
+            has_found = True
 
-        if not args.zs:
-            size = "0x{:04X}".format(sym[2])
-        if not args.za:
-            addr = "0x{:08X}".format(sym[0])
-        if args.d and is_filter:
-            try:
-                name = cxxfilt.demangle(sym[3])
-            except cxxfilt.InvalidName:
-                name = sym[3]
+            if not args.zs:
+                size = "0x{:04X}".format(sym[2])
+            if not args.za:
+                addr = "0x{:08X}".format(sym[0])
+            if args.d and is_filter:
+                try:
+                    name = cxxfilt.demangle(sym[3])
+                except cxxfilt.InvalidName:
+                    name = sym[3]
 
-        if args.n:
-            if args.R and not args.r:
-                print(f"{rank}: {name}")
+            if args.n:
+                if args.R and not args.r:
+                    print(f"{rank}: {name}")
+                else:
+                    print(name)
+                continue
+            if args.a:
+                if args.R and not args.r:
+                    print(f"{rank}: {addr}, {size}")
+                else:
+                    print(f"{addr}: {size}")
+                continue
+            if args.A:
+                if args.R and not args.r:
+                    print(f"{rank}: {size}, {addr}")
+                else:
+                    print(f"{size}: {addr}")
+                continue
+                
+            if sym[4] and not args.i:
+                print(f"{addr}: {size},{rank},{sym[4]}, {name}")
             else:
-                print(name)
-            continue
-        if args.a:
-            if args.R and not args.r:
-                print(f"{rank}: {addr}, {size}")
+                print(f"{addr}: {size},{rank}, {name}")
+        if has_found == False:
+            if (len(sys.argv) > 1):
+                print ("No symbols found with specified settings.")
             else:
-                print(f"{addr}: {size}")
-            continue
-        if args.A:
-            if args.R and not args.r:
-                print(f"{rank}: {size}, {addr}")
-            else:
-                print(f"{size}: {addr}")
-            continue
-            
-        if sym[4] and not args.i:
-            print(f"{addr}: {size},{rank},{sym[4]}, {sym[3]}")
-        else:
-            print(f"{addr}: {size},{rank}, {sym[3]}")
-    if has_found == False:
-        if (len(sys.argv) > 1):
-            print ("No symbols found with specified settings.")
-        else:
-            print ("No symbols found.")
+                print ("No symbols found.")
 
 if __name__ == "__main__":
     main()
