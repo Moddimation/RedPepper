@@ -1,14 +1,16 @@
 # RedPepper
 
-This is a decompilation of the EU version of Super Mario 3D Land (note that retail JP, KO, TW, and US versions are nearly identical). This is a fork from the repo on 3dsdecomp's github, and recieved some structural updates.
+This is a decompilation of the EU version of Super Mario 3D Land (note that retail JP, KO, TW, and US versions are nearly identical).  
+Multi version support is planned, but not being added in the near future.  
+It is also fork from the repo on 3dsdecomp's github, and recieved some structural updates.
 
 ## Progress
 
-<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/Total.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Moddimation/RedPepper/master/data/stats/Total.json&style=flat-square"/>
 
-<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/NonMatching.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Moddimation/RedPepper/master/data/stats/NonMatching.json&style=flat-square"/>
 
-![Progress](Data/Progress.png)
+![Progress](data/stats/Progress.png)
 
 ## How To
 
