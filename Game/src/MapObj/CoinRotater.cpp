@@ -1,6 +1,6 @@
 #include "MapObj/CoinRotater.h"
 #include "Scene/SceneObjFactory.h"
-#include "al/Scene/SceneObjHolder.h"
+#include <Scene/SceneObjHolder.h>
 
 NON_MATCHING  // need to find out what all the space at 0x68 is used for
 CoinRotater::CoinRotater()

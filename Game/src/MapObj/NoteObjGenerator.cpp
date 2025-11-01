@@ -1,10 +1,10 @@
 #include "MapObj/NoteObjGenerator.h"
 #include "MapObj/NoteObj.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/Nerve/Nerve.h"
-#include "al/Nerve/NerveActionCtrl.h"
-#include "al/Nerve/NerveFunction.h"
-#include "al/Stage/StageSwitchKeeper.h"
+#include <LiveActor/LiveActorFunction.h>
+#include <Nerve/Nerve.h>
+#include <Nerve/NerveActionCtrl.h>
+#include <Nerve/NerveFunction.h>
+#include <Stage/StageSwitchKeeper.h>
 
 static alNerveFunction::NerveActionCollector sCollector;
 

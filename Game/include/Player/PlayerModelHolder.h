@@ -1,9 +1,9 @@
 #pragma once
 
-#include <sead/math/seadVector.h>
+#include <math/seadVector.h>
 #include "Player/PlayerActorInitInfo.h"
 #include "Player/PlayerFigureDirector.h"
-#include "al/LiveActor/ActorInitInfo.h"
+#include <LiveActor/ActorInitInfo.h>
 
 class IUsePlayerModelChanger {
 public:

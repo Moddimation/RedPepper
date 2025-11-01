@@ -1,6 +1,5 @@
 #pragma once
 
-#include <nn/types.h>
 
 class WalkerStateChaseParam {
     float _0;

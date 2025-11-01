@@ -1,9 +1,9 @@
 #include "MapObj/TrickHintPanel.h"
-#include "al/LiveActor/ActorInitUtil.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/LiveActor/SensorMsg.h"
-#include "al/Nerve/NerveFunction.h"
-#include "al/Nerve/NerveStateBase.h"
+#include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/LiveActorFunction.h>
+#include <LiveActor/SensorMsg.h>
+#include <Nerve/NerveFunction.h>
+#include <Nerve/NerveStateBase.h>
 
 namespace NrvTrickHintPanel {
 

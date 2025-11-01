@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/MapObj/MapObjActor.h"
+#include <MapObj/MapObjActor.h>
 
 class FlowerPot : public al::MapObjActor {
 public:

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/HitSensor/HitSensor.h"
+#include <HitSensor/HitSensor.h>
 
 namespace rp {
 

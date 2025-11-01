@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/Scene/SceneObjHolder.h"
+#include <Scene/SceneObjHolder.h>
 
 namespace SceneObjFactory {
 

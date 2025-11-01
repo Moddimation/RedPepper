@@ -2,10 +2,10 @@
 #include "Player/GhostPlayerRecorder.h"
 #include "Scene/SceneObjFactory.h"
 #include "Util/SensorMsg.h"
-#include "al/LiveActor/ActorActionKeeper.h"
-#include "al/LiveActor/HitSensorFunction.h"
-#include "al/LiveActor/SensorMsg.h"
-#include "al/Nerve/NerveFunction.h"
+#include <LiveActor/ActorActionKeeper.h>
+#include <LiveActor/HitSensorFunction.h>
+#include <LiveActor/SensorMsg.h>
+#include <Nerve/NerveFunction.h>
 
 namespace NrvGhostPlayer {
 

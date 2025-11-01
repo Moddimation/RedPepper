@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Enemy/EnemyStateBlowDown.h"
-#include "al/LiveActor/LiveActor.h"
+#include <LiveActor/LiveActor.h>
 
 namespace EnemyStateUtil {
 

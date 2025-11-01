@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/Layout/LayoutActor.h"
+#include <Layout/LayoutActor.h>
 
 class CourseSelectMario : public al::LayoutActor {
     int _30;

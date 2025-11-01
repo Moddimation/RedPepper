@@ -1,7 +1,7 @@
 #pragma once
 
-#include "al/LiveActor/LiveActorGroup.h"
-#include "al/MapObj/MapObjActor.h"
+#include <LiveActor/LiveActorGroup.h>
+#include <MapObj/MapObjActor.h>
 
 class NoteObjGenerator : public al::MapObjActor {
     al::LiveActorGroup* mNoteObjGroup;

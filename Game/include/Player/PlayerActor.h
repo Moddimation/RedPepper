@@ -1,11 +1,11 @@
 #pragma once
 
-#include <sead/math/seadVector.h>
+#include <math/seadVector.h>
 #include "Player/Player.h"
 #include "Player/PlayerActorInitInfo.h"
 #include "Player/PlayerAnimator.h"
-#include "al/LiveActor/ActorInitInfo.h"
-#include "al/MapObj/MapObjActor.h"
+#include <LiveActor/ActorInitInfo.h>
+#include <MapObj/MapObjActor.h>
 
 class PlayerActor : public al::MapObjActor {
 #ifndef __CC_ARM

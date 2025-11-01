@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/MapObj/MapObjActor.h"
+#include <MapObj/MapObjActor.h>
 
 class RailDotEnd : public al::MapObjActor {
 public:

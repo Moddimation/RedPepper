@@ -2,7 +2,7 @@
 
 #include "Enemy/WalkerStateParam.h"
 #include "Enemy/WalkerStateWanderParam.h"
-#include "al/Nerve/ActorStateBase.h"
+#include <Nerve/ActorStateBase.h>
 
 class WalkerStateWander : public al::ActorStateBase {
     sead::Vector3f* mFrontPtr;

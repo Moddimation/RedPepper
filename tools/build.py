@@ -27,12 +27,11 @@ parser.add_argument('-v', action='store_true',
                     help="Give verbose output")
 args = parser.parse_args()
 
-if not os.path.isdir(getBuildPath()):
+if not os.path.isdir(getBuildPath()) or args.c:
+    shutil.rmtree(getBuildPath(), ignore_errors=True)
     os.mkdir(getBuildPath())
     os.chdir(getBuildPath())
     cmake_args = ['cmake', "..", '-G', 'Unix Makefiles']
-    if args.c:
-        cmake_args.append('--clean-first')
 
     try:
         subprocess.run(cmake_args, check=True)

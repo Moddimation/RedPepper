@@ -2,8 +2,8 @@
 
 #include "Enemy/WalkerStateChaseParam.h"
 #include "Enemy/WalkerStateParam.h"
-#include "al/LiveActor/LiveActor.h"
-#include "al/Nerve/ActorStateBase.h"
+#include <LiveActor/LiveActor.h>
+#include <Nerve/ActorStateBase.h>
 
 class WalkerStateChase : public al::ActorStateBase {
     sead::Vector3f* mFrontPtr;

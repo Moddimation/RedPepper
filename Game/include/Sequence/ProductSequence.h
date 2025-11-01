@@ -4,7 +4,7 @@
 #include "Sequence/ProductStateCourseSelect.h"
 #include "Sequence/ProductStateStage.h"
 #include "Sequence/StageWipeKeeper.h"
-#include "al/Sequence/Sequence.h"
+#include <Sequence/Sequence.h>
 
 #ifndef __CC_ARM
 #include "mg/Scene/ProductStateTest.h"

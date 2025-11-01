@@ -1,9 +1,9 @@
 #pragma once
 
-#include <sead/container/seadPtrArray.h>
+#include <container/seadPtrArray.h>
 #include "MapObj/CoinCharger.h"
-#include "al/LiveActor/LiveActor.h"
-#include "al/Scene/ISceneObj.h"
+#include <LiveActor/LiveActor.h>
+#include <Scene/ISceneObj.h>
 
 class ItemHolder : public al::ISceneObj {
     sead::PtrArray<al::LiveActor>* mCoins;

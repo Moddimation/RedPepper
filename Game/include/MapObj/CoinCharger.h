@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Layout/GameCountUp.h"
-#include "al/Audio/AudioKeeper.h"
-#include "al/Layout/LayoutInitInfo.h"
-#include "al/Nerve/NerveExecutor.h"
+#include <Audio/AudioKeeper.h>
+#include <Layout/LayoutInitInfo.h>
+#include <Nerve/NerveExecutor.h>
 
 class CoinCharger : public al::NerveExecutor {
     GameCountUp* mGameCountUp;

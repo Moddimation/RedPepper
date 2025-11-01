@@ -1,9 +1,9 @@
 #include "System/GameSystem.h"
 #include <nn/cfg/CTR/cfg_Api.h>
 #include <nn/ndm/ndm_Api.h>
-#include <sead/heap/seadHeapMgr.h>
-#include "System/Application.h"
-#include "System/ApplicationFunction.h"
+#include <heap/seadHeapMgr.h>
+#include <Application/Application.h>
+#include <Application/ApplicationFunction.h>
 #include "nn/fs/CTR/MPCore/detail/fs_UserFileSystem.h"
 
 GameSystem::GameSystem()

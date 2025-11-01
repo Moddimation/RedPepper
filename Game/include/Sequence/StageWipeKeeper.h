@@ -1,7 +1,7 @@
 #pragma once
 
-#include "al/Layout/LayoutInitInfo.h"
-#include "al/Layout/WipeSimpleTopBottom.h"
+#include <Layout/LayoutInitInfo.h>
+#include <Layout/WipeSimpleTopBottom.h>
 
 class StageWipeKeeper {
 #ifndef __CC_ARM

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Player/GhostPlayer.h"
-#include "al/Scene/ISceneObj.h"
+#include <Scene/ISceneObj.h>
 
 class GhostPlayerRecorder : public al::ISceneObj {
     struct Frame {

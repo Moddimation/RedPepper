@@ -1,10 +1,10 @@
 #include "MapObj/NoteObj.h"
 #include "MapObj/CoinRotater.h"
-#include "al/LiveActor/ActorInitUtil.h"
-#include "al/LiveActor/ActorPoseKeeper.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/Placement/PlacementFunction.h"
-#include "al/Scene/SceneObjHolder.h"
+#include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/ActorPoseKeeper.h>
+#include <LiveActor/LiveActorFunction.h>
+#include <Placement/PlacementFunction.h>
+#include <Scene/SceneObjHolder.h>
 
 NON_MATCHING  // sucky sead inlines
 NoteObj::NoteObj(const char* name)

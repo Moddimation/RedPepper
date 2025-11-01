@@ -1,7 +1,7 @@
 #include "MapObj/RailDotEnd.h"
-#include "al/LiveActor/ActorInitUtil.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/Nerve/NerveFunction.h"
+#include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/LiveActorFunction.h>
+#include <Nerve/NerveFunction.h>
 
 namespace NrvRailDotEnd {
 

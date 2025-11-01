@@ -1,8 +1,8 @@
 #pragma once
 
-#include <sead/math/seadVector.h>
+#include <math/seadVector.h>
 #include "Enemy/EnemyStateHipDropDownParam.h"
-#include "al/Nerve/ActorStateBase.h"
+#include <Nerve/ActorStateBase.h>
 
 class EnemyStateHipDropDown : public al::ActorStateBase {
     EnemyStateHipDropDownParam* mParam;

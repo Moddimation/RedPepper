@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/MapObj/MapObjActor.h"
+#include <MapObj/MapObjActor.h>
 
 class Coin : public al::MapObjActor {
     void* _60;

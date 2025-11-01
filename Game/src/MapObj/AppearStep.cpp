@@ -1,10 +1,10 @@
 #include "MapObj/AppearStep.h"
-#include "al/Functor/FunctorV0M.h"
-#include "al/LiveActor/ActorInitUtil.h"
-#include "al/LiveActor/ActorPoseKeeper.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/Nerve/NerveFunction.h"
-#include "al/Stage/StageSwitchKeeper.h"
+#include <Functor/FunctorV0M.h>
+#include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/ActorPoseKeeper.h>
+#include <LiveActor/LiveActorFunction.h>
+#include <Nerve/NerveFunction.h>
+#include <Stage/StageSwitchKeeper.h>
 
 namespace NrvAppearStep {
 

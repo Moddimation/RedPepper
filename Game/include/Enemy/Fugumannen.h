@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Enemy/EnemyStateBlowDown.h"
-#include "al/MapObj/MapObjActor.h"
+#include <MapObj/MapObjActor.h>
 
 class Fugumannen : public al::MapObjActor {
     float mRailMoveSpeed;

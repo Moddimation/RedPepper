@@ -3,7 +3,7 @@
 #include "Enemy/EnemyStateBlowDown.h"
 #include "Enemy/WalkerStateChase.h"
 #include "Enemy/WalkerStateWander.h"
-#include "al/MapObj/MapObjActor.h"
+#include <MapObj/MapObjActor.h>
 
 class Togezo : public al::MapObjActor {
     WalkerStateWander* mWanderState;

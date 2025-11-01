@@ -2,8 +2,8 @@
 
 #include "Sequence/ProductStageStartParam.h"
 #include "Sequence/ProductStateStage.h"
-#include "al/Layout/LayoutInitInfo.h"
-#include "al/Nerve/HostStateBase.h"
+#include <Layout/LayoutInitInfo.h>
+#include <Nerve/HostStateBase.h>
 
 class ProductStateTitle : public al::HostStateBase<ProductSequence> {
     int _10;

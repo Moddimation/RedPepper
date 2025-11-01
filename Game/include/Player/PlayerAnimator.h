@@ -1,9 +1,9 @@
 #pragma once
 
-#include <sead/prim/seadSafeString.h>
+#include <prim/seadSafeString.h>
 #include "Player/PlayerAnimFrameCtrl.h"
 #include "Player/PlayerModelHolder.h"
-#include "al/LiveActor/LiveActor.h"
+#include <LiveActor/LiveActor.h>
 
 class IUsePlayerAnimator {
 public:

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <sead/container/seadOffsetList.h>
+#include <container/seadOffsetList.h>
 #include "Player/PlayerActionCondition.h"
 
 class PlayerActionMultiCondition : public PlayerActionCondition {

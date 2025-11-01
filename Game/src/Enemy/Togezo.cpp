@@ -1,10 +1,10 @@
 #include "Enemy/Togezo.h"
 #include "Player/PlayerFunction.h"
-#include "al/LiveActor/ActorInitUtil.h"
-#include "al/LiveActor/ActorPoseKeeper.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/Nerve/NerveFunction.h"
-#include "al/Nerve/NerveStateBase.h"
+#include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/ActorPoseKeeper.h>
+#include <LiveActor/LiveActorFunction.h>
+#include <Nerve/NerveFunction.h>
+#include <Nerve/NerveStateBase.h>
 
 namespace NrvTogezo {
 

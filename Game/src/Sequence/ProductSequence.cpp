@@ -1,7 +1,7 @@
 #include "Sequence/ProductSequence.h"
 #include "Sequence/ProductStateStage.h"
-#include "al/Nerve/Nerve.h"
-#include "al/Nerve/NerveFunction.h"
+#include <Nerve/Nerve.h>
+#include <Nerve/NerveFunction.h>
 
 namespace NrvProductSequence {
 

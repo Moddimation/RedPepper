@@ -1,7 +1,7 @@
 #pragma once
 
-#include "al/Resource/Resource.h"
-#include "al/System/Byaml/ByamlIter.h"
+#include <Resource/Resource.h>
+#include <System/Byaml/ByamlIter.h>
 
 class CourseList {
     struct Course {

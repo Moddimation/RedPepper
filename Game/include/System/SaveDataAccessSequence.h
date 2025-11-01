@@ -1,7 +1,7 @@
 #pragma once
 
-#include "al/LiveActor/ActorInitInfo.h"
-#include "al/Nerve/NerveExecutor.h"
+#include <LiveActor/ActorInitInfo.h>
+#include <Nerve/NerveExecutor.h>
 
 class GameDataHolder;
 

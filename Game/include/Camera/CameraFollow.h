@@ -1,6 +1,6 @@
 #pragma once
 
-#include "al/Camera/Camera.h"
+#include <Camera/Camera.h>
 
 class CameraFollow : public al::Camera {
     void* _4C;

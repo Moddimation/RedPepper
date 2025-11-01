@@ -1,6 +1,6 @@
 #pragma once
 
-#include <sead/math/seadVector.h>
+#include <math/seadVector.h>
 
 class PlayerProperty {
 #ifndef __CC_ARM

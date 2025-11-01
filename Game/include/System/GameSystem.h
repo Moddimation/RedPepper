@@ -1,10 +1,10 @@
 #pragma once
 
 #include "System/CourseList.h"
-#include "al/Layout/LayoutKit.h"
-#include "al/Message/MessageSystem.h"
-#include "al/Nerve/NerveExecutor.h"
-#include "al/Sequence/Sequence.h"
+#include <Layout/LayoutKit.h>
+#include <Message/MessageSystem.h>
+#include <Nerve/NerveExecutor.h>
+#include <Sequence/Sequence.h>
 
 class GameSystem : public al::NerveExecutor {
     al::Sequence* mCurrentSequence;

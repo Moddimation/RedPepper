@@ -1,6 +1,6 @@
 #pragma once
 
-#include <sead/prim/seadRuntimeTypeInfo.h>
+#include <prim/seadRuntimeTypeInfo.h>
 
 class PlayerAction {
     SEAD_RTTI_BASE(PlayerAction)

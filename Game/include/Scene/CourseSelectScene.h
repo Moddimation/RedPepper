@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Sequence/ProductStageStartParam.h"
-#include "al/Scene/Scene.h"
+#include <Scene/Scene.h>
 
 class CourseSelectScene : public al::Scene {
 #ifndef __CC_ARM

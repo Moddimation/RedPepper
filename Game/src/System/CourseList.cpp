@@ -1,7 +1,7 @@
 #include "System/CourseList.h"
-#include "System/Application.h"
-#include "al/Resource/Resource.h"
-#include "al/Util/StringUtil.h"
+#include <Application/Application.h>
+#include <Resource/Resource.h>
+#include <Util/StringUtil.h>
 
 CourseList::Course::Course(const al::ByamlIter* course)
     : mCourseType(CourseType_Normal), mStageName(nullptr), mScenario(-1),

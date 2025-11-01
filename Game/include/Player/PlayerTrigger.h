@@ -1,6 +1,5 @@
 #pragma once
 
-#include <nn/types.h>
 
 class PlayerTrigger {
     u32 mSensorTrigger;

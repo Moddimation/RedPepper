@@ -1,11 +1,11 @@
 #include "Enemy/FireBall.h"
-#include "al/Collision/CollisionUtil.h"
-#include "al/LiveActor/ActorActionKeeper.h"
-#include "al/LiveActor/ActorInitUtil.h"
-#include "al/LiveActor/HitSensorFunction.h"
-#include "al/LiveActor/LiveActorFunction.h"
-#include "al/LiveActor/SensorMsg.h"
-#include "al/Nerve/NerveFunction.h"
+#include <Collision/CollisionUtil.h>
+#include <LiveActor/ActorActionKeeper.h>
+#include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/HitSensorFunction.h>
+#include <LiveActor/LiveActorFunction.h>
+#include <LiveActor/SensorMsg.h>
+#include <Nerve/NerveFunction.h>
 
 namespace NrvFireBall {
 
