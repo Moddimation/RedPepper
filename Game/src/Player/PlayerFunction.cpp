@@ -2,6 +2,8 @@
 
 #include <Application/Application.h>
 
+#include "Player/PlayerActor.h"
+
 namespace rp
 {
 
@@ -11,7 +13,7 @@ NON_MATCHING
 // linker shenanigans
 PlayerActor* getPlayerActor()
 {
-        return Application::instance()->mPlayerActor;
+        return (PlayerActor*)Application::instance()->mPlayerActor;
 }
 
 const sead::Vector3f& getPlayerPos()

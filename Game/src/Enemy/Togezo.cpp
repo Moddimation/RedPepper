@@ -5,7 +5,14 @@
 #include <LiveActor/LiveActorFunction.h>
 #include <Nerve/NerveFunction.h>
 #include <Nerve/NerveStateBase.h>
+#include <math/seadVector.h>
 
+#include "Enemy/EnemyStateBlowDown.h"
+#include "Enemy/WalkerStateChase.h"
+#include "Enemy/WalkerStateChaseParam.h"
+#include "Enemy/WalkerStateParam.h"
+#include "Enemy/WalkerStateWander.h"
+#include "Enemy/WalkerStateWanderParam.h"
 #include "Player/PlayerFunction.h"
 
 namespace NrvTogezo

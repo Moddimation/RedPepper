@@ -2,6 +2,9 @@
 
 #include <Nerve/Nerve.h>
 
+#include "Layout/WindowConfirmButton.h"
+#include "Layout/WindowConfirmSingle.h"
+
 namespace NrvProductStateTitle
 {
 

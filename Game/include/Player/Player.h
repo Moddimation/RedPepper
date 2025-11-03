@@ -1,11 +1,12 @@
 #pragma once
 
+class IUsePlayerAnimator;
 class PlayerActionGraph;
 class PlayerAnimator;
+class PlayerAudio;
 class PlayerFigureDirector;
 class PlayerProperty;
 class PlayerTrigger;
-class PlayerAudio;
 
 class Player
 {

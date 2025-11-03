@@ -3,6 +3,7 @@
 #include <Nerve/Nerve.h>
 #include <Nerve/NerveFunction.h>
 
+#include "Sequence/ProductStateCourseSelect.h"
 #include "Sequence/ProductStateStage.h"
 
 namespace NrvProductSequence

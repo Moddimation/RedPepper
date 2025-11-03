@@ -3,7 +3,7 @@
 #include <Camera/CameraDashAngleTunerParam.h>
 #include <Camera/CameraParamVision.h>
 #include <Camera/CameraRotatorParam.h>
-#include <System/Byaml/ByamlIter.h>
+#include <Yaml/ByamlIter.h>
 #include <math/seadVector.h>
 
 namespace al

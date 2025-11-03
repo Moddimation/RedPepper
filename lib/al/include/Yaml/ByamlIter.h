@@ -1,8 +1,8 @@
 #pragma once
 
-#include <System/Byaml/ByamlContainerHeader.h>
-#include <System/Byaml/ByamlData.h>
-#include <System/Byaml/ByamlHeader.h>
+#include <Yaml/ByamlContainerHeader.h>
+#include <Yaml/ByamlData.h>
+#include <Yaml/ByamlHeader.h>
 
 namespace al
 {

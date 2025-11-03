@@ -3,6 +3,10 @@
 #include <Application/Application.h>
 #include <Resource/Resource.h>
 #include <Util/StringUtil.h>
+#include <Yaml/ByamlIter.h>
+
+#include "System/GameSystem.h"
+#include "System/RootTask.h"
 
 CourseList::Course::Course( const al::ByamlIter* course )
     : mCourseType( CourseType_Normal ), mStageName( nullptr ), mScenario( -1 ),

@@ -1,7 +1,7 @@
-#include <System/Byaml/ByamlData.h>
-#include <System/Byaml/ByamlHashIter.h>
-#include <System/Byaml/ByamlIter.h>
-#include <System/Byaml/ByamlStringTableIter.h>
+#include <Yaml/ByamlData.h>
+#include <Yaml/ByamlHashIter.h>
+#include <Yaml/ByamlIter.h>
+#include <Yaml/ByamlStringTableIter.h>
 
 namespace al
 {

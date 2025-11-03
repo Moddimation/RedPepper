@@ -2,7 +2,7 @@
 
 #include <Nerve/HostStateBase.h>
 
-#include "Sequence/ProductSequence"
+#include "Sequence/ProductSequence.h"
 
 namespace al
 {

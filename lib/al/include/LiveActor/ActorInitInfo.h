@@ -1,7 +1,7 @@
 #pragma once
 
 #include <Placement/PlacementInfo.h>
-#include <System/Byaml/ByamlIter.h>
+#include <Yaml/ByamlIter.h>
 #include <prim/seadSafeString.h>
 
 namespace al

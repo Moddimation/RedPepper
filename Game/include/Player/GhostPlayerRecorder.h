@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Scene/ISceneObj.h>
+#include <math/seadVector.h>
 
 class GhostPlayer;
 

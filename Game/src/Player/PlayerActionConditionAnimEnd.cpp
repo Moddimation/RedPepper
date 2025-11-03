@@ -1,5 +1,7 @@
 #include "Player/PlayerActionConditionAnimEnd.h"
 
+#include "Player/PlayerAnimator.h"
+
 PlayerActionConditionAnimEnd::PlayerActionConditionAnimEnd( IUsePlayerAnimator* animator,
         const char*                                                             animName,
         int                                                                     animEndFrame )

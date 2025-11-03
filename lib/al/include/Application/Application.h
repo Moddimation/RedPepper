@@ -1,26 +1,35 @@
 #pragma once
 
-#include <LiveActor/LiveActorKit.h>
-#include <Scene/SceneObjHolder.h>
-#include <System/SystemKit.h>
 #include <heap/seadDisposer.h>
 
-#include "Player/PlayerActor.h"
 #include "System/RootTask.h"
+
+namespace al
+{
+class GameFrameworkCtr;
+class SystemKit;
+class SceneObjHolder;
+class LiveActorKit;
+class MapObjActor;
+class EffectUserInfo;
+} // namespace al
 
 class Application
 {
         SEAD_SINGLETON_DISPOSER( Application )
 
 public:
-        void*                _10;
-        class GameFramework* mGameFramework;
-        al::SystemKit*       mSystemKit;
-        u8                   unk2[ 0x34 ];
-        al::SceneObjHolder*  mSceneObjHolder;
-        al::LiveActorKit*    mLiveActorKit;
-        void*                _58;
-        PlayerActor*         mPlayerActor;
+        void*                 _10;
+        al::GameFrameworkCtr* mGameFramework;
+        al::SystemKit*        mSystemKit;
+        u8                    _1C[ 24 ];
+        void*                 _34;
+        u8                    _38[ 20 ];
+        void*                 _4C;
+        al::SceneObjHolder*   mSceneObjHolder;
+        al::LiveActorKit*     mLiveActorKit;
+        void*                 mEffectUserInfo;
+        al::MapObjActor*      mPlayerActor;
 
 public:
         void init();

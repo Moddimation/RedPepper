@@ -1,5 +1,7 @@
 #include "Enemy/WalkerStateChase.h"
 
+#include "Enemy/WalkerStateChaseParam.h"
+
 static WalkerStateChaseParam sDefaultParam( false, false, 2.0, 65, 150, 4.0, 15, "Run", "Wait" );
 
 namespace NrvWalkerStateChase

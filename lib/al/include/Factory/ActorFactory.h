@@ -3,7 +3,7 @@
 #include <Factory/Factory.h>
 #include <LiveActor/LiveActor.h>
 #include <Resource/Resource.h>
-#include <System/Byaml/ByamlIter.h>
+#include <Yaml/ByamlIter.h>
 
 namespace al
 {

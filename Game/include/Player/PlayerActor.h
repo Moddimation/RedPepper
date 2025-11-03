@@ -6,6 +6,7 @@
 class Player;
 class PlayerAnimator;
 class PlayerModelHolder;
+class PlayerProperty;
 struct PlayerActorInitInfo;
 namespace al
 {

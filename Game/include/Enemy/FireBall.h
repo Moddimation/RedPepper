@@ -5,9 +5,10 @@
 class FireBall : public al::MapObjActor
 {
 public:
-void exeShot()
+        void exeShot();
 
-        public : virtual void init( const al::ActorInitInfo& info );
+public:
+        virtual void init( const al::ActorInitInfo& info );
         virtual void attackSensor( al::HitSensor* me, al::HitSensor* other );
         virtual bool receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me );
 
