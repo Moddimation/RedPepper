@@ -1,7 +1,8 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
 const char* getLanguage();
 
-}  // namespace al
+} // namespace al

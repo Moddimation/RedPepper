@@ -1,17 +1,20 @@
 #include <Math/HashUtil.h>
 
-namespace al {
+namespace al
+{
 
-u32 calcHashCode(const char* str) {
-    u32 result = 0;
-    char curChar = *str;
+u32 calcHashCode( const char* str )
+{
+        u32  result  = 0;
+        char curChar = *str;
 
-    while ((curChar = *str)) {
-        result = result * 31 + curChar;
-        str++;
-    }
+        while ( ( curChar = *str ) )
+        {
+                result = result * 31 + curChar;
+                str++;
+        }
 
-    return result;
+        return result;
 }
 
-}  // namespace al
+} // namespace al

@@ -2,15 +2,17 @@
 
 #include <System/Byaml/ByamlIter.h>
 
-namespace al {
+namespace al
+{
 
-class CameraRotatorParam {
-    float mAngleMax;
+class CameraRotatorParam
+{
+        float mAngleMax;
 
 public:
-    CameraRotatorParam();
+        CameraRotatorParam();
 
-    void init(const ByamlIter* ticket);
+        void init( const ByamlIter* ticket );
 };
 
-}  // namespace al
+} // namespace al

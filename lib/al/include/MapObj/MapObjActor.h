@@ -1,13 +1,15 @@
 #pragma once
 
-#include <prim/seadSafeString.h>
 #include <LiveActor/LiveActor.h>
+#include <prim/seadSafeString.h>
 
-namespace al {
+namespace al
+{
 
-class MapObjActor : public al::LiveActor {
+class MapObjActor : public al::LiveActor
+{
 public:
-    MapObjActor(const sead::SafeString& name);
+        MapObjActor( const sead::SafeString& name );
 };
 
-}  // namespace al
+} // namespace al

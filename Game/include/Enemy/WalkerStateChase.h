@@ -1,21 +1,23 @@
 #pragma once
 
-#include "Enemy/WalkerStateChaseParam.h"
-#include "Enemy/WalkerStateParam.h"
 #include <LiveActor/LiveActor.h>
 #include <Nerve/ActorStateBase.h>
 
-class WalkerStateChase : public al::ActorStateBase {
-    sead::Vector3f* mFrontPtr;
-    const WalkerStateParam* mWalkParam;
-    const WalkerStateChaseParam* mRunParam;
-    bool _1C;
-    void* _20;
+#include "Enemy/WalkerStateChaseParam.h"
+#include "Enemy/WalkerStateParam.h"
+
+class WalkerStateChase : public al::ActorStateBase
+{
+private:
+        sead::Vector3f*              mFrontPtr;
+        const WalkerStateParam*      mWalkParam;
+        const WalkerStateChaseParam* mRunParam;
+        bool                         _1C;
+        void*                        _20;
 
 public:
-    WalkerStateChase(al::LiveActor* host, sead::Vector3f* frontPtr,
-                     const WalkerStateParam* walkParam, const WalkerStateChaseParam* runParam,
-                     bool);
+        void exeStart();
 
-    void exeStart();
+public:
+        WalkerStateChase( al::LiveActor* host, sead::Vector3f* frontPtr, const WalkerStateParam* walkParam, const WalkerStateChaseParam* runParam, bool );
 };

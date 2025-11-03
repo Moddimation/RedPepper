@@ -2,15 +2,17 @@
 
 #include <container/seadPtrArray.h>
 
-namespace al {
+namespace al
+{
 
 class ClippingActorInfo;
 
-class ClippingActorInfoList {
-    sead::PtrArray<ClippingActorInfo> mInfos;
+class ClippingActorInfoList
+{
+        sead::PtrArray<ClippingActorInfo> mInfos;
 
 public:
-    ClippingActorInfoList(int);
+        ClippingActorInfoList( int );
 };
 
-}  // namespace al
+} // namespace al

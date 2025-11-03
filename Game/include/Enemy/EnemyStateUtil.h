@@ -1,13 +1,14 @@
 #pragma once
 
-#include "Enemy/EnemyStateBlowDown.h"
 #include <LiveActor/LiveActor.h>
 
-namespace EnemyStateUtil {
+#include "Enemy/EnemyStateBlowDown.h"
 
-bool tryRequestPressDownAndNextNerve(u32 msg, al::HitSensor* other, al::HitSensor* me,
-                                     al::LiveActor* actor, const al::Nerve* nextNerve);
-bool tryRequestBlowDownAndNextNerve(u32 msg, al::HitSensor* other, al::HitSensor* me,
-                                    EnemyStateBlowDown* state, const al::Nerve* nextNerve);
+namespace EnemyStateUtil
+{
 
-}  // namespace EnemyStateUtil
+bool tryRequestPressDownAndNextNerve( u32 msg, al::HitSensor* other, al::HitSensor* me, al::LiveActor* actor, const al::Nerve* nextNerve );
+
+bool tryRequestBlowDownAndNextNerve( u32 msg, al::HitSensor* other, al::HitSensor* me, EnemyStateBlowDown* state, const al::Nerve* nextNerve );
+
+} // namespace EnemyStateUtil

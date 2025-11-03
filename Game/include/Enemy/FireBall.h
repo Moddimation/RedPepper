@@ -2,13 +2,15 @@
 
 #include <MapObj/MapObjActor.h>
 
-class FireBall : public al::MapObjActor {
+class FireBall : public al::MapObjActor
+{
 public:
-    FireBall(const sead::SafeString& name);
+void exeShot()
 
-    virtual void init(const al::ActorInitInfo& info);
-    virtual void attackSensor(al::HitSensor* me, al::HitSensor* other);
-    virtual bool receiveMsg(u32 msg, al::HitSensor* other, al::HitSensor* me);
+        public : virtual void init( const al::ActorInitInfo& info );
+        virtual void attackSensor( al::HitSensor* me, al::HitSensor* other );
+        virtual bool receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me );
 
-    void exeShot();
+public:
+        FireBall( const sead::SafeString& name );
 };

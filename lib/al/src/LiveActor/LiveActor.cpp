@@ -1,82 +1,107 @@
-#include <LiveActor/LiveActor.h>
 #include <LiveActor/ActorInitInfo.h>
+#include <LiveActor/LiveActor.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/LiveActorKit.h>
 #include <Rail/RailKeeper.h>
 
-namespace al {
+namespace al
+{
 
-LiveActor::LiveActor(const char* name)
-    : mActorName(name), mActorPoseKeeper(nullptr), mActorExecuteInfo(nullptr),
-      mActorActionKeeper(nullptr), mCollider(nullptr), mCollisionParts(nullptr),
-      mModelKeeper(nullptr), mNerveKeeper(nullptr), mHitSensorKeeper(nullptr),
-      mEffectKeeper(nullptr), mAudioKeeper(nullptr), mStageSwitchKeeper(nullptr),
-      mRailKeeper(nullptr), mShadowKeeper(nullptr), mActorLightCtrl(nullptr), _4C(nullptr),
-      mSubActorKeeper(nullptr) {
-    getLiveActorKit()->getAllActors()->registerActor(this);
+LiveActor::LiveActor( const char* name )
+    : mActorName( name ), mActorPoseKeeper( nullptr ), mActorExecuteInfo( nullptr ),
+      mActorActionKeeper( nullptr ), mCollider( nullptr ), mCollisionParts( nullptr ),
+      mModelKeeper( nullptr ), mNerveKeeper( nullptr ), mHitSensorKeeper( nullptr ),
+      mEffectKeeper( nullptr ), mAudioKeeper( nullptr ), mStageSwitchKeeper( nullptr ),
+      mRailKeeper( nullptr ), mShadowKeeper( nullptr ), mActorLightCtrl( nullptr ), _4C( nullptr ),
+      mSubActorKeeper( nullptr )
+{
+        getLiveActorKit()->getAllActors()->registerActor( this );
 }
 
-NerveKeeper* LiveActor::getNerveKeeper() const {
-    return mNerveKeeper;
+NerveKeeper* LiveActor::getNerveKeeper() const
+{
+        return mNerveKeeper;
 }
 
-void LiveActor::init(const ActorInitInfo& info) {}
-
-void LiveActor::initAfterPlacement() {}
-
-void LiveActor::appear() {
-    makeActorAppeared();
+void LiveActor::init( const ActorInitInfo& info )
+{
 }
 
-void LiveActor::kill() {
-    makeActorDead();
+void LiveActor::initAfterPlacement()
+{
 }
 
-void LiveActor::calcAnim() {
-    if (!mLiveActorFlag.isDead && (!mLiveActorFlag.isClipped || mLiveActorFlag.isDrawClipping)) {
-        if (mActorPoseKeeper)
-            alLiveActorFunction::calcAnimDirect(this);
-        if (getAudioKeeper())
-            getAudioKeeper()->update();
-    }
+void LiveActor::appear()
+{
+        makeActorAppeared();
 }
 
-void LiveActor::attackSensor(HitSensor* me, HitSensor* other) {}
-
-bool LiveActor::receiveMsg(u32 msg, HitSensor* other, HitSensor* me) {
-    return false;
+void LiveActor::kill()
+{
+        makeActorDead();
 }
 
-void LiveActor::draw() {}
-
-EffectKeeper* LiveActor::getEffectKeeper() const {
-    return mEffectKeeper;
+void LiveActor::calcAnim()
+{
+        if ( !mLiveActorFlag.isDead && ( !mLiveActorFlag.isClipped || mLiveActorFlag.isDrawClipping ) )
+        {
+                if ( mActorPoseKeeper )
+                        alLiveActorFunction::calcAnimDirect( this );
+                if ( getAudioKeeper() )
+                        getAudioKeeper()->update();
+        }
 }
 
-AudioKeeper* LiveActor::getAudioKeeper() const {
-    return mAudioKeeper;
+void LiveActor::attackSensor( HitSensor* me, HitSensor* other )
+{
 }
 
-StageSwitchKeeper* LiveActor::getStageSwitchKeeper() const {
-    return mStageSwitchKeeper;
+bool LiveActor::receiveMsg( u32 msg, HitSensor* other, HitSensor* me )
+{
+        return false;
 }
 
-void LiveActor::initStageSwitchKeeper() {
-    mStageSwitchKeeper = new StageSwitchKeeper();
+void LiveActor::draw()
+{
 }
 
-void LiveActor::control() {}
-
-void LiveActor::initNerveKeeper(NerveKeeper* nk) {
-    mNerveKeeper = nk;
+EffectKeeper* LiveActor::getEffectKeeper() const
+{
+        return mEffectKeeper;
 }
 
-void LiveActor::initPoseKeeper(ActorPoseKeeperBase* pPoseKeeper) {
-    mActorPoseKeeper = pPoseKeeper;
+AudioKeeper* LiveActor::getAudioKeeper() const
+{
+        return mAudioKeeper;
 }
 
-void LiveActor::initRailKeeper(const ActorInitInfo& info) {
-    mRailKeeper = al::tryCreateRailKeeper(al::getPlacementInfo(info));
+StageSwitchKeeper* LiveActor::getStageSwitchKeeper() const
+{
+        return mStageSwitchKeeper;
 }
 
-}  // namespace al
+void LiveActor::initStageSwitchKeeper()
+{
+        mStageSwitchKeeper = new StageSwitchKeeper();
+}
+
+void LiveActor::control()
+{
+}
+
+void LiveActor::initNerveKeeper( NerveKeeper* nk )
+{
+        mNerveKeeper = nk;
+}
+
+void LiveActor::initPoseKeeper( ActorPoseKeeperBase* pPoseKeeper )
+{
+        mActorPoseKeeper = pPoseKeeper;
+}
+
+void LiveActor::initRailKeeper( const ActorInitInfo& info )
+{
+        mRailKeeper = al::tryCreateRailKeeper( al::getPlacementInfo( info ) );
+}
+
+} // namespace al

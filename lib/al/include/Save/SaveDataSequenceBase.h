@@ -1,12 +1,16 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class SaveDataSequenceBase {
+class SaveDataSequenceBase
+{
 public:
-    SaveDataSequenceBase() {}
+        SaveDataSequenceBase()
+        {
+        }
 
-    virtual void threadFunc(const char*) = 0;
+        virtual void threadFunc( const char* ) = 0;
 };
 
-}  // namespace al
+} // namespace al

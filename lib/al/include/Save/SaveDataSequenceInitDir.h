@@ -2,13 +2,15 @@
 
 #include <Save/SaveDataSequenceBase.h>
 
-namespace al {
+namespace al
+{
 
-class SaveDataSequenceInitDir : public SaveDataSequenceBase {
+class SaveDataSequenceInitDir : public SaveDataSequenceBase
+{
 public:
-    SaveDataSequenceInitDir();
+        SaveDataSequenceInitDir();
 
-    virtual void threadFunc(const char*);
+        virtual void threadFunc( const char* );
 };
 
-}  // namespace al
+} // namespace al

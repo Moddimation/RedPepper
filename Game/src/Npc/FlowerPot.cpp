@@ -1,20 +1,27 @@
 #include "MapObj/FlowerPot.h"
+
 #include <LiveActor/ActorInitUtil.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <Nerve/NerveFunction.h>
 
-namespace NrvFlowerPot {
+namespace NrvFlowerPot
+{
 
-NERVE_DEF(FlowerPot, Wait);
+NERVE_DEF( FlowerPot, Wait );
 
-}  // namespace NrvFlowerPot
+} // namespace NrvFlowerPot
 
-FlowerPot::FlowerPot(const sead::SafeString& name) : MapObjActor(name) {}
-
-void FlowerPot::init(const al::ActorInitInfo& info) {
-    al::initActorWithArchiveName(this, info, "FlowerPot");
-    al::initNerve(this, &NrvFlowerPot::Wait);
-    makeActorAppeared();
+FlowerPot::FlowerPot( const sead::SafeString& name ) : MapObjActor( name )
+{
 }
 
-void FlowerPot::exeWait() {}
+void FlowerPot::init( const al::ActorInitInfo& info )
+{
+        al::initActorWithArchiveName( this, info, "FlowerPot" );
+        al::initNerve( this, &NrvFlowerPot::Wait );
+        makeActorAppeared();
+}
+
+void FlowerPot::exeWait()
+{
+}

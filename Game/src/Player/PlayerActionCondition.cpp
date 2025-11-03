@@ -1,3 +1,5 @@
 #include "Player/PlayerActionCondition.h"
 
-void PlayerActionCondition::setup() {}
+void PlayerActionCondition::setup()
+{
+}

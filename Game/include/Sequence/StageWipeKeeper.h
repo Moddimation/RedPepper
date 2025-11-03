@@ -3,15 +3,20 @@
 #include <Layout/LayoutInitInfo.h>
 #include <Layout/WipeSimpleTopBottom.h>
 
-class StageWipeKeeper {
+class StageWipeKeeper
+{
 #ifndef __CC_ARM
 public:
+#else
+
+private:
 #endif
-    al::WipeSimpleTopBottom* mWipes[7];
-    void* unk;
+        al::WipeSimpleTopBottom* mWipes[ 7 ];
+        void*                    unk;
 
 public:
-    StageWipeKeeper(const al::LayoutInitInfo& info);
+        bool isAnyWipeCloseEnd() const;
 
-    bool isAnyWipeCloseEnd() const;
+public:
+        StageWipeKeeper( const al::LayoutInitInfo& info );
 };

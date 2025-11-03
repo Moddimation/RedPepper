@@ -1,24 +1,29 @@
 #pragma once
 
+#include <MapObj/MapObjActor.h>
+
 #include "Enemy/EnemyStateBlowDown.h"
 #include "Enemy/WalkerStateChase.h"
 #include "Enemy/WalkerStateWander.h"
-#include <MapObj/MapObjActor.h>
 
-class Togezo : public al::MapObjActor {
-    WalkerStateWander* mWanderState;
-    WalkerStateChase* mChaseState;
-    EnemyStateBlowDown* mBlowDownState;
+class Togezo : public al::MapObjActor
+{
+private:
+        WalkerStateWander*  mWanderState;
+        WalkerStateChase*   mChaseState;
+        EnemyStateBlowDown* mBlowDownState;
 
 public:
-    Togezo(const sead::SafeString& name);
+        void exeWander();
+        void exeTurn();
+        void exeSearch();
+        void exeChase();
+        void exeAttack();
+        void exeBlowDown();
 
-    virtual void init(const al::ActorInitInfo& info);
+public:
+        virtual void init( const al::ActorInitInfo& info );
 
-    void exeWander();
-    void exeTurn();
-    void exeSearch();
-    void exeChase();
-    void exeAttack();
-    void exeBlowDown();
+public:
+        Togezo( const sead::SafeString& name );
 };

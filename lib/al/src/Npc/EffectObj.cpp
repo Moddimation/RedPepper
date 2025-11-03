@@ -1,52 +1,60 @@
-#include <Npc/EffectObj.h>
 #include <File/FileFunction.h>
 #include <LiveActor/ActorInitUtil.h>
 #include <LiveActor/LiveActorFunction.h>
+#include <Npc/EffectObj.h>
 #include <Placement/PlacementFunction.h>
 #include <Se/SeFunction.h>
 #include <Util/StringUtil.h>
 
-namespace al {
+namespace al
+{
 
-NON_MATCHING  // something with mBaseMtx
-EffectObj::EffectObj(const sead::SafeString& name)
-    : MapObjActor(name), mBaseMtx(sead::Matrix34f::ident) {}
-
-void EffectObj::init(const ActorInitInfo& info) {
-    const char* objectName = nullptr;
-    tryGetObjectName(&objectName, info);
-    EffectObjFunction::initActorEffectObj(this, info, objectName);
+NON_MATCHING // something with mBaseMtx
+EffectObj::EffectObj( const sead::SafeString& name )
+    : MapObjActor( name ), mBaseMtx( sead::Matrix34f::ident )
+{
 }
 
-void EffectObj::makeActorAppeared() {
-    LiveActor::makeActorAppeared();
-    makeMtxSRT(&mBaseMtx, this);
-    emitEffect(this, "Wait", nullptr);
+void EffectObj::init( const ActorInitInfo& info )
+{
+        const char* objectName = nullptr;
+        tryGetObjectName( &objectName, info );
+        EffectObjFunction::initActorEffectObj( this, info, objectName );
 }
 
-void EffectObj::kill() {
-    tryEmitEffect(this, "Wait");
-    LiveActor::kill();
+void EffectObj::makeActorAppeared()
+{
+        LiveActor::makeActorAppeared();
+        makeMtxSRT( &mBaseMtx, this );
+        emitEffect( this, "Wait", nullptr );
 }
 
-const sead::Matrix34f* EffectObj::getBaseMtx() const {
-    return &mBaseMtx;
+void EffectObj::kill()
+{
+        tryEmitEffect( this, "Wait" );
+        LiveActor::kill();
 }
 
-void EffectObj::control() {
-    makeMtxSRT(&mBaseMtx, this);
-    tryStartSe(this, "Wait", 2);
+const sead::Matrix34f* EffectObj::getBaseMtx() const
+{
+        return &mBaseMtx;
 }
 
-void EffectObjFunction::initActorEffectObj(EffectObj* actor, const ActorInitInfo& info,
-                                           const char* objectName) {
-    if (isExistArchive(StringTmp<128>("ObjectData/%s.szs", objectName)))
-        initActor(actor, info);
-    else
-        initActorWithArchiveName(actor, info, "EffectObj");
-    initActorEffectKeeper(actor, info, objectName);
-    makeMtxSRT(&actor->mBaseMtx, actor);
-    trySyncStageSwitchAppear(actor);
+void EffectObj::control()
+{
+        makeMtxSRT( &mBaseMtx, this );
+        tryStartSe( this, "Wait", 2 );
 }
 
-}  // namespace al
+void EffectObjFunction::initActorEffectObj( EffectObj* actor, const ActorInitInfo& info, const char* objectName )
+{
+        if ( isExistArchive( StringTmp<128>( "ObjectData/%s.szs", objectName ) ) )
+                initActor( actor, info );
+        else
+                initActorWithArchiveName( actor, info, "EffectObj" );
+        initActorEffectKeeper( actor, info, objectName );
+        makeMtxSRT( &actor->mBaseMtx, actor );
+        trySyncStageSwitchAppear( actor );
+}
+
+} // namespace al

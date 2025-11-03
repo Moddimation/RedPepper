@@ -1,7 +1,8 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-bool isNearZero(float value, float range = .001);
+bool isNearZero( float value, float range = .001 );
 
-}  // namespace al
+} // namespace al

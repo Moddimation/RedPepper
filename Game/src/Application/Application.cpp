@@ -1,8 +1,9 @@
 #include "Application/Application.h"
 
 NON_MATCHING
-SEAD_SINGLETON_DISPOSER_IMPL(Application)
+SEAD_SINGLETON_DISPOSER_IMPL( Application )
 
-Application* al::getApplication() {
-    return Application::instance();
+Application* al::getApplication()
+{
+        return Application::instance();
 }

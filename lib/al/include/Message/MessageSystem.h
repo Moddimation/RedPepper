@@ -2,13 +2,15 @@
 
 #include <Message/MessageProjectEx.h>
 
-namespace al {
+namespace al
+{
 
-class MessageSystem {
-    MessageProjectEx* mMessageProject;
+class MessageSystem
+{
+        MessageProjectEx* mMessageProject;
 
 public:
-    MessageSystem();
+        MessageSystem();
 };
 
-}  // namespace al
+} // namespace al

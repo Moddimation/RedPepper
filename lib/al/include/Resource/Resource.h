@@ -2,14 +2,16 @@
 
 #include <prim/seadSafeString.h>
 
-namespace al {
+namespace al
+{
 
-class Resource {
+class Resource
+{
 public:
-    const u8* getByml(const sead::SafeString& name) const;
-    u8* getPa(const sead::SafeString& name) const;
+        const u8* getByml( const sead::SafeString& name ) const;
+        u8*       getPa( const sead::SafeString& name ) const;
 };
 
-Resource* findOrCreateResource(const sead::SafeString& archive);
+Resource* findOrCreateResource( const sead::SafeString& archive );
 
-}  // namespace al
+} // namespace al

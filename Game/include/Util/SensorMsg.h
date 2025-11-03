@@ -2,8 +2,9 @@
 
 #include <HitSensor/HitSensor.h>
 
-namespace rp {
+namespace rp
+{
 
-void requestHitReactionToAttacker(u32 msg, const al::HitSensor*, const al::HitSensor*);
+void requestHitReactionToAttacker( u32 msg, const al::HitSensor*, const al::HitSensor* );
 
-}  // namespace rp
+} // namespace rp

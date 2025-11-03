@@ -1,26 +1,32 @@
 #include <Execute/ExecuteTableHolder.h>
 #include <LiveActor/LiveActorKit.h>
 
-namespace al {
+namespace al
+{
 
-void registerExecutorUser(IUseExecutor* p, const char* name) {
-    al::getLiveActorKit()->getExecuteDirector()->registerUser(p, name);
+void registerExecutorUser( IUseExecutor* p, const char* name )
+{
+        al::getLiveActorKit()->getExecuteDirector()->registerUser( p, name );
 }
 
-void registerExecutorFunctor(const FunctorBase& base, const char* name) {
-    al::getLiveActorKit()->getExecuteDirector()->registerFunctor(base, name);
+void registerExecutorFunctor( const FunctorBase& base, const char* name )
+{
+        al::getLiveActorKit()->getExecuteDirector()->registerFunctor( base, name );
 }
 
-void registerExecutorFunctorDraw(const FunctorBase& base, const char* name) {
-    al::getLiveActorKit()->getExecuteDirector()->registerFunctorDraw(base, name);
+void registerExecutorFunctorDraw( const FunctorBase& base, const char* name )
+{
+        al::getLiveActorKit()->getExecuteDirector()->registerFunctorDraw( base, name );
 }
 
-}  // namespace al
+} // namespace al
 
-namespace alActorSystemFunction {
+namespace alActorSystemFunction
+{
 
-void addToExecutorMovement(al::LiveActor* actor) {
-    actor->getActorExecuteInfo()->getRequestKeeper()->request(actor, 0);
+void addToExecutorMovement( al::LiveActor* actor )
+{
+        actor->getActorExecuteInfo()->getRequestKeeper()->request( actor, 0 );
 }
 
-}  // namespace alActorSystemFunction
+} // namespace alActorSystemFunction

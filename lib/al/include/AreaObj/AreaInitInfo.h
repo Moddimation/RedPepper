@@ -2,13 +2,18 @@
 
 #include <Placement/PlacementInfo.h>
 
-namespace al {
+namespace al
+{
 
-class AreaInitInfo {
-    PlacementInfo mPlacementInfo;
-    // ?
+class AreaInitInfo
+{
+        PlacementInfo mPlacementInfo;
+        // ?
 public:
-    PlacementInfo& getPlacementInfo() { return mPlacementInfo; }
+        PlacementInfo& getPlacementInfo()
+        {
+                return mPlacementInfo;
+        }
 };
 
-}  // namespace al
+} // namespace al

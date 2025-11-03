@@ -2,16 +2,20 @@
 
 #include <math/seadVector.h>
 
-class PlayerProperty {
+class PlayerProperty
+{
 #ifndef __CC_ARM
 public:
+#else
+
+private:
 #endif
-    sead::Vector3f mTrans;
-    sead::Vector3f mFront;
-    sead::Vector3f mUp;
-    u8 _C[0x54];
+        sead::Vector3f mTrans;
+        sead::Vector3f mFront;
+        sead::Vector3f mUp;
+        u8             _C[ 0x54 ];
 
 public:
-    void setFrontVec(const sead::Vector3f& front);
-    void setUpVec(const sead::Vector3f& up);
+        void setFrontVec( const sead::Vector3f& front );
+        void setUpVec( const sead::Vector3f& up );
 };

@@ -1,25 +1,31 @@
 #include <AreaObj/AreaObj.h>
 #include <Stage/StageSwitchKeeper.h>
 
-namespace al {
+namespace al
+{
 
 NON_MATCHING
-AreaObj::AreaObj(const char* name)
-    : mName(name), mAreaShape(nullptr), mStageSwitchKeeper(nullptr), _10(sead::Matrix34f::ident),
-      _40(nullptr), _44(-1), _48(1) {}
-
-StageSwitchKeeper* AreaObj::getStageSwitchKeeper() const {
-    return mStageSwitchKeeper;
+AreaObj::AreaObj( const char* name )
+    : mName( name ), mAreaShape( nullptr ), mStageSwitchKeeper( nullptr ), _10( sead::Matrix34f::ident ),
+      _40( nullptr ), _44( -1 ), _48( 1 )
+{
 }
 
-void AreaObj::initStageSwitchKeeper() {
-    mStageSwitchKeeper = new StageSwitchKeeper;
+StageSwitchKeeper* AreaObj::getStageSwitchKeeper() const
+{
+        return mStageSwitchKeeper;
 }
 
-bool AreaObj::isInVolume(const sead::Vector3f& trans) const {
-    if (_48)
-        return mAreaShape->isInVolume(trans);
-    return false;
+void AreaObj::initStageSwitchKeeper()
+{
+        mStageSwitchKeeper = new StageSwitchKeeper;
 }
 
-}  // namespace al
+bool AreaObj::isInVolume( const sead::Vector3f& trans ) const
+{
+        if ( _48 )
+                return mAreaShape->isInVolume( trans );
+        return false;
+}
+
+} // namespace al

@@ -1,17 +1,19 @@
-#include <LiveActor/SensorFunction.h>
 #include <HitSensor/HitSensor.h>
+#include <LiveActor/SensorFunction.h>
 #include <Util/StringUtil.h>
 
-namespace alSensorFunction {
+namespace alSensorFunction
+{
 
-struct NameToType {
-    const char* name;
-    al::SensorType type;
+struct NameToType
+{
+        const char*    name;
+        al::SensorType type;
 };
 
 NON_MATCHING
 
-#define ALSENSORFUNCTION_ENTRY(TYPE) {#TYPE, al::SensorType_##TYPE},
+#define ALSENSORFUNCTION_ENTRY( TYPE ) { #TYPE, al::SensorType_##TYPE },
 
 // clang-format off
 const NameToType split(sNameToTypeLookupTable)[] = {
@@ -38,22 +40,26 @@ ALSENSORFUNCTION_ENTRY(WooGanSandBody)
 #undef ALSENSORFUNCTION_ENTRY
 
 NON_MATCHING
-al::SensorType findSensorTypeByName(const char* name) {
-    int size = sizeof(sNameToTypeLookupTable) / sizeof(sNameToTypeLookupTable[0]);
-    al::SensorType type = al::SensorType_MapObj;
-    for (int i = 0; i < size; i++) {
-        if (al::isEqualString(sNameToTypeLookupTable[i].name, name)) {
-            // nop before beq
-            __nop();
-            type = sNameToTypeLookupTable[i].type;
-            break;
+al::SensorType findSensorTypeByName( const char* name )
+{
+        int            size = sizeof( sNameToTypeLookupTable ) / sizeof( sNameToTypeLookupTable[ 0 ] );
+        al::SensorType type = al::SensorType_MapObj;
+        for ( int i = 0; i < size; i++ )
+        {
+                if ( al::isEqualString( sNameToTypeLookupTable[ i ].name, name ) )
+                {
+                        // nop before beq
+                        __nop();
+                        type = sNameToTypeLookupTable[ i ].type;
+                        break;
+                }
         }
-    }
-    return type;
+        return type;
 }
 
-void updateHitSensorsAll(al::LiveActor* actor) {
-    actor->getHitSensorKeeper()->update();
+void updateHitSensorsAll( al::LiveActor* actor )
+{
+        actor->getHitSensorKeeper()->update();
 }
 
-}  // namespace alSensorFunction
+} // namespace alSensorFunction

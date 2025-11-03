@@ -2,16 +2,18 @@
 
 #include <System/Byaml/ByamlIter.h>
 
-namespace al {
+namespace al
+{
 
-class CameraDashAngleTunerParam {
-    float mAddAngleMax;
-    float mZoomOutOffsetMax;
+class CameraDashAngleTunerParam
+{
+        float mAddAngleMax;
+        float mZoomOutOffsetMax;
 
 public:
-    CameraDashAngleTunerParam();
+        CameraDashAngleTunerParam();
 
-    void init(const ByamlIter* ticket);
+        void init( const ByamlIter* ticket );
 };
 
-}  // namespace al
+} // namespace al

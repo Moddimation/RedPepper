@@ -4,24 +4,32 @@
 #include <Rail/Rail.h>
 #include <Rail/RailRider.h>
 
-namespace al {
+namespace al
+{
 
-class RailKeeper {
-    Rail* mRail;
-    RailRider* mRailRider;
+class RailKeeper
+{
+        Rail*      mRail;
+        RailRider* mRailRider;
 
-    RailKeeper(const PlacementInfo& info);
+        RailKeeper( const PlacementInfo& info );
 
 public:
-    Rail* getRail() { return mRail; }
+        Rail* getRail()
+        {
+                return mRail;
+        }
 
-    RailRider* getRailRider() { return mRailRider; }
+        RailRider* getRailRider()
+        {
+                return mRailRider;
+        }
 
-    bool isExistRail() const;
+        bool isExistRail() const;
 
-    friend RailKeeper* tryCreateRailKeeper(const PlacementInfo& info);
+        friend RailKeeper* tryCreateRailKeeper( const PlacementInfo& info );
 };
 
-RailKeeper* tryCreateRailKeeper(const PlacementInfo& info);
+RailKeeper* tryCreateRailKeeper( const PlacementInfo& info );
 
-}  // namespace al
+} // namespace al

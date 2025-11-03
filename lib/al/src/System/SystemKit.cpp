@@ -1,23 +1,28 @@
-#include <System/SystemKit.h>
 #include <Application/Application.h> // GAMEUSE
 #include <Save/SaveDataDirector.h>
+#include <System/SystemKit.h>
 
-namespace al {
+namespace al
+{
 
-void SystemKit::createFileLoader(int r1) {
-    mFileLoader = new FileLoader(r1);
+void SystemKit::createFileLoader( int r1 )
+{
+        mFileLoader = new FileLoader( r1 );
 }
 
-void SystemKit::createSaveDataSystem(u32 r1, s32 r2) {
-    mSaveDataDirector = new SaveDataDirector(r1, r2);
+void SystemKit::createSaveDataSystem( u32 r1, s32 r2 )
+{
+        mSaveDataDirector = new SaveDataDirector( r1, r2 );
 }
 
-}  // namespace al
+} // namespace al
 
-namespace alProjectInterface {
+namespace alProjectInterface
+{
 
-al::SystemKit* getSystemKit() {
-    return al::getApplication()->mSystemKit;
+al::SystemKit* getSystemKit()
+{
+        return al::getApplication()->mSystemKit;
 }
 
-}  // namespace alProjectInterface
+} // namespace alProjectInterface

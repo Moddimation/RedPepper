@@ -4,32 +4,34 @@
 #include <LiveActor/ActorInitInfo.h>
 #include <Stage/StageSwitchAccesser.h>
 
-namespace al {
+namespace al
+{
 
-class StageSwitchKeeper {
-    StageSwitchAccesser* mSwitches;
-    int mSwitchCount;
+class StageSwitchKeeper
+{
+        StageSwitchAccesser* mSwitches;
+        int                  mSwitchCount;
 
 public:
-    StageSwitchKeeper();
+        StageSwitchKeeper();
 
-    StageSwitchAccesser* getStageSwitchAccesser(int type);
+        StageSwitchAccesser* getStageSwitchAccesser( int type );
 };
 
-class IUseStageSwitch {
+class IUseStageSwitch
+{
 public:
-    virtual StageSwitchKeeper* getStageSwitchKeeper() const = 0;
-    virtual void initStageSwitchKeeper() = 0;
+        virtual StageSwitchKeeper* getStageSwitchKeeper() const = 0;
+        virtual void               initStageSwitchKeeper()      = 0;
 };
 
-void initStageSwitchAppear(IUseStageSwitch* p, const ActorInitInfo& info);
-void initStageSwitchKill(IUseStageSwitch* p, const ActorInitInfo& info);
-void initStageSwitchA(IUseStageSwitch* p, const ActorInitInfo& info);
-void initStageSwitchB(IUseStageSwitch* p, const ActorInitInfo& info);
+void initStageSwitchAppear( IUseStageSwitch* p, const ActorInitInfo& info );
+void initStageSwitchKill( IUseStageSwitch* p, const ActorInitInfo& info );
+void initStageSwitchA( IUseStageSwitch* p, const ActorInitInfo& info );
+void initStageSwitchB( IUseStageSwitch* p, const ActorInitInfo& info );
 
-bool isOnSwitchA(IUseStageSwitch* p);
+bool isOnSwitchA( IUseStageSwitch* p );
 
-bool listenStageSwitchOnAppear(IUseStageSwitch* p, const FunctorBase& onFunctor,
-                               const FunctorBase& offFunctor);
+bool listenStageSwitchOnAppear( IUseStageSwitch* p, const FunctorBase& onFunctor, const FunctorBase& offFunctor );
 
-}  // namespace al
+} // namespace al

@@ -3,9 +3,10 @@
 #include <HitSensor/HitSensor.h>
 #include <LiveActor/LiveActor.h>
 
-namespace alSensorFunction {
+namespace alSensorFunction
+{
 
-al::SensorType findSensorTypeByName(const char* name);
-void updateHitSensorsAll(al::LiveActor* actor);
+al::SensorType findSensorTypeByName( const char* name );
+void           updateHitSensorsAll( al::LiveActor* actor );
 
-}  // namespace alSensorFunction
+} // namespace alSensorFunction

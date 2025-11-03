@@ -2,9 +2,11 @@
 
 #include <LiveActor/LiveActor.h>
 
-class alActorPoseFunction {
+class alActorPoseFunction
+{
 public:
-    static void calcBaseMtx(sead::Matrix34f* out, const al::LiveActor* actor) {
-        actor->mActorPoseKeeper->calcBaseMtx(out);
-    }
+        static void calcBaseMtx( sead::Matrix34f* out, const al::LiveActor* actor )
+        {
+                actor->mActorPoseKeeper->calcBaseMtx( out );
+        }
 };

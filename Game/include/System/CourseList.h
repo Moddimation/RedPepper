@@ -3,58 +3,66 @@
 #include <Resource/Resource.h>
 #include <System/Byaml/ByamlIter.h>
 
-class CourseList {
-    struct Course {
-        enum CourseType {
-            CourseType_Normal,
-            CourseType_KoopaCastle,
-            CourseType_KoopaFortress,
-            CourseType_KoopaBattleShip,
-            CourseType_Championship,
-            CourseType_KinopioHousePresent,
-            CourseType_KinopioHouseAlbum,
-            CourseType_MysteryBox,
-            CourseType_Dokan,
-            CourseType_Empty = 10
+class CourseList
+{
+public:
+        void init( const al::Resource* gameSystemDataTable );
+
+private:
+        struct Course
+        {
+                enum CourseType
+                {
+                        CourseType_Normal,
+                        CourseType_KoopaCastle,
+                        CourseType_KoopaFortress,
+                        CourseType_KoopaBattleShip,
+                        CourseType_Championship,
+                        CourseType_KinopioHousePresent,
+                        CourseType_KinopioHouseAlbum,
+                        CourseType_MysteryBox,
+                        CourseType_Dokan,
+                        CourseType_Empty = 10
+                };
+
+                int         mCourseType;
+                const char* mStageName;
+                int         mScenario;
+                const char* mMiniatureModelName;
+                int         mCoinCollectNum;
+
+                Course( const al::ByamlIter* course );
+
+                static bool isCourseTypeStage( CourseType type );
         };
 
-        int mCourseType;
-        const char* mStageName;
-        int mScenario;
-        const char* mMiniatureModelName;
-        int mCoinCollectNum;
+        struct World
+        {
+                Course** mCourses;
+                int      mNumCourses;
+                bool     mIsSpecialWorld;
 
-        Course(const al::ByamlIter* course);
+                World( const al::ByamlIter* world );
+        };
 
-        static bool isCourseTypeStage(CourseType type);
-    };
+        struct List
+        {
+                World** mWorlds;
+                int     mNumWorlds;
 
-    struct World {
-        Course** mCourses;
-        int mNumCourses;
-        bool mIsSpecialWorld;
+                List( const al::ByamlIter& courseListIter );
+        };
 
-        World(const al::ByamlIter* world);
-    };
-
-    struct List {
-        World** mWorlds;
-        int mNumWorlds;
-
-        List(const al::ByamlIter& courseListIter);
-    };
-
-    List* mCourseList;
-    int mNumStages;
+        List* mCourseList;
+        int   mNumStages;
 
 public:
-    CourseList();
-
-    void init(const al::Resource* gameSystemDataTable);
+        CourseList();
 };
 
-namespace rp {
+namespace rp
+{
 
 CourseList* getCourseList();
 
-}  // namespace rp
+} // namespace rp

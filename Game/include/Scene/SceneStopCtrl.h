@@ -1,7 +1,8 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-void stopScene(int frames);
+void stopScene( int frames );
 
-}  // namespace al
+} // namespace al

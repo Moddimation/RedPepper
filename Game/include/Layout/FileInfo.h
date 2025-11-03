@@ -2,17 +2,20 @@
 
 #include <Layout/LayoutActor.h>
 
-class FileInfo : public al::LayoutActor {
-    class FileSelect* mFileSelect;
-    int _34;
-    int _38;
-    int _3C;
-    bool _40;
-    void* _44;
-    bool _48;
+class FileInfo : public al::LayoutActor
+{
+private:
+        class FileSelect* mFileSelect;
+        int               _34;
+        int               _38;
+        int               _3C;
+        bool              _40;
+        void*             _44;
+        bool              _48;
 
 public:
-    FileInfo(const al::LayoutInitInfo& info, FileSelect* fileSelect);
+        virtual void appear();
 
-    virtual void appear();
+public:
+        FileInfo( const al::LayoutInitInfo& info, FileSelect* fileSelect );
 };

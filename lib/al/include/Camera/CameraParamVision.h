@@ -2,19 +2,21 @@
 
 #include <System/Byaml/ByamlIter.h>
 
-namespace al {
+namespace al
+{
 
-class CameraParamVision {
-    float mFovyDegree;
-    float mStereovisionDistance;
-    float mStereovisionDepth;
-    float mNearClipDistance;
-    float mFarClipDistance;
+class CameraParamVision
+{
+        float mFovyDegree;
+        float mStereovisionDistance;
+        float mStereovisionDepth;
+        float mNearClipDistance;
+        float mFarClipDistance;
 
 public:
-    CameraParamVision();
+        CameraParamVision();
 
-    bool init(const ByamlIter* ticket);
+        bool init( const ByamlIter* ticket );
 };
 
-}  // namespace al
+} // namespace al

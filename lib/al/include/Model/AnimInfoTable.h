@@ -1,7 +1,10 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class AnimInfoTable {};
+class AnimInfoTable
+{
+};
 
-}  // namespace al
+} // namespace al

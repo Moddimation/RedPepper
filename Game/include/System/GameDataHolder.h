@@ -5,13 +5,17 @@
 #include "System/SaveDataAccessSequence.h"
 #include "System/SaveDataFile.h"
 
-class GameDataHolder {
-    GameDataFile* mGameFile;
-    SaveDataFile* mSaveFiles;
-    int mCurSaveFileIdx;
-    SaveDataAccessSequence* mSaveAccess;
+class GameDataHolder
+{
+private:
+        GameDataFile*           mGameFile;
+        SaveDataFile*           mSaveFiles;
+        int                     mCurSaveFileIdx;
+        SaveDataAccessSequence* mSaveAccess;
 
 public:
-    GameDataHolder(CourseList* courseList);
-    void createSaveDataAccessSequence(const al::LayoutInitInfo& info);
+        void createSaveDataAccessSequence( const al::LayoutInitInfo& info );
+
+public:
+        GameDataHolder( CourseList* courseList );
 };

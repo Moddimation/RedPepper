@@ -1,7 +1,10 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class AnimPlayerSkl {};
+class AnimPlayerSkl
+{
+};
 
-}  // namespace al
+} // namespace al

@@ -2,15 +2,17 @@
 
 #include <filedevice/seadFileDevice.h>
 
-namespace al {
+namespace al
+{
 
-class FileLoader {
-    u8 _0[0x30];
+class FileLoader
+{
+        u8 _0[ 0x30 ];
 
 public:
-    FileLoader(int);
+        FileLoader( int );
 
-    void loadArchive(const sead::SafeString& archive, sead::FileDevice*);
+        void loadArchive( const sead::SafeString& archive, sead::FileDevice* );
 };
 
-}  // namespace al
+} // namespace al

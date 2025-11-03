@@ -1,19 +1,24 @@
 #pragma once
 
-#include <math/seadMatrix.h>
 #include <Model/alModelCtr.h>
+#include <math/seadMatrix.h>
 
-namespace al {
+namespace al
+{
 
-class ModelKeeper {
-    alModelCtr* mModel;
+class ModelKeeper
+{
+        alModelCtr* mModel;
 
 public:
-    alModelCtr* getModel() const { return mModel; }
+        alModelCtr* getModel() const
+        {
+                return mModel;
+        }
 
-    void hide();
+        void hide();
 };
 
-const sead::Matrix34f* getJointMtxPtr(ModelKeeper* keeper, const char* jointName);
+const sead::Matrix34f* getJointMtxPtr( ModelKeeper* keeper, const char* jointName );
 
-}  // namespace al
+} // namespace al

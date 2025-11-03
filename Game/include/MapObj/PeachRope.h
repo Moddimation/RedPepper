@@ -2,10 +2,12 @@
 
 #include <MapObj/MapObjActor.h>
 
-class PeachRope : public al::MapObjActor {
+class PeachRope : public al::MapObjActor
+{
 public:
-    PeachRope(const sead::SafeString& name);
+        virtual void init( const al::ActorInitInfo& info );
+        virtual void kill();
 
-    virtual void init(const al::ActorInitInfo& info);
-    virtual void kill();
+public:
+        PeachRope( const sead::SafeString& name );
 };

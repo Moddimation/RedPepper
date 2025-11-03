@@ -1,15 +1,18 @@
 #include <Stage/StageSwitchKeeper.h>
 
-namespace al {
+namespace al
+{
 
 NON_MATCHING
-StageSwitchKeeper::StageSwitchKeeper() : mSwitches(nullptr), mSwitchCount(0) {
-    mSwitchCount = 5;  // optimized away
-    mSwitches = new StageSwitchAccesser[5];
+StageSwitchKeeper::StageSwitchKeeper() : mSwitches( nullptr ), mSwitchCount( 0 )
+{
+        mSwitchCount = 5; // optimized away
+        mSwitches    = new StageSwitchAccesser[ 5 ];
 }
 
-StageSwitchAccesser* StageSwitchKeeper::getStageSwitchAccesser(int type) {
-    return &mSwitches[type];
+StageSwitchAccesser* StageSwitchKeeper::getStageSwitchAccesser( int type )
+{
+        return &mSwitches[ type ];
 }
 
-}  // namespace al
+} // namespace al

@@ -2,18 +2,20 @@
 
 #include <Scene/SceneObjHolder.h>
 
-namespace SceneObjFactory {
+namespace SceneObjFactory
+{
 
 al::SceneObjHolder* createSceneObjHolder();
 
-}  // namespace SceneObjFactory
+} // namespace SceneObjFactory
 
-enum SceneObjType {
-    SceneObjType_CameraShaker = 1,
-    SceneObjType_SwitchAreaDirector = 3,
-    SceneObjType_AudioDirector = 4,  // not sure
-    SceneObjType_CoinRotater = 7,
-    SceneObjType_CoinCollectInfoKeeper = 9,  // not sure
-    SceneObjType_ItemHolder = 10,
-    SceneObjType_GhostPlayerRecorder = 20
+enum SceneObjType
+{
+        SceneObjType_CameraShaker          = 1,
+        SceneObjType_SwitchAreaDirector    = 3,
+        SceneObjType_AudioDirector         = 4, // not sure
+        SceneObjType_CoinRotater           = 7,
+        SceneObjType_CoinCollectInfoKeeper = 9, // not sure
+        SceneObjType_ItemHolder            = 10,
+        SceneObjType_GhostPlayerRecorder   = 20
 };

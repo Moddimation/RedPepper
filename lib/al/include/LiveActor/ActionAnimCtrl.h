@@ -1,10 +1,12 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class ActionAnimCtrl {
+class ActionAnimCtrl
+{
 public:
-    const char* getPlayingActionName() const;
+        const char* getPlayingActionName() const;
 };
 
-}  // namespace al
+} // namespace al

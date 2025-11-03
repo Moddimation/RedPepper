@@ -2,23 +2,26 @@
 
 #include <Stage/StageSwitchType.h>
 
-namespace al {
+namespace al
+{
 
-const char* getStageSwitchName(StageSwitchType type) {
-    switch (type) {
-    case StageSwitchType_Appear:
-        return "SwitchAppear";
-    case StageSwitchType_Kill:
-        return "SwitchKill";
-    case StageSwitchType_DeadOn:
-        return "SwitchDeadOn";
-    case StageSwitchType_A:
-        return "SwitchA";
-    case StageSwitchType_B:
-        return "SwitchB";
-    default:
-        return "";
-    }
+const char* getStageSwitchName( StageSwitchType type )
+{
+        switch ( type )
+        {
+        case StageSwitchType_Appear:
+                return "SwitchAppear";
+        case StageSwitchType_Kill:
+                return "SwitchKill";
+        case StageSwitchType_DeadOn:
+                return "SwitchDeadOn";
+        case StageSwitchType_A:
+                return "SwitchA";
+        case StageSwitchType_B:
+                return "SwitchB";
+        default:
+                return "";
+        }
 }
 
-}  // namespace al
+} // namespace al

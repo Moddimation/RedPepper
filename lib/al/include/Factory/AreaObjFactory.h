@@ -3,9 +3,10 @@
 #include <AreaObj/AreaObj.h>
 #include <Factory/Factory.h>
 
-namespace al {
+namespace al
+{
 
-typedef CreateFuncPtr<AreaObj>::Type CreateAreaObjFuncPtr;
+typedef CreateFuncPtr<AreaObj>::Type        CreateAreaObjFuncPtr;
 typedef NameToCreator<CreateAreaObjFuncPtr> NameToAreaObjCreator;
 
-}  // namespace al
+} // namespace al

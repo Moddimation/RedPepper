@@ -1,27 +1,33 @@
 #pragma once
 
-#include <prim/seadSafeString.h>
 #include <Functor/FunctorBase.h>
+#include <prim/seadSafeString.h>
 
-namespace sead {
+namespace sead
+{
 class DelegateThread;
-}  // namespace sead
+} // namespace sead
 
-namespace al {
+namespace al
+{
 
-class AsyncFunctorThread {
-    class sead::DelegateThread* mSeadThread;
-    const FunctorBase* mFunctor;
-    bool mIsDone;
+class AsyncFunctorThread
+{
+        class sead::DelegateThread* mSeadThread;
+        const FunctorBase*          mFunctor;
+        bool                        mIsDone;
 
 public:
-    AsyncFunctorThread(const sead::SafeString& name, const FunctorBase& functor, int);
+        AsyncFunctorThread( const sead::SafeString& name, const FunctorBase& functor, int );
 
-    virtual ~AsyncFunctorThread();
+        virtual ~AsyncFunctorThread();
 
-    void start();
+        void start();
 
-    bool isDone() const { return mIsDone; }
+        bool isDone() const
+        {
+                return mIsDone;
+        }
 };
 
-}  // namespace al
+} // namespace al

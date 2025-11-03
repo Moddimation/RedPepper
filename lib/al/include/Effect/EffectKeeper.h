@@ -2,20 +2,23 @@
 
 #include <math/seadVector.h>
 
-namespace al {
+namespace al
+{
 
-class EffectKeeper {
+class EffectKeeper
+{
 public:
-    void update();
-    void deleteAndClearEffectAll();
+        void update();
+        void deleteAndClearEffectAll();
 };
 
-class IUseEffectKeeper {
+class IUseEffectKeeper
+{
 public:
-    virtual EffectKeeper* getEffectKeeper() const = 0;
+        virtual EffectKeeper* getEffectKeeper() const = 0;
 };
 
-void emitEffect(IUseEffectKeeper* p, const char* name, const sead::Vector3f* at = nullptr);
-bool tryEmitEffect(IUseEffectKeeper* p, const char* name);
+void emitEffect( IUseEffectKeeper* p, const char* name, const sead::Vector3f* at = nullptr );
+bool tryEmitEffect( IUseEffectKeeper* p, const char* name );
 
-}  // namespace al
+} // namespace al

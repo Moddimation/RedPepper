@@ -2,21 +2,28 @@
 
 #include <Layout/WipeSimple.h>
 
-namespace al {
+namespace al
+{
 
-class WipeSimpleTopBottom {
-    WipeSimple* mTop;
-    WipeSimple* mBottom;
+class WipeSimpleTopBottom
+{
+        WipeSimple* mTop;
+        WipeSimple* mBottom;
 
 public:
-    WipeSimpleTopBottom(const char* name, const char* archive, const char*,
-                        const LayoutInitInfo& info, const char* subArchive);
+        WipeSimpleTopBottom( const char* name, const char* archive, const char*, const LayoutInitInfo& info, const char* subArchive );
 
-    inline WipeSimple* getTop() const { return mTop; }
+        inline WipeSimple* getTop() const
+        {
+                return mTop;
+        }
 
-    inline WipeSimple* getBottom() const { return mBottom; }
+        inline WipeSimple* getBottom() const
+        {
+                return mBottom;
+        }
 
-    bool isCloseEnd() const;
+        bool isCloseEnd() const;
 };
 
-}  // namespace al
+} // namespace al

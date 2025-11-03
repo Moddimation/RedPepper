@@ -2,22 +2,24 @@
 
 #include <Execute/ExecuteDirector.h>
 
-namespace al {
+namespace al
+{
 
-class CollisionDirector : public IUseExecutor {
-    void* _4;
-    int _8;
-    int _C;
-    void* _10;
-    void* _14;
-    void* _18;
+class CollisionDirector : public IUseExecutor
+{
+        void* _4;
+        int   _8;
+        int   _C;
+        void* _10;
+        void* _14;
+        void* _18;
 
 public:
-    CollisionDirector();
+        CollisionDirector();
 
-    virtual void execute();
+        virtual void execute();
 
-    void endInit();
+        void endInit();
 };
 
-}  // namespace al
+} // namespace al

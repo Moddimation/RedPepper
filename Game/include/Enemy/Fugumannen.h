@@ -1,20 +1,25 @@
 #pragma once
 
-#include "Enemy/EnemyStateBlowDown.h"
 #include <MapObj/MapObjActor.h>
 
-class Fugumannen : public al::MapObjActor {
-    float mRailMoveSpeed;
-    EnemyStateBlowDown* mStateBlowDown;
+#include "Enemy/EnemyStateBlowDown.h"
+
+class Fugumannen : public al::MapObjActor
+{
+private:
+        float               mRailMoveSpeed;
+        EnemyStateBlowDown* mStateBlowDown;
 
 public:
-    Fugumannen(const sead::SafeString& name);
+        void exeMove();
+        void exeMove2();
+        void exeBlowDown();
 
-    virtual void init(const al::ActorInitInfo& info);
-    virtual void attackSensor(al::HitSensor* me, al::HitSensor* other);
-    virtual bool receiveMsg(u32 msg, al::HitSensor* other, al::HitSensor* me);
+public:
+        virtual void init( const al::ActorInitInfo& info );
+        virtual void attackSensor( al::HitSensor* me, al::HitSensor* other );
+        virtual bool receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me );
 
-    void exeMove();
-    void exeMove2();
-    void exeBlowDown();
+public:
+        Fugumannen( const sead::SafeString& name );
 };

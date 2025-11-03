@@ -1,8 +1,8 @@
 #pragma once
 
+namespace al
+{
 
-namespace al {
+void initRandomSeed( u32 seed );
 
-void initRandomSeed(u32 seed);
-
-}  // namespace al
+} // namespace al

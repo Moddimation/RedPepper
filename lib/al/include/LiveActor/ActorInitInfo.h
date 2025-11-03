@@ -1,38 +1,40 @@
 #pragma once
 
-#include <prim/seadSafeString.h>
 #include <Placement/PlacementInfo.h>
 #include <System/Byaml/ByamlIter.h>
+#include <prim/seadSafeString.h>
 
-namespace al {
+namespace al
+{
 
 class LiveActorKit;
 class LayoutInitInfo;
 
-class ActorInitInfo {
+class ActorInitInfo
+{
 public:
-    const PlacementInfo* mPlacementInfo;
-    void* _4;
-    void* _8;
-    void* _C;
-    void* _10;
-    int mViewId;
+        const PlacementInfo* mPlacementInfo;
+        void*                _4;
+        void*                _8;
+        void*                _C;
+        void*                _10;
+        int                  mViewId;
 
-    ActorInitInfo();
+        ActorInitInfo();
 
-    void initViewIdHost(const PlacementInfo* placement, const ActorInitInfo& hostInfo);
-    void initViewIdSelf(const PlacementInfo* placement, const ActorInitInfo& hostInfo);
+        void initViewIdHost( const PlacementInfo* placement, const ActorInitInfo& hostInfo );
+        void initViewIdSelf( const PlacementInfo* placement, const ActorInitInfo& hostInfo );
 
-    void initNew(const PlacementInfo* placement, const ActorInitInfo& baseInfo);
+        void initNew( const PlacementInfo* placement, const ActorInitInfo& baseInfo );
 
-    friend const PlacementInfo& getPlacementInfo(const ActorInitInfo& info);
+        friend const PlacementInfo& getPlacementInfo( const ActorInitInfo& info );
 };
 
-inline const PlacementInfo& getPlacementInfo(const ActorInitInfo& info) {
-    return *info.mPlacementInfo;
+inline const PlacementInfo& getPlacementInfo( const ActorInitInfo& info )
+{
+        return *info.mPlacementInfo;
 }
 
-void initActorInitInfo(ActorInitInfo* info, const PlacementInfo* placement,
-                       const LayoutInitInfo& layoutInfo, LiveActorKit*);
+void initActorInitInfo( ActorInitInfo* info, const PlacementInfo* placement, const LayoutInitInfo& layoutInfo, LiveActorKit* );
 
-}  // namespace al
+} // namespace al

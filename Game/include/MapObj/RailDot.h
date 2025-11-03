@@ -2,11 +2,14 @@
 
 #include <MapObj/MapObjActor.h>
 
-class RailDot : public al::MapObjActor {
+class RailDot : public al::MapObjActor
+{
 public:
-    RailDot(const sead::SafeString& name);
+        void exeWait();
 
-    virtual void init(const al::ActorInitInfo& info);
+public:
+        virtual void init( const al::ActorInitInfo& info );
 
-    void exeWait();
+public:
+        RailDot( const sead::SafeString& name );
 };

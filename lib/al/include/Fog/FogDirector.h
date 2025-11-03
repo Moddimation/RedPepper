@@ -3,16 +3,18 @@
 #include <Execute/ExecuteDirector.h>
 #include <System/Byaml/ByamlIter.h>
 
-namespace al {
+namespace al
+{
 
-class FogDirector : public IUseExecutor {
-    u8* _4[0x78];
-    ByamlIter _7C;
+class FogDirector : public IUseExecutor
+{
+        u8*       _4[ 0x78 ];
+        ByamlIter _7C;
 
 public:
-    virtual void execute();
+        virtual void execute();
 
-    void endInit();
+        void endInit();
 };
 
-}  // namespace al
+} // namespace al

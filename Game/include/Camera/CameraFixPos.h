@@ -2,15 +2,18 @@
 
 #include <Camera/Camera.h>
 
-class CameraFixPos : public al::Camera {
-    float _4C;
-    float _50;
-    float _54;
-    float _58;
+class CameraFixPos : public al::Camera
+{
+private:
+        float _4C;
+        float _50;
+        float _54;
+        float _58;
 
 public:
-    CameraFixPos(const char* name);
+        virtual void load( const al::ByamlIter* ticket );
+        virtual void calc();
 
-    virtual void load(const al::ByamlIter* ticket);
-    virtual void calc();
+public:
+        CameraFixPos( const char* name );
 };

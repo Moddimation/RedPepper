@@ -3,22 +3,27 @@
 #include <Clipping/ClippingActorHolder.h>
 #include <Execute/ExecuteDirector.h>
 
-namespace al {
+namespace al
+{
 
-class ClippingDirector : public IUseExecutor {
-    int _4;
-    ClippingActorHolder* mClippingActorHolder;
-    void* _C;
-    void* _10;
+class ClippingDirector : public IUseExecutor
+{
+        int                  _4;
+        ClippingActorHolder* mClippingActorHolder;
+        void*                _C;
+        void*                _10;
 
 public:
-    ClippingDirector(int);
+        ClippingDirector( int );
 
-    virtual void execute();
+        virtual void execute();
 
-    void endInit();
+        void endInit();
 
-    ClippingActorHolder* getClippingActorHolder() { return mClippingActorHolder; }
+        ClippingActorHolder* getClippingActorHolder()
+        {
+                return mClippingActorHolder;
+        }
 };
 
-}  // namespace al
+} // namespace al

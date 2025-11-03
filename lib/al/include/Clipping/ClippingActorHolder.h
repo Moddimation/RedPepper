@@ -3,21 +3,23 @@
 #include <Clipping/ClippingActorInfoList.h>
 #include <HitSensor/HitSensor.h>
 
-namespace al {
+namespace al
+{
 
-class ClippingActorHolder {
-    int _0;
-    int _4;
-    ClippingActorInfoList* _8;
-    ClippingActorInfoList* _C;
-    ClippingActorInfoList* _10;
-    ClippingActorInfoList* _14;
+class ClippingActorHolder
+{
+        int                    _0;
+        int                    _4;
+        ClippingActorInfoList* _8;
+        ClippingActorInfoList* _C;
+        ClippingActorInfoList* _10;
+        ClippingActorInfoList* _14;
 
 public:
-    ClippingActorHolder(int);
+        ClippingActorHolder( int );
 
-    void invalidateClipping(LiveActor* actor);
-    void validateClipping(LiveActor* actor);
+        void invalidateClipping( LiveActor* actor );
+        void validateClipping( LiveActor* actor );
 };
 
-}  // namespace al
+} // namespace al

@@ -2,10 +2,12 @@
 
 #include <Layout/LayoutActor.h>
 
-class CourseSelectMario : public al::LayoutActor {
-    int _30;
-    int _34;
+class CourseSelectMario : public al::LayoutActor
+{
+private:
+        int _30;
+        int _34;
 
 public:
-    CourseSelectMario(const al::LayoutInitInfo& info);
+        CourseSelectMario( const al::LayoutInitInfo& info );
 };

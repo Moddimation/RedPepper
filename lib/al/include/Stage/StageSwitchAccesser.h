@@ -3,20 +3,21 @@
 #include <Placement/PlacementInfo.h>
 #include <Stage/StageSwitchType.h>
 
-namespace al {
+namespace al
+{
 
-class StageSwitchAccesser {
-    int mId;
-    int mType;
+class StageSwitchAccesser
+{
+        int mId;
+        int mType;
 
 public:
-    StageSwitchAccesser();
+        StageSwitchAccesser();
 
-    int initWithPlacementInfo(StageSwitchType type1, const PlacementInfo& info,
-                              StageSwitchType type2);
+        int initWithPlacementInfo( StageSwitchType type1, const PlacementInfo& info, StageSwitchType type2 );
 
-    bool isTypeKillDeadOn() const;
-    int FUN_0024e734() const;  // ?
+        bool isTypeKillDeadOn() const;
+        int  FUN_0024e734() const; // ?
 };
 
-}  // namespace al
+} // namespace al

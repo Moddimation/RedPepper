@@ -1,31 +1,40 @@
 #include "MapObj/CoinRotater.h"
-#include "Scene/SceneObjFactory.h"
+
 #include <Scene/SceneObjHolder.h>
 
-NON_MATCHING  // need to find out what all the space at 0x68 is used for
+#include "Scene/SceneObjFactory.h"
+
+NON_MATCHING // need to find out what all the space at 0x68 is used for
 CoinRotater::CoinRotater()
-    : LiveActor("コイン回転管理") {}
-
-const char* CoinRotater::getSceneObjName() const {
-    return "コインローテータ";
+    : LiveActor( "コイン回転管理" )
+{
 }
 
-extern "C" void FUN_00277de0(al::LiveActor*, const al::ActorInitInfo&);
-
-void CoinRotater::initAfterPlacementSceneObj(const al::ActorInitInfo& info) {
-    FUN_00277de0(this, info);
-    makeActorAppeared();
+const char* CoinRotater::getSceneObjName() const
+{
+        return "コインローテータ";
 }
 
-namespace rp {
+extern "C" void FUN_00277de0( al::LiveActor*, const al::ActorInitInfo& );
 
-void createCoinRotater() {
-    al::createSceneObj(SceneObjType_CoinRotater);
+void CoinRotater::initAfterPlacementSceneObj( const al::ActorInitInfo& info )
+{
+        FUN_00277de0( this, info );
+        makeActorAppeared();
 }
 
-float getCoinRotateY() {
-    CoinRotater* rotater = static_cast<CoinRotater*>(al::getSceneObj(SceneObjType_CoinRotater));
-    return rotater->getRotateY();
+namespace rp
+{
+
+void createCoinRotater()
+{
+        al::createSceneObj( SceneObjType_CoinRotater );
 }
 
-}  // namespace rp
+float getCoinRotateY()
+{
+        CoinRotater* rotater = static_cast<CoinRotater*>( al::getSceneObj( SceneObjType_CoinRotater ) );
+        return rotater->getRotateY();
+}
+
+} // namespace rp

@@ -1,9 +1,11 @@
 #include <Math/MathUtil.h>
 
-namespace al {
+namespace al
+{
 
-bool isNearZero(float value, float range) {
-    return (value < 0 ? -value : value) < range;
+bool isNearZero( float value, float range )
+{
+        return ( value < 0 ? -value : value ) < range;
 }
 
-}  // namespace al
+} // namespace al

@@ -1,46 +1,63 @@
 #pragma once
 
-
-namespace al {
+namespace al
+{
 
 struct Nerve;
 class IUseNerve;
 class NerveStateCtrl;
 class NerveActionCtrl;
 
-class NerveKeeper {
-    IUseNerve* mHost;
-    const Nerve* mEndNerve;
-    const Nerve* mNerve;
-    int mStep;
-    NerveStateCtrl* mStateCtrl;
-    NerveActionCtrl* mActionCtrl;
+class NerveKeeper
+{
+        IUseNerve*       mHost;
+        const Nerve*     mEndNerve;
+        const Nerve*     mNerve;
+        int              mStep;
+        NerveStateCtrl*  mStateCtrl;
+        NerveActionCtrl* mActionCtrl;
 
 public:
-    NerveKeeper(IUseNerve* host, const Nerve* nrv, int maxNerveStates = 0);
+        NerveKeeper( IUseNerve* host, const Nerve* nrv, int maxNerveStates = 0 );
 
-    const Nerve* getCurrentNerve() const;
+        const Nerve* getCurrentNerve() const;
 
-    void initNerveAction(NerveActionCtrl* p) { mActionCtrl = p; }
+        void initNerveAction( NerveActionCtrl* p )
+        {
+                mActionCtrl = p;
+        }
 
-    void update();
-    void tryChangeNerve();
-    void setNerve(const Nerve* nerve);
+        void update();
+        void tryChangeNerve();
+        void setNerve( const Nerve* nerve );
 
-    IUseNerve* getHost() { return mHost; }
+        IUseNerve* getHost()
+        {
+                return mHost;
+        }
 
-    int getStep() { return mStep; }
+        int getStep()
+        {
+                return mStep;
+        }
 
-    NerveStateCtrl* getStateCtrl() { return mStateCtrl; }
+        NerveStateCtrl* getStateCtrl()
+        {
+                return mStateCtrl;
+        }
 
-    NerveActionCtrl* getActionCtrl() { return mActionCtrl; }
+        NerveActionCtrl* getActionCtrl()
+        {
+                return mActionCtrl;
+        }
 };
 
-class IUseNerve {
+class IUseNerve
+{
 public:
-    virtual NerveKeeper* getNerveKeeper() const = 0;
+        virtual NerveKeeper* getNerveKeeper() const = 0;
 };
 
-static_assert(sizeof(NerveKeeper) == 0x18, "");
+static_assert( sizeof( NerveKeeper ) == 0x18, "" );
 
-}  // namespace al
+} // namespace al

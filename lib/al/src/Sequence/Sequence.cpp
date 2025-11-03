@@ -1,34 +1,43 @@
 #include <Sequence/Sequence.h>
 
-namespace al {
+namespace al
+{
 
-void Sequence::init() {}
-
-void Sequence::unk1() {
-    if (mCurrentScene)
-        mCurrentScene->drawMainTop();
+void Sequence::init()
+{
 }
 
-void Sequence::unk2() {
-    if (mCurrentScene)
-        mCurrentScene->drawSubTop();
+void Sequence::unk1()
+{
+        if ( mCurrentScene )
+                mCurrentScene->drawMainTop();
 }
 
-void Sequence::unk3() {
-    if (mCurrentScene)
-        mCurrentScene->drawMainBottom();
+void Sequence::unk2()
+{
+        if ( mCurrentScene )
+                mCurrentScene->drawSubTop();
 }
 
-bool Sequence::isDisposable() const {
-    return true;
+void Sequence::unk3()
+{
+        if ( mCurrentScene )
+                mCurrentScene->drawMainBottom();
 }
 
-bool Sequence::unk4() {
-    return false;
+bool Sequence::isDisposable() const
+{
+        return true;
 }
 
-int Sequence::unk5() {
-    return unk6() ^ 1;
+bool Sequence::unk4()
+{
+        return false;
 }
 
-}  // namespace al
+int Sequence::unk5()
+{
+        return unk6() ^ 1;
+}
+
+} // namespace al

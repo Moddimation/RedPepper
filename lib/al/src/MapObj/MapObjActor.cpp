@@ -1,7 +1,10 @@
 #include <MapObj/MapObjActor.h>
 
-namespace al {
+namespace al
+{
 
-MapObjActor::MapObjActor(const sead::SafeString& name) : LiveActor(name.cstr()) {}
+MapObjActor::MapObjActor( const sead::SafeString& name ) : LiveActor( name.cstr() )
+{
+}
 
-}  // namespace al
+} // namespace al

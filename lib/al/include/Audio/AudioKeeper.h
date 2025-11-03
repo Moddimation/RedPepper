@@ -1,18 +1,21 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class AudioKeeper {
+class AudioKeeper
+{
 public:
-    void update();
+        void update();
 };
 
-class IUseAudioKeeper {
-    virtual void v1();
-    virtual void v2();
+class IUseAudioKeeper
+{
+        virtual void v1();
+        virtual void v2();
 
 public:
-    virtual AudioKeeper* getAudioKeeper() const = 0;
+        virtual AudioKeeper* getAudioKeeper() const = 0;
 };
 
-}  // namespace al
+} // namespace al

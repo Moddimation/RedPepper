@@ -2,19 +2,29 @@
 
 #include <Functor/FunctorBase.h>
 
-namespace al {
+namespace al
+{
 
 template <typename T, typename F>
-class FunctorV0M : public FunctorBase {
-    T mParent;
-    F mFuncPtr;
+class FunctorV0M : public FunctorBase
+{
+        T mParent;
+        F mFuncPtr;
 
 public:
-    FunctorV0M(T parent, F funcPtr) : mFuncPtr(funcPtr), mParent(parent) {}
+        FunctorV0M( T parent, F funcPtr ) : mFuncPtr( funcPtr ), mParent( parent )
+        {
+        }
 
-    virtual void operator()() const { (mParent->*mFuncPtr)(); }
+        virtual void operator()() const
+        {
+                ( mParent->*mFuncPtr )();
+        }
 
-    virtual FunctorV0M* clone() const { return new FunctorV0M<T, F>(mParent, mFuncPtr); }
+        virtual FunctorV0M* clone() const
+        {
+                return new FunctorV0M<T, F>( mParent, mFuncPtr );
+        }
 };
 
-}  // namespace al
+} // namespace al

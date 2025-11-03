@@ -2,9 +2,10 @@
 
 #include <System/Byaml/ByamlIter.h>
 
-namespace al {
+namespace al
+{
 
 // turn into a class if it actually is one
 typedef ByamlIter PlacementInfo;
 
-}  // namespace al
+} // namespace al

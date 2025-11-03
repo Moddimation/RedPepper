@@ -2,16 +2,18 @@
 
 #include <heap/seadHeap.h>
 
-namespace al {
+namespace al
+{
 
-class EffectSystem {
-    sead::Heap* _0;
+class EffectSystem
+{
+        sead::Heap* _0;
 
 public:
-    EffectSystem();
+        EffectSystem();
 
-    void init();
-    void startScene();
+        void init();
+        void startScene();
 };
 
-}  // namespace al
+} // namespace al

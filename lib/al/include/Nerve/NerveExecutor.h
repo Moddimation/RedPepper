@@ -2,19 +2,21 @@
 
 #include <Nerve/NerveKeeper.h>
 
-namespace al {
+namespace al
+{
 
-class NerveExecutor : public IUseNerve {
-    al::NerveKeeper* mNerveKeeper;
+class NerveExecutor : public IUseNerve
+{
+        al::NerveKeeper* mNerveKeeper;
 
 public:
-    NerveExecutor(const char* name);
+        NerveExecutor( const char* name );
 
-    virtual NerveKeeper* getNerveKeeper() const;
-    virtual ~NerveExecutor() {};
+        virtual NerveKeeper* getNerveKeeper() const;
+        virtual ~NerveExecutor() {};
 
-    void initNerve(const Nerve*, int step = 0);
-    void updateNerve();
+        void initNerve( const Nerve*, int step = 0 );
+        void updateNerve();
 };
 
-}  // namespace al
+} // namespace al

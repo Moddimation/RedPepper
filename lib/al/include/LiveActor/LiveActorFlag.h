@@ -1,19 +1,21 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-struct LiveActorFlag {
-    bool isDead;
-    bool isClipped;
-    bool isInvalidClipping;
-    bool isDrawClipping;
-    bool flag5;
-    bool isHideModel;
-    bool isOffCollide;
-    bool flag8;
-    bool isValidMaterialCode;
+struct LiveActorFlag
+{
+        bool isDead;
+        bool isClipped;
+        bool isInvalidClipping;
+        bool isDrawClipping;
+        bool flag5;
+        bool isHideModel;
+        bool isOffCollide;
+        bool flag8;
+        bool isValidMaterialCode;
 
-    LiveActorFlag();
+        LiveActorFlag();
 };
 
-}  // namespace al
+} // namespace al

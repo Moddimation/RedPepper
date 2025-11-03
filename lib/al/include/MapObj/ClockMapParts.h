@@ -2,25 +2,27 @@
 
 #include <MapObj/MapObjActor.h>
 
-namespace al {
+namespace al
+{
 
-class ClockMapParts : public MapObjActor {
-    sead::Quatf _60;
-    int _70;
-    float _74;
-    int _78;
-    int _7C;
-    int _80;
+class ClockMapParts : public MapObjActor
+{
+        sead::Quatf _60;
+        int         _70;
+        float       _74;
+        int         _78;
+        int         _7C;
+        int         _80;
 
 public:
-    ClockMapParts(const sead::SafeString& name);
+        ClockMapParts( const sead::SafeString& name );
 
-    virtual void init(const ActorInitInfo& info);
+        virtual void init( const ActorInitInfo& info );
 
-    void exeStandBy();
-    void exeRotateSign();
-    void exeRotate();
-    void exeWait();
+        void exeStandBy();
+        void exeRotateSign();
+        void exeRotate();
+        void exeWait();
 };
 
-}  // namespace al
+} // namespace al

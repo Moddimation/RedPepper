@@ -1,33 +1,39 @@
 #pragma once
 
-class StageStartParamBase {
+class StageStartParamBase
+{
 public:
-    virtual const char* getStageDataName();
-    virtual int getScenario();
-    virtual void* getUnk2();
-    virtual void* getUnk3();
-    virtual void* getUnk4();
+        virtual const char* getStageDataName();
+        virtual int         getScenario();
+        virtual void*       getUnk2();
+        virtual void*       getUnk3();
+        virtual void*       getUnk4();
 
 private:
-    virtual void gap();
-    virtual void gap2();
+        virtual void gap();
+        virtual void gap2();
 
 public:
-    virtual int getUnk5();
+        virtual int getUnk5();
 };
 
-class ProductStageStartParam : public StageStartParamBase {
-    void* unk[2];
-    int mScenario;
+class ProductStageStartParam : public StageStartParamBase
+{
+private:
+        void* unk[ 2 ];
+        int   mScenario;
 
 public:
-    virtual const char* getStageDataName();
+        virtual const char* getStageDataName();
 
-    virtual int getScenario() { return mScenario; }
+        virtual int getScenario()
+        {
+                return mScenario;
+        }
 
-    virtual void* getUnk2();
-    virtual void* getUnk3();
-    virtual void* getUnk4();
+        virtual void* getUnk2();
+        virtual void* getUnk3();
+        virtual void* getUnk4();
 
-    const char* getDemoStageName() const;
+        const char* getDemoStageName() const;
 };

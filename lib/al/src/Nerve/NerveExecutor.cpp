@@ -1,20 +1,26 @@
 #include <Nerve/NerveExecutor.h>
 
-namespace al {
+namespace al
+{
 
-NerveExecutor::NerveExecutor(const char* name) : mNerveKeeper(nullptr) {}
-
-NerveKeeper* NerveExecutor::getNerveKeeper() const {
-    return mNerveKeeper;
+NerveExecutor::NerveExecutor( const char* name ) : mNerveKeeper( nullptr )
+{
 }
 
-void NerveExecutor::initNerve(const Nerve* nrv, int step) {
-    mNerveKeeper = new NerveKeeper(this, nrv, step);
+NerveKeeper* NerveExecutor::getNerveKeeper() const
+{
+        return mNerveKeeper;
 }
 
-void NerveExecutor::updateNerve() {
-    if (mNerveKeeper)
-        mNerveKeeper->update();
+void NerveExecutor::initNerve( const Nerve* nrv, int step )
+{
+        mNerveKeeper = new NerveKeeper( this, nrv, step );
 }
 
-}  // namespace al
+void NerveExecutor::updateNerve()
+{
+        if ( mNerveKeeper )
+                mNerveKeeper->update();
+}
+
+} // namespace al

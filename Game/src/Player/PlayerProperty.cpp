@@ -1,11 +1,13 @@
 #include "Player/PlayerProperty.h"
 
 NON_MATCHING
-void PlayerProperty::setFrontVec(const sead::Vector3f& front) {
-    mFront = front;
+void PlayerProperty::setFrontVec( const sead::Vector3f& front )
+{
+        mFront = front;
 }
 
 NON_MATCHING
-void PlayerProperty::setUpVec(const sead::Vector3f& up) {
-    mUp = up;
+void PlayerProperty::setUpVec( const sead::Vector3f& up )
+{
+        mUp = up;
 }

@@ -5,24 +5,27 @@
 
 #include <prim/seadSafeString.h>
 
-namespace al {
+namespace al
+{
 
 template <s32 L>
-class StringTmp : public sead::FixedSafeString<L> {
+class StringTmp : public sead::FixedSafeString<L>
+{
 public:
-    StringTmp(const char* format, ...) : sead::FixedSafeString<L>() {
-        va_list args;
-        va_start(args, format);
-        this->formatV(format, args);
-        va_end(args);
-    }
+        StringTmp( const char* format, ... ) : sead::FixedSafeString<L>()
+        {
+                va_list args;
+                va_start( args, format );
+                this->formatV( format, args );
+                va_end( args );
+        }
 };
 
-const char* getBaseName(const char* name);
-const char* createStringIfInStack(const char* str);
-bool isEqualString(const char* s1, const char* s2);
-bool isEqualString(const sead::SafeString& s1, const sead::SafeString& s2);
-bool isEqualSubString(const char* str, const char* substr);
-bool isInStack(const void* ptr);
+const char* getBaseName( const char* name );
+const char* createStringIfInStack( const char* str );
+bool        isEqualString( const char* s1, const char* s2 );
+bool        isEqualString( const sead::SafeString& s1, const sead::SafeString& s2 );
+bool        isEqualSubString( const char* str, const char* substr );
+bool        isInStack( const void* ptr );
 
-}  // namespace al
+} // namespace al

@@ -1,9 +1,11 @@
 #include <HitSensor/SensorHitGroup.h>
 
-namespace al {
+namespace al
+{
 
-void SensorHitGroup::add(HitSensor* sensor) {
-    mSensors.pushBack(sensor);
+void SensorHitGroup::add( HitSensor* sensor )
+{
+        mSensors.pushBack( sensor );
 }
 
-}  // namespace al
+} // namespace al

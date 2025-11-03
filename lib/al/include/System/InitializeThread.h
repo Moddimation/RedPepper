@@ -1,10 +1,11 @@
 #pragma once
 
-#include <heap/seadHeap.h>
 #include <Functor/FunctorBase.h>
+#include <heap/seadHeap.h>
 
-namespace al {
+namespace al
+{
 
-void createAndStartInitializeThread(sead::Heap* heap, int stackSize, const FunctorBase& func);
+void createAndStartInitializeThread( sead::Heap* heap, int stackSize, const FunctorBase& func );
 
-}  // namespace al
+} // namespace al

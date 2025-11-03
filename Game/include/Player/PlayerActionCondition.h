@@ -1,9 +1,12 @@
 #pragma once
 
-class PlayerActionCondition {
+class PlayerActionCondition
+{
 public:
-    virtual ~PlayerActionCondition() {}
+        virtual ~PlayerActionCondition()
+        {
+        }
 
-    virtual bool check() = 0;
-    virtual void setup();
+        virtual bool check() = 0;
+        virtual void setup();
 };

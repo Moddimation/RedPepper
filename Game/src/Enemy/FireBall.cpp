@@ -1,4 +1,5 @@
 #include "Enemy/FireBall.h"
+
 #include <Collision/CollisionUtil.h>
 #include <LiveActor/ActorActionKeeper.h>
 #include <LiveActor/ActorInitUtil.h>
@@ -7,54 +8,64 @@
 #include <LiveActor/SensorMsg.h>
 #include <Nerve/NerveFunction.h>
 
-namespace NrvFireBall {
+namespace NrvFireBall
+{
 
-NERVE_DEF(FireBall, Shot)
+NERVE_DEF( FireBall, Shot )
 
-}  // namespace NrvFireBall
+} // namespace NrvFireBall
 
-FireBall::FireBall(const sead::SafeString& name) : MapObjActor(name) {}
-
-void FireBall::init(const al::ActorInitInfo& info) {
-    al::initActorWithArchiveName(this, info, "FireBall");
-    al::initNerve(this, &NrvFireBall::Shot);
-    makeActorDead();
+FireBall::FireBall( const sead::SafeString& name ) : MapObjActor( name )
+{
 }
 
-void FireBall::attackSensor(al::HitSensor* me, al::HitSensor* other) {  // 💀 ?
-    if ((!al::isSensorPlayer(other) || !al::sendMsgEnemyAttack(other, me)) &&
-        ((((!al::isSensorEnemy(other) || !al::isGreaterEqualStep((IUseNerve*)this, 10)) &&
-           (!al::isSensorMapObj(other))) ||
-          !al::sendMsg50(other, me))))
-        return;
-
-    kill();
+void FireBall::init( const al::ActorInitInfo& info )
+{
+        al::initActorWithArchiveName( this, info, "FireBall" );
+        al::initNerve( this, &NrvFireBall::Shot );
+        makeActorDead();
 }
 
-bool FireBall::receiveMsg(u32 msg, al::HitSensor* other, al::HitSensor* me) {
-    if (al::isMsg9(msg) || al::isMsgPlayerStatueTouch(msg) || al::isMsgKickStoneAttack(msg) ||
-        al::isMsgPlayerInvincibleAttack(msg)) {
+void FireBall::attackSensor( al::HitSensor* me, al::HitSensor* other )
+{ // 💀 ?
+        if ( ( !al::isSensorPlayer( other ) || !al::sendMsgEnemyAttack( other, me ) ) &&
+                ( ( ( ( !al::isSensorEnemy( other ) || !al::isGreaterEqualStep( (IUseNerve*)this, 10 ) ) &&
+                            ( !al::isSensorMapObj( other ) ) ) ||
+                        !al::sendMsg50( other, me ) ) ) )
+                return;
+
         kill();
-        if (al::isMsgPlayerInvincibleAttack(msg))
-            return false;
-        else
-            return true;
-    }
-    return false;
+}
+
+bool FireBall::receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me )
+{
+        if ( al::isMsg9( msg ) || al::isMsgPlayerStatueTouch( msg ) || al::isMsgKickStoneAttack( msg ) ||
+                al::isMsgPlayerInvincibleAttack( msg ) )
+        {
+                kill();
+                if ( al::isMsgPlayerInvincibleAttack( msg ) )
+                        return false;
+                else
+                        return true;
+        }
+        return false;
 }
 
 NON_MATCHING
 
 // inline nops
-void FireBall::exeShot() {
-    if (al::isFirstStep(this))
-        al::tryStartAction(this, "Shot");
-    if (al::isCollided(this)) {
-        al::startHitReactionBreak(this);
-        kill();
-    }
-    if (al::isGreaterStep(this, 90)) {
-        al::startHitReactionDeath(this);
-        kill();
-    }
+void FireBall::exeShot()
+{
+        if ( al::isFirstStep( this ) )
+                al::tryStartAction( this, "Shot" );
+        if ( al::isCollided( this ) )
+        {
+                al::startHitReactionBreak( this );
+                kill();
+        }
+        if ( al::isGreaterStep( this, 90 ) )
+        {
+                al::startHitReactionDeath( this );
+                kill();
+        }
 }

@@ -1,27 +1,33 @@
 #pragma once
 
-#include "Sequence/ProductStageStartParam.h"
-#include "Sequence/ProductStateStage.h"
 #include <Layout/LayoutInitInfo.h>
 #include <Nerve/HostStateBase.h>
 
-class ProductStateTitle : public al::HostStateBase<ProductSequence> {
-    int _10;
-    ProductStageStartParam* mStartParam;
-    void* _18;
-    void* _1C;
-    void* _20;
-    void* _24;
-    void* _28;
-    void* _2C;
-    void* _30;
-    void* _34;
-    void* _38;
-    void* _3C;
+#include "Sequence/ProductStageStartParam.h"
+#include "Sequence/ProductStateStage.h"
+
+class ProductStateTitle : public al::HostStateBase<ProductSequence>
+{
+private:
+        int                     _10;
+        ProductStageStartParam* mStartParam;
+        void*                   _18;
+        void*                   _1C;
+        void*                   _20;
+        void*                   _24;
+        void*                   _28;
+        void*                   _2C;
+        void*                   _30;
+        void*                   _34;
+        void*                   _38;
+        void*                   _3C;
 
 public:
-    ProductStateTitle(ProductSequence* host, ProductStageStartParam* startParam,
-                      const al::LayoutInitInfo& info);
+        void set_10( int v )
+        {
+                _10 = v;
+        }
 
-    void set_10(int v) { _10 = v; }
+public:
+        ProductStateTitle( ProductSequence* host, ProductStageStartParam* startParam, const al::LayoutInitInfo& info );
 };

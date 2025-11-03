@@ -3,16 +3,18 @@
 #include <Execute/ExecuteDirector.h>
 #include <LiveActor/LiveActorKit.h>
 
-namespace al {
+namespace al
+{
 
-class LayoutInitInfo {
+class LayoutInitInfo
+{
 public:
-    ExecuteDirector* mExecuteDirector;
-    void* unk[2];
+        ExecuteDirector* mExecuteDirector;
+        void*            unk[ 2 ];
 
-    LayoutInitInfo();
+        LayoutInitInfo();
 };
 
-void initLayoutInitInfo(LayoutInitInfo* info, LiveActorKit*);  // why LiveActorKit ?
+void initLayoutInitInfo( LayoutInitInfo* info, LiveActorKit* ); // why LiveActorKit ?
 
-}  // namespace al
+} // namespace al

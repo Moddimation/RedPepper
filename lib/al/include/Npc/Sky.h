@@ -3,16 +3,18 @@
 #include <LiveActor/LiveActor.h>
 #include <MapObj/MapObjActor.h>
 
-namespace al {
+namespace al
+{
 
-class Sky : public MapObjActor {
-    const sead::Vector3f* mCameraTransPtr;
+class Sky : public MapObjActor
+{
+        const sead::Vector3f* mCameraTransPtr;
 
 public:
-    Sky(const char* name);
+        Sky( const char* name );
 
-    virtual void init(const ActorInitInfo& info);
-    virtual void calcAnim();
+        virtual void init( const ActorInitInfo& info );
+        virtual void calcAnim();
 };
 
-}  // namespace al
+} // namespace al

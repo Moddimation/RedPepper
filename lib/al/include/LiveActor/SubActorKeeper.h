@@ -4,28 +4,30 @@
 
 class alSubActorFunction;
 
-namespace al {
+namespace al
+{
 
 class LiveActor;
 class ActorInitInfo;
 
-class SubActorKeeper {
-    struct Entry {
-        LiveActor* actor;
-        void* _4;
-        u32 _8;
-    };
+class SubActorKeeper
+{
+        struct Entry
+        {
+                LiveActor* actor;
+                void*      _4;
+                u32        _8;
+        };
 
-    LiveActor* const mParent;
-    sead::PtrArray<Entry> mSubActors;
+        LiveActor* const      mParent;
+        sead::PtrArray<Entry> mSubActors;
 
-    SubActorKeeper(al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int);
+        SubActorKeeper( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
 
 public:
-    static SubActorKeeper* tryCreate(al::LiveActor* actor, const al::ActorInitInfo& info,
-                                     const char*, int);
+        static SubActorKeeper* tryCreate( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
 
-    friend class ::alSubActorFunction;
+        friend class ::alSubActorFunction;
 };
 
-}  // namespace al
+} // namespace al

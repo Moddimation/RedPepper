@@ -4,17 +4,19 @@
 #include <LiveActor/LiveActor.h>
 #include <LiveActor/LiveActorKit.h>
 
-namespace al {
+namespace al
+{
 
-void registerExecutorUser(IUseExecutor* p, const char* name);
-void registerExecutorFunctor(const FunctorBase& base, const char* name);
-void registerExecutorFunctorDraw(const FunctorBase& base, const char* name);
+void registerExecutorUser( IUseExecutor* p, const char* name );
+void registerExecutorFunctor( const FunctorBase& base, const char* name );
+void registerExecutorFunctorDraw( const FunctorBase& base, const char* name );
 
-}  // namespace al
+} // namespace al
 
-namespace alActorSystemFunction {
+namespace alActorSystemFunction
+{
 
-void addToExecutorMovement(al::LiveActor* actor);
-void removeFromExecutorDraw(al::LiveActor* actor);
+void addToExecutorMovement( al::LiveActor* actor );
+void removeFromExecutorDraw( al::LiveActor* actor );
 
-}  // namespace alActorSystemFunction
+} // namespace alActorSystemFunction

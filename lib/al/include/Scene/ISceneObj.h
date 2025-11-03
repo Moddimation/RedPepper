@@ -2,15 +2,21 @@
 
 #include <LiveActor/ActorInitInfo.h>
 
-namespace al {
+namespace al
+{
 
-class ISceneObj {
+class ISceneObj
+{
 public:
-    virtual const char* getSceneObjName() const = 0;
+        virtual const char* getSceneObjName() const = 0;
 
-    virtual void initAfterPlacementSceneObj(const ActorInitInfo& info) {}
+        virtual void initAfterPlacementSceneObj( const ActorInitInfo& info )
+        {
+        }
 
-    virtual void initSceneObj() {}
+        virtual void initSceneObj()
+        {
+        }
 };
 
-}  // namespace al
+} // namespace al

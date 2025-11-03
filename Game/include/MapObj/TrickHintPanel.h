@@ -2,18 +2,22 @@
 
 #include <MapObj/MapObjActor.h>
 
-class TrickHintPanel : public al::MapObjActor {
-    u32 _96;
-    bool mPlayedSound;
+class TrickHintPanel : public al::MapObjActor
+{
+private:
+        u32  _96;
+        bool mPlayedSound;
 
 public:
-    TrickHintPanel(const sead::SafeString& name);
+        void exeWait();
+        void exeOn();
+        void exenrv3();
+        void exeOff();
 
-    virtual void init(const al::ActorInitInfo& info);
-    virtual bool receiveMsg(u32 msg, al::HitSensor* other, al::HitSensor* me);
+public:
+        virtual void init( const al::ActorInitInfo& info );
+        virtual bool receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me );
 
-    void exeWait();
-    void exeOn();
-    void exenrv3();
-    void exeOff();
+public:
+        TrickHintPanel( const sead::SafeString& name );
 };

@@ -1,28 +1,39 @@
 #include <Nerve/NerveStateBase.h>
 
-namespace al {
+namespace al
+{
 
-NerveStateBase::NerveStateBase(const char* name) : NerveExecutor(name), mIsDead(true) {}
-
-void NerveStateBase::init() {}
-
-void NerveStateBase::appear() {
-    mIsDead = false;
+NerveStateBase::NerveStateBase( const char* name ) : NerveExecutor( name ), mIsDead( true )
+{
 }
 
-void NerveStateBase::kill() {
-    mIsDead = true;
+void NerveStateBase::init()
+{
 }
 
-bool NerveStateBase::update() {
-    updateNerve();
-    if (!mIsDead) {
-        control();
-        return false;
-    }
-    return true;
+void NerveStateBase::appear()
+{
+        mIsDead = false;
 }
 
-void NerveStateBase::control() {}
+void NerveStateBase::kill()
+{
+        mIsDead = true;
+}
 
-}  // namespace al
+bool NerveStateBase::update()
+{
+        updateNerve();
+        if ( !mIsDead )
+        {
+                control();
+                return false;
+        }
+        return true;
+}
+
+void NerveStateBase::control()
+{
+}
+
+} // namespace al

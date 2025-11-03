@@ -1,5 +1,6 @@
 #include "Player/PlayerActor.h"
 
-PlayerProperty* PlayerActor::getProperty() {
-    return mPlayer->getProperty();
+PlayerProperty* PlayerActor::getProperty()
+{
+        return mPlayer->getProperty();
 }

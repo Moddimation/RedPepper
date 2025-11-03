@@ -5,17 +5,19 @@
 #include <LiveActor/LiveActor.h>
 #include <Scene/ISceneObj.h>
 
-namespace al {
+namespace al
+{
 
-class SwitchAreaDirector : public LiveActor, public ISceneObj {
-    SwitchOnAreaGroup* mSwitchOnAreaGroup;
-    SwitchKeepOnAreaGroup* mSwitchKeepOnAreaGroup;
+class SwitchAreaDirector : public LiveActor, public ISceneObj
+{
+        SwitchOnAreaGroup*     mSwitchOnAreaGroup;
+        SwitchKeepOnAreaGroup* mSwitchKeepOnAreaGroup;
 
 public:
-    SwitchAreaDirector();
+        SwitchAreaDirector();
 
-    virtual void movement();
-    virtual void unk1();
+        virtual void movement();
+        virtual void unk1();
 };
 
-}  // namespace al
+} // namespace al

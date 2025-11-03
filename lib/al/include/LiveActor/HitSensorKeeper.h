@@ -1,23 +1,25 @@
 #pragma once
 
-#include <container/seadPtrArray.h>
 #include <HitSensor/HitSensor.h>
+#include <container/seadPtrArray.h>
 
-namespace al {
+namespace al
+{
 
-class HitSensorKeeper {
-    sead::PtrArray<HitSensor> mSensors;
+class HitSensorKeeper
+{
+        sead::PtrArray<HitSensor> mSensors;
 
 public:
-    void attackSensor();
-    void validate();
-    void invalidate();
-    void validateBySystem();
-    void invalidateBySystem();
+        void attackSensor();
+        void validate();
+        void invalidate();
+        void validateBySystem();
+        void invalidateBySystem();
 
-    void update();
+        void update();
 
-    HitSensor* getSensor(const char* name) const;
+        HitSensor* getSensor( const char* name ) const;
 };
 
-}  // namespace al
+} // namespace al

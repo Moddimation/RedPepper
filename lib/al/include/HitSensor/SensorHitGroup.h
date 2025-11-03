@@ -1,18 +1,20 @@
 #pragma once
 
-#include <container/seadPtrArray.h>
 #include <HitSensor/HitSensor.h>
+#include <container/seadPtrArray.h>
 
-namespace al {
+namespace al
+{
 
-class SensorHitGroup {
-    sead::PtrArray<HitSensor> mSensors;
+class SensorHitGroup
+{
+        sead::PtrArray<HitSensor> mSensors;
 
 public:
-    SensorHitGroup(int, const char* name /* unused */);
+        SensorHitGroup( int, const char* name /* unused */ );
 
-    void add(HitSensor* sensor);
-    void remove(HitSensor* sensor);
+        void add( HitSensor* sensor );
+        void remove( HitSensor* sensor );
 };
 
-}  // namespace al
+} // namespace al

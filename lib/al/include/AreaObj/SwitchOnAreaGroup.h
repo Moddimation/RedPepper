@@ -2,11 +2,13 @@
 
 #include <math/seadVector.h>
 
-namespace al {
+namespace al
+{
 
-class SwitchOnAreaGroup {
+class SwitchOnAreaGroup
+{
 public:
-    void update(const sead::Vector3f& playerPos);
+        void update( const sead::Vector3f& playerPos );
 };
 
-}  // namespace al
+} // namespace al

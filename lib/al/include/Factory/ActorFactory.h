@@ -5,23 +5,25 @@
 #include <Resource/Resource.h>
 #include <System/Byaml/ByamlIter.h>
 
-namespace al {
+namespace al
+{
 
-typedef CreateFuncPtr<LiveActor>::Type CreateActorFuncPtr;
+typedef CreateFuncPtr<LiveActor>::Type    CreateActorFuncPtr;
 typedef NameToCreator<CreateActorFuncPtr> NameToActorCreator;
 
-class ActorFactory {
+class ActorFactory
+{
 #ifndef __CC_ARM
 public:
 #endif
-    Resource* mArchive;
-    ByamlIter* mConvertNameData;
+        Resource*  mArchive;
+        ByamlIter* mConvertNameData;
 
 public:
-    ActorFactory();
+        ActorFactory();
 
-    const char* convertName(const char* objectName) const;
-    CreateActorFuncPtr getCreator(const char* objectName) const;
+        const char*        convertName( const char* objectName ) const;
+        CreateActorFuncPtr getCreator( const char* objectName ) const;
 };
 
-}  // namespace al
+} // namespace al

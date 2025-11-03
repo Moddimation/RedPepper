@@ -2,10 +2,14 @@
 
 #include <Layout/LayoutActor.h>
 
-class WindowConfirmSingle : public al::LayoutActor {
-    void* _30;
+class WindowConfirmSingle : public al::LayoutActor
+{
+private:
+        void* _30;
 
 public:
-    WindowConfirmSingle(const char* name, const al::LayoutInitInfo& info);
-    virtual void appear();
+        virtual void appear();
+
+public:
+        WindowConfirmSingle( const char* name, const al::LayoutInitInfo& info );
 };

@@ -1,8 +1,8 @@
 #pragma once
 
+namespace al
+{
 
-namespace al {
+u32 calcHashCode( const char* str );
 
-u32 calcHashCode(const char* str);
-
-}  // namespace al
+} // namespace al

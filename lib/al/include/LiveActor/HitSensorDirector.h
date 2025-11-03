@@ -3,18 +3,20 @@
 #include <Execute/ExecuteDirector.h>
 #include <HitSensor/SensorHitGroup.h>
 
-namespace al {
+namespace al
+{
 
-class HitSensorDirector : public IUseExecutor {
-    SensorHitGroup* mPlayerHitGroup;
-    SensorHitGroup* mRideHitGroup;
-    SensorHitGroup* mEyeHitGroup;
-    SensorHitGroup* mSimpleHitGroup;
-    SensorHitGroup* mMapObjHitGroup;
-    SensorHitGroup* mCharacterHitGroup;
+class HitSensorDirector : public IUseExecutor
+{
+        SensorHitGroup* mPlayerHitGroup;
+        SensorHitGroup* mRideHitGroup;
+        SensorHitGroup* mEyeHitGroup;
+        SensorHitGroup* mSimpleHitGroup;
+        SensorHitGroup* mMapObjHitGroup;
+        SensorHitGroup* mCharacterHitGroup;
 
 public:
-    HitSensorDirector();
+        HitSensorDirector();
 };
 
-}  // namespace al
+} // namespace al

@@ -1,10 +1,12 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class ShadowKeeper {
+class ShadowKeeper
+{
 public:
-    void show();
+        void show();
 };
 
-}  // namespace al
+} // namespace al

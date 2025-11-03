@@ -1,15 +1,20 @@
 #pragma once
 
-#include "Sequence/ProductStageStartParam.h"
 #include <Scene/Scene.h>
 
-class CourseSelectScene : public al::Scene {
+#include "Sequence/ProductStageStartParam.h"
+
+class CourseSelectScene : public al::Scene
+{
 #ifndef __CC_ARM
 public:
+#else
+
+private:
 #endif
-    ProductStageStartParam* mStageStartParam;
-    u8 unk[0x34];
+        ProductStageStartParam* mStageStartParam;
+        u8                      unk[ 0x34 ];
 
 public:
-    CourseSelectScene(ProductStageStartParam* stageStartParam);
+        CourseSelectScene( ProductStageStartParam* stageStartParam );
 };

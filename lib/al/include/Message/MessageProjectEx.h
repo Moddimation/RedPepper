@@ -1,12 +1,14 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 
-class MessageProjectEx /* : public sead::MessageProject */ {
+class MessageProjectEx /* : public sead::MessageProject */
+{
 public:
-    MessageProjectEx();
+        MessageProjectEx();
 
-    void init();
+        void init();
 };
 
-}  // namespace al
+} // namespace al

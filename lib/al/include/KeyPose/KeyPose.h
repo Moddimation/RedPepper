@@ -1,27 +1,38 @@
 #pragma once
 
+#include <Placement/PlacementInfo.h>
 #include <math/seadQuat.h>
 #include <math/seadVector.h>
-#include <Placement/PlacementInfo.h>
 
-namespace al {
+namespace al
+{
 
-class KeyPose {
-    sead::Quatf mQuat;
-    sead::Vector3f mTrans;
-    const PlacementInfo* mPlacementInfo;
-    float _20;
+class KeyPose
+{
+        sead::Quatf          mQuat;
+        sead::Vector3f       mTrans;
+        const PlacementInfo* mPlacementInfo;
+        float                _20;
 
 public:
-    KeyPose();
+        KeyPose();
 
-    void init(const PlacementInfo& info);
+        void init( const PlacementInfo& info );
 
-    const sead::Quatf& getQuat() const { return mQuat; }
+        const sead::Quatf& getQuat() const
+        {
+                return mQuat;
+        }
 
-    const sead::Vector3f& getTrans() const { return mTrans; }
+        const sead::Vector3f& getTrans() const
+        {
+                return mTrans;
+        }
 
-    const PlacementInfo* getPlacementInfo() const { return mPlacementInfo; }
+        const PlacementInfo* getPlacementInfo() const
+        {
+                return mPlacementInfo;
+        }
 };
 
-}  // namespace al
+} // namespace al

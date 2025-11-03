@@ -1,16 +1,21 @@
 #pragma once
 
 #include <container/seadOffsetList.h>
+
 #include "Player/PlayerActionCondition.h"
 
-class PlayerActionMultiCondition : public PlayerActionCondition {
-    sead::OffsetList<PlayerActionCondition*> mConditions;
+class PlayerActionMultiCondition : public PlayerActionCondition
+{
+private:
+        sead::OffsetList<PlayerActionCondition*> mConditions;
 
 public:
-    PlayerActionMultiCondition();
+        void append( PlayerActionCondition* condition );
 
-    virtual bool check();
-    virtual void setup();
+public:
+        virtual bool check();
+        virtual void setup();
 
-    void append(PlayerActionCondition* condition);
+public:
+        PlayerActionMultiCondition();
 };

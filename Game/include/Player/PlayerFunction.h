@@ -2,9 +2,10 @@
 
 #include "Player/PlayerActor.h"
 
-namespace rp {
+namespace rp
+{
 
-PlayerActor* getPlayerActor();
+PlayerActor*          getPlayerActor();
 const sead::Vector3f& getPlayerPos();
 
-}  // namespace rp
+} // namespace rp

@@ -1,38 +1,49 @@
 #include <Layout/LayoutActor.h>
 
-namespace al {
+namespace al
+{
 
-LayoutActor::LayoutActor(const char* name)
-    : mName(name), mNerveKeeper(nullptr), mAudioKeeper(nullptr), mEffectKeeper(nullptr),
-      _20(nullptr), _24(nullptr), _28(nullptr), mIsAlive(false) {}
-
-NerveKeeper* LayoutActor::getNerveKeeper() const {
-    return mNerveKeeper;
+LayoutActor::LayoutActor( const char* name )
+    : mName( name ), mNerveKeeper( nullptr ), mAudioKeeper( nullptr ), mEffectKeeper( nullptr ),
+      _20( nullptr ), _24( nullptr ), _28( nullptr ), mIsAlive( false )
+{
 }
 
-void LayoutActor::appear() {
-    mIsAlive = true;
-    calcAnim();
+NerveKeeper* LayoutActor::getNerveKeeper() const
+{
+        return mNerveKeeper;
 }
 
-void LayoutActor::kill() {
-    if (getEffectKeeper())
-        getEffectKeeper()->deleteAndClearEffectAll();
-    mIsAlive = false;
+void LayoutActor::appear()
+{
+        mIsAlive = true;
+        calcAnim();
 }
 
-AudioKeeper* LayoutActor::getAudioKeeper() const {
-    return mAudioKeeper;
+void LayoutActor::kill()
+{
+        if ( getEffectKeeper() )
+                getEffectKeeper()->deleteAndClearEffectAll();
+        mIsAlive = false;
 }
 
-EffectKeeper* LayoutActor::getEffectKeeper() const {
-    return mEffectKeeper;
+AudioKeeper* LayoutActor::getAudioKeeper() const
+{
+        return mAudioKeeper;
 }
 
-void LayoutActor::control() {}
-
-void LayoutActor::initNerve(const Nerve* nerve, int step) {
-    mNerveKeeper = new NerveKeeper(this, nerve, step);
+EffectKeeper* LayoutActor::getEffectKeeper() const
+{
+        return mEffectKeeper;
 }
 
-}  // namespace al
+void LayoutActor::control()
+{
+}
+
+void LayoutActor::initNerve( const Nerve* nerve, int step )
+{
+        mNerveKeeper = new NerveKeeper( this, nerve, step );
+}
+
+} // namespace al

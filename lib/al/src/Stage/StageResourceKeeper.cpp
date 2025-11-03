@@ -1,19 +1,25 @@
 #include <Stage/StageResourceKeeper.h>
 
-namespace al {
+namespace al
+{
 
-StageResourceKeeper::StageResourceKeeper() : mResources(nullptr) {}
-
-al::Resource* StageResourceKeeper::getResourceDesign() const {
-    return mResources[1];
+StageResourceKeeper::StageResourceKeeper() : mResources( nullptr )
+{
 }
 
-al::Resource* StageResourceKeeper::getResourceMap() const {
-    return mResources[0];
+al::Resource* StageResourceKeeper::getResourceDesign() const
+{
+        return mResources[ 1 ];
 }
 
-al::Resource* StageResourceKeeper::getResourceSound() const {
-    return mResources[2];
+al::Resource* StageResourceKeeper::getResourceMap() const
+{
+        return mResources[ 0 ];
 }
 
-}  // namespace al
+al::Resource* StageResourceKeeper::getResourceSound() const
+{
+        return mResources[ 2 ];
+}
+
+} // namespace al

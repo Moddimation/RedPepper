@@ -2,17 +2,21 @@
 
 #include <MapObj/MapObjActor.h>
 
-class AppearStep : public al::MapObjActor {
-    void startAppear();
-    void startDisappear();
+class AppearStep : public al::MapObjActor
+{
+public:
+        void exeAppear();
+        void exeWait();
+        void exeDisappear();
+        void exeEnd();
 
 public:
-    AppearStep(const sead::SafeString& name);
+        virtual void init( const al::ActorInitInfo& info );
 
-    virtual void init(const al::ActorInitInfo& info);
+private:
+        void startAppear();
+        void startDisappear();
 
-    void exeAppear();
-    void exeWait();
-    void exeDisappear();
-    void exeEnd();
+public:
+        AppearStep( const sead::SafeString& name );
 };

@@ -2,11 +2,14 @@
 
 #include <MapObj/MapObjActor.h>
 
-class FlowerPot : public al::MapObjActor {
+class FlowerPot : public al::MapObjActor
+{
 public:
-    FlowerPot(const sead::SafeString& name);
+        void exeWait();
 
-    virtual void init(const al::ActorInitInfo& info);
+public:
+        virtual void init( const al::ActorInitInfo& info );
 
-    void exeWait();
+public:
+        FlowerPot( const sead::SafeString& name );
 };

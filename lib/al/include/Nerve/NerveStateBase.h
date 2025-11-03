@@ -2,21 +2,26 @@
 
 #include <Nerve/NerveExecutor.h>
 
-namespace al {
+namespace al
+{
 
-class NerveStateBase : public NerveExecutor {
-    bool mIsDead;
+class NerveStateBase : public NerveExecutor
+{
+        bool mIsDead;
 
 public:
-    NerveStateBase(const char* name);
+        NerveStateBase( const char* name );
 
-    virtual void init();
-    virtual void appear();
-    virtual void kill();
-    virtual bool update();
-    virtual void control();
+        virtual void init();
+        virtual void appear();
+        virtual void kill();
+        virtual bool update();
+        virtual void control();
 
-    inline bool isDead() const { return mIsDead; }
+        inline bool isDead() const
+        {
+                return mIsDead;
+        }
 };
 
-}  // namespace al
+} // namespace al

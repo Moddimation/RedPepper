@@ -3,24 +3,32 @@
 #include <LiveActor/LiveActor.h>
 #include <Scene/ISceneObj.h>
 
-class CoinRotater : public al::LiveActor, public al::ISceneObj {
-    float mRotateY;
-    u8 _68[0x64];
+class CoinRotater : public al::LiveActor, public al::ISceneObj
+{
+private:
+        float mRotateY;
+        u8    _68[ 0x64 ];
 
 public:
-    CoinRotater();
+        float getRotateY()
+        {
+                return mRotateY;
+        }
 
-    virtual const char* getSceneObjName() const;
-    virtual void initAfterPlacementSceneObj(const al::ActorInitInfo& info);
+public:
+        virtual const char* getSceneObjName() const;
+        virtual void        initAfterPlacementSceneObj( const al::ActorInitInfo& info );
 
-    float getRotateY() { return mRotateY; }
+        virtual void movement();
 
-    virtual void movement();
+public:
+        CoinRotater();
 };
 
-namespace rp {
+namespace rp
+{
 
-void createCoinRotater();
+void  createCoinRotater();
 float getCoinRotateY();
 
-}  // namespace rp
+} // namespace rp

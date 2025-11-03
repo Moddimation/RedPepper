@@ -1,28 +1,33 @@
 #pragma once
 
-#include <math/seadVector.h>
 #include <Placement/PlacementInfo.h>
+#include <math/seadVector.h>
 
-namespace al {
+namespace al
+{
 
-class Rail {
-    int _0;
-    int _4;
-    int _8;
-    int _C;
-    bool mIsClosed;
+class Rail
+{
+        int  _0;
+        int  _4;
+        int  _8;
+        int  _C;
+        bool mIsClosed;
 
 public:
-    Rail();
+        Rail();
 
-    void init(const PlacementInfo& info);
+        void init( const PlacementInfo& info );
 
-    float getTotalLength() const;
-    float normalizeLength(float) const;
-    void calcPosDir(sead::Vector3f*, sead::Vector3f*, float);
-    float calcNearestRailPosCoord(const sead::Vector3f&, float);
+        float getTotalLength() const;
+        float normalizeLength( float ) const;
+        void  calcPosDir( sead::Vector3f*, sead::Vector3f*, float );
+        float calcNearestRailPosCoord( const sead::Vector3f&, float );
 
-    bool isClosed() const { return mIsClosed; }
+        bool isClosed() const
+        {
+                return mIsClosed;
+        }
 };
 
-}  // namespace al
+} // namespace al

@@ -2,25 +2,27 @@
 
 #include <Execute/ExecuteDirector.h>
 
-namespace al {
+namespace al
+{
 
-class LayoutKit {
+class LayoutKit
+{
 #ifndef __CC_ARM
 public:
 #endif
-    void* _0;
-    class FontHolder* mFontHolder;
-    ExecuteDirector* mExecuteDirector;
-    void* _C;
-    void* _10;
-    void* _14;
+        void*             _0;
+        class FontHolder* mFontHolder;
+        ExecuteDirector*  mExecuteDirector;
+        void*             _C;
+        void*             _10;
+        void*             _14;
 
 public:
-    LayoutKit(FontHolder* fontHolder);
+        LayoutKit( FontHolder* fontHolder );
 
-    void createExecuteDirector(int p);
-    void createEffectSystem();
-    void update();
+        void createExecuteDirector( int p );
+        void createEffectSystem();
+        void update();
 };
 
-}  // namespace al
+} // namespace al

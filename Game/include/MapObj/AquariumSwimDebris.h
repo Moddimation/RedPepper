@@ -2,11 +2,14 @@
 
 #include <MapObj/MapObjActor.h>
 
-class AquariumSwimDebris : public al::MapObjActor {
+class AquariumSwimDebris : public al::MapObjActor
+{
 public:
-    AquariumSwimDebris(const sead::SafeString& name);
+        void exeAppear();
 
-    virtual void init(const al::ActorInitInfo& info);
+public:
+        virtual void init( const al::ActorInitInfo& info );
 
-    void exeAppear();
+public:
+        AquariumSwimDebris( const sead::SafeString& name );
 };

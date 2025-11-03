@@ -1,16 +1,20 @@
 #pragma once
 
+namespace al
+{
 
-namespace al {
-
-class Collider {
-    u8 _0[0xc0];
-    float mGroundDistance;
+class Collider
+{
+        u8    _0[ 0xc0 ];
+        float mGroundDistance;
 
 public:
-    float getGroundDistance() { return mGroundDistance; }
+        float getGroundDistance()
+        {
+                return mGroundDistance;
+        }
 
-    void onInvalidate();
+        void onInvalidate();
 };
 
-}  // namespace al
+} // namespace al

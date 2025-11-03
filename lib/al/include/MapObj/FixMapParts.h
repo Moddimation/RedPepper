@@ -2,14 +2,16 @@
 
 #include <MapObj/MapObjActor.h>
 
-namespace al {
+namespace al
+{
 
-class FixMapParts : public MapObjActor {
+class FixMapParts : public MapObjActor
+{
 public:
-    FixMapParts(const sead::SafeString& name);
+        FixMapParts( const sead::SafeString& name );
 
-    virtual void init(const ActorInitInfo& info);
-    virtual void appear();
+        virtual void init( const ActorInitInfo& info );
+        virtual void appear();
 };
 
-}  // namespace al
+} // namespace al

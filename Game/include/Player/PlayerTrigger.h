@@ -1,21 +1,28 @@
 #pragma once
 
-
-class PlayerTrigger {
-    u32 mSensorTrigger;
-    u32 mCollisionTrigger;
+class PlayerTrigger
+{
+private:
+        u32 mSensorTrigger;
+        u32 mCollisionTrigger;
 
 public:
-    enum ESensorTrigger {};
+        enum ESensorTrigger
+        {
+        };
 
-    enum ECollisionTrigger {};
+        enum ECollisionTrigger
+        {
+        };
 
-    PlayerTrigger();
+public:
+        void set( PlayerTrigger::ESensorTrigger trigger );
+        void set( PlayerTrigger::ECollisionTrigger trigger );
+        bool isOn( PlayerTrigger::ESensorTrigger trigger ) const;
+        bool isOn( PlayerTrigger::ECollisionTrigger trigger ) const;
+        void clearSensorTrigger();
+        void clearCollisionTrigger();
 
-    void set(PlayerTrigger::ESensorTrigger trigger);
-    void set(PlayerTrigger::ECollisionTrigger trigger);
-    bool isOn(PlayerTrigger::ESensorTrigger trigger) const;
-    bool isOn(PlayerTrigger::ECollisionTrigger trigger) const;
-    void clearSensorTrigger();
-    void clearCollisionTrigger();
+public:
+        PlayerTrigger();
 };

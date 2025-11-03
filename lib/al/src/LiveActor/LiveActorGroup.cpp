@@ -1,25 +1,30 @@
 #include <LiveActor/LiveActorGroup.h>
 
-namespace al {
+namespace al
+{
 
-NON_MATCHING  // stupid
-LiveActorGroup::LiveActorGroup(const char* name, int bufSize)
-    : mName(name) {
-    mActors.allocBufferInline(bufSize);
+NON_MATCHING // stupid
+LiveActorGroup::LiveActorGroup( const char* name, int bufSize )
+    : mName( name )
+{
+        mActors.allocBufferInline( bufSize );
 }
 
-void LiveActorGroup::registerActor(LiveActor* actor) {
-    mActors.pushBack(actor);
+void LiveActorGroup::registerActor( LiveActor* actor )
+{
+        mActors.pushBack( actor );
 }
 
-void LiveActorGroup::killAll() {
-    for (int i = 0; i < mActors.size(); i++)
-        mActors.unsafeAt(i)->kill();
+void LiveActorGroup::killAll()
+{
+        for ( int i = 0; i < mActors.size(); i++ )
+                mActors.unsafeAt( i )->kill();
 }
 
-void LiveActorGroup::makeActorDeadAll() {
-    for (int i = 0; i < mActors.size(); i++)
-        mActors.unsafeAt(i)->makeActorDead();
+void LiveActorGroup::makeActorDeadAll()
+{
+        for ( int i = 0; i < mActors.size(); i++ )
+                mActors.unsafeAt( i )->makeActorDead();
 }
 
-}  // namespace al
+} // namespace al

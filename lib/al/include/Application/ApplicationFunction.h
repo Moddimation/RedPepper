@@ -1,7 +1,8 @@
 #pragma once
 
-namespace ApplicationFunction {
+namespace ApplicationFunction
+{
 
 void initialize();
 
-}  // namespace ApplicationFunction
+} // namespace ApplicationFunction

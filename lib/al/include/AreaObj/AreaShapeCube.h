@@ -2,16 +2,18 @@
 
 #include <AreaObj/AreaShape.h>
 
-namespace al {
+namespace al
+{
 
-class AreaShapeCube : public AreaShape {
-    bool mIsCubeBase;
+class AreaShapeCube : public AreaShape
+{
+        bool mIsCubeBase;
 
 public:
-    AreaShapeCube(bool isCubeBase);
+        AreaShapeCube( bool isCubeBase );
 
-    virtual bool isInVolume(const sead::Vector3f& trans) const;
-    // virtual void v2();
+        virtual bool isInVolume( const sead::Vector3f& trans ) const;
+        // virtual void v2();
 };
 
-}  // namespace al
+} // namespace al

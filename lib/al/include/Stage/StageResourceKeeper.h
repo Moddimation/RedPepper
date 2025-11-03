@@ -1,21 +1,23 @@
 #pragma once
 
-#include <heap/seadHeap.h>
 #include <Resource/Resource.h>
+#include <heap/seadHeap.h>
 
-namespace al {
+namespace al
+{
 
-class StageResourceKeeper {
-    al::Resource** mResources;
+class StageResourceKeeper
+{
+        al::Resource** mResources;
 
 public:
-    StageResourceKeeper();
+        StageResourceKeeper();
 
-    void initAndLoadResource(const char* stageName, int scenario, sead::Heap* heap);
+        void initAndLoadResource( const char* stageName, int scenario, sead::Heap* heap );
 
-    al::Resource* getResourceDesign() const;
-    al::Resource* getResourceMap() const;
-    al::Resource* getResourceSound() const;
+        al::Resource* getResourceDesign() const;
+        al::Resource* getResourceMap() const;
+        al::Resource* getResourceSound() const;
 };
 
-}  // namespace al
+} // namespace al
