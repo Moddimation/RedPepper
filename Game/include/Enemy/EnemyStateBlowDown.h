@@ -3,7 +3,7 @@
 #include <Nerve/ActorStateBase.h>
 #include <math/seadVector.h>
 
-#include "Enemy/EnemyStateBlowDownParam.h"
+class EnemyStateBlowDownParam;
 
 class EnemyStateBlowDown : public al::ActorStateBase
 {

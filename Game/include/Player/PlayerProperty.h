@@ -4,12 +4,7 @@
 
 class PlayerProperty
 {
-#ifndef __CC_ARM
-public:
-#else
-
 private:
-#endif
         sead::Vector3f mTrans;
         sead::Vector3f mFront;
         sead::Vector3f mUp;

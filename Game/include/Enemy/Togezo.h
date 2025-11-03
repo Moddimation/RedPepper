@@ -2,9 +2,9 @@
 
 #include <MapObj/MapObjActor.h>
 
-#include "Enemy/EnemyStateBlowDown.h"
-#include "Enemy/WalkerStateChase.h"
-#include "Enemy/WalkerStateWander.h"
+class WalkerStateWander;
+class WalkerStateChase;
+class EnemyStateBlowDown;
 
 class Togezo : public al::MapObjActor
 {

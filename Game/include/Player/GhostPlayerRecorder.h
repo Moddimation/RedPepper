@@ -2,7 +2,7 @@
 
 #include <Scene/ISceneObj.h>
 
-#include "Player/GhostPlayer.h"
+class GhostPlayer;
 
 class GhostPlayerRecorder : public al::ISceneObj
 {

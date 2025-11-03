@@ -1,10 +1,13 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
 #include <prim/seadSafeString.h>
 
-#include "Player/PlayerAnimFrameCtrl.h"
-#include "Player/PlayerModelHolder.h"
+namespace al
+{
+class LiveActor;
+}
+class PlayerAnimFrameCtrl;
+class PlayerModelHolder;
 
 class IUsePlayerAnimator
 {

@@ -2,8 +2,8 @@
 
 #include <Scene/Scene.h>
 
-#include "Player/PlayerActor.h"
-#include "Sequence/ProductStageStartParam.h"
+class PlayerActor;
+class ProductStageStartParam;
 
 class DemoScene : public al::Scene
 {

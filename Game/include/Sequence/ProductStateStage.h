@@ -1,11 +1,14 @@
 #pragma once
 
-#include <Layout/LayoutInitInfo.h>
 #include <Nerve/HostStateBase.h>
 
-#include "Scene/StageScene.h"
-#include "Sequence/ProductStageStartParam.h"
+#include "Sequence/ProductSequence"
 
+namespace al
+{
+class LayoutInitInfo;
+}
+class StageScene;
 class ProductSequence;
 
 class ProductStateStage : public al::HostStateBase<ProductSequence>
@@ -24,7 +27,7 @@ private:
         void*                   _38;
 
 public:
-        //  virtual void init();
+        // virtual void init();
         // virtual void appear();
 public:
         ProductStateStage( ProductSequence* parent, ProductStageStartParam* startParam, const al::LayoutInitInfo& info );

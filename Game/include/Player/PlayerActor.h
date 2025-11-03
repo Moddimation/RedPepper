@@ -1,12 +1,16 @@
 #pragma once
 
-#include <LiveActor/ActorInitInfo.h>
 #include <MapObj/MapObjActor.h>
 #include <math/seadVector.h>
 
-#include "Player/Player.h"
-#include "Player/PlayerActorInitInfo.h"
-#include "Player/PlayerAnimator.h"
+class Player;
+class PlayerAnimator;
+class PlayerModelHolder;
+struct PlayerActorInitInfo;
+namespace al
+{
+struct ActorInitInfo;
+}
 
 class PlayerActor : public al::MapObjActor
 {

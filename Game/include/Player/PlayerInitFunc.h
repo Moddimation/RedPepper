@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Player/PlayerActorInitInfo.h"
+struct PlayerModelInfo;
+struct PlayerAnimInfo;
 
 namespace PlayerInitFunc
 {

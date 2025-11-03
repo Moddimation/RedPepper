@@ -2,8 +2,8 @@
 
 #include <Nerve/ActorStateBase.h>
 
-#include "Enemy/WalkerStateParam.h"
-#include "Enemy/WalkerStateWanderParam.h"
+class WalkerStateParam;
+class WalkerStateWanderParam;
 
 class WalkerStateWander : public al::ActorStateBase
 {

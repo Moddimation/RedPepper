@@ -1,7 +1,8 @@
 #pragma once
 
-#include "Player/PlayerActionCondition.h"
-#include "Player/PlayerAnimator.h"
+#include "Player/PlayerActionMultiCondition.h"
+
+class IUsePlayerAnimator;
 
 class PlayerActionConditionAnimEnd : public PlayerActionCondition
 {

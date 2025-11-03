@@ -1,10 +1,13 @@
 #pragma once
 
-#include <LiveActor/ActorInitInfo.h>
 #include <math/seadVector.h>
 
-#include "Player/PlayerActorInitInfo.h"
-#include "Player/PlayerFigureDirector.h"
+class PlayerFigureDirector;
+struct PlayerActorInitInfo;
+namespace al
+{
+struct ActorInitInfo;
+}
 
 class IUsePlayerModelChanger
 {
@@ -75,6 +78,7 @@ public:
                 u64                                                              something );
         // PlayerModelHolder::createRaccoonDogSpecialPlayerModel
         // PlayerModelHolder::createRaccoonDogWhitePlayerModel
+
 public:
         virtual void change( const EPlayerFigure& figure );
         virtual void show();

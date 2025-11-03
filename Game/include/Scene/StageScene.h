@@ -2,17 +2,13 @@
 
 #include <Scene/Scene.h>
 
-#include "Player/PlayerActor.h"
-#include "Sequence/ProductStageStartParam.h"
+class PlayerActor;
+class ProductStageStartParam;
+class StageSceneStateGameOver;
 
 class StageScene : public al::Scene
 {
-#ifndef __CC_ARM
-public:
-#else
-
 private:
-#endif
         ProductStageStartParam*        mStageStartParam;
         PlayerActor*                   mPlayerActor;
         void*                          _3C;

@@ -1,12 +1,16 @@
 #pragma once
 
-#include <Layout/LayoutInitInfo.h>
 #include <Nerve/HostStateBase.h>
 
-#include "Layout/WindowConfirmButton.h"
-#include "Layout/WindowConfirmSingle.h"
-#include "Sequence/ProductStageStartParam.h"
-#include "Sequence/ProductStateStage.h"
+#include "Sequence/ProductSequence.h"
+
+namespace al
+{
+class LayoutInitInfo;
+}
+class WindowConfirmButton;
+class WindowConfirmSingle;
+class ProductStageStartParam;
 
 class ProductStateTitle : public al::HostStateBase<ProductSequence>
 {

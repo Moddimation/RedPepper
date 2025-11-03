@@ -1,10 +1,13 @@
 #pragma once
 
-#include <Layout/LayoutInitInfo.h>
 #include <Nerve/HostStateBase.h>
 
-#include "Sequence/ProductStageStartParam.h"
-#include "Sequence/ProductStateStage.h"
+#include "Sequence/ProductSequence"
+
+namespace al
+{
+class LayoutInitInfo;
+}
 
 class ProductStateTitle : public al::HostStateBase<ProductSequence>
 {

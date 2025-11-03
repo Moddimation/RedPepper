@@ -1,8 +1,11 @@
 #pragma once
 
-#include <LiveActor/ActorInitInfo.h>
 #include <Nerve/NerveExecutor.h>
 
+namespace al
+{
+class LayoutInitInfo;
+}
 class GameDataHolder;
 
 class SaveDataAccessSequence : public al::NerveExecutor

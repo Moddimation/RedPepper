@@ -1,16 +1,14 @@
 #pragma once
 
-#include <Layout/LayoutInitInfo.h>
-#include <Layout/WipeSimpleTopBottom.h>
+namespace al
+{
+class LayoutInitInfo;
+class WipeSimpleTopBottom;
+} // namespace al
 
 class StageWipeKeeper
 {
-#ifndef __CC_ARM
-public:
-#else
-
 private:
-#endif
         al::WipeSimpleTopBottom* mWipes[ 7 ];
         void*                    unk;
 

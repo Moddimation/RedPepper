@@ -2,7 +2,7 @@
 
 #include <container/seadListImpl.h>
 
-#include "Player/PlayerAction.h"
+class PlayerAction;
 
 class PlayerActionNode
 {

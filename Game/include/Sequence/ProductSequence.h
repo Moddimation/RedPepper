@@ -2,43 +2,39 @@
 
 #include <Sequence/Sequence.h>
 
-#include "Sequence/ProductStageStartParam.h"
-#include "Sequence/ProductStateCourseSelect.h"
-#include "Sequence/ProductStateStage.h"
-#include "Sequence/StageWipeKeeper.h"
+class ProductStageStartParam;
+class StageWipeKeeper;
+class ProductStateStage;
+class ProductStateTitle;
+class ProductStateOpening;
+class ProductStateKinopioHouse;
+class ProductStateMysteryBox;
+class ProductStateEnding;
+class ProductStateGameOverRoom;
 
 class ProductSequence : public al::Sequence
 {
-#ifndef __CC_ARM
-public:
-#else
-
 private:
-#endif
         ProductStageStartParam* mStageStartParam;
         void*                   _14C;
         void*                   _150;
 
-        StageWipeKeeper*                mWipeKeeper;
-        void*                           _158;
-        void*                           _15C;
-        class ProductStateTitle*        mStateTitle;
-        class ProductStateOpening*      mStateOpening;
-        ProductStateTitle*              mStateCourseSelect;
-        ProductStateStage*              mStateStage;
-        class ProductStateKinopioHouse* mStateKinopioHouse;
-        class ProductStateMysteryBox*   mStateMysteryBox;
-        class ProductStateEnding*       mStateEnding;
-        class ProductStateGameOverRoom* mStateGameOverRoom;
-        int                             _180;
-        void*                           _184;
-        void*                           _188;
-        void*                           _18C;
-        void*                           _190;
-
-#ifndef __CC_ARM                                // this really shouldn't be in the common headers
-        ProductStateTest* mStateTest = nullptr; // fake
-#endif
+        StageWipeKeeper*          mWipeKeeper;
+        void*                     _158;
+        void*                     _15C;
+        ProductStateTitle*        mStateTitle;
+        ProductStateOpening*      mStateOpening;
+        ProductStateTitle*        mStateCourseSelect;
+        ProductStateStage*        mStateStage;
+        ProductStateKinopioHouse* mStateKinopioHouse;
+        ProductStateMysteryBox*   mStateMysteryBox;
+        ProductStateEnding*       mStateEnding;
+        ProductStateGameOverRoom* mStateGameOverRoom;
+        int                       _180;
+        void*                     _184;
+        void*                     _188;
+        void*                     _18C;
+        void*                     _190;
 
 public:
         void exeTitle();

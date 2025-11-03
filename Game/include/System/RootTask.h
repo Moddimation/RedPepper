@@ -1,6 +1,6 @@
 #pragma once
 
-#include "System/GameSystem.h"
+class GameSystem;
 
 class RootTask /* : public sead::Task */
 {

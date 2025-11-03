@@ -1,8 +1,10 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
-
-#include "Enemy/EnemyStateBlowDown.h"
+namespace al
+{
+class LiveActor;
+}
+class EnemyStateBlowDown;
 
 namespace EnemyStateUtil
 {

@@ -2,7 +2,7 @@
 
 #include <MapObj/MapObjActor.h>
 
-#include "Enemy/EnemyStateBlowDown.h"
+class EnemyStateBlowDown;
 
 class Fugumannen : public al::MapObjActor
 {

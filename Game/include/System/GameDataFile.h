@@ -1,6 +1,6 @@
 #pragma once
 
-#include "System/CourseList.h"
+class CourseList;
 
 class GameDataFile
 {

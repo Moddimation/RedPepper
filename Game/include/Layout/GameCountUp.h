@@ -1,7 +1,11 @@
 #pragma once
 
 #include <Layout/LayoutActor.h>
-#include <Layout/LayoutInitInfo.h>
+
+namespace al
+{
+class LayoutInitInfo;
+}
 
 class GameCountUp : public al::LayoutActor
 {

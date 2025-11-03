@@ -1,11 +1,14 @@
 #pragma once
 
-#include <Layout/LayoutKit.h>
-#include <Message/MessageSystem.h>
 #include <Nerve/NerveExecutor.h>
-#include <Sequence/Sequence.h>
 
-#include "System/CourseList.h"
+namespace al
+{
+class LayoutKit;
+class MessageSystem;
+class Sequence;
+} // namespace al
+class CourseList;
 
 class GameSystem : public al::NerveExecutor
 {

@@ -1,10 +1,13 @@
 #pragma once
 
-#include <Audio/AudioKeeper.h>
-#include <Layout/LayoutInitInfo.h>
 #include <Nerve/NerveExecutor.h>
 
-#include "Layout/GameCountUp.h"
+namespace al
+{
+class AudioKeeper;
+class LayoutInitInfo;
+} // namespace al
+class GameCountUp;
 
 class CoinCharger : public al::NerveExecutor
 {

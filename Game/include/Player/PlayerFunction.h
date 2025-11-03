@@ -1,6 +1,8 @@
 #pragma once
 
-#include "Player/PlayerActor.h"
+#include <math/seadVector.h>
+
+class PlayerActor;
 
 namespace rp
 {

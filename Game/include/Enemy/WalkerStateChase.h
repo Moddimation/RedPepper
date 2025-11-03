@@ -3,8 +3,8 @@
 #include <LiveActor/LiveActor.h>
 #include <Nerve/ActorStateBase.h>
 
-#include "Enemy/WalkerStateChaseParam.h"
-#include "Enemy/WalkerStateParam.h"
+class WalkerStateChaseParam;
+class WalkerStateParam;
 
 class WalkerStateChase : public al::ActorStateBase
 {

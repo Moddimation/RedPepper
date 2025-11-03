@@ -1,11 +1,15 @@
 #pragma once
 
-#include "System/CourseList.h"
-#include "System/GameDataFile.h"
-#include "System/SaveDataAccessSequence.h"
-#include "System/SaveDataFile.h"
+namespace al
+{
+class LayoutInitInfo;
+}
+class CourseList;
+class GameDataFile;
+class SaveDataFile;
+class SaveDataAccessSequence
 
-class GameDataHolder
+        class GameDataHolder
 {
 private:
         GameDataFile*           mGameFile;

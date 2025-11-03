@@ -1,10 +1,13 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
 #include <Scene/ISceneObj.h>
 #include <container/seadPtrArray.h>
 
-#include "MapObj/CoinCharger.h"
+namespace al
+{
+class LiveActor;
+}
+class CoinCharger;
 
 class ItemHolder : public al::ISceneObj
 {

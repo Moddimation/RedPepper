@@ -1,7 +1,10 @@
 #pragma once
 
-#include <Resource/Resource.h>
-#include <System/Byaml/ByamlIter.h>
+namespace al
+{
+class Resource;
+class ByamlIter;
+} // namespace al
 
 class CourseList
 {

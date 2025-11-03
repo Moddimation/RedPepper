@@ -3,7 +3,7 @@
 #include <Nerve/ActorStateBase.h>
 #include <math/seadVector.h>
 
-#include "Enemy/EnemyStateHipDropDownParam.h"
+class EnemyStateHipDropDownParam;
 
 class EnemyStateHipDropDown : public al::ActorStateBase
 {

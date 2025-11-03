@@ -26,12 +26,7 @@ class PlayerFigureTransformer
 
 class PlayerFigureDirector
 {
-#ifndef __CC_ARM
-public:
-#else
-
 private:
-#endif
         EPlayerFigure    mLastFigure;
         EPlayerFigure    mFigure;
         void*            _8;

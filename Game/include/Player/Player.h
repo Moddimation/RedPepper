@@ -1,20 +1,15 @@
 #pragma once
 
-#include "Player/PlayerActionGraph.h"
-#include "Player/PlayerAnimator.h"
-#include "Player/PlayerFigureDirector.h"
-#include "Player/PlayerProperty.h"
-#include "Player/PlayerTrigger.h"
-#include "PlayerAudio.h"
+class PlayerActionGraph;
+class PlayerAnimator;
+class PlayerFigureDirector;
+class PlayerProperty;
+class PlayerTrigger;
+class PlayerAudio;
 
 class Player
 {
-#ifndef __CC_ARM
-public:
-#else
-
 private:
-#endif
         PlayerProperty*       mPlayerProperty;
         void*                 _4;
         void*                 _8;
