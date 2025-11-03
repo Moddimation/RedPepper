@@ -13,7 +13,7 @@ find_program(ARM_CC NAMES armcc.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAU
 find_program(ARM_LINK NAMES armlink.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH)
 # find_program(ARM_FROMELF NAMES fromelf.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH) # not important
 
-add_subdirectory(lib/nnsdk)
+add_subdirectory(lib/ctrsdk)
 add_subdirectory(lib/sead)
 add_subdirectory(lib/ms)
 
@@ -52,7 +52,7 @@ file(GLOB_RECURSE SOURCES_GAME ${CMAKE_SOURCE_DIR}/Game/src/*.c ${CMAKE_SOURCE_D
 add_executable(RedPepper $<TARGET_OBJECTS:crt0> ${SOURCES_AL} ${SOURCES_GAME})
 
 target_link_libraries(RedPepper PUBLIC 
-                                nnsdk
+                                ctrsdk
                                 sead
                                 ms
                                 )
@@ -70,16 +70,16 @@ target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:CXX>:
     --apcs=//interwork --cpu=MPCore --fpmode=fast --cpp --arm --force_new_nothrow
     --signed_chars --multibyte-chars --locale=japanese --no_vfe # workaround, vfe should be enabled
     --no_rtti_data --no_rtti --no_exceptions -O3 -Otime --data-reorder --split_sections --forceinline
-    --preinclude=${CMAKE_SOURCE_DIR}/lib/nnsdk/include/nn/types.h
+    --preinclude=${CMAKE_SOURCE_DIR}/lib/ctrsdk/include/nn/types.h
     >)
 
 target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
     --apcs=//interwork --cpu=MPCore --fpmode=fast --c99 --arm
     --signed_chars --multibyte-chars --locale=japanese
     -Otime --data-reorder --split_sections
-    --preinclude=${CMAKE_SOURCE_DIR}/lib/nnsdk/include/nn/types.h
+    --preinclude=${CMAKE_SOURCE_DIR}/lib/ctrsdk/include/nn/types.h
     >)
 
-target_compile_definitions(RedPepper PUBLIC NON_MATCHING=)
+target_compile_definitions(RedPepper PUBLIC NON_MATCHING= ctr)
 
 target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/Game/include  ${CMAKE_SOURCE_DIR}/lib/al/include)

@@ -55,7 +55,7 @@ def find_source_path(str):
                     return last_file
 
 def find_src_file(str):
-    for path in (f"lib/{str}", f"include/{str}", f"src/{str}", f"lib/sead/Include/{str}", f"lib/nnsdk/Include/{str}", f"lib/LibMessageStudio/Include/{str}", f"{os.environ.get("ARMCC41INC")}/{str}"):
+    for path in (f"lib/{str}", f"Game/src/{str}", f"Game/include/{str}", f"lib/al/include/{str}", f"lib/sead/include/{str}", f"lib/ctrsdk/include/{str}", f"lib/ms/include/{str}", f"{os.environ.get("ARMCC41INC")}/{str}"):
         #print(f"{str}: {path}")
         if os.path.exists(path):
               return path
@@ -64,12 +64,25 @@ def find_src_file(str):
 
 traversed_files = []
 main_data = []
+has_appended_inc = False
+
+def add_type_inc(sym):
+    content = []
+    file_path = find_src_file("nn/types.h")
+    if not os.path.exists(file_path):
+        print("nn/types.h missing, cannot continue.")
+        return ""
+
+    return traverse_file (file_path, sym)
 
 def traverse_file(str, sym):
+    global has_appended_inc
     content = []
     file_path = find_src_file(str)
 
     if not os.path.exists(file_path):
+        if not "seadMemUtil" in file_path and not "cafe" in file_path:
+            print (f"Warning: Path not found: {file_path}")
         return ""
 
     if file_path in traversed_files:
@@ -86,6 +99,12 @@ def traverse_file(str, sym):
         main_data.append (f'// Source for {sym}')
     else:
         content.append (f"// File: {file_path}\n")
+
+    if has_appended_inc == False:
+        inc = add_type_inc(sym)
+        for l in inc:
+            content.append(l)
+        has_appended_inc = True
 
     with open(file_path, "r", encoding="shift-jis") as f:
         s = StringIO(f.read())
