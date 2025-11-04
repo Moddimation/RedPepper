@@ -1,4 +1,4 @@
-#include <Application/Application.h> // GAMEUSE
+#include <System/Application.h> // GAMEUSE
 #include <Functor/FunctorV0F.h>
 #include <LiveActor/LiveActorKit.h>
 
@@ -38,12 +38,12 @@ void LiveActorKit::endInit()
 
 void initLiveActorKit( LiveActorKit* kit )
 {
-        al::getApplication()->mLiveActorKit = kit;
+        al::getApplication()->setLiveActorKit(kit);
 }
 
 LiveActorKit* getLiveActorKit()
 {
-        return al::getApplication()->mLiveActorKit;
+        return al::getApplication()->getLiveActorKit();
 }
 
 } // namespace al

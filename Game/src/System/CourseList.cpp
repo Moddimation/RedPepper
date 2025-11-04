@@ -1,6 +1,6 @@
 #include "System/CourseList.h"
 
-#include <Application/Application.h>
+#include <System/Application.h>
 #include <Resource/Resource.h>
 #include <Util/StringUtil.h>
 #include <Yaml/ByamlIter.h>

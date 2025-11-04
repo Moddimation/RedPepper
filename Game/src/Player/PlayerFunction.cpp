@@ -1,6 +1,6 @@
 #include "Player/PlayerFunction.h"
 
-#include <Application/Application.h>
+#include <System/Application.h>
 
 #include "Player/PlayerActor.h"
 
@@ -13,7 +13,7 @@ NON_MATCHING
 // linker shenanigans
 PlayerActor* getPlayerActor()
 {
-        return (PlayerActor*)Application::instance()->mPlayerActor;
+        return Application::instance()->getPlayerActor();
 }
 
 const sead::Vector3f& getPlayerPos()

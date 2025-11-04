@@ -1,4 +1,4 @@
-#include <Application/Application.h> // GAMEUSE
+#include <System/Application.h> // GAMEUSE
 #include <Save/SaveDataDirector.h>
 #include <System/SystemKit.h>
 
@@ -22,7 +22,7 @@ namespace alProjectInterface
 
 al::SystemKit* getSystemKit()
 {
-        return al::getApplication()->mSystemKit;
+        return al::getApplication()->getSystemKit();
 }
 
 } // namespace alProjectInterface

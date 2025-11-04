@@ -1,7 +1,7 @@
-from diff import *
 from settings import *
 
 def read_data_sym_file():
+    import csv
     with open(getDataSymFile(), newline='') as f:
         syms = []
         reader = csv.reader(f, delimiter=',',quotechar='"')
@@ -10,6 +10,7 @@ def read_data_sym_file():
         return syms
 
 def genLDScript():
+    from diff import read_sym_file
     matching_data = '\n'
     const_data = '\n'
     syms = read_sym_file()
@@ -39,7 +40,7 @@ def genLDScript():
         const_data += "\t}\n"
         const_data += "}\n"
 
-    with open('data/linker.ld', 'r') as template:
+    with open(f"{getProjDir()}/data/linker.ld", 'r') as template:
         with open(f'{getBuildPath()}/linker.ld', 'w') as out:
             out.write(template.read().replace("$$$", matching_data).replace("&&&", const_data))
             

@@ -1,4 +1,4 @@
-#include <Application/Application.h> // GAMEUSE
+#include <System/Application.h> // GAMEUSE
 #include <Scene/Scene.h>
 #include <Scene/SceneObjHolder.h>
 
@@ -35,7 +35,7 @@ void Scene::movement()
                 if ( mAudioKeeper )
                         mAudioKeeper->update();
         }
-}
+} 
 
 void Scene::control()
 {
@@ -62,7 +62,7 @@ void Scene::initSceneObjHolder()
 {
         SceneObjHolder* holder = SceneObjFactory::createSceneObjHolder();
         mSceneObjHolder        = holder;
-        Application::instance()->setSceneObjHolder( holder );
+        al::getApplication()->setSceneObjHolder ( holder );
 }
 
 void Scene::endInit( const ActorInitInfo& info )

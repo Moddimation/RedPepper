@@ -3,7 +3,12 @@ import subprocess
 import csv
 import os
 import sys
+import time
+import build
+import threading
 from settings import *
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
 
 def fail(msg: str):
     print(msg)
@@ -64,7 +69,7 @@ def rank_symbol(sym, decomp_sym):
     if decomp_size == 0:
         decomp_size = sym_size
 
-    out = str(subprocess.check_output(f"\"{sys.executable}\" tools/asm-differ/diff.py --format json {sym[0] - 0x00100000} {decomp_sym[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True))
+    out = str(subprocess.check_output(f"\"{sys.executable}\" {getProjDir()}/tools/asm-differ/diff.py --format json {sym[0] - 0x00100000} {decomp_sym[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True))
 
     rank = 'O'
     if "diff_change" in out:
@@ -77,9 +82,45 @@ def rank_symbol(sym, decomp_sym):
     
     return rank
 
+class ChangeHandler(FileSystemEventHandler):
+    def __init__(self, cmd, proc_ref, lock):
+        self.cmd = cmd
+        self.proc_ref = proc_ref
+        self.lock = lock
+        self.last_run = 0
+
+    def on_any_event(self, event):
+        now = time.time()
+        if now - self.last_run < 1:
+            return
+        self.last_run = now
+
+        with self.lock:
+            p = self.proc_ref["p"]
+            if p:
+                p.terminate()
+                try:
+                    p.wait(timeout=1)
+                except subprocess.TimeoutExpired:
+                    p.kill()
+                    p.wait()
+            sys.argv = ["build.py"]
+            with open(os.devnull, "w") as devnull:
+                try:
+                    result = subprocess.run(
+                        [sys.executable, "tools/build.py"],
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT,
+                        text=True,
+                        check=True
+                    )
+                except subprocess.CalledProcessError as e:
+                    print(e.stdout, end="")
+                else:
+                    self.proc_ref["p"] = subprocess.Popen(self.cmd, shell=True)
 
 def main() -> None:
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         fail("diff.py <symbol>")
     symbolname = sys.argv[1]
 
@@ -98,7 +139,24 @@ def main() -> None:
         print(f"Warning: decomp symbol size for {symbol[3]} is 0. Using the original size instead.")
         decomp_size = sym_size
 
-    subprocess.run(f"\"{sys.executable}\" tools/asm-differ/diff.py {symbol[0] - 0x00100000} {decomp_symbol[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True)
+    cmd = f"\"{sys.executable}\" {getProjDir()}/tools/asm-differ/diff.py {symbol[0]-0x00100000} {decomp_symbol[0]-0x00100000} {sym_size} {decomp_size}"
+    proc_ref = {"p": subprocess.Popen(cmd, shell=True)}
+    lock = threading.Lock()
+
+    handler = ChangeHandler(cmd, proc_ref, lock)
+    observer = Observer()
+    observer.schedule(handler, path="Game", recursive=True)
+    observer.schedule(handler, path="lib", recursive=True)
+    observer.start()
+
+    try:
+        observer.join()
+    except KeyboardInterrupt:
+        observer.stop()
+        observer.join()
+        p = proc_ref["p"]
+        if p and p.poll() is None:
+            p.terminate()
 
 if __name__ == "__main__":
     main()

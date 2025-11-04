@@ -2,39 +2,35 @@
 
 #include <heap/seadDisposer.h>
 
-#include "System/RootTask.h"
-
 namespace al
 {
+class EffectUserInfo;
 class GameFrameworkCtr;
-class SystemKit;
-class SceneObjHolder;
 class LiveActorKit;
 class MapObjActor;
-class EffectUserInfo;
+class SceneObjHolder;
+class SystemKit;
 } // namespace al
+class PlayerActor;
+class RootTask;
 
 class Application
 {
         SEAD_SINGLETON_DISPOSER( Application )
 
-public:
+private:
         void*                 _10;
         al::GameFrameworkCtr* mGameFramework;
         al::SystemKit*        mSystemKit;
         u8                    _1C[ 24 ];
-        void*                 _34;
-        u8                    _38[ 20 ];
+        u8                    _34[ 24 ];
         void*                 _4C;
         al::SceneObjHolder*   mSceneObjHolder;
         al::LiveActorKit*     mLiveActorKit;
         void*                 mEffectUserInfo;
-        al::MapObjActor*      mPlayerActor;
+        PlayerActor*          mPlayerActor;
 
 public:
-        void init();
-        void run();
-
         al::SceneObjHolder* getSceneObjHolder() const
         {
                 return mSceneObjHolder;
@@ -45,7 +41,31 @@ public:
                 mSceneObjHolder = holder;
         }
 
+        al::LiveActorKit* getLiveActorKit() const
+        {
+                return mLiveActorKit;
+        }
+
+        void setLiveActorKit( al::LiveActorKit* holder )
+        {
+                mLiveActorKit = holder;
+        }
+
+        al::SystemKit* getSystemKit() const
+        {
+                return mSystemKit;
+        }
+
+        PlayerActor* getPlayerActor() const
+        {
+                return mPlayerActor;
+        }
+
         RootTask* getRootTask() const;
+
+public:
+        void init();
+        void run();
 };
 
 static_assert( sizeof( Application ) == 0x60, "" );
