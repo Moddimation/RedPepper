@@ -7,6 +7,7 @@ namespace al
 
 class ByamlHeader
 {
+private:
         const u16 mTag;
         const u16 mVersion;
         const int mHashKeyOffset;

@@ -1,12 +1,13 @@
 #pragma once
 
-#include <Yaml/ByamlIter.h>
-
 namespace al
 {
 
+class ByamlIter;
+
 class CameraDashAngleTunerParam
 {
+private:
         float mAddAngleMax;
         float mZoomOutOffsetMax;
 

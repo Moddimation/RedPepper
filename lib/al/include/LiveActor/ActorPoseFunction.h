@@ -1,6 +1,8 @@
 #pragma once
 
+#include <math/seadMatrix.h>
 #include <LiveActor/LiveActor.h>
+#include <LiveActor/ActorPoseKeeper.h>
 
 class alActorPoseFunction
 {

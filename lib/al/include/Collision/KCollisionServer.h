@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Util/JMapInfo.h>
+class JMapInfo;
 
 namespace al
 {
@@ -39,6 +39,7 @@ struct KCollisionHeader
 
 class KCollisionServer
 {
+private:
         union
         {
                 KCollisionHeader* mHeader;
@@ -50,10 +51,10 @@ class KCollisionServer
         float     _8;
 
 public:
-        KCollisionServer();
-
         void setData( void* data );
         void initKCollisionServer( void* kclData, const void* paData );
+public:
+        KCollisionServer();
 };
 
 } // namespace al

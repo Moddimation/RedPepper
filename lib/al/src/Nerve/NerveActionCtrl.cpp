@@ -2,10 +2,13 @@
 #include <Util/StringUtil.h>
 
 // instruction order (5)
-NON_MATCHING al::NerveAction::NerveAction() : mNextNode( nullptr )
+
+#ifdef NON_MATCHING
+al::NerveAction::NerveAction() : mNextNode( nullptr )
 {
         alNerveFunction::NerveActionCollector::getCurrentCollector()->addNerve( this );
 }
+#endif
 
 namespace alNerveFunction
 {

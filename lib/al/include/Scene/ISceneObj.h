@@ -1,9 +1,8 @@
 #pragma once
 
-#include <LiveActor/ActorInitInfo.h>
-
 namespace al
 {
+class ActorInitInfo;
 
 class ISceneObj
 {

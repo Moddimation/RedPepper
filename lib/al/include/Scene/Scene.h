@@ -1,21 +1,19 @@
 #pragma once
 
 #include <Audio/AudioKeeper.h>
-#include <Factory/ActorFactory.h>
-#include <Layout/LayoutKit.h>
-#include <LiveActor/LiveActorKit.h>
 #include <Nerve/NerveExecutor.h>
-#include <Scene/SceneObjHolder.h>
-#include <Stage/StageResourceKeeper.h>
 
 namespace al
 {
+class ActorFactory;
+class LayoutKit;
+class LiveActorKit;
+class SceneObjHolder;
+class StageResourceKeeper;
 
 class Scene : public NerveExecutor, public IUseAudioKeeper
 {
-#ifndef __CC_ARM
-public:
-#endif
+private:
         AudioKeeper*         mAudioKeeper;
         LiveActorKit*        mLiveActorKit;
         LayoutKit*           mLayoutKit;
@@ -29,8 +27,27 @@ public:
         bool mIsAlive;
 
 public:
-        Scene( const char* name );
+        bool isAlive() const
+        {
+                return mIsAlive;
+        }
 
+        ActorFactory* getActorFactory() const
+        {
+                return mActorFactory;
+        }
+
+        void initAndLoadStageResource( const char* stageName, int scenario, sead::Heap* heap );
+        void initSceneAudio( const char* stageName, int scenario, int, const sead::SafeString&, const char* userName );
+        void initCameraDirector();
+        void initActorFactory();
+        void initSceneObjHolder();
+        void initLiveActorKit();
+        void initLayoutKit();
+
+        void endInit( const ActorInitInfo& info );
+
+public:
         virtual void appear();
         virtual void kill();
         virtual void init() = 0;
@@ -78,26 +95,8 @@ public:
         virtual void drawEffect()
         {
         }
-
-        void initAndLoadStageResource( const char* stageName, int scenario, sead::Heap* heap );
-        void initSceneAudio( const char* stageName, int scenario, int, const sead::SafeString&, const char* userName );
-        void initCameraDirector();
-        void initActorFactory();
-        void initSceneObjHolder();
-        void initLiveActorKit();
-        void initLayoutKit();
-
-        void endInit( const ActorInitInfo& info );
-
-        bool isAlive() const
-        {
-                return mIsAlive;
-        }
-
-        ActorFactory* getActorFactory() const
-        {
-                return mActorFactory;
-        }
+public:
+        Scene( const char* name );
 };
 
 static_assert( sizeof( Scene ) == 0x34, "" );

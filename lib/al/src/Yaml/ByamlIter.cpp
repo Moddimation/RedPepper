@@ -66,7 +66,7 @@ int ByamlIter::getKeyIndex( const char* key ) const
 
 #pragma no_inline
 
-NON_MATCHING
+#ifdef NON_MATCHING
 bool ByamlIter::getByamlDataByKey( ByamlData* out, const char* key ) const
 {
         if ( isTypeHash() )
@@ -77,6 +77,7 @@ bool ByamlIter::getByamlDataByKey( ByamlData* out, const char* key ) const
         }
         return false;
 }
+#endif
 
 bool ByamlIter::tryGetBoolByKey( bool* out, const char* key ) const
 {

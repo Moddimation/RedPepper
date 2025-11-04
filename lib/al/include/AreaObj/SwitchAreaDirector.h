@@ -1,23 +1,24 @@
 #pragma once
 
-#include <AreaObj/SwitchKeepOnAreaGroup.h>
-#include <AreaObj/SwitchOnAreaGroup.h>
 #include <LiveActor/LiveActor.h>
 #include <Scene/ISceneObj.h>
 
 namespace al
 {
+class SwitchKeepOnAreaGroup;
+class SwitchOnAreaGroup;
 
 class SwitchAreaDirector : public LiveActor, public ISceneObj
 {
+private:
         SwitchOnAreaGroup*     mSwitchOnAreaGroup;
         SwitchKeepOnAreaGroup* mSwitchKeepOnAreaGroup;
 
 public:
-        SwitchAreaDirector();
-
         virtual void movement();
         virtual void unk1();
+public:
+        SwitchAreaDirector();
 };
 
 } // namespace al

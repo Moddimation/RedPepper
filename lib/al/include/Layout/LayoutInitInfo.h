@@ -1,10 +1,10 @@
 #pragma once
 
-#include <Execute/ExecuteDirector.h>
-#include <LiveActor/LiveActorKit.h>
-
 namespace al
 {
+
+class LiveActorKit;
+class ExecuteDirector;
 
 class LayoutInitInfo
 {

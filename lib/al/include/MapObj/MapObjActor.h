@@ -1,12 +1,12 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
 #include <prim/seadSafeString.h>
+#include <LiveActor/LiveActor.h>
 
 namespace al
 {
 
-class MapObjActor : public al::LiveActor
+class MapObjActor : public LiveActor
 {
 public:
         MapObjActor( const sead::SafeString& name );

@@ -1,6 +1,5 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
 #include <MapObj/MapObjActor.h>
 
 namespace al
@@ -8,13 +7,14 @@ namespace al
 
 class Sky : public MapObjActor
 {
+private:
         const sead::Vector3f* mCameraTransPtr;
 
 public:
-        Sky( const char* name );
-
         virtual void init( const ActorInitInfo& info );
         virtual void calcAnim();
+public:
+        Sky( const char* name );
 };
 
 } // namespace al

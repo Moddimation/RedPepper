@@ -1,12 +1,12 @@
 #pragma once
 
-#include <LiveActor/ActorInitInfo.h>
 #include <Placement/PlacementInfo.h>
 #include <math/seadQuat.h>
 #include <math/seadVector.h>
 
 namespace al
 {
+class ActorInitInfo;
 
 bool isPlaced( const ActorInitInfo& info );
 

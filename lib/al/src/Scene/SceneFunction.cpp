@@ -6,8 +6,7 @@
 namespace al
 {
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // WIP
 void initPlacementMap( Scene* scene, const Resource* stageArchive, const ActorInitInfo& infoTemplate, const char* infoIterName )
 {
@@ -34,6 +33,7 @@ void initPlacementMap( Scene* scene, const Resource* stageArchive, const ActorIn
                 }
         }
 }
+#endif
 
 bool tryGetPlacementInfo( PlacementInfo* out, const Resource* stageArchive, const char* infoIterName )
 {

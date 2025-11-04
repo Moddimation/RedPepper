@@ -1,10 +1,13 @@
 #pragma once
 
-#include <Model/AnimPlayerSimple.h>
-#include <Model/AnimPlayerSkl.h>
+namespace al {
+class AnimPlayerSkl;
+class AnimPlayerSimple;
+}
 
 class alModelCtr
 {
+private:
         void*                 _0;
         void*                 _4;
         void*                 _8;

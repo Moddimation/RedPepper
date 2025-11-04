@@ -1,7 +1,5 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
-
 namespace alNerveFunction
 {
 class NerveActionCollector;
@@ -10,18 +8,22 @@ class NerveActionCollector;
 namespace al
 {
 
+class LiveActor;
 class NerveActionCtrl;
 
 class NerveAction : public Nerve
 {
+        friend class alNerveFunction::NerveActionCollector;
+        friend class NerveActionCtrl;
+
+private:
         NerveAction* mNextNode;
 
 public:
-        NerveAction();
         virtual const char* getName() const = 0;
+public:
+        NerveAction();
 
-        friend class alNerveFunction::NerveActionCollector;
-        friend class NerveActionCtrl;
 };
 } // namespace al
 
@@ -30,6 +32,9 @@ namespace alNerveFunction
 
 class NerveActionCollector
 {
+        friend class al::NerveActionCtrl;
+
+private:
         int              mNumNodes;
         al::NerveAction* mStartNode;
         al::NerveAction* mEndNode;
@@ -37,15 +42,14 @@ class NerveActionCollector
         static NerveActionCollector* sCurrentCollector;
 
 public:
-        NerveActionCollector();
-
         void addNerve( al::NerveAction* nerve );
 
         static NerveActionCollector* getCurrentCollector()
         {
                 return sCurrentCollector;
         }
-        friend class al::NerveActionCtrl;
+public:
+        NerveActionCollector();
 };
 
 } // namespace alNerveFunction
@@ -55,12 +59,14 @@ namespace al
 
 class NerveActionCtrl
 {
+private:
         int           mNumNerveActions;
         NerveAction** mNerveActions;
 
 public:
-        NerveActionCtrl( alNerveFunction::NerveActionCollector* collector );
         NerveAction* findNerve( const char* pName ) const;
+public:
+        NerveActionCtrl( alNerveFunction::NerveActionCollector* collector );
 };
 
 } // namespace al

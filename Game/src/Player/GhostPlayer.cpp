@@ -28,7 +28,7 @@ GhostPlayer::GhostPlayer( const sead::SafeString& name )
         recorder->initGhostPlayer( this );
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void GhostPlayer::init( const al::ActorInitInfo& info )
 {
 }
@@ -38,6 +38,7 @@ void GhostPlayer::kill()
         al::startHitReactionDeath( this );
         LiveActor::kill();
 }
+#endif
 
 void GhostPlayer::attackSensor( al::HitSensor* me, al::HitSensor* other )
 {
@@ -66,22 +67,26 @@ bool GhostPlayer::receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me )
         return false;
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void GhostPlayer::control()
 {
 }
+#endif
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void GhostPlayer::exeHide()
 {
 }
+#endif
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void GhostPlayer::exeBegin()
 {
 }
+#endif
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void GhostPlayer::exeNrv5()
 {
 }
+#endif

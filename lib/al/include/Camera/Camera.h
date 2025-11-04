@@ -1,13 +1,13 @@
 #pragma once
 
-#include <Camera/CameraDashAngleTunerParam.h>
-#include <Camera/CameraParamVision.h>
-#include <Camera/CameraRotatorParam.h>
-#include <Yaml/ByamlIter.h>
 #include <math/seadVector.h>
 
 namespace al
 {
+class ByamlIter;
+class CameraParamVision;
+class CameraDashAngleTunerParam;
+class CameraRotatorParam;
 
 class CameraUnknownParam
 {
@@ -21,13 +21,10 @@ public:
 
 class Camera
 {
+private:
         const char* const mName;
 
-#ifdef __CC_ARM
 protected:
-#else
-public:
-#endif
         sead::Vector3f             _8;
         sead::Vector3f             mPos;
         sead::Vector3f             mTarget;
@@ -39,8 +36,6 @@ public:
         CameraRotatorParam*        mRotatorParam;
 
 public:
-        Camera( const char* name );
-
         virtual void load( const ByamlIter* ticket );
         virtual void v1();
         virtual void v2();
@@ -49,6 +44,8 @@ public:
         virtual void v5();
         virtual void calc();
         virtual void v7();
+public:
+        Camera( const char* name );
 };
 
 const sead::Vector3f* getCameraPos();

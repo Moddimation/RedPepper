@@ -1,14 +1,18 @@
 #pragma once
 
-#include <AreaObj/AreaInitInfo.h>
-#include <AreaObj/AreaShape.h>
 #include <Stage/StageSwitchKeeper.h>
+#include <math/seadVector.h>
+#include <math/seadMatrix.h>
 
 namespace al
 {
+class AreaInitInfo;
+class AreaShape;
+class StageSwitchKeeper;
 
 class AreaObj : public IUseStageSwitch
 {
+private:
         const char*        mName;
         AreaShape*         mAreaShape;
         StageSwitchKeeper* mStageSwitchKeeper;
@@ -18,12 +22,12 @@ class AreaObj : public IUseStageSwitch
         bool               _48;
 
 public:
-        AreaObj( const char* name );
-
         virtual StageSwitchKeeper* getStageSwitchKeeper() const;
         virtual void               initStageSwitchKeeper();
         virtual void               init( const AreaInitInfo& info );
         virtual bool               isInVolume( const sead::Vector3f& trans ) const;
+public:
+        AreaObj( const char* name );
 };
 
 } // namespace al

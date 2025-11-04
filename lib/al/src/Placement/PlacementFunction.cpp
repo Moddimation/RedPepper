@@ -60,7 +60,7 @@ int calcLinkChildNum( const ActorInitInfo& info )
         return 0;
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // 4 bytes less on stack ?
 bool tryGetTrans( sead::Vector3f* out, const ActorInitInfo& info )
@@ -69,6 +69,7 @@ bool tryGetTrans( sead::Vector3f* out, const ActorInitInfo& info )
                 return true;
         return false;
 }
+#endif
 
 bool tryGetTrans( sead::Vector3f* out, const PlacementInfo& info )
 {

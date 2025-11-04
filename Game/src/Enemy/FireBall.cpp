@@ -51,7 +51,7 @@ bool FireBall::receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me )
         return false;
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // inline nops
 void FireBall::exeShot()
@@ -69,3 +69,5 @@ void FireBall::exeShot()
                 kill();
         }
 }
+
+#endif

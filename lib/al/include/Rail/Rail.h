@@ -8,6 +8,7 @@ namespace al
 
 class Rail
 {
+private:
         int  _0;
         int  _4;
         int  _8;
@@ -15,19 +16,19 @@ class Rail
         bool mIsClosed;
 
 public:
-        Rail();
-
+        bool isClosed() const
+        {
+                return mIsClosed;
+        }
+        
         void init( const PlacementInfo& info );
 
         float getTotalLength() const;
         float normalizeLength( float ) const;
         void  calcPosDir( sead::Vector3f*, sead::Vector3f*, float );
         float calcNearestRailPosCoord( const sead::Vector3f&, float );
-
-        bool isClosed() const
-        {
-                return mIsClosed;
-        }
+public:
+        Rail();
 };
 
 } // namespace al

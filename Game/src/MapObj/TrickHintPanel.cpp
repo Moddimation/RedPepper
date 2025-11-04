@@ -58,7 +58,7 @@ extern "C" int FUN_0026A9B8( u32 );
 extern "C" int FUN_0026AA60( u32 );
 extern "C" int FUN_002786F4();
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // inline nops
 void TrickHintPanel::exeOn()
@@ -73,6 +73,7 @@ void TrickHintPanel::exeOn()
         al::invalidateClipping( this );
         al::setNerve( this, &NrvTrickHintPanel::nrv3 );
 }
+#endif
 
 void TrickHintPanel::exenrv3()
 {

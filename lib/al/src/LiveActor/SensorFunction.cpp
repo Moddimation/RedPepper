@@ -1,4 +1,5 @@
 #include <HitSensor/HitSensor.h>
+#include <LiveActor/HitSensorKeeper.h>
 #include <LiveActor/SensorFunction.h>
 #include <Util/StringUtil.h>
 
@@ -11,7 +12,7 @@ struct NameToType
         al::SensorType type;
 };
 
-NON_MATCHING
+//NON_MATCHING
 
 #define ALSENSORFUNCTION_ENTRY( TYPE ) { #TYPE, al::SensorType_##TYPE },
 
@@ -39,7 +40,7 @@ ALSENSORFUNCTION_ENTRY(WooGanSandBody)
 
 #undef ALSENSORFUNCTION_ENTRY
 
-NON_MATCHING
+#ifdef NON_MATCHING
 al::SensorType findSensorTypeByName( const char* name )
 {
         int            size = sizeof( sNameToTypeLookupTable ) / sizeof( sNameToTypeLookupTable[ 0 ] );
@@ -56,6 +57,7 @@ al::SensorType findSensorTypeByName( const char* name )
         }
         return type;
 }
+#endif
 
 void updateHitSensorsAll( al::LiveActor* actor )
 {

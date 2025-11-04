@@ -1,12 +1,15 @@
 #include <Camera/Camera.h>
+
 #include <Camera/CameraDashAngleTunerParam.h>
 #include <Camera/CameraParamVision.h>
 #include <Camera/CameraRotatorParam.h>
+#include <Yaml/ByamlIter.h>
 
 namespace al
 {
 
-NON_MATCHING // vtable
+#ifdef NON_MATCHING
+// vtable
 Camera::Camera( const char* name )
     : mName( name ), _8( sead::Vector3f::zero ), mPos( sead::Vector3f( 0, 500, 500 ) ),
       mTarget( sead::Vector3f::ey ), _2C( sead::Vector3f::ey ), mInterpoleFrame( 30 ),
@@ -17,6 +20,8 @@ Camera::Camera( const char* name )
         mUnknownParam        = new CameraUnknownParam;
         mRotatorParam        = new CameraRotatorParam;
 }
+
+#endif
 
 void Camera::load( const al::ByamlIter* ticket )
 {

@@ -4,11 +4,14 @@
 
 #include "Scene/SceneObjFactory.h"
 
-NON_MATCHING // need to find out what all the space at 0x68 is used for
+#ifdef NON_MATCHING
+// need to find out what all the space at 0x68 is used for
 CoinRotater::CoinRotater()
     : LiveActor( "ÉRÉCÉìâÒì]ä«óù" )
 {
 }
+
+#endif
 
 const char* CoinRotater::getSceneObjName() const
 {

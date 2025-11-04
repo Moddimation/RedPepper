@@ -1,15 +1,20 @@
 #pragma once
 
-#include <heap/seadExpHeap.h>
-#include <heap/seadFrameHeap.h>
-#include <heap/seadHeap.h>
 #include <heap/seadHeapMgr.h>
+
+namespace sead {
+class Heap;
+class ExpHeap;
+class FrameHeap;
+cl
+}
 
 namespace al
 {
 
 class MemorySystem
 {
+private:
         sead::ExpHeap*   mStationedHeap;
         sead::Heap*      _4;
         sead::ExpHeap*   mSequenceHeap;
@@ -21,15 +26,6 @@ class MemorySystem
         u8               unk1[ 0x20 ];
 
 public:
-        void createSequenceHeap();
-        void createSceneHeap( const char* stageName );
-        void createSceneResourceHeap( const char* stageName );
-
-        void destroySceneHeap( bool destroyResource );
-        void destroyCourseSelect();
-
-        void freeAllSequenceHeap();
-
         sead::ExpHeap* getStationedHeap() const
         {
                 return mStationedHeap;
@@ -54,6 +50,15 @@ public:
         {
                 return mCourseSelectHeap;
         }
+
+        void createSequenceHeap();
+        void createSceneHeap( const char* stageName );
+        void createSceneResourceHeap( const char* stageName );
+
+        void destroySceneHeap( bool destroyResource );
+        void destroyCourseSelect();
+
+        void freeAllSequenceHeap();
 };
 
 void createSequenceHeap();
@@ -74,6 +79,7 @@ bool isCreatedSceneResourceHeap();
 
 class SceneHeapSetter : public sead::ScopedCurrentHeapSetter
 {
+private:
         sead::Heap* _8;
 
 public:

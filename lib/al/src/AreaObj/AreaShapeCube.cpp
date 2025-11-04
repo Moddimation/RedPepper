@@ -7,7 +7,7 @@ AreaShapeCube::AreaShapeCube( bool isCubeBase ) : mIsCubeBase( isCubeBase )
 {
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // comparison is different
 bool AreaShapeCube::isInVolume( const sead::Vector3f& trans ) const
@@ -20,5 +20,6 @@ bool AreaShapeCube::isInVolume( const sead::Vector3f& trans ) const
         return localPos.y > bottomTopYBounds.x && localPos.y < bottomTopYBounds.y &&
                localPos.x > -500 && localPos.y < 500 && localPos.z > -500 && localPos.z < 500;
 }
+#endif
 
 } // namespace al

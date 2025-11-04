@@ -1,15 +1,18 @@
 #pragma once
 
-#include <File/FileLoader.h>
-#include <Memory/MemorySystem.h>
-#include <Save/SaveDataDirector.h>
-#include <heap/seadHeap.h>
+namespace sead {
+class Heap;
+}
 
 namespace al
 {
+class MemorySystem;
+class FileLoader;
+class SaveDataDirector;
 
 class SystemKit
 {
+private:
         MemorySystem*     mMemorySystem;
         FileLoader*       mFileLoader;
         void*             _8;

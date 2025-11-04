@@ -20,14 +20,15 @@ NERVE_DEF( FallMapParts, End );
 
 } // namespace NrvFallMapParts
 
-NON_MATCHING // float
+#ifdef NON_MATCHING
+// float
 FallMapParts::FallMapParts( const sead::SafeString& name )
     : MapObjActor( name ), mStartTrans( sead::Vector3f::zero ), mFallFrames( 60 ), _70( false )
 {
 }
+#endif
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // instruction swap
 void FallMapParts::init( const ActorInitInfo& info )
 {
@@ -39,6 +40,7 @@ void FallMapParts::init( const ActorInitInfo& info )
         initStageSwitchAppear( this, info );
         trySyncStageSwitchAppear( this );
 }
+#endif
 
 bool FallMapParts::receiveMsg( u32 msg, HitSensor* other, HitSensor* me )
 {
@@ -56,8 +58,7 @@ bool FallMapParts::receiveMsg( u32 msg, HitSensor* other, HitSensor* me )
         return false;
 }
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // inline nop
 void FallMapParts::exeAppear()
 {
@@ -71,6 +72,7 @@ void FallMapParts::exeAppear()
         end:
                 setNerve( this, &NrvFallMapParts::Wait );
 }
+#endif
 
 void FallMapParts::exeWait()
 {
@@ -81,16 +83,16 @@ void FallMapParts::exeWait()
         }
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void FallMapParts::exeFallSign()
 {
 }
+#endif
 
 extern "C" bool FUN_00268df8( IUseAudioKeeper*,
         const sead::SafeString& name ); // something with sound
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // inline nop, string locations
 void FallMapParts::exeFall()
 {
@@ -105,6 +107,7 @@ void FallMapParts::exeFall()
         if ( isGreaterStep( this, mFallFrames ) )
                 setNerve( this, &NrvFallMapParts::End );
 }
+#endif
 
 void FallMapParts::exeEnd()
 {

@@ -1,12 +1,12 @@
 #pragma once
 
-#include <Scene/ISceneObj.h>
-
 namespace al
 {
+class ISceneObj;
 
 class SceneObjHolder
 {
+private:
         typedef ISceneObj* ( *CreateFunc )( int id );
 
         CreateFunc  mCreateFunc;
@@ -14,14 +14,15 @@ class SceneObjHolder
         int         mSize;
 
 public:
-        SceneObjHolder( CreateFunc func, int size );
-
         ISceneObj* create( int id );
         ISceneObj* getObj( int id ) const;
         bool       isExist( int id ) const;
         void       setObj( ISceneObj* obj, int id );
 
         void initAfterPlacementSceneObj( const ActorInitInfo& info );
+
+public:
+        SceneObjHolder( CreateFunc func, int size );
 };
 
 SceneObjHolder* getSceneObjHolder();

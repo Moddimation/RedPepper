@@ -21,9 +21,8 @@ AppearStep::AppearStep( const sead::SafeString& name ) : MapObjActor( name )
 {
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
-// idk
 void AppearStep::init( const al::ActorInitInfo& info )
 {
         al::initActorPoseTQSV( this );
@@ -35,6 +34,8 @@ void AppearStep::init( const al::ActorInitInfo& info )
                 ? makeActorDead()
                 : makeActorAppeared();
 }
+
+#endif
 
 void AppearStep::startAppear()
 {

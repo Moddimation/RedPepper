@@ -19,6 +19,7 @@ enum ByamlDataType
 
 class ByamlData
 {
+private:
         union Value
         {
                 int   vInt;

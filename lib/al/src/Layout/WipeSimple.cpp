@@ -37,7 +37,7 @@ void WipeSimple::exeWait()
                 startAction( this, "Wait" );
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // float math
 void WipeSimple::exeOpen()
@@ -48,5 +48,6 @@ void WipeSimple::exeOpen()
         if ( isActionEnd( this ) )
                 kill();
 }
+#endif
 
 } // namespace al

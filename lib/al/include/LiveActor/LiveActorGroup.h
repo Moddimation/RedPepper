@@ -8,14 +8,11 @@ namespace al
 
 class LiveActorGroup
 {
+private:
         const char* const         mName;
         sead::PtrArray<LiveActor> mActors;
 
 public:
-        LiveActorGroup( const char* name, int bufSize );
-
-        virtual void registerActor( LiveActor* actor );
-
         void killAll();
         void makeActorDeadAll();
 
@@ -24,6 +21,10 @@ public:
         {
                 return reinterpret_cast<sead::PtrArray<T>&>( mActors );
         }
+public:
+        virtual void registerActor( LiveActor* actor );
+public:
+        LiveActorGroup( const char* name, int bufSize );
 };
 
 } // namespace al

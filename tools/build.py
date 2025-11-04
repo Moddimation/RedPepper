@@ -27,6 +27,8 @@ def main() -> None:
                         help="Clean before building")
     parser.add_argument('-v', action='store_true',
                         help="Give verbose output")
+    parser.add_argument('-m', action='store_true',
+                        help="Compile only matching code (BROKEN)")
     args = parser.parse_args()
 
     if not os.path.isdir(getBuildPath()) or args.c:
@@ -38,7 +40,7 @@ def main() -> None:
         try:
             subprocess.run(cmake_args, check=True)
         except subprocess.CalledProcessError:
-            exit(1)  # silently exit with failure if build failed
+            exit(1)
         os.chdir("..")
 
     status("Generating Linker Script")
@@ -47,9 +49,12 @@ def main() -> None:
     os.chdir(getBuildPath())
 
     verbose = ''
+    match = ''
     if args.v:
-        verbose = 'VERBOSE=1'
-    result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}', shell=True)
+        verbose = 'VERBOSE=1 '
+    if not args.m:
+        match = 'NON_MATCHING=1'
+    result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}{match}', shell=True)
     if result.returncode != 0:
         exit(result)
 

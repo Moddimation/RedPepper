@@ -1,24 +1,20 @@
 #pragma once
 
 #include <Nerve/NerveExecutor.h>
-#include <Scene/Scene.h>
 #include <prim/seadSafeString.h>
 
 namespace al
 {
+class Scene;
 
 class Sequence : public NerveExecutor
 {
-#ifndef __CC_ARM
-public:
-#endif
+private:
         sead::FixedSafeString<64> mName;
         Scene*                    mCurrentScene;
         u8                        unk[ 0xf0 ];
 
 public:
-        Sequence( const char* name );
-
         virtual void init( /*SequenceInitInfo& ?*/ );
         virtual void update();
         virtual void unk1();
@@ -28,6 +24,8 @@ public:
         virtual bool unk4();
         virtual int  unk5();
         virtual int  unk6();
+public:
+        Sequence( const char* name );
 };
 
 } // namespace al

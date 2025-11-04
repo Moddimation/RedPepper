@@ -4,7 +4,8 @@
 namespace al
 {
 
-NON_MATCHING // unnecessary streq for mConvertNameData missing
+#ifdef NON_MATCHING
+// unnecessary streq for mConvertNameData missing
 ActorFactory::ActorFactory()
     : mArchive( nullptr ), mConvertNameData( nullptr )
 {
@@ -12,6 +13,7 @@ ActorFactory::ActorFactory()
         mConvertNameData =
                 new ByamlIter( static_cast<const u8*>( mArchive->getByml( "CreatorClassNameTable" ) ) );
 }
+#endif
 
 } // namespace al
 

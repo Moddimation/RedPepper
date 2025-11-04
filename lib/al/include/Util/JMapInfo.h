@@ -47,14 +47,15 @@ struct JMapData
 
 class JMapInfo
 {
+private:
         const JMapData* mData;
         const char*     mName;
 
 public:
-        JMapInfo();
-
         bool attach( const void* data );
 
         int  searchItemInfo( const char* );
         bool getValueFast( int, int index, u64* out );
+public:
+        JMapInfo();
 };

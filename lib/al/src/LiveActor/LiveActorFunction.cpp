@@ -8,6 +8,9 @@
 #include <Math/MtxUtil.h>
 #include <Model/ModelKeeper.h>
 #include <Nerve/NerveFunction.h>
+#include <Collision/Collider.h>
+#include <LiveActor/HitSensorKeeper.h>
+#include <Collision/ClippingDirector.h>
 
 void alLiveActorFunction::calcAnimDirect( al::LiveActor* actor )
 {
@@ -95,7 +98,7 @@ void validateClipping( LiveActor* actor )
 
 // ModelKeeper
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // optimization is too smart
 void hideModel( LiveActor* actor )
@@ -110,9 +113,9 @@ void hideModel( LiveActor* actor )
         }
         actor->getLiveActorFlag().isHideModel = true;
 }
+#endif
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // register swap, maybe inlined
 bool tryStartMclAnimIfExist( LiveActor* actor, const char* animName )
 {
@@ -124,9 +127,9 @@ bool tryStartMclAnimIfExist( LiveActor* actor, const char* animName )
         }
         return false;
 }
+#endif
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // ldr for getting ModelKeeper is optimized
 void calcJointPos( sead::Vector3f* out, const LiveActor* actor, const char* jointName )
 {
@@ -135,6 +138,7 @@ void calcJointPos( sead::Vector3f* out, const LiveActor* actor, const char* join
         out->y                          = jointMtx->m[ 1 ][ 3 ];
         out->z                          = jointMtx->m[ 2 ][ 3 ];
 }
+#endif
 
 // HitSensorKeeper
 
@@ -158,16 +162,15 @@ void startNerveAction( LiveActor* actor, const char* actionName )
         alNerveFunction::setNerveAction( actor, actionName );
 }
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // registers
 void initNerve( LiveActor* actor, const Nerve* nerve, int maxNerveStates )
 {
         actor->initNerveKeeper( new NerveKeeper( actor, nerve, maxNerveStates ) );
 }
+#endif
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // registers, too big for tail-reorder
 void initNerveAction( LiveActor* actor, const char* name, alNerveFunction::NerveActionCollector* collector, int maxNerveStates )
 {
@@ -178,5 +181,6 @@ void initNerveAction( LiveActor* actor, const char* name, alNerveFunction::Nerve
         actor->getNerveKeeper()->initNerveAction( nerveActionCtrl );
         startNerveAction( actor, name );
 }
+#endif
 
 } // namespace al

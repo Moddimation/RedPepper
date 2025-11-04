@@ -23,13 +23,15 @@ const Nerve* NerveKeeper::getCurrentNerve() const
                 return mEndNerve;
 }
 
-NON_MATCHING void NerveKeeper::update()
+#ifdef NON_MATCHING
+void NerveKeeper::update()
 {
         tryChangeNerve();
         mNerve->execute( this );
         mStep++;
         tryChangeNerve();
 }
+#endif
 
 void NerveKeeper::tryChangeNerve()
 {

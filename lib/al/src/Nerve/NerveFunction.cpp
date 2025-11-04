@@ -43,7 +43,9 @@ bool updateNerveState( IUseNerve* p )
 }
 
 // registers
-NON_MATCHING bool updateNerveStateAndNextNerve( IUseNerve* p, const Nerve* nerve )
+
+#ifdef NON_MATCHING
+bool updateNerveStateAndNextNerve( IUseNerve* p, const Nerve* nerve )
 {
         NerveStateCtrl* stateCtrl = p->getNerveKeeper()->getStateCtrl();
         if ( stateCtrl->updateCurrentState() )
@@ -53,6 +55,7 @@ NON_MATCHING bool updateNerveStateAndNextNerve( IUseNerve* p, const Nerve* nerve
         }
         return false;
 }
+#endif
 
 } // namespace al
 

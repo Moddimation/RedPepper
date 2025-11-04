@@ -9,6 +9,7 @@ class ClippingActorInfo;
 
 class ClippingActorInfoList
 {
+private:
         sead::PtrArray<ClippingActorInfo> mInfos;
 
 public:

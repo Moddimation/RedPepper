@@ -1,4 +1,7 @@
 #include <LiveActor/ActorInitUtil.h>
+
+#include <LiveActor/ActorInitInfo.h>
+#include <LiveActor/LiveActor.h>
 #include <Placement/PlacementFunction.h>
 #include <Util/StringUtil.h>
 
@@ -8,14 +11,15 @@ namespace al
 #pragma push
 #pragma no_inline
 
-NON_MATCHING
+#ifdef NON_MATCHING
 static void initActorImpl( LiveActor* actor, const ActorInitInfo& info, const sead::SafeString& objectName, const sead::SafeString& archivePath, const char* suffix = nullptr )
 { // placeholder
 }
+#endif
 
 #pragma pop
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // SafeString construction backwards
 void initActor( LiveActor* actor, const ActorInitInfo& info )
@@ -25,13 +29,13 @@ void initActor( LiveActor* actor, const ActorInitInfo& info )
         initActorImpl( actor, info, objectName, StringTmp<256>( "ObjectData/%s", objectName ) );
 }
 
-NON_MATCHING
 
 // ???
 void initActorWithArchiveName( LiveActor* actor, const ActorInitInfo& info, const sead::SafeString& archiveName, const char* suffix )
 {
         initActorImpl( actor, info, archiveName.cstr(), StringTmp<256>( "ObjectData/%s", archiveName.cstr() ), suffix );
 }
+#endif
 
 void initCreateActorNoPlacementInfo( LiveActor* actor, const ActorInitInfo& hostInfo )
 {

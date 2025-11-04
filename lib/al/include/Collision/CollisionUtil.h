@@ -1,9 +1,10 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
+#include <math/seadMatrix.h>
 
 namespace al
 {
+class LiveActor;
 
 void syncCollisionMtx( LiveActor* actor, const sead::Matrix34f* );
 

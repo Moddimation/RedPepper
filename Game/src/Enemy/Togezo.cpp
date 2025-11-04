@@ -39,7 +39,7 @@ Togezo::Togezo( const sead::SafeString& name )
 extern "C" void FUN_0027a1a0( al::LiveActor* actor, const char* ); // inits al::Collider->_4
 extern "C" void FUN_0027cf20( al::LiveActor* actor, const al::ActorInitInfo& info, int );
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // inline nop
 void Togezo::init( const al::ActorInitInfo& info )
@@ -57,6 +57,8 @@ void Togezo::init( const al::ActorInitInfo& info )
         makeActorAppeared();
 }
 
+#endif
+
 extern "C" bool FUN_00272a9c();
 extern "C" bool FUN_00259758( al::LiveActor*, const sead::Vector3f&, const WalkerStateParam* );
 
@@ -71,9 +73,9 @@ extern "C" bool FUN_00262988( al::LiveActor*, sead::Vector3f* out, const sead::V
         float ); // turn (?)
 extern "C" void FUN_00258774( Togezo*, const WalkerStateParam* );
 
-NON_MATCHING // inline nops
-        void
-        Togezo::exeTurn()
+#ifdef NON_MATCHING // inline nops
+
+void Togezo::exeTurn()
 {
         if ( al::isFirstStep( this ) )
                 al::startAction( this, "Turn" );
@@ -87,7 +89,9 @@ NON_MATCHING // inline nops
                 al::setNerve( this, &NrvTogezo::Search );
 }
 
-NON_MATCHING
+#endif
+
+#ifdef NON_MATCHING
 
 // inline nops
 void Togezo::exeSearch()
@@ -105,6 +109,8 @@ void Togezo::exeSearch()
         }
 }
 
+#endif
+
 extern "C" bool FUN_0026b6cc( WalkerStateWander*, const sead::Vector3f& trans );
 
 void Togezo::exeChase()
@@ -113,9 +119,9 @@ void Togezo::exeChase()
                 FUN_0026b6cc( mWanderState, al::getTrans( this ) );
 }
 
-NON_MATCHING // inline nops
-        void
-        Togezo::exeAttack()
+#ifdef NON_MATCHING // inline nops
+
+void Togezo::exeAttack()
 {
         if ( al::isFirstStep( this ) )
         {
@@ -126,8 +132,11 @@ NON_MATCHING // inline nops
                 al::setNerve( this, &NrvTogezo::Wander );
 }
 
+#endif
+
 extern "C" void FUN_00279158( Togezo*, const EnemyStateBlowDown* );
 
+#ifdef NON_MATCHING
 void Togezo::exeBlowDown()
 {
         if ( al::updateNerveState( this ) )
@@ -136,3 +145,4 @@ void Togezo::exeBlowDown()
                 kill();
         }
 }
+#endif

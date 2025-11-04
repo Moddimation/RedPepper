@@ -1,12 +1,12 @@
 #pragma once
 
-#include <Rail/Rail.h>
-
 namespace al
 {
+class Rail;
 
 class RailRider
 {
+private:
         Rail*          mRail;
         sead::Vector3f mCurrentPos;
         sead::Vector3f mCurrentDir;
@@ -15,8 +15,6 @@ class RailRider
         bool           mIsLoop;
 
 public:
-        RailRider( Rail* rail );
-
         void moveToRailStart();
         void moveToNearestRail( const sead::Vector3f& r1 );
 
@@ -41,6 +39,8 @@ public:
         {
                 return mIsLoop;
         }
+public:
+        RailRider( Rail* rail );
 };
 
 } // namespace al

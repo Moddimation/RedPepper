@@ -1,9 +1,12 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
+#include <prim/seadSafeString.h>
+#include <Placement/PlacementInfo.h>
 
 namespace al
 {
+class LiveActor;
+class ActorInitInfo;
 
 void initActor( LiveActor* actor, const ActorInitInfo& info );
 void initActorWithArchiveName( LiveActor* actor, const ActorInitInfo& info, const sead::SafeString& archiveName, const char* suffix = nullptr );

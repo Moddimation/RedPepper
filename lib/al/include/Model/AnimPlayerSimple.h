@@ -1,12 +1,12 @@
 #pragma once
 
-#include <Model/AnimInfoTable.h>
-
 namespace al
 {
+class AnimInfoTable;
 
 class AnimPlayerSimple
 {
+private:
         void*          _0;
         AnimInfoTable* mAnimInfoTable;
         void*          _8;

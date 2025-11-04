@@ -7,6 +7,7 @@ namespace al
 
 class ClockMapParts : public MapObjActor
 {
+private:
         sead::Quatf _60;
         int         _70;
         float       _74;
@@ -14,15 +15,15 @@ class ClockMapParts : public MapObjActor
         int         _7C;
         int         _80;
 
-public:
-        ClockMapParts( const sead::SafeString& name );
-
-        virtual void init( const ActorInitInfo& info );
-
+public
         void exeStandBy();
         void exeRotateSign();
         void exeRotate();
         void exeWait();
+public:
+        virtual void init( const ActorInitInfo& info );
+public:
+        ClockMapParts( const sead::SafeString& name );
 };
 
 } // namespace al

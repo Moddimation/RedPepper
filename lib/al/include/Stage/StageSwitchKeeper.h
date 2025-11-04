@@ -1,21 +1,21 @@
 #pragma once
 
-#include <Functor/FunctorBase.h>
-#include <LiveActor/ActorInitInfo.h>
-#include <Stage/StageSwitchAccesser.h>
-
 namespace al
 {
+class FunctorBase;
+class ActorInitInfo;
+class StageSwitchAccesser;
 
 class StageSwitchKeeper
 {
+private:
         StageSwitchAccesser* mSwitches;
         int                  mSwitchCount;
 
 public:
-        StageSwitchKeeper();
-
         StageSwitchAccesser* getStageSwitchAccesser( int type );
+public:
+        StageSwitchKeeper();
 };
 
 class IUseStageSwitch

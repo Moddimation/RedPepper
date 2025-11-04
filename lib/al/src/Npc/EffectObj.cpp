@@ -9,11 +9,13 @@
 namespace al
 {
 
-NON_MATCHING // something with mBaseMtx
+#ifdef NON_MATCHING
+// something with mBaseMtx
 EffectObj::EffectObj( const sead::SafeString& name )
     : MapObjActor( name ), mBaseMtx( sead::Matrix34f::ident )
 {
 }
+#endif
 
 void EffectObj::init( const ActorInitInfo& info )
 {

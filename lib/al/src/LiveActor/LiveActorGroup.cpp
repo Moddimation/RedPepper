@@ -3,12 +3,13 @@
 namespace al
 {
 
-NON_MATCHING // stupid
+#ifdef NON_MATCHING
 LiveActorGroup::LiveActorGroup( const char* name, int bufSize )
     : mName( name )
 {
         mActors.allocBufferInline( bufSize );
 }
+#endif
 
 void LiveActorGroup::registerActor( LiveActor* actor )
 {

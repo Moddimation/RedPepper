@@ -1,6 +1,6 @@
-#include <System/Application.h> // GAMEUSE
 #include <Scene/Scene.h>
 #include <Scene/SceneObjHolder.h>
+#include <System/Application.h> // GAMEUSE
 
 #include "Scene/SceneObjFactory.h"
 
@@ -25,7 +25,7 @@ void Scene::kill()
         mIsAlive = false;
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void Scene::movement()
 {
         if ( mIsAlive )
@@ -35,7 +35,8 @@ void Scene::movement()
                 if ( mAudioKeeper )
                         mAudioKeeper->update();
         }
-} 
+}
+#endif
 
 void Scene::control()
 {
@@ -46,12 +47,13 @@ AudioKeeper* Scene::getAudioKeeper() const
         return mAudioKeeper;
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void Scene::initAndLoadStageResource( const char* stageName, int scenario, sead::Heap* heap )
 {
         mResourceKeeper = new StageResourceKeeper;
         mResourceKeeper->initAndLoadResource( stageName, scenario, heap );
 }
+#endif
 
 void Scene::initActorFactory()
 {
@@ -62,7 +64,7 @@ void Scene::initSceneObjHolder()
 {
         SceneObjHolder* holder = SceneObjFactory::createSceneObjHolder();
         mSceneObjHolder        = holder;
-        al::getApplication()->setSceneObjHolder ( holder );
+        Application::instance()->setSceneObjHolder( holder );
 }
 
 void Scene::endInit( const ActorInitInfo& info )

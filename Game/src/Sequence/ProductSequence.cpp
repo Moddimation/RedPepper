@@ -30,9 +30,12 @@ ProductSequence::ProductSequence( const char* name )
 {
 }
 
-NON_MATCHING void ProductSequence::init()
+#ifdef NON_MATCHING
+void ProductSequence::init()
 {
 } // needed for vtable
+
+#endif
 
 extern "C" bool FUN_0025ba7c( const char* );
 

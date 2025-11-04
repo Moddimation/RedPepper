@@ -1,12 +1,13 @@
 #pragma once
 
-#include <Yaml/ByamlIter.h>
-
 namespace al
 {
 
+class ByamlIter;
+
 class CameraParamVision
 {
+private:
         float mFovyDegree;
         float mStereovisionDistance;
         float mStereovisionDepth;
@@ -14,9 +15,9 @@ class CameraParamVision
         float mFarClipDistance;
 
 public:
-        CameraParamVision();
-
         bool init( const ByamlIter* ticket );
+public:
+        CameraParamVision();
 };
 
 } // namespace al

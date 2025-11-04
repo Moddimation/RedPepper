@@ -8,14 +8,11 @@ namespace al
 template <typename T, typename F>
 class FunctorV0M : public FunctorBase
 {
+private:
         T mParent;
         F mFuncPtr;
 
 public:
-        FunctorV0M( T parent, F funcPtr ) : mFuncPtr( funcPtr ), mParent( parent )
-        {
-        }
-
         virtual void operator()() const
         {
                 ( mParent->*mFuncPtr )();
@@ -24,6 +21,10 @@ public:
         virtual FunctorV0M* clone() const
         {
                 return new FunctorV0M<T, F>( mParent, mFuncPtr );
+        }
+public:
+        FunctorV0M( T parent, F funcPtr ) : mFuncPtr( funcPtr ), mParent( parent )
+        {
         }
 };
 

@@ -1,12 +1,12 @@
 #pragma once
 
-#include <Nerve/NerveStateBase.h>
-
 namespace al
 {
+class NerveStateBase;
 
 class NerveStateCtrl
 {
+private:
         struct State
         {
                 NerveStateBase* mState;
@@ -22,17 +22,17 @@ class NerveStateCtrl
         State* findStateInfo( const Nerve* nerve );
 
 public:
-        NerveStateCtrl( int capacity );
+        const State* getCurrentState() const
+        {
+                return mCurrentState;
+        }
 
         void startState( const Nerve* nerve );
         void tryEndCurrentState();
         bool updateCurrentState();
         bool isCurrentStateEnd() const;
-
-        const State* getCurrentState() const
-        {
-                return mCurrentState;
-        }
+public:
+        NerveStateCtrl( int capacity );
 };
 
 } // namespace al

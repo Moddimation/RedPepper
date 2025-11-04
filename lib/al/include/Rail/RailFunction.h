@@ -1,9 +1,8 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
-
 namespace al
 {
+class LiveActor;
 
 void setSyncRailToStart( LiveActor* actor );
 

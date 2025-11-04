@@ -7,6 +7,7 @@ namespace al
 
 class CollisionDirector : public IUseExecutor
 {
+private:
         void* _4;
         int   _8;
         int   _C;
@@ -15,11 +16,11 @@ class CollisionDirector : public IUseExecutor
         void* _18;
 
 public:
-        CollisionDirector();
-
-        virtual void execute();
-
         void endInit();
+public:
+        virtual void execute();
+public:
+        CollisionDirector();
 };
 
 } // namespace al

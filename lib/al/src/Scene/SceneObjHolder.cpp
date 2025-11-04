@@ -1,5 +1,5 @@
-#include <System/Application.h> // GAMEUSE
 #include <Scene/SceneObjHolder.h>
+#include <System/Application.h> // GAMEUSE
 
 namespace al
 {

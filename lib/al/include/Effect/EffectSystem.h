@@ -1,19 +1,22 @@
 #pragma once
 
-#include <heap/seadHeap.h>
+namespace sead {
+class Heap;
+}
 
 namespace al
 {
 
 class EffectSystem
 {
+private:
         sead::Heap* _0;
 
 public:
-        EffectSystem();
-
         void init();
         void startScene();
+public:
+        EffectSystem();
 };
 
 } // namespace al

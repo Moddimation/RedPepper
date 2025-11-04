@@ -7,6 +7,7 @@ namespace al
 
 class ByamlContainerHeader
 {
+private:
         // ByamlDataType mType : 1;
         // u32 mSize : 3;
         union

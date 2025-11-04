@@ -8,13 +8,14 @@ namespace al
 
 class SensorHitGroup
 {
+private:
         sead::PtrArray<HitSensor> mSensors;
 
 public:
-        SensorHitGroup( int, const char* name /* unused */ );
-
         void add( HitSensor* sensor );
         void remove( HitSensor* sensor );
+public:
+        SensorHitGroup( int, const char* name /* unused */ );
 };
 
 } // namespace al

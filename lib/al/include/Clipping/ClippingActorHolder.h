@@ -1,13 +1,14 @@
 #pragma once
 
-#include <Clipping/ClippingActorInfoList.h>
-#include <HitSensor/HitSensor.h>
-
 namespace al
 {
 
+class ClippingActorInfoList;
+class LiveActor;
+
 class ClippingActorHolder
 {
+private:
         int                    _0;
         int                    _4;
         ClippingActorInfoList* _8;
@@ -16,10 +17,10 @@ class ClippingActorHolder
         ClippingActorInfoList* _14;
 
 public:
-        ClippingActorHolder( int );
-
         void invalidateClipping( LiveActor* actor );
         void validateClipping( LiveActor* actor );
+public:
+        ClippingActorHolder( int );
 };
 
 } // namespace al

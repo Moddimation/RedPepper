@@ -1,14 +1,15 @@
 #pragma once
 
-#include <LiveActor/ActionAnimCtrl.h>
-
 namespace al
 {
+
+class ActionAnimCtrl;
 
 class LiveActor;
 
 class ActorActionKeeper
 {
+private:
         void*           _0;
         void*           _4;
         ActionAnimCtrl* mActionAnimCtrl;

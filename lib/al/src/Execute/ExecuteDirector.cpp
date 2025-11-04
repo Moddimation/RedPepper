@@ -1,4 +1,5 @@
 #include <Execute/ExecuteDirector.h>
+#include <Execute/ExecuteOrder.h>
 #include <Execute/ExecuteRequestKeeper.h>
 #include <Execute/ExecuteTableHolderDraw.h>
 #include <Execute/ExecuteTableHolderUpdate.h>
@@ -25,7 +26,7 @@ static const ExecuteOrder split( sDraw7ExecuteOrder ) = { "２Ｄベース（下画面）"
 static const ExecuteOrder split( sDraw8ExecuteOrder ) = { "アイテムストックモデル", "ActorModelDraw", 32, "アイテム" };
 static const ExecuteOrder split( sDraw9ExecuteOrder ) = { "２Ｄポーズ（下画面）", "LayoutDrawBottom", 8, "レイアウト" };
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // small instruction swap in operator new[]
 void ExecuteDirector::init()
@@ -58,6 +59,7 @@ void ExecuteDirector::init()
 
         mRequestKeeper = new ExecuteRequestKeeper( _0 );
 }
+#endif
 
 void ExecuteDirector::createExecutorListTable()
 {

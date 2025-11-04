@@ -6,6 +6,8 @@
 
 namespace al
 {
+class Resource;
+class Scene;
 
 void initPlacementMap( Scene* scene, const Resource* stageArchive, const ActorInitInfo& infoTemplate, const char* infoIterName );
 

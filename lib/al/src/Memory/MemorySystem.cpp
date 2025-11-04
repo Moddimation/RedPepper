@@ -15,8 +15,7 @@ void MemorySystem::createSequenceHeap()
 extern "C" void FUN_002911e8( sead::FrameHeap** out, u32 heapSize, const char* name, u8,
         int ); // creates FrameHeap(?)
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // WIP
 void MemorySystem::createSceneResourceHeap( const char* stageName )
 {
@@ -46,6 +45,7 @@ void MemorySystem::createSceneResourceHeap( const char* stageName )
                 heapSize = 8 * 1024 * 1024; // 8 MB
         FUN_002911e8( &mSceneResourceHeap, heapSize, "SceneHeapResource", 0, 1 );
 }
+#endif
 
 void MemorySystem::freeAllSequenceHeap()
 {

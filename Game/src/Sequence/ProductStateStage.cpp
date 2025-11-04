@@ -11,7 +11,7 @@ public:
         }
 };
 
-NON_MATCHING
+#ifdef NON_MATCHING
 ProductStateStage::ProductStateStage( ProductSequence* parent, ProductStageStartParam* startParam, const al::LayoutInitInfo& info )
     : HostStateBase( parent, "ステージステート" ), mStageStartParam( startParam ),
       mLastStageStartParam( nullptr ), mStageScene( nullptr ), _1C( nullptr ), _20( nullptr ), _24( nullptr ),
@@ -22,3 +22,4 @@ ProductStateStage::ProductStateStage( ProductSequence* parent, ProductStageStart
 
 /*void ProductStateStage::init() { }
 void ProductStateStage::appear() { }*/
+#endif

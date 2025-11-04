@@ -7,21 +7,23 @@ namespace al
 
 class NerveStateBase : public NerveExecutor
 {
+private:
         bool mIsDead;
 
 public:
-        NerveStateBase( const char* name );
+        inline bool isDead() const
+        {
+                return mIsDead;
+        }
 
+public:
         virtual void init();
         virtual void appear();
         virtual void kill();
         virtual bool update();
         virtual void control();
-
-        inline bool isDead() const
-        {
-                return mIsDead;
-        }
+public:
+        NerveStateBase( const char* name );
 };
 
 } // namespace al

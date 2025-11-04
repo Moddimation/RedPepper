@@ -1,14 +1,14 @@
 #pragma once
 
-#include <Yaml/ByamlContainerHeader.h>
-#include <Yaml/ByamlData.h>
-#include <Yaml/ByamlHeader.h>
-
 namespace al
 {
+class ByamlContainerHeader;
+class ByamlData;
+class ByamlHeader;
 
 class ByamlIter
 {
+private:
         union
         {
                 const u8*          mData;
@@ -22,10 +22,10 @@ class ByamlIter
         };
 
 public:
-        ByamlIter();
-        ByamlIter( const ByamlIter& other );
-        ByamlIter( const u8* data );
-        ByamlIter( const u8* data, const u8* rootNode );
+        const ByamlHeader* getHeader() const
+        {
+                return mHeader;
+        }
 
         bool isEqualData( const ByamlIter& other ) const;
 
@@ -68,10 +68,11 @@ public:
         bool tryConvertInt( int* out, const ByamlData* data ) const;
         bool tryConvertFloat( float* out, const ByamlData* data ) const;
 
-        const ByamlHeader* getHeader() const
-        {
-                return mHeader;
-        }
+public:
+        ByamlIter();
+        ByamlIter( const ByamlIter& other );
+        ByamlIter( const u8* data );
+        ByamlIter( const u8* data, const u8* rootNode );
 };
 
 } // namespace al

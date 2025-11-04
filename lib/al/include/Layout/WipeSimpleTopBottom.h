@@ -1,18 +1,17 @@
 #pragma once
 
-#include <Layout/WipeSimple.h>
-
 namespace al
 {
 
+class WipeSimple;
+
 class WipeSimpleTopBottom
 {
+private:
         WipeSimple* mTop;
         WipeSimple* mBottom;
 
 public:
-        WipeSimpleTopBottom( const char* name, const char* archive, const char*, const LayoutInitInfo& info, const char* subArchive );
-
         inline WipeSimple* getTop() const
         {
                 return mTop;
@@ -24,6 +23,8 @@ public:
         }
 
         bool isCloseEnd() const;
+public:
+        WipeSimpleTopBottom( const char* name, const char* archive, const char*, const LayoutInitInfo& info, const char* subArchive );
 };
 
 } // namespace al

@@ -1,13 +1,14 @@
 #pragma once
 
 #include <Audio/AudioKeeper.h>
-#include <Layout/LayoutInitInfo.h>
+#include <Effect/EffectKeeper.h>
 #include <Nerve/Nerve.h>
-#include <Nerve/NerveKeeper.h>
 #include <prim/seadSafeString.h>
 
 namespace al
 {
+class LayoutInitInfo;
+class NerveKeeper;
 
 class LayoutActor : public IUseNerve, public IUseAudioKeeper, public IUseEffectKeeper
 {
@@ -22,8 +23,8 @@ protected:
         bool             mIsAlive;
 
 public:
-        LayoutActor( const char* name );
-
+        void initNerve( const Nerve* nerve, int maxNerveStates = 0 );
+public:
         virtual NerveKeeper*  getNerveKeeper() const;
         virtual void          appear();
         virtual void          kill();
@@ -34,8 +35,8 @@ public:
         virtual void          control();
         virtual void          unk1();
         virtual void          unk2();
-
-        void initNerve( const Nerve* nerve, int maxNerveStates = 0 );
+public:
+        LayoutActor( const char* name );
 };
 
 void initLayoutActor( LayoutActor* layoutActor, const LayoutInitInfo& info, const char* archiveName, const char* = nullptr );
@@ -45,13 +46,7 @@ bool  isActionEnd( const LayoutActor* actor );
 void  setActionFrameRate( LayoutActor* actor, float rate );
 float getActionFrameMax( const LayoutActor* actor );
 
-void setPaneString( LayoutActor* actor, const char* paneName, const
-#ifdef __CC_ARM
-        wchar_t
-#else
-        char16_t
-#endif
-                * text );
+void setPaneString( LayoutActor* actor, const char* paneName, const wchar_t* text );
 void hidePane( LayoutActor* actor, const char* paneName );
 
 } // namespace al

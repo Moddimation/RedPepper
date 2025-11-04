@@ -1,13 +1,18 @@
 #pragma once
 
-#include <KeyPose/KeyPose.h>
-#include <LiveActor/ActorInitInfo.h>
+#include <Placement/PlacementInfo.h>
+
+#include <math/seadVector.h>
 
 namespace al
 {
 
+class KeyPose;
+class ActorInitInfo;
+
 class KeyPoseKeeper
 {
+private:
         enum MoveType
         {
                 MoveType_Loop,
@@ -30,12 +35,12 @@ class KeyPoseKeeper
         bool _11;
 
 public:
-        KeyPoseKeeper();
-
         void init( const ActorInitInfo& info );
 
         const KeyPose* getCurrentKeyPose() const;
         const KeyPose* getNextKeyPose() const;
+public:
+        KeyPoseKeeper();
 };
 
 const sead::Vector3f& getCurrentKeyTrans( const KeyPoseKeeper* p );

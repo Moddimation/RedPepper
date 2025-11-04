@@ -10,14 +10,14 @@ void PlayerActionMultiCondition::append( PlayerActionCondition* condition )
         mConditions.pushBack( *new sead::OffsetListNode<PlayerActionCondition*>( condition ) );
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 bool PlayerActionMultiCondition::check()
 {
         return true;
 }
+#endif
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // really very incorrect
 void PlayerActionMultiCondition::setup()
 {
@@ -26,3 +26,4 @@ void PlayerActionMultiCondition::setup()
                 ++cur )
                 ( *cur )->setup();
 }
+#endif

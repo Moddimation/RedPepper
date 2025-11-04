@@ -7,6 +7,7 @@ namespace al
 
 class ByamlHashPair
 {
+private:
         union
         {
                 ByamlDataType mType;
@@ -34,6 +35,7 @@ public:
 
 class ByamlHashIter
 {
+private:
         struct Header
         {
                 al::ByamlDataType type : 8;

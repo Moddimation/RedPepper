@@ -11,7 +11,7 @@ SwitchAreaDirector::SwitchAreaDirector()
 {
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // not using stm for vector copy
 void SwitchAreaDirector::movement()
@@ -22,5 +22,6 @@ void SwitchAreaDirector::movement()
         if ( mSwitchKeepOnAreaGroup )
                 mSwitchKeepOnAreaGroup->update( pos );
 }
+#endif
 
 } // namespace al

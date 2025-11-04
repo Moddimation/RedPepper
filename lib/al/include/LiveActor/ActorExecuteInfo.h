@@ -1,12 +1,13 @@
 #pragma once
 
-#include <Execute/ExecuteRequestKeeper.h>
-
 namespace al
 {
 
+class ExecuteRequestKeeper;
+
 class ActorExecuteInfo
 {
+private:
         ExecuteRequestKeeper* mRequestKeeper;
 
 public:

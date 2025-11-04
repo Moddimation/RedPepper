@@ -1,8 +1,10 @@
-#include <LiveActor/ActorInitInfo.h>
 #include <LiveActor/LiveActor.h>
+
+#include <LiveActor/ActorInitInfo.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/LiveActorKit.h>
 #include <Rail/RailKeeper.h>
+#include <LiveActor/LiveActorGroup.h>
 
 namespace al
 {

@@ -1,13 +1,14 @@
 #pragma once
 
-#include <Save/SaveDataSequenceBase.h>
-#include <Save/SaveDataSequenceInitDir.h>
-
 namespace al
 {
+class SaveDataSequenceBase;
+class SaveDataSequenceInitDir;
+class AsyncFunctorThread;
 
 class SaveDataDirector
 {
+private:
         void*                     _0;
         SaveDataSequenceBase*     _4;
         SaveDataSequenceBase*     _8;

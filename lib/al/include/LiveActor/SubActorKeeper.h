@@ -12,6 +12,9 @@ class ActorInitInfo;
 
 class SubActorKeeper
 {
+        friend class ::alSubActorFunction;
+
+private:
         struct Entry
         {
                 LiveActor* actor;
@@ -22,12 +25,10 @@ class SubActorKeeper
         LiveActor* const      mParent;
         sead::PtrArray<Entry> mSubActors;
 
-        SubActorKeeper( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
-
 public:
         static SubActorKeeper* tryCreate( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
-
-        friend class ::alSubActorFunction;
+private:
+        SubActorKeeper( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
 };
 
 } // namespace al

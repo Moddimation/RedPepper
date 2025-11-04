@@ -1,28 +1,26 @@
 #pragma once
 
-#include <Execute/ExecuteDirector.h>
-
 namespace al
 {
+class ExecuteDirector;
+class FontHolder;
 
 class LayoutKit
 {
-#ifndef __CC_ARM
-public:
-#endif
+private:
         void*             _0;
-        class FontHolder* mFontHolder;
+        FontHolder* mFontHolder;
         ExecuteDirector*  mExecuteDirector;
         void*             _C;
         void*             _10;
         void*             _14;
 
 public:
-        LayoutKit( FontHolder* fontHolder );
-
         void createExecuteDirector( int p );
         void createEffectSystem();
         void update();
+public:
+        LayoutKit( FontHolder* fontHolder );
 };
 
 } // namespace al

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
 #include <Nerve/NerveStateBase.h>
 
 namespace al
 {
+class LiveActor;
 
 class ActorStateBase : public al::NerveStateBase
 {

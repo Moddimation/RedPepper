@@ -8,7 +8,7 @@ namespace rp
 {
 
 #pragma no_inline
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // linker shenanigans
 PlayerActor* getPlayerActor()
@@ -20,5 +20,6 @@ const sead::Vector3f& getPlayerPos()
 {
         return al::getTrans( getPlayerActor() );
 }
+#endif
 
 } // namespace rp

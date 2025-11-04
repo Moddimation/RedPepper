@@ -11,11 +11,10 @@ class LiveActor;
 
 class ActorPoseKeeperBase
 {
+private:
         sead::Vector3f mTrans;
 
 public:
-        ActorPoseKeeperBase();
-
         inline const sead::Vector3f& getTrans() const
         {
                 return mTrans;
@@ -46,18 +45,20 @@ public:
         virtual void copyPose( const ActorPoseKeeperBase* from );
         virtual void calcBaseMtx( sead::Matrix34f* out ) = 0;
 
+public:
         static const sead::Vector3f sDefaultGravity;
+public:
+        ActorPoseKeeperBase();
 };
 
 class ActorPoseKeeperTFSV : public ActorPoseKeeperBase
 {
+private:
         sead::Vector3f mFront;
         sead::Vector3f mScale;
         sead::Vector3f mVelocity;
 
 public:
-        ActorPoseKeeperTFSV();
-
         virtual const sead::Vector3f& getScale() const;
         virtual const sead::Vector3f& getVelocity() const;
         virtual const sead::Vector3f& getFront() const;
@@ -71,31 +72,33 @@ public:
         virtual void updatePoseMtx( const sead::Matrix34f* mtx );
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+public:
+        ActorPoseKeeperTFSV();
 };
 
 class ActorPoseKeeperTFGSV : public ActorPoseKeeperTFSV
 {
+private:
         sead::Vector3f mGravity;
 
 public:
-        ActorPoseKeeperTFGSV();
-
         virtual const sead::Vector3f& getGravity() const;
 
         virtual sead::Vector3f* getGravityPtr();
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+public:
+        ActorPoseKeeperTFGSV();
 };
 
 class ActorPoseKeeperTQSV : public ActorPoseKeeperBase
 {
+private:
         sead::Quatf    mQuat;
         sead::Vector3f mScale;
         sead::Vector3f mVelocity;
 
 public:
-        ActorPoseKeeperTQSV();
-
         virtual const sead::Vector3f& getScale() const;
         virtual const sead::Vector3f& getVelocity() const;
         virtual const sead::Quatf&    getQuat() const;
@@ -109,17 +112,18 @@ public:
         virtual void updatePoseMtx( const sead::Matrix34f* mtx );
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+public:
+        ActorPoseKeeperTQSV();
 };
 
 class ActorPoseKeeperTRSV : public ActorPoseKeeperBase
 {
+private:
         sead::Vector3f mRotate;
         sead::Vector3f mScale;
         sead::Vector3f mVelocity;
 
 public:
-        ActorPoseKeeperTRSV();
-
         virtual const sead::Vector3f& getRotate() const;
         virtual const sead::Vector3f& getScale() const;
         virtual const sead::Vector3f& getVelocity() const;
@@ -133,6 +137,8 @@ public:
         virtual void updatePoseMtx( const sead::Matrix34f* mtx );
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+public:
+        ActorPoseKeeperTRSV();
 };
 
 void initActorPoseTFSV( LiveActor* actor );

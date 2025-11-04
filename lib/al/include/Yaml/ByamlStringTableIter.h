@@ -7,6 +7,7 @@ namespace al
 
 class ByamlStringTableIter
 {
+private:
         struct Header
         {
                 const ByamlDataType type : 8;

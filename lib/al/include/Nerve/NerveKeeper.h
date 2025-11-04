@@ -10,6 +10,7 @@ class NerveActionCtrl;
 
 class NerveKeeper
 {
+private:
         IUseNerve*       mHost;
         const Nerve*     mEndNerve;
         const Nerve*     mNerve;
@@ -18,8 +19,6 @@ class NerveKeeper
         NerveActionCtrl* mActionCtrl;
 
 public:
-        NerveKeeper( IUseNerve* host, const Nerve* nrv, int maxNerveStates = 0 );
-
         const Nerve* getCurrentNerve() const;
 
         void initNerveAction( NerveActionCtrl* p )
@@ -50,6 +49,8 @@ public:
         {
                 return mActionCtrl;
         }
+public:
+        NerveKeeper( IUseNerve* host, const Nerve* nrv, int maxNerveStates = 0 );
 };
 
 class IUseNerve

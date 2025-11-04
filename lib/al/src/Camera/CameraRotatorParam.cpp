@@ -1,5 +1,7 @@
 #include <Camera/CameraRotatorParam.h>
 
+#include <Yaml/ByamlIter.h>
+
 namespace al
 {
 

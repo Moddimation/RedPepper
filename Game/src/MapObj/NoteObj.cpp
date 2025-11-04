@@ -8,7 +8,8 @@
 
 #include "MapObj/CoinRotater.h"
 
-NON_MATCHING // sucky sead inlines
+#ifdef NON_MATCHING
+// sead inline
 NoteObj::NoteObj( const char* name )
     : MapObjActor( name ), mStartQuat( sead::Quatf::unit ), _70( false ), _71( true ), _74( -1 ),
       _78( sead::Vector3f::zero ), mGenerator( nullptr )
@@ -16,19 +17,19 @@ NoteObj::NoteObj( const char* name )
         rp::createCoinRotater();
 }
 
-NON_MATCHING
 NoteObj::NoteObj( NoteObjGenerator* generator )
     : MapObjActor( "音符オブジェ" ), mStartQuat( sead::Quatf::unit ), _70( false ), _71( true ), _74( -1 ),
       _78( sead::Vector3f::zero ), mGenerator( generator )
 {
         rp::createCoinRotater();
 }
+#endif
 
 extern "C" void FUN_00270fc4( al::LiveActor*, float, int ); // MtxConnector (?)
 
 static const char* sNoteObjArchive = "NoteObj";
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void NoteObj::init( const al::ActorInitInfo& info ) // STUPID sead inlines
 {
         if ( al::isPlaced( info ) )
@@ -42,13 +43,13 @@ void NoteObj::init( const al::ActorInitInfo& info ) // STUPID sead inlines
         al::initActorWithArchiveNameNoPlacementInfo( this, info, sNoteObjArchive );
         makeActorDead();
 }
+#endif
 
 void NoteObj::initAfterPlacement()
 {
 }
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // creates new path instead of conditional instructions
 void NoteObj::control()
 {
@@ -56,3 +57,4 @@ void NoteObj::control()
                 al::addVelocityToGravity( this, 0.5 );
         al::rotateQuatYDirDegree( this, mStartQuat, rp::getCoinRotateY() );
 }
+#endif

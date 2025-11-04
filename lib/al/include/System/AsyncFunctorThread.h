@@ -1,6 +1,5 @@
 #pragma once
 
-#include <Functor/FunctorBase.h>
 #include <prim/seadSafeString.h>
 
 namespace sead
@@ -10,24 +9,26 @@ class DelegateThread;
 
 namespace al
 {
+class FunctorBase;
 
 class AsyncFunctorThread
 {
-        class sead::DelegateThread* mSeadThread;
+private:
+        sead::DelegateThread*       mSeadThread;
         const FunctorBase*          mFunctor;
         bool                        mIsDone;
 
 public:
-        AsyncFunctorThread( const sead::SafeString& name, const FunctorBase& functor, int );
-
-        virtual ~AsyncFunctorThread();
-
         void start();
 
         bool isDone() const
         {
                 return mIsDone;
         }
+public:
+        virtual ~AsyncFunctorThread();
+public:
+        AsyncFunctorThread( const sead::SafeString& name, const FunctorBase& functor, int );
 };
 
 } // namespace al

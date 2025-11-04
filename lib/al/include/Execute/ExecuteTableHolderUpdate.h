@@ -1,15 +1,18 @@
 #pragma once
 
-#include <Execute/ExecuteOrder.h>
-#include <Functor/FunctorBase.h>
-
 namespace al
 {
+
+class ExecuteOrder;
+class FunctorBase;
 
 class IUseExecutor;
 
 class ExecuteTableHolderUpdate
 {
+        friend class ExecuteDirector;
+
+private:
         int _0;
         int _4;
         int _8;
@@ -29,14 +32,13 @@ class ExecuteTableHolderUpdate
         int _40;
 
 public:
-        ExecuteTableHolderUpdate();
-
         void init( const ExecuteOrder* order, int );
         void createExecutorListTable();
         void tryRegisterUser( al::IUseExecutor* p, const char* name );
         void tryRegisterFunctor( const al::FunctorBase& base, const char* name );
+public:
+        ExecuteTableHolderUpdate();
 
-        friend class ExecuteDirector;
 };
 
 } // namespace al

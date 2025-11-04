@@ -1,6 +1,7 @@
 #include <LiveActor/LiveActor.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/SubActorFunction.h>
+#include <LiveActor/SubActorKeeper.h>
 
 void alSubActorFunction::trySyncAlive( al::SubActorKeeper* p )
 {

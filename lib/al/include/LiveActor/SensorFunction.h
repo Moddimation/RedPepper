@@ -1,7 +1,10 @@
 #pragma once
 
-#include <HitSensor/HitSensor.h>
-#include <LiveActor/LiveActor.h>
+#include <HitSensor/SensorType.h>
+
+namespace al {
+class LiveActor;
+}
 
 namespace alSensorFunction
 {

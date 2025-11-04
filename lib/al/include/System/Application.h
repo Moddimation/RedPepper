@@ -17,6 +17,7 @@ class RootTask;
 class Application
 {
         SEAD_SINGLETON_DISPOSER( Application )
+        friend class ApplicationFunction;
 
 private:
         void*                 _10;

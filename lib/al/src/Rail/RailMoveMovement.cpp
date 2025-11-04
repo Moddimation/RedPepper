@@ -12,7 +12,8 @@ NERVE_DEF( RailMoveMovement, Move )
 
 } // namespace NrvRailMoveMovement
 
-NON_MATCHING // string
+#ifdef NON_MATCHING
+// string
 RailMoveMovement::RailMoveMovement( LiveActor* host, const ActorInitInfo& info, const char* speedParamName, const char* moveTypeParamName )
     : HostStateBase( host, "ƒŒ[ƒ‹ˆÚ“®‹““®" ), mSpeed( 10 ), mMoveType( 0 )
 {
@@ -22,6 +23,7 @@ RailMoveMovement::RailMoveMovement( LiveActor* host, const ActorInitInfo& info, 
                 mMoveType = 0;
         initNerve( &NrvRailMoveMovement::Move );
 }
+#endif
 
 void RailMoveMovement::exeMove()
 {

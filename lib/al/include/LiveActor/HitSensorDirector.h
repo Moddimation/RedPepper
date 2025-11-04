@@ -1,13 +1,14 @@
 #pragma once
 
 #include <Execute/ExecuteDirector.h>
-#include <HitSensor/SensorHitGroup.h>
 
 namespace al
 {
+class SensorHitGroup;
 
 class HitSensorDirector : public IUseExecutor
 {
+private:
         SensorHitGroup* mPlayerHitGroup;
         SensorHitGroup* mRideHitGroup;
         SensorHitGroup* mEyeHitGroup;

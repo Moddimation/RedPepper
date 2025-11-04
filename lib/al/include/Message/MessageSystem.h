@@ -1,12 +1,12 @@
 #pragma once
 
-#include <Message/MessageProjectEx.h>
-
 namespace al
 {
+class MessageProjectEx;
 
 class MessageSystem
 {
+private:
         MessageProjectEx* mMessageProject;
 
 public:

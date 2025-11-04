@@ -1,9 +1,8 @@
 #pragma once
 
-#include <HitSensor/HitSensor.h>
-
 namespace al
 {
+class HitSensor;
 
 enum SensorMsg
 {

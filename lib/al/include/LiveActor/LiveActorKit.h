@@ -1,18 +1,18 @@
 #pragma once
 
-#include <Clipping/ClippingDirector.h>
-#include <Collision/CollisionDirector.h>
-#include <Effect/EffectSystem.h>
-#include <Execute/ExecuteDirector.h>
-#include <Fog/FogDirector.h>
-#include <LiveActor/HitSensorDirector.h>
-#include <LiveActor/LiveActorGroup.h>
-
 namespace al
 {
+class ExecuteDirector;
+class EffectSystem;
+class FogDirector;
+class ClippingDirector;
+class CollisionDirector;
+class HitSensorDirector;
+class LiveActorGroup;
 
 class LiveActorKit
 {
+private:
         int                mAllActorsBufferSize;
         ExecuteDirector*   mExecuteDirector;
         EffectSystem*      mEffectSystem;
@@ -32,12 +32,6 @@ class LiveActorKit
         void*              _40;
 
 public:
-        LiveActorKit( int groupBufSize );
-
-        void update();
-
-        void endInit();
-
         ClippingDirector* getClippingDirector() const
         {
                 return mClippingDirector;
@@ -52,6 +46,12 @@ public:
         {
                 return mAllActors;
         }
+
+        void update();
+
+        void endInit();
+public:
+        LiveActorKit( int groupBufSize );
 };
 
 void          initLiveActorKit( LiveActorKit* kit );

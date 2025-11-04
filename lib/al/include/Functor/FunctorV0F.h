@@ -7,14 +7,11 @@ namespace al
 
 class FunctorV0F : public FunctorBase
 {
+private:
         typedef void ( *FuncType )();
         FuncType mFuncPtr;
 
 public:
-        FunctorV0F( FuncType func ) : mFuncPtr( func )
-        {
-        }
-
         virtual void operator()() const
         {
                 mFuncPtr();
@@ -23,6 +20,10 @@ public:
         virtual FunctorBase* clone() const
         {
                 return new FunctorV0F( mFuncPtr );
+        }
+public:
+        FunctorV0F( FuncType func ) : mFuncPtr( func )
+        {
         }
 };
 

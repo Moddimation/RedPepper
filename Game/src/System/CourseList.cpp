@@ -1,7 +1,7 @@
 #include "System/CourseList.h"
 
-#include <System/Application.h>
 #include <Resource/Resource.h>
+#include <System/Application.h>
 #include <Util/StringUtil.h>
 #include <Yaml/ByamlIter.h>
 
@@ -44,16 +44,16 @@ CourseList::Course::Course( const al::ByamlIter* course )
 #pragma push
 #pragma no_inline
 
-NON_MATCHING
+#ifdef NON_MATCHING
 bool CourseList::Course::isCourseTypeStage( CourseType type )
 {
         return type <= 4;
 }
+#endif
 
 #pragma pop
 
-NON_MATCHING
-
+#ifdef NON_MATCHING
 // strings and random mov r1, r4
 CourseList::World::World( const al::ByamlIter* world )
     : mCourses( nullptr ), mNumCourses( 0 ), mIsSpecialWorld( false )
@@ -102,13 +102,14 @@ CourseList::List::List( const al::ByamlIter& courseListIter ) : mWorlds( nullptr
                 }
         }
 }
+#endif
 
 CourseList::CourseList() : mCourseList( 0 )
 {
         init( al::findOrCreateResource( "ObjectData/GameSystemDataTable" ) );
 }
 
-NON_MATCHING
+#ifdef NON_MATCHING
 void CourseList::init( const al::Resource* gameSystemDataTable )
 {
         mCourseList = new List( al::ByamlIter( gameSystemDataTable->getByml( "CourseList" ) ) );
@@ -125,6 +126,7 @@ void CourseList::init( const al::Resource* gameSystemDataTable )
                 }
         }
 }
+#endif
 
 CourseList* rp::getCourseList()
 {

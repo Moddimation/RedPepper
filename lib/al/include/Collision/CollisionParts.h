@@ -1,14 +1,15 @@
 #pragma once
 
-#include <Collision/KCollisionServer.h>
-#include <HitSensor/HitSensor.h>
 #include <math/seadMatrix.h>
 
 namespace al
 {
+class KCollisionServer;
+class CollisionParts;
 
 class CollisionParts
 {
+private:
         int               _0;
         int               _4;
         CollisionParts*   _8;
@@ -33,9 +34,9 @@ class CollisionParts
         bool              _144;
 
 public:
-        CollisionParts( void* kclData, const void* paData );
-
         void syncMtx( const sead::Matrix34f& );
+public:
+        CollisionParts( void* kclData, const void* paData );
 };
 
 } // namespace al

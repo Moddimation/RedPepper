@@ -1,8 +1,19 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
-#include <Nerve/NerveActionCtrl.h>
+#include <math/seadVector.h>
+#include <math/seadMatrix.h>
 #include <prim/seadSafeString.h>
+
+namespace alNerveFunction {
+class NerveActionCollector;
+}
+
+namespace al {
+class ActorInitInfo;
+class LiveActor;
+class Nerve;
+class HitSensor;
+}
 
 class alLiveActorFunction
 {

@@ -1,18 +1,17 @@
 #pragma once
 
 #include <Placement/PlacementInfo.h>
-#include <Rail/Rail.h>
-#include <Rail/RailRider.h>
 
 namespace al
 {
+class Rail;
+class RailRider;
 
 class RailKeeper
 {
+private:
         Rail*      mRail;
         RailRider* mRailRider;
-
-        RailKeeper( const PlacementInfo& info );
 
 public:
         Rail* getRail()
@@ -27,7 +26,10 @@ public:
 
         bool isExistRail() const;
 
+public:
         friend RailKeeper* tryCreateRailKeeper( const PlacementInfo& info );
+private:
+        RailKeeper( const PlacementInfo& info );
 };
 
 RailKeeper* tryCreateRailKeeper( const PlacementInfo& info );

@@ -1,6 +1,8 @@
 #pragma once
 
-#include <LiveActor/SubActorKeeper.h>
+namespace al {
+class SubActorKeeper;
+}
 
 class alSubActorFunction
 {

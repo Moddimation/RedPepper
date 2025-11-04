@@ -7,6 +7,7 @@ namespace al
 
 class AreaInitInfo
 {
+private:
         PlacementInfo mPlacementInfo;
         // ?
 public:

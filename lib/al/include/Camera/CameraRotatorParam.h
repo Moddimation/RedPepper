@@ -1,18 +1,19 @@
 #pragma once
 
-#include <Yaml/ByamlIter.h>
-
 namespace al
 {
 
+class ByamlIter;
+
 class CameraRotatorParam
 {
+private:
         float mAngleMax;
 
 public:
-        CameraRotatorParam();
-
         void init( const ByamlIter* ticket );
+public:
+        CameraRotatorParam();
 };
 
 } // namespace al

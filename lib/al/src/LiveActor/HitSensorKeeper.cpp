@@ -6,7 +6,7 @@
 namespace al
 {
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // r5 <-> r6
 void HitSensorKeeper::attackSensor()
@@ -22,6 +22,7 @@ void HitSensorKeeper::attackSensor()
                 }
         }
 }
+#endif
 
 void HitSensorKeeper::validate()
 {

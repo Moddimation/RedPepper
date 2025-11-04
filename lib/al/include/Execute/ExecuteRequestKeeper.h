@@ -9,12 +9,13 @@ class LiveActor;
 
 class ExecuteRequestKeeper
 {
+private:
         u8 _0[ 0x10 ];
 
 public:
-        ExecuteRequestKeeper( size_t );
-
         void request( LiveActor*, int );
+public:
+        ExecuteRequestKeeper( size_t );
 };
 
 } // namespace al

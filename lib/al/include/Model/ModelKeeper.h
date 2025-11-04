@@ -1,13 +1,15 @@
 #pragma once
 
-#include <Model/alModelCtr.h>
 #include <math/seadMatrix.h>
+
+class alModelCtr;
 
 namespace al
 {
 
 class ModelKeeper
 {
+private:
         alModelCtr* mModel;
 
 public:

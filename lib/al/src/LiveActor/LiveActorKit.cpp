@@ -1,6 +1,8 @@
-#include <System/Application.h> // GAMEUSE
-#include <Functor/FunctorV0F.h>
 #include <LiveActor/LiveActorKit.h>
+
+#include <Functor/FunctorV0F.h>
+#include <LiveActor/LiveActorGroup.h>
+#include <System/Application.h>
 
 namespace al
 {
@@ -19,7 +21,7 @@ extern "C" void FUN_001e8a64();
 
 extern "C" void FUN_001cc9b0( const char*, const FunctorV0F& );
 
-NON_MATCHING
+#ifdef NON_MATCHING
 
 // loop is weird
 void LiveActorKit::endInit()
@@ -35,10 +37,11 @@ void LiveActorKit::endInit()
         for ( int i = 0; i < actors.size(); i++ )
                 actors[ i ]->initAfterPlacement();
 }
+#endif
 
 void initLiveActorKit( LiveActorKit* kit )
 {
-        al::getApplication()->setLiveActorKit(kit);
+        al::getApplication()->setLiveActorKit( kit );
 }
 
 LiveActorKit* getLiveActorKit()

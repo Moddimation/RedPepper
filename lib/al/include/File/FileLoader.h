@@ -1,18 +1,23 @@
 #pragma once
 
-#include <filedevice/seadFileDevice.h>
+#include <prim/seadSafeString.h>
+
+namespace sead {
+class FileDevice;
+}
 
 namespace al
 {
 
 class FileLoader
 {
+private:
         u8 _0[ 0x30 ];
 
 public:
-        FileLoader( int );
-
         void loadArchive( const sead::SafeString& archive, sead::FileDevice* );
+public:
+        FileLoader( int );
 };
 
 } // namespace al

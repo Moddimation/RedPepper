@@ -80,6 +80,6 @@ target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
     --preinclude=${CMAKE_SOURCE_DIR}/lib/ctrsdk/include/nn/types.h
     >)
 
-target_compile_definitions(RedPepper PUBLIC NON_MATCHING= ctr)
+target_compile_definitions(RedPepper PUBLIC ctr)
 
 target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/Game/include  ${CMAKE_SOURCE_DIR}/lib/al/include)
