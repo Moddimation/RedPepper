@@ -19,6 +19,7 @@ private:
 public:
         void invalidateClipping( LiveActor* actor );
         void validateClipping( LiveActor* actor );
+
 public:
         ClippingActorHolder( int );
 };

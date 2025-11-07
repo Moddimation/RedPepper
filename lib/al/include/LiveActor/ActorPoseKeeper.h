@@ -47,6 +47,7 @@ public:
 
 public:
         static const sead::Vector3f sDefaultGravity;
+
 public:
         ActorPoseKeeperBase();
 };
@@ -72,6 +73,7 @@ public:
         virtual void updatePoseMtx( const sead::Matrix34f* mtx );
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+
 public:
         ActorPoseKeeperTFSV();
 };
@@ -87,6 +89,7 @@ public:
         virtual sead::Vector3f* getGravityPtr();
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+
 public:
         ActorPoseKeeperTFGSV();
 };
@@ -112,6 +115,7 @@ public:
         virtual void updatePoseMtx( const sead::Matrix34f* mtx );
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+
 public:
         ActorPoseKeeperTQSV();
 };
@@ -137,6 +141,7 @@ public:
         virtual void updatePoseMtx( const sead::Matrix34f* mtx );
 
         virtual void calcBaseMtx( sead::Matrix34f* out );
+
 public:
         ActorPoseKeeperTRSV();
 };

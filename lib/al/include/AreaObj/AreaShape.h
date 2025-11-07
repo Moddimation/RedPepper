@@ -21,10 +21,12 @@ public:
         }
 
         void setScale( const sead::Vector3f& scale );
+
 public:
         virtual bool isInVolume( const sead::Vector3f& trans ) const = 0;
         virtual void v1()                                            = 0;
         virtual void v2()                                            = 0;
+
 public:
         AreaShape();
 };

@@ -1,5 +1,4 @@
 #include <Camera/CameraParamVision.h>
-
 #include <Yaml/ByamlIter.h>
 
 namespace al

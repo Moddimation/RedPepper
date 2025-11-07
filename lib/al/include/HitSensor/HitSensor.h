@@ -1,8 +1,8 @@
 #pragma once
 
+#include <HitSensor/SensorType.h>
 #include <math/seadMatrix.h>
 #include <math/seadVector.h>
-#include <HitSensor/SensorType.h>
 
 namespace al
 {

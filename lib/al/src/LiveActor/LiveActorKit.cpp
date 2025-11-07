@@ -1,7 +1,11 @@
-#include <LiveActor/LiveActorKit.h>
-
+#include <Clipping/ClippingDirector.h>
+#include <Collision/CollisionDirector.h>
+#include <Effect/EffectSystem.h>
+#include <Execute/ExecuteDirector.h>
+#include <Fog/FogDirector.h>
 #include <Functor/FunctorV0F.h>
 #include <LiveActor/LiveActorGroup.h>
+#include <LiveActor/LiveActorKit.h>
 #include <System/Application.h>
 
 namespace al

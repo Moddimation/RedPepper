@@ -14,6 +14,7 @@ private:
 
 public:
         void request( LiveActor*, int );
+
 public:
         ExecuteRequestKeeper( size_t );
 };

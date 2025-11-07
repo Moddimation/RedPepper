@@ -1,7 +1,7 @@
 #pragma once
 
-#include <prim/seadSafeString.h>
 #include <LiveActor/LiveActor.h>
+#include <prim/seadSafeString.h>
 
 namespace al
 {

@@ -1,5 +1,4 @@
 #include <AreaObj/AreaObj.h>
-
 #include <AreaObj/AreaShape.h>
 #include <Stage/StageSwitchKeeper.h>
 

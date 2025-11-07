@@ -56,6 +56,7 @@ public:
 
         int  searchItemInfo( const char* );
         bool getValueFast( int, int index, u64* out );
+
 public:
         JMapInfo();
 };

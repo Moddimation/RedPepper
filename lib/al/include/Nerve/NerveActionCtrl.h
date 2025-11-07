@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Nerve/Nerve.h>
+
 namespace alNerveFunction
 {
 class NerveActionCollector;
@@ -21,9 +23,9 @@ private:
 
 public:
         virtual const char* getName() const = 0;
+
 public:
         NerveAction();
-
 };
 } // namespace al
 
@@ -48,6 +50,7 @@ public:
         {
                 return sCurrentCollector;
         }
+
 public:
         NerveActionCollector();
 };
@@ -65,6 +68,7 @@ private:
 
 public:
         NerveAction* findNerve( const char* pName ) const;
+
 public:
         NerveActionCtrl( alNerveFunction::NerveActionCollector* collector );
 };

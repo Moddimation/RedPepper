@@ -1,19 +1,21 @@
 #pragma once
 
-#include <math/seadVector.h>
 #include <math/seadMatrix.h>
+#include <math/seadVector.h>
 #include <prim/seadSafeString.h>
 
-namespace alNerveFunction {
+namespace alNerveFunction
+{
 class NerveActionCollector;
 }
 
-namespace al {
+namespace al
+{
 class ActorInitInfo;
 class LiveActor;
 class Nerve;
 class HitSensor;
-}
+} // namespace al
 
 class alLiveActorFunction
 {

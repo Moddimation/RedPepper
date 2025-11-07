@@ -1,4 +1,5 @@
 #include <Factory/ActorFactory.h>
+#include <Resource/Resource.h>
 #include <Yaml/ByamlIter.h>
 
 namespace al

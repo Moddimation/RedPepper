@@ -3,6 +3,7 @@
 #include <LiveActor/ActorActionKeeper.h>
 #include <LiveActor/HitSensorFunction.h>
 #include <LiveActor/SensorMsg.h>
+#include <Nerve/Nerve.h>
 #include <Nerve/NerveFunction.h>
 
 #include "Player/GhostPlayerRecorder.h"

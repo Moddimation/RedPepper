@@ -17,8 +17,10 @@ private:
 
 public:
         void endInit();
+
 public:
         virtual void execute();
+
 public:
         CollisionDirector();
 };

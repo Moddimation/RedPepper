@@ -1,3 +1,4 @@
+#include <Stage/StageSwitchAccesser.h>
 #include <Stage/StageSwitchKeeper.h>
 
 namespace al

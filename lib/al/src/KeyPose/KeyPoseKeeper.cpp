@@ -1,6 +1,6 @@
-#include <KeyPose/KeyPoseKeeper.h>
-
 #include <KeyPose/KeyPose.h>
+#include <KeyPose/KeyPoseKeeper.h>
+#include <LiveActor/ActorInitInfo.h>
 #include <Placement/PlacementFunction.h>
 
 namespace al

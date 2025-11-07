@@ -1,8 +1,8 @@
 #pragma once
 
 #include <Stage/StageSwitchKeeper.h>
-#include <math/seadVector.h>
 #include <math/seadMatrix.h>
+#include <math/seadVector.h>
 
 namespace al
 {
@@ -26,6 +26,7 @@ public:
         virtual void               initStageSwitchKeeper();
         virtual void               init( const AreaInitInfo& info );
         virtual bool               isInVolume( const sead::Vector3f& trans ) const;
+
 public:
         AreaObj( const char* name );
 };

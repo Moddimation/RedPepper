@@ -24,6 +24,7 @@ protected:
 
 public:
         void initNerve( const Nerve* nerve, int maxNerveStates = 0 );
+
 public:
         virtual NerveKeeper*  getNerveKeeper() const;
         virtual void          appear();
@@ -35,6 +36,7 @@ public:
         virtual void          control();
         virtual void          unk1();
         virtual void          unk2();
+
 public:
         LayoutActor( const char* name );
 };

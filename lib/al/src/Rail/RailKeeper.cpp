@@ -1,5 +1,7 @@
 #include <Placement/PlacementFunction.h>
+#include <Rail/Rail.h>
 #include <Rail/RailKeeper.h>
+#include <Rail/RailRider.h>
 
 namespace al
 {

@@ -1,9 +1,8 @@
 #include <File/FileFunction.h>
-
+#include <File/FileLoader.h>
 #include <Message/MessageFunction.h>
 #include <System/SystemKit.h>
 #include <Util/StringUtil.h>
-#include <File/FileLoader.h>
 
 namespace al
 {

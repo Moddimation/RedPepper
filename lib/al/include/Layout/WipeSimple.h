@@ -15,8 +15,10 @@ public:
         void exeOpen();
 
         bool isCloseEnd() const;
+
 public:
         virtual void appear();
+
 public:
         WipeSimple( const char* name, const char* archive, const LayoutInitInfo& info, const char* suffix = nullptr );
 };

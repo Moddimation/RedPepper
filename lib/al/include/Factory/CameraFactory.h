@@ -1,7 +1,7 @@
 #pragma once
 
-#include <Factory/Factory.h>
 #include <Camera/Camera.h>
+#include <Factory/Factory.h>
 
 namespace al
 {

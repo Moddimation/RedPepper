@@ -14,9 +14,9 @@ class FunctorBase;
 class AsyncFunctorThread
 {
 private:
-        sead::DelegateThread*       mSeadThread;
-        const FunctorBase*          mFunctor;
-        bool                        mIsDone;
+        sead::DelegateThread* mSeadThread;
+        const FunctorBase*    mFunctor;
+        bool                  mIsDone;
 
 public:
         void start();
@@ -25,8 +25,10 @@ public:
         {
                 return mIsDone;
         }
+
 public:
         virtual ~AsyncFunctorThread();
+
 public:
         AsyncFunctorThread( const sead::SafeString& name, const FunctorBase& functor, int );
 };

@@ -6,6 +6,7 @@
 #include <LiveActor/HitSensorFunction.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/SensorMsg.h>
+#include <Nerve/Nerve.h>
 #include <Nerve/NerveFunction.h>
 
 namespace NrvFireBall

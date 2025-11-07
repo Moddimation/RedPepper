@@ -1,4 +1,5 @@
 #include <Math/MathUtil.h>
+#include <Rail/Rail.h>
 #include <Rail/RailRider.h>
 
 namespace al

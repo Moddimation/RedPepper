@@ -2,7 +2,8 @@
 
 #include <prim/seadSafeString.h>
 
-namespace sead {
+namespace sead
+{
 class FileDevice;
 }
 
@@ -16,6 +17,7 @@ private:
 
 public:
         void loadArchive( const sead::SafeString& archive, sead::FileDevice* );
+
 public:
         FileLoader( int );
 };

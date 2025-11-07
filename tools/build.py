@@ -36,6 +36,8 @@ def main() -> None:
         os.mkdir(getBuildPath())
         os.chdir(getBuildPath())
         cmake_args = ['cmake', "..", '-G', 'Unix Makefiles']
+        if args.m == False:
+            cmake_args.append("-DNON_MATCHING=1")
 
         try:
             subprocess.run(cmake_args, check=True)
@@ -52,9 +54,7 @@ def main() -> None:
     match = ''
     if args.v:
         verbose = 'VERBOSE=1 '
-    if not args.m:
-        match = 'NON_MATCHING=1'
-    result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}{match}', shell=True)
+    result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}', shell=True)
     if result.returncode != 0:
         exit(result)
 

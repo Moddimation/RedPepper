@@ -13,7 +13,7 @@ bool isStep( IUseNerve* p, int step );
 bool isNerve( const IUseNerve* p, const Nerve* nerve );
 bool isFirstStep( const IUseNerve* p );
 bool isLessStep( const IUseNerve* p, int step );
-int getNerveStep( const IUseNerve* p );
+int  getNerveStep( const IUseNerve* p );
 bool isGreaterStep( const IUseNerve* p, int step );
 bool isGreaterEqualStep( const IUseNerve* p, int step );
 

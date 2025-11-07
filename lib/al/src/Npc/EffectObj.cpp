@@ -1,5 +1,6 @@
 #include <File/FileFunction.h>
 #include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/ActorPoseKeeper.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <Npc/EffectObj.h>
 #include <Placement/PlacementFunction.h>

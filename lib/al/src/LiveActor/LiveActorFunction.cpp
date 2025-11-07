@@ -1,16 +1,22 @@
+#include <Clipping/ClippingActorHolder.h>
+#include <Clipping/ClippingDirector.h>
+#include <Collision/Collider.h>
 #include <Collision/CollisionUtil.h>
 #include <Execute/ExecuteTableHolder.h>
+#include <LiveActor/ActorActionKeeper.h>
 #include <LiveActor/ActorPoseFunction.h>
+#include <LiveActor/HitSensorKeeper.h>
+#include <LiveActor/LiveActor.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/LiveActorKit.h>
 #include <LiveActor/SensorFunction.h>
 #include <LiveActor/SubActorFunction.h>
 #include <Math/MtxUtil.h>
+#include <Model/AnimPlayerSimple.h>
 #include <Model/ModelKeeper.h>
+#include <Model/alModelCtr.h>
+#include <Nerve/NerveActionCtrl.h>
 #include <Nerve/NerveFunction.h>
-#include <Collision/Collider.h>
-#include <LiveActor/HitSensorKeeper.h>
-#include <Collision/ClippingDirector.h>
 
 void alLiveActorFunction::calcAnimDirect( al::LiveActor* actor )
 {

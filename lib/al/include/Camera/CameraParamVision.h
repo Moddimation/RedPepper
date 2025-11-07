@@ -16,6 +16,7 @@ private:
 
 public:
         bool init( const ByamlIter* ticket );
+
 public:
         CameraParamVision();
 };

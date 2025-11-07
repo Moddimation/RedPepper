@@ -27,6 +27,7 @@ private:
 
 public:
         static SubActorKeeper* tryCreate( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
+
 private:
         SubActorKeeper( al::LiveActor* actor, const al::ActorInitInfo& info, const char*, int );
 };

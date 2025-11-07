@@ -18,6 +18,7 @@ public:
         virtual void                   kill();
         virtual const sead::Matrix34f* getBaseMtx() const;
         virtual void                   control();
+
 public:
         EffectObj( const sead::SafeString& name );
 };

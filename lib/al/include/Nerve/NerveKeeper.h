@@ -49,6 +49,7 @@ public:
         {
                 return mActionCtrl;
         }
+
 public:
         NerveKeeper( IUseNerve* host, const Nerve* nrv, int maxNerveStates = 0 );
 };

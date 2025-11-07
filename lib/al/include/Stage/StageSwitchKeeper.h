@@ -14,6 +14,7 @@ private:
 
 public:
         StageSwitchAccesser* getStageSwitchAccesser( int type );
+
 public:
         StageSwitchKeeper();
 };

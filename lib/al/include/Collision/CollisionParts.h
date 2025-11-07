@@ -35,6 +35,7 @@ private:
 
 public:
         void syncMtx( const sead::Matrix34f& );
+
 public:
         CollisionParts( void* kclData, const void* paData );
 };

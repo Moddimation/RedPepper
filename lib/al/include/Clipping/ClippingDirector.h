@@ -12,6 +12,7 @@ private:
         ClippingActorHolder* mClippingActorHolder;
         void*                _C;
         void*                _10;
+
 public:
         void endInit();
 
@@ -22,6 +23,7 @@ public:
 
 public:
         virtual void execute();
+
 public:
         ClippingDirector( int );
 };

@@ -66,20 +66,27 @@ target_link_options(RedPepper PUBLIC
     --scatter=${CMAKE_CURRENT_BINARY_DIR}/linker.ld
     )
 
-target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:CXX>:
-    --apcs=//interwork --cpu=MPCore --fpmode=fast --cpp --arm --force_new_nothrow
-    --signed_chars --multibyte-chars --locale=japanese --no_vfe # workaround, vfe should be enabled
-    --no_rtti_data --no_rtti --no_exceptions -O3 -Otime --data-reorder --split_sections --forceinline
+target_compile_options(RedPepper PUBLIC
+    --apcs=//interwork --cpu=MPCore --fpmode=fast --arm
+    --signed_chars --multibyte-chars --locale=japanese
+    --data-reorder --split_sections --diag_suppress 870
     --preinclude=${CMAKE_SOURCE_DIR}/lib/ctrsdk/include/nn/types.h
     >)
 
 target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
-    --apcs=//interwork --cpu=MPCore --fpmode=fast --c99 --arm
-    --signed_chars --multibyte-chars --locale=japanese
-    -Otime --data-reorder --split_sections
-    --preinclude=${CMAKE_SOURCE_DIR}/lib/ctrsdk/include/nn/types.h
+    --c99 -Otime
     >)
 
+target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:CXX>:
+    --cpp --force_new_nothrow --no_vfe # workaround, vfe should be enabled
+    --no_rtti_data --no_rtti --no_exceptions
+    -O3 -Otime --forceinline
+    >)
+
+
 target_compile_definitions(RedPepper PUBLIC ctr)
+if (NON_MATCHING)
+    target_compile_definitions(RedPepper PUBLIC NON_MATCHING)
+endif()
 
 target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/Game/include  ${CMAKE_SOURCE_DIR}/lib/al/include)

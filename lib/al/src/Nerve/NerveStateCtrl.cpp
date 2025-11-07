@@ -1,3 +1,4 @@
+#include <Nerve/NerveStateBase.h>
 #include <Nerve/NerveStateCtrl.h>
 
 namespace al

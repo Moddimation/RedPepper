@@ -1,5 +1,8 @@
 #include <LiveActor/ActorPoseKeeper.h>
+#include <LiveActor/LiveActor.h>
 #include <Rail/RailFunction.h>
+#include <Rail/RailKeeper.h>
+#include <Rail/RailRider.h>
 
 namespace al
 {

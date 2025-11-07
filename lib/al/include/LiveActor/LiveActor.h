@@ -3,9 +3,9 @@
 #include <Audio/AudioKeeper.h>
 #include <Effect/EffectKeeper.h>
 #include <LiveActor/LiveActorFlag.h>
-#include <math/seadMatrix.h>
 #include <Nerve/NerveKeeper.h>
 #include <Stage/StageSwitchKeeper.h>
+#include <math/seadMatrix.h>
 
 class alActorPoseFunction;
 class alLiveActorFunction;
@@ -35,6 +35,7 @@ class LiveActor : public IUseNerve,
 
 private:
         const char* mActorName;
+
 protected:
         ActorPoseKeeperBase* mActorPoseKeeper;
         ActorExecuteInfo*    mActorExecuteInfo;
@@ -52,6 +53,7 @@ protected:
         ActorLightCtrl*      mActorLightCtrl;
         void*                _4C;
         SubActorKeeper*      mSubActorKeeper;
+
 private:
         LiveActorFlag mLiveActorFlag;
 
@@ -118,7 +120,7 @@ public:
         void initCollider( float radius, float yOffset, u32 );
         void initNerveKeeper( NerveKeeper* nk );
         void initRailKeeper( const ActorInitInfo& info );
-        
+
         virtual void                   init( const ActorInitInfo& info );
         virtual void                   initAfterPlacement();
         virtual void                   appear();
@@ -142,6 +144,7 @@ public:
         virtual void                   updateCollider();
         virtual void                   v22();
         virtual void                   v23();
+
 public:
         LiveActor( const char* name );
 };

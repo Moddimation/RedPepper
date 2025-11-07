@@ -21,6 +21,7 @@ public:
         {
                 return new FunctorV0F( mFuncPtr );
         }
+
 public:
         FunctorV0F( FuncType func ) : mFuncPtr( func )
         {

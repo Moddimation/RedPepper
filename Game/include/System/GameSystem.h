@@ -12,6 +12,8 @@ class CourseList;
 
 class GameSystem : public al::NerveExecutor
 {
+        friend class ApplicationFunction;
+
 private:
         al::Sequence*      mCurrentSequence;
         void*              _C;

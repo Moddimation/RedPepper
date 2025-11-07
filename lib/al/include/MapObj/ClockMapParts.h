@@ -20,8 +20,10 @@ public
         void exeRotateSign();
         void exeRotate();
         void exeWait();
+
 public:
         virtual void init( const ActorInitInfo& info );
+
 public:
         ClockMapParts( const sead::SafeString& name );
 };

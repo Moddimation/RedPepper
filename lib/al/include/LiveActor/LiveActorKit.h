@@ -50,6 +50,7 @@ public:
         void update();
 
         void endInit();
+
 public:
         LiveActorKit( int groupBufSize );
 };

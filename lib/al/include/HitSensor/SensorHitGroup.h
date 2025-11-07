@@ -14,6 +14,7 @@ private:
 public:
         void add( HitSensor* sensor );
         void remove( HitSensor* sensor );
+
 public:
         SensorHitGroup( int, const char* name /* unused */ );
 };

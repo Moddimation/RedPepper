@@ -1,5 +1,6 @@
 #include <Camera/Camera.h>
 #include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/ActorPoseKeeper.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <Npc/Sky.h>
 #include <Stage/StageSwitchKeeper.h>

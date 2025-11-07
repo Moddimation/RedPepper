@@ -1,5 +1,6 @@
 #include "Player/PlayerFunction.h"
 
+#include <LiveActor/ActorPoseKeeper.h>
 #include <System/Application.h>
 
 #include "Player/PlayerActor.h"

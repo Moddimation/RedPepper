@@ -1,4 +1,6 @@
 #include <AreaObj/SwitchAreaDirector.h>
+#include <AreaObj/SwitchKeepOnAreaGroup.h>
+#include <AreaObj/SwitchOnAreaGroup.h>
 
 #include "Player/PlayerFunction.h" // GAME
 

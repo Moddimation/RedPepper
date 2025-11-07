@@ -2,7 +2,8 @@
 
 #include <HitSensor/SensorType.h>
 
-namespace al {
+namespace al
+{
 class LiveActor;
 }
 

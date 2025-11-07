@@ -1,8 +1,8 @@
 #pragma once
 
+#include <Placement/PlacementInfo.h>
 #include <math/seadQuat.h>
 #include <math/seadVector.h>
-#include <Placement/PlacementInfo.h>
 
 namespace al
 {
@@ -32,6 +32,7 @@ public:
         {
                 return mPlacementInfo;
         }
+
 public:
         KeyPose();
 };

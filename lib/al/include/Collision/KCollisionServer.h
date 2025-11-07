@@ -53,6 +53,7 @@ private:
 public:
         void setData( void* data );
         void initKCollisionServer( void* kclData, const void* paData );
+
 public:
         KCollisionServer();
 };

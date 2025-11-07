@@ -44,6 +44,7 @@ public:
         virtual void v5();
         virtual void calc();
         virtual void v7();
+
 public:
         Camera( const char* name );
 };

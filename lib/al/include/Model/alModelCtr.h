@@ -1,9 +1,10 @@
 #pragma once
 
-namespace al {
+namespace al
+{
 class AnimPlayerSkl;
 class AnimPlayerSimple;
-}
+} // namespace al
 
 class alModelCtr
 {

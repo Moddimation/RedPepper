@@ -1,7 +1,6 @@
-#include <LiveActor/HitSensorDirector.h>
-
 #include <Execute/ExecuteTableHolder.h>
 #include <HitSensor/SensorHitGroup.h>
+#include <LiveActor/HitSensorDirector.h>
 
 namespace al
 {

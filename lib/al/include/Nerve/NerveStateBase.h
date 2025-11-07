@@ -22,6 +22,7 @@ public:
         virtual void kill();
         virtual bool update();
         virtual void control();
+
 public:
         NerveStateBase( const char* name );
 };

@@ -2,7 +2,7 @@
 
 class ApplicationFunction
 {
+public:
+        static void initialize();
 
-static void initialize();
-
-} // namespace ApplicationFunction
+}; // namespace ApplicationFunction

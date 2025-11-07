@@ -3,6 +3,7 @@
 #include <LiveActor/ActorInitUtil.h>
 #include <LiveActor/ActorPoseKeeper.h>
 #include <LiveActor/LiveActorFunction.h>
+#include <Nerve/Nerve.h>
 #include <Nerve/NerveFunction.h>
 #include <Nerve/NerveStateBase.h>
 #include <math/seadVector.h>

@@ -18,9 +18,11 @@ public:
         void exeFallSign();
         void exeFall();
         void exeEnd();
+
 public:
         virtual void init( const ActorInitInfo& info );
         virtual bool receiveMsg( u32 msg, HitSensor* other, HitSensor* me );
+
 public:
         FallMapParts( const sead::SafeString& name );
 };

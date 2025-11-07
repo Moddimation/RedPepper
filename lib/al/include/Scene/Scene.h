@@ -2,10 +2,12 @@
 
 #include <Audio/AudioKeeper.h>
 #include <Nerve/NerveExecutor.h>
+#include <heap/seadHeap.h>
 
 namespace al
 {
 class ActorFactory;
+class ActorInitInfo;
 class LayoutKit;
 class LiveActorKit;
 class SceneObjHolder;
@@ -95,6 +97,7 @@ public:
         virtual void drawEffect()
         {
         }
+
 public:
         Scene( const char* name );
 };

@@ -1,8 +1,10 @@
+#include <Factory/ActorFactory.h>
+#include <LiveActor/ActorInitInfo.h>
 #include <Scene/Scene.h>
+#include <Scene/SceneObjFactory.h>
 #include <Scene/SceneObjHolder.h>
-#include <System/Application.h> // GAMEUSE
-
-#include "Scene/SceneObjFactory.h"
+#include <Stage/StageResourceKeeper.h>
+#include <System/Application.h>
 
 namespace al
 {

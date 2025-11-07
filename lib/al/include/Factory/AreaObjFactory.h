@@ -1,7 +1,7 @@
 #pragma once
 
-#include <Factory/Factory.h>
 #include <AreaObj/AreaObj.h>
+#include <Factory/Factory.h>
 
 namespace al
 {

@@ -1,7 +1,10 @@
+#include <LiveActor/ActorInitInfo.h>
 #include <LiveActor/ActorInitUtil.h>
+#include <LiveActor/ActorPoseKeeper.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/SensorMsg.h>
 #include <MapObj/FallMapParts.h>
+#include <Nerve/Nerve.h>
 #include <Nerve/NerveFunction.h>
 #include <Nerve/NerveKeeper.h>
 #include <Placement/PlacementFunction.h>

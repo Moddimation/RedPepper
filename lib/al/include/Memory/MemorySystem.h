@@ -1,13 +1,9 @@
 #pragma once
 
+#include <heap/seadExpHeap.h>
+#include <heap/seadFrameHeap.h>
+#include <heap/seadHeap.h>
 #include <heap/seadHeapMgr.h>
-
-namespace sead {
-class Heap;
-class ExpHeap;
-class FrameHeap;
-cl
-}
 
 namespace al
 {

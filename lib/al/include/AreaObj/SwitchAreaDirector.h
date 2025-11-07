@@ -17,6 +17,7 @@ private:
 public:
         virtual void movement();
         virtual void unk1();
+
 public:
         SwitchAreaDirector();
 };

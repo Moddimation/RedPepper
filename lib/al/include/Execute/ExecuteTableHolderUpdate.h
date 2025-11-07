@@ -36,9 +36,9 @@ public:
         void createExecutorListTable();
         void tryRegisterUser( al::IUseExecutor* p, const char* name );
         void tryRegisterFunctor( const al::FunctorBase& base, const char* name );
+
 public:
         ExecuteTableHolderUpdate();
-
 };
 
 } // namespace al

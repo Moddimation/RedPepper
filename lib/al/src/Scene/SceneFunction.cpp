@@ -1,4 +1,5 @@
 #include <Factory/ActorFactory.h>
+#include <LiveActor/ActorInitInfo.h>
 #include <LiveActor/ActorInitUtil.h>
 #include <Placement/PlacementFunction.h>
 #include <Scene/SceneFunction.h>

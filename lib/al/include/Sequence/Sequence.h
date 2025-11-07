@@ -24,6 +24,7 @@ public:
         virtual bool unk4();
         virtual int  unk5();
         virtual int  unk6();
+
 public:
         Sequence( const char* name );
 };

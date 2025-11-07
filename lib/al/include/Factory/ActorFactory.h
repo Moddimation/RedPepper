@@ -20,6 +20,7 @@ private:
 public:
         const char*        convertName( const char* objectName ) const;
         CreateActorFuncPtr getCreator( const char* objectName ) const;
+
 public:
         ActorFactory();
 };

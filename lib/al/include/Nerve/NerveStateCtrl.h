@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Nerve/Nerve.h>
+
 namespace al
 {
 class NerveStateBase;
@@ -31,6 +33,7 @@ public:
         void tryEndCurrentState();
         bool updateCurrentState();
         bool isCurrentStateEnd() const;
+
 public:
         NerveStateCtrl( int capacity );
 };

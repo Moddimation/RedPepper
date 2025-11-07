@@ -1,5 +1,7 @@
+#include <LiveActor/ActorInitInfo.h>
+#include <Scene/ISceneObj.h>
 #include <Scene/SceneObjHolder.h>
-#include <System/Application.h> // GAMEUSE
+#include <System/Application.h>
 
 namespace al
 {

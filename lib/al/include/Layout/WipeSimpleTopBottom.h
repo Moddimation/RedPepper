@@ -23,6 +23,7 @@ public:
         }
 
         bool isCloseEnd() const;
+
 public:
         WipeSimpleTopBottom( const char* name, const char* archive, const char*, const LayoutInitInfo& info, const char* subArchive );
 };

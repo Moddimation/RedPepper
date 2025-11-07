@@ -22,6 +22,7 @@ public:
         {
                 return new FunctorV0M<T, F>( mParent, mFuncPtr );
         }
+
 public:
         FunctorV0M( T parent, F funcPtr ) : mFuncPtr( funcPtr ), mParent( parent )
         {

@@ -20,13 +20,14 @@ public:
         {
                 return mIsClosed;
         }
-        
+
         void init( const PlacementInfo& info );
 
         float getTotalLength() const;
         float normalizeLength( float ) const;
         void  calcPosDir( sead::Vector3f*, sead::Vector3f*, float );
         float calcNearestRailPosCoord( const sead::Vector3f&, float );
+
 public:
         Rail();
 };

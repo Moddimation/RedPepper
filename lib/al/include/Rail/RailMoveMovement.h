@@ -14,6 +14,7 @@ private:
 
 public:
         void exeMove();
+
 public:
         RailMoveMovement( LiveActor* host, const ActorInitInfo& info, const char* speedParamName = "Arg0", const char* moveTypeParamName = "Arg1" );
 };

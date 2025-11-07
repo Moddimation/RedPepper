@@ -12,6 +12,7 @@ private:
 
 public:
         void init( const ByamlIter* ticket );
+
 public:
         CameraRotatorParam();
 };

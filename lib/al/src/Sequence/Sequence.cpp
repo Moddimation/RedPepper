@@ -1,3 +1,4 @@
+#include <Scene/Scene.h>
 #include <Sequence/Sequence.h>
 
 namespace al

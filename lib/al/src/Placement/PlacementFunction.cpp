@@ -1,3 +1,4 @@
+#include <LiveActor/ActorInitInfo.h>
 #include <Placement/PlacementFunction.h>
 #include <Util/StringUtil.h>
 

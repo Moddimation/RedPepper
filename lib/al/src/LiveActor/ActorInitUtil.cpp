@@ -1,6 +1,5 @@
-#include <LiveActor/ActorInitUtil.h>
-
 #include <LiveActor/ActorInitInfo.h>
+#include <LiveActor/ActorInitUtil.h>
 #include <LiveActor/LiveActor.h>
 #include <Placement/PlacementFunction.h>
 #include <Util/StringUtil.h>
@@ -28,7 +27,6 @@ void initActor( LiveActor* actor, const ActorInitInfo& info )
         tryGetObjectName( &objectName, info );
         initActorImpl( actor, info, objectName, StringTmp<256>( "ObjectData/%s", objectName ) );
 }
-
 
 // ???
 void initActorWithArchiveName( LiveActor* actor, const ActorInitInfo& info, const sead::SafeString& archiveName, const char* suffix )

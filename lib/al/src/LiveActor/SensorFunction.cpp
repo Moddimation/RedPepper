@@ -1,5 +1,6 @@
 #include <HitSensor/HitSensor.h>
 #include <LiveActor/HitSensorKeeper.h>
+#include <LiveActor/LiveActor.h>
 #include <LiveActor/SensorFunction.h>
 #include <Util/StringUtil.h>
 

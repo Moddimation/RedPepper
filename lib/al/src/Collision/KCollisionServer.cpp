@@ -1,5 +1,4 @@
 #include <Collision/KCollisionServer.h>
-
 #include <Util/JMapInfo.h>
 
 namespace al

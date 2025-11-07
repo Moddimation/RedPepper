@@ -1,3 +1,5 @@
+#include <LiveActor/ActorInitInfo.h>
+#include <Nerve/Nerve.h>
 #include <Placement/PlacementFunction.h>
 #include <Rail/RailFunction.h>
 #include <Rail/RailMoveMovement.h>

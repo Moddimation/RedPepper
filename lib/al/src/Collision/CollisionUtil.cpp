@@ -1,6 +1,6 @@
+#include <Collision/Collider.h>
 #include <Collision/CollisionUtil.h>
 #include <LiveActor/LiveActor.h>
-#include <Collision/Collider.h>
 
 namespace al
 {

@@ -1,8 +1,10 @@
 #include "MapObj/TrickHintPanel.h"
 
+#include <LiveActor/ActorActionKeeper.h>
 #include <LiveActor/ActorInitUtil.h>
 #include <LiveActor/LiveActorFunction.h>
 #include <LiveActor/SensorMsg.h>
+#include <Nerve/Nerve.h>
 #include <Nerve/NerveFunction.h>
 #include <Nerve/NerveStateBase.h>
 

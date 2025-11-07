@@ -1,7 +1,6 @@
 #pragma once
 
 #include <Placement/PlacementInfo.h>
-
 #include <math/seadVector.h>
 
 namespace al
@@ -39,6 +38,7 @@ public:
 
         const KeyPose* getCurrentKeyPose() const;
         const KeyPose* getNextKeyPose() const;
+
 public:
         KeyPoseKeeper();
 };

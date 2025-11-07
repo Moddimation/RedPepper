@@ -14,9 +14,11 @@ private:
 public:
         void initNerve( const Nerve*, int step = 0 );
         void updateNerve();
+
 public:
         virtual NerveKeeper* getNerveKeeper() const;
         virtual ~NerveExecutor() {};
+
 public:
         NerveExecutor( const char* name );
 };

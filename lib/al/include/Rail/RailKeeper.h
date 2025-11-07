@@ -28,6 +28,7 @@ public:
 
 public:
         friend RailKeeper* tryCreateRailKeeper( const PlacementInfo& info );
+
 private:
         RailKeeper( const PlacementInfo& info );
 };

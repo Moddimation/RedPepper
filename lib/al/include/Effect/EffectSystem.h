@@ -1,8 +1,6 @@
 #pragma once
 
-namespace sead {
-class Heap;
-}
+#include <heap/seadHeap.h>
 
 namespace al
 {
@@ -15,6 +13,7 @@ private:
 public:
         void init();
         void startScene();
+
 public:
         EffectSystem();
 };

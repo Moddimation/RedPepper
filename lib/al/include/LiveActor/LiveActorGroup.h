@@ -21,8 +21,10 @@ public:
         {
                 return reinterpret_cast<sead::PtrArray<T>&>( mActors );
         }
+
 public:
         virtual void registerActor( LiveActor* actor );
+
 public:
         LiveActorGroup( const char* name, int bufSize );
 };
