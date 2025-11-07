@@ -1,0 +1,53 @@
+name: build
+
+#on:
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main
+
+jobs:
+  build:
+    name: Build Project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Checkout build repo
+        uses: actions/checkout@v4
+        with:
+          repository: RedPepperDec/RedPepper_Build
+          token: ${{ secrets.PAT_BUILD }}
+          path: setup
+
+      - name: Setup
+        run: |
+          cp ./setup/code.bin ./data/
+          sudo apt-get update
+          sudo apt-get install -y cmake make python3 python3-pip python-is-python3
+          python -m pip install watchdog
+
+      - name: Locale to japanese
+        run: |
+          sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen ja_JP.UTF-8
+          sudo localectl set-locale LANG="ja_JP.UTF-8"
+          export LANG="ja_JP.UTF-8"
+          export LC_ALL=ja_JP.UTF-8
+          sudo update-locale
+          locale -a
+          locale
+          locale -c -k LC_NUMERIC
+          localectl status
+
+      - name: Build
+        run: |
+          export LM_LICENSE_FILE="$PWD/setup/license.dat"
+          export ARMCC_PATH="./setup/armcc/"
+          export ARMCC41INC="${ARMCC_PATH}/include/unix"
+          export ARMCC41LIB="${ARMCC_PATH}/lib"
+          python tools/build.py
