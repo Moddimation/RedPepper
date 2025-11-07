@@ -1,6 +1,6 @@
 #include "MapObj/CoinRotater.h"
 
-#include <Scene/SceneObjHolder.h>
+#include <Scene/alSceneObjHolder.h>
 
 #include "Scene/SceneObjFactory.h"
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <MapObj/MapObjActor.h>
+#include <MapObj/alMapObjActor.h>
 #include <math/seadVector.h>
 
 class Player;

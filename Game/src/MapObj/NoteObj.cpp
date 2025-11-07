@@ -1,10 +1,10 @@
 #include "MapObj/NoteObj.h"
 
-#include <LiveActor/ActorInitUtil.h>
-#include <LiveActor/ActorPoseKeeper.h>
-#include <LiveActor/LiveActorFunction.h>
-#include <Placement/PlacementFunction.h>
-#include <Scene/SceneObjHolder.h>
+#include <LiveActor/alActorInitUtil.h>
+#include <LiveActor/alActorPoseKeeper.h>
+#include <LiveActor/alLiveActorFunction.h>
+#include <Placement/alPlacementFunction.h>
+#include <Scene/alSceneObjHolder.h>
 
 #include "MapObj/CoinRotater.h"
 

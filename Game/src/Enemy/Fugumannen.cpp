@@ -1,13 +1,13 @@
 #include "Enemy/Fugumannen.h"
 
-#include <LiveActor/ActorInitUtil.h>
-#include <LiveActor/HitSensorFunction.h>
-#include <LiveActor/LiveActorFunction.h>
-#include <LiveActor/SensorMsg.h>
-#include <Nerve/Nerve.h>
-#include <Nerve/NerveFunction.h>
-#include <Placement/PlacementFunction.h>
-#include <Rail/RailFunction.h>
+#include <LiveActor/alActorInitUtil.h>
+#include <LiveActor/alHitSensorFunction.h>
+#include <LiveActor/alLiveActorFunction.h>
+#include <LiveActor/alSensorMsg.h>
+#include <Nerve/alNerve.h>
+#include <Nerve/alNerveFunction.h>
+#include <Placement/alPlacementFunction.h>
+#include <Rail/alRailFunction.h>
 
 #include "Enemy/EnemyStateBlowDown.h"
 

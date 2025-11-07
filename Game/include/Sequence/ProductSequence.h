@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Sequence/Sequence.h>
+#include <Sequence/alSequence.h>
 
 class ProductStageStartParam;
 class StageWipeKeeper;

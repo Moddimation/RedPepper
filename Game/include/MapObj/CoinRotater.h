@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
-#include <Scene/ISceneObj.h>
+#include <LiveActor/alLiveActor.h>
+#include <Scene/alISceneObj.h>
 
 class CoinRotater : public al::LiveActor, public al::ISceneObj
 {

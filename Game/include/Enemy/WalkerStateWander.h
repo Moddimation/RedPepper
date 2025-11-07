@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Nerve/ActorStateBase.h>
+#include <Nerve/alActorStateBase.h>
 
 class WalkerStateParam;
 class WalkerStateWanderParam;

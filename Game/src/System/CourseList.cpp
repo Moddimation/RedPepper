@@ -1,9 +1,9 @@
 #include "System/CourseList.h"
 
-#include <Resource/Resource.h>
+#include <Resource/alResource.h>
 #include <System/Application.h>
-#include <Util/StringUtil.h>
-#include <Yaml/ByamlIter.h>
+#include <Util/alStringUtil.h>
+#include <Yaml/alByamlIter.h>
 
 #include "System/GameSystem.h"
 #include "System/RootTask.h"

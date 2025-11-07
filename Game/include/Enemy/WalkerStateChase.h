@@ -1,7 +1,7 @@
 #pragma once
 
-#include <LiveActor/LiveActor.h>
-#include <Nerve/ActorStateBase.h>
+#include <LiveActor/alLiveActor.h>
+#include <Nerve/alActorStateBase.h>
 
 class WalkerStateChaseParam;
 class WalkerStateParam;

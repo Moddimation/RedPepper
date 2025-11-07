@@ -1,8 +1,8 @@
 #include "MapObj/PeachRope.h"
 
-#include <LiveActor/ActorActionKeeper.h>
-#include <LiveActor/ActorInitUtil.h>
-#include <LiveActor/LiveActorFunction.h>
+#include <LiveActor/alActorActionKeeper.h>
+#include <LiveActor/alActorInitUtil.h>
+#include <LiveActor/alLiveActorFunction.h>
 
 PeachRope::PeachRope( const sead::SafeString& name ) : MapObjActor( name )
 {

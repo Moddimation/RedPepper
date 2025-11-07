@@ -1,9 +1,9 @@
 #include "MapObj/TransparentWall.h"
 
-#include <LiveActor/ActorInitUtil.h>
-#include <LiveActor/LiveActorFunction.h>
-#include <Placement/PlacementFunction.h>
-#include <Stage/StageSwitchKeeper.h>
+#include <LiveActor/alActorInitUtil.h>
+#include <LiveActor/alLiveActorFunction.h>
+#include <Placement/alPlacementFunction.h>
+#include <Stage/alStageSwitchKeeper.h>
 
 TransparentWall::TransparentWall( const sead::SafeString& name ) : MapObjActor( name )
 {

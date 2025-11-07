@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Scene/ISceneObj.h>
+#include <Scene/alISceneObj.h>
 #include <container/seadPtrArray.h>
 
 namespace al

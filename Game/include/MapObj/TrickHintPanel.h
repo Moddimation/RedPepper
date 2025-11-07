@@ -1,6 +1,6 @@
 #pragma once
 
-#include <MapObj/MapObjActor.h>
+#include <MapObj/alMapObjActor.h>
 
 class TrickHintPanel : public al::MapObjActor
 {

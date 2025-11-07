@@ -1,10 +1,10 @@
 #include "Player/GhostPlayer.h"
 
-#include <LiveActor/ActorActionKeeper.h>
-#include <LiveActor/HitSensorFunction.h>
-#include <LiveActor/SensorMsg.h>
-#include <Nerve/Nerve.h>
-#include <Nerve/NerveFunction.h>
+#include <LiveActor/alActorActionKeeper.h>
+#include <LiveActor/alHitSensorFunction.h>
+#include <LiveActor/alSensorMsg.h>
+#include <Nerve/alNerve.h>
+#include <Nerve/alNerveFunction.h>
 
 #include "Player/GhostPlayerRecorder.h"
 #include "Scene/SceneObjFactory.h"

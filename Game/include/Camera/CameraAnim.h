@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Camera/Camera.h>
+#include <Camera/alCamera.h>
 
 class CameraAnim : public al::Camera
 {

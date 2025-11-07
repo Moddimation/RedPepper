@@ -1,10 +1,10 @@
 #include "MapObj/NoteObjGenerator.h"
 
-#include <LiveActor/LiveActorFunction.h>
-#include <Nerve/Nerve.h>
-#include <Nerve/NerveActionCtrl.h>
-#include <Nerve/NerveFunction.h>
-#include <Stage/StageSwitchKeeper.h>
+#include <LiveActor/alLiveActorFunction.h>
+#include <Nerve/alNerve.h>
+#include <Nerve/alNerveActionCtrl.h>
+#include <Nerve/alNerveFunction.h>
+#include <Stage/alStageSwitchKeeper.h>
 
 #include "MapObj/NoteObj.h"
 

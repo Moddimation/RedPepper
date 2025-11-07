@@ -1,7 +1,7 @@
 #include "Sequence/ProductSequence.h"
 
-#include <Nerve/Nerve.h>
-#include <Nerve/NerveFunction.h>
+#include <Nerve/alNerve.h>
+#include <Nerve/alNerveFunction.h>
 
 #include "Sequence/ProductStateCourseSelect.h"
 #include "Sequence/ProductStateStage.h"

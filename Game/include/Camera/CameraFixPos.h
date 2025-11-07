@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Camera/Camera.h>
+#include <Camera/alCamera.h>
 
 class CameraFixPos : public al::Camera
 {

@@ -1,12 +1,12 @@
 #include "MapObj/AquariumSwimDebris.h"
 
-#include <LiveActor/ActorActionKeeper.h>
-#include <LiveActor/ActorInitUtil.h>
-#include <LiveActor/LiveActorFunction.h>
-#include <Nerve/Nerve.h>
-#include <Nerve/NerveFunction.h>
-#include <Placement/PlacementFunction.h>
-#include <Stage/StageSwitchKeeper.h>
+#include <LiveActor/alActorActionKeeper.h>
+#include <LiveActor/alActorInitUtil.h>
+#include <LiveActor/alLiveActorFunction.h>
+#include <Nerve/alNerve.h>
+#include <Nerve/alNerveFunction.h>
+#include <Placement/alPlacementFunction.h>
+#include <Stage/alStageSwitchKeeper.h>
 
 namespace NrvAquariumSwimDebris
 {

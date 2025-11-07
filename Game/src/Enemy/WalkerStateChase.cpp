@@ -1,6 +1,6 @@
 #include "Enemy/WalkerStateChase.h"
 
-#include <Nerve/Nerve.h>
+#include <Nerve/alNerve.h>
 
 #include "Enemy/WalkerStateChaseParam.h"
 
