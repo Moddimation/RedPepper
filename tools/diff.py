@@ -128,9 +128,9 @@ def main() -> None:
     decomp_symbol = get_elf_symbol(symbolname)
 
     if (symbol is None):
-        fail(f"Couldn't find in csv: {symbol[3]}")
+        fail(f"Couldn't find in csv: {symbolname}")
     if (decomp_symbol is None):
-        fail(f"Couldn't find in decomp: {symbol[3]}")
+        fail(f"Couldn't find in decomp: {symbolname}")
 
     sym_size = int(symbol[2])
     decomp_size = int(decomp_symbol[1])

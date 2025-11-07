@@ -1,5 +1,6 @@
 #pragma once
 
+// somewhy getting optimized to byte?
 namespace al
 {
 enum SensorType

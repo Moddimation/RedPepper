@@ -7,9 +7,4 @@ Application* al::getApplication()
 {
         return Application::instance();
 }
-
-RootTask* Application::getRootTask() const
-{
-        return nullptr; // Work in progress
-}
 #endif
