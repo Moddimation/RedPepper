@@ -62,6 +62,16 @@ def get_symbol(symbol: str):
                 return (int(row[0], 0), row[1], int(row[2]), row[3], row[4])
     return None
 
+def get_symbol_with_addr_and_size(addr: int, size: int):
+    with open(getFuncSymFile(), newline='') as f:
+        reader = csv.reader(f, delimiter=',',quotechar='"')
+        for row in reader:
+            if not row[0].startswith("0x"):
+                continue
+            if int(row[0],16) == addr and int(row[2]) == size:
+                return (int(row[0], 0), row[1], int(row[2]), row[3], row[4])
+    return None
+
 def rank_symbol(sym, decomp_sym):
     sym_size = int(sym[2])
     decomp_size = int(decomp_sym[1])

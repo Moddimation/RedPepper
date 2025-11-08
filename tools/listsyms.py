@@ -14,6 +14,7 @@ def main():
     argbase = argparse.ArgumentParser(description="List Symbols")
     argbase.add_argument('-e', action='store_true', help='List compiled symbols instead of csv symbols')
     argbase.add_argument('-w', action='store_true', help='When using -e, only list symbols not in the csv')
+    argbase.add_argument('-f', action='store_true', help='When using -w, list symbols that only mismatch in name')
     argbase.add_argument('-c', action='store_true', help='When using -e, compare address with csv, not compatible with -w')
     argbase.add_argument('-m', action='store_true', help='When using -e with -c, also only print non-matching')
     argbase.add_argument('-n', action='store_true', help='Only list names')
@@ -30,9 +31,11 @@ def main():
 
     has_found = False
     csv_names = []
+    csv_syms = []
     if args.w:
         syms = diff.read_sym_file()
-        csv_names = []
+        if args.f:
+            csv_syms = syms
         for sym in syms:
             name=sym[3]
             if not name or name is None:
@@ -72,6 +75,12 @@ def main():
                 if not args.w and ( csv_sym == None or csv_sym[1] != 'O' ):
                     ex = " (U)"
                 if args.w:
+                    if args.f:
+                        csv_sym_try = diff.get_symbol_with_addr_and_size(int(addr,16), int(size,16))
+                        if (not csv_sym_try is None):
+                            if (csv_sym_try[3] != name):
+                                print(f"{addr}:{size}: elf={name} != csv={csv_sym_try[3]}")
+                        continue
                     print(f"{addr}: {name}")
                     continue
                 if args.c:
