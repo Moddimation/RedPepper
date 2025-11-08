@@ -14,17 +14,16 @@ It is also fork from the repo on 3dsdecomp's github, and recieved some structura
 
 ## How To
 
-As noted earlier, this fork made some updates regarding structure of some files.</br>  
-</br>  
-- code.bin goes to the data/ folder.
-- symbol files are gone, instead use the .csv files inside of the data/ folder.
+As noted earlier, this fork made some updates regarding structure of some files.  
+- code.bin goes to the data/ folder.  
+- symbol files are gone, instead use the .csv files inside of the data/ folder.</br>  
 Visit [the Wiki](https://al.littun.co/decomp) for instructions on how to build and contribute to this project.
 
 ## Links
 
-- [Discord Server (now dead)](https://discord.gg/wK4ZKa9QXq)
+- [Discord Server](https://discord.gg/wK4ZKa9QXq)
 - [Wiki](https://al.littun.co/decomp)
-- [decomp.me](https://decomp.me/)
+- [decomp.me](https://decomp.me/preset/8)
 
 ## Credits
 - [open-ead/sead](https://github.com/open-ead/sead)
