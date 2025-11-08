@@ -14,6 +14,8 @@ def main():
     argbase = argparse.ArgumentParser(description="List Symbols")
     argbase.add_argument('-e', action='store_true', help='List compiled symbols instead of csv symbols')
     argbase.add_argument('-w', action='store_true', help='When using -e, only list symbols not in the csv')
+    argbase.add_argument('-c', action='store_true', help='When using -e, compare address with csv, not compatible with -w')
+    argbase.add_argument('-m', action='store_true', help='When using -e with -c, also only print non-matching')
     argbase.add_argument('-n', action='store_true', help='Only list names')
     argbase.add_argument('-a', action='store_true', help='Only list addr+name')
     argbase.add_argument('-A', action='store_true', help='Only list name+addr')
@@ -38,6 +40,8 @@ def main():
             csv_names.append(name)
 
     if args.e:
+        if args.c:
+            print("elf / csv")
         for line in StringIO(diff.readelf_data):
             if "FUNC" in line:
                 sym = line.split()
@@ -65,16 +69,33 @@ def main():
 
                 csv_sym = diff.get_symbol(sym[7])
                 ex = ""
-                if not args.w and ( args.wcsv_sym == None or csv_sym[1] != 'O' ):
+                if not args.w and ( csv_sym == None or csv_sym[1] != 'O' ):
                     ex = " (U)"
+                if args.w:
+                    print(f"{addr}: {name}")
+                    continue
+                if args.c:
+                    if csv_sym == None:
+                        continue
+                    csvaddr = csv_sym[0]
+                    csvsize = csv_sym[2]
+                    if args.m:
+                        if (int(csvaddr) == int(addr, 16)) and (int(csvsize) == int(size,16)):
+                            continue
+                    if not args.za:
+                        csvaddr = "0x{:08X}".format(csv_sym[0])
+                    if not args.zs:
+                        csvsize = "0x{:04X}".format(csv_sym[2])
+                    print(f"{addr}:{size}/{csvaddr}:{csvsize}: {name}")
+                    continue
                 if args.n:
                     print(f"{name}{ex}")
                     continue
                 if args.a:
-                    print(f"{addr}: {size}{ex}")
+                    print(f"{addr}:{size}: {name}{ex}")
                     continue
                 if args.A:
-                    print(f"{size}: {addr}{ex}")
+                    print(f"{size}:{addr}: {name}{ex}")
                     continue
                     
                 print(f"{addr}: {size}, {name}{ex}")
@@ -114,21 +135,21 @@ def main():
             continue
         if args.a:
             if args.R and not args.r:
-                print(f"{rank}: {addr}, {size}")
+                print(f"{rank}: {addr}, {size}: {name}")
             else:
-                print(f"{addr}: {size}")
+                print(f"{addr}: {size}: {name}")
             continue
         if args.A:
             if args.R and not args.r:
-                print(f"{rank}: {size}, {addr}")
+                print(f"{rank}: {size}, {addr}: {name}")
             else:
-                print(f"{size}: {addr}")
+                print(f"{size}: {addr}: {name}")
             continue
             
         if sym[4] and not args.i:
-            print(f"{addr}: {size},{rank},{sym[4]}, {name}")
+            print(f"{addr}: {size},{rank},{sym[4]}: {name}")
         else:
-            print(f"{addr}: {size},{rank}, {name}")
+            print(f"{addr}: {size},{rank}: {name}")
     if has_found == False:
         if (len(sys.argv) > 1):
             print ("No symbols found with specified settings.")
