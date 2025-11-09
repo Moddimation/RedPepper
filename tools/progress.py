@@ -33,10 +33,8 @@ def main():
 
     syms = read_sym_file()
     for sym in syms:
-        if len(sym[3]) == 0: # if no name, skip.
-            continue
-
         syms_total += 1
+
         match sym[1]:
             case 'U':
                 syms_undefined += 1
@@ -64,12 +62,12 @@ def main():
 
     print_type("Total Functions", str(syms_total), Fore.RESET);
     print_type("Matching", str(syms_ok), Fore.GREEN);
-    print_type("Non-matching", str(syms_ok + syms_major + syms_minor), Fore.YELLOW);
+    print_type("Non-matching", str(syms_major + syms_minor), Fore.YELLOW);
     print_type("code.bin", bytes_ok_str, Fore.CYAN);
 
     write_type('Total', "Total Functions", str(syms_total), 'inactive');
     write_type('OK', "Matching", str(syms_ok), "success");
-    write_type('NonMatching', "Non-matching", str(syms_ok + syms_major + syms_minor), "yellow");
+    write_type('NonMatching', "Non-matching", str(syms_major + syms_minor), "yellow");
     write_type('Code', "code.bin", bytes_ok_str, "informational");
 
     x_values = [datetime.datetime.now()]

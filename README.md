@@ -6,9 +6,9 @@ It is also fork from the repo on 3dsdecomp's github, and recieved some structura
 
 ## Progress
 
-<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Moddimation/RedPepper/master/data/stats/Total.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/Total.json&style=flat-square"/>
 
-<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/fruityloops1/RedPepper/master/Data/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Moddimation/RedPepper/master/data/stats/NonMatching.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/NonMatching.json&style=flat-square"/>
 
 ![Progress](data/stats/Progress.png)
 

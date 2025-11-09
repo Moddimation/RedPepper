@@ -50,7 +50,7 @@ def check_syms():
     newsyms = []
 
     for sym in syms:
-        if not sym[3] or len(sym[3]) <= 0:
+        if not sym[3] or len(sym[3]) == 0:
             continue
         decomp_symbol = get_elf_symbol(sym[3])
         if decomp_symbol is None:
