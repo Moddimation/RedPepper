@@ -48,31 +48,65 @@ def clear_line():
 def check_syms():
     syms = read_sym_file()
     newsyms = []
+    sym_addrs = []
+    sym_sizes = []
+    do_rewrite = False
+    is_error = False
 
     for sym in syms:
-        if not sym[3] or len(sym[3]) == 0:
-            continue
-        decomp_symbol = get_elf_symbol(sym[3])
-        if decomp_symbol is None:
-            newsyms.append((sym[0], 'U', sym[2], sym[3], sym[4]))
-            # Always print symbol name
-            clear_line()
-            print("Checking " + sym[3], end='\r')
-            if sym[1] != 'U':
-                # Only print special message if changed
-                print(f"{sym[3]} {sym[1]} -> U ({getRankMsg(sym[1],'U')})")
-        else:
-            rank = rank_symbol(sym, decomp_symbol)
-            newsyms.append((sym[0], rank, sym[2], sym[3], sym[4]))
-            clear_line()
-            print("Checking " + sym[3], end='\r')
-            if sym[1] != rank:
-                # Only print special message if changed
-                print(f"{sym[3]} {sym[1]} -> {rank} ({getRankMsg(sym[1], rank)})")
+        size=sym[2]
+        addr=sym[0]
+        oldrank=sym[1]
+        rank='U'
+        name=sym[3]
+        tag=sym[4]
 
+        # check addr dupl
+        if addr in sym_addrs:
+            print (f"0x{addr:08X} appears more than once!")
+
+        sym_addrs.append(addr)
+        sym_sizes.append(size)
+
+        # check no name
+        if not sym[3] or len(sym[3]) == 0:
+            newsyms.append(sym)
+            continue
+        #continue
+        # try get symbol from elf
+        decomp_symbol = get_elf_symbol(sym[3])
+        if not decomp_symbol is None:
+            rank = rank_symbol(sym, decomp_symbol)
+
+        # main adding
+        newsyms.append((addr, rank, size, sym[3], sym[4]))
+        clear_line()
+        print("Checking " + sym[3], end='\r')
+        if oldrank != rank:
+            print(f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})")
+            do_rewrite = True
+
+    # post check before writing
+    mySyms = [(int(sym_addrs[i]), int(sym_sizes[i])) for i in range(len(sym_addrs))]
+    mySyms.sort(key=lambda x: x[0])
+    for i in range(len(mySyms) - 1):
+        addr, size = mySyms[i]
+        next_addr = mySyms[i + 1][0]
+        if addr + size > next_addr:
+            print(f"MAP OVERLAP: 0x{addr:08X} overlaps with 0x{next_addr:08X}")
+            do_rewrite = False
+            is_error = True
+
+    if is_error or do_rewrite:
+        if is_error:
+            print ("Errors detected, cannot update map. Please fix!")
+        return
+
+    print ("Updating map ...")
+    # read
     with open(csv_path, 'r') as src, open(csv_path + '_b', 'w') as dst:
         dst.write(src.read())
-
+    # write
     with open(csv_path, 'w') as f:
         for sym in newsyms:
             f.write(f"0x{sym[0]:08X},{sym[1]},{sym[2]:06d},{sym[3]},{sym[4]}\n")
