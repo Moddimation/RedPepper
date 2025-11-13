@@ -3,41 +3,20 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/ARMCC.cmake)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-if(NOT DEFINED ENV{ARMCC_PATH})
-    message(FATAL_ERROR "please set ARMCC_PATH")
-endif()
-
-find_program(ARM_ASM NAMES armasm.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH)
-find_program(ARM_AR NAMES armar.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH)
-find_program(ARM_CC NAMES armcc.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH)
-find_program(ARM_LINK NAMES armlink.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH)
-# find_program(ARM_FROMELF NAMES fromelf.exe PATHS $ENV{ARMCC_PATH}/bin REQUIRED NO_DEFAULT_PATH) # not important
-
 add_subdirectory(lib/ctrsdk)
 add_subdirectory(lib/sead)
 add_subdirectory(lib/ms)
-
-macro (set_compilers)
-    set(CMAKE_CXX_COMPILER_ID ARMCC)
-
-    set(CMAKE_AR ${ARM_AR})
-    set(CMAKE_C_COMPILER ${ARM_CC})
-    set(CMAKE_CXX_COMPILER ${ARM_CC})
-    set(CMAKE_ASM_COMPILER ${ARM_ASM})
-    set(CMAKE_LINKER ${ARM_LINK})
-endmacro()
-
-if (WIN32)
-    set_compilers()
-    set(CMAKE_C_COMPILER_WORKS TRUE)
-    set(CMAKE_CXX_COMPILER_WORKS TRUE)
-    set(CMAKE_ASM_COMPILER_WORKS TRUE)
-endif()
 
 project(RedPepper C CXX ASM)
 
 if (NOT WIN32)
     set_compilers()
+endif()
+
+if(WIN32)
+    set(LOCALE_FLAG --locale=japanese)
+else()
+    set(LOCALE_FLAG --locale=ja_JP.SJIS)
 endif()
 
 set(CMAKE_EXECUTABLE_SUFFIX ".axf")
@@ -51,11 +30,9 @@ file(GLOB_RECURSE SOURCES_GAME ${CMAKE_SOURCE_DIR}/Game/src/*.c ${CMAKE_SOURCE_D
 
 add_executable(RedPepper $<TARGET_OBJECTS:crt0> ${SOURCES_AL} ${SOURCES_GAME})
 
-target_link_libraries(RedPepper PUBLIC 
-                                ctrsdk
-                                sead
-                                ms
-                                )
+target_link_libraries(RedPepper PUBLIC ctrsdk)
+target_link_libraries(RedPepper PUBLIC sead)
+target_link_libraries(RedPepper PUBLIC ms)
 
 target_link_options(RedPepper PUBLIC
     --cpu=MPCore --entry=__ctr_start --startup=__ctr_start --library_type=standardlib
@@ -67,16 +44,15 @@ target_link_options(RedPepper PUBLIC
     )
 
 target_compile_options(RedPepper PUBLIC
-    --apcs=//interwork --cpu=MPCore --fpmode=fast --arm
-    --signed_chars --multibyte-chars --locale=japanese
-    --data-reorder --split_sections --diag_suppress 870
+    --apcs=//interwork --arm
+    --cpu=MPCore --fpmode=fast -Otime
+    --data-reorder --split_sections
+    --multibyte-chars --signed_chars
     --preinclude=${CMAKE_SOURCE_DIR}/lib/ctrsdk/include/nn/types.h
+    ${LOCALE_FLAG}
     >)
 
-target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
-    --c99 -Otime
-    >)
-
+target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:--c99>)
 target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:CXX>:
     --cpp --force_new_nothrow --no_vfe # workaround, vfe should be enabled
     --no_rtti_data --no_rtti --no_exceptions
@@ -89,4 +65,5 @@ if (NON_MATCHING)
     target_compile_definitions(RedPepper PUBLIC NON_MATCHING)
 endif()
 
-target_include_directories(RedPepper PUBLIC ${CMAKE_SOURCE_DIR}/Game/include  ${CMAKE_SOURCE_DIR}/lib/al/include)
+target_include_directories(RedPepper PUBLIC Game/include)
+target_include_directories(RedPepper PUBLIC lib/al/include)

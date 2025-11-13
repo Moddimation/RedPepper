@@ -2,10 +2,13 @@ from diff import *
 from colorama import Fore
 import multiprocessing
 import threading
+import argparse
 import time
 import shutil
 import sys
 
+is_skip_mode = False
+is_sim_mode = False
 found_flag = False
 csv_path = getFuncSymFile()
 
@@ -69,7 +72,7 @@ def check_syms():
         sym_sizes.append(size)
 
         # check no name
-        if not sym[3] or len(sym[3]) == 0:
+        if is_skip_mode or not sym[3] or len(sym[3]) == 0:
             newsyms.append(sym)
             continue
         #continue
@@ -100,6 +103,12 @@ def check_syms():
     if is_error or do_rewrite:
         if is_error:
             print ("Errors detected, cannot update map. Please fix!")
+        if is_sim_mode or is_skip_mode:
+            print (r"... you ran in simulation mode anyways so \_(ツ)_/")
+        return
+
+    if is_sim_mode or is_skip_mode:
+        print ("Simulation mode, not updating map file")
         return
 
     print ("Updating map ...")
@@ -146,6 +155,18 @@ def check_sym(symbol_name):
 def main():
     global found_flag
     global csv_path
+    global is_skip_mode
+    global is_sim_mode
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-f", action="store_true", help="Skip rank checking (fast)")
+    parser.add_argument("-s", action="store_true", help="Simulation mode (don't write file)")
+    parser.add_argument("sym", nargs="?", help="Only check this symbol")
+    args = parser.parse_args()
+
+    is_skip_mode = args.f
+    is_sim_mode = args.s
+
     with open(f"{getBuildPath()}/compile_commands.json", "r") as f:
         if any("NON_MATCHING" in line for line in f):
             found_flag = True
@@ -153,8 +174,8 @@ def main():
         csv_path = getFuncSymFile().rsplit('.csv', 1)[0] + '_test.csv'
         print("Info: TEST MODE. You need to compile without -m (only matching) to rebuild the functions map. This output will be written to data/*_test.csv")
 
-    if len(sys.argv) > 1:
-        check_sym(sys.argv[1])
+    if args.sym:
+        check_sym(args.sym)
     else:
         start = time.time()
         check_syms()
