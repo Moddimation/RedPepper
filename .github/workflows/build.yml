@@ -25,6 +25,16 @@ jobs:
           token: ${{ secrets.PAT_BUILD }}
           path: setup
 
+      - name: Locale to japanese
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y locales
+          echo "ja_JP.SJIS SHIFT_JIS" | sudo tee -a /usr/share/i18n/SUPPORTED
+          echo "ja_JP.SJIS SHIFT_JIS" | sudo tee -a /etc/locale.gen
+          sudo locale-gen ja_JP.SJIS
+          export LANG="ja_JP.SJIS"
+          export LC_ALL="ja_JP.SJIS"
+
       - name: Setup
         run: |
           cp ./setup/code.bin ./data/
@@ -32,18 +42,10 @@ jobs:
           sudo apt-get install -y cmake make python3 python3-pip python-is-python3
           python -m pip install watchdog
 
-      - name: Locale to japanese
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y locales
-          sudo locale-gen ja_JP.SJIS
-          export LANG="ja_JP.SJIS"
-          export LC_ALL="ja_JP.SJIS"
-
       - name: Build
         run: |
           export LM_LICENSE_FILE="$PWD/setup/license.dat"
-          export ARMCC_PATH="./setup/armcc/"
+          export ARMCC_PATH="$PWD/setup/armcc"
           export ARMCC41INC="${ARMCC_PATH}/include/unix"
           export ARMCC41LIB="${ARMCC_PATH}/lib"
           python tools/build.py
