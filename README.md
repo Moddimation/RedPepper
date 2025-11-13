@@ -23,6 +23,7 @@ As noted earlier, this fork made some updates regarding structure of some files.
     - ARM C/C++ Compiler, 4.1 [Build 894]
     - Python 3.10
     - CMake >= 3.24
+    - DevKitPro
     - code.bin extracted from Super Mario 3D Land (EU)
 
 ### Setup
@@ -35,17 +36,19 @@ You also need japanese locale installed, shift jis if possible.
 ##### Windows:  
 Just make sure the japanese language is installed.
 ##### Linux:
+    - Arch:
+```bash
+echo "ja_JP.SJIS SHIFT_JIS" | sudo tee -a /etc/locale.gen
+sudo locale-gen
+```
     - Debian/Ubuntu:  
 ```bash
 sudo apt update
-sudo apt install language-pack-ja
+sudo apt install locales -y
+echo "ja_JP.SJIS SHIFT_JIS" | sudo tee -a /usr/share/i18n/SUPPORTED
+echo "ja_JP.SJIS SHIFT_JIS" | sudo tee -a /etc/locale.gen
 sudo locale-gen ja_JP.SJIS
 sudo update-locale
-```
-    - Arch:
-```bash
-sudo nano /etc/locale.gen   # uncomment: ja_JP.SJIS
-sudo locale-gen
 ```
 
 ### Tools
