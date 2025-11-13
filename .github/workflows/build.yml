@@ -79,7 +79,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git add data/*
+          git add data/*.csv
           git config set advice.addIgnoredFile false
           git commit --amend --no-edit || true
 

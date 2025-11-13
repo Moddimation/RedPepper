@@ -6,11 +6,11 @@ It is also fork from the repo on 3dsdecomp's github, and recieved some structura
 
 ## Progress
 
-<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/Total.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/Total.json&style=flat-square"/>
 
-<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/RedPepperDec/RedPepper/master/data/stats/NonMatching.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/NonMatching.json&style=flat-square"/>
 
-![Progress](data/stats/Progress.png)
+![Progress](https://github.com/RedPepperDec/RedPepper/releases/download/stats/Progress.png)
 
 ## How To
 
