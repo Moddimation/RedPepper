@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: building
+  cancel-in-progress: false
+
 jobs:
   build:
     name: Build Project
@@ -22,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: RedPepperDec/RedPepper_Build
-          token: ${{ secrets.PAT_BUILD }}
+          token: ${{ secrets.GH_TOKEN }}
           path: setup
 
       - name: Locale to japanese
@@ -40,12 +44,42 @@ jobs:
           cp ./setup/code.bin ./data/
           sudo apt-get update
           sudo apt-get install -y cmake make python3 python3-pip python-is-python3
-          python -m pip install watchdog
+          python -m pip install watchdog colorama levenshtein cxxfilt GitPython matplotlib numpy
 
       - name: Build
-        run: |
+        run: | 
           export LM_LICENSE_FILE="$PWD/setup/license.dat"
           export ARMCC_PATH="$PWD/setup/armcc"
           export ARMCC41INC="${ARMCC_PATH}/include/unix"
           export ARMCC41LIB="${ARMCC_PATH}/lib"
           python tools/build.py
+
+      - name: Check progress
+        run: |
+          export DEVKITARM="$PWD/setup/dkp"
+          python tools/check.py -c
+          python tools/progress.py
+
+      - name: Publish stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          R=stats
+          BODY=$(<data/stats/release.txt)
+          if gh release view "$R" >/dev/null 2>&1; then
+              gh release delete "$R" --yes || true
+          fi
+          gh release create $R -t $R -n "$BODY"
+          for f in data/stats/*; do
+              [[ "$f" =~ release.txt$ ]] && continue
+              gh release upload $R "$f" --clobber
+          done
+
+      - name: Update map
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git add data/*
+          git config set advice.addIgnoredFile false
+          git commit --amend --no-edit || true
+
