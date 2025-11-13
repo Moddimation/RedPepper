@@ -5,12 +5,26 @@ import json
 
 import datetime
 from git import Repo
+import os
 import io
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.ticker
 import numpy as np
 import sys
+
+def write_release_txt(u: str, o: str, m: str, mm: str, total: str, bytes: str):
+    textt = f"""### Matched Size: *{bytes}*
+
+**Matched Functions**: {o}
+**Minor Mismatched Functions**: {mm}
+**Major Mismatched Functions**: {m}
+**Undefined Function**: {u}
+**Total Functions**: {total}
+"""
+
+    with open('data/stats/release.txt','w') as f:
+        f.write(textt)
 
 def get_matching_bytes(orig: str, other: str):
     matching = 0
@@ -31,6 +45,8 @@ def main():
     bytes_ok = get_matching_bytes("data/code.bin", getBuildPath() + "/code.bin")
     code_bin_size = os.path.getsize('data/code.bin')
 
+    os.makedirs('data/stats', exist_ok=True)
+    
     syms = read_sym_file()
     for sym in syms:
         syms_total += 1
@@ -56,7 +72,6 @@ def main():
         }
         with open('data/stats/' + rank + '.json','w') as f:
             f.write(json.dumps(out))
-
 
     bytes_ok_str = "{:.4f}% ({:,} bytes/{:,} bytes)".format((bytes_ok / code_bin_size) * 100, int(bytes_ok), int(code_bin_size))
 
@@ -99,6 +114,8 @@ def main():
         import mplcursors
         mplcursors.cursor(ax, hover=True)
         plt.show()
+
+    write_release_txt(syms_undefined, syms_ok, syms_major, syms_minor, syms_total, bytes_ok_str)
 
 
 if __name__ == "__main__":

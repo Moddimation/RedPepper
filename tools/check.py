@@ -9,6 +9,7 @@ import sys
 
 is_skip_mode = False
 is_sim_mode = False
+is_silent = False
 found_flag = False
 csv_path = getFuncSymFile()
 
@@ -45,8 +46,13 @@ def getRankMsg(prev, now):
         return "Still minor Mismatching."
     return '?'
 
+def printf(str, end='\n'):
+    if is_silent:
+        return
+    print(str, end=end)
+
 def clear_line():
-    print(' ' * shutil.get_terminal_size((80, 20)).columns, end='\r')
+    printf (' ' * shutil.get_terminal_size((80, 20)).columns, end='\r')
 
 def check_syms():
     syms = read_sym_file()
@@ -84,9 +90,9 @@ def check_syms():
         # main adding
         newsyms.append((addr, rank, size, sym[3], sym[4]))
         clear_line()
-        print("Checking " + sym[3], end='\r')
+        printf ("Checking " + sym[3], end='\r')
         if oldrank != rank:
-            print(f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})")
+            print (f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})")
             do_rewrite = True
 
     # post check before writing
@@ -96,7 +102,7 @@ def check_syms():
         addr, size = mySyms[i]
         next_addr = mySyms[i + 1][0]
         if addr + size > next_addr:
-            print(f"MAP OVERLAP: 0x{addr:08X} overlaps with 0x{next_addr:08X}")
+            print (f"MAP OVERLAP: 0x{addr:08X} overlaps with 0x{next_addr:08X}")
             do_rewrite = False
             is_error = True
 
@@ -123,7 +129,7 @@ def check_syms():
 def check_sym(symbol_name):
     dec = get_elf_symbol(symbol_name)
     if dec is None:
-        print(f"Symbol {symbol_name} not found in build.")
+        print (f"Symbol {symbol_name} not found in build.")
         return
 
     syms = read_sym_file()
@@ -146,10 +152,10 @@ def check_sym(symbol_name):
                 f.writelines(file)
 
             # Always print rank change in literal format for single symbol
-            print(f"{prevrank} -> {nowrank} ({getRankMsg(prevrank, nowrank)})")
+            print (f"{prevrank} -> {nowrank} ({getRankMsg(prevrank, nowrank)})")
         else:
             # Print the normal message for unchanged single symbol
-            print(getRankMsg(prevrank, nowrank))
+            printf (getRankMsg(prevrank, nowrank))
         break
 
 def main():
@@ -157,15 +163,18 @@ def main():
     global csv_path
     global is_skip_mode
     global is_sim_mode
+    global is_silent
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", action="store_true", help="Skip rank checking (fast)")
     parser.add_argument("-s", action="store_true", help="Simulation mode (don't write file)")
+    parser.add_argument("-c", action="store_true", help="Simulation mode (don't write file)")
     parser.add_argument("sym", nargs="?", help="Only check this symbol")
     args = parser.parse_args()
 
     is_skip_mode = args.f
     is_sim_mode = args.s
+    is_silent = args.c
 
     with open(f"{getBuildPath()}/compile_commands.json", "r") as f:
         if any("NON_MATCHING" in line for line in f):
