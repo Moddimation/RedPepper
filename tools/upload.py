@@ -1,12 +1,11 @@
 import sys
 import os
-import re
 import json
 import cxxfilt
 import requests
-from io import StringIO
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
+from __genCtxFile import genCtxs
 from diff import *
 from settings import *
 
@@ -53,104 +52,6 @@ def find_source_path(str):
                         continue
 
                     return last_file
-
-def find_src_file(str):
-    for path in (f"lib/{str}", f"Game/src/{str}", f"Game/include/{str}", f"lib/al/include/{str}", f"lib/sead/include/{str}", f"lib/ctrsdk/include/{str}", f"lib/ms/include/{str}", f"{os.environ.get("ARMCC41INC")}/{str}"):
-        #print(f"{str}: {path}")
-        if os.path.exists(path):
-              return path
-
-    return str
-
-traversed_files = []
-main_data = []
-has_appended_inc = False
-
-def add_type_inc(sym):
-    content = []
-    file_path = find_src_file("nn/types.h")
-    if not os.path.exists(file_path):
-        print("nn/types.h missing, cannot continue.")
-        return ""
-
-    return traverse_file (file_path, sym)
-
-def traverse_file(str, sym):
-    global is_flag_nondef_ctx
-    global is_flag_nondef_main
-    global has_appended_inc
-
-    content = []
-    file_path = find_src_file(str)
-
-    if not os.path.exists(file_path):
-        if not "seadMemUtil" in file_path and not "cafe" in file_path:
-            print (f"Warning: Path not found: {file_path}")
-        return ""
-
-    if file_path in traversed_files:
-        return ""
-
-    #print (f"File: {file_path}")
-    traversed_files.append(file_path)
-
-    is_main_data = True if main_data is None or len(main_data) <= 0 else False
-    is_skipping = False
-    is_ns_al = False
-    if is_main_data == True:
-        content.append (f'// Context for {sym} in {file_path}\n')
-        content.append ('#define NON_MATCHING\n')
-        main_data.append (f'// Source for {sym}\n')
-    else:
-        content.append (f"// File: {file_path}\n")
-
-    if has_appended_inc == False:
-        inc = add_type_inc(sym)
-        for l in inc:
-            content.append(l)
-        has_appended_inc = True
-
-    with open(file_path, "r", encoding="shift-jis") as f:
-        s = StringIO(f.read())
-        for line in s:
-            if is_skipping == True:
-                continue
-
-            if "#pragma once" in line:
-                continue
-
-            if not "#include" in line: # main append
-                if is_main_data:
-                    main_data.append(line)
-                else:
-                    content.append (line)
-                if "namespace al" in line:
-                    is_ns_al = True
-                continue
-            
-            if not '<' in line and not '>' in line:
-                if not '\"' in line:
-                    continue
-
-            incl_path = ""
-            match = re.search(r'"([^"]*)"|<([^>]*)>', line)
-            if not match:
-                continue
-
-            incl_path = match.group(1) or match.group(2)
-
-            included = traverse_file (incl_path, sym)
-            for incl_line in included:
-                content.append(incl_line)
-
-    if is_skipping == True and is_ns_al == True:
-        if is_main_data:
-            main_data.append ("Insert code here ...")
-            main_data.append ("}")
-        else:
-            content.append ("}")
-
-    return content
 
 def get_obj_path (str):
     if not os.path.exists(f'{getBuildPath()}/compile_commands.json'):
@@ -215,9 +116,7 @@ def main():
         return
 
     print ("Collecting code ...")
-    data = "".join(traverse_file (path, sym))
-
-    main = "".join(main_data)
+    data, main = genCtxs(path, sym)
 
     #for line in data:
     #    print (line.rstrip('\n'))
@@ -231,7 +130,8 @@ def main():
 
     name = cxxfilt.demangle (sym)
 
-    response = upload (sym, name, data, main, path_obj)
+    if not input("Ready to upload? (Y/n): ").strip().lower() in ("n"):
+        response = upload(sym, name, data, main, path_obj)
 
     print (f"Scratch created. Good luck matching {name}!.")
     print (f" -> Claim: {response["claim_url"]}")

@@ -1,7 +1,8 @@
 import os
 import subprocess
 import multiprocessing
-from genLinkerScript import genLDScript
+from __genLinkerScript import genLDScript
+from __genObjdiffFile import genObjdiff
 from colorama import Fore, Style
 import sys
 import shutil
@@ -12,7 +13,7 @@ import argparse
 
 def main() -> None:
     def status(msg: str):
-        print(Style.BRIGHT + Fore.CYAN + msg + Fore.RESET + Style.RESET_ALL)
+        print(Fore.CYAN + msg + Fore.RESET + Style.RESET_ALL)
 
     if not os.path.exists(f"{getExeFile()}"):
         print(os.listdir())
@@ -45,13 +46,12 @@ def main() -> None:
             exit(1)
         os.chdir("..")
 
-    status("Generating Linker Script")
+    status("Generating linker.ld ...")
     genLDScript()
 
     os.chdir(getBuildPath())
 
     verbose = ''
-    match = ''
     if args.v:
         verbose = 'VERBOSE=1 '
     result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}', shell=True)
@@ -59,7 +59,7 @@ def main() -> None:
         exit(result)
 
     def fromelf():
-        status("Generating code.bin")
+        status("Generating code.bin ...")
         subprocess.run("\"" + os.environ.get('ARMCC_PATH') + f"/bin/fromelf.exe\" --bincombined {getElfName()} --output code.bin", shell=True)
 
     if os.path.exists(f"{getExeFile()}"):
@@ -72,6 +72,9 @@ def main() -> None:
         shutil.copyfile(f'compile_commands.json', '../compile_commands.json')
 
     os.chdir(getProjDir())
+
+    status("Generating objdiff.json ...")
+    genObjdiff()
 
 if __name__ == "__main__":
     main()

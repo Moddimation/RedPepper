@@ -65,7 +65,7 @@ bool Fugumannen::receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me )
                 return false;
 
         bool rv = FUN_0027b768( msg, other, me, mStateBlowDown, &NrvFugumannen::BlowDown );
-        if ( rv ) // 💀 ?
+        if ( rv ) // :skull:?
                 rv = true;
 
         if ( !rv && ( rv = al::isMsg9( msg ), rv ) )

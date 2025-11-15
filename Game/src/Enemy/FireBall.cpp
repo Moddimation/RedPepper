@@ -28,7 +28,7 @@ void FireBall::init( const al::ActorInitInfo& info )
 }
 
 void FireBall::attackSensor( al::HitSensor* me, al::HitSensor* other )
-{ // 💀 ?
+{ // :skull:?
         if ( ( !al::isSensorPlayer( other ) || !al::sendMsgEnemyAttack( other, me ) ) &&
                 ( ( ( ( !al::isSensorEnemy( other ) || !al::isGreaterEqualStep( (IUseNerve*)this, 10 ) ) &&
                             ( !al::isSensorMapObj( other ) ) ) ||

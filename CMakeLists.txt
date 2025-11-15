@@ -6,9 +6,9 @@ set_toolchain()
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory(lib/ctrsdk)
-add_subdirectory(lib/sead)
 add_subdirectory(lib/ms)
+add_subdirectory(lib/sead)
+add_subdirectory(lib/ctrsdk)
 
 project(RedPepper C CXX ASM)
 
@@ -24,14 +24,14 @@ __compiler_armcc(C)
 __compiler_armcc(CXX)
 __compiler_armcc(ASM)
 
-file(GLOB_RECURSE SOURCES_AL ${CMAKE_SOURCE_DIR}/lib/al/src/*.c ${CMAKE_SOURCE_DIR}/lib/al/src/*.cpp)
 file(GLOB_RECURSE SOURCES_GAME ${CMAKE_SOURCE_DIR}/Game/src/*.c ${CMAKE_SOURCE_DIR}/Game/src/*.cpp)
+file(GLOB_RECURSE SOURCES_AL ${CMAKE_SOURCE_DIR}/lib/al/src/*.c ${CMAKE_SOURCE_DIR}/lib/al/src/*.cpp)
 
-add_executable(RedPepper $<TARGET_OBJECTS:crt0> ${SOURCES_AL} ${SOURCES_GAME})
+add_executable(RedPepper $<TARGET_OBJECTS:crt0> ${SOURCES_GAME} ${SOURCES_AL})
 
-target_link_libraries(RedPepper PUBLIC ctrsdk)
-target_link_libraries(RedPepper PUBLIC sead)
 target_link_libraries(RedPepper PUBLIC ms)
+target_link_libraries(RedPepper PUBLIC sead)
+target_link_libraries(RedPepper PUBLIC ctrsdk)
 
 target_link_options(RedPepper PUBLIC
     --cpu=MPCore --entry=__ctr_start --startup=__ctr_start --library_type=standardlib
@@ -51,7 +51,9 @@ target_compile_options(RedPepper PUBLIC
     ${LOCALE_FLAG}
     >)
 
-target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:--c99>)
+target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:C>:
+    --c99
+    >)
 target_compile_options(RedPepper PUBLIC $<$<COMPILE_LANGUAGE:CXX>:
     --cpp --force_new_nothrow --no_vfe # workaround, vfe should be enabled
     --no_rtti_data --no_rtti --no_exceptions
@@ -66,3 +68,4 @@ endif()
 
 target_include_directories(RedPepper PUBLIC Game/include)
 target_include_directories(RedPepper PUBLIC lib/al/include)
+
