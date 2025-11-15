@@ -16,7 +16,7 @@ def fail(msg: str):
 
 elf_exists = os.path.exists(getElfPath())
 if elf_exists:
-    readelf_data = str(subprocess.check_output(f"{os.environ.get('DEVKITARM')}/bin/arm-none-eabi-readelf {getElfPath()} -sw -W", shell=True))
+    readelf_data = str(subprocess.check_output(f"{os.environ.get('DEVKITARM')}/bin/arm-none-eabi-readelf {getElfPath()} -sw -W", shell=True, stderr=subprocess.DEVNULL))
     if sys.platform == 'win32':
         readelf_data = readelf_data.replace(r'\r\n', '\n')
     else:

@@ -29,6 +29,13 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           path: setup
 
+      - name: Setup
+        run: |
+          cp ./setup/ver ./data/ -rf
+          sudo apt-get update
+          sudo apt-get install -y cmake make python3 python3-pip python-is-python3
+          python -m pip install watchdog colorama levenshtein cxxfilt GitPython matplotlib numpy pyelftools
+
       - name: Locale to japanese
         run: |
           sudo apt-get update
@@ -39,41 +46,57 @@ jobs:
           export LANG="ja_JP.SJIS"
           export LC_ALL="ja_JP.SJIS"
 
-      - name: Setup
-        run: |
-          cp ./setup/code.bin ./data/
-          sudo apt-get update
-          sudo apt-get install -y cmake make python3 python3-pip python-is-python3
-          python -m pip install watchdog colorama levenshtein cxxfilt GitPython matplotlib numpy
-
-      - name: Build
+      - name: Build & Parse
         run: | 
           export LM_LICENSE_FILE="$PWD/setup/license.dat"
           export ARMCC_PATH="$PWD/setup/armcc"
           export ARMCC41INC="${ARMCC_PATH}/include/unix"
           export ARMCC41LIB="${ARMCC_PATH}/lib"
-          python tools/build.py
-
-      - name: Check progress
-        run: |
           export DEVKITARM="$PWD/setup/dkp"
-          python tools/check.py -c
-          python tools/progress.py
+          
+          VERSIONS=(eu eu_d jp kr tw us us_d)
+
+          for v in "${VERSIONS[@]}"; do
+              python tools/build.py "$v"
+
+              export DEVKITARM="$PWD/setup/dkp"
+              python tools/check.py -c
+              python tools/progress.py
+          done
+          python tools/build.py
 
       - name: Publish stats
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          R=stats
-          BODY=$(<data/stats/release.txt)
-          if gh release view "$R" >/dev/null 2>&1; then
-              gh release delete "$R" --yes || true
-          fi
-          gh release create $R -t $R -n "$BODY"
-          for f in data/stats/*; do
-              [[ "$f" =~ release.txt$ ]] && continue
-              gh release upload $R "$f" --clobber
+          VERSIONS=(tw us_d us kr jp eu_d eu)
+
+          for v in "${VERSIONS[@]}"; do
+              R="stats-$v"
+              DIR="data/stats/$v"
+
+              BODY=""
+              FILE="$DIR/release.txt"
+              if [ -f "$FILE" ]; then
+                  BODY=$(cat "$FILE")
+              else
+                  echo missing release.txt for $v
+              fi
+
+              if gh release view "$R" >/dev/null 2>&1; then
+                  gh release delete "$R" --yes || true
+              fi
+
+              gh release create "$R" -t "$R" -n "$BODY"
+
+              for f in "$DIR"/*; do
+                  if [[ "$(basename "$f")" == "release.txt" ]]; then
+                      continue
+                  fi
+                  gh release upload "$R" "$f" --clobber
+              done
           done
+
 
       - name: Update map
         env:
