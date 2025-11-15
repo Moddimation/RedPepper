@@ -1,36 +1,41 @@
 import os
 import subprocess
 import multiprocessing
-from __genLinkerScript import genLDScript
-from __genObjdiffFile import genObjdiff
 from colorama import Fore, Style
 import sys
 import shutil
-from settings import *
 import hashlib
-from pathlib import Path
 import argparse
+
+from __genLinkerScript import genLDScript
+from __genObjdiffFile import genObjdiff
+from verutils import *
+from settings import *
 
 def main() -> None:
     def status(msg: str):
         print(Fore.CYAN + msg + Fore.RESET + Style.RESET_ALL)
 
-    if not os.path.exists(f"{getExeFile()}"):
-        print(os.listdir())
-        fail("data/code.bin missing. Please provide the code.bin from the EU version.")
-
-    if hashlib.sha256(Path(f"{getExeFile()}").read_bytes()).hexdigest() != "e1d7e188ff88467df776c17cec45c44857fadf5b699944baa8cddcae7d939e64":
-        fail("data/code.bin is invalid. Did you dump the right version, correctly? (EU)")
-
-    parser = argparse.ArgumentParser(
-        'build.py', description="Build the Super Mario 3D Land decompilation project")
-    parser.add_argument('-c', action='store_true',
-                        help="Clean before building")
-    parser.add_argument('-v', action='store_true',
-                        help="Give verbose output")
-    parser.add_argument('-m', action='store_true',
-                        help="Compile only matching code (BROKEN)")
+    parser = argparse.ArgumentParser('build.py', description="Build the Super Mario 3D Land decompilation project")
+    parser.add_argument("version", nargs="?", default=None, help="Version to use")
+    parser.add_argument('-c', action='store_true', help="Clean before building")
+    parser.add_argument('-v', action='store_true', help="Give verbose output")
+    parser.add_argument('-m', action='store_true', help="Compile only matching code (BROKEN)")
     args = parser.parse_args()
+
+    version = args.version
+    if version is None or len(version) == 0:
+        version = get_ver()
+    else:
+        set_ver(version)
+
+    if not is_ver_exist(version):
+        print("data/code.bin missing. Please provide the code.bin from the EU version.")
+        return
+
+    if not is_ver_valid(version):
+        print(f"code.bin for {version} is invalid. Did you dump the right version, correctly?")
+        return
 
     if not os.path.isdir(getBuildPath()) or args.c:
         shutil.rmtree(getBuildPath(), ignore_errors=True)
@@ -46,8 +51,11 @@ def main() -> None:
             exit(1)
         os.chdir("..")
 
-    status("Generating linker.ld ...")
+    status ("Generating linker.ld ...")
     genLDScript()
+    if not os.path.exists(getBuildPath() + "/linker.ld"):
+        status ("No linker file generated.")
+        return
 
     os.chdir(getBuildPath())
 
@@ -62,9 +70,8 @@ def main() -> None:
         status("Generating code.bin ...")
         subprocess.run("\"" + os.environ.get('ARMCC_PATH') + f"/bin/fromelf.exe\" --bincombined {getElfName()} --output code.bin", shell=True)
 
-    if os.path.exists(f"{getExeFile()}"):
-        if os.path.getmtime(f"{getExeFile()}") < os.path.getmtime(getElfName()):
-            fromelf()
+    if os.path.exists(f"{getExeFile()}") and (os.path.getmtime(f"{getExeFile()}") < os.path.getmtime(getElfName())):
+        fromelf()
     else:
         fromelf()
 
@@ -73,8 +80,8 @@ def main() -> None:
 
     os.chdir(getProjDir())
 
-    status("Generating objdiff.json ...")
-    genObjdiff()
+    #status("Generating objdiff.json ...")
+    #genObjdiff()
 
 if __name__ == "__main__":
     main()

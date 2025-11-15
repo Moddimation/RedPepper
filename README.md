@@ -1,16 +1,16 @@
 # RedPepper
  
-This is a decompilation of the EU version of Super Mario 3D Land (note that retail JP, KO, TW, and US versions are nearly identical).  
-Multi version support is planned, but not being added in the near future.  
-It is also fork from the repo on 3dsdecomp's github, and recieved some structural updates.
+This is a decompilation of Super Mario 3D Land (note that retail JP, KO, TW, and US versions are nearly identical).  
+It is also fork from the repo on 3dsdecomp's github, and recieved some structural updates.  
+Originally this was based on the EU release, but multiversion support is added and experimental.
 
 ## Progress
 
-<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/Total.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/Total.json&style=flat-square"/>
 
-<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats/NonMatching.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/NonMatching.json&style=flat-square"/>
 
-![Progress](https://github.com/RedPepperDec/RedPepper/releases/download/stats/Progress.png)
+![Progress](https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/Progress.png)
 
 ## How To
 
@@ -29,7 +29,7 @@ As noted earlier, this fork made some updates regarding structure of some files.
 ### Setup
 - Clone this repository recursively using ```git clone https://github.com/RedPepperDec/RedPepper.git --recursive```
 - Place the code.bin file in data/code.bin
-- Run 'python3 -m pip install colorama watchdog levenshtein cxxfilt' to install python prequesites (only watchdog needed for build!)
+- Run 'python3 -m pip install colorama watchdog levenshtein cxxfilt pyelftools' to install python prequesites (only watchdog and pyelftools needed for build!)
 - (Optional) If you want to run tools/progress.py, you also run 'python3 -m pip install GitPython matplotlib numpy'
     - If you didnt install ther ARM Compiler yet, put it to a path like `/opt/armcc/` or `C:\ARMCC\`
     - Set the armcc directory as ARMCC_PATH

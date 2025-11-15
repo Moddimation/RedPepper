@@ -85,7 +85,7 @@ def upload (sym_name, show_name, ctx, src, obj_path):
 
     if not r.ok:
         print("Error:", r.status_code, r.text)
-        return None
+        return None, None
 
     res = r.json()
 
@@ -94,15 +94,12 @@ def upload (sym_name, show_name, ctx, src, obj_path):
 
     if not slug or not claim_token:
         print("Unexpected response:", res)
-        return None
+        return None, None
     
     base_url = f"{api_base}/scratch/{slug}/"
     claim_url = f"{api_base}/scratch/{slug}/claim?token={claim_token}"
 
-    return {
-        "base_url": base_url,
-        "claim_url": claim_url
-    }
+    return base_url, claim_url
 
 def main():
     if len(sys.argv) <= 1:
@@ -131,11 +128,11 @@ def main():
     name = cxxfilt.demangle (sym)
 
     if not input("Ready to upload? (Y/n): ").strip().lower() in ("n"):
-        response = upload(sym, name, data, main, path_obj)
+        claim_url, base_url = upload(sym, name, data, main, path_obj)
 
     print (f"Scratch created. Good luck matching {name}!.")
-    print (f" -> Claim: {response["claim_url"]}")
-    print (f" -> Url: {response["base_url"]}")
+    print (f" -> Claim: {claim_url}")
+    print (f" -> Url: {base_url}")
 
 if __name__ == "__main__":
     main()
