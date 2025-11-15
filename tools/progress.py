@@ -1,3 +1,4 @@
+
 from time import sleep
 from diff import *
 from colorama import Fore
@@ -47,6 +48,9 @@ def main():
     code_bin_size = os.path.getsize('data/code.bin')
 
     os.makedirs('data/stats', exist_ok=True)
+
+    print ("Generating progress, please wait ...")
+    print ("Note: This data is not logged, this function is mainly for github actions.")
     
     syms = read_sym_file()
     for sym in syms:

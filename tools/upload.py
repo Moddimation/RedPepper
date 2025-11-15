@@ -100,7 +100,7 @@ def traverse_file(str, sym):
     if is_main_data == True:
         content.append (f'// Context for {sym} in {file_path}\n')
         content.append ('#define NON_MATCHING\n')
-        main_data.append (f'// Source for {sym}')
+        main_data.append (f'// Source for {sym}\n')
     else:
         content.append (f"// File: {file_path}\n")
 
