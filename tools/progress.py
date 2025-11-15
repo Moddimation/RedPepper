@@ -1,4 +1,3 @@
-
 from time import sleep
 from diff import *
 from colorama import Fore
@@ -14,13 +13,13 @@ import matplotlib.ticker
 import numpy as np
 import sys
 
-def write_release_txt(u: str, o: str, m: str, mm: str, total: str, bytes: str):
-    textt = f"""## Matched Size: *{bytes}*
+def write_release_txt(ver: str, u: str, o: str, m: str, mm: str, total: str, bytes: str):
+    textt = f"""## {ver} Matched: *{bytes}*
 
 ### Functions
-**Matched**: {o}
-**Minor Mismatched**: {mm}
-**Major Mismatched**: {m}
+**Match**: {o}
+**Minor**: {mm}
+**Major**: {m}
 **Undefined**: {u}
 **Total**: *{total}*
 """
@@ -38,19 +37,15 @@ def get_matching_bytes(orig: str, other: str):
     return matching
 
 def main():
-
     syms_undefined = 0
     syms_major = 0
     syms_minor = 0
     syms_ok = 0
     syms_total = 0
-    bytes_ok = get_matching_bytes("data/code.bin", getBuildPath() + "/code.bin")
-    code_bin_size = os.path.getsize('data/code.bin')
+    bytes_ok = get_matching_bytes(getExeFile(), getBuildPath() + "/code.bin")
+    code_bin_size = os.path.getsize(getExeFile())
 
-    os.makedirs('data/stats', exist_ok=True)
-
-    print ("Generating progress, please wait ...")
-    print ("Note: This data is not logged, this function is mainly for github actions.")
+    os.makedirs('data/stats/' + get_ver(), exist_ok=True)
     
     syms = read_sym_file()
     for sym in syms:
@@ -75,7 +70,7 @@ def main():
             "color": color,
             "schemaVersion": 1
         }
-        with open('data/stats/' + rank + '.json','w') as f:
+        with open('data/stats/' + get_ver() + "/" + rank + '.json','w') as f:
             f.write(json.dumps(out))
 
     bytes_ok_str = "{:.4f}% ({:,} bytes/{:,} bytes)".format((bytes_ok / code_bin_size) * 100, int(bytes_ok), int(code_bin_size))
@@ -111,7 +106,7 @@ def main():
     ax.set_title("Progress")
     ax.xaxis.set_major_formatter(matplotlib.dates.ConciseDateFormatter(ax.xaxis.get_major_locator()))
     ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter())
-    ax.plot_date(dates, y_values, '-')
+    ax.plot(dates, y_values, '-')
 
     plt.savefig('data/stats/Progress.png')
 
@@ -120,8 +115,7 @@ def main():
         mplcursors.cursor(ax, hover=True)
         plt.show()
 
-    write_release_txt(syms_undefined, syms_ok, syms_major, syms_minor, syms_total, bytes_ok_str)
-
+    write_release_txt(get_ver(), syms_undefined, syms_ok, syms_major, syms_minor, syms_total, bytes_ok_str)
 
 if __name__ == "__main__":
     main()

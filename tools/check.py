@@ -95,6 +95,8 @@ def check_syms():
             print (f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})")
             do_rewrite = True
 
+    clear_line()
+
     # post check before writing
     mySyms = [(int(sym_addrs[i]), int(sym_sizes[i])) for i in range(len(sym_addrs))]
     mySyms.sort(key=lambda x: x[0])
@@ -106,7 +108,7 @@ def check_syms():
             do_rewrite = False
             is_error = True
 
-    if is_error or do_rewrite:
+    if is_error and do_rewrite:
         if is_error:
             print ("Errors detected, cannot update map. Please fix!")
         if is_sim_mode or is_skip_mode:
@@ -116,6 +118,9 @@ def check_syms():
     if is_sim_mode or is_skip_mode:
         print ("Simulation mode, not updating map file")
         return
+
+    if not do_rewrite:
+        print ("Everything up to date")
 
     print ("Updating map ...")
     # read
@@ -177,7 +182,7 @@ def main():
     is_silent = args.c
 
     with open(f"{getBuildPath()}/compile_commands.json", "r") as f:
-        if any("NON_MATCHING" in line for line in f):
+        if any("NON_MATCHING" in line for line in f): # check if we compiled for Matching-only build
             found_flag = True
     if not found_flag:
         csv_path = getFuncSymFile().rsplit('.csv', 1)[0] + '_test.csv'
