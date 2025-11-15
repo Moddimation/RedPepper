@@ -76,7 +76,10 @@ def add_type_inc(sym):
     return traverse_file (file_path, sym)
 
 def traverse_file(str, sym):
+    global is_flag_nondef_ctx
+    global is_flag_nondef_main
     global has_appended_inc
+
     content = []
     file_path = find_src_file(str)
 
@@ -96,6 +99,7 @@ def traverse_file(str, sym):
     is_ns_al = False
     if is_main_data == True:
         content.append (f'// Context for {sym} in {file_path}\n')
+        content.append ('#define NON_MATCHING\n')
         main_data.append (f'// Source for {sym}')
     else:
         content.append (f"// File: {file_path}\n")
@@ -109,13 +113,6 @@ def traverse_file(str, sym):
     with open(file_path, "r", encoding="shift-jis") as f:
         s = StringIO(f.read())
         for line in s:
-            if "NON_MATCHING" in line:
-                if is_skipping == False and is_main_data == False:
-                    is_skipping = True
-                    continue
-                else:
-                    is_skipping = False
-                    continue
             if is_skipping == True:
                 continue
 
