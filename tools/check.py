@@ -1,7 +1,7 @@
 print ("Enumerating and checking ...")
     
 from diff import *
-from colorama import Fore
+from colorama import Fore, Style
 import multiprocessing
 import threading
 import argparse
@@ -56,6 +56,9 @@ def printf(str, end='\n'):
 def clear_line():
     printf (' ' * shutil.get_terminal_size((80, 20)).columns, end='\r')
 
+def print_progress(name, prog, rank):
+    printf (Fore.LIGHTRED_EX + f"[{prog}%] " + Fore.LIGHTCYAN_EX + name + Fore.RESET + Style.RESET_ALL + f" ({rank})", end='\r')
+
 def check_syms():
     syms = read_sym_file()
     newsyms = []
@@ -63,6 +66,9 @@ def check_syms():
     sym_sizes = []
     do_rewrite = False
     is_error = False
+    last_sym_addr = syms[len(syms)-1][0]
+    first_sym_addr = syms[0][0]
+    last_name = ""
 
     for sym in syms:
         size=sym[2]
@@ -72,6 +78,9 @@ def check_syms():
         name=sym[3]
         tag=sym[4]
 
+        progress = ((addr-first_sym_addr) / (last_sym_addr-first_sym_addr)) * 100
+        progress = round(progress, 1)
+
         # check addr dupl
         if addr in sym_addrs:
             print (f"0x{addr:08X} appears more than once!")
@@ -80,19 +89,20 @@ def check_syms():
         sym_sizes.append(size)
 
         # check no name
-        if is_skip_mode or not sym[3] or len(sym[3]) == 0:
+        if is_skip_mode or not name or len(name) == 0:
             newsyms.append(sym)
             continue
         #continue
         # try get symbol from elf
-        decomp_symbol = get_elf_symbol(sym[3])
+        decomp_symbol = get_elf_symbol(name)
         if not decomp_symbol is None:
             rank = rank_symbol(sym, decomp_symbol)
 
         # main adding
-        newsyms.append((addr, rank, size, sym[3], sym[4]))
+        newsyms.append((addr, rank, size, name, tag))
+        last_name = name
         clear_line()
-        printf ("Checking " + sym[3], end='\r')
+        print_progress (last_name, progress, rank)
         if oldrank != rank:
             print (f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})")
             do_rewrite = True
@@ -107,14 +117,16 @@ def check_syms():
         next_addr = mySyms[i + 1][0]
         if addr + size > next_addr:
             print (f"MAP OVERLAP: 0x{addr:08X} overlaps with 0x{next_addr:08X}")
-            do_rewrite = False
             is_error = True
 
     if is_error and do_rewrite:
-        if is_error:
-            print ("Errors detected, cannot update map. Please fix!")
+        print ("Errors detected, cannot update map. Please fix!")
         if is_sim_mode or is_skip_mode:
             print (r"... you ran in simulation mode anyways so \_(ツ)_/")
+        return
+
+    if is_error:
+        print ("Errors detected, but no changes. Please fix!")
         return
 
     if is_sim_mode or is_skip_mode:
@@ -176,7 +188,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", action="store_true", help="Skip rank checking (fast)")
     parser.add_argument("-s", action="store_true", help="Simulation mode (don't write file)")
-    parser.add_argument("-c", action="store_true", help="Simulation mode (don't write file)")
+    parser.add_argument("-c", action="store_true", help="Dont pring progress")
     parser.add_argument("sym", nargs="?", help="Only check this symbol")
     args = parser.parse_args()
 
