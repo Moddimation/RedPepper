@@ -66,7 +66,11 @@ def check_syms():
     sym_sizes = []
     do_rewrite = False
     is_error = False
-    last_sym_addr = syms[len(syms)-1][0]
+    sym_num = len(syms)
+    if sym_num == 0:
+        print ("No symbols found in csv.")
+        return
+    last_sym_addr = syms[sym_num-1][0]
     first_sym_addr = syms[0][0]
     last_name = ""
 

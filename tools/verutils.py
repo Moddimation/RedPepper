@@ -30,6 +30,9 @@ def __getProjDir():
 def __getVerFile():
     return f"{__getProjDir()}/data/version"
 
+def ger_versions():
+    return versions
+
 def is_ver_name(name):
     return name in versions
 

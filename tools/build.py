@@ -27,10 +27,15 @@ def main() -> None:
     if version is None or len(version) == 0:
         version = get_ver()
     else:
-        set_ver(version)
+        if is_ver_name(version):
+            set_ver(version)
+        else:
+            print (f"Passed argument \'{version}\' is not a valid version!")
+            print (f"Available versions: {ger_versions()}")
+            version = get_ver()
 
     if not is_ver_exist(version):
-        print("data/code.bin missing. Please provide the code.bin from the EU version.")
+        print(f"data/ver/{version}/code.bin missing. Please provide the code.bin from the {version} version.")
         return
 
     if not is_ver_valid(version):

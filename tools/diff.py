@@ -49,6 +49,7 @@ def read_sym_file():
         for row in reader:
             if not row[0].startswith("0x"):
                 continue
+            size = int(row[2], 16) if row[2].startswith("0x") else int(row[2])
             syms.append((int(row[0], 0), row[1], int(row[2]), row[3], row[4]))
         return syms
 
@@ -92,81 +93,37 @@ def rank_symbol(sym, decomp_sym):
     
     return rank
 
-class ChangeHandler(FileSystemEventHandler):
-    def __init__(self, cmd, proc_ref, lock):
-        self.cmd = cmd
-        self.proc_ref = proc_ref
-        self.lock = lock
-        self.last_run = 0
-
-    def on_any_event(self, event):
-        now = time.time()
-        if now - self.last_run < 1:
-            return
-        self.last_run = now
-
-        with self.lock:
-            p = self.proc_ref["p"]
-            if p:
-                p.terminate()
-                try:
-                    p.wait(timeout=1)
-                except subprocess.TimeoutExpired:
-                    p.kill()
-                    p.wait()
-            sys.argv = ["build.py"]
-            with open(os.devnull, "w") as devnull:
-                try:
-                    result = subprocess.run(
-                        [sys.executable, "tools/build.py"],
-                        stdout=subprocess.PIPE,
-                        stderr=subprocess.STDOUT,
-                        text=True,
-                        check=True
-                    )
-                except subprocess.CalledProcessError as e:
-                    print(e.stdout, end="")
-                else:
-                    self.proc_ref["p"] = subprocess.Popen(self.cmd, shell=True)
-
-def main() -> None:
+def main():
     if len(sys.argv) < 2:
-        fail("diff.py <symbol>")
+        fail("diff.py <symbol> [extra flags]")
+
     symbolname = sys.argv[1]
+    extra_flags = sys.argv[2:]
 
     symbol = get_symbol(symbolname)
     decomp_symbol = get_elf_symbol(symbolname)
 
-    if (symbol is None):
+    if symbol is None:
         fail(f"Couldn't find in csv: {symbolname}")
-    if (decomp_symbol is None):
+    if decomp_symbol is None:
         fail(f"Couldn't find in decomp: {symbolname}")
 
     sym_size = int(symbol[2])
     decomp_size = int(decomp_symbol[1])
-
     if decomp_size == 0:
         print(f"Warning: decomp symbol size for {symbol[3]} is 0. Using the original size instead.")
         decomp_size = sym_size
 
-    cmd = f"\"{sys.executable}\" {getProjDir()}/tools/asm-differ/diff.py {symbol[0]-0x00100000} {decomp_symbol[0]-0x00100000} {sym_size} {decomp_size}"
-    proc_ref = {"p": subprocess.Popen(cmd, shell=True)}
-    lock = threading.Lock()
+    cmd = [
+        sys.executable,
+        os.path.join(getProjDir(), "tools/asm-differ/diff.py"),
+        str(symbol[0]-0x00100000),
+        str(decomp_symbol[0]-0x00100000),
+        str(sym_size),
+        str(decomp_size)
+    ] + extra_flags
 
-    handler = ChangeHandler(cmd, proc_ref, lock)
-    observer = Observer()
-    observer.schedule(handler, path="Game", recursive=True)
-    observer.schedule(handler, path="lib", recursive=True)
-    observer.start()
-
-    try:
-        observer.join()
-    except KeyboardInterrupt:
-        observer.stop()
-        observer.join()
-        p = proc_ref["p"]
-        if p and p.poll() is None:
-            p.terminate()
+    subprocess.run(cmd)
 
 if __name__ == "__main__":
     main()
