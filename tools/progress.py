@@ -16,7 +16,7 @@ import numpy as np
 import sys
 
 def write_release_txt(ver: str, u: str, o: str, m: str, mm: str, total: str, bytes: str):
-    textt = f"""## {ver} Matched: *{bytes}*
+    textt = f"""## {ver.upper()} Matched: *{bytes}*
 
 ### Functions
 **Match**: {o}
@@ -46,8 +46,8 @@ def main():
     syms_total = 0
     bytes_ok = get_matching_bytes(getExeFile(), getBuildPath() + "/code.bin")
     code_bin_size = os.path.getsize(getExeFile())
-
-    os.makedirs('data/stats/' + get_ver(), exist_ok=True)
+    ver = get_ver()
+    os.makedirs('data/stats/' + ver, exist_ok=True)
     
     syms = read_sym_file()
     for sym in syms:
@@ -72,7 +72,7 @@ def main():
             "color": color,
             "schemaVersion": 1
         }
-        with open('data/stats/' + get_ver() + "/" + rank + '.json','w') as f:
+        with open('data/stats/' + ver + "/" + rank + '.json','w') as f:
             f.write(json.dumps(out))
 
     bytes_ok_str = "{:.4f}% ({:,} bytes/{:,} bytes)".format((bytes_ok / code_bin_size) * 100, int(bytes_ok), int(code_bin_size))
@@ -92,32 +92,45 @@ def main():
 
     np.seterr(all="ignore")
     repo = Repo(".")
+
     for commit in repo.iter_commits():
         file = None
-        try:
-            file = commit.tree / 'data' / 'stats' / 'Code.json'
-        except:
-            break
+        for path_parts in [
+            ['data', 'Code.json'],
+            ['data', 'stats', 'Code.json'],
+            ['data', 'stats', ver, 'Code.json']
+        ]:
+            try:
+                file = commit.tree
+                for part in path_parts:
+                    file = file / part
+                break  # found the file, stop checking other paths
+            except KeyError:
+                file = None
+                continue
+        if file is None:
+            continue  # no file found in this commit, skip
+
         with io.BytesIO(file.data_stream.read()) as f:
             x_values.append(datetime.datetime.fromtimestamp(commit.committed_date))
-            y_values.append(float(json.loads(f.read().decode('utf-8'))['message'].split('%')[0]))
+            y_values.append(float(json.load(f)['message'].split('%')[0]))
 
     fig,ax = plt.subplots()
 
     dates = matplotlib.dates.date2num(x_values)
-    ax.set_title("Progress")
+    ax.set_title(f"Progress for {ver.upper()}")
     ax.xaxis.set_major_formatter(matplotlib.dates.ConciseDateFormatter(ax.xaxis.get_major_locator()))
     ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter())
     ax.plot(dates, y_values, '-')
 
-    plt.savefig(f"data/stats/{get_ver()}/Progress.png")
+    plt.savefig(f"data/stats/{ver}/Progress.png")
 
     if 'show' in sys.argv:
         import mplcursors
         mplcursors.cursor(ax, hover=True)
         plt.show()
 
-    write_release_txt(get_ver(), syms_undefined, syms_ok, syms_major, syms_minor, syms_total, bytes_ok_str)
+    write_release_txt(ver, syms_undefined, syms_ok, syms_major, syms_minor, syms_total, bytes_ok_str)
 
 if __name__ == "__main__":
     main()
