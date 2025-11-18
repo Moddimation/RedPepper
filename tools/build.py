@@ -9,8 +9,8 @@ import argparse
 
 from __genLinkerScript import genLDScript
 from __genObjdiffFile import genObjdiff
-from verutils import *
-from settings import *
+from __utilsVer import *
+from _settings import *
 
 def main() -> None:
     def status(msg: str):
@@ -31,7 +31,7 @@ def main() -> None:
             set_ver(version)
         else:
             print (f"Passed argument \'{version}\' is not a valid version!")
-            print (f"Available versions: {ger_versions()}")
+            print (f"Available versions: {get_versions()}")
             version = get_ver()
 
     if not is_ver_exist(version):

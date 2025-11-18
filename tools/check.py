@@ -1,7 +1,8 @@
 print ("Enumerating and checking ...")
     
-from diff import *
 from colorama import Fore, Style
+from __parseMap import *
+from __parseElf import *
 import multiprocessing
 import threading
 import argparse
@@ -14,6 +15,26 @@ is_sim_mode = False
 is_silent = False
 found_flag = False
 csv_path = getFuncSymFile()
+
+def rank_symbol(sym, decomp_sym):
+    sym_size = int(sym[2])
+    decomp_size = int(decomp_sym[1])
+
+    if decomp_size == 0:
+        decomp_size = sym_size
+
+    out = str(subprocess.check_output(f"\"{sys.executable}\" {getProjDir()}/tools/asm-differ/diff.py --format json {sym[0] - 0x00100000} {decomp_sym[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True))
+
+    rank = 'O'
+    if "diff_change" in out:
+        rank = 'm'
+    if "diff_add" in out or "diff_remove" in out:
+        if out.count('diff_add') == out.count('diff_remove'):
+            rank = 'm'
+        else:
+            rank = 'M'
+    
+    return rank
 
 def getRankName(rank: str):
     match rank:

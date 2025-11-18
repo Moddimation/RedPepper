@@ -1,4 +1,5 @@
-from settings import *
+from _settings import *
+from __parseMap import *
 
 def read_data_sym_file():
     import csv
@@ -10,7 +11,6 @@ def read_data_sym_file():
         return syms
 
 def genLDScript():
-    from diff import read_sym_file
     matching_data = '\n'
     const_data = '\n'
     syms = read_sym_file()

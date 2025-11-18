@@ -1,5 +1,5 @@
 import os
-from tools.verutils import *
+from tools.__manVer import get_ver
 
 def apply(config, args):
     config["make_command"] = ["python3", "tools/build.py"]

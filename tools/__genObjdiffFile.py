@@ -1,4 +1,4 @@
-from settings import *
+from _settings import *
 import json
 import sys
 from colorama import Fore, Style

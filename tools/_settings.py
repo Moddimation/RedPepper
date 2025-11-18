@@ -1,5 +1,5 @@
 import os
-from verutils import *
+from __manVer import get_ver
 
 def getProjDir():
     return os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep)
@@ -11,8 +11,6 @@ def getExeFile():
     return f"{getProjDir()}/data/ver/{get_ver()}/code.bin"
 def getBuildPath():
     return f"{getProjDir()}/build"
-def getVerFile():
-    return f"{getProjDir()}/data/version"
 def getElfPath():
     return f"{getBuildPath()}/{getElfName()}"
 def getElfName():

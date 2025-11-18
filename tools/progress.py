@@ -1,7 +1,7 @@
 print ("Generating progress ...")
 
 from time import sleep
-from diff import *
+from __parseMap import *
 from colorama import Fore
 import json
 
@@ -104,12 +104,12 @@ def main():
                 file = commit.tree
                 for part in path_parts:
                     file = file / part
-                break  # found the file, stop checking other paths
+                break
             except KeyError:
                 file = None
                 continue
         if file is None:
-            continue  # no file found in this commit, skip
+            continue
 
         with io.BytesIO(file.data_stream.read()) as f:
             x_values.append(datetime.datetime.fromtimestamp(commit.committed_date))

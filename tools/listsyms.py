@@ -1,5 +1,3 @@
-import check
-import diff
 import sys
 import argparse
 try:
@@ -7,7 +5,9 @@ try:
     is_filter = True
 except ImportError:
     is_filter = False
-from settings import *
+from _settings import *
+from __parseElf import *
+from __parseMap import *
 from io import StringIO
 
 def main():
@@ -33,7 +33,7 @@ def main():
     csv_names = []
     csv_syms = []
     if args.w:
-        syms = diff.read_sym_file()
+        syms = read_sym_file()
         if args.f:
             csv_syms = syms
         for sym in syms:
@@ -45,7 +45,7 @@ def main():
     if args.e:
         if args.c:
             print("elf / csv")
-        for line in StringIO(diff.readelf_data):
+        for line in StringIO(readelf_data):
             if "FUNC" in line:
                 sym = line.split()
 
@@ -70,13 +70,13 @@ def main():
                         continue
                 has_found = True
 
-                csv_sym = diff.get_symbol(sym[7])
+                csv_sym = get_symbol(sym[7])
                 ex = ""
                 if not args.w and ( csv_sym == None or csv_sym[1] != 'O' ):
                     ex = " (U)"
                 if args.w:
                     if args.f:
-                        csv_sym_try = diff.get_symbol_with_addr_and_size(int(addr,16), int(size,16))
+                        csv_sym_try = get_symbol_with_addr_and_size(int(addr,16), int(size,16))
                         if (not csv_sym_try is None):
                             if (csv_sym_try[3] != name):
                                 print(f"{addr}:{size}: elf={name} != csv={csv_sym_try[3]}")
@@ -110,7 +110,7 @@ def main():
                 print(f"{addr}: {size}, {name}{ex}")
         return
 
-    syms = diff.read_sym_file()
+    syms = read_sym_file()
     if args.s:
         syms.sort(key=lambda a: a[1])
     for sym in syms:

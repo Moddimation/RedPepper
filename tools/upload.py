@@ -6,8 +6,7 @@ import requests
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
 from __genCtxFile import genCtxs
-from diff import *
-from settings import *
+from _settings import *
 
 def find_source_path(str):
     with open(getElfPath(), "rb") as f:
