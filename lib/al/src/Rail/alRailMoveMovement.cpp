@@ -17,7 +17,7 @@ NERVE_DEF( RailMoveMovement, Move )
 #ifdef NON_MATCHING
 // string
 RailMoveMovement::RailMoveMovement( LiveActor* host, const ActorInitInfo& info, const char* speedParamName, const char* moveTypeParamName )
-    : HostStateBase( host, "ƒŒ[ƒ‹ˆÚ“®‹““®" ), mSpeed( 10 ), mMoveType( 0 )
+    : al::HostStateBase<al::LiveActor>( host, "ƒŒ[ƒ‹ˆÚ“®‹““®" ), mSpeed( 10 ), mMoveType( 0 )
 {
         tryGetArg( &mSpeed, getPlacementInfo( info ), speedParamName );
         tryGetArg( (int*)&mMoveType, getPlacementInfo( info ), moveTypeParamName );

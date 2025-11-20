@@ -21,6 +21,7 @@ def main() -> None:
     parser.add_argument('-c', action='store_true', help="Clean before building")
     parser.add_argument('-v', action='store_true', help="Give verbose output")
     parser.add_argument('-m', action='store_true', help="Compile only matching code (BROKEN)")
+    parser.add_argument('-w', action='store_true', help="Omit many warnings (nintendo format)")
     args = parser.parse_args()
 
     version = args.version
@@ -49,6 +50,8 @@ def main() -> None:
         cmake_args = ['cmake', "..", '-G', 'Unix Makefiles']
         if args.m == False:
             cmake_args.append("-DNON_MATCHING=1")
+        if args.w == True:
+            cmake_args.append("-DWARNS=1")
 
         try:
             subprocess.run(cmake_args, check=True)

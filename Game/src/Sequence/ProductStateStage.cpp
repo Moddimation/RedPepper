@@ -13,7 +13,7 @@ public:
 
 #ifdef NON_MATCHING
 ProductStateStage::ProductStateStage( ProductSequence* parent, ProductStageStartParam* startParam, const al::LayoutInitInfo& info )
-    : HostStateBase( parent, "ステージステート" ), mStageStartParam( startParam ),
+    : al::HostStateBase<ProductSequence>( parent, "ステージステート" ), mStageStartParam( startParam ),
       mLastStageStartParam( nullptr ), mStageScene( nullptr ), _1C( nullptr ), _20( nullptr ), _24( nullptr ),
       _28( nullptr ), _2C( nullptr ), _30( nullptr ), _34( nullptr ), _38( nullptr )
 {
