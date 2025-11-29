@@ -1,0 +1,48 @@
+name: Build pages
+ 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build pages
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install doxygen python3
+        python -m pip install --upgrade pip
+        pip install mkdocs mkdocs-material pymdown-extensions mkdocs-macros-plugin mkdocs-redirects mkdoxy
+        
+    - name: Clone repo
+      uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+      with:
+        owner: 'RedPepperDec'
+        repository: 'RedPepperWiki'
+        branch: 'master'
+        access-token: ${{ secrets.GH_TOKEN }}
+
+    - name: Build and Deploy
+      run: |
+        mkdir priv
+        mv YasikiWebsite priv/RedPepperWiki
+        wget https://github.com/RedPepperDec/RedPepper/blob/main/readme.md?raw=true -O priv/RedPepperWiki/docs/index.md
+        python -m mkdocs gh-deploy --config-file priv/RedPepperWiki/mkdocs.yml --force --remote-branch website
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+

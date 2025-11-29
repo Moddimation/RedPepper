@@ -96,8 +96,19 @@ jobs:
                   fi
                   gh release upload "$R" "$f" --clobber
               done
-          done
+          don
 
+      - name: Stats to branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          cd ..
+          git clone --branch stats --single-branch "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" stats
+          cp -r */data/stats/* "$TMPDIR/"
+          cd stats
+          git add .
+          git commit --amend -m "stats"
+          git push --force origin stats
 
       - name: Update map
         env:
