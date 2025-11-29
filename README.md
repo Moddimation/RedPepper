@@ -6,9 +6,9 @@ Originally this was based on the EU release, but multiversion support is added a
 
 ## Progress
 
-<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/Total.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://_github.moddi.dev//RedPepperDec/RedPepper/releases/download/stats-eu/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://_github.moddi.dev//RedPepperDec/RedPepper/releases/download/stats-eu/Total.json&style=flat-square"/>
 
-<img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/NonMatching.json&style=flat-square"/>
+<img src ="https://img.shields.io/endpoint?url=https://_github.moddi.dev//RedPepperDec/RedPepper/releases/download/stats-eu/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://_github.moddi.dev//RedPepperDec/RedPepper/releases/download/stats-eu/NonMatching.json&style=flat-square"/>
 
 ![Progress](https://github.com/RedPepperDec/RedPepper/releases/download/stats-eu/Progress.png)
 
