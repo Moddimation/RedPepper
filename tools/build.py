@@ -28,6 +28,8 @@ def main() -> None:
     if version is None or len(version) == 0:
         version = get_ver()
     else:
+        if version == "us":
+            version = "us_1"
         if is_ver_name(version):
             set_ver(version)
         else:

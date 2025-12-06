@@ -104,7 +104,7 @@ jobs:
         run: |
           cd ..
           git clone --branch stats --single-branch "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" stats
-          cp -r */data/stats/* "$TMPDIR/"
+          cp -r */data/stats/* stats
           cd stats
           git add .
           git commit --amend -m "stats"
