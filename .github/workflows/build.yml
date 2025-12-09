@@ -55,9 +55,10 @@ jobs:
           export ARMCC41LIB="${ARMCC_PATH}/lib"
           export DEVKITARM="$PWD/setup/dkp"
           
-          VERSIONS=(eu eu_d jp kr tw us us_d)
+          VERSIONS=(eu eu_d jp jp_d cn kr tw us us_d)
 
           for v in "${VERSIONS[@]}"; do
+              [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
               python tools/build.py "$v"
 
               export DEVKITARM="$PWD/setup/dkp"
@@ -87,6 +88,8 @@ jobs:
               if gh release view "$R" >/dev/null 2>&1; then
                   gh release delete "$R" --yes || true
               fi
+
+              [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
 
               gh release create "$R" -t "$R" -n "$BODY"
 

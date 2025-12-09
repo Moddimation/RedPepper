@@ -1,16 +1,20 @@
 import os
 
 versions = {
+    "cn",
     "eu",
     "eu_d",
     "jp",
+    "jp_d",
     "kr",
     "tw",
-    "us",
+    "us_0",
+    "us_1",
     "us_d",
 }
 
 hashes = {
+    "cn": "11ca2f6fa7e8b9553737830899787e7236f4fdbf8b96ed03c99fbe6a8939b37d",
     "eu": "e1d7e188ff88467df776c17cec45c44857fadf5b699944baa8cddcae7d939e64",
     "eu_d": "184b8804ccf4aea9f447b2278dfc3171d4f8c4e6abf890d7b24680d649e034c6",
     "jp": "885dcaed5994076732b1f99e452a6f06493c23464ae0509ebbf44b8c6fd614a7",

@@ -6,6 +6,7 @@ import requests
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
 from __genCtxFile import genCtxs
+from __parseMap import get_symbol
 from _settings import *
 
 def find_source_path(str):
@@ -108,7 +109,10 @@ def main():
     sym = sys.argv[1]
     path = find_source_path(sym)
     if (path is None):
-        print ("Symbol not found.")
+        if(get_symbol(sym)):
+            print ("Symbol found in map, but not in compilation. Make sure you put the symbol in a file before uploading!")
+        else:
+            print ("Symbol not found. Did you spell it correctly?")
         return
 
     print ("Collecting code ...")

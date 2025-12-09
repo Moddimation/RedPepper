@@ -50,8 +50,8 @@ def main() -> None:
         os.mkdir(getBuildPath())
         os.chdir(getBuildPath())
         cmake_args = ['cmake', "..", '-G', 'Unix Makefiles']
-        if args.m == False:
-            cmake_args.append("-DNON_MATCHING=1")
+        if args.m == True:
+            cmake_args.append("-DONLY_MATCHING=1")
         if args.w == True:
             cmake_args.append("-DWARNS=1")
 

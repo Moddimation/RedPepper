@@ -79,8 +79,6 @@ STUB( _ZN4sead22BufferedSafeStringBaseIcE7formatVEPKcSt9__va_list )
 
 STUB( _ZN2al10FileLoader11loadArchiveERKN4sead14SafeStringBaseIcEEPNS1_10FileDeviceE )
 
-STUB( nninitRegion )
-STUB( nninitLocale )
 STUB( nninitSystem )
 STUB( nninitStartUp )
 STUB( nninitCallStaticInitializers )
