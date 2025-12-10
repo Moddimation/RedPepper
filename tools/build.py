@@ -24,18 +24,29 @@ def main() -> None:
     parser.add_argument('-w', action='store_true', help="Omit many warnings (nintendo format)")
     args = parser.parse_args()
 
+    found_version = sort_bin_if_exist()
+    
     version = args.version
+
+    if "code.bin" in version and found_version:
+        version = found_version
+
     if version is None or len(version) == 0:
-        version = get_ver()
+        version = found_version or get_ver()
     else:
         if version == "us":
             version = "us_1"
-        if is_ver_name(version):
-            set_ver(version)
-        else:
+        if not is_ver_name(version):
             print (f"Passed argument \'{version}\' is not a valid version!")
             print (f"Available versions: {get_versions()}")
-            version = get_ver()
+            sys.exit(1)
+
+        if found_version and (found_version is not version):
+            print ("found unsorted code.bin in data/, but parameter version differs.")
+            print ("data/code.bin: " + found_version + ", specified: " + version)
+            sys.exit(1)
+
+        set_ver(version)
 
     if not is_ver_exist(version):
         print(f"data/ver/{version}/code.bin missing. Please provide the code.bin from the {version} version.")
