@@ -25,11 +25,11 @@ def main() -> None:
     args = parser.parse_args()
 
     found_version = sort_bin_if_exist()
-    
+    old_version = get_ver()
     version = args.version
 
     if not version or ("code.bin" in version and found_version):
-        version = found_version or get_ver()
+        version = found_version or old_version
     else:
         if version == "us":
             version = "us_1"
@@ -53,11 +53,11 @@ def main() -> None:
         print(f"code.bin for {version} is invalid. Did you dump the right version, correctly?")
         return
 
-    if not os.path.isdir(getBuildPath()) or args.c:
+    if not os.path.isdir(getBuildPath()) or args.c or (version != old_version):
         shutil.rmtree(getBuildPath(), ignore_errors=True)
         os.mkdir(getBuildPath())
         os.chdir(getBuildPath())
-        cmake_args = ['cmake', "..", '-G', 'Unix Makefiles']
+        cmake_args = ['cmake', "..", '-G', 'Unix Makefiles', f"-DRP_VERSION={version.upper()}"]
         if args.m == True:
             cmake_args.append("-DONLY_MATCHING=1")
         if args.w == True:

@@ -55,10 +55,10 @@ jobs:
           export ARMCC41LIB="${ARMCC_PATH}/lib"
           export DEVKITARM="$PWD/setup/dkp"
           
-          VERSIONS=(eu eu_d jp jp_d cn kr tw us us_d)
+          VERSIONS=(); for dir in ./data/ver/*/; do VERSIONS+=("${dir%/}"); done; VERSIONS=("${VERSIONS[@]##*/}")
 
           for v in "${VERSIONS[@]}"; do
-              [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
+              echo "Now $v"
               python tools/build.py "$v"
 
               export DEVKITARM="$PWD/setup/dkp"
@@ -71,9 +71,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          VERSIONS=(tw us_d us kr jp eu_d eu)
+          VERSIONS=(); for dir in ./data/ver/*/; do VERSIONS+=("${dir%/}"); done; VERSIONS=("${VERSIONS[@]##*/}")
 
           for v in "${VERSIONS[@]}"; do
+              echo "Now $v"
               R="stats-$v"
               DIR="data/stats/$v"
 
@@ -89,8 +90,6 @@ jobs:
                   gh release delete "$R" --yes || true
               fi
 
-              [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
-
               gh release create "$R" -t "$R" -n "$BODY"
 
               for f in "$DIR"/*; do
@@ -99,24 +98,14 @@ jobs:
                   fi
                   gh release upload "$R" "$f" --clobber
               done
-          don
-
-      - name: Stats to branch
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          cd ..
-          git clone --branch stats --single-branch "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" stats
-          cp -r */data/stats/* stats
-          cd stats
-          git add .
-          git commit --amend -m "stats"
-          git push --force origin stats
+          done
 
       - name: Update map
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions"
           git add data/*.csv
           git config set advice.addIgnoredFile false
           git commit --amend --no-edit || true
