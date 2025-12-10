@@ -31,22 +31,22 @@ def get_file_ver(path):
         if value == target_hash:
             return key
 
-    return Null
+    return None
 
 def sort_bin_if_exist():
     try_bin_path = _getProjDir() + "/data/code.bin"
     if not os.path.exists(try_bin_path):
-        return Null
+        return None
 
     # Check version
     ver = get_file_ver(try_bin_path)
-    if ver == Null:
+    if not ver:
         print("data/code.bin does not correspond to any known version.")
         print("list of versions with SHA256:")
         for k, v in hashes.items():
             print(k + ": " + v)
         sys.exit(1)
-        return Null
+        return None
 
     # Move file
     dest_file_path = get_path_bin(ver)
