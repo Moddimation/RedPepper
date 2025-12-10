@@ -2,7 +2,7 @@
  
 This is a decompilation of Super Mario 3D Land (note that retail JP, KO, TW, and US versions are nearly identical).  
 It is also fork from the repo on 3dsdecomp's github, and recieved some structural updates.  
-Originally this was based on the EU release, but multiversion support is added and experimental.
+Originally this is based on the EU release, but multiversion support is added and experimental.
 
 ## Progress
 
