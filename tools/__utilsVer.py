@@ -52,4 +52,6 @@ def sort_bin_if_exist():
     dest_file_path = get_path_bin(ver)
     os.rename(try_bin_path, dest_file_path)
 
+    print("found loose code.bin in data/, identified as " + ver + "version and moved to data/ver/"+ver+"/code.bin")
+
     return ver
