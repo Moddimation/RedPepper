@@ -36,7 +36,7 @@ def get_file_ver(path):
 def sort_bin_if_exist():
     try_bin_path = _getProjDir() + "/data/code.bin"
     if not os.path.exists(try_bin_path):
-        return
+        return Null
 
     # Check version
     ver = get_file_ver(try_bin_path)
@@ -46,7 +46,10 @@ def sort_bin_if_exist():
         for k, v in hashes.items():
             print(k + ": " + v)
         sys.exit(1)
+        return Null
 
     # Move file
     dest_file_path = get_path_bin(ver)
     os.rename(try_bin_path, dest_file_path)
+
+    return ver
