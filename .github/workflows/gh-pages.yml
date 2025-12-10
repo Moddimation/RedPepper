@@ -16,6 +16,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        submodules: recursive
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -36,6 +39,26 @@ jobs:
         repository: 'RedPepperWiki'
         branch: 'master'
         access-token: ${{ secrets.GH_TOKEN }}
+        
+    - name: Convert Charset
+      run: |
+        SEARCH_DIRS="lib Game"
+        EXTENSIONS="*.cpp *.c *.hpp *.h"
+        TO_ENCODING="UTF-8"
+        
+        for DIR in $SEARCH_DIRS; do
+          for EXT in $EXTENSIONS; do
+            find "$DIR" -type f -name "$EXT" -print0 | while IFS= read -r -d $'\0' FILE; do
+              iconv -f SHIFT_JIS -t "$TO_ENCODING" -c "$FILE" > "$FILE.tmp" 2>/dev/null
+              
+              if [ $? -eq 0 ] && [ -s "$FILE.tmp" ]; then
+                mv "$FILE.tmp" "$FILE"
+              else
+                rm -f "$FILE.tmp"
+              fi
+            done
+          done
+        done
 
     - name: Build and Deploy
       run: |

@@ -55,10 +55,9 @@ jobs:
           export ARMCC41LIB="${ARMCC_PATH}/lib"
           export DEVKITARM="$PWD/setup/dkp"
           
-          VERSIONS=(eu eu_d jp jp_d cn kr tw us us_d)
+          VERSIONS=(); for dir in ./data/ver/*/; do VERSIONS+=("${dir%/}"); done; VERSIONS=("${VERSIONS[@]##*/}")
 
           for v in "${VERSIONS[@]}"; do
-              [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
               python tools/build.py "$v"
 
               export DEVKITARM="$PWD/setup/dkp"
@@ -71,7 +70,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          VERSIONS=(tw us_d us kr jp eu_d eu)
+          VERSIONS=(); for dir in ./data/ver/*/; do VERSIONS+=("${dir%/}"); done; VERSIONS=("${VERSIONS[@]##*/}")
 
           for v in "${VERSIONS[@]}"; do
               R="stats-$v"
@@ -89,7 +88,7 @@ jobs:
                   gh release delete "$R" --yes || true
               fi
 
-              [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
+              # [ ! -s "data/ver/$v/redpepper_functions.csv" ] && break
 
               gh release create "$R" -t "$R" -n "$BODY"
 
@@ -99,7 +98,7 @@ jobs:
                   fi
                   gh release upload "$R" "$f" --clobber
               done
-          don
+          done
 
       - name: Stats to branch
         env:
