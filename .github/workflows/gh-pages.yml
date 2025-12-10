@@ -40,7 +40,7 @@ jobs:
     - name: Build and Deploy
       run: |
         mkdir priv
-        mv YasikiWebsite priv/RedPepperWiki
+        mv RedPepperWiki priv/RedPepperWiki
         wget https://github.com/RedPepperDec/RedPepper/blob/main/readme.md?raw=true -O priv/RedPepperWiki/docs/index.md
         python -m mkdocs gh-deploy --config-file priv/RedPepperWiki/mkdocs.yml --force --remote-branch website
       env:
