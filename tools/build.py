@@ -28,10 +28,7 @@ def main() -> None:
     
     version = args.version
 
-    if "code.bin" in version and found_version:
-        version = found_version
-
-    if version is None or len(version) == 0:
+    if not version or ("code.bin" in version and found_version):
         version = found_version or get_ver()
     else:
         if version == "us":
