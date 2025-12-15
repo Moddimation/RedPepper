@@ -1,0 +1,790 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1FrameHeap" kind="class" language="C++" prot="public">
+    <compoundname>sead::FrameHeap</compoundname>
+    <basecompoundref refid="classsead_1_1Heap" prot="public" virt="non-virtual">sead::Heap</basecompoundref>
+    <innerclass refid="structsead_1_1FrameHeap_1_1State" prot="public">sead::FrameHeap::State</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1FrameHeap_1a5e13fcfa5d04468480ff968eaf57a109" prot="protected" static="no" mutable="no">
+        <type><ref refid="structsead_1_1FrameHeap_1_1State" kindref="compound">State</ref></type>
+        <definition>State sead::FrameHeap::mState</definition>
+        <argsstring></argsstring>
+        <name>mState</name>
+        <qualifiedname>sead::FrameHeap::mState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="55" column="11" bodyfile="lib/sead/include/heap/seadFrameHeap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ab360a5dc4e1f184ab6a603d6f8fdd559" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1FrameHeap" kindref="compound">FrameHeap</ref> *</type>
+        <definition>static FrameHeap * sead::FrameHeap::tryCreate</definition>
+        <argsstring>(size_t size, const SafeString &amp;name, Heap *parent, s32, HeapDirection direction, bool)</argsstring>
+        <name>tryCreate</name>
+        <qualifiedname>sead::FrameHeap::tryCreate</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>s32</type>
+        </param>
+        <param>
+          <type>HeapDirection</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="14" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a4937f26037e606fd928a63fdaebc9e55" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1FrameHeap" kindref="compound">FrameHeap</ref> *</type>
+        <definition>static FrameHeap * sead::FrameHeap::create</definition>
+        <argsstring>(size_t size, const SafeString &amp;name, Heap *parent, s32, HeapDirection direction, bool)</argsstring>
+        <name>create</name>
+        <qualifiedname>sead::FrameHeap::create</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>s32</type>
+        </param>
+        <param>
+          <type>HeapDirection</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="16" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a47ccdd87d2293846a7d0e25af2a9c143" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t sead::FrameHeap::getManagementAreaSize</definition>
+        <argsstring>(s32)</argsstring>
+        <name>getManagementAreaSize</name>
+        <qualifiedname>sead::FrameHeap::getManagementAreaSize</qualifiedname>
+        <param>
+          <type>s32</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="19" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a25bd68bcd15aa32542912a7d00c48450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FrameHeap::restoreState</definition>
+        <argsstring>(const State &amp;state)</argsstring>
+        <name>restoreState</name>
+        <qualifiedname>sead::FrameHeap::restoreState</qualifiedname>
+        <param>
+          <type>const <ref refid="structsead_1_1FrameHeap_1_1State" kindref="compound">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="21" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a7ed99821204184e8aa4bcfde869145b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FrameHeap::freeHead</definition>
+        <argsstring>()</argsstring>
+        <name>freeHead</name>
+        <qualifiedname>sead::FrameHeap::freeHead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="22" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ab414aecfee49d1a0706cdc4c069f78fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FrameHeap::freeTail</definition>
+        <argsstring>()</argsstring>
+        <name>freeTail</name>
+        <qualifiedname>sead::FrameHeap::freeTail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="23" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1aeebf6b78ced063f729847073fd679353" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FrameHeap::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>sead::FrameHeap::destroy</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a8929b542f10cf19571c2e08cc915aed2">destroy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="25" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a5526c74e0d0e8361100ac28de299514b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::FrameHeap::adjust</definition>
+        <argsstring>()</argsstring>
+        <name>adjust</name>
+        <qualifiedname>sead::FrameHeap::adjust</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1afe068de43bf1157782d5661ee8875a45">adjust</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="26" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1af17a718b7decc97a4b2f9283b6d84e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::FrameHeap::tryAlloc</definition>
+        <argsstring>(size_t size, s32 alignment)</argsstring>
+        <name>tryAlloc</name>
+        <qualifiedname>sead::FrameHeap::tryAlloc</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1aeadd608538d75c95aa1ae32c34fac05c">tryAlloc</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="27" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a1ec06ed0238d6154fbc263f6fb7d14cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FrameHeap::free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>free</name>
+        <qualifiedname>sead::FrameHeap::free</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a92c8ae4e4e2874afbe3d6db028d605ab">free</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="28" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a6cd318ff98a4fffc4fed0ffacb824f71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::FrameHeap::resizeFront</definition>
+        <argsstring>(void *p_void, size_t size)</argsstring>
+        <name>resizeFront</name>
+        <qualifiedname>sead::FrameHeap::resizeFront</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1ae0d0123885ddfb473be345e3caea66aa">resizeFront</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>p_void</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="29" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a793991eb8fc7ed4489f0fd9f1a69ecd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::FrameHeap::resizeBack</definition>
+        <argsstring>(void *p_void, size_t size)</argsstring>
+        <name>resizeBack</name>
+        <qualifiedname>sead::FrameHeap::resizeBack</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>p_void</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="30" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ae939c739a2a05ac37e27fc88d82a1962" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FrameHeap::freeAll</definition>
+        <argsstring>()</argsstring>
+        <name>freeAll</name>
+        <qualifiedname>sead::FrameHeap::freeAll</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a9beecd7e0a790e80b4e9c70cdef61a95">freeAll</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="31" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a777e2112103aca599f802afd5e716ed8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uintptr_t</type>
+        <definition>virtual uintptr_t sead::FrameHeap::getStartAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartAddress</name>
+        <qualifiedname>sead::FrameHeap::getStartAddress</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a1b5dacc85e7052744a9ffe02d1c09818">getStartAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="32" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a366cbae16b633f031d21d8cf382752e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uintptr_t</type>
+        <definition>virtual uintptr_t sead::FrameHeap::getEndAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getEndAddress</name>
+        <qualifiedname>sead::FrameHeap::getEndAddress</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1afc2a1bfbd2a838f971e745ccac69b912">getEndAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="33" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ab0b6e50e9c55a3c9ccdffffd0beed19d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::FrameHeap::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>sead::FrameHeap::getSize</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a6f495aaa16d8cd699a196039af510a3d">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="34" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a2bd35e532acef234389bed9d3574bcf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::FrameHeap::getFreeSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getFreeSize</name>
+        <qualifiedname>sead::FrameHeap::getFreeSize</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1ad02f63bc03e9f473c83ac8e185e5322f">getFreeSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="35" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a840c2d8ca21e28982be43ad1fabfbef0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::FrameHeap::getMaxAllocatableSize</definition>
+        <argsstring>(int alignment) const</argsstring>
+        <name>getMaxAllocatableSize</name>
+        <qualifiedname>sead::FrameHeap::getMaxAllocatableSize</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a3392d080c712e40e04fcb241709861ed">getMaxAllocatableSize</reimplements>
+        <param>
+          <type>int</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="36" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a7381d83517d8f47d4301a76c0e8aba63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FrameHeap::isInclude</definition>
+        <argsstring>(const void *p_void) const</argsstring>
+        <name>isInclude</name>
+        <qualifiedname>sead::FrameHeap::isInclude</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a55b9df2129adc1e016d02a574a6516f9">isInclude</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>p_void</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="37" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ab70bf1f06e9882d1d5b6baeef319e183" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FrameHeap::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>sead::FrameHeap::isEmpty</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1ad1384aa3c5dcb241e8f38b5f3ac7b7cb">isEmpty</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="38" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1aa158e3d76c15807f91de2a8e1d478498" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FrameHeap::isFreeable</definition>
+        <argsstring>() const</argsstring>
+        <name>isFreeable</name>
+        <qualifiedname>sead::FrameHeap::isFreeable</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a4cf93c0eb04c68ac2d4e9491178791c4">isFreeable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a865e9c4696062f45bf59be59f3fd6f91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FrameHeap::isResizable</definition>
+        <argsstring>() const</argsstring>
+        <name>isResizable</name>
+        <qualifiedname>sead::FrameHeap::isResizable</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a4b3b09bb5879858395e939309d0439bb">isResizable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="40" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ab97716e033ab4ad79f6e2d3403379e68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FrameHeap::isAdjustable</definition>
+        <argsstring>() const</argsstring>
+        <name>isAdjustable</name>
+        <qualifiedname>sead::FrameHeap::isAdjustable</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a114b1df136212ec0227a5ff8bbc0e013">isAdjustable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="41" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a55baa3db83215943011c27be943c17a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FrameHeap::dump</definition>
+        <argsstring>() const</argsstring>
+        <name>dump</name>
+        <qualifiedname>sead::FrameHeap::dump</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a94d6d73f967f9a5f63ba89029d89458b">dump</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="42" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a3802853aefe0d79d72d14a9bbb0621a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FrameHeap::dumpYAML</definition>
+        <argsstring>(WriteStream &amp;stream, int i) const</argsstring>
+        <name>dumpYAML</name>
+        <qualifiedname>sead::FrameHeap::dumpYAML</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1a5d915ae2c51d579275cc467a3f8506d5">dumpYAML</reimplements>
+        <param>
+          <type>WriteStream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="43" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1af05233db8bcffba7e387c2ee6b770687" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FrameHeap::genInformation_</definition>
+        <argsstring>(hostio::Context *context)</argsstring>
+        <name>genInformation_</name>
+        <qualifiedname>sead::FrameHeap::genInformation_</qualifiedname>
+        <reimplements refid="classsead_1_1Heap_1af97156072f382313c3128b2b513d3427">genInformation_</reimplements>
+        <param>
+          <type>hostio::Context *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="44" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a88a5a2091454781fd1a46d974c525511" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::FrameHeap::FrameHeap</definition>
+        <argsstring>(const SafeString &amp;name, Heap *parent, void *address, size_t size, HeapDirection direction, bool)</argsstring>
+        <name>FrameHeap</name>
+        <qualifiedname>sead::FrameHeap::FrameHeap</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>HeapDirection</type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a989180f6eebd4da0bbb155752ee12633" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sead::FrameHeap::~FrameHeap</definition>
+        <argsstring>()</argsstring>
+        <name>~FrameHeap</name>
+        <qualifiedname>sead::FrameHeap::~FrameHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="49" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a761aad489c0a35cc7b6aa31b9cad4bde" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FrameHeap::initialize_</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_</name>
+        <qualifiedname>sead::FrameHeap::initialize_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1ae38a012e6ea842d89841ef1cd014834a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::FrameHeap::getAreaStart_</definition>
+        <argsstring>() const</argsstring>
+        <name>getAreaStart_</name>
+        <qualifiedname>sead::FrameHeap::getAreaStart_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FrameHeap_1a3099a698e335c8493e8241fd01c13123" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::FrameHeap::getAreaEnd_</definition>
+        <argsstring>() const</argsstring>
+        <name>getAreaEnd_</name>
+        <qualifiedname>sead::FrameHeap::getAreaEnd_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadFrameHeap.h" line="53" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::FrameHeap</label>
+        <link refid="classsead_1_1FrameHeap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1Heap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1IDisposer"/>
+      </node>
+      <node id="4">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1INamable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1BitFlag"/>
+      </node>
+      <node id="5">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1OffsetList"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1OffsetList"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1CriticalSection"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::FrameHeap</label>
+        <link refid="classsead_1_1FrameHeap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sead::FrameHeap::State</label>
+        <link refid="structsead_1_1FrameHeap_1_1State"/>
+      </node>
+      <node id="2">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1Heap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1IDisposer"/>
+      </node>
+      <node id="4">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1INamable"/>
+      </node>
+      <node id="6">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1ListImpl"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1ListNode"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/heap/seadFrameHeap.h" line="6" column="1" bodyfile="lib/sead/include/heap/seadFrameHeap.h" bodystart="6" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classsead_1_1FrameHeap_1a5526c74e0d0e8361100ac28de299514b" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>adjust</name></member>
+      <member refid="classsead_1_1Heap_1a8f1c083a4d61d261b3307219fbb6e9bf" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>alloc</name></member>
+      <member refid="classsead_1_1Heap_1abf9e4e4c16b81b41bfe80f625d87ac40" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>appendDisposer_</name></member>
+      <member refid="classsead_1_1Heap_1a5a04ebfb94aa8051f2a8a231ba950922a9604209759f59f42387e59298a112c48" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>cHeapDirection_Forward</name></member>
+      <member refid="classsead_1_1Heap_1a5a04ebfb94aa8051f2a8a231ba950922a688aaee6fae97d9cc2dfd25260c350cc" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>cHeapDirection_Reverse</name></member>
+      <member refid="classsead_1_1FrameHeap_1a4937f26037e606fd928a63fdaebc9e55" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>create</name></member>
+      <member refid="classsead_1_1FrameHeap_1aeebf6b78ced063f729847073fd679353" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>destroy</name></member>
+      <member refid="classsead_1_1Heap_1ac70cb6b9f11f10ef6a77cc4ee24d6fb4" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>DisposerList</name></member>
+      <member refid="classsead_1_1FrameHeap_1a55baa3db83215943011c27be943c17a1" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>dump</name></member>
+      <member refid="classsead_1_1Heap_1ad50707203b4f25d0825882f226d03ec5" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>dumpTreeYAML</name></member>
+      <member refid="classsead_1_1FrameHeap_1a3802853aefe0d79d72d14a9bbb0621a5" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>dumpYAML</name></member>
+      <member refid="classsead_1_1Heap_1a6f26d9a2fcc9e163e55b75a3d0ffda70" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>findContainHeap_</name></member>
+      <member refid="classsead_1_1FrameHeap_1a88a5a2091454781fd1a46d974c525511" prot="protected" virt="non-virtual"><scope>sead::FrameHeap</scope><name>FrameHeap</name></member>
+      <member refid="classsead_1_1FrameHeap_1a1ec06ed0238d6154fbc263f6fb7d14cd" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>free</name></member>
+      <member refid="classsead_1_1FrameHeap_1ae939c739a2a05ac37e27fc88d82a1962" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>freeAll</name></member>
+      <member refid="classsead_1_1FrameHeap_1a7ed99821204184e8aa4bcfde869145b9" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>freeHead</name></member>
+      <member refid="classsead_1_1FrameHeap_1ab414aecfee49d1a0706cdc4c069f78fb" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>freeTail</name></member>
+      <member refid="classsead_1_1FrameHeap_1af05233db8bcffba7e387c2ee6b770687" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>genInformation_</name></member>
+      <member refid="classsead_1_1FrameHeap_1a3099a698e335c8493e8241fd01c13123" prot="protected" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getAreaEnd_</name></member>
+      <member refid="classsead_1_1FrameHeap_1ae38a012e6ea842d89841ef1cd014834a" prot="protected" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getAreaStart_</name></member>
+      <member refid="classsead_1_1Heap_1ac9c73df56def2a1b154561e6ccdf0841" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getCriticalSection</name></member>
+      <member refid="classsead_1_1IDisposer_1a4787eac6c96ec41a402a87785ca1c1e5" prot="protected" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getDisposerHeap_</name></member>
+      <member refid="classsead_1_1FrameHeap_1a366cbae16b633f031d21d8cf382752e0" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>getEndAddress</name></member>
+      <member refid="classsead_1_1FrameHeap_1a2bd35e532acef234389bed9d3574bcf4" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>getFreeSize</name></member>
+      <member refid="classsead_1_1IDisposer_1ad80f0bcae4db9dc8d86b972cf79242ff" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getListNodeOffset</name></member>
+      <member refid="classsead_1_1FrameHeap_1a47ccdd87d2293846a7d0e25af2a9c143" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getManagementAreaSize</name></member>
+      <member refid="classsead_1_1FrameHeap_1a840c2d8ca21e28982be43ad1fabfbef0" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>getMaxAllocatableSize</name></member>
+      <member refid="classsead_1_1INamable_1afbca7ad5cea53df4afb3cf6a2f59f83c" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>getName</name></member>
+      <member refid="classsead_1_1FrameHeap_1ab0b6e50e9c55a3c9ccdffffd0beed19d" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>getSize</name></member>
+      <member refid="classsead_1_1FrameHeap_1a777e2112103aca599f802afd5e716ed8" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>getStartAddress</name></member>
+      <member refid="classsead_1_1Heap_1a2e6fec110511cccf9cc180b27ac51881" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>Heap</name></member>
+      <member refid="classsead_1_1Heap_1a5a04ebfb94aa8051f2a8a231ba950922" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapDirection</name></member>
+      <member refid="classsead_1_1Heap_1a8a43dc0196acbf3d0d5264a8138c158b" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapList</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapNullOption</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a7924dc86bb92083cfe17af344f18efdb" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapNullOption_AlwaysUseSpecifiedHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1ae6e1545ced87f4418a3a522abd0134b7" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapNullOption_DoNotAppendDisposerIfNoHeapSpecified</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a9c3b6e23a61f6b9e12b642cd907a8a49" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapNullOption_UseSpecifiedOrContainHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a6fd315b4de876d836ebb7a643d6db3b0" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>HeapNullOption_UseSpecifiedOrCurrentHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a2dce641e279c1e5cd489227548dadf78" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1IDisposer_1a674d1dfb9528774610a5e90fe3d8f394" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1INamable_1a429adcb44a16a9c029fcb39d868c4d7f" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>INamable</name></member>
+      <member refid="classsead_1_1INamable_1ae752fa1a117c354f04f96d99248fe605" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>INamable</name></member>
+      <member refid="classsead_1_1FrameHeap_1a761aad489c0a35cc7b6aa31b9cad4bde" prot="protected" virt="non-virtual"><scope>sead::FrameHeap</scope><name>initialize_</name></member>
+      <member refid="classsead_1_1FrameHeap_1ab97716e033ab4ad79f6e2d3403379e68" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>isAdjustable</name></member>
+      <member refid="classsead_1_1FrameHeap_1ab70bf1f06e9882d1d5b6baeef319e183" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>isEmpty</name></member>
+      <member refid="classsead_1_1FrameHeap_1aa158e3d76c15807f91de2a8e1d478498" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>isFreeable</name></member>
+      <member refid="classsead_1_1FrameHeap_1a7381d83517d8f47d4301a76c0e8aba63" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>isInclude</name></member>
+      <member refid="classsead_1_1FrameHeap_1a865e9c4696062f45bf59be59f3fd6f91" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>isResizable</name></member>
+      <member refid="classsead_1_1Heap_1a377dd949578eac81d5fad0888f1d0f30" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>makeMetaString_</name></member>
+      <member refid="classsead_1_1Heap_1a8ab3f3d92a082ab0412d39480ea4685d" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mChildren</name></member>
+      <member refid="classsead_1_1Heap_1ac9ce3053a78a6d1ad5a8b5970035c88d" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mCS</name></member>
+      <member refid="classsead_1_1Heap_1a6f50fdf1a777ac7ba6da5a160b36f73b" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mDirection</name></member>
+      <member refid="classsead_1_1Heap_1a454e9f5abf05bc462127b00c6e3808ec" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mDisposerList</name></member>
+      <member refid="classsead_1_1Heap_1ac3e6f45dfe3400b03625667a698d8b2b" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mFlag</name></member>
+      <member refid="classsead_1_1Heap_1a595aae61f964e53584688b8d5ba7482e" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mHeapCheckTag</name></member>
+      <member refid="classsead_1_1Heap_1a70e79accea283adb9af900551e35a162" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mListNode</name></member>
+      <member refid="classsead_1_1Heap_1a7fd242eadbd0518b144d81b9a4fed252" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mParent</name></member>
+      <member refid="classsead_1_1Heap_1ab5ff50165120b0b3da4bfbf9c8256880" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mSize</name></member>
+      <member refid="classsead_1_1Heap_1ad98b2eeda07fa03220ca784ddb047bc9" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mStart</name></member>
+      <member refid="classsead_1_1FrameHeap_1a5e13fcfa5d04468480ff968eaf57a109" prot="protected" virt="non-virtual"><scope>sead::FrameHeap</scope><name>mState</name></member>
+      <member refid="classsead_1_1Heap_1a4f90d60c7ffaa44a8b8dd318ad669c73" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>pushBackChild_</name></member>
+      <member refid="classsead_1_1Heap_1a65feeb8c1a2192f655578b734647e638" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>removeDisposer_</name></member>
+      <member refid="classsead_1_1FrameHeap_1a793991eb8fc7ed4489f0fd9f1a69ecd0" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>resizeBack</name></member>
+      <member refid="classsead_1_1FrameHeap_1a6cd318ff98a4fffc4fed0ffacb824f71" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>resizeFront</name></member>
+      <member refid="classsead_1_1FrameHeap_1a25bd68bcd15aa32542912a7d00c48450" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>restoreState</name></member>
+      <member refid="classsead_1_1INamable_1acd4b503966fa742e89f2507e909b5468" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>setName</name></member>
+      <member refid="classsead_1_1FrameHeap_1af17a718b7decc97a4b2f9283b6d84e48" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>tryAlloc</name></member>
+      <member refid="classsead_1_1FrameHeap_1ab360a5dc4e1f184ab6a603d6f8fdd559" prot="public" virt="non-virtual"><scope>sead::FrameHeap</scope><name>tryCreate</name></member>
+      <member refid="classsead_1_1Heap_1a38429605eff7285eddf7769e45e54418" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>tryRealloc</name></member>
+      <member refid="classsead_1_1FrameHeap_1a989180f6eebd4da0bbb155752ee12633" prot="protected" virt="virtual"><scope>sead::FrameHeap</scope><name>~FrameHeap</name></member>
+      <member refid="classsead_1_1Heap_1a292677273d0f5f623d28640a773406da" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>~Heap</name></member>
+      <member refid="classsead_1_1IDisposer_1a36e2b9b062febed0893f3530bc427f0a" prot="public" virt="virtual"><scope>sead::FrameHeap</scope><name>~IDisposer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

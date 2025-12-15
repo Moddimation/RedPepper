@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alAreaObjFactory.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-alareaobjfactorycpp">File alAreaObjFactory.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_39b5099aa57315b839bd41800a0f814b/"><strong>Factory</strong></a> <strong>&gt;</strong> <a href="../alAreaObjFactory_8cpp/"><strong>alAreaObjFactory.cpp</strong></a></p>
+<p><a href="../alAreaObjFactory_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;Factory/alAreaObjFactory.h&gt;
+
+namespace al
+{
+
+template &lt;typename T&gt;
+AreaObj* createAreaObjFunction( const char* name )
+{
+        return new T( name );
+}
+
+const NameToAreaObjCreator split( sAreaObjFactoryEntries )[] = {
+        { &quot;AudioEffectChangeArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;AudioVolumeSettingArea&quot;, nullptr },
+        { &quot;BgmChangeArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;CameraArea&quot;, nullptr },
+        { &quot;CameraOriginArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;CameraWaveArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;ChangeCoverArea&quot;, nullptr },
+        { &quot;DeathArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;EnablePropellerFallCameraArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;FogArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;FogAreaCameraPos&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;FootPrintFollowPosArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;InvalidatePropellerCameraArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;KinopioHouseExitArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;LightArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;ObjectChildArea&quot;, nullptr },
+        { &quot;PlayerAlongWallArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;PlayerControlOffArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;PlayerInclinedControlArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;PlayerRestrictedPlane&quot;, nullptr },
+        { &quot;PlayerWidenStickXSnapArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;PresentMessageArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;SoundEmitArea&quot;, nullptr },
+        { &quot;SpotLightArea&quot;, nullptr },
+        { &quot;StickFixArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;StickSnapOffArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;SwitchKeepOnArea&quot;, nullptr },
+        { &quot;SwitchOnArea&quot;, nullptr },
+        { &quot;ViewCtrlArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;WaterArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;WaterFallArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;WaterFlowArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;GhostPlayerArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;Guide3DArea&quot;, createAreaObjFunction&lt;AreaObj&gt; },
+        { &quot;MessageArea&quot;, nullptr },
+        { &quot;BugFixBalanceTruckArea&quot;, createAreaObjFunction&lt;AreaObj&gt; } };
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

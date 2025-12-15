@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File LMS_Impl.c - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-lms_implc">File LMS_Impl.c</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_bd2ac9a3d2735b7139b8654d97389ba0/"><strong>addins</strong></a> <strong>&gt;</strong> <a href="../dir_1dee988f62a020defef87bef9fc0dca6/"><strong>libms</strong></a> <strong>&gt;</strong> <a href="../dir_dfc4bbba1eff969fd6af80bc2d747dc5/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../LMS__Impl_8c/"><strong>LMS_Impl.c</strong></a></p>
+<p><a href="../LMS__Impl_8c/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &quot;LMS/LMS_Impl.h&quot;
+
+LMS_AllocFuncPtr LMSi_sAllocFuncPtr;
+LMS_FreeFuncPtr LMSi_sFreeFuncPtr;
+
+void* LMSi_Malloc(u32 size)
+{
+    return LMSi_sAllocFuncPtr(size);
+}
+
+void LMSi_Free(void* ptr)
+{
+    LMSi_sFreeFuncPtr(ptr);
+}
+
+void LMS_SetMemFuncs(LMS_AllocFuncPtr alloc_ptr, LMS_FreeFuncPtr free_ptr)
+{
+    LMSi_sAllocFuncPtr = alloc_ptr;
+    LMSi_sFreeFuncPtr = free_ptr;
+}
+
+#ifdef NON_MATCHING
+s32 LMSi_SearchBlockByName(LMS_Binary* binary, const char* blockName)
+{
+    u16 index = 0;
+    if (binary-&gt;numBlocks &gt; 0) {
+        while (index &lt; binary-&gt;numBlocks) {
+            // nop before beq
+            __nop();
+            if (LMSi_MemCmp(binary-&gt;blocks[index].type, blockName, 4))
+                return index;
+            index++; // binary-&gt;numBlocks gets loaded before this
+        }
+    }
+    return -1;
+}
+#endif
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

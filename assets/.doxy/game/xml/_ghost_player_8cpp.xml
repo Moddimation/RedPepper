@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_ghost_player_8cpp" kind="file" language="C++">
+    <compoundname>GhostPlayer.cpp</compoundname>
+    <includes refid="_ghost_player_8h" local="yes">Player/GhostPlayer.h</includes>
+    <includes local="no">LiveActor/alActorActionKeeper.h</includes>
+    <includes local="no">LiveActor/alHitSensorFunction.h</includes>
+    <includes local="no">LiveActor/alSensorMsg.h</includes>
+    <includes local="no">Nerve/alNerve.h</includes>
+    <includes local="no">Nerve/alNerveFunction.h</includes>
+    <includes refid="_ghost_player_recorder_8h" local="yes">Player/GhostPlayerRecorder.h</includes>
+    <includes refid="_scene_obj_factory_8h" local="yes">Scene/SceneObjFactory.h</includes>
+    <includes refid="_sensor_msg_8h" local="yes">Util/SensorMsg.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Player/GhostPlayer.h</label>
+        <link refid="_ghost_player_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Player/GhostPlayerRecorder.h</label>
+        <link refid="_ghost_player_recorder_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Scene/SceneObjFactory.h</label>
+        <link refid="_scene_obj_factory_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Util/SensorMsg.h</label>
+        <link refid="_sensor_msg_8h"/>
+      </node>
+      <node id="1">
+        <label>GhostPlayer.cpp</label>
+        <link refid="_ghost_player_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>LiveActor/alActorActionKeeper.h</label>
+      </node>
+      <node id="5">
+        <label>LiveActor/alHitSensorFunction.h</label>
+      </node>
+      <node id="6">
+        <label>LiveActor/alSensorMsg.h</label>
+      </node>
+      <node id="3">
+        <label>MapObj/alMapObjActor.h</label>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerve.h</label>
+      </node>
+      <node id="8">
+        <label>Nerve/alNerveFunction.h</label>
+      </node>
+      <node id="10">
+        <label>Scene/alISceneObj.h</label>
+      </node>
+      <node id="13">
+        <label>Scene/alSceneObjHolder.h</label>
+      </node>
+      <node id="11">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_nrv_ghost_player">NrvGhostPlayer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ghost_player_8h" kindref="compound">Player/GhostPlayer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alActorActionKeeper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alHitSensorFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alSensorMsg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerve.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerveFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ghost_player_recorder_8h" kindref="compound">Player/GhostPlayerRecorder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_scene_obj_factory_8h" kindref="compound">Scene/SceneObjFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sensor_msg_8h" kindref="compound">Util/SensorMsg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespace_nrv_ghost_player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_nrv_ghost_player" kindref="compound">NrvGhostPlayer</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespace_nrv_ghost_player_1a0c15eeac17ef34237a096c8fc33687c3" refkind="member"><highlight class="normal"><ref refid="namespace_nrv_ghost_player_1a0c15eeac17ef34237a096c8fc33687c3" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="class_ghost_player" kindref="compound">GhostPlayer</ref>,<sp/>Begin<sp/>);</highlight></codeline>
+<codeline lineno="17" refid="namespace_nrv_ghost_player_1a573c8223ddf047add8a2faa435423d53" refkind="member"><highlight class="normal"><ref refid="namespace_nrv_ghost_player_1a0c15eeac17ef34237a096c8fc33687c3" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="class_ghost_player" kindref="compound">GhostPlayer</ref>,<sp/>Nrv5<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NrvGhostPlayer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_ghost_player_1a02af26195671e21e13dd9aca8c59b7fa" refkind="member"><highlight class="normal"><ref refid="class_ghost_player_1a02af26195671e21e13dd9aca8c59b7fa" kindref="member">GhostPlayer::GhostPlayer</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>MapObjActor(<sp/>name<sp/>),<sp/>_64(<sp/>false<sp/>),<sp/>_65(<sp/>false<sp/>),<sp/>_66(<sp/>false<sp/>),<sp/>_67(<sp/>false<sp/>),<sp/>_68(<sp/>false<sp/>),<sp/>_69(<sp/>true<sp/>),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_6A(<sp/>false<sp/>),<sp/>_6B(<sp/>true<sp/>),<sp/>_6C(<sp/>false<sp/>),<sp/>_70(<sp/>-1<sp/>),<sp/>_74(<sp/>-1<sp/>),<sp/>_78(<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ghost_player_recorder" kindref="compound">GhostPlayerRecorder</ref>*<sp/>recorder<sp/>=</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="class_ghost_player_recorder" kindref="compound">GhostPlayerRecorder</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>al::createSceneObj(<sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7b9121e695afa9f45a8d4086b8d884fa" kindref="member">SceneObjType_GhostPlayerRecorder</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>recorder-&gt;<ref refid="class_ghost_player_recorder_1a231ba9679b376ed92986996986ab0478" kindref="member">mFrames</ref><sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recorder-&gt;<ref refid="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" kindref="member">create</ref>(<sp/>30<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recorder-&gt;<ref refid="class_ghost_player_recorder_1aae72848f40885d7e929a79cf758929e0" kindref="member">initGhostPlayer</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_ghost_player_1ad93076659eaf1ff2918736897824d89d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1ad93076659eaf1ff2918736897824d89d" kindref="member">GhostPlayer::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::ActorInitInfo&amp;<sp/>info<sp/>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_ghost_player_1a21e11f2e5d2317e61dcafb05aa504057" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1a21e11f2e5d2317e61dcafb05aa504057" kindref="member">GhostPlayer::kill</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::startHitReactionDeath(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LiveActor::kill();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_ghost_player_1ac25ab6bc0970c6a27ccdb8c445ca6a6f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1ac25ab6bc0970c6a27ccdb8c445ca6a6f" kindref="member">GhostPlayer::attackSensor</ref>(<sp/>al::HitSensor*<sp/>me,<sp/>al::HitSensor*<sp/>other<sp/>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="class_ghost_player_1ae36db2fcd273b87d03381084e62da173" kindref="member">_64</ref><sp/>&amp;&amp;<sp/>al::isNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvGhostPlayer::Begin<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::isSensorPlayer(<sp/>other<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_ghost_player_1adf15e2a765a67c02271e86e73ba7d38c" kindref="member">_6A</ref><sp/>&amp;&amp;<sp/>!al::isSensorEnemyAttack(<sp/>me<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::sendMsgEnemyAttack(<sp/>other,<sp/>me<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_ghost_player_1adf15e2a765a67c02271e86e73ba7d38c" kindref="member">_6A</ref><sp/>&amp;&amp;<sp/>al::isSensorMapObj(<sp/>other<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::sendMsg53(<sp/>other,<sp/>me<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_ghost_player_1a3bc76c235152a3cfa6f336ce63baffec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1a3bc76c235152a3cfa6f336ce63baffec" kindref="member">GhostPlayer::receiveMsg</ref>(<sp/>u32<sp/>msg,<sp/>al::HitSensor*<sp/>other,<sp/>al::HitSensor*<sp/>me<sp/>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::isMsgPlayerInvincibleAttack(<sp/>msg<sp/>)<sp/>&amp;&amp;<sp/>al::isNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvGhostPlayer::Begin<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacerp_1a03658529f1f4371f374b71d6a8ca0f77" kindref="member">rp::requestHitReactionToAttacker</ref>(<sp/>msg,<sp/>me,<sp/>other<sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::startHitReactionDeath(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvGhostPlayer::Nrv5<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_ghost_player_1a6f8477a7608d4a6ceb059ba5388d55f4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1a6f8477a7608d4a6ceb059ba5388d55f4" kindref="member">GhostPlayer::control</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_ghost_player_1a71a17207b30194af9b583c6489a6eee2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1a71a17207b30194af9b583c6489a6eee2" kindref="member">GhostPlayer::exeHide</ref>()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_ghost_player_1adfff5c469cf68625fdf8f387f4649d74" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1adfff5c469cf68625fdf8f387f4649d74" kindref="member">GhostPlayer::exeBegin</ref>()</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_ghost_player_1a87422811c09d9fd26366a92b9c5f8c06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ghost_player_1a87422811c09d9fd26366a92b9c5f8c06" kindref="member">GhostPlayer::exeNrv5</ref>()</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Player/GhostPlayer.cpp"/>
+  </compounddef>
+</doxygen>

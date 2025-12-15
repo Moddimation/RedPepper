@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1StageResourceKeeper" kind="class" language="C++" prot="public">
+    <compoundname>al::StageResourceKeeper</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1StageResourceKeeper_1adc45d043d185e760270e0664d676b394" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1Resource" kindref="compound">al::Resource</ref> **</type>
+        <definition>al::Resource** al::StageResourceKeeper::mResources</definition>
+        <argsstring></argsstring>
+        <name>mResources</name>
+        <qualifiedname>al::StageResourceKeeper::mResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="12" column="22" bodyfile="lib/al/include/Stage/alStageResourceKeeper.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1StageResourceKeeper_1a883be68dd40337189d7c2f4911e7631a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::StageResourceKeeper::initAndLoadResource</definition>
+        <argsstring>(const char *stageName, int scenario, sead::Heap *heap)</argsstring>
+        <name>initAndLoadResource</name>
+        <qualifiedname>al::StageResourceKeeper::initAndLoadResource</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+          <declname>stageName</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+          <declname>scenario</declname>
+        </param>
+        <param>
+          <type>sead::Heap *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1StageResourceKeeper_1a546d0e41810ef5a754dec5fdd027e71f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1Resource" kindref="compound">al::Resource</ref> *</type>
+        <definition>al::Resource * al::StageResourceKeeper::getResourceDesign</definition>
+        <argsstring>() const</argsstring>
+        <name>getResourceDesign</name>
+        <qualifiedname>al::StageResourceKeeper::getResourceDesign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="17" column="22" bodyfile="lib/al/src/Stage/alStageResourceKeeper.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1StageResourceKeeper_1a7c00f1dfebb6043423070a2aa83f5c4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1Resource" kindref="compound">al::Resource</ref> *</type>
+        <definition>al::Resource * al::StageResourceKeeper::getResourceMap</definition>
+        <argsstring>() const</argsstring>
+        <name>getResourceMap</name>
+        <qualifiedname>al::StageResourceKeeper::getResourceMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="18" column="22" bodyfile="lib/al/src/Stage/alStageResourceKeeper.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1StageResourceKeeper_1a9d7ff0a8b5b24aabe201b68fca9e21be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1Resource" kindref="compound">al::Resource</ref> *</type>
+        <definition>al::Resource * al::StageResourceKeeper::getResourceSound</definition>
+        <argsstring>() const</argsstring>
+        <name>getResourceSound</name>
+        <qualifiedname>al::StageResourceKeeper::getResourceSound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="19" column="22" bodyfile="lib/al/src/Stage/alStageResourceKeeper.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1StageResourceKeeper_1adce70f507e191d2b222587aa38ce4897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::StageResourceKeeper::StageResourceKeeper</definition>
+        <argsstring>()</argsstring>
+        <name>StageResourceKeeper</name>
+        <qualifiedname>al::StageResourceKeeper::StageResourceKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="22" column="9" bodyfile="lib/al/src/Stage/alStageResourceKeeper.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/Stage/alStageResourceKeeper.h" line="9" column="1" bodyfile="lib/al/include/Stage/alStageResourceKeeper.h" bodystart="10" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classal_1_1StageResourceKeeper_1a546d0e41810ef5a754dec5fdd027e71f" prot="public" virt="non-virtual"><scope>al::StageResourceKeeper</scope><name>getResourceDesign</name></member>
+      <member refid="classal_1_1StageResourceKeeper_1a7c00f1dfebb6043423070a2aa83f5c4f" prot="public" virt="non-virtual"><scope>al::StageResourceKeeper</scope><name>getResourceMap</name></member>
+      <member refid="classal_1_1StageResourceKeeper_1a9d7ff0a8b5b24aabe201b68fca9e21be" prot="public" virt="non-virtual"><scope>al::StageResourceKeeper</scope><name>getResourceSound</name></member>
+      <member refid="classal_1_1StageResourceKeeper_1a883be68dd40337189d7c2f4911e7631a" prot="public" virt="non-virtual"><scope>al::StageResourceKeeper</scope><name>initAndLoadResource</name></member>
+      <member refid="classal_1_1StageResourceKeeper_1adc45d043d185e760270e0664d676b394" prot="private" virt="non-virtual"><scope>al::StageResourceKeeper</scope><name>mResources</name></member>
+      <member refid="classal_1_1StageResourceKeeper_1adce70f507e191d2b222587aa38ce4897" prot="public" virt="non-virtual"><scope>al::StageResourceKeeper</scope><name>StageResourceKeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

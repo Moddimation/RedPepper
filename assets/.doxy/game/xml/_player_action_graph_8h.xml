@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_action_graph_8h" kind="file" language="C++">
+    <compoundname>PlayerActionGraph.h</compoundname>
+    <includedby refid="_player_action_graph_8cpp" local="yes">PlayerActionGraph.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>PlayerActionGraph.h</label>
+        <link refid="_player_action_graph_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PlayerActionGraph.cpp</label>
+        <link refid="_player_action_graph_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_player_action_graph" prot="public">PlayerActionGraph</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_action_node" kindref="compound">PlayerActionNode</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_player_action_graph" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_action_graph" kindref="compound">PlayerActionGraph</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8" refid="class_player_action_graph_1a7373b35a23a729a21933e85214bf2263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_action_node" kindref="compound">PlayerActionNode</ref>*<sp/><ref refid="class_player_action_graph_1a7373b35a23a729a21933e85214bf2263" kindref="member">mCurrentNode</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="class_player_action_graph_1a983848b7c920a362aaaf576b9136a324" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_action_node" kindref="compound">PlayerActionNode</ref>*<sp/><ref refid="class_player_action_graph_1a983848b7c920a362aaaf576b9136a324" kindref="member">getCurrentNode</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="12"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_player_action_graph_1a7373b35a23a729a21933e85214bf2263" kindref="member">mCurrentNode</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_action_graph_1a5d41e0b04001cb36fc27ad3302685be4" kindref="member">move</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/Player/PlayerActionGraph.h"/>
+  </compounddef>
+</doxygen>

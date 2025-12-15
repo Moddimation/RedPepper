@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1KeyPoseKeeper" kind="class" language="C++" prot="public">
+    <compoundname>al::KeyPoseKeeper</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433d" prot="private" static="no" strong="no">
+        <type></type>
+        <name>MoveType</name>
+        <qualifiedname>al::KeyPoseKeeper::MoveType</qualifiedname>
+        <enumvalue id="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433daeb00c0589520e58b04314c8bf717fe30" prot="private">
+          <name>MoveType_Loop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433da89e8ab2e8d231a18b7f04ee9a3372d0f" prot="private">
+          <name>MoveType_Turn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433dadfec5dbab8ba0811ea9ddd79aa18ac93" prot="private">
+          <name>MoveType_Stop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433da8e698298ad9d42ea2ba5a39ad000e8d9" prot="private">
+          <name>MoveType_Restart</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="15" column="9" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="16" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1a280ed89e50086f9a252751a48f784aa1" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1KeyPose" kindref="compound">KeyPose</ref> *</type>
+        <definition>KeyPose* al::KeyPoseKeeper::mKeyPoses</definition>
+        <argsstring></argsstring>
+        <name>mKeyPoses</name>
+        <qualifiedname>al::KeyPoseKeeper::mKeyPoses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="23" column="17" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1a3837f9bdac7be2740b81eea012a85df1" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        <definition>int al::KeyPoseKeeper::mKeyPoseAmount</definition>
+        <argsstring></argsstring>
+        <name>mKeyPoseAmount</name>
+        <qualifiedname>al::KeyPoseKeeper::mKeyPoseAmount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="24" column="18" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1aa82f7455b94fdb6a4e4d036c1c370936" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        <definition>int al::KeyPoseKeeper::mCurrentKeyPoseIdx</definition>
+        <argsstring></argsstring>
+        <name>mCurrentKeyPoseIdx</name>
+        <qualifiedname>al::KeyPoseKeeper::mCurrentKeyPoseIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="25" column="18" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1aef6dd9fa67dd8d6ce3c2d0c881aed632" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">union</ref> <ref refid="classal_1_1KeyPoseKeeper" kindref="compound">al::KeyPoseKeeper</ref></type>
+        <definition>union al::KeyPoseKeeper al::KeyPoseKeeper</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>al::KeyPoseKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="31" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1a16d20ed5f4a13516ecc8b1a4b815786a" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::KeyPoseKeeper::_10</definition>
+        <argsstring></argsstring>
+        <name>_10</name>
+        <qualifiedname>al::KeyPoseKeeper::_10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="33" column="14" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1aada884183ca47cb27980c3ff9e58181a" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::KeyPoseKeeper::_11</definition>
+        <argsstring></argsstring>
+        <name>_11</name>
+        <qualifiedname>al::KeyPoseKeeper::_11</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="34" column="14" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1ae207052573c7f33cbbf3fb5069e60944" prot="public" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        <definition>int al::KeyPoseKeeper::mMoveTypeInt</definition>
+        <argsstring></argsstring>
+        <name>mMoveTypeInt</name>
+        <qualifiedname>al::KeyPoseKeeper::mMoveTypeInt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="29" column="26" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPoseKeeper_1aa0916e01b138683dc68c97cab6a4726f" prot="public" static="no" mutable="no">
+        <type>MoveType</type>
+        <definition>MoveType al::KeyPoseKeeper::mMoveType</definition>
+        <argsstring></argsstring>
+        <name>mMoveType</name>
+        <qualifiedname>al::KeyPoseKeeper::mMoveType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="30" column="26" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1KeyPoseKeeper_1a0bc7df044243d75df66ab1349d82eeb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::KeyPoseKeeper::init</definition>
+        <argsstring>(const ActorInitInfo &amp;info)</argsstring>
+        <name>init</name>
+        <qualifiedname>al::KeyPoseKeeper::init</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ActorInitInfo" kindref="compound">ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPoseKeeper_1a32aed9d07a4fde4ef401515cfe1a0f36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1KeyPose" kindref="compound">KeyPose</ref> *</type>
+        <definition>const KeyPose * al::KeyPoseKeeper::getCurrentKeyPose</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentKeyPose</name>
+        <qualifiedname>al::KeyPoseKeeper::getCurrentKeyPose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="39" column="23" bodyfile="lib/al/src/KeyPose/alKeyPoseKeeper.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPoseKeeper_1abcbbedd9d4b43f1848c885fedb69f205" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1KeyPose" kindref="compound">KeyPose</ref> *</type>
+        <definition>const KeyPose * al::KeyPoseKeeper::getNextKeyPose</definition>
+        <argsstring>() const</argsstring>
+        <name>getNextKeyPose</name>
+        <qualifiedname>al::KeyPoseKeeper::getNextKeyPose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="40" column="23" bodyfile="lib/al/src/KeyPose/alKeyPoseKeeper.cpp" bodystart="41" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPoseKeeper_1a024a9c01d0d764ec4b4fd9fe900b76d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::KeyPoseKeeper::KeyPoseKeeper</definition>
+        <argsstring>()</argsstring>
+        <name>KeyPoseKeeper</name>
+        <qualifiedname>al::KeyPoseKeeper::KeyPoseKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="43" column="9" bodyfile="lib/al/src/KeyPose/alKeyPoseKeeper.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h" line="12" column="1" bodyfile="lib/al/include/KeyPose/alKeyPoseKeeper.h" bodystart="13" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classal_1_1KeyPoseKeeper_1a16d20ed5f4a13516ecc8b1a4b815786a" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>_10</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1aada884183ca47cb27980c3ff9e58181a" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>_11</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1a32aed9d07a4fde4ef401515cfe1a0f36" prot="public" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>getCurrentKeyPose</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1abcbbedd9d4b43f1848c885fedb69f205" prot="public" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>getNextKeyPose</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1a0bc7df044243d75df66ab1349d82eeb6" prot="public" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>init</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1a024a9c01d0d764ec4b4fd9fe900b76d7" prot="public" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>KeyPoseKeeper</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1aa82f7455b94fdb6a4e4d036c1c370936" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>mCurrentKeyPoseIdx</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1a3837f9bdac7be2740b81eea012a85df1" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>mKeyPoseAmount</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1a280ed89e50086f9a252751a48f784aa1" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>mKeyPoses</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1aa0916e01b138683dc68c97cab6a4726f" prot="public" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>mMoveType</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1ae207052573c7f33cbbf3fb5069e60944" prot="public" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>mMoveTypeInt</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433d" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>MoveType</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433daeb00c0589520e58b04314c8bf717fe30" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>MoveType_Loop</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433da8e698298ad9d42ea2ba5a39ad000e8d9" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>MoveType_Restart</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433dadfec5dbab8ba0811ea9ddd79aa18ac93" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>MoveType_Stop</name></member>
+      <member refid="classal_1_1KeyPoseKeeper_1afba0b8cf7ce8e5656010f9c247af433da89e8ab2e8d231a18b7f04ee9a3372d0f" prot="private" virt="non-virtual"><scope>al::KeyPoseKeeper</scope><name>MoveType_Turn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

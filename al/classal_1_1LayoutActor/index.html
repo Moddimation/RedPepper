@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::LayoutActor - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-allayoutactor">Class al::LayoutActor</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>LayoutActor</strong></a></p>
+<p>Inherits the following classes: <a href="../classal_1_1IUseNerve/">al::IUseNerve</a>,  <a href="../classal_1_1IUseAudioKeeper/">al::IUseAudioKeeper</a>,  <a href="../classal_1_1IUseEffectKeeper/">al::IUseEffectKeeper</a></p>
+<p>Inherited by the following classes: <a href="../classal_1_1WipeSimple/">al::WipeSimple</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-layoutactor"><strong>LayoutActor</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-calcanim"><strong>calcAnim</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1AudioKeeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1EffectKeeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initnerve"><strong>initNerve</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1Nerve/"><strong>Nerve</strong></a> * nerve, <a href="../structal_1_1NameToCreator/"><strong>int</strong></a> maxNerveStates=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-movement"><strong>movement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-unk1"><strong>unk1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-unk2"><strong>unk2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1IUseNerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseNerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseaudiokeeper">Public Functions inherited from al::IUseAudioKeeper</h2>
+<p>See <a href="../classal_1_1IUseAudioKeeper/">al::IUseAudioKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1AudioKeeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseAudioKeeper/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1IUseAudioKeeper/#function-v1"><strong>v1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1IUseAudioKeeper/#function-v2"><strong>v2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseeffectkeeper">Public Functions inherited from al::IUseEffectKeeper</h2>
+<p>See <a href="../classal_1_1IUseEffectKeeper/">al::IUseEffectKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1EffectKeeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseEffectKeeper/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-_20"><strong>_20</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-_24"><strong>_24</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-_28"><strong>_28</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1AudioKeeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-maudiokeeper"><strong>mAudioKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1EffectKeeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-meffectkeeper"><strong>mEffectKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#variable-misalive"><strong>mIsAlive</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">sead::SafeString</td>
+<td style="text-align: left;"><a href="#variable-mname"><strong>mName</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-mnervekeeper"><strong>mNerveKeeper</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-layoutactor">function LayoutActor</h3>
+<pre><code class="language-C++">al::LayoutActor::LayoutActor (
+    const  char * name
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appear">function appear</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::appear () 
+</code></pre>
+<hr>
+
+<h3 id="function-calcanim">function calcAnim</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::calcAnim () 
+</code></pre>
+<hr>
+
+<h3 id="function-control">function control</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::control () 
+</code></pre>
+<hr>
+
+<h3 id="function-getaudiokeeper">function getAudioKeeper</h3>
+<pre><code class="language-C++">virtual AudioKeeper * al::LayoutActor::getAudioKeeper () const
+</code></pre>
+<p>Implements <a href="../classal_1_1IUseAudioKeeper/#function-getaudiokeeper"><em>al::IUseAudioKeeper::getAudioKeeper</em></a></p>
+<hr>
+
+<h3 id="function-geteffectkeeper">function getEffectKeeper</h3>
+<pre><code class="language-C++">virtual EffectKeeper * al::LayoutActor::getEffectKeeper () const
+</code></pre>
+<p>Implements <a href="../classal_1_1IUseEffectKeeper/#function-geteffectkeeper"><em>al::IUseEffectKeeper::getEffectKeeper</em></a></p>
+<hr>
+
+<h3 id="function-getnervekeeper">function getNerveKeeper</h3>
+<pre><code class="language-C++">virtual NerveKeeper * al::LayoutActor::getNerveKeeper () const
+</code></pre>
+<p>Implements <a href="../classal_1_1IUseNerve/#function-getnervekeeper"><em>al::IUseNerve::getNerveKeeper</em></a></p>
+<hr>
+
+<h3 id="function-initnerve">function initNerve</h3>
+<pre><code class="language-C++">void al::LayoutActor::initNerve (
+    const  Nerve * nerve,
+    int maxNerveStates=0
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-kill">function kill</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::kill () 
+</code></pre>
+<hr>
+
+<h3 id="function-movement">function movement</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::movement () 
+</code></pre>
+<hr>
+
+<h3 id="function-unk1">function unk1</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::unk1 () 
+</code></pre>
+<hr>
+
+<h3 id="function-unk2">function unk2</h3>
+<pre><code class="language-C++">virtual void al::LayoutActor::unk2 () 
+</code></pre>
+<hr>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-_20">variable _20</h3>
+<pre><code class="language-C++">void* al::LayoutActor::_20;
+</code></pre>
+<hr>
+
+<h3 id="variable-_24">variable _24</h3>
+<pre><code class="language-C++">void* al::LayoutActor::_24;
+</code></pre>
+<hr>
+
+<h3 id="variable-_28">variable _28</h3>
+<pre><code class="language-C++">void* al::LayoutActor::_28;
+</code></pre>
+<hr>
+
+<h3 id="variable-maudiokeeper">variable mAudioKeeper</h3>
+<pre><code class="language-C++">AudioKeeper* al::LayoutActor::mAudioKeeper;
+</code></pre>
+<hr>
+
+<h3 id="variable-meffectkeeper">variable mEffectKeeper</h3>
+<pre><code class="language-C++">EffectKeeper* al::LayoutActor::mEffectKeeper;
+</code></pre>
+<hr>
+
+<h3 id="variable-misalive">variable mIsAlive</h3>
+<pre><code class="language-C++">bool al::LayoutActor::mIsAlive;
+</code></pre>
+<hr>
+
+<h3 id="variable-mname">variable mName</h3>
+<pre><code class="language-C++">sead::SafeString al::LayoutActor::mName;
+</code></pre>
+<hr>
+
+<h3 id="variable-mnervekeeper">variable mNerveKeeper</h3>
+<pre><code class="language-C++">NerveKeeper* al::LayoutActor::mNerveKeeper;
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Layout/alLayoutActor.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

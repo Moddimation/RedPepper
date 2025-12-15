@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::FixedPtrArray - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadfixedptrarray">Class sead::FixedPtrArray</h1>
+<p><strong>template &lt;typename T, s32 N&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>FixedPtrArray</strong></a></p>
+<p>Inherits the following classes: <a href="../classsead_1_1PtrArray/">sead::PtrArray</a></p>
+<h2 id="public-types-inherited-from-seadptrarray">Public Types inherited from sead::PtrArray</h2>
+<p>See <a href="../classsead_1_1PtrArray/">sead::PtrArray</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef s32(*</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#typedef-comparecallback"><strong>CompareCallback</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-fixedptrarray"><strong>FixedPtrArray</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-seadptrarray">Public Functions inherited from sead::PtrArray</h2>
+<p>See <a href="../classsead_1_1PtrArray/">sead::PtrArray</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-ptrarray-12"><strong>PtrArray</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-ptrarray-22"><strong>PtrArray</strong></a> (s32 ptrNumMax, T ** buf) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-at"><strong>at</strong></a> (s32 pos) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-back"><strong>back</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1PtrArray_1_1iterator/"><strong>iterator</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-begin"><strong>begin</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-binarysearch-12"><strong>binarySearch</strong></a> (const T * ptr) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-binarysearch-22"><strong>binarySearch</strong></a> (const T * ptr, CompareCallback cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-compare"><strong>compare</strong></a> (const <a href="../classsead_1_1PtrArray/"><strong>PtrArray</strong></a> &amp; other, CompareCallback cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1PtrArray_1_1constIterator/"><strong>constIterator</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-constbegin"><strong>constBegin</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1PtrArray_1_1constIterator/"><strong>constIterator</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-constend"><strong>constEnd</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T **</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-data"><strong>data</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T **</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-databegin"><strong>dataBegin</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T **</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-dataend"><strong>dataEnd</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1PtrArray_1_1iterator/"><strong>iterator</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-end"><strong>end</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-equal"><strong>equal</strong></a> (const <a href="../classsead_1_1PtrArray/"><strong>PtrArray</strong></a> &amp; other, CompareCallback cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-find"><strong>find</strong></a> (const T * ptr, CompareCallback cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-front"><strong>front</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-indexof"><strong>indexOf</strong></a> (const T * ptr) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-insert-12"><strong>insert</strong></a> (s32 pos, T * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-insert-22"><strong>insert</strong></a> (s32 pos, T * array, s32 count) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-operator"><strong>operator!=</strong></a> (const <a href="../classsead_1_1PtrArray/"><strong>PtrArray</strong></a> &amp; other) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-operator_1"><strong>operator()</strong></a> (s32 pos) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-operator_2"><strong>operator==</strong></a> (const <a href="../classsead_1_1PtrArray/"><strong>PtrArray</strong></a> &amp; other) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-operator_3"><strong>operator[]</strong></a> (s32 pos) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-popback"><strong>popBack</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-popfront"><strong>popFront</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-pushback"><strong>pushBack</strong></a> (T * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-pushfront"><strong>pushFront</strong></a> (T * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-replace"><strong>replace</strong></a> (s32 pos, T * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-search"><strong>search</strong></a> (const T * ptr, CompareCallback cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-uniq-12"><strong>uniq</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-uniq-22"><strong>uniq</strong></a> (CompareCallback cmp) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-unsafeat"><strong>unsafeAt</strong></a> (s32 pos) const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-seadptrarrayimpl">Public Functions inherited from sead::PtrArrayImpl</h2>
+<p>See <a href="../classsead_1_1PtrArrayImpl/">sead::PtrArrayImpl</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-ptrarrayimpl-12"><strong>PtrArrayImpl</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-ptrarrayimpl-22"><strong>PtrArrayImpl</strong></a> (s32 ptrNumMax, void * buf) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-allocbuffer"><strong>allocBuffer</strong></a> (s32 ptrNumMax, <a href="../classsead_1_1Heap/"><strong>Heap</strong></a> * heap, s32 alignment=sizeof(void *)) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-allocbufferinline"><strong>allocBufferInline</strong></a> (s32 ptrNumMax) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-capacity"><strong>capacity</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-clear"><strong>clear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-erase-12"><strong>erase</strong></a> (s32 position) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-erase-22"><strong>erase</strong></a> (s32 position, s32 count) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-freebuffer"><strong>freeBuffer</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-isbufferready"><strong>isBufferReady</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-isempty"><strong>isEmpty</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-isfull"><strong>isFull</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-resize"><strong>resize</strong></a> (s32 size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-reverse"><strong>reverse</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-setbuffer"><strong>setBuffer</strong></a> (s32 ptrNumMax, void * buf) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-shuffle-12"><strong>shuffle</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-shuffle-22"><strong>shuffle</strong></a> (<a href="../classsead_1_1Random/"><strong>Random</strong></a> * random) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-size"><strong>size</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-swap"><strong>swap</strong></a> (s32 pos1, s32 pos2) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-tryallocbuffer"><strong>tryAllocBuffer</strong></a> (s32 ptrNumMax, <a href="../classsead_1_1Heap/"><strong>Heap</strong></a> * heap, s32 alignment=sizeof(void *)) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-unsaferesize"><strong>unsafeResize</strong></a> (s32 size) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-types-inherited-from-seadptrarrayimpl">Protected Types inherited from sead::PtrArrayImpl</h2>
+<p>See <a href="../classsead_1_1PtrArrayImpl/">sead::PtrArrayImpl</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef int(*</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#typedef-comparecallbackimpl"><strong>CompareCallbackImpl</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-seadptrarrayimpl">Protected Attributes inherited from sead::PtrArrayImpl</h2>
+<p>See <a href="../classsead_1_1PtrArrayImpl/">sead::PtrArrayImpl</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#variable-mptrnum"><strong>mPtrNum</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#variable-mptrnummax"><strong>mPtrNumMax</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void **</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#variable-mptrs"><strong>mPtrs</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-seadptrarrayimpl">Protected Functions inherited from sead::PtrArrayImpl</h2>
+<p>See <a href="../classsead_1_1PtrArrayImpl/">sead::PtrArrayImpl</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-at"><strong>at</strong></a> (s32 idx) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-back"><strong>back</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-binarysearch"><strong>binarySearch</strong></a> (const void * ptr, CompareCallbackImpl cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-checkinsert"><strong>checkInsert</strong></a> (s32 idx, s32 num) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-compare"><strong>compare</strong></a> (const <a href="../classsead_1_1PtrArrayImpl/"><strong>PtrArrayImpl</strong></a> &amp; other, CompareCallbackImpl cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-createvacancy"><strong>createVacancy</strong></a> (s32 pos, s32 count) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-equal"><strong>equal</strong></a> (const <a href="../classsead_1_1PtrArrayImpl/"><strong>PtrArrayImpl</strong></a> &amp; other, CompareCallbackImpl cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-find"><strong>find</strong></a> (const void * ptr, CompareCallbackImpl cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-front"><strong>front</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-heapsort"><strong>heapSort</strong></a> (CompareCallbackImpl cmp) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-indexof"><strong>indexOf</strong></a> (const void * ptr) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-insert"><strong>insert</strong></a> (s32 idx, void * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-insertarray"><strong>insertArray</strong></a> (s32 idx, void * array, s32 array_length, s32 elem_size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-popback"><strong>popBack</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-popfront"><strong>popFront</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-pushback"><strong>pushBack</strong></a> (void * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-pushfront"><strong>pushFront</strong></a> (void * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-replace"><strong>replace</strong></a> (s32 idx, void * ptr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-search"><strong>search</strong></a> (const void * ptr, CompareCallbackImpl cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-uniq"><strong>uniq</strong></a> (CompareCallbackImpl cmp) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArrayImpl/#function-unsafeat"><strong>unsafeAt</strong></a> (s32 idx) const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-static-functions-inherited-from-seadptrarray">Protected Static Functions inherited from sead::PtrArray</h2>
+<p>See <a href="../classsead_1_1PtrArray/">sead::PtrArray</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="../classsead_1_1PtrArray/#function-comparet"><strong>compareT</strong></a> (const void * a_, const void * b_) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-fixedptrarray">function FixedPtrArray</h3>
+<pre><code class="language-C++">inline sead::FixedPtrArray::FixedPtrArray () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/container/seadPtrArray.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

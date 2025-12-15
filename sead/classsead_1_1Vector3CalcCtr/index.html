@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::Vector3CalcCtr - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadvector3calcctr">Class sead::Vector3CalcCtr</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>Vector3CalcCtr</strong></a></p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef <a href="../classsead_1_1Policies/"><strong>Policies</strong></a>&lt; T &gt;::Vec3Base</td>
+<td style="text-align: left;"><a href="#typedef-base"><strong>Base</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">typedef <a href="../classsead_1_1Policies/"><strong>Policies</strong></a>&lt; T &gt;::Mtx33Base</td>
+<td style="text-align: left;"><a href="#typedef-mtx33"><strong>Mtx33</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">typedef <a href="../classsead_1_1Policies/"><strong>Policies</strong></a>&lt; T &gt;::Mtx34Base</td>
+<td style="text-align: left;"><a href="#typedef-mtx34"><strong>Mtx34</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-add-22"><strong>add</strong></a> (Base &amp; o, const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-multscalar-22"><strong>multScalar</strong></a> (Base &amp; o, const Base &amp; v, f32 t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-sub-22"><strong>sub</strong></a> (Base &amp; o, const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions">Public Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-add-12"><strong>add</strong></a> (Base &amp; o, const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-cross"><strong>cross</strong></a> (Base &amp; o, const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-dot"><strong>dot</strong></a> (const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-equals"><strong>equals</strong></a> (const Base &amp; lhs, const Base &amp; rhs, T epsilon) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-length"><strong>length</strong></a> (const Base &amp; v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-mul-12"><strong>mul</strong></a> (Base &amp; o, const <a href="../structsead_1_1BaseMtx33/"><strong>Mtx33</strong></a> &amp; m, const Base &amp; a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-mul-22"><strong>mul</strong></a> (Base &amp; o, const <a href="../structsead_1_1BaseMtx34/"><strong>Mtx34</strong></a> &amp; m, const Base &amp; a) <br><em>Apply a transformation</em> <code>m</code> <em>(rotation + translation) to the vector</em><code>a</code> <em>.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-multscalar-12"><strong>multScalar</strong></a> (Base &amp; o, const Base &amp; v, T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-multscalaradd"><strong>multScalarAdd</strong></a> (Base &amp; o, T t, const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-normalize"><strong>normalize</strong></a> (Base &amp; v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set-12"><strong>set</strong></a> (Base &amp; o, const Base &amp; v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set-22"><strong>set</strong></a> (Base &amp; v, T x, T y, T z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-squaredlength"><strong>squaredLength</strong></a> (const Base &amp; v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-sub-12"><strong>sub</strong></a> (Base &amp; o, const Base &amp; a, const Base &amp; b) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="typedef-base">typedef Base</h3>
+<pre><code class="language-C++">typedef Policies&lt;T&gt;::Vec3Base sead::Vector3CalcCtr&lt; T &gt;::Base;
+</code></pre>
+<hr>
+
+<h3 id="typedef-mtx33">typedef Mtx33</h3>
+<pre><code class="language-C++">typedef Policies&lt;T&gt;::Mtx33Base sead::Vector3CalcCtr&lt; T &gt;::Mtx33;
+</code></pre>
+<hr>
+
+<h3 id="typedef-mtx34">typedef Mtx34</h3>
+<pre><code class="language-C++">typedef Policies&lt;T&gt;::Mtx34Base sead::Vector3CalcCtr&lt; T &gt;::Mtx34;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-add-22">function add [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3CalcCtr::add (
+    Base &amp; o,
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-multscalar-22">function multScalar [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3CalcCtr::multScalar (
+    Base &amp; o,
+    const Base &amp; v,
+    f32 t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sub-22">function sub [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3CalcCtr::sub (
+    Base &amp; o,
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+<h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
+<h3 id="function-add-12">function add [1/2]</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::add (
+    Base &amp; o,
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-cross">function cross</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::cross (
+    Base &amp; o,
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-dot">function dot</h3>
+<pre><code class="language-C++">static inline T sead::Vector3CalcCtr::dot (
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-equals">function equals</h3>
+<pre><code class="language-C++">static inline bool sead::Vector3CalcCtr::equals (
+    const Base &amp; lhs,
+    const Base &amp; rhs,
+    T epsilon
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-length">function length</h3>
+<pre><code class="language-C++">static inline T sead::Vector3CalcCtr::length (
+    const Base &amp; v
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-mul-12">function mul [1/2]</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::mul (
+    Base &amp; o,
+    const Mtx33 &amp; m,
+    const Base &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-mul-22">function mul [2/2]</h3>
+<p><em>Apply a transformation</em> <code>m</code> <em>(rotation + translation) to the vector</em><code>a</code> <em>.</em></p>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::mul (
+    Base &amp; o,
+    const Mtx34 &amp; m,
+    const Base &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-multscalar-12">function multScalar [1/2]</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::multScalar (
+    Base &amp; o,
+    const Base &amp; v,
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-multscalaradd">function multScalarAdd</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::multScalarAdd (
+    Base &amp; o,
+    T t,
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-normalize">function normalize</h3>
+<pre><code class="language-C++">static T sead::Vector3CalcCtr::normalize (
+    Base &amp; v
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-set-12">function set [1/2]</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::set (
+    Base &amp; o,
+    const Base &amp; v
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-set-22">function set [2/2]</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::set (
+    Base &amp; v,
+    T x,
+    T y,
+    T z
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-squaredlength">function squaredLength</h3>
+<pre><code class="language-C++">static inline T sead::Vector3CalcCtr::squaredLength (
+    const Base &amp; v
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sub-12">function sub [1/2]</h3>
+<pre><code class="language-C++">static inline void sead::Vector3CalcCtr::sub (
+    Base &amp; o,
+    const Base &amp; a,
+    const Base &amp; b
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/math/seadVectorCalcCtr.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

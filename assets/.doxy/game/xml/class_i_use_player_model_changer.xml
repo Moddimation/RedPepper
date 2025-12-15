@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_i_use_player_model_changer" kind="class" language="C++" prot="public">
+    <compoundname>IUsePlayerModelChanger</compoundname>
+    <derivedcompoundref refid="class_player_model_holder" prot="public" virt="non-virtual">PlayerModelHolder</derivedcompoundref>
+    <includes refid="_player_model_holder_8h" local="no">PlayerModelHolder.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_use_player_model_changer_1a12aa9daa3204bdfdd1b492333381d5d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void IUsePlayerModelChanger::change</definition>
+        <argsstring>(const EPlayerFigure &amp;figure)</argsstring>
+        <name>change</name>
+        <qualifiedname>IUsePlayerModelChanger::change</qualifiedname>
+        <reimplementedby refid="class_player_model_holder_1a975ecd53b42e6f76b0d20671e4632577">change</reimplementedby>
+        <param>
+          <type>const <ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref> &amp;</type>
+          <declname>figure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="15" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IUsePlayerModelChanger</label>
+        <link refid="class_i_use_player_model_changer"/>
+      </node>
+      <node id="2">
+        <label>PlayerModelHolder</label>
+        <link refid="class_player_model_holder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Game/include/Player/PlayerModelHolder.h" line="12" column="1" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="13" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_i_use_player_model_changer_1a12aa9daa3204bdfdd1b492333381d5d1" prot="public" virt="virtual"><scope>IUsePlayerModelChanger</scope><name>change</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

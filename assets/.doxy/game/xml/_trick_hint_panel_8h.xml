@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_trick_hint_panel_8h" kind="file" language="C++">
+    <compoundname>TrickHintPanel.h</compoundname>
+    <includes local="no">MapObj/alMapObjActor.h</includes>
+    <includedby refid="_trick_hint_panel_8cpp" local="yes">TrickHintPanel.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>TrickHintPanel.h</label>
+        <link refid="_trick_hint_panel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MapObj/alMapObjActor.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>TrickHintPanel.h</label>
+        <link refid="_trick_hint_panel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TrickHintPanel.cpp</label>
+        <link refid="_trick_hint_panel_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_trick_hint_panel" prot="public">TrickHintPanel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MapObj/alMapObjActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_trick_hint_panel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_trick_hint_panel" kindref="compound">TrickHintPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>al::MapObjActor</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8" refid="class_trick_hint_panel_1a6e70167c901f723fb16e3fed4767709e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><ref refid="class_trick_hint_panel_1a6e70167c901f723fb16e3fed4767709e" kindref="member">_96</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_trick_hint_panel_1a049f596e17ce776c1246ef74e37baef6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1a049f596e17ce776c1246ef74e37baef6" kindref="member">mPlayedSound</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1ad6db3aa8b1645b02dcf2c10513f18f53" kindref="member">exeWait</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1a8f4c4293f418160a569d6e12d9306db8" kindref="member">exeOn</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1a375ef84fa70a470e9027d43cae417a11" kindref="member">exenrv3</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1a1e2a4496107c674d8e05ce4957d33590" kindref="member">exeOff</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1a02c521ae794ecbba99dea4b567702044" kindref="member">init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::ActorInitInfo&amp;<sp/>info<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_trick_hint_panel_1adfd604eb286e022082189d995470301d" kindref="member">receiveMsg</ref>(<sp/>u32<sp/>msg,<sp/>al::HitSensor*<sp/>other,<sp/>al::HitSensor*<sp/>me<sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_trick_hint_panel" kindref="compound">TrickHintPanel</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/MapObj/TrickHintPanel.h"/>
+  </compounddef>
+</doxygen>

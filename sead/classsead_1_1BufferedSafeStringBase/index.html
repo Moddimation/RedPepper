@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::BufferedSafeStringBase - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadbufferedsafestringbase">Class sead::BufferedSafeStringBase</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>BufferedSafeStringBase</strong></a></p>
+<p>Inherits the following classes: <a href="../classsead_1_1SafeStringBase/">sead::SafeStringBase</a></p>
+<p>Inherited by the following classes: <a href="../classsead_1_1FixedSafeStringBase/">sead::FixedSafeStringBase</a>,  <a href="../classsead_1_1FixedSafeStringBase/">sead::FixedSafeStringBase</a></p>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#variable-else"><strong>else</strong></a>   = <code>/* multi line expression */</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#variable-size"><strong>size</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes-inherited-from-seadsafestringbase">Public Static Attributes inherited from sead::SafeStringBase</h2>
+<p>See <a href="../classsead_1_1SafeStringBase/">sead::SafeStringBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#variable-cemptystring"><strong>cEmptyString</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const T</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#variable-clinebreakchar"><strong>cLineBreakChar</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const s32</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#variable-cmaximumlength"><strong>cMaximumLength</strong></a>   = <code>0x80000</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const T</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#variable-cnullchar"><strong>cNullChar</strong></a>   = <code>0</code><br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-bufferedsafestringbase"><strong>BufferedSafeStringBase</strong></a> (const <a href="./"><strong>BufferedSafeStringBase</strong></a> &amp;) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-__attribute__"><strong>__attribute__</strong></a> ((always_inline)) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-append-13"><strong>append</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; str, s32 append_length=-1) <br><em>Append append_length characters from str.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-append-23"><strong>append</strong></a> (T c) <br><em>Append a character.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-append-33"><strong>append</strong></a> (T c, s32 n) <br><em>Append a character n times.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-appendwithformat-13"><strong>appendWithFormat</strong></a> (const T * formatStr, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-appendwithformat-23"><strong>appendWithFormat</strong></a> (const char * formatStr, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-appendwithformat-33"><strong>appendWithFormat</strong></a> (const char16 * formatStr, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-appendwithformatv-13"><strong>appendWithFormatV</strong></a> (const T * formatStr, va_list args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-appendwithformatv-23"><strong>appendWithFormatV</strong></a> (const char * formatStr, va_list args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-appendwithformatv-33"><strong>appendWithFormatV</strong></a> (const char16 * formatStr, va_list args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-chop"><strong>chop</strong></a> (s32 num) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-chopmatchedchar-12"><strong>chopMatchedChar</strong></a> (T c) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-chopmatchedchar-22"><strong>chopMatchedChar</strong></a> (const T * characters) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-chopunprintableasciichar"><strong>chopUnprintableAsciiChar</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-clear"><strong>clear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-convertfrommultibytestring"><strong>convertFromMultiByteString</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; char &gt; &amp; str, s32 str_length) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-convertfromwidecharstring"><strong>convertFromWideCharString</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; char16 &gt; &amp; str, s32 str_length) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-copy"><strong>copy</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; src, s32 copyLength=-1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-copyat"><strong>copyAt</strong></a> (s32 at, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; src, s32 copyLength=-1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-copyatwithterminate"><strong>copyAtWithTerminate</strong></a> (s32 at, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; src, s32 copyLength=-1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-cutoffcopy"><strong>cutOffCopy</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; src, s32 copyLength=-1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-cutoffcopyat"><strong>cutOffCopyAt</strong></a> (s32 at, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; src, s32 copyLength=-1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-format-13"><strong>format</strong></a> (const T * format, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-format-23"><strong>format</strong></a> (const char * formatStr, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-format-33"><strong>format</strong></a> (const char16 * formatStr, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-formatv-13"><strong>formatV</strong></a> (const T * format, va_list args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-formatv-23"><strong>formatV</strong></a> (const char * formatStr, va_list args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-formatv-33"><strong>formatV</strong></a> (const char16 * formatStr, va_list args) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="#function-getbuffer"><strong>getBuffer</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-getbuffersize"><strong>getBufferSize</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-if"><strong>if</strong></a> (size&lt;= 0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const T &amp;</td>
+<td style="text-align: left;"><a href="#function-operator"><strong>operator[]</strong></a> (s32 idx) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-prepend"><strong>prepend</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; str, s32 prepend_length=-1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-removesuffix"><strong>removeSuffix</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; suffix) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-replacechar"><strong>replaceChar</strong></a> (T old_char, T new_char) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-replacecharlist"><strong>replaceCharList</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; old_chars, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; new_chars) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-replacestring"><strong>replaceString</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; old_str, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; new_str) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-rstrip"><strong>rstrip</strong></a> (const T * characters) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-rstripunprintableasciichars"><strong>rstripUnprintableAsciiChars</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-setreplacestring"><strong>setReplaceString</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; target_str, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; old_str, const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; new_str) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-trim"><strong>trim</strong></a> (s32 trim_length) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-trimmatchedstring"><strong>trimMatchedString</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; suffix) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-seadsafestringbase">Public Functions inherited from sead::SafeStringBase</h2>
+<p>See <a href="../classsead_1_1SafeStringBase/">sead::SafeStringBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-safestringbase-13"><strong>SafeStringBase</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-safestringbase-23"><strong>SafeStringBase</strong></a> (const T * str) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-safestringbase-33"><strong>SafeStringBase</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-assureterminationimpl_"><strong>assureTerminationImpl_</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-cstr"><strong>cstr</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-isequal"><strong>isEqual</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; T &gt; &amp; str) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-safestringbase"><strong>~SafeStringBase</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#variable-mbuffersize"><strong>mBufferSize</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-seadsafestringbase">Protected Attributes inherited from sead::SafeStringBase</h2>
+<p>See <a href="../classsead_1_1SafeStringBase/">sead::SafeStringBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const T *</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#variable-mstringtop"><strong>mStringTop</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions">Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-convertfromothertype_"><strong>convertFromOtherType_</strong></a> (const <a href="../classsead_1_1SafeStringBase/"><strong>SafeStringBase</strong></a>&lt; OtherType &gt; &amp; src, s32 src_size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="#function-getmutablestringtop_"><strong>getMutableStringTop_</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-seadsafestringbase">Protected Functions inherited from sead::SafeStringBase</h2>
+<p>See <a href="../classsead_1_1SafeStringBase/">sead::SafeStringBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const T &amp;</td>
+<td style="text-align: left;"><a href="../classsead_1_1SafeStringBase/#function-unsafeat_"><strong>unsafeAt_</strong></a> (s32 idx) const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-static-functions">Protected Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-formatimpl_"><strong>formatImpl_</strong></a> (T * dst, s32 dst_size, const T * format, va_list arg) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-else">variable else</h3>
+<pre><code class="language-C++">sead::BufferedSafeStringBase&lt; T &gt;::else;
+</code></pre>
+<hr>
+
+<h3 id="variable-size">variable size</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase&lt; T &gt;::size;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-bufferedsafestringbase">function BufferedSafeStringBase</h3>
+<pre><code class="language-C++">sead::BufferedSafeStringBase::BufferedSafeStringBase (
+    const BufferedSafeStringBase &amp;
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-__attribute__">function __attribute__</h3>
+<pre><code class="language-C++">sead::BufferedSafeStringBase::__attribute__ (
+    (always_inline)
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-append-13">function append [1/3]</h3>
+<p><em>Append append_length characters from str.</em> </p>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::append (
+    const SafeStringBase &lt; T &gt; &amp; str,
+    s32 append_length=-1
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-append-23">function append [2/3]</h3>
+<p><em>Append a character.</em> </p>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::append (
+    T c
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-append-33">function append [3/3]</h3>
+<p><em>Append a character n times.</em> </p>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::append (
+    T c,
+    s32 n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appendwithformat-13">function appendWithFormat [1/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::appendWithFormat (
+    const T * formatStr,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appendwithformat-23">function appendWithFormat [2/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::appendWithFormat (
+    const char * formatStr,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appendwithformat-33">function appendWithFormat [3/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::appendWithFormat (
+    const char16 * formatStr,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appendwithformatv-13">function appendWithFormatV [1/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::appendWithFormatV (
+    const T * formatStr,
+    va_list args
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appendwithformatv-23">function appendWithFormatV [2/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::appendWithFormatV (
+    const char * formatStr,
+    va_list args
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appendwithformatv-33">function appendWithFormatV [3/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::appendWithFormatV (
+    const char16 * formatStr,
+    va_list args
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-chop">function chop</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::chop (
+    s32 num
+) 
+</code></pre>
+<p>Remove num characters from the end of the string. </p>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were removed </p>
+<hr>
+
+<h3 id="function-chopmatchedchar-12">function chopMatchedChar [1/2]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::chopMatchedChar (
+    T c
+) 
+</code></pre>
+<p>Remove the last character if it is equal to c. </p>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were removed </p>
+<hr>
+
+<h3 id="function-chopmatchedchar-22">function chopMatchedChar [2/2]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::chopMatchedChar (
+    const T * characters
+) 
+</code></pre>
+<p>Remove the last character if it is equal to any of the specified characters. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>characters</code> List of characters to remove </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were removed </p>
+<hr>
+
+<h3 id="function-chopunprintableasciichar">function chopUnprintableAsciiChar</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::chopUnprintableAsciiChar () 
+</code></pre>
+<p>Remove the last character if it is unprintable. </p>
+<p><strong>Warning:</strong></p>
+<p>The behavior of this function is not standard: a character is considered unprintable if it is &lt;= 0x20 or == 0x7F. In particular, the space character is unprintable. </p>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were removed </p>
+<hr>
+
+<h3 id="function-clear">function clear</h3>
+<pre><code class="language-C++">inline void sead::BufferedSafeStringBase::clear () 
+</code></pre>
+<hr>
+
+<h3 id="function-convertfrommultibytestring">function convertFromMultiByteString</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::convertFromMultiByteString (
+    const SafeStringBase &lt; char &gt; &amp; str,
+    s32 str_length
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-convertfromwidecharstring">function convertFromWideCharString</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::convertFromWideCharString (
+    const SafeStringBase &lt; char16 &gt; &amp; str,
+    s32 str_length
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-copy">function copy</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::copy (
+    const SafeStringBase &lt; T &gt; &amp; src,
+    s32 copyLength=-1
+) 
+</code></pre>
+<p>Copy up to copyLength characters to the beginning of the string, then writes NUL. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>src</code> Source string </li>
+<li><code>copyLength</code> Number of characters from src to copy (must not cause a buffer overflow) </li>
+</ul>
+<hr>
+
+<h3 id="function-copyat">function copyAt</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::copyAt (
+    s32 at,
+    const SafeStringBase &lt; T &gt; &amp; src,
+    s32 copyLength=-1
+) 
+</code></pre>
+<p>Copy up to copyLength characters to the specified position, then writes NUL if the copy makes this string longer. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>at</code> Start position (-1 for end of string) </li>
+<li><code>src</code> Source string </li>
+<li><code>copyLength</code> Number of characters from src to copy (must not cause a buffer overflow) </li>
+</ul>
+<hr>
+
+<h3 id="function-copyatwithterminate">function copyAtWithTerminate</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::copyAtWithTerminate (
+    s32 at,
+    const SafeStringBase &lt; T &gt; &amp; src,
+    s32 copyLength=-1
+) 
+</code></pre>
+<p>Copy up to copyLength characters to the specified position, then <em>always</em> writes NUL. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>at</code> Start position (-1 for end of string) </li>
+<li><code>src</code> Source string </li>
+<li><code>copyLength</code> Number of characters from src to copy (must not cause a buffer overflow) </li>
+</ul>
+<hr>
+
+<h3 id="function-cutoffcopy">function cutOffCopy</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::cutOffCopy (
+    const SafeStringBase &lt; T &gt; &amp; src,
+    s32 copyLength=-1
+) 
+</code></pre>
+<p>Copy up to copyLength characters to the beginning of the string, then writes NUL. Silently truncates the source string if the buffer is too small. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>src</code> Source string </li>
+<li><code>copyLength</code> Number of characters from src to copy </li>
+</ul>
+<hr>
+
+<h3 id="function-cutoffcopyat">function cutOffCopyAt</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::cutOffCopyAt (
+    s32 at,
+    const SafeStringBase &lt; T &gt; &amp; src,
+    s32 copyLength=-1
+) 
+</code></pre>
+<p>Copy up to copyLength characters to the specified position, then writes NUL if the copy makes this string longer. Silently truncates the source string if the buffer is too small. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>at</code> Start position (-1 for end of string) </li>
+<li><code>src</code> Source string </li>
+<li><code>copyLength</code> Number of characters from src to copy </li>
+</ul>
+<hr>
+
+<h3 id="function-format-13">function format [1/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::format (
+    const T * format,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-format-23">function format [2/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::format (
+    const char * formatStr,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-format-33">function format [3/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::format (
+    const char16 * formatStr,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-formatv-13">function formatV [1/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::formatV (
+    const T * format,
+    va_list args
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-formatv-23">function formatV [2/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::formatV (
+    const char * formatStr,
+    va_list args
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-formatv-33">function formatV [3/3]</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::formatV (
+    const char16 * formatStr,
+    va_list args
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getbuffer">function getBuffer</h3>
+<pre><code class="language-C++">inline T * sead::BufferedSafeStringBase::getBuffer () 
+</code></pre>
+<hr>
+
+<h3 id="function-getbuffersize">function getBufferSize</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::getBufferSize () const
+</code></pre>
+<hr>
+
+<h3 id="function-if">function if</h3>
+<pre><code class="language-C++">inline sead::BufferedSafeStringBase::if (
+    size&lt;= 0
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator">function operator[]</h3>
+<pre><code class="language-C++">const T &amp; sead::BufferedSafeStringBase::operator[] (
+    s32 idx
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-prepend">function prepend</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::prepend (
+    const SafeStringBase &lt; T &gt; &amp; str,
+    s32 prepend_length=-1
+) 
+</code></pre>
+<p>Append prepend_length characters from str. </p>
+<p><strong>Returns:</strong></p>
+<p>the new length </p>
+<hr>
+
+<h3 id="function-removesuffix">function removeSuffix</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::removeSuffix (
+    const SafeStringBase &lt; T &gt; &amp; suffix
+) 
+</code></pre>
+<p>Remove the specified suffix from the string if it ends with the suffix. Alias of trimMatchedString. </p>
+<p><strong>Returns:</strong></p>
+<p>the new length </p>
+<hr>
+
+<h3 id="function-replacechar">function replaceChar</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::replaceChar (
+    T old_char,
+    T new_char
+) 
+</code></pre>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were replaced </p>
+<hr>
+
+<h3 id="function-replacecharlist">function replaceCharList</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::replaceCharList (
+    const SafeStringBase &lt; T &gt; &amp; old_chars,
+    const SafeStringBase &lt; T &gt; &amp; new_chars
+) 
+</code></pre>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were replaced </p>
+<hr>
+
+<h3 id="function-replacestring">function replaceString</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::replaceString (
+    const SafeStringBase &lt; T &gt; &amp; old_str,
+    const SafeStringBase &lt; T &gt; &amp; new_str
+) 
+</code></pre>
+<p>Replace occurrences of old_str in this string with new_str. </p>
+<p><strong>Returns:</strong></p>
+<p>the number of replaced occurrences </p>
+<hr>
+
+<h3 id="function-rstrip">function rstrip</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::rstrip (
+    const T * characters
+) 
+</code></pre>
+<p>Remove trailing characters that are in the specified list. </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>characters</code> List of characters to remove </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were removed </p>
+<hr>
+
+<h3 id="function-rstripunprintableasciichars">function rstripUnprintableAsciiChars</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase::rstripUnprintableAsciiChars () 
+</code></pre>
+<p>Remove trailing characters that are unprintable. </p>
+<p><strong>Warning:</strong></p>
+<p>The behavior of this function is not standard: a character is considered unprintable if it is &lt;= 0x20 or == 0x7F. In particular, the space character is unprintable. </p>
+<p><strong>Returns:</strong></p>
+<p>the number of characters that were removed </p>
+<hr>
+
+<h3 id="function-setreplacestring">function setReplaceString</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::setReplaceString (
+    const SafeStringBase &lt; T &gt; &amp; target_str,
+    const SafeStringBase &lt; T &gt; &amp; old_str,
+    const SafeStringBase &lt; T &gt; &amp; new_str
+) 
+</code></pre>
+<p>Set the contents of this string to target_str, after replacing occurrences of old_str in target_str with new_str. </p>
+<p><strong>Returns:</strong></p>
+<p>the number of replaced occurrences </p>
+<hr>
+
+<h3 id="function-trim">function trim</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::trim (
+    s32 trim_length
+) 
+</code></pre>
+<p>Trim a string to only keep trimLength characters. </p>
+<p><strong>Returns:</strong></p>
+<p>the new length </p>
+<hr>
+
+<h3 id="function-trimmatchedstring">function trimMatchedString</h3>
+<pre><code class="language-C++">inline s32 sead::BufferedSafeStringBase::trimMatchedString (
+    const SafeStringBase &lt; T &gt; &amp; suffix
+) 
+</code></pre>
+<p>Remove the specified suffix from the string if it ends with the suffix. </p>
+<p><strong>Returns:</strong></p>
+<p>the new length </p>
+<hr>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-mbuffersize">variable mBufferSize</h3>
+<pre><code class="language-C++">s32 sead::BufferedSafeStringBase&lt; T &gt;::mBufferSize;
+</code></pre>
+<hr>
+<h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
+<h3 id="function-convertfromothertype_">function convertFromOtherType_</h3>
+<pre><code class="language-C++">template&lt;typename OtherType&gt;
+s32 sead::BufferedSafeStringBase::convertFromOtherType_ (
+    const SafeStringBase &lt; OtherType &gt; &amp; src,
+    s32 src_size
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getmutablestringtop_">function getMutableStringTop_</h3>
+<pre><code class="language-C++">inline T * sead::BufferedSafeStringBase::getMutableStringTop_ () 
+</code></pre>
+<hr>
+<h2 id="protected-static-functions-documentation">Protected Static Functions Documentation</h2>
+<h3 id="function-formatimpl_">function formatImpl_</h3>
+<pre><code class="language-C++">static s32 sead::BufferedSafeStringBase::formatImpl_ (
+    T * dst,
+    s32 dst_size,
+    const T * format,
+    va_list arg
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/prim/seadSafeString.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

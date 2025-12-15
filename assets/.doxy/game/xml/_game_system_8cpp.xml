@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_game_system_8cpp" kind="file" language="C++">
+    <compoundname>GameSystem.cpp</compoundname>
+    <includes refid="_game_system_8h" local="yes">System/GameSystem.h</includes>
+    <includes local="no">System/Application.h</includes>
+    <includes local="no">System/ApplicationFunction.h</includes>
+    <includes local="no">heap/seadHeapMgr.h</includes>
+    <includes local="no">nn/cfg/CTR/cfg_Api.h</includes>
+    <includes local="no">nn/ndm/ndm_Api.h</includes>
+    <includes local="no">nn/fs/CTR/MPCore/detail/fs_UserFileSystem.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>System/GameSystem.h</label>
+        <link refid="_game_system_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GameSystem.cpp</label>
+        <link refid="_game_system_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Nerve/alNerveExecutor.h</label>
+      </node>
+      <node id="4">
+        <label>System/Application.h</label>
+      </node>
+      <node id="5">
+        <label>System/ApplicationFunction.h</label>
+      </node>
+      <node id="6">
+        <label>heap/seadHeapMgr.h</label>
+      </node>
+      <node id="7">
+        <label>nn/cfg/CTR/cfg_Api.h</label>
+      </node>
+      <node id="9">
+        <label>nn/fs/CTR/MPCore/detail/fs_UserFileSystem.h</label>
+      </node>
+      <node id="8">
+        <label>nn/ndm/ndm_Api.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_game_system_8cpp_1ae79180f8ae90e05743b47a872f305a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nnMain</definition>
+        <argsstring>()</argsstring>
+        <name>nnMain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/src/System/GameSystem.cpp" line="17" column="17" bodyfile="Game/src/System/GameSystem.cpp" bodystart="17" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_system_8h" kindref="compound">System/GameSystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;System/Application.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;System/ApplicationFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;heap/seadHeapMgr.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nn/cfg/CTR/cfg_Api.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nn/ndm/ndm_Api.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nn/fs/CTR/MPCore/detail/fs_UserFileSystem.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_game_system_1a9b2545e9fd2c31ac6ea03b3fcd5a4179" refkind="member"><highlight class="normal"><ref refid="class_game_system_1a9b2545e9fd2c31ac6ea03b3fcd5a4179" kindref="member">GameSystem::GameSystem</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>NerveExecutor(<sp/></highlight><highlight class="stringliteral">&quot;ゲームシステム&quot;</highlight><highlight class="normal"><sp/>),<sp/>mCurrentSequence(<sp/>nullptr<sp/>),<sp/>_C(<sp/>nullptr<sp/>),<sp/>_10(<sp/>nullptr<sp/>),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mLayoutKit(<sp/>nullptr<sp/>),<sp/>_18(<sp/>nullptr<sp/>),<sp/>mMessageSystem(<sp/>nullptr<sp/>),<sp/>_20(<sp/>nullptr<sp/>),<sp/>_24(<sp/>nullptr<sp/>),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mCourseList(<sp/>nullptr<sp/>),<sp/>_2C(<sp/>nullptr<sp/>),<sp/>_30(<sp/>nullptr<sp/>),<sp/>_34(<sp/>nullptr<sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_game_system_8cpp_1ae79180f8ae90e05743b47a872f305a52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_game_system_8cpp_1ae79180f8ae90e05743b47a872f305a52" kindref="member">nnMain</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nn::ndm::SuspendScheduler(<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nn::cfg::CTR::Initialize();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nn::fs::ForceDisableLatencyEmulation();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ApplicationFunction::initialize();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Application::createInstance(</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::HeapMgr::getRootHeapNum()<sp/>!=<sp/>0<sp/>?<sp/>sead::HeapMgr::getRootHeap(<sp/>0<sp/>)<sp/>:<sp/>nullptr<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Application::instance()-&gt;init();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Application::instance()-&gt;run();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/System/GameSystem.cpp"/>
+  </compounddef>
+</doxygen>

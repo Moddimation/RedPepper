@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadBitFlag.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-seadbitflagh">File seadBitFlag.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_f6d5c8d1d4c60cd689fcf859a6687fb0/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_1a578c5b4e159d1e927e1144c21e6f5b/"><strong>prim</strong></a> <strong>&gt;</strong> <a href="../seadBitFlag_8h/"><strong>seadBitFlag.h</strong></a></p>
+<p><a href="../seadBitFlag_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;basis/seadRawPrint.h&gt;
+#include &lt;basis/seadTypes.h&gt;
+
+namespace sead {
+class BitFlagUtil {
+public:
+    static int countOnBit(u32 x);
+
+    static int countContinuousOffBitFromRight(u32 x) { return countOnBit((x &amp; -x) - 1); }
+
+    static int countRightOnBit(u32 x, int bit);
+    static int findOnBitFromRight(u32 x, int num);
+};
+
+template &lt;typename T&gt;
+class BitFlag {
+public:
+    BitFlag() : mBits(0) {}
+
+    BitFlag(T bits) : mBits(bits) {}
+
+    operator T() const { return mBits; }
+
+    void makeAllZero() { mBits = 0; }
+
+    void makeAllOne() { mBits = ~T(0); }
+
+    void setDirect(T bits) { mBits = bits; }
+
+    T getDirect() const { return mBits; }
+
+    T* getPtr() { return &amp;mBits; }
+
+    const T* getPtr() const { return &amp;mBits; }
+
+    size_t getByteSize() const { return sizeof(T); }
+
+    void set(T val) { mBits |= val; }
+
+    void reset(T val) { mBits &amp;= ~val; }
+
+    void toggle(T val) { mBits ^= val; }
+
+    void change(T val, bool on) {
+        if (on)
+            set(val);
+        else
+            reset(val);
+    }
+
+    bool isZero() const { return mBits == 0; }
+
+    bool isOn(T val) const { return (mBits &amp; val) != 0; }
+
+    bool isOnAll(T val) const { return (mBits &amp; val) == val; }
+
+    bool isOff(T val) const { return !isOn(val); }
+
+    bool testAndClear(T val) {
+        if (!isOn(val))
+            return false;
+        reset(val);
+        return true;
+    }
+
+    // TODO: what is this even supposed to do? (This function is known to exist
+    //       because it is present in debug info for pead in Super Mario Run.)
+    T getMask(T v) const;
+
+    static T makeMask(int bit) { return T(1) &lt;&lt; bit; }
+
+    void setBit(int bit) { set(makeMask(bit)); }
+
+    void resetBit(int bit) { reset(makeMask(bit)); }
+
+    void changeBit(int bit, bool on) { change(makeMask(bit), on); }
+
+    void toggleBit(int bit) { toggle(makeMask(bit)); }
+
+    bool isOnBit(int bit) const { return isOn(makeMask(bit)); }
+
+    bool isOffBit(int bit) const { return isOff(makeMask(bit)); }
+
+    bool testAndClearBit(int bit) { return testAndClear(makeMask(bit)); }
+
+    int countOnBit() const { return BitFlagUtil::countOnBit(mBits); }
+
+    int countContinuousOffBitFromRight() const {
+        return BitFlagUtil::countContinuousOffBitFromRight(mBits);
+    }
+
+    int countRightOnBit(int bit) const { return BitFlagUtil::countRightOnBit(mBits, bit); }
+
+    int findOnBitFromRight(int num) const { return BitFlagUtil::findOnBitFromRight(mBits, num); }
+
+protected:
+    T mBits;
+};
+
+typedef BitFlag&lt;u8&gt; BitFlag8;
+typedef BitFlag&lt;u16&gt; BitFlag16;
+typedef BitFlag&lt;u32&gt; BitFlag32;
+
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

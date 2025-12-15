@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsead_1_1OffsetList_1_1RobustRange" kind="struct" language="C++" prot="public">
+    <compoundname>sead::OffsetList::RobustRange</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsead_1_1OffsetList_1_1RobustRange_1a1eecae9baa8de8a35305a7fde2829ff2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classsead_1_1OffsetList" kindref="compound">OffsetList</ref> &amp;</type>
+        <definition>const OffsetList&amp; sead::OffsetList&lt; T &gt;::RobustRange::mList</definition>
+        <argsstring></argsstring>
+        <name>mList</name>
+        <qualifiedname>sead::OffsetList::RobustRange::mList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="171" column="26" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsead_1_1OffsetList_1_1RobustRange_1ada37d41f4550b9da151276f7c50c0305" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1OffsetList_1_1robustIterator" kindref="compound">robustIterator</ref></type>
+        <definition>robustIterator sead::OffsetList&lt; T &gt;::RobustRange::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>sead::OffsetList::RobustRange::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="167" column="24" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1OffsetList_1_1RobustRange_1a5d36de2d1a7d3da269f0ce8680e2265b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1OffsetList_1_1robustIterator" kindref="compound">robustIterator</ref></type>
+        <definition>robustIterator sead::OffsetList&lt; T &gt;::RobustRange::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>sead::OffsetList::RobustRange::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="169" column="24" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1OffsetList_1_1RobustRange_1a7647f55c27e2e54a15be2f776010053d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::OffsetList&lt; T &gt;::RobustRange::RobustRange</definition>
+        <argsstring>(const OffsetList &amp;list)</argsstring>
+        <name>RobustRange</name>
+        <qualifiedname>sead::OffsetList::RobustRange::RobustRange</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1OffsetList" kindref="compound">OffsetList</ref> &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="173" column="9" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1ListImpl"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1ListNode"/>
+      </node>
+      <node id="2">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1OffsetList"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::OffsetList&lt; T &gt;::RobustRange</label>
+        <link refid="structsead_1_1OffsetList_1_1RobustRange"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mList</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/container/seadOffsetList.h" line="166" column="5" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="166" bodyend="174"/>
+    <listofallmembers>
+      <member refid="structsead_1_1OffsetList_1_1RobustRange_1ada37d41f4550b9da151276f7c50c0305" prot="public" virt="non-virtual"><scope>sead::OffsetList::RobustRange</scope><name>begin</name></member>
+      <member refid="structsead_1_1OffsetList_1_1RobustRange_1a5d36de2d1a7d3da269f0ce8680e2265b" prot="public" virt="non-virtual"><scope>sead::OffsetList::RobustRange</scope><name>end</name></member>
+      <member refid="structsead_1_1OffsetList_1_1RobustRange_1a1eecae9baa8de8a35305a7fde2829ff2" prot="public" virt="non-virtual"><scope>sead::OffsetList::RobustRange</scope><name>mList</name></member>
+      <member refid="structsead_1_1OffsetList_1_1RobustRange_1a7647f55c27e2e54a15be2f776010053d" prot="public" virt="non-virtual"><scope>sead::OffsetList::RobustRange</scope><name>RobustRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

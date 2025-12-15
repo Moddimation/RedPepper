@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_action_graph_8cpp" kind="file" language="C++">
+    <compoundname>PlayerActionGraph.cpp</compoundname>
+    <includes refid="_player_action_graph_8h" local="yes">Player/PlayerActionGraph.h</includes>
+    <includes refid="_player_action_8h" local="yes">Player/PlayerAction.h</includes>
+    <includes refid="_player_action_node_8h" local="yes">Player/PlayerActionNode.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Player/PlayerAction.h</label>
+        <link refid="_player_action_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player/PlayerActionGraph.h</label>
+        <link refid="_player_action_graph_8h"/>
+      </node>
+      <node id="5">
+        <label>Player/PlayerActionNode.h</label>
+        <link refid="_player_action_node_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PlayerActionGraph.cpp</label>
+        <link refid="_player_action_graph_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>container/seadListImpl.h</label>
+      </node>
+      <node id="4">
+        <label>prim/seadRuntimeTypeInfo.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_action_graph_8h" kindref="compound">Player/PlayerActionGraph.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_action_8h" kindref="compound">Player/PlayerAction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_action_node_8h" kindref="compound">Player/PlayerActionNode.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_player_action_graph_1a5d41e0b04001cb36fc27ad3302685be4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_action_graph_1a5d41e0b04001cb36fc27ad3302685be4" kindref="member">PlayerActionGraph::move</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_action_graph_1a7373b35a23a729a21933e85214bf2263" kindref="member">mCurrentNode</ref>-&gt;<ref refid="class_player_action_node_1a9e2bdaac5a89efc8b9ce59c8a4eabaaa" kindref="member">getAction</ref>()-&gt;<ref refid="class_player_action_1a8c51ae0152ecd9a8fc283f0b87d2a04b" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Player/PlayerActionGraph.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1ControllerBase" kind="class" language="C++" prot="public">
+    <compoundname>sead::ControllerBase</compoundname>
+    <derivedcompoundref refid="classsead_1_1Controller" prot="public" virt="non-virtual">sead::Controller</derivedcompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classsead_1_1ControllerBase_1aeb7cce39988a263ca1e34e0aa5425706" prot="private" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>sead::ControllerBase</qualifiedname>
+        <enumvalue id="classsead_1_1ControllerBase_1aeb7cce39988a263ca1e34e0aa5425706a801ef01976bc82a870389826d05be3f6" prot="private">
+          <name>cPadIdx_MaxBase</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="93" column="5" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="enum" id="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7e" prot="private" static="no" strong="no">
+        <type></type>
+        <name>PointerFlagMask</name>
+        <qualifiedname>sead::ControllerBase::PointerFlagMask</qualifiedname>
+        <enumvalue id="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7eae0ec674b8b2fb635f58bc3ddc54351f8" prot="private">
+          <name>cPointerOn</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7ea5932bc576f0f8d9a2c0cbdf45f0e59be" prot="private">
+          <name>cPointerOnNow</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7ea49bc6c09cf753d3c3c66837e30c6c4bd" prot="private">
+          <name>cPointerOffNow</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7eab5178ed7a83de2132f00e3c80a743dc8" prot="private">
+          <name>cPointerUnkFlag3</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="95" column="5" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="enum" id="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3" prot="private" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>sead::ControllerBase</qualifiedname>
+        <enumvalue id="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a4739cc0ff483b8c63e4cc0c919626f8f" prot="private">
+          <name>cCrossUp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a2f7a72a52c63a0b023daec880c247fdd" prot="private">
+          <name>cCrossDown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a50693b7590a7a733fbfd41fe746df12f" prot="private">
+          <name>cCrossLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a7c0bcaa55aca14a9093bae766a3b8809" prot="private">
+          <name>cCrossRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="102" column="5" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1aa7fa7ec34e33d8085d539786647029c4" prot="public" static="yes" mutable="no">
+        <type>const f32</type>
+        <definition>const f32 sead::ControllerBase::cStickHoldThresholdDefault</definition>
+        <argsstring></argsstring>
+        <name>cStickHoldThresholdDefault</name>
+        <qualifiedname>sead::ControllerBase::cStickHoldThresholdDefault</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="12" column="22" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ace256c6d81c22b5a2eb2df189ca77f85" prot="public" static="yes" mutable="no">
+        <type>const f32</type>
+        <definition>const f32 sead::ControllerBase::cStickReleaseThresholdDefault</definition>
+        <argsstring></argsstring>
+        <name>cStickReleaseThresholdDefault</name>
+        <qualifiedname>sead::ControllerBase::cStickReleaseThresholdDefault</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="13" column="22" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a563cb4b612c01bae775ccebeac3ab2f2" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref></type>
+        <definition>const Vector2f sead::ControllerBase::cInvalidPointer</definition>
+        <argsstring></argsstring>
+        <name>cInvalidPointer</name>
+        <qualifiedname>sead::ControllerBase::cInvalidPointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="14" column="27" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1af4c923b8fac4cdf84e9ac3635731697b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2i</ref></type>
+        <definition>const Vector2i sead::ControllerBase::cInvalidPointerS32</definition>
+        <argsstring></argsstring>
+        <name>cInvalidPointerS32</name>
+        <qualifiedname>sead::ControllerBase::cInvalidPointerS32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="15" column="27" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ac64dbc5d462c60ea0f425cbc1fc737c1" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1BitFlag" kindref="compound">BitFlag32</ref></type>
+        <definition>BitFlag32 sead::ControllerBase::mPadTrig</definition>
+        <argsstring></argsstring>
+        <name>mPadTrig</name>
+        <qualifiedname>sead::ControllerBase::mPadTrig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="104" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a6039ffd3e9d0c7d1f621a0e71c664c59" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1BitFlag" kindref="compound">BitFlag32</ref></type>
+        <definition>BitFlag32 sead::ControllerBase::mPadRelease</definition>
+        <argsstring></argsstring>
+        <name>mPadRelease</name>
+        <qualifiedname>sead::ControllerBase::mPadRelease</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="105" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a9fe634c7867e4ab666c7cebd7f71c673" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1BitFlag" kindref="compound">BitFlag32</ref></type>
+        <definition>BitFlag32 sead::ControllerBase::mPadRepeat</definition>
+        <argsstring></argsstring>
+        <name>mPadRepeat</name>
+        <qualifiedname>sead::ControllerBase::mPadRepeat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="106" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a7bcdd3fae3b5dd903a4adfa6a8758d54" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1BitFlag" kindref="compound">BitFlag32</ref></type>
+        <definition>BitFlag32 sead::ControllerBase::mPointerFlag</definition>
+        <argsstring></argsstring>
+        <name>mPointerFlag</name>
+        <qualifiedname>sead::ControllerBase::mPointerFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="107" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a2254dd7a7aa25fbb71df716f19504887" prot="private" static="no" mutable="no">
+        <type><ref refid="structsead_1_1Vector2" kindref="compound">Vector2i</ref></type>
+        <definition>Vector2i sead::ControllerBase::mPointerS32</definition>
+        <argsstring></argsstring>
+        <name>mPointerS32</name>
+        <qualifiedname>sead::ControllerBase::mPointerS32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="108" column="14" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ae05c053fb58d44d6eeb9132166a417b4" prot="private" static="no" mutable="no">
+        <type><ref refid="structsead_1_1BoundBox2" kindref="compound">BoundBox2f</ref></type>
+        <definition>BoundBox2f sead::ControllerBase::mPointerBound</definition>
+        <argsstring></argsstring>
+        <name>mPointerBound</name>
+        <qualifiedname>sead::ControllerBase::mPointerBound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="109" column="16" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ae0a2ba3a20ffe22d30e27d7a98748fda" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::mPadHoldCounts[cPadIdx_MaxBase]</definition>
+        <argsstring>[cPadIdx_MaxBase]</argsstring>
+        <name>mPadHoldCounts</name>
+        <qualifiedname>sead::ControllerBase::mPadHoldCounts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="110" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a6335823a7cd6ee4f224bbbd792c79735" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sead::ControllerBase::mPadRepeatDelays[cPadIdx_MaxBase]</definition>
+        <argsstring>[cPadIdx_MaxBase]</argsstring>
+        <name>mPadRepeatDelays</name>
+        <qualifiedname>sead::ControllerBase::mPadRepeatDelays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="111" column="8" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ab2ab310f0216a0ad2a3dc0b4d52f105a" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sead::ControllerBase::mPadRepeatPulses[cPadIdx_MaxBase]</definition>
+        <argsstring>[cPadIdx_MaxBase]</argsstring>
+        <name>mPadRepeatPulses</name>
+        <qualifiedname>sead::ControllerBase::mPadRepeatPulses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="112" column="8" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a226d39e87111c6aaf4b40e0398f2e185" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::mLeftStickHoldThreshold</definition>
+        <argsstring></argsstring>
+        <name>mLeftStickHoldThreshold</name>
+        <qualifiedname>sead::ControllerBase::mLeftStickHoldThreshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="113" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a73ff49728ad4eb7982c830fdfe849303" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::mRightStickHoldThreshold</definition>
+        <argsstring></argsstring>
+        <name>mRightStickHoldThreshold</name>
+        <qualifiedname>sead::ControllerBase::mRightStickHoldThreshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="114" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ab89b71fc092df0de8e740444c5c51949" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::mLeftStickReleaseThreshold</definition>
+        <argsstring></argsstring>
+        <name>mLeftStickReleaseThreshold</name>
+        <qualifiedname>sead::ControllerBase::mLeftStickReleaseThreshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="115" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a0f16679399336bb7ef5432473a173e8a" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::mRightStickReleaseThreshold</definition>
+        <argsstring></argsstring>
+        <name>mRightStickReleaseThreshold</name>
+        <qualifiedname>sead::ControllerBase::mRightStickReleaseThreshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="116" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a6beec7b0197143bdebed8677f62daa43" prot="private" static="no" mutable="no">
+        <type>s32</type>
+        <definition>s32 sead::ControllerBase::mPadBitMax</definition>
+        <argsstring></argsstring>
+        <name>mPadBitMax</name>
+        <qualifiedname>sead::ControllerBase::mPadBitMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="117" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ac990778ad0bbf90d52c7ee7c51756035" prot="private" static="no" mutable="no">
+        <type>s32</type>
+        <definition>s32 sead::ControllerBase::mLeftStickCrossStartBit</definition>
+        <argsstring></argsstring>
+        <name>mLeftStickCrossStartBit</name>
+        <qualifiedname>sead::ControllerBase::mLeftStickCrossStartBit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="118" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a3929bf945dc2ed8500473c3b23a3c6db" prot="private" static="no" mutable="no">
+        <type>s32</type>
+        <definition>s32 sead::ControllerBase::mRightStickCrossStartBit</definition>
+        <argsstring></argsstring>
+        <name>mRightStickCrossStartBit</name>
+        <qualifiedname>sead::ControllerBase::mRightStickCrossStartBit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="119" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ad69766038a5a6886f49eacf617d0ad2b" prot="private" static="no" mutable="no">
+        <type>s32</type>
+        <definition>s32 sead::ControllerBase::mTouchKeyBit</definition>
+        <argsstring></argsstring>
+        <name>mTouchKeyBit</name>
+        <qualifiedname>sead::ControllerBase::mTouchKeyBit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="120" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ad68e07983c05a58e01e04ff3ef8c5171" prot="private" static="no" mutable="no">
+        <type>s32</type>
+        <definition>s32 sead::ControllerBase::mIdleFrame</definition>
+        <argsstring></argsstring>
+        <name>mIdleFrame</name>
+        <qualifiedname>sead::ControllerBase::mIdleFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="121" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a7c15b81fa07269704276c4f92dfcebf2" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1BitFlag" kindref="compound">BitFlag32</ref></type>
+        <definition>BitFlag32 sead::ControllerBase::mPadHold</definition>
+        <argsstring></argsstring>
+        <name>mPadHold</name>
+        <qualifiedname>sead::ControllerBase::mPadHold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="122" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1afc2a090e6c1157cb10cc46838d10844c" prot="private" static="no" mutable="no">
+        <type><ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref></type>
+        <definition>Vector2f sead::ControllerBase::mPointer</definition>
+        <argsstring></argsstring>
+        <name>mPointer</name>
+        <qualifiedname>sead::ControllerBase::mPointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="123" column="14" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a436e1ddf389548167e1eebff4a8b6bb9" prot="private" static="no" mutable="no">
+        <type><ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref></type>
+        <definition>Vector2f sead::ControllerBase::mLeftStick</definition>
+        <argsstring></argsstring>
+        <name>mLeftStick</name>
+        <qualifiedname>sead::ControllerBase::mLeftStick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="124" column="14" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1aedff6e9d1c6a25b4278b61ea653030c8" prot="private" static="no" mutable="no">
+        <type><ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref></type>
+        <definition>Vector2f sead::ControllerBase::mRightStick</definition>
+        <argsstring></argsstring>
+        <name>mRightStick</name>
+        <qualifiedname>sead::ControllerBase::mRightStick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="125" column="14" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1a3aaab948ffbb481da5b0d787c2a6304d" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::mLeftAnalogTrigger</definition>
+        <argsstring></argsstring>
+        <name>mLeftAnalogTrigger</name>
+        <qualifiedname>sead::ControllerBase::mLeftAnalogTrigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="126" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ControllerBase_1ae7c8bcc21e32f0cca5d2c7a65aeb909c" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::mRightAnalogTrigger</definition>
+        <argsstring></argsstring>
+        <name>mRightAnalogTrigger</name>
+        <qualifiedname>sead::ControllerBase::mRightAnalogTrigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="127" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsead_1_1ControllerBase_1ac3456fd331a58b288082abca310c7a99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Controller</definition>
+        <argsstring></argsstring>
+        <name>Controller</name>
+        <qualifiedname>sead::ControllerBase::Controller</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1Controller" kindref="compound">Controller</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="129" column="18" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classsead_1_1ControllerBase_1a2d1444965cebd9b50c352914f44cfd7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ControllerWrapper</definition>
+        <argsstring></argsstring>
+        <name>ControllerWrapper</name>
+        <qualifiedname>sead::ControllerBase::ControllerWrapper</qualifiedname>
+        <param>
+          <type>ControllerWrapper</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="130" column="18" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classsead_1_1ControllerBase_1aec1973663c89004e52f6bc63a86e43ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ControllerWrapperBase</definition>
+        <argsstring></argsstring>
+        <name>ControllerWrapperBase</name>
+        <qualifiedname>sead::ControllerBase::ControllerWrapperBase</qualifiedname>
+        <param>
+          <type>ControllerWrapperBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="131" column="18" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a8b98a45a8cd5256f8217b3f99ddeb4d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::ControllerBase::ControllerBase</definition>
+        <argsstring>(s32 padBitMax, s32 leftStickCrossStartBit, s32 rightStickCrossStartBit, s32 touchKeyBit)</argsstring>
+        <name>ControllerBase</name>
+        <qualifiedname>sead::ControllerBase::ControllerBase</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>padBitMax</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>leftStickCrossStartBit</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>rightStickCrossStartBit</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>touchKeyBit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="17" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1af7df087c72b98c751df0ebd9d93c0aea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::getHoldMask</definition>
+        <argsstring>() const</argsstring>
+        <name>getHoldMask</name>
+        <qualifiedname>sead::ControllerBase::getHoldMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="20" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a90e6ad74d203361c848eb34897b30e14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::getTrigMask</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrigMask</name>
+        <qualifiedname>sead::ControllerBase::getTrigMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="22" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a202ac21b096115aa4098082a091cc344" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::getReleaseMask</definition>
+        <argsstring>() const</argsstring>
+        <name>getReleaseMask</name>
+        <qualifiedname>sead::ControllerBase::getReleaseMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="24" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1af793d8caa305e22feae4cc97b02a2b5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::getRepeatMask</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatMask</name>
+        <qualifiedname>sead::ControllerBase::getRepeatMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="26" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a94c67fc458aa6063e210c08addd77ce2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const u32 *</type>
+        <definition>const u32 * sead::ControllerBase::getHoldMaskPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getHoldMaskPtr</name>
+        <qualifiedname>sead::ControllerBase::getHoldMaskPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="28" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a8eb35b9eb011587e57c6f6c4aa986076" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const u32 *</type>
+        <definition>const u32 * sead::ControllerBase::getTrigMaskPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrigMaskPtr</name>
+        <qualifiedname>sead::ControllerBase::getTrigMaskPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="30" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a7ed75210082cd0f65e3f7f646c5c07ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const u32 *</type>
+        <definition>const u32 * sead::ControllerBase::getReleaseMaskPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getReleaseMaskPtr</name>
+        <qualifiedname>sead::ControllerBase::getReleaseMaskPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="32" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a801cee19077a8ee7178c336fa3130990" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const u32 *</type>
+        <definition>const u32 * sead::ControllerBase::getRepeatMaskPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatMaskPtr</name>
+        <qualifiedname>sead::ControllerBase::getRepeatMaskPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="34" column="15" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1af816f4a745aa2eddb30dc595bd30c11b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::getPadHoldCount</definition>
+        <argsstring>(s32 bit) const</argsstring>
+        <name>getPadHoldCount</name>
+        <qualifiedname>sead::ControllerBase::getPadHoldCount</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="36" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a51992a5aabca507442edefa6ae7265c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref> &amp;</type>
+        <definition>const Vector2f &amp; sead::ControllerBase::getLeftStick</definition>
+        <argsstring>() const</argsstring>
+        <name>getLeftStick</name>
+        <qualifiedname>sead::ControllerBase::getLeftStick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="38" column="20" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a034f4fa02cc0d52f8c3d0ac78daf6df7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref> &amp;</type>
+        <definition>const Vector2f &amp; sead::ControllerBase::getRightStick</definition>
+        <argsstring>() const</argsstring>
+        <name>getRightStick</name>
+        <qualifiedname>sead::ControllerBase::getRightStick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="40" column="20" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1acd17cbab1b2115823725e83fa8e9877c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::getLeftAnalogTrigger</definition>
+        <argsstring>() const</argsstring>
+        <name>getLeftAnalogTrigger</name>
+        <qualifiedname>sead::ControllerBase::getLeftAnalogTrigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="42" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a0e22645e0beabd889771d4d7b797db32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 sead::ControllerBase::getRightAnalogTrigger</definition>
+        <argsstring>() const</argsstring>
+        <name>getRightAnalogTrigger</name>
+        <qualifiedname>sead::ControllerBase::getRightAnalogTrigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="44" column="9" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1af16683081410154b9997ccd90436ceb5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref> &amp;</type>
+        <definition>const Vector2f &amp; sead::ControllerBase::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <qualifiedname>sead::ControllerBase::getPointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="46" column="20" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1ae75b80f33b981f0750465c1d3284bf6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2i</ref> &amp;</type>
+        <definition>const Vector2i &amp; sead::ControllerBase::getPointerPrev</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerPrev</name>
+        <qualifiedname>sead::ControllerBase::getPointerPrev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="48" column="20" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1ae12e763c47c4e3d9c6529d61b49ded11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isPointerOn</definition>
+        <argsstring>() const</argsstring>
+        <name>isPointerOn</name>
+        <qualifiedname>sead::ControllerBase::isPointerOn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="50" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a7137ca6612ad9909b675d7e1a1717f66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isPointerOnNow</definition>
+        <argsstring>() const</argsstring>
+        <name>isPointerOnNow</name>
+        <qualifiedname>sead::ControllerBase::isPointerOnNow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="52" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a715b66c50d69e357623dc62e786d722c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isPointerOffNow</definition>
+        <argsstring>() const</argsstring>
+        <name>isPointerOffNow</name>
+        <qualifiedname>sead::ControllerBase::isPointerOffNow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="54" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1ab6ff381694356b5e16a6d181ec7ab935" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isPointerUnkFlag3</definition>
+        <argsstring>() const</argsstring>
+        <name>isPointerUnkFlag3</name>
+        <qualifiedname>sead::ControllerBase::isPointerUnkFlag3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="56" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a9bbaf9e14de0a519195168fb99ac3273" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isHold</definition>
+        <argsstring>(u32 mask) const</argsstring>
+        <name>isHold</name>
+        <qualifiedname>sead::ControllerBase::isHold</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="58" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1aaae8a495942bd8a558eebc4a601aca84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isTrig</definition>
+        <argsstring>(u32 mask) const</argsstring>
+        <name>isTrig</name>
+        <qualifiedname>sead::ControllerBase::isTrig</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="60" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a7116eabb556e473bb5205ed012291296" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isHoldAll</definition>
+        <argsstring>(u32 mask) const</argsstring>
+        <name>isHoldAll</name>
+        <qualifiedname>sead::ControllerBase::isHoldAll</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="62" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a6e538af2d2c0318da5aa4104298605b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isRelease</definition>
+        <argsstring>(u32 mask) const</argsstring>
+        <name>isRelease</name>
+        <qualifiedname>sead::ControllerBase::isRelease</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="64" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a93edab6c4a7079f0907f3ae1d09fe829" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isRepeat</definition>
+        <argsstring>(u32 mask) const</argsstring>
+        <name>isRepeat</name>
+        <qualifiedname>sead::ControllerBase::isRepeat</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="66" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a4f069c269d660a57336d28668b614b0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isTrigWithRepeat</definition>
+        <argsstring>(u32 mask) const</argsstring>
+        <name>isTrigWithRepeat</name>
+        <qualifiedname>sead::ControllerBase::isTrigWithRepeat</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="68" column="10" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a5b8d3d5c171d33aa91ae69f28ce5b3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::setPadRepeat</definition>
+        <argsstring>(u32 mask, u8 delay_frame, u8 pulse_frame)</argsstring>
+        <name>setPadRepeat</name>
+        <qualifiedname>sead::ControllerBase::setPadRepeat</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>delay_frame</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>pulse_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a9da00daf094dd245a46aecfd195ac893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::setLeftStickCrossThreshold</definition>
+        <argsstring>(f32 hold, f32 release)</argsstring>
+        <name>setLeftStickCrossThreshold</name>
+        <qualifiedname>sead::ControllerBase::setLeftStickCrossThreshold</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>hold</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>release</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1af6753759a2185e01c784e235520f65d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::setRightStickCrossThreshold</definition>
+        <argsstring>(f32 hold, f32 release)</argsstring>
+        <name>setRightStickCrossThreshold</name>
+        <qualifiedname>sead::ControllerBase::setRightStickCrossThreshold</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>hold</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>release</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1ab4e7db0b56f4c58c6e7b7514549a15d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::setPointerBound</definition>
+        <argsstring>(const BoundBox2f &amp;bound)</argsstring>
+        <name>setPointerBound</name>
+        <qualifiedname>sead::ControllerBase::setPointerBound</qualifiedname>
+        <param>
+          <type>const <ref refid="structsead_1_1BoundBox2" kindref="compound">BoundBox2f</ref> &amp;</type>
+          <declname>bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1ac036b5a32cd58b1198b915cd35fdf2c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structsead_1_1BoundBox2" kindref="compound">BoundBox2f</ref> &amp;</type>
+        <definition>const BoundBox2f &amp; sead::ControllerBase::getPointerBound</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerBound</name>
+        <qualifiedname>sead::ControllerBase::getPointerBound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="81" column="22" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a38479bbe991847d576e8f5ede9f8ceec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ControllerBase::isIdleBase_</definition>
+        <argsstring>()</argsstring>
+        <name>isIdleBase_</name>
+        <qualifiedname>sead::ControllerBase::isIdleBase_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a0cfe675934dee5403b2c7f53e4f76be1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::setIdleBase_</definition>
+        <argsstring>()</argsstring>
+        <name>setIdleBase_</name>
+        <qualifiedname>sead::ControllerBase::setIdleBase_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1ad3df8fd5a2d07c355e74b601499c8267" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::setPointerWithBound_</definition>
+        <argsstring>(bool is_on, bool touchkey_hold, const Vector2f &amp;pos)</argsstring>
+        <name>setPointerWithBound_</name>
+        <qualifiedname>sead::ControllerBase::setPointerWithBound_</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_on</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>touchkey_hold</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a232b7df03491d4ff5ecaf23034b7be41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ControllerBase::updateDerivativeParams_</definition>
+        <argsstring>(u32 prev_hold, bool prev_pointer_on)</argsstring>
+        <name>updateDerivativeParams_</name>
+        <qualifiedname>sead::ControllerBase::updateDerivativeParams_</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>prev_hold</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>prev_pointer_on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a5bf39976f73398cab03efc90ff7a2551" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::getStickHold_</definition>
+        <argsstring>(u32 prev_hold, const Vector2f &amp;stick, f32 hold_threshold, f32 release_threshold, s32 start_bit)</argsstring>
+        <name>getStickHold_</name>
+        <qualifiedname>sead::ControllerBase::getStickHold_</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>prev_hold</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsead_1_1Vector2" kindref="compound">Vector2f</ref> &amp;</type>
+          <declname>stick</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>hold_threshold</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>release_threshold</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>start_bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="88" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ControllerBase_1a4953fcb1a5ff830afca664b1f22b15b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::ControllerBase::createStickCrossMask_</definition>
+        <argsstring>()</argsstring>
+        <name>createStickCrossMask_</name>
+        <qualifiedname>sead::ControllerBase::createStickCrossMask_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadControllerBase.h" line="90" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::Controller</label>
+        <link refid="classsead_1_1Controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::ControllerBase</label>
+        <link refid="classsead_1_1ControllerBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Policies&lt; T &gt;::Vec2Base</label>
+        <link refid="structsead_1_1BaseVec2"/>
+      </node>
+      <node id="1">
+        <label>sead::ControllerBase</label>
+        <link refid="classsead_1_1ControllerBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cInvalidPointer</edgelabel>
+          <edgelabel>cInvalidPointerS32</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::Vector2&lt; T &gt;</label>
+        <link refid="structsead_1_1Vector2"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ex</edgelabel>
+          <edgelabel>ey</edgelabel>
+          <edgelabel>ones</edgelabel>
+          <edgelabel>zero</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/controller/seadControllerBase.h" line="9" column="1" bodyfile="lib/sead/include/controller/seadControllerBase.h" bodystart="9" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a2f7a72a52c63a0b023daec880c247fdd" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cCrossDown</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a50693b7590a7a733fbfd41fe746df12f" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cCrossLeft</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a7c0bcaa55aca14a9093bae766a3b8809" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cCrossRight</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac3d7cd06b11bcb5f85683268392a26e3a4739cc0ff483b8c63e4cc0c919626f8f" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cCrossUp</name></member>
+      <member refid="classsead_1_1ControllerBase_1a563cb4b612c01bae775ccebeac3ab2f2" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cInvalidPointer</name></member>
+      <member refid="classsead_1_1ControllerBase_1af4c923b8fac4cdf84e9ac3635731697b" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cInvalidPointerS32</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac3456fd331a58b288082abca310c7a99" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>Controller</name></member>
+      <member refid="classsead_1_1ControllerBase_1a8b98a45a8cd5256f8217b3f99ddeb4d8" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>ControllerBase</name></member>
+      <member refid="classsead_1_1ControllerBase_1a2d1444965cebd9b50c352914f44cfd7a" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>ControllerWrapper</name></member>
+      <member refid="classsead_1_1ControllerBase_1aec1973663c89004e52f6bc63a86e43ad" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>ControllerWrapperBase</name></member>
+      <member refid="classsead_1_1ControllerBase_1aeb7cce39988a263ca1e34e0aa5425706a801ef01976bc82a870389826d05be3f6" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cPadIdx_MaxBase</name></member>
+      <member refid="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7ea49bc6c09cf753d3c3c66837e30c6c4bd" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cPointerOffNow</name></member>
+      <member refid="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7eae0ec674b8b2fb635f58bc3ddc54351f8" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cPointerOn</name></member>
+      <member refid="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7ea5932bc576f0f8d9a2c0cbdf45f0e59be" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cPointerOnNow</name></member>
+      <member refid="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7eab5178ed7a83de2132f00e3c80a743dc8" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cPointerUnkFlag3</name></member>
+      <member refid="classsead_1_1ControllerBase_1a4953fcb1a5ff830afca664b1f22b15b6" prot="protected" virt="non-virtual"><scope>sead::ControllerBase</scope><name>createStickCrossMask_</name></member>
+      <member refid="classsead_1_1ControllerBase_1aa7fa7ec34e33d8085d539786647029c4" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cStickHoldThresholdDefault</name></member>
+      <member refid="classsead_1_1ControllerBase_1ace256c6d81c22b5a2eb2df189ca77f85" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>cStickReleaseThresholdDefault</name></member>
+      <member refid="classsead_1_1ControllerBase_1af7df087c72b98c751df0ebd9d93c0aea" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getHoldMask</name></member>
+      <member refid="classsead_1_1ControllerBase_1a94c67fc458aa6063e210c08addd77ce2" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getHoldMaskPtr</name></member>
+      <member refid="classsead_1_1ControllerBase_1acd17cbab1b2115823725e83fa8e9877c" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getLeftAnalogTrigger</name></member>
+      <member refid="classsead_1_1ControllerBase_1a51992a5aabca507442edefa6ae7265c1" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getLeftStick</name></member>
+      <member refid="classsead_1_1ControllerBase_1af816f4a745aa2eddb30dc595bd30c11b" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getPadHoldCount</name></member>
+      <member refid="classsead_1_1ControllerBase_1af16683081410154b9997ccd90436ceb5" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getPointer</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac036b5a32cd58b1198b915cd35fdf2c2" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getPointerBound</name></member>
+      <member refid="classsead_1_1ControllerBase_1ae75b80f33b981f0750465c1d3284bf6e" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getPointerPrev</name></member>
+      <member refid="classsead_1_1ControllerBase_1a202ac21b096115aa4098082a091cc344" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getReleaseMask</name></member>
+      <member refid="classsead_1_1ControllerBase_1a7ed75210082cd0f65e3f7f646c5c07ab" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getReleaseMaskPtr</name></member>
+      <member refid="classsead_1_1ControllerBase_1af793d8caa305e22feae4cc97b02a2b5c" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getRepeatMask</name></member>
+      <member refid="classsead_1_1ControllerBase_1a801cee19077a8ee7178c336fa3130990" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getRepeatMaskPtr</name></member>
+      <member refid="classsead_1_1ControllerBase_1a0e22645e0beabd889771d4d7b797db32" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getRightAnalogTrigger</name></member>
+      <member refid="classsead_1_1ControllerBase_1a034f4fa02cc0d52f8c3d0ac78daf6df7" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getRightStick</name></member>
+      <member refid="classsead_1_1ControllerBase_1a5bf39976f73398cab03efc90ff7a2551" prot="protected" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getStickHold_</name></member>
+      <member refid="classsead_1_1ControllerBase_1a90e6ad74d203361c848eb34897b30e14" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getTrigMask</name></member>
+      <member refid="classsead_1_1ControllerBase_1a8eb35b9eb011587e57c6f6c4aa986076" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>getTrigMaskPtr</name></member>
+      <member refid="classsead_1_1ControllerBase_1a9bbaf9e14de0a519195168fb99ac3273" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isHold</name></member>
+      <member refid="classsead_1_1ControllerBase_1a7116eabb556e473bb5205ed012291296" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isHoldAll</name></member>
+      <member refid="classsead_1_1ControllerBase_1a38479bbe991847d576e8f5ede9f8ceec" prot="protected" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isIdleBase_</name></member>
+      <member refid="classsead_1_1ControllerBase_1a715b66c50d69e357623dc62e786d722c" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isPointerOffNow</name></member>
+      <member refid="classsead_1_1ControllerBase_1ae12e763c47c4e3d9c6529d61b49ded11" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isPointerOn</name></member>
+      <member refid="classsead_1_1ControllerBase_1a7137ca6612ad9909b675d7e1a1717f66" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isPointerOnNow</name></member>
+      <member refid="classsead_1_1ControllerBase_1ab6ff381694356b5e16a6d181ec7ab935" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isPointerUnkFlag3</name></member>
+      <member refid="classsead_1_1ControllerBase_1a6e538af2d2c0318da5aa4104298605b9" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isRelease</name></member>
+      <member refid="classsead_1_1ControllerBase_1a93edab6c4a7079f0907f3ae1d09fe829" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isRepeat</name></member>
+      <member refid="classsead_1_1ControllerBase_1aaae8a495942bd8a558eebc4a601aca84" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isTrig</name></member>
+      <member refid="classsead_1_1ControllerBase_1a4f069c269d660a57336d28668b614b0c" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>isTrigWithRepeat</name></member>
+      <member refid="classsead_1_1ControllerBase_1ad68e07983c05a58e01e04ff3ef8c5171" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mIdleFrame</name></member>
+      <member refid="classsead_1_1ControllerBase_1a3aaab948ffbb481da5b0d787c2a6304d" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mLeftAnalogTrigger</name></member>
+      <member refid="classsead_1_1ControllerBase_1a436e1ddf389548167e1eebff4a8b6bb9" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mLeftStick</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac990778ad0bbf90d52c7ee7c51756035" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mLeftStickCrossStartBit</name></member>
+      <member refid="classsead_1_1ControllerBase_1a226d39e87111c6aaf4b40e0398f2e185" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mLeftStickHoldThreshold</name></member>
+      <member refid="classsead_1_1ControllerBase_1ab89b71fc092df0de8e740444c5c51949" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mLeftStickReleaseThreshold</name></member>
+      <member refid="classsead_1_1ControllerBase_1a6beec7b0197143bdebed8677f62daa43" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadBitMax</name></member>
+      <member refid="classsead_1_1ControllerBase_1a7c15b81fa07269704276c4f92dfcebf2" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadHold</name></member>
+      <member refid="classsead_1_1ControllerBase_1ae0a2ba3a20ffe22d30e27d7a98748fda" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadHoldCounts</name></member>
+      <member refid="classsead_1_1ControllerBase_1a6039ffd3e9d0c7d1f621a0e71c664c59" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadRelease</name></member>
+      <member refid="classsead_1_1ControllerBase_1a9fe634c7867e4ab666c7cebd7f71c673" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadRepeat</name></member>
+      <member refid="classsead_1_1ControllerBase_1a6335823a7cd6ee4f224bbbd792c79735" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadRepeatDelays</name></member>
+      <member refid="classsead_1_1ControllerBase_1ab2ab310f0216a0ad2a3dc0b4d52f105a" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadRepeatPulses</name></member>
+      <member refid="classsead_1_1ControllerBase_1ac64dbc5d462c60ea0f425cbc1fc737c1" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPadTrig</name></member>
+      <member refid="classsead_1_1ControllerBase_1afc2a090e6c1157cb10cc46838d10844c" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPointer</name></member>
+      <member refid="classsead_1_1ControllerBase_1ae05c053fb58d44d6eeb9132166a417b4" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPointerBound</name></member>
+      <member refid="classsead_1_1ControllerBase_1a7bcdd3fae3b5dd903a4adfa6a8758d54" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPointerFlag</name></member>
+      <member refid="classsead_1_1ControllerBase_1a2254dd7a7aa25fbb71df716f19504887" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mPointerS32</name></member>
+      <member refid="classsead_1_1ControllerBase_1ae7c8bcc21e32f0cca5d2c7a65aeb909c" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mRightAnalogTrigger</name></member>
+      <member refid="classsead_1_1ControllerBase_1aedff6e9d1c6a25b4278b61ea653030c8" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mRightStick</name></member>
+      <member refid="classsead_1_1ControllerBase_1a3929bf945dc2ed8500473c3b23a3c6db" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mRightStickCrossStartBit</name></member>
+      <member refid="classsead_1_1ControllerBase_1a73ff49728ad4eb7982c830fdfe849303" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mRightStickHoldThreshold</name></member>
+      <member refid="classsead_1_1ControllerBase_1a0f16679399336bb7ef5432473a173e8a" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mRightStickReleaseThreshold</name></member>
+      <member refid="classsead_1_1ControllerBase_1ad69766038a5a6886f49eacf617d0ad2b" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>mTouchKeyBit</name></member>
+      <member refid="classsead_1_1ControllerBase_1a66133d7bc227bdfd8801d5f5e4522f7e" prot="private" virt="non-virtual"><scope>sead::ControllerBase</scope><name>PointerFlagMask</name></member>
+      <member refid="classsead_1_1ControllerBase_1a0cfe675934dee5403b2c7f53e4f76be1" prot="protected" virt="non-virtual"><scope>sead::ControllerBase</scope><name>setIdleBase_</name></member>
+      <member refid="classsead_1_1ControllerBase_1a9da00daf094dd245a46aecfd195ac893" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>setLeftStickCrossThreshold</name></member>
+      <member refid="classsead_1_1ControllerBase_1a5b8d3d5c171d33aa91ae69f28ce5b3a5" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>setPadRepeat</name></member>
+      <member refid="classsead_1_1ControllerBase_1ab4e7db0b56f4c58c6e7b7514549a15d3" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>setPointerBound</name></member>
+      <member refid="classsead_1_1ControllerBase_1ad3df8fd5a2d07c355e74b601499c8267" prot="protected" virt="non-virtual"><scope>sead::ControllerBase</scope><name>setPointerWithBound_</name></member>
+      <member refid="classsead_1_1ControllerBase_1af6753759a2185e01c784e235520f65d7" prot="public" virt="non-virtual"><scope>sead::ControllerBase</scope><name>setRightStickCrossThreshold</name></member>
+      <member refid="classsead_1_1ControllerBase_1a232b7df03491d4ff5ecaf23034b7be41" prot="protected" virt="non-virtual"><scope>sead::ControllerBase</scope><name>updateDerivativeParams_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

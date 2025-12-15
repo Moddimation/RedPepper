@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1FixedSafeStringBase" kind="class" language="C++" prot="public">
+    <compoundname>sead::FixedSafeStringBase</compoundname>
+    <basecompoundref refid="classsead_1_1BufferedSafeStringBase" prot="public" virt="non-virtual">sead::BufferedSafeStringBase&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>s32</type>
+        <declname>L</declname>
+        <defname>L</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsead_1_1FixedSafeStringBase_1a0caccb083c70b2912b2f98e649a0e192" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::FixedSafeStringBase&lt; T, L &gt;::mBuffer[L]</definition>
+        <argsstring>[L]</argsstring>
+        <name>mBuffer</name>
+        <qualifiedname>sead::FixedSafeStringBase::mBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="204" column="7" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1FixedSafeStringBase_1a476f5b6f7c222a7fa465ee90c043e4e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::FixedSafeStringBase&lt; T, L &gt;::FixedSafeStringBase</definition>
+        <argsstring>()</argsstring>
+        <name>FixedSafeStringBase</name>
+        <qualifiedname>sead::FixedSafeStringBase::FixedSafeStringBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="189" column="5" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FixedSafeStringBase_1a56b8063f3f34ae2cef94cbe99c9a080e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::FixedSafeStringBase&lt; T, L &gt;::FixedSafeStringBase</definition>
+        <argsstring>(const SafeStringBase&lt; T &gt; &amp;str)</argsstring>
+        <name>FixedSafeStringBase</name>
+        <qualifiedname>sead::FixedSafeStringBase::FixedSafeStringBase</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeStringBase</ref>&lt; T &gt; &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="191" column="5" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FixedSafeStringBase_1ad408705a3c8775288b3b6e3dcc820259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::FixedSafeStringBase&lt; T, L &gt;::FixedSafeStringBase</definition>
+        <argsstring>(const FixedSafeStringBase &amp;str)</argsstring>
+        <name>FixedSafeStringBase</name>
+        <qualifiedname>sead::FixedSafeStringBase::FixedSafeStringBase</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1FixedSafeStringBase" kindref="compound">FixedSafeStringBase</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="195" column="5" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FixedSafeStringBase_1a009c85bb05d3107908d9239b5ba763f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1FixedSafeStringBase" kindref="compound">FixedSafeStringBase</ref> &amp;</type>
+        <definition>FixedSafeStringBase &amp; sead::FixedSafeStringBase&lt; T, L &gt;::operator=</definition>
+        <argsstring>(const FixedSafeStringBase &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>sead::FixedSafeStringBase::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1FixedSafeStringBase" kindref="compound">FixedSafeStringBase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="199" column="25" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::BufferedSafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1BufferedSafeStringBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::FixedSafeStringBase&lt; T, L &gt;</label>
+        <link refid="classsead_1_1FixedSafeStringBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sead::BufferedSafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1BufferedSafeStringBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::FixedSafeStringBase&lt; T, L &gt;</label>
+        <link refid="classsead_1_1FixedSafeStringBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/prim/seadSafeString.h" line="187" column="1" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="187" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classsead_1_1BufferedSafeStringBase_1abf2625d2a04ac431ec39413644baaff0" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>__attribute__</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a5346e8ab74e5239933baf4babb58653a" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>append</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aeb9c80a8c1dfa98a83ecaec1424e431a" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>append</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a667d9f4f50252487ec4e97bc10ff714c" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>append</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1af979db5a9708b92c8be5762565483aab" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>appendWithFormat</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aa3ff27b654ced96bae0c8c3dade9e69f" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>appendWithFormat</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a145c00116bdfe3cb1fb76a2eab355946" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>appendWithFormat</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a5bb7f7e295f352dab9f7f891b3fda88d" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>appendWithFormatV</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1ac4c283caa4748c46f7e66025445ffb98" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>appendWithFormatV</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a2da9fd5edac0afcf5a5a2a9c264139fb" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>appendWithFormatV</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a59e05aa33818750203f1202586ecaa0c" prot="public" virt="virtual"><scope>sead::FixedSafeStringBase</scope><name>assureTerminationImpl_</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1ad0b80f4f401e3edeae14430028dd15a7" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>BufferedSafeStringBase</name></member>
+      <member refid="classsead_1_1SafeStringBase_1afd1ee054e6300af756603f02b5c03fd6" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cEmptyString</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a96b4589c8a4bed9d7de6e6f5465c5279" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>chop</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a5ca72dee7fd1c2ce54d0ff6e511abb5c" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>chopMatchedChar</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a59e3dac7c00fc7ea73da81f4228c8aa2" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>chopMatchedChar</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1ab6242f62cd714a52fdca297e5877e5a0" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>chopUnprintableAsciiChar</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a73a36cf6d8c4afd53bb5aa0b18a4df38" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>clear</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a18ac435da4f82a849cb68bd67f3e0033" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cLineBreakChar</name></member>
+      <member refid="classsead_1_1SafeStringBase_1ab085100178a4ec4a0cfaf80f7fbf56ce" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cMaximumLength</name></member>
+      <member refid="classsead_1_1SafeStringBase_1aba47b132718aa64adf1f6e328236d6b3" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cNullChar</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1af3d0c709030427da631c178f8375d4a5" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>convertFromMultiByteString</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1accbfaa7e0f00b73f81501de15b1d0f09" prot="protected" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>convertFromOtherType_</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a1a07d7dbcd1fc22150c5393faef2137f" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>convertFromWideCharString</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a98ee452f15ff4d81497ea248aba7b4d9" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>copy</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a8f5fe77291012088db12c431859c4501" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>copyAt</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1ac6a930583629ff4f3df31681fd033f30" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>copyAtWithTerminate</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a95b7c18812c75d322fa8c68159a4fca0" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cstr</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a33d447d596eb92c54167edcca76e9995" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cutOffCopy</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1acbd23dbdb652958486977d848dda134b" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>cutOffCopyAt</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a16aa4c5215c8427402c2b1bfce7a9b16" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>else</name></member>
+      <member refid="classsead_1_1FixedSafeStringBase_1a476f5b6f7c222a7fa465ee90c043e4e6" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>FixedSafeStringBase</name></member>
+      <member refid="classsead_1_1FixedSafeStringBase_1a56b8063f3f34ae2cef94cbe99c9a080e" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>FixedSafeStringBase</name></member>
+      <member refid="classsead_1_1FixedSafeStringBase_1ad408705a3c8775288b3b6e3dcc820259" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>FixedSafeStringBase</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a6ca50b6f9fd6e7b0ec5de43e4cce9dbc" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>format</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1ad24fbd12553420126de702537593f391" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>format</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a6e209db204b4a1feb49a0455b8fb45b0" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>format</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a598353ca0542fa59a83046f4cb78f382" prot="protected" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>formatImpl_</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a5662bc2024a005ee4166cc08982b2bb5" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>formatV</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aa0c543e689b2ab6461ce0f61cf7ab105" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>formatV</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aca9ba0b8b7d6bf198fa3d4efce41e625" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>formatV</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aeaa3335a4152e262cfdccc1ff7461399" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>getBuffer</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a96fae288e82d62746f434f41473ce2d0" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>getBufferSize</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a8f9a17a650ff3010ef0816ec1d5ce47f" prot="protected" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>getMutableStringTop_</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a07732373457c501e703769991fc878bf" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>if</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a2b9d15ca67c2046806a68509fdc0cd0a" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>isEqual</name></member>
+      <member refid="classsead_1_1FixedSafeStringBase_1a0caccb083c70b2912b2f98e649a0e192" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>mBuffer</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a820662fffd0d132a2f6db79ad93efa0e" prot="protected" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>mBufferSize</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a1d470e9c146252f039fb32ddafc2b0a7" prot="protected" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>mStringTop</name></member>
+      <member refid="classsead_1_1FixedSafeStringBase_1a009c85bb05d3107908d9239b5ba763f3" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>operator=</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a0397fe55e1879a35c1d82cfde61e9a4c" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>operator[]</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1ae4d9a9785823d9deb06a0f2405d65911" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>prepend</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a4ad55482973611b51da7d9166459c85c" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>removeSuffix</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1abb0b629965451f02557a68548c74d630" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>replaceChar</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aaa2427e46068ea5ddd10926187013d0f" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>replaceCharList</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aa4110bccec24e838890adae5adaa1821" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>replaceString</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1aae94aae5523732c3773e99817c38ef15" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>rstrip</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a2ca20c2ec2e48d9a8aa52452cbb112cb" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>rstripUnprintableAsciiChars</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a3750c27a87bbcbed53c318151905ba33" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>SafeStringBase</name></member>
+      <member refid="classsead_1_1SafeStringBase_1ad3f3de127d5c15c566642b9a5b744b84" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>SafeStringBase</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a039e805be96e5aeb2dbe3e98f240dc39" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>SafeStringBase</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a262862d7d019dc9e7369fe894a98458f" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>setReplaceString</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a8115bbf919e024bc9c53edee2e37ff1d" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>size</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a726933a8832b6ff2bf7a3d799b3842df" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>trim</name></member>
+      <member refid="classsead_1_1BufferedSafeStringBase_1a50c8375bd64c5ddf8d0043c83643ae70" prot="public" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>trimMatchedString</name></member>
+      <member refid="classsead_1_1SafeStringBase_1aba9d57c2a6fcb3daa82f25297d674784" prot="protected" virt="non-virtual"><scope>sead::FixedSafeStringBase</scope><name>unsafeAt_</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a6a52b011a3c9d03f4b912a07c8f63756" prot="public" virt="virtual"><scope>sead::FixedSafeStringBase</scope><name>~SafeStringBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alNerveFunction.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-alnervefunctioncpp">File alNerveFunction.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_800da44cd95379813241ef8b1979e11a/"><strong>Nerve</strong></a> <strong>&gt;</strong> <a href="../alNerveFunction_8cpp/"><strong>alNerveFunction.cpp</strong></a></p>
+<p><a href="../alNerveFunction_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;Nerve/alNerveActionCtrl.h&gt;
+#include &lt;Nerve/alNerveFunction.h&gt;
+#include &lt;Nerve/alNerveStateCtrl.h&gt;
+
+namespace al
+{
+
+bool isStep( IUseNerve* p, int step )
+{
+        return p-&gt;getNerveKeeper()-&gt;getStep() == step;
+}
+
+bool isNerve( const IUseNerve* p, const Nerve* nerve )
+{
+        return p-&gt;getNerveKeeper()-&gt;getCurrentNerve() == nerve;
+}
+
+#pragma no_inline
+
+void setNerve( IUseNerve* p, const Nerve* nerve )
+{
+        p-&gt;getNerveKeeper()-&gt;setNerve( nerve );
+}
+
+bool isFirstStep( const IUseNerve* p )
+{
+        return p-&gt;getNerveKeeper()-&gt;getStep() == 0;
+}
+
+bool isGreaterStep( const IUseNerve* p, int t )
+{
+        return p-&gt;getNerveKeeper()-&gt;getStep() &gt; t;
+}
+
+bool isGreaterEqualStep( const IUseNerve* p, int t )
+{
+        return p-&gt;getNerveKeeper()-&gt;getStep() &gt;= t;
+}
+
+bool updateNerveState( IUseNerve* p )
+{
+        return p-&gt;getNerveKeeper()-&gt;getStateCtrl()-&gt;updateCurrentState();
+}
+
+// registers
+
+#ifdef NON_MATCHING
+bool updateNerveStateAndNextNerve( IUseNerve* p, const Nerve* nerve )
+{
+        NerveStateCtrl* stateCtrl = p-&gt;getNerveKeeper()-&gt;getStateCtrl();
+        if ( stateCtrl-&gt;updateCurrentState() )
+        {
+                setNerve( p, nerve );
+                return true;
+        }
+        return false;
+}
+#endif
+
+} // namespace al
+
+namespace alNerveFunction
+{
+
+void setNerveAction( al::IUseNerve* p, const char* name )
+{
+        al::NerveKeeper* nk = p-&gt;getNerveKeeper();
+        nk-&gt;setNerve( nk-&gt;getActionCtrl()-&gt;findNerve( name ) );
+}
+
+} // namespace alNerveFunction
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

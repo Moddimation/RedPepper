@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1ScopedLock" kind="class" language="C++" prot="public">
+    <compoundname>sead::ScopedLock</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1ScopedLock_1a58f5751c2e074767d64824d2438648a2" prot="protected" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* sead::ScopedLock&lt; T &gt;::mLocked</definition>
+        <argsstring></argsstring>
+        <name>mLocked</name>
+        <qualifiedname>sead::ScopedLock::mLocked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadScopedLock.h" line="17" column="7" bodyfile="lib/sead/include/prim/seadScopedLock.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1ScopedLock_1a074edf6b07b3cd257b0b0f5a3dd2fc75" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::ScopedLock&lt; T &gt;::ScopedLock</definition>
+        <argsstring>(T *lock)</argsstring>
+        <name>ScopedLock</name>
+        <qualifiedname>sead::ScopedLock::ScopedLock</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadScopedLock.h" line="9" column="14" bodyfile="lib/sead/include/prim/seadScopedLock.h" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedLock_1af8dc83189dc924c4f68e231543930da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::ScopedLock&lt; T &gt;::ScopedLock</definition>
+        <argsstring>(const ScopedLock &amp;other)</argsstring>
+        <name>ScopedLock</name>
+        <qualifiedname>sead::ScopedLock::ScopedLock</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1ScopedLock" kindref="compound">ScopedLock</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadScopedLock.h" line="11" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedLock_1a18eb09d527ff678ef9c1725981f0fa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1ScopedLock" kindref="compound">ScopedLock</ref> &amp;</type>
+        <definition>ScopedLock &amp; sead::ScopedLock&lt; T &gt;::operator=</definition>
+        <argsstring>(const ScopedLock &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>sead::ScopedLock::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1ScopedLock" kindref="compound">ScopedLock</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadScopedLock.h" line="12" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedLock_1a62e6cd3a3bcfe796551dc070ead37bf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual sead::ScopedLock&lt; T &gt;::~ScopedLock</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedLock</name>
+        <qualifiedname>sead::ScopedLock::~ScopedLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadScopedLock.h" line="14" column="13" bodyfile="lib/sead/include/prim/seadScopedLock.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sead/include/prim/seadScopedLock.h" line="7" column="1" bodyfile="lib/sead/include/prim/seadScopedLock.h" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classsead_1_1ScopedLock_1a58f5751c2e074767d64824d2438648a2" prot="protected" virt="non-virtual"><scope>sead::ScopedLock</scope><name>mLocked</name></member>
+      <member refid="classsead_1_1ScopedLock_1a18eb09d527ff678ef9c1725981f0fa63" prot="public" virt="non-virtual"><scope>sead::ScopedLock</scope><name>operator=</name></member>
+      <member refid="classsead_1_1ScopedLock_1a074edf6b07b3cd257b0b0f5a3dd2fc75" prot="public" virt="non-virtual"><scope>sead::ScopedLock</scope><name>ScopedLock</name></member>
+      <member refid="classsead_1_1ScopedLock_1af8dc83189dc924c4f68e231543930da8" prot="public" virt="non-virtual"><scope>sead::ScopedLock</scope><name>ScopedLock</name></member>
+      <member refid="classsead_1_1ScopedLock_1a62e6cd3a3bcfe796551dc070ead37bf3" prot="public" virt="virtual"><scope>sead::ScopedLock</scope><name>~ScopedLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

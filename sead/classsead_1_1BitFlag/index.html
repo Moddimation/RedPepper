@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::BitFlag - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadbitflag">Class sead::BitFlag</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>BitFlag</strong></a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-bitflag-12"><strong>BitFlag</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-bitflag-22"><strong>BitFlag</strong></a> (T bits) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-change"><strong>change</strong></a> (T val, bool on) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-changebit"><strong>changeBit</strong></a> (int bit, bool on) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-countcontinuousoffbitfromright"><strong>countContinuousOffBitFromRight</strong></a> () const<br><em>Count trailing zeroes.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-countonbit"><strong>countOnBit</strong></a> () const<br><em>Popcount.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-countrightonbit"><strong>countRightOnBit</strong></a> (int bit) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-findonbitfromright"><strong>findOnBitFromRight</strong></a> (int num) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">size_t</td>
+<td style="text-align: left;"><a href="#function-getbytesize"><strong>getByteSize</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getdirect"><strong>getDirect</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getmask"><strong>getMask</strong></a> (T v) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="#function-getptr-12"><strong>getPtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const T *</td>
+<td style="text-align: left;"><a href="#function-getptr-22"><strong>getPtr</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isoff"><strong>isOff</strong></a> (T val) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isoffbit"><strong>isOffBit</strong></a> (int bit) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-ison"><strong>isOn</strong></a> (T val) const<br><em>Checks if (at least) one of the bits are set.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isonall"><strong>isOnAll</strong></a> (T val) const<br><em>Checks if all of the bits are set.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isonbit"><strong>isOnBit</strong></a> (int bit) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-iszero"><strong>isZero</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makeallone"><strong>makeAllOne</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makeallzero"><strong>makeAllZero</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-operator-t"><strong>operator T</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-reset"><strong>reset</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-resetbit"><strong>resetBit</strong></a> (int bit) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set"><strong>set</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setbit"><strong>setBit</strong></a> (int bit) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setdirect"><strong>setDirect</strong></a> (T bits) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-testandclear"><strong>testAndClear</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-testandclearbit"><strong>testAndClearBit</strong></a> (int bit) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-toggle"><strong>toggle</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-togglebit"><strong>toggleBit</strong></a> (int bit) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions">Public Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-makemask"><strong>makeMask</strong></a> (int bit) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#variable-mbits"><strong>mBits</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-bitflag-12">function BitFlag [1/2]</h3>
+<pre><code class="language-C++">inline sead::BitFlag::BitFlag () 
+</code></pre>
+<hr>
+
+<h3 id="function-bitflag-22">function BitFlag [2/2]</h3>
+<pre><code class="language-C++">inline sead::BitFlag::BitFlag (
+    T bits
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-change">function change</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::change (
+    T val,
+    bool on
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-changebit">function changeBit</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::changeBit (
+    int bit,
+    bool on
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-countcontinuousoffbitfromright">function countContinuousOffBitFromRight</h3>
+<p><em>Count trailing zeroes.</em> </p>
+<pre><code class="language-C++">inline int sead::BitFlag::countContinuousOffBitFromRight () const
+</code></pre>
+<hr>
+
+<h3 id="function-countonbit">function countOnBit</h3>
+<p><em>Popcount.</em> </p>
+<pre><code class="language-C++">inline int sead::BitFlag::countOnBit () const
+</code></pre>
+<hr>
+
+<h3 id="function-countrightonbit">function countRightOnBit</h3>
+<pre><code class="language-C++">inline int sead::BitFlag::countRightOnBit (
+    int bit
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-findonbitfromright">function findOnBitFromRight</h3>
+<pre><code class="language-C++">inline int sead::BitFlag::findOnBitFromRight (
+    int num
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-getbytesize">function getByteSize</h3>
+<pre><code class="language-C++">inline size_t sead::BitFlag::getByteSize () const
+</code></pre>
+<hr>
+
+<h3 id="function-getdirect">function getDirect</h3>
+<pre><code class="language-C++">inline T sead::BitFlag::getDirect () const
+</code></pre>
+<hr>
+
+<h3 id="function-getmask">function getMask</h3>
+<pre><code class="language-C++">T sead::BitFlag::getMask (
+    T v
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-getptr-12">function getPtr [1/2]</h3>
+<pre><code class="language-C++">inline T * sead::BitFlag::getPtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-getptr-22">function getPtr [2/2]</h3>
+<pre><code class="language-C++">inline const T * sead::BitFlag::getPtr () const
+</code></pre>
+<hr>
+
+<h3 id="function-isoff">function isOff</h3>
+<pre><code class="language-C++">inline bool sead::BitFlag::isOff (
+    T val
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-isoffbit">function isOffBit</h3>
+<pre><code class="language-C++">inline bool sead::BitFlag::isOffBit (
+    int bit
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-ison">function isOn</h3>
+<p><em>Checks if (at least) one of the bits are set.</em> </p>
+<pre><code class="language-C++">inline bool sead::BitFlag::isOn (
+    T val
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-isonall">function isOnAll</h3>
+<p><em>Checks if all of the bits are set.</em> </p>
+<pre><code class="language-C++">inline bool sead::BitFlag::isOnAll (
+    T val
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-isonbit">function isOnBit</h3>
+<pre><code class="language-C++">inline bool sead::BitFlag::isOnBit (
+    int bit
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-iszero">function isZero</h3>
+<pre><code class="language-C++">inline bool sead::BitFlag::isZero () const
+</code></pre>
+<hr>
+
+<h3 id="function-makeallone">function makeAllOne</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::makeAllOne () 
+</code></pre>
+<hr>
+
+<h3 id="function-makeallzero">function makeAllZero</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::makeAllZero () 
+</code></pre>
+<hr>
+
+<h3 id="function-operator-t">function operator T</h3>
+<pre><code class="language-C++">inline sead::BitFlag::operator T () const
+</code></pre>
+<hr>
+
+<h3 id="function-reset">function reset</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::reset (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-resetbit">function resetBit</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::resetBit (
+    int bit
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-set">function set</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::set (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setbit">function setBit</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::setBit (
+    int bit
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setdirect">function setDirect</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::setDirect (
+    T bits
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-testandclear">function testAndClear</h3>
+<pre><code class="language-C++">inline bool sead::BitFlag::testAndClear (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-testandclearbit">function testAndClearBit</h3>
+<pre><code class="language-C++">inline bool sead::BitFlag::testAndClearBit (
+    int bit
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-toggle">function toggle</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::toggle (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-togglebit">function toggleBit</h3>
+<pre><code class="language-C++">inline void sead::BitFlag::toggleBit (
+    int bit
+) 
+</code></pre>
+<hr>
+<h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
+<h3 id="function-makemask">function makeMask</h3>
+<pre><code class="language-C++">static inline T sead::BitFlag::makeMask (
+    int bit
+) 
+</code></pre>
+<hr>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-mbits">variable mBits</h3>
+<pre><code class="language-C++">T sead::BitFlag&lt; T &gt;::mBits;
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/prim/seadBitFlag.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

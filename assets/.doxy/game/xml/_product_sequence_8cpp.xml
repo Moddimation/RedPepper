@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_product_sequence_8cpp" kind="file" language="C++">
+    <compoundname>ProductSequence.cpp</compoundname>
+    <includes refid="_product_sequence_8h" local="yes">Sequence/ProductSequence.h</includes>
+    <includes local="no">Nerve/alNerve.h</includes>
+    <includes local="no">Nerve/alNerveFunction.h</includes>
+    <includes refid="_product_state_course_select_8h" local="yes">Sequence/ProductStateCourseSelect.h</includes>
+    <includes refid="_product_state_stage_8h" local="yes">Sequence/ProductStateStage.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Sequence/ProductSequence.h</label>
+        <link refid="_product_sequence_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Sequence/ProductStateCourseSelect.h</label>
+        <link refid="_product_state_course_select_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Sequence/ProductStateStage.h</label>
+        <link refid="_product_state_stage_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ProductSequence.cpp</label>
+        <link refid="_product_sequence_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alHostStateBase.h</label>
+      </node>
+      <node id="4">
+        <label>Nerve/alNerve.h</label>
+      </node>
+      <node id="5">
+        <label>Nerve/alNerveFunction.h</label>
+      </node>
+      <node id="3">
+        <label>Sequence/alSequence.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_nrv_product_sequence">NrvProductSequence</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_product_sequence_8cpp_1a09b334d4b8d999d749470031b9a44c10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FUN_0025ba7c</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>FUN_0025ba7c</name>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/src/Sequence/ProductSequence.cpp" line="40" column="17" declfile="Game/src/Sequence/ProductSequence.cpp" declline="40" declcolumn="17"/>
+        <referencedby refid="class_product_sequence_1a7fa46e1b47636909ca0298c1a0629338" compoundref="_product_sequence_8cpp" startline="42" endline="51">ProductSequence::exeTitle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_product_sequence_8cpp_1a5c60241eeac5534ae30d9cc3ab16b6e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FUN_0025ddd0</definition>
+        <argsstring>()</argsstring>
+        <name>FUN_0025ddd0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/src/Sequence/ProductSequence.cpp" line="68" column="17" declfile="Game/src/Sequence/ProductSequence.cpp" declline="68" declcolumn="17"/>
+        <referencedby refid="class_product_sequence_1a65f4b6437e23bf81339d58ddd407d3ee" compoundref="_product_sequence_8cpp" startline="70" endline="79">ProductSequence::exeEnding</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_product_sequence_8h" kindref="compound">Sequence/ProductSequence.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerve.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerveFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_product_state_course_select_8h" kindref="compound">Sequence/ProductStateCourseSelect.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_product_state_stage_8h" kindref="compound">Sequence/ProductStateStage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespace_nrv_product_sequence" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_nrv_product_sequence" kindref="compound">NrvProductSequence</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>Title<sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>Opening<sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>CourseSelect<sp/>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>Stage<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>KinopioHouse<sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>MysteryBox<sp/>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>Ending<sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>GameOverRoom<sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">NERVE_DEF(<sp/><ref refid="class_product_sequence" kindref="compound">ProductSequence</ref>,<sp/>Unk1<sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NrvProductSequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_product_sequence_1afa4734fa94c2745d3ba1f91c6bc3bb17" refkind="member"><highlight class="normal"><ref refid="class_product_sequence_1afa4734fa94c2745d3ba1f91c6bc3bb17" kindref="member">ProductSequence::ProductSequence</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Sequence(<sp/>name<sp/>),<sp/>mStageStartParam(<sp/>nullptr<sp/>),<sp/>_14C(<sp/>nullptr<sp/>),<sp/>_150(<sp/>nullptr<sp/>),<sp/>mWipeKeeper(<sp/>nullptr<sp/>),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_158(<sp/>nullptr<sp/>),<sp/>_15C(<sp/>nullptr<sp/>),<sp/>mStateTitle(<sp/>nullptr<sp/>),<sp/>mStateOpening(<sp/>nullptr<sp/>),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mStateCourseSelect(<sp/>nullptr<sp/>),<sp/>mStateStage(<sp/>nullptr<sp/>),<sp/>mStateKinopioHouse(<sp/>nullptr<sp/>),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mStateMysteryBox(<sp/>nullptr<sp/>),<sp/>mStateEnding(<sp/>nullptr<sp/>),<sp/>mStateGameOverRoom(<sp/>nullptr<sp/>),<sp/>_180(<sp/>nullptr<sp/>),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_184(<sp/>nullptr<sp/>),<sp/>_188(<sp/>nullptr<sp/>),<sp/>_18C(<sp/>nullptr<sp/>),<sp/>_190(<sp/>nullptr<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_product_sequence_1a2cf2dac246818b8f7e0ea243863aac60" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_sequence_1a2cf2dac246818b8f7e0ea243863aac60" kindref="member">ProductSequence::init</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>needed<sp/>for<sp/>vtable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_product_sequence_8cpp_1a09b334d4b8d999d749470031b9a44c10" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_product_sequence_8cpp_1a09b334d4b8d999d749470031b9a44c10" kindref="member">FUN_0025ba7c</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_product_sequence_1a7fa46e1b47636909ca0298c1a0629338" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_sequence_1a7fa46e1b47636909ca0298c1a0629338" kindref="member">ProductSequence::exeTitle</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::updateNerveState(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="_product_sequence_8cpp_1a09b334d4b8d999d749470031b9a44c10" kindref="member">FUN_0025ba7c</ref>(<sp/></highlight><highlight class="stringliteral">&quot;オープニング実行&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvProductSequence::CourseSelect<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvProductSequence::Opening<sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_product_sequence_1a2f3215834f0ddd2881e15fcdbf6c5fc1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_sequence_1a2f3215834f0ddd2881e15fcdbf6c5fc1" kindref="member">ProductSequence::exeOpening</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::updateNerveState(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvProductSequence::CourseSelect<sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_product_sequence_1aa6e65c2086507449b7a2f902079a1024" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_sequence_1aa6e65c2086507449b7a2f902079a1024" kindref="member">ProductSequence::exeKinopioHouse</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::updateNerveState(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_product_sequence_1ab622a538dfbb6559204898f229aca0a9" kindref="member">mStateCourseSelect</ref>-&gt;<ref refid="class_product_state_title_1a5759ce705ae071655b113c43d8325f8b" kindref="member">set_10</ref>(<sp/>4<sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvProductSequence::CourseSelect<sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_product_sequence_8cpp_1a5c60241eeac5534ae30d9cc3ab16b6e9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_product_sequence_8cpp_1a5c60241eeac5534ae30d9cc3ab16b6e9" kindref="member">FUN_0025ddd0</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_product_sequence_1a65f4b6437e23bf81339d58ddd407d3ee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_product_sequence_1a65f4b6437e23bf81339d58ddd407d3ee" kindref="member">ProductSequence::exeEnding</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::updateNerveState(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="_product_sequence_8cpp_1a5c60241eeac5534ae30d9cc3ab16b6e9" kindref="member">FUN_0025ddd0</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvProductSequence::Unk1<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::setNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvProductSequence::Title<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Sequence/ProductSequence.cpp"/>
+  </compounddef>
+</doxygen>

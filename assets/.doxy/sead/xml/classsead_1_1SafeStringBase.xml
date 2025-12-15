@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1SafeStringBase" kind="class" language="C++" prot="public">
+    <compoundname>sead::SafeStringBase</compoundname>
+    <derivedcompoundref refid="classsead_1_1BufferedSafeStringBase" prot="public" virt="non-virtual">sead::BufferedSafeStringBase&lt; char &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1BufferedSafeStringBase" prot="public" virt="non-virtual">sead::BufferedSafeStringBase&lt; T &gt;</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsead_1_1SafeStringBase_1aba47b132718aa64adf1f6e328236d6b3" prot="public" static="yes" mutable="no">
+        <type>const T</type>
+        <definition>const T sead::SafeStringBase&lt; T &gt;::cNullChar</definition>
+        <argsstring></argsstring>
+        <name>cNullChar</name>
+        <qualifiedname>sead::SafeStringBase::cNullChar</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="31" column="20" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1SafeStringBase_1a18ac435da4f82a849cb68bd67f3e0033" prot="public" static="yes" mutable="no">
+        <type>const T</type>
+        <definition>const T sead::SafeStringBase&lt; T &gt;::cLineBreakChar</definition>
+        <argsstring></argsstring>
+        <name>cLineBreakChar</name>
+        <qualifiedname>sead::SafeStringBase::cLineBreakChar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="32" column="20" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1SafeStringBase_1afd1ee054e6300af756603f02b5c03fd6" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeStringBase</ref></type>
+        <definition>const SafeStringBase sead::SafeStringBase&lt; T &gt;::cEmptyString</definition>
+        <argsstring></argsstring>
+        <name>cEmptyString</name>
+        <qualifiedname>sead::SafeStringBase::cEmptyString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="33" column="33" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1SafeStringBase_1ab085100178a4ec4a0cfaf80f7fbf56ce" prot="public" static="yes" mutable="no">
+        <type>const s32</type>
+        <definition>const s32 sead::SafeStringBase&lt; T &gt;::cMaximumLength</definition>
+        <argsstring></argsstring>
+        <name>cMaximumLength</name>
+        <qualifiedname>sead::SafeStringBase::cMaximumLength</qualifiedname>
+        <initializer>= 0x80000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="34" column="22" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1SafeStringBase_1a1d470e9c146252f039fb32ddafc2b0a7" prot="protected" static="no" mutable="no">
+        <type>const T *</type>
+        <definition>const T* sead::SafeStringBase&lt; T &gt;::mStringTop</definition>
+        <argsstring></argsstring>
+        <name>mStringTop</name>
+        <qualifiedname>sead::SafeStringBase::mStringTop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="39" column="13" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1a6a52b011a3c9d03f4b912a07c8f63756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual sead::SafeStringBase&lt; T &gt;::~SafeStringBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SafeStringBase</name>
+        <qualifiedname>sead::SafeStringBase::~SafeStringBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="12" column="13" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1a59e05aa33818750203f1202586ecaa0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::SafeStringBase&lt; T &gt;::assureTerminationImpl_</definition>
+        <argsstring>() const</argsstring>
+        <name>assureTerminationImpl_</name>
+        <qualifiedname>sead::SafeStringBase::assureTerminationImpl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="14" column="18" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1a3750c27a87bbcbed53c318151905ba33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::SafeStringBase&lt; T &gt;::SafeStringBase</definition>
+        <argsstring>()</argsstring>
+        <name>SafeStringBase</name>
+        <qualifiedname>sead::SafeStringBase::SafeStringBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="16" column="5" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1ad3f3de127d5c15c566642b9a5b744b84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::SafeStringBase&lt; T &gt;::SafeStringBase</definition>
+        <argsstring>(const T *str)</argsstring>
+        <name>SafeStringBase</name>
+        <qualifiedname>sead::SafeStringBase::SafeStringBase</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="18" column="5" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1a039e805be96e5aeb2dbe3e98f240dc39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::SafeStringBase&lt; T &gt;::SafeStringBase</definition>
+        <argsstring>(const SafeStringBase &amp;other)</argsstring>
+        <name>SafeStringBase</name>
+        <qualifiedname>sead::SafeStringBase::SafeStringBase</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeStringBase</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="22" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1a95b7c18812c75d322fa8c68159a4fca0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * sead::SafeStringBase&lt; T &gt;::cstr</definition>
+        <argsstring>() const</argsstring>
+        <name>cstr</name>
+        <qualifiedname>sead::SafeStringBase::cstr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="24" column="20" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1a2b9d15ca67c2046806a68509fdc0cd0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::SafeStringBase&lt; T &gt;::isEqual</definition>
+        <argsstring>(const SafeStringBase&lt; T &gt; &amp;str) const</argsstring>
+        <name>isEqual</name>
+        <qualifiedname>sead::SafeStringBase::isEqual</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeStringBase</ref>&lt; T &gt; &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="29" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1SafeStringBase_1aba9d57c2a6fcb3daa82f25297d674784" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; sead::SafeStringBase&lt; T &gt;::unsafeAt_</definition>
+        <argsstring>(s32 idx) const</argsstring>
+        <name>unsafeAt_</name>
+        <qualifiedname>sead::SafeStringBase::unsafeAt_</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadSafeString.h" line="37" column="13" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::BufferedSafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1BufferedSafeStringBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::FixedSafeString&lt; 256 &gt;</label>
+        <link refid="classsead_1_1FixedSafeString"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::FixedSafeString&lt; 32 &gt;</label>
+        <link refid="classsead_1_1FixedSafeString"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::FixedSafeStringBase&lt; char, L &gt;</label>
+        <link refid="classsead_1_1FixedSafeStringBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::BufferedSafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1BufferedSafeStringBase"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::FixedSafeString&lt; L &gt;</label>
+        <link refid="classsead_1_1FixedSafeString"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::FixedSafeStringBase&lt; T, L &gt;</label>
+        <link refid="classsead_1_1FixedSafeStringBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/prim/seadSafeString.h" line="10" column="1" bodyfile="lib/sead/include/prim/seadSafeString.h" bodystart="10" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classsead_1_1SafeStringBase_1a59e05aa33818750203f1202586ecaa0c" prot="public" virt="virtual"><scope>sead::SafeStringBase</scope><name>assureTerminationImpl_</name></member>
+      <member refid="classsead_1_1SafeStringBase_1afd1ee054e6300af756603f02b5c03fd6" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>cEmptyString</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a18ac435da4f82a849cb68bd67f3e0033" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>cLineBreakChar</name></member>
+      <member refid="classsead_1_1SafeStringBase_1ab085100178a4ec4a0cfaf80f7fbf56ce" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>cMaximumLength</name></member>
+      <member refid="classsead_1_1SafeStringBase_1aba47b132718aa64adf1f6e328236d6b3" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>cNullChar</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a95b7c18812c75d322fa8c68159a4fca0" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>cstr</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a2b9d15ca67c2046806a68509fdc0cd0a" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>isEqual</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a1d470e9c146252f039fb32ddafc2b0a7" prot="protected" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>mStringTop</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a3750c27a87bbcbed53c318151905ba33" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>SafeStringBase</name></member>
+      <member refid="classsead_1_1SafeStringBase_1ad3f3de127d5c15c566642b9a5b744b84" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>SafeStringBase</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a039e805be96e5aeb2dbe3e98f240dc39" prot="public" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>SafeStringBase</name></member>
+      <member refid="classsead_1_1SafeStringBase_1aba9d57c2a6fcb3daa82f25297d674784" prot="protected" virt="non-virtual"><scope>sead::SafeStringBase</scope><name>unsafeAt_</name></member>
+      <member refid="classsead_1_1SafeStringBase_1a6a52b011a3c9d03f4b912a07c8f63756" prot="public" virt="virtual"><scope>sead::SafeStringBase</scope><name>~SafeStringBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

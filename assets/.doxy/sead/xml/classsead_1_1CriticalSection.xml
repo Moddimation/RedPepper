@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1CriticalSection" kind="class" language="C++" prot="public">
+    <compoundname>sead::CriticalSection</compoundname>
+    <basecompoundref refid="classsead_1_1IDisposer" prot="public" virt="non-virtual">sead::IDisposer</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1ac6c12862ee86d9952e2080f42cdea347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::CriticalSection::CriticalSection</definition>
+        <argsstring>()</argsstring>
+        <name>CriticalSection</name>
+        <qualifiedname>sead::CriticalSection::CriticalSection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="12" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1a520c1c58650a515166e084a634d84544" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::CriticalSection::CriticalSection</definition>
+        <argsstring>(Heap *disposer_heap)</argsstring>
+        <name>CriticalSection</name>
+        <qualifiedname>sead::CriticalSection::CriticalSection</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+          <declname>disposer_heap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1a0a1555de44addd637ab479d980d51747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::CriticalSection::CriticalSection</definition>
+        <argsstring>(Heap *disposer_heap, HeapNullOption heap_null_option)</argsstring>
+        <name>CriticalSection</name>
+        <qualifiedname>sead::CriticalSection::CriticalSection</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+          <declname>disposer_heap</declname>
+        </param>
+        <param>
+          <type>HeapNullOption</type>
+          <declname>heap_null_option</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="14" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1ac91bab972c7f312341aa93264acbfb82" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sead::CriticalSection::~CriticalSection</definition>
+        <argsstring>()</argsstring>
+        <name>~CriticalSection</name>
+        <qualifiedname>sead::CriticalSection::~CriticalSection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="15" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1ad567533467cc73e11985df2d27de15ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::CriticalSection::lock</definition>
+        <argsstring>()</argsstring>
+        <name>lock</name>
+        <qualifiedname>sead::CriticalSection::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="17" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1a94099daccd4cb5a28053584d48bbbba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::CriticalSection::tryLock</definition>
+        <argsstring>()</argsstring>
+        <name>tryLock</name>
+        <qualifiedname>sead::CriticalSection::tryLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="18" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1aa7d0a418e818c611f548f5198c73122e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::CriticalSection::unlock</definition>
+        <argsstring>()</argsstring>
+        <name>unlock</name>
+        <qualifiedname>sead::CriticalSection::unlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="19" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1CriticalSection_1a08d2b876ed5cb13cea39562f8f267654" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::CriticalSection::try_lock</definition>
+        <argsstring>()</argsstring>
+        <name>try_lock</name>
+        <qualifiedname>sead::CriticalSection::try_lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadCriticalSection.h" line="22" column="10" bodyfile="lib/sead/include/thread/seadCriticalSection.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1CriticalSection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1IDisposer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1CriticalSection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1IDisposer"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/thread/seadCriticalSection.h" line="10" column="1" bodyfile="lib/sead/include/thread/seadCriticalSection.h" bodystart="10" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classsead_1_1CriticalSection_1ac6c12862ee86d9952e2080f42cdea347" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>CriticalSection</name></member>
+      <member refid="classsead_1_1CriticalSection_1a520c1c58650a515166e084a634d84544" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>CriticalSection</name></member>
+      <member refid="classsead_1_1CriticalSection_1a0a1555de44addd637ab479d980d51747" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>CriticalSection</name></member>
+      <member refid="classsead_1_1IDisposer_1a4787eac6c96ec41a402a87785ca1c1e5" prot="protected" virt="non-virtual"><scope>sead::CriticalSection</scope><name>getDisposerHeap_</name></member>
+      <member refid="classsead_1_1IDisposer_1ad80f0bcae4db9dc8d86b972cf79242ff" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>getListNodeOffset</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>HeapNullOption</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a7924dc86bb92083cfe17af344f18efdb" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>HeapNullOption_AlwaysUseSpecifiedHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1ae6e1545ced87f4418a3a522abd0134b7" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>HeapNullOption_DoNotAppendDisposerIfNoHeapSpecified</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a9c3b6e23a61f6b9e12b642cd907a8a49" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>HeapNullOption_UseSpecifiedOrContainHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a6fd315b4de876d836ebb7a643d6db3b0" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>HeapNullOption_UseSpecifiedOrCurrentHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a2dce641e279c1e5cd489227548dadf78" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1IDisposer_1a674d1dfb9528774610a5e90fe3d8f394" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1CriticalSection_1ad567533467cc73e11985df2d27de15ab" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>lock</name></member>
+      <member refid="classsead_1_1CriticalSection_1a08d2b876ed5cb13cea39562f8f267654" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>try_lock</name></member>
+      <member refid="classsead_1_1CriticalSection_1a94099daccd4cb5a28053584d48bbbba1" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>tryLock</name></member>
+      <member refid="classsead_1_1CriticalSection_1aa7d0a418e818c611f548f5198c73122e" prot="public" virt="non-virtual"><scope>sead::CriticalSection</scope><name>unlock</name></member>
+      <member refid="classsead_1_1CriticalSection_1ac91bab972c7f312341aa93264acbfb82" prot="public" virt="virtual"><scope>sead::CriticalSection</scope><name>~CriticalSection</name></member>
+      <member refid="classsead_1_1IDisposer_1a36e2b9b062febed0893f3530bc427f0a" prot="public" virt="virtual"><scope>sead::CriticalSection</scope><name>~IDisposer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

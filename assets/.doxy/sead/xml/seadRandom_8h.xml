@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="seadRandom_8h" kind="file" language="C++">
+    <compoundname>seadRandom.h</compoundname>
+    <includes refid="seadRawPrint_8h" local="no">basis/seadRawPrint.h</includes>
+    <includes refid="seadTypes_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="seadBitUtil_8h" local="no">prim/seadBitUtil.h</includes>
+    <includedby refid="seadPtrArray_8h" local="no">lib/sead/include/container/seadPtrArray.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="seadRawPrint_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basis/seadTypes.h</label>
+        <link refid="seadTypes_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="seadBitUtil_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/sead/include/random/seadRandom.h</label>
+        <link refid="seadRandom_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nn/types.h</label>
+      </node>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/sead/include/container/seadPtrArray.h</label>
+        <link refid="seadPtrArray_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lib/sead/include/controller/seadControllerMgr.h</label>
+        <link refid="seadControllerMgr_8h_source"/>
+      </node>
+      <node id="7">
+        <label>lib/sead/include/framework/seadCalculateTask.h</label>
+        <link refid="seadCalculateTask_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lib/sead/include/framework/seadHeapPolicies.h</label>
+        <link refid="seadHeapPolicies_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lib/sead/include/framework/seadTaskBase.h</label>
+        <link refid="seadTaskBase_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lib/sead/include/framework/seadTaskMgr.h</label>
+        <link refid="seadTaskMgr_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/sead/include/heap/seadHeapMgr.h</label>
+        <link refid="seadHeapMgr_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/sead/include/random/seadRandom.h</label>
+        <link refid="seadRandom_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1Random" prot="public">sead::Random</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;basis/seadRawPrint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;basis/seadTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;prim/seadBitUtil.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sead<sp/>{</highlight></codeline>
+<codeline lineno="9" refid="classsead_1_1Random" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1Random" kindref="compound">Random</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Random" kindref="compound">Random</ref>()<sp/>{<sp/><ref refid="classsead_1_1Random_1a4e97c3b5f9c59708ed8a5031db2ec88c" kindref="member">init</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Random" kindref="compound">Random</ref>(u32<sp/>seed)<sp/>{<sp/><ref refid="classsead_1_1Random_1a4e97c3b5f9c59708ed8a5031db2ec88c" kindref="member">init</ref>(seed);<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1Random_1aa008ec2d855806aa2bd92f30d5215339" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Random_1aa008ec2d855806aa2bd92f30d5215339" kindref="member">Random</ref>(u32<sp/>seed_x,<sp/>u32<sp/>seed_y,<sp/>u32<sp/>seed_z,<sp/>u32<sp/>seed_w)<sp/>{<sp/><ref refid="classsead_1_1Random_1a4e97c3b5f9c59708ed8a5031db2ec88c" kindref="member">init</ref>(seed_x,<sp/>seed_y,<sp/>seed_z,<sp/>seed_w);<sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classsead_1_1Random_1a4e97c3b5f9c59708ed8a5031db2ec88c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Random_1a4e97c3b5f9c59708ed8a5031db2ec88c" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1Random_1a5b3a04e9eb6ced5d7bea9b4cea34cab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Random_1a5b3a04e9eb6ced5d7bea9b4cea34cab5" kindref="member">init</ref>(u32<sp/>seed);</highlight></codeline>
+<codeline lineno="25" refid="classsead_1_1Random_1a971b444137b49653536dbf5901f549ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Random_1a971b444137b49653536dbf5901f549ff" kindref="member">init</ref>(u32<sp/>seed_x,<sp/>u32<sp/>seed_y,<sp/>u32<sp/>seed_z,<sp/>u32<sp/>seed_w);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">getU32</ref>();</highlight></codeline>
+<codeline lineno="30" refid="classsead_1_1Random_1aa6f08002def458121475f3362256281f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>u64<sp/><ref refid="classsead_1_1Random_1aa6f08002def458121475f3362256281f" kindref="member">getU64</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/><ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">getU32</ref>(u32<sp/>max);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>s32<sp/><ref refid="classsead_1_1Random_1a6c3e1f9bc1aa3048d931f80072a957b5" kindref="member">getS32Range</ref>(s32<sp/>a,<sp/>s32<sp/>b);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>s64<sp/><ref refid="classsead_1_1Random_1af48169caec5730dc139d4bcde32ac7af" kindref="member">getS64Range</ref>(s64<sp/>a,<sp/>s64<sp/>b);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classsead_1_1Random_1a5e50175c38843fb40406adddd70a11a3" kindref="member">getF32</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>f32<sp/><ref refid="classsead_1_1Random_1aec81c10e1c1d4bcfd9dd5067c937dc62" kindref="member">getF32Range</ref>(f32<sp/>a,<sp/>f32<sp/>b);</highlight></codeline>
+<codeline lineno="44" refid="classsead_1_1Random_1ac8686c6fd61aa4bdff604473a757551d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classsead_1_1Random_1ac8686c6fd61aa4bdff604473a757551d" kindref="member">getF64</ref>();</highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1Random_1a09c48692199e99adb5feaa75f919bc53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classsead_1_1Random_1a09c48692199e99adb5feaa75f919bc53" kindref="member">getF64Range</ref>(f64<sp/>a,<sp/>f64<sp/>b);</highlight></codeline>
+<codeline lineno="48" refid="classsead_1_1Random_1a69c396553182190e4bc684f7d3198dd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Random_1a69c396553182190e4bc684f7d3198dd9" kindref="member">getBool</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getContext(u32*<sp/>x,<sp/>u32*<sp/>y,<sp/>u32*<sp/>z,<sp/>u32*<sp/>w)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>mX;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>mY;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>mZ;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>mW;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classsead_1_1Random_1a45904bb18e08b6f4149c91342273658f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>u32<sp/><ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">Random::getU32</ref>(u32<sp/>max)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">getU32</ref>()<sp/>*<sp/>u64(max)<sp/>&gt;&gt;<sp/>32u;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classsead_1_1Random_1a6c3e1f9bc1aa3048d931f80072a957b5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>s32<sp/><ref refid="classsead_1_1Random_1a6c3e1f9bc1aa3048d931f80072a957b5" kindref="member">Random::getS32Range</ref>(s32<sp/>a,<sp/>s32<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SEAD_ASSERT_MSG(a<sp/>&lt;=<sp/>b,<sp/></highlight><highlight class="stringliteral">&quot;b[%d]<sp/>&gt;=<sp/>a[%d]&quot;</highlight><highlight class="normal">,<sp/>a,<sp/>b);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">getU32</ref>(b<sp/>-<sp/>a)<sp/>+<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">u32</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(a);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>UNCHECKED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classsead_1_1Random_1af48169caec5730dc139d4bcde32ac7af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>s64<sp/><ref refid="classsead_1_1Random_1af48169caec5730dc139d4bcde32ac7af" kindref="member">Random::getS64Range</ref>(s64<sp/>a,<sp/>s64<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>SEAD_ASSERT_MSG(a<sp/>&lt;=<sp/>b,<sp/></highlight><highlight class="stringliteral">&quot;b[%ld]<sp/>&gt;=<sp/>a[%ld]&quot;</highlight><highlight class="normal">,<sp/>a,<sp/>b);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">getU32</ref>()<sp/>*<sp/>u64(b<sp/>-<sp/>a)<sp/>&gt;&gt;<sp/>32u)<sp/>+<sp/>a;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classsead_1_1Random_1a5e50175c38843fb40406adddd70a11a3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>f32<sp/><ref refid="classsead_1_1Random_1a5e50175c38843fb40406adddd70a11a3" kindref="member">Random::getF32</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BitUtil::bitCast&lt;f32&gt;((<ref refid="classsead_1_1Random_1a7c269a0d9e3501cbec06cf0f46e88f3d" kindref="member">getU32</ref>()<sp/>&gt;&gt;<sp/>9u)<sp/>|<sp/>0x3F800000u)<sp/>-<sp/>1.0f;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classsead_1_1Random_1aec81c10e1c1d4bcfd9dd5067c937dc62" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>f32<sp/><ref refid="classsead_1_1Random_1aec81c10e1c1d4bcfd9dd5067c937dc62" kindref="member">Random::getF32Range</ref>(f32<sp/>a,<sp/>f32<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>SEAD_ASSERT_MSG(a<sp/>&lt;=<sp/>b,<sp/></highlight><highlight class="stringliteral">&quot;b[%f]<sp/>&gt;=<sp/>a[%f]&quot;</highlight><highlight class="normal">,<sp/>a,<sp/>b);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>+<sp/>(b<sp/>-<sp/>a)<sp/>*<sp/><ref refid="classsead_1_1Random_1a5e50175c38843fb40406adddd70a11a3" kindref="member">getF32</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/random/seadRandom.h"/>
+  </compounddef>
+</doxygen>

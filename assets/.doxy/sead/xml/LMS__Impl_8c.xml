@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="LMS__Impl_8c" kind="file" language="C++">
+    <compoundname>LMS_Impl.c</compoundname>
+    <includes refid="LMS__Impl_8h" local="yes">LMS/LMS_Impl.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>LMS/LMS_Impl.h</label>
+        <link refid="LMS__Impl_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LMS/LMS_Types.h</label>
+        <link refid="LMS__Types_8h_source"/>
+      </node>
+      <node id="1">
+        <label>lib/sead/addins/libms/src/LMS_Impl.c</label>
+        <link refid="LMS__Impl_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="LMS__Impl_8c_1a68f4fb9afa6a9e9f91f4c72f1ce676bb" prot="public" static="no" mutable="no">
+        <type>LMS_AllocFuncPtr</type>
+        <definition>LMS_AllocFuncPtr LMSi_sAllocFuncPtr</definition>
+        <argsstring></argsstring>
+        <name>LMSi_sAllocFuncPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Impl.c" line="3" column="18" bodyfile="lib/sead/addins/libms/src/LMS_Impl.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="LMS__Impl_8c_1a85b0ec622c25367a2c905db229c98af6" prot="public" static="no" mutable="no">
+        <type>LMS_FreeFuncPtr</type>
+        <definition>LMS_FreeFuncPtr LMSi_sFreeFuncPtr</definition>
+        <argsstring></argsstring>
+        <name>LMSi_sFreeFuncPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Impl.c" line="4" column="17" bodyfile="lib/sead/addins/libms/src/LMS_Impl.c" bodystart="4" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="LMS__Impl_8c_1add7fd62cdc2777d17ccbb9a842d149b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * LMSi_Malloc</definition>
+        <argsstring>(u32 size)</argsstring>
+        <name>LMSi_Malloc</name>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Impl.c" line="6" column="6" bodyfile="lib/sead/addins/libms/src/LMS_Impl.c" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="LMS__Impl_8c_1a60007b369204ade1fc34885110a53f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LMSi_Free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>LMSi_Free</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Impl.c" line="11" column="6" bodyfile="lib/sead/addins/libms/src/LMS_Impl.c" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="LMS__Impl_8c_1aea24688435881f377e6bb00a9ea9eee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LMS_SetMemFuncs</definition>
+        <argsstring>(LMS_AllocFuncPtr alloc_ptr, LMS_FreeFuncPtr free_ptr)</argsstring>
+        <name>LMS_SetMemFuncs</name>
+        <param>
+          <type>LMS_AllocFuncPtr</type>
+          <declname>alloc_ptr</declname>
+        </param>
+        <param>
+          <type>LMS_FreeFuncPtr</type>
+          <declname>free_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Impl.c" line="16" column="6" bodyfile="lib/sead/addins/libms/src/LMS_Impl.c" bodystart="16" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;LMS/LMS_Impl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">LMS_AllocFuncPtr<sp/>LMSi_sAllocFuncPtr;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">LMS_FreeFuncPtr<sp/>LMSi_sFreeFuncPtr;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>LMSi_Malloc(u32<sp/>size)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LMSi_sAllocFuncPtr(size);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LMSi_Free(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>LMSi_sFreeFuncPtr(ptr);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LMS_SetMemFuncs(LMS_AllocFuncPtr<sp/>alloc_ptr,<sp/>LMS_FreeFuncPtr<sp/>free_ptr)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>LMSi_sAllocFuncPtr<sp/>=<sp/>alloc_ptr;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>LMSi_sFreeFuncPtr<sp/>=<sp/>free_ptr;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">s32<sp/>LMSi_SearchBlockByName(<ref refid="structLMS__Binary" kindref="compound">LMS_Binary</ref>*<sp/>binary,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>blockName)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>u16<sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binary-&gt;numBlocks<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(index<sp/>&lt;<sp/>binary-&gt;numBlocks)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>nop<sp/>before<sp/>beq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__nop();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(LMSi_MemCmp(binary-&gt;blocks[index].type,<sp/>blockName,<sp/>4))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index++;<sp/></highlight><highlight class="comment">//<sp/>binary-&gt;numBlocks<sp/>gets<sp/>loaded<sp/>before<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/addins/libms/src/LMS_Impl.c"/>
+  </compounddef>
+</doxygen>

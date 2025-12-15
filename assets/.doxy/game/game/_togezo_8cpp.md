@@ -1,0 +1,319 @@
+
+
+# File Togezo.cpp
+
+
+
+[**FileList**](files.md) **>** [**Enemy**](dir_ee967774be101b809d25f7ebc425a3fb.md) **>** [**Togezo.cpp**](_togezo_8cpp.md)
+
+[Go to the source code of this file](_togezo_8cpp_source.md)
+
+
+
+* `#include "Enemy/Togezo.h"`
+* `#include <LiveActor/alActorInitUtil.h>`
+* `#include <LiveActor/alActorPoseKeeper.h>`
+* `#include <LiveActor/alLiveActorFunction.h>`
+* `#include <Nerve/alNerve.h>`
+* `#include <Nerve/alNerveFunction.h>`
+* `#include <Nerve/alNerveStateBase.h>`
+* `#include <math/seadVector.h>`
+* `#include "Enemy/EnemyStateBlowDown.h"`
+* `#include "Enemy/WalkerStateChase.h"`
+* `#include "Enemy/WalkerStateChaseParam.h"`
+* `#include "Enemy/WalkerStateParam.h"`
+* `#include "Enemy/WalkerStateWander.h"`
+* `#include "Enemy/WalkerStateWanderParam.h"`
+* `#include "Player/PlayerFunction.h"`
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Namespaces
+
+| Type | Name |
+| ---: | :--- |
+| namespace | [**NrvTogezo**](namespace_nrv_togezo.md) <br> |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Public Functions
+
+| Type | Name |
+| ---: | :--- |
+|  void | [**FUN\_00258774**](#function-fun_00258774) ([**Togezo**](class_togezo.md) \*, const [**WalkerStateParam**](class_walker_state_param.md) \*) <br> |
+|  bool | [**FUN\_00259758**](#function-fun_00259758) (al::LiveActor \*, const sead::Vector3f &, const [**WalkerStateParam**](class_walker_state_param.md) \*) <br> |
+|  bool | [**FUN\_00262988**](#function-fun_00262988) (al::LiveActor \*, sead::Vector3f \* out, const sead::Vector3f &, float) <br> |
+|  bool | [**FUN\_0026b6cc**](#function-fun_0026b6cc) ([**WalkerStateWander**](class_walker_state_wander.md) \*, const sead::Vector3f & trans) <br> |
+|  bool | [**FUN\_00272a9c**](#function-fun_00272a9c) () <br> |
+|  void | [**FUN\_00279158**](#function-fun_00279158) ([**Togezo**](class_togezo.md) \*, const [**EnemyStateBlowDown**](class_enemy_state_blow_down.md) \*) <br> |
+|  void | [**FUN\_0027a1a0**](#function-fun_0027a1a0) (al::LiveActor \* actor, const char \*) <br> |
+|  void | [**FUN\_0027cf20**](#function-fun_0027cf20) (al::LiveActor \* actor, const al::ActorInitInfo & info, int) <br> |
+
+
+## Public Static Functions
+
+| Type | Name |
+| ---: | :--- |
+|  [**WalkerStateChaseParam**](class_walker_state_chase_param.md) split() | [**sTogezoWalkerStateChaseParam**](#function-stogezowalkerstatechaseparam) (false, true, 1. 3, 30. 0, 150. 0, 3. 0, 20. 0, "Run", "Wait") <br> |
+|  [**WalkerStateParam**](class_walker_state_param.md) split() | [**sTogezoWalkerStateParam**](#function-stogezowalkerstateparam) (4. 0, 0. 98, 0. 85, 250. 0, 700. 0, 180. 0, 70. 0, 150. 0) <br> |
+|  [**WalkerStateWanderParam**](class_walker_state_wander_param.md) split() | [**sTogezoWalkerStateWanderParam**](#function-stogezowalkerstatewanderparam) (30, 90, 0. 7, 4. 0, 10. 0, "Walk", "Wait") <br> |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Public Functions Documentation
+
+
+
+
+### function FUN\_00258774 
+
+```C++
+void FUN_00258774 (
+    Togezo *,
+    const WalkerStateParam *
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_00259758 
+
+```C++
+bool FUN_00259758 (
+    al::LiveActor *,
+    const sead::Vector3f &,
+    const WalkerStateParam *
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_00262988 
+
+```C++
+bool FUN_00262988 (
+    al::LiveActor *,
+    sead::Vector3f * out,
+    const sead::Vector3f &,
+    float
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_0026b6cc 
+
+```C++
+bool FUN_0026b6cc (
+    WalkerStateWander *,
+    const sead::Vector3f & trans
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_00272a9c 
+
+```C++
+bool FUN_00272a9c () 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_00279158 
+
+```C++
+void FUN_00279158 (
+    Togezo *,
+    const EnemyStateBlowDown *
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_0027a1a0 
+
+```C++
+void FUN_0027a1a0 (
+    al::LiveActor * actor,
+    const char *
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function FUN\_0027cf20 
+
+```C++
+void FUN_0027cf20 (
+    al::LiveActor * actor,
+    const al::ActorInitInfo & info,
+    int
+) 
+```
+
+
+
+
+<hr>
+## Public Static Functions Documentation
+
+
+
+
+### function sTogezoWalkerStateChaseParam 
+
+```C++
+static WalkerStateChaseParam split() sTogezoWalkerStateChaseParam (
+    false,
+    true,
+    1. 3,
+    30. 0,
+    150. 0,
+    3. 0,
+    20. 0,
+    "Run",
+    "Wait"
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function sTogezoWalkerStateParam 
+
+```C++
+static WalkerStateParam split() sTogezoWalkerStateParam (
+    4. 0,
+    0. 98,
+    0. 85,
+    250. 0,
+    700. 0,
+    180. 0,
+    70. 0,
+    150. 0
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function sTogezoWalkerStateWanderParam 
+
+```C++
+static WalkerStateWanderParam split() sTogezoWalkerStateWanderParam (
+    30,
+    90,
+    0. 7,
+    4. 0,
+    10. 0,
+    "Walk",
+    "Wait"
+) 
+```
+
+
+
+
+<hr>
+
+------------------------------
+The documentation for this class was generated from the following file `Game/src/Enemy/Togezo.cpp`
+

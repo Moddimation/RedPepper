@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File PlayerAnimator.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-playeranimatorh">File PlayerAnimator.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_c33286056d2acf479cd8641ef845fec1/"><strong>Game</strong></a> <strong>&gt;</strong> <a href="../dir_a56613a6b795b5624452287469afc550/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_1882120a760237323336d5e7b117deb2/"><strong>Player</strong></a> <strong>&gt;</strong> <a href="../_player_animator_8h/"><strong>PlayerAnimator.h</strong></a></p>
+<p><a href="../_player_animator_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;prim/seadSafeString.h&gt;
+
+namespace al
+{
+class LiveActor;
+}
+class PlayerAnimFrameCtrl;
+class PlayerModelHolder;
+
+class IUsePlayerAnimator
+{
+public:
+        virtual void  v_0()                                  = 0;
+        virtual void  v_4()                                  = 0;
+        virtual void  v_8()                                  = 0;
+        virtual void  v_C()                                  = 0;
+        virtual void  v_10()                                 = 0;
+        virtual bool  isAnimEnd() const                      = 0;
+        virtual bool  isAnim( const sead::SafeString&amp; name ) = 0;
+        virtual float getAnimFrame() const                   = 0;
+        virtual void  v_20()                                 = 0;
+        virtual void  v_24()                                 = 0;
+        virtual void  v_28()                                 = 0;
+        virtual void  v_2C()                                 = 0;
+        virtual void  v_30()                                 = 0;
+        virtual void  v_34()                                 = 0;
+        virtual void  v_38()                                 = 0;
+        virtual void  v_3C()                                 = 0;
+        virtual void  v_40()                                 = 0;
+        virtual void  v_44()                                 = 0;
+        virtual void  v_48()                                 = 0;
+        virtual void  v_4C()                                 = 0;
+};
+
+class PlayerAnimator : public IUsePlayerAnimator
+{
+private:
+        al::LiveActor*       mHost;
+        PlayerModelHolder*   mModelHolder;
+        bool                 _C;
+        bool                 _D;
+        PlayerAnimFrameCtrl* mAnimFrameCtrl;
+        bool                 _14;
+        bool                 _15;
+
+public:
+        // virtual void v_0();
+        // virtual void v_4();
+        // virtual void v_8();
+        // virtual void v_C();
+        // virtual void v_10();
+        // virtual bool isAnimEnd() const;
+        // virtual bool isAnim(const sead::SafeString&amp; name);
+        virtual float getAnimFrame() const;
+        // virtual void v_20();
+        // virtual void v_24();
+        // virtual void v_28();
+        // virtual void v_2C();
+        // virtual void v_30();
+        // virtual void v_34();
+        // virtual void v_38();
+        // virtual void v_3C();
+        // virtual void v_40();
+        // virtual void v_44();
+        // virtual void v_48();
+        // virtual void v_4C();
+public:
+        PlayerAnimator( al::LiveActor* host, PlayerModelHolder* modelHolder );
+};
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

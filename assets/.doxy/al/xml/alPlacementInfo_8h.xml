@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="alPlacementInfo_8h" kind="file" language="C++">
+    <compoundname>alPlacementInfo.h</compoundname>
+    <includes refid="alByamlIter_8h" local="no">Yaml/alByamlIter.h</includes>
+    <includedby refid="alAreaInitInfo_8h" local="no">lib/al/include/AreaObj/alAreaInitInfo.h</includedby>
+    <includedby refid="alKeyPose_8h" local="no">lib/al/include/KeyPose/alKeyPose.h</includedby>
+    <includedby refid="alKeyPoseKeeper_8h" local="no">lib/al/include/KeyPose/alKeyPoseKeeper.h</includedby>
+    <includedby refid="alActorInitInfo_8h" local="no">lib/al/include/LiveActor/alActorInitInfo.h</includedby>
+    <includedby refid="alActorInitUtil_8h" local="no">lib/al/include/LiveActor/alActorInitUtil.h</includedby>
+    <includedby refid="alPlacementFunction_8h" local="no">lib/al/include/Placement/alPlacementFunction.h</includedby>
+    <includedby refid="alRail_8h" local="no">lib/al/include/Rail/alRail.h</includedby>
+    <includedby refid="alRailKeeper_8h" local="no">lib/al/include/Rail/alRailKeeper.h</includedby>
+    <includedby refid="alSceneFunction_8h" local="no">lib/al/include/Scene/alSceneFunction.h</includedby>
+    <includedby refid="alStageSwitchAccesser_8h" local="no">lib/al/include/Stage/alStageSwitchAccesser.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>lib/al/include/Placement/alPlacementInfo.h</label>
+        <link refid="alPlacementInfo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="alByamlIter_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/al/include/AreaObj/alAreaInitInfo.h</label>
+        <link refid="alAreaInitInfo_8h_source"/>
+      </node>
+      <node id="3">
+        <label>lib/al/include/KeyPose/alKeyPose.h</label>
+        <link refid="alKeyPose_8h_source"/>
+      </node>
+      <node id="4">
+        <label>lib/al/include/KeyPose/alKeyPoseKeeper.h</label>
+        <link refid="alKeyPoseKeeper_8h_source"/>
+      </node>
+      <node id="5">
+        <label>lib/al/include/LiveActor/alActorInitInfo.h</label>
+        <link refid="alActorInitInfo_8h_source"/>
+      </node>
+      <node id="6">
+        <label>lib/al/include/LiveActor/alActorInitUtil.h</label>
+        <link refid="alActorInitUtil_8h_source"/>
+      </node>
+      <node id="7">
+        <label>lib/al/include/Placement/alPlacementFunction.h</label>
+        <link refid="alPlacementFunction_8h_source"/>
+      </node>
+      <node id="1">
+        <label>lib/al/include/Placement/alPlacementInfo.h</label>
+        <link refid="alPlacementInfo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lib/al/include/Rail/alRail.h</label>
+        <link refid="alRail_8h_source"/>
+      </node>
+      <node id="9">
+        <label>lib/al/include/Rail/alRailKeeper.h</label>
+        <link refid="alRailKeeper_8h_source"/>
+      </node>
+      <node id="10">
+        <label>lib/al/include/Scene/alSceneFunction.h</label>
+        <link refid="alSceneFunction_8h_source"/>
+      </node>
+      <node id="11">
+        <label>lib/al/include/Stage/alStageSwitchAccesser.h</label>
+        <link refid="alStageSwitchAccesser_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Yaml/alByamlIter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">al</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>turn<sp/>into<sp/>a<sp/>class<sp/>if<sp/>it<sp/>actually<sp/>is<sp/>one</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ByamlIter<sp/>PlacementInfo;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Placement/alPlacementInfo.h"/>
+  </compounddef>
+</doxygen>

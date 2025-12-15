@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="alSensorFunction_8cpp" kind="file" language="C++">
+    <compoundname>alSensorFunction.cpp</compoundname>
+    <includes refid="alHitSensor_8h" local="no">HitSensor/alHitSensor.h</includes>
+    <includes refid="alHitSensorKeeper_8h" local="no">LiveActor/alHitSensorKeeper.h</includes>
+    <includes refid="alLiveActor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes refid="alSensorFunction_8h" local="no">LiveActor/alSensorFunction.h</includes>
+    <includes refid="alStringUtil_8h" local="no">Util/alStringUtil.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="alAudioKeeper_8h_source"/>
+      </node>
+      <node id="10">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="alEffectKeeper_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HitSensor/alHitSensor.h</label>
+        <link refid="alHitSensor_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>HitSensor/alSensorType.h</label>
+        <link refid="alSensorType_8h_source"/>
+      </node>
+      <node id="6">
+        <label>LiveActor/alHitSensorKeeper.h</label>
+        <link refid="alHitSensorKeeper_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="alLiveActor_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="alLiveActorFlag_8h_source"/>
+      </node>
+      <node id="14">
+        <label>LiveActor/alSensorFunction.h</label>
+        <link refid="alSensorFunction_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="alNerveKeeper_8h_source"/>
+      </node>
+      <node id="13">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="alStageSwitchKeeper_8h_source"/>
+      </node>
+      <node id="15">
+        <label>Util/alStringUtil.h</label>
+        <link refid="alStringUtil_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/al/src/LiveActor/alSensorFunction.cpp</label>
+        <link refid="alSensorFunction_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="16">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structalSensorFunction_1_1NameToType" prot="public">alSensorFunction::NameToType</innerclass>
+    <innernamespace refid="namespacealSensorFunction">alSensorFunction</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="alSensorFunction_8cpp_1aeeee27631d80324dcaeb0957bbecbdd3" prot="public" static="no">
+        <name>ALSENSORFUNCTION_ENTRY</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>{ #TYPE, <ref refid="structal_1_1NameToCreator" kindref="compound">al::SensorType_</ref>##TYPE },</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/src/LiveActor/alSensorFunction.cpp" line="18" column="9" bodyfile="lib/al/src/LiveActor/alSensorFunction.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;HitSensor/alHitSensor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alHitSensorKeeper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alLiveActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alSensorFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Util/alStringUtil.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">alSensorFunction</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structalSensorFunction_1_1NameToType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structalSensorFunction_1_1NameToType" kindref="compound">NameToType</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/>name;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::SensorType<sp/>type;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALSENSORFUNCTION_ENTRY(<sp/>TYPE<sp/>)<sp/>{<sp/>#TYPE,<sp/>al::SensorType_##TYPE<sp/>},</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structalSensorFunction_1_1NameToType" kindref="compound">NameToType</ref><sp/>split(sNameToTypeLookupTable)[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Eye)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Player)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Npc)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Ride)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Enemy)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">ALSENSORFUNCTION_ENTRY(EnemyBody)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">ALSENSORFUNCTION_ENTRY(EnemyAttack)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Dossun)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">ALSENSORFUNCTION_ENTRY(KillerMagnum)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">ALSENSORFUNCTION_ENTRY(EnemySimple)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">ALSENSORFUNCTION_ENTRY(MapObj)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">ALSENSORFUNCTION_ENTRY(MapObjSimple)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">ALSENSORFUNCTION_ENTRY(Bindable)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">ALSENSORFUNCTION_ENTRY(CollisionParts)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">ALSENSORFUNCTION_ENTRY(KickKoura)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">ALSENSORFUNCTION_ENTRY(PlayerFireBall)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">ALSENSORFUNCTION_ENTRY(WooGanSandBody)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>ALSENSORFUNCTION_ENTRY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">al::SensorType<sp/>findSensorTypeByName(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<sp/>sNameToTypeLookupTable<sp/>)<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<sp/>sNameToTypeLookupTable[<sp/>0<sp/>]<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::SensorType<sp/>type<sp/>=<sp/>al::SensorType_MapObj;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::isEqualString(<sp/>sNameToTypeLookupTable[<sp/>i<sp/>].name,<sp/>name<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>nop<sp/>before<sp/>beq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__nop();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>=<sp/>sNameToTypeLookupTable[<sp/>i<sp/>].type;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateHitSensorsAll(<sp/><ref refid="classal_1_1LiveActor" kindref="compound">al::LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;getHitSensorKeeper()-&gt;update();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>alSensorFunction</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alSensorFunction.cpp"/>
+  </compounddef>
+</doxygen>

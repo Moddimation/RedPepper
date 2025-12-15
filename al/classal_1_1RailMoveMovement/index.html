@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::RailMoveMovement - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-alrailmovemovement">Class al::RailMoveMovement</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>RailMoveMovement</strong></a></p>
+<p>Inherits the following classes: <a href="../classal_1_1HostStateBase/">al::HostStateBase</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-railmovemovement"><strong>RailMoveMovement</strong></a> (<a href="../classal_1_1LiveActor/"><strong>LiveActor</strong></a> * host, <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../classal_1_1ActorInitInfo/"><strong>ActorInitInfo</strong></a> &amp; info, <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * speedParamName="Arg0", <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * moveTypeParamName="Arg1") <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exemove"><strong>exeMove</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alhoststatebase">Public Functions inherited from al::HostStateBase</h2>
+<p>See <a href="../classal_1_1HostStateBase/">al::HostStateBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1HostStateBase/#function-hoststatebase"><strong>HostStateBase</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>T</strong></a> * host, <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alnervestatebase">Public Functions inherited from al::NerveStateBase</h2>
+<p>See <a href="../classal_1_1NerveStateBase/">al::NerveStateBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-nervestatebase"><strong>NerveStateBase</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-init"><strong>init</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-isdead"><strong>isDead</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveStateBase/#function-update"><strong>update</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alnerveexecutor">Public Functions inherited from al::NerveExecutor</h2>
+<p>See <a href="../classal_1_1NerveExecutor/">al::NerveExecutor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-nerveexecutor"><strong>NerveExecutor</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-initnerve"><strong>initNerve</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1Nerve/"><strong>Nerve</strong></a> * nrv, <a href="../structal_1_1NameToCreator/"><strong>int</strong></a> step=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-updatenerve"><strong>updateNerve</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-nerveexecutor"><strong>~NerveExecutor</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1IUseNerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseNerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-alhoststatebase">Protected Attributes inherited from al::HostStateBase</h2>
+<p>See <a href="../classal_1_1HostStateBase/">al::HostStateBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>T</strong></a> *<a href="../structal_1_1NameToCreator/"><strong>const</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1HostStateBase/#variable-mhost"><strong>mHost</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-railmovemovement">function RailMoveMovement</h3>
+<pre><code class="language-C++">al::RailMoveMovement::RailMoveMovement (
+    LiveActor * host,
+    const  ActorInitInfo &amp; info,
+    const  char * speedParamName=&quot;Arg0&quot;,
+    const  char * moveTypeParamName=&quot;Arg1&quot;
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-exemove">function exeMove</h3>
+<pre><code class="language-C++">void al::RailMoveMovement::exeMove () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Rail/alRailMoveMovement.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

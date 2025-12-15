@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="os__WaitObject_8h" kind="file" language="C++">
+    <compoundname>os_WaitObject.h</compoundname>
+    <includes refid="os__HandleObject_8h" local="yes">nn/os/os_HandleObject.h</includes>
+    <includedby refid="os__InterruptEvent_8h" local="yes">lib/CTRSDK/include/nn/os/os_InterruptEvent.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Handle.h</label>
+        <link refid="Handle_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn/os/os_HandleObject.h</label>
+        <link refid="os__HandleObject_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/CTRSDK/include/nn/os/os_WaitObject.h</label>
+        <link refid="os__WaitObject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nn/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stdarg.h</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>lib/CTRSDK/include/nn/hid/CTR/hid_HidBase.h</label>
+        <link refid="hid__HidBase_8h_source"/>
+      </node>
+      <node id="3">
+        <label>lib/CTRSDK/include/nn/os/os_EventBase.h</label>
+        <link refid="os__EventBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lib/CTRSDK/include/nn/os/os_InterruptEvent.h</label>
+        <link refid="os__InterruptEvent_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/CTRSDK/include/nn/os/os_WaitObject.h</label>
+        <link refid="os__WaitObject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnn_1_1os_1_1WaitObject" prot="public">nn::os::WaitObject</innerclass>
+    <innernamespace refid="namespacenn">nn</innernamespace>
+    <innernamespace refid="namespacenn_1_1os">nn::os</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;nn/os/os_HandleObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">nn<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">os<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classnn_1_1os_1_1WaitObject" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnn_1_1os_1_1WaitObject" kindref="compound">WaitObject</ref><sp/>:<sp/><ref refid="structnn_1_1os_1_1HandleObject" kindref="compound">HandleObject</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>os</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nn</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/include/nn/os/os_WaitObject.h"/>
+  </compounddef>
+</doxygen>

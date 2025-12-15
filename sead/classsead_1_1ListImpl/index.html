@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::ListImpl - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadlistimpl">Class sead::ListImpl</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>ListImpl</strong></a></p>
+<p>Inherited by the following classes: <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1TList/">sead::TList</a>,  <a href="../classsead_1_1TList/">sead::TList</a>,  <a href="../classsead_1_1OffsetList/">sead::OffsetList</a>,  <a href="../classsead_1_1TList/">sead::TList</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-listimpl"><strong>ListImpl</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-checklinks"><strong>checkLinks</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isempty"><strong>isEmpty</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-reverse"><strong>reverse</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-shuffle-12"><strong>shuffle</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-shuffle-22"><strong>shuffle</strong></a> (<a href="../classsead_1_1Random/"><strong>Random</strong></a> * random) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-size"><strong>size</strong></a> () const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-types">Protected Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef int(*</td>
+<td style="text-align: left;"><a href="#typedef-comparecallbackimpl"><strong>CompareCallbackImpl</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#variable-mcount"><strong>mCount</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a></td>
+<td style="text-align: left;"><a href="#variable-mstartend"><strong>mStartEnd</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions">Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-back"><strong>back</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-clear"><strong>clear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-erase"><strong>erase</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * item) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-find"><strong>find</strong></a> (const void * ptr, s32 offset, CompareCallbackImpl cmp) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-front"><strong>front</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-indexof"><strong>indexOf</strong></a> (const <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * n) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-insertafter"><strong>insertAfter</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * node, <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * node_to_insert) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-insertbefore"><strong>insertBefore</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * node, <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * node_to_insert) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-mergesort"><strong>mergeSort</strong></a> (s32 offset, const ComparePredicate &amp; cmp) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-moveafter"><strong>moveAfter</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * basis, <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-movebefore"><strong>moveBefore</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * basis, <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-nth"><strong>nth</strong></a> (int n) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-popback"><strong>popBack</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-popfront"><strong>popFront</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-pushback"><strong>pushBack</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * item) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-pushfront"><strong>pushFront</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * item) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-sort"><strong>sort</strong></a> (s32 offset, const ComparePredicate &amp; cmp) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-swap"><strong>swap</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * n1, <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * n2) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-uniq"><strong>uniq</strong></a> (s32 offset, CompareCallbackImpl cmp) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-static-functions">Protected Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-mergesortimpl_"><strong>mergeSortImpl_</strong></a> (<a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * front, <a href="../classsead_1_1ListNode/"><strong>ListNode</strong></a> * back, s32 num, s32 offset, const ComparePredicate &amp; predicate) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-listimpl">function ListImpl</h3>
+<pre><code class="language-C++">inline sead::ListImpl::ListImpl () 
+</code></pre>
+<hr>
+
+<h3 id="function-checklinks">function checkLinks</h3>
+<pre><code class="language-C++">bool sead::ListImpl::checkLinks () const
+</code></pre>
+<hr>
+
+<h3 id="function-isempty">function isEmpty</h3>
+<pre><code class="language-C++">inline bool sead::ListImpl::isEmpty () const
+</code></pre>
+<hr>
+
+<h3 id="function-reverse">function reverse</h3>
+<pre><code class="language-C++">void sead::ListImpl::reverse () 
+</code></pre>
+<hr>
+
+<h3 id="function-shuffle-12">function shuffle [1/2]</h3>
+<pre><code class="language-C++">void sead::ListImpl::shuffle () 
+</code></pre>
+<hr>
+
+<h3 id="function-shuffle-22">function shuffle [2/2]</h3>
+<pre><code class="language-C++">void sead::ListImpl::shuffle (
+    Random * random
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-size">function size</h3>
+<pre><code class="language-C++">inline s32 sead::ListImpl::size () const
+</code></pre>
+<hr>
+<h2 id="protected-types-documentation">Protected Types Documentation</h2>
+<h3 id="typedef-comparecallbackimpl">typedef CompareCallbackImpl</h3>
+<pre><code class="language-C++">typedef int(* sead::ListImpl::CompareCallbackImpl) (const void *, const void *);
+</code></pre>
+<hr>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-mcount">variable mCount</h3>
+<pre><code class="language-C++">s32 sead::ListImpl::mCount;
+</code></pre>
+<hr>
+
+<h3 id="variable-mstartend">variable mStartEnd</h3>
+<pre><code class="language-C++">ListNode sead::ListImpl::mStartEnd;
+</code></pre>
+<hr>
+<h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
+<h3 id="function-back">function back</h3>
+<pre><code class="language-C++">inline ListNode * sead::ListImpl::back () const
+</code></pre>
+<hr>
+
+<h3 id="function-clear">function clear</h3>
+<pre><code class="language-C++">void sead::ListImpl::clear () 
+</code></pre>
+<hr>
+
+<h3 id="function-erase">function erase</h3>
+<pre><code class="language-C++">inline void sead::ListImpl::erase (
+    ListNode * item
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-find">function find</h3>
+<pre><code class="language-C++">ListNode * sead::ListImpl::find (
+    const void * ptr,
+    s32 offset,
+    CompareCallbackImpl cmp
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-front">function front</h3>
+<pre><code class="language-C++">inline ListNode * sead::ListImpl::front () const
+</code></pre>
+<hr>
+
+<h3 id="function-indexof">function indexOf</h3>
+<pre><code class="language-C++">s32 sead::ListImpl::indexOf (
+    const ListNode * n
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-insertafter">function insertAfter</h3>
+<pre><code class="language-C++">inline void sead::ListImpl::insertAfter (
+    ListNode * node,
+    ListNode * node_to_insert
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-insertbefore">function insertBefore</h3>
+<pre><code class="language-C++">inline void sead::ListImpl::insertBefore (
+    ListNode * node,
+    ListNode * node_to_insert
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-mergesort">function mergeSort</h3>
+<pre><code class="language-C++">template&lt;class T, class ComparePredicate&gt;
+inline void sead::ListImpl::mergeSort (
+    s32 offset,
+    const ComparePredicate &amp; cmp
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-moveafter">function moveAfter</h3>
+<pre><code class="language-C++">void sead::ListImpl::moveAfter (
+    ListNode * basis,
+    ListNode * n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-movebefore">function moveBefore</h3>
+<pre><code class="language-C++">void sead::ListImpl::moveBefore (
+    ListNode * basis,
+    ListNode * n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-nth">function nth</h3>
+<pre><code class="language-C++">ListNode * sead::ListImpl::nth (
+    int n
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-popback">function popBack</h3>
+<pre><code class="language-C++">ListNode * sead::ListImpl::popBack () 
+</code></pre>
+<hr>
+
+<h3 id="function-popfront">function popFront</h3>
+<pre><code class="language-C++">ListNode * sead::ListImpl::popFront () 
+</code></pre>
+<hr>
+
+<h3 id="function-pushback">function pushBack</h3>
+<pre><code class="language-C++">inline void sead::ListImpl::pushBack (
+    ListNode * item
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-pushfront">function pushFront</h3>
+<pre><code class="language-C++">inline void sead::ListImpl::pushFront (
+    ListNode * item
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sort">function sort</h3>
+<pre><code class="language-C++">template&lt;class T, class ComparePredicate&gt;
+inline void sead::ListImpl::sort (
+    s32 offset,
+    const ComparePredicate &amp; cmp
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-swap">function swap</h3>
+<pre><code class="language-C++">void sead::ListImpl::swap (
+    ListNode * n1,
+    ListNode * n2
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-uniq">function uniq</h3>
+<pre><code class="language-C++">void sead::ListImpl::uniq (
+    s32 offset,
+    CompareCallbackImpl cmp
+) 
+</code></pre>
+<hr>
+<h2 id="protected-static-functions-documentation">Protected Static Functions Documentation</h2>
+<h3 id="function-mergesortimpl_">function mergeSortImpl_</h3>
+<pre><code class="language-C++">template&lt;class T, class ComparePredicate&gt;
+static void sead::ListImpl::mergeSortImpl_ (
+    ListNode * front,
+    ListNode * back,
+    s32 num,
+    s32 offset,
+    const ComparePredicate &amp; predicate
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/container/seadListImpl.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

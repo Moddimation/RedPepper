@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1SubActorKeeper" kind="class" language="C++" prot="public">
+    <compoundname>al::SubActorKeeper</compoundname>
+    <innerclass refid="structal_1_1SubActorKeeper_1_1Entry" prot="private">al::SubActorKeeper::Entry</innerclass>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classal_1_1SubActorKeeper_1afb4a9996f99a8e3a314d3a0445394856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">class</ref></type>
+        <definition>friend class ::alSubActorFunction</definition>
+        <argsstring></argsstring>
+        <name>::alSubActorFunction</name>
+        <qualifiedname>al::SubActorKeeper::alSubActorFunction</qualifiedname>
+        <param>
+          <type><ref refid="classalSubActorFunction" kindref="compound">::alSubActorFunction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="15" column="22" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1SubActorKeeper_1a713df2d820942cdb071f97eea885b7c0" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1LiveActor" kindref="compound">LiveActor</ref> *<ref refid="structal_1_1NameToCreator" kindref="compound">const</ref></type>
+        <definition>LiveActor* const al::SubActorKeeper::mParent</definition>
+        <argsstring></argsstring>
+        <name>mParent</name>
+        <qualifiedname>al::SubActorKeeper::mParent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="25" column="30" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1SubActorKeeper_1aee15c31ad3f11850e5a03d3043699ff0" prot="private" static="no" mutable="no">
+        <type>sead::PtrArray&lt; Entry &gt;</type>
+        <definition>sead::PtrArray&lt;Entry&gt; al::SubActorKeeper::mSubActors</definition>
+        <argsstring></argsstring>
+        <name>mSubActors</name>
+        <qualifiedname>al::SubActorKeeper::mSubActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="26" column="24" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classal_1_1SubActorKeeper_1a3c7a972a90c4edba0c75a2667055d993" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1SubActorKeeper" kindref="compound">SubActorKeeper</ref> *</type>
+        <definition>static SubActorKeeper * al::SubActorKeeper::tryCreate</definition>
+        <argsstring>(al::LiveActor *actor, const al::ActorInitInfo &amp;info, const char *, int)</argsstring>
+        <name>tryCreate</name>
+        <qualifiedname>al::SubActorKeeper::tryCreate</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1LiveActor" kindref="compound">al::LiveActor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ActorInitInfo" kindref="compound">al::ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="29" column="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classal_1_1SubActorKeeper_1a6bb4b4e0695f54d3093014942ec1c1dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::SubActorKeeper::SubActorKeeper</definition>
+        <argsstring>(al::LiveActor *actor, const al::ActorInitInfo &amp;info, const char *, int)</argsstring>
+        <name>SubActorKeeper</name>
+        <qualifiedname>al::SubActorKeeper::SubActorKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1LiveActor" kindref="compound">al::LiveActor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ActorInitInfo" kindref="compound">al::ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="32" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="13" column="1" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="14" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classal_1_1SubActorKeeper_1afb4a9996f99a8e3a314d3a0445394856" prot="public" virt="non-virtual"><scope>al::SubActorKeeper</scope><name>::alSubActorFunction</name></member>
+      <member refid="classal_1_1SubActorKeeper_1a713df2d820942cdb071f97eea885b7c0" prot="private" virt="non-virtual"><scope>al::SubActorKeeper</scope><name>mParent</name></member>
+      <member refid="classal_1_1SubActorKeeper_1aee15c31ad3f11850e5a03d3043699ff0" prot="private" virt="non-virtual"><scope>al::SubActorKeeper</scope><name>mSubActors</name></member>
+      <member refid="classal_1_1SubActorKeeper_1a6bb4b4e0695f54d3093014942ec1c1dd" prot="private" virt="non-virtual"><scope>al::SubActorKeeper</scope><name>SubActorKeeper</name></member>
+      <member refid="classal_1_1SubActorKeeper_1a3c7a972a90c4edba0c75a2667055d993" prot="public" virt="non-virtual"><scope>al::SubActorKeeper</scope><name>tryCreate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

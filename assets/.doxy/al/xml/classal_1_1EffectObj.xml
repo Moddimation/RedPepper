@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1EffectObj" kind="class" language="C++" prot="public">
+    <compoundname>al::EffectObj</compoundname>
+    <basecompoundref refid="classal_1_1MapObjActor" prot="public" virt="non-virtual">al::MapObjActor</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classal_1_1EffectObj_1af0ef7afdff7c15b8348dca0220cc3e52" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">class</ref></type>
+        <definition>friend class EffectObjFunction</definition>
+        <argsstring></argsstring>
+        <name>EffectObjFunction</name>
+        <qualifiedname>al::EffectObj::EffectObjFunction</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1EffectObjFunction" kindref="compound">EffectObjFunction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="10" column="22" bodyfile="lib/al/include/Npc/alEffectObj.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1EffectObj_1ad1a1ab9f190173558855d1868ec925cd" prot="private" static="no" mutable="no">
+        <type>sead::Matrix34f</type>
+        <definition>sead::Matrix34f al::EffectObj::mBaseMtx</definition>
+        <argsstring></argsstring>
+        <name>mBaseMtx</name>
+        <qualifiedname>al::EffectObj::mBaseMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="13" column="25" bodyfile="lib/al/include/Npc/alEffectObj.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1EffectObj_1ac04f3f4e547a696b6ceba94df45d3758" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::EffectObj::init</definition>
+        <argsstring>(const ActorInitInfo &amp;info)</argsstring>
+        <name>init</name>
+        <qualifiedname>al::EffectObj::init</qualifiedname>
+        <reimplements refid="classal_1_1LiveActor_1a9a6f10b39164deabef1930afe254de46">init</reimplements>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ActorInitInfo" kindref="compound">ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="16" column="40" bodyfile="lib/al/src/Npc/alEffectObj.cpp" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1EffectObj_1a8c4142940a6bb28eb69e3ed082b05718" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::EffectObj::makeActorAppeared</definition>
+        <argsstring>()</argsstring>
+        <name>makeActorAppeared</name>
+        <qualifiedname>al::EffectObj::makeActorAppeared</qualifiedname>
+        <reimplements refid="classal_1_1LiveActor_1a21647e167d28b0db31785628cbded72c">makeActorAppeared</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="17" column="40" bodyfile="lib/al/src/Npc/alEffectObj.cpp" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1EffectObj_1a1f090a87e9f0a9282f5fc281a6d801f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::EffectObj::kill</definition>
+        <argsstring>()</argsstring>
+        <name>kill</name>
+        <qualifiedname>al::EffectObj::kill</qualifiedname>
+        <reimplements refid="classal_1_1LiveActor_1ac17a125c51d1a66778be4aa8f7c04556">kill</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="18" column="40" bodyfile="lib/al/src/Npc/alEffectObj.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1EffectObj_1a67437d3e3da27d8b0c61d7228a556eec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Matrix34f *</type>
+        <definition>const sead::Matrix34f * al::EffectObj::getBaseMtx</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseMtx</name>
+        <qualifiedname>al::EffectObj::getBaseMtx</qualifiedname>
+        <reimplements refid="classal_1_1LiveActor_1a92f34cfbe784ce3595ab68fcad7e8b15">getBaseMtx</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="19" column="39" bodyfile="lib/al/src/Npc/alEffectObj.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1EffectObj_1a56622840751d06b8bc8cefe027c2a5cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::EffectObj::control</definition>
+        <argsstring>()</argsstring>
+        <name>control</name>
+        <qualifiedname>al::EffectObj::control</qualifiedname>
+        <reimplements refid="classal_1_1LiveActor_1ae67beb9c034bbcfdb4a73a441d5c11b4">control</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="20" column="40" bodyfile="lib/al/src/Npc/alEffectObj.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1EffectObj_1ad05358dc8b81b003405bdfc570f2546b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::EffectObj::EffectObj</definition>
+        <argsstring>(const sead::SafeString &amp;name)</argsstring>
+        <name>EffectObj</name>
+        <qualifiedname>al::EffectObj::EffectObj</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::SafeString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Npc/alEffectObj.h" line="23" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>al::EffectObj</label>
+        <link refid="classal_1_1EffectObj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1IUseAudioKeeper"/>
+      </node>
+      <node id="5">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1IUseEffectKeeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1IUseNerve"/>
+      </node>
+      <node id="7">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1IUseStageSwitch"/>
+      </node>
+      <node id="3">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1LiveActor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::MapObjActor</label>
+        <link refid="classal_1_1MapObjActor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>al::ActorActionKeeper</label>
+        <link refid="classal_1_1ActorActionKeeper"/>
+      </node>
+      <node id="9">
+        <label>al::ActorExecuteInfo</label>
+        <link refid="classal_1_1ActorExecuteInfo"/>
+      </node>
+      <node id="8">
+        <label>al::ActorPoseKeeperBase</label>
+        <link refid="classal_1_1ActorPoseKeeperBase"/>
+      </node>
+      <node id="17">
+        <label>al::AudioKeeper</label>
+        <link refid="classal_1_1AudioKeeper"/>
+      </node>
+      <node id="11">
+        <label>al::Collider</label>
+        <link refid="classal_1_1Collider"/>
+      </node>
+      <node id="12">
+        <label>al::CollisionParts</label>
+        <link refid="classal_1_1CollisionParts"/>
+      </node>
+      <node id="16">
+        <label>al::EffectKeeper</label>
+        <link refid="classal_1_1EffectKeeper"/>
+      </node>
+      <node id="1">
+        <label>al::EffectObj</label>
+        <link refid="classal_1_1EffectObj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>al::HitSensorKeeper</label>
+        <link refid="classal_1_1HitSensorKeeper"/>
+      </node>
+      <node id="6">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1IUseAudioKeeper"/>
+      </node>
+      <node id="5">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1IUseEffectKeeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1IUseNerve"/>
+      </node>
+      <node id="7">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1IUseStageSwitch"/>
+      </node>
+      <node id="3">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1LiveActor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mActorPoseKeeper</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mActorExecuteInfo</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mActorActionKeeper</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mCollider</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mCollisionParts</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mModelKeeper</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mHitSensorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mEffectKeeper</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mAudioKeeper</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mStageSwitchKeeper</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mRailKeeper</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mShadowKeeper</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mSubActorKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::MapObjActor</label>
+        <link refid="classal_1_1MapObjActor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>al::ModelKeeper</label>
+        <link refid="classal_1_1ModelKeeper"/>
+      </node>
+      <node id="14">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1NerveKeeper"/>
+      </node>
+      <node id="19">
+        <label>al::RailKeeper</label>
+        <link refid="classal_1_1RailKeeper"/>
+      </node>
+      <node id="20">
+        <label>al::ShadowKeeper</label>
+        <link refid="classal_1_1ShadowKeeper"/>
+      </node>
+      <node id="18">
+        <label>al::StageSwitchKeeper</label>
+        <link refid="classal_1_1StageSwitchKeeper"/>
+      </node>
+      <node id="21">
+        <label>al::SubActorKeeper</label>
+        <link refid="classal_1_1SubActorKeeper"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Npc/alEffectObj.h" line="8" column="1" bodyfile="lib/al/include/Npc/alEffectObj.h" bodystart="9" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classal_1_1LiveActor_1aa11b2c18af8f11324d3eed176bd6abba" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>_4C</name></member>
+      <member refid="classal_1_1LiveActor_1a837c7a850e38668f36ea7dc0bd7864c1" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>appear</name></member>
+      <member refid="classal_1_1LiveActor_1aa31fea9f8531ebb95bf9d76f67ac3fbc" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>attackSensor</name></member>
+      <member refid="classal_1_1LiveActor_1a99cde7b786085e8db809ee02d6820560" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>calcAndSetBaseMtx</name></member>
+      <member refid="classal_1_1LiveActor_1a302e89a156c4c82e0839e1b12cd6ee2a" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>calcAnim</name></member>
+      <member refid="classal_1_1EffectObj_1a56622840751d06b8bc8cefe027c2a5cf" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>control</name></member>
+      <member refid="classal_1_1LiveActor_1a81fc9bc68d5f3d4b9aca7b4ce1146e14" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>draw</name></member>
+      <member refid="classal_1_1EffectObj_1ad05358dc8b81b003405bdfc570f2546b" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>EffectObj</name></member>
+      <member refid="classal_1_1EffectObj_1af0ef7afdff7c15b8348dca0220cc3e52" prot="private" virt="non-virtual"><scope>al::EffectObj</scope><name>EffectObjFunction</name></member>
+      <member refid="classal_1_1LiveActor_1a488ab648a97ff7a2826b1976b4cd0352" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>endClipped</name></member>
+      <member refid="classal_1_1LiveActor_1a5bf4ac2feae435913bdf2a06c2b08fcd" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getActorActionKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a5169d28f9220ac7e7a6d4ac66b3f034a" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getActorExecuteInfo</name></member>
+      <member refid="classal_1_1LiveActor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getActorPoseKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1ac3c6a9b0ac6ff5b87cac38823bf91371" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>getAudioKeeper</name></member>
+      <member refid="classal_1_1EffectObj_1a67437d3e3da27d8b0c61d7228a556eec" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>getBaseMtx</name></member>
+      <member refid="classal_1_1LiveActor_1ae6c7bd5aee8154f6f24070f76e196d0e" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getCollider</name></member>
+      <member refid="classal_1_1LiveActor_1a05672f1ab160cc1ae4a27f08e0383beb" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>getEffectKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a7f3594ced84a6aeef57c6253dde39bf6" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getHitSensorKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1ac8fb08036ea7ddcfff4f028625d15f5e" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getLiveActorFlag</name></member>
+      <member refid="classal_1_1LiveActor_1a7a1746a03d5ec4225ff1caea5de0b1b1" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getLiveActorFlag</name></member>
+      <member refid="classal_1_1LiveActor_1aff1fdca0b7d7a9b7539232874cb8a671" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getModelKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a17e507f79ac435c79df0f0fb09204b7a" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getName</name></member>
+      <member refid="classal_1_1LiveActor_1a5486c54d6e327e41c6596c7cd70bcb22" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>getNerveKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a76bd9374e0dae5473f33f64763f0521f" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getRailKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1adc6585ed5cf3fa651b05b546ef365c25" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>getShadowKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a9526ca8dda63c09a6a0beedc3c226dca" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>getStageSwitchKeeper</name></member>
+      <member refid="classal_1_1EffectObj_1ac04f3f4e547a696b6ceba94df45d3758" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>init</name></member>
+      <member refid="classal_1_1LiveActor_1a79dcdde5eac13045c43a7c70cbc1009e" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>initAfterPlacement</name></member>
+      <member refid="classal_1_1LiveActor_1ab13ab96fe475444c29928033aa62f45a" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>initCollider</name></member>
+      <member refid="classal_1_1LiveActor_1a51ea90ce0396305cd603867dac1b34a0" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>initNerveKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1abbbdb65bdad7de91c11c0065c48ce284" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>initPoseKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1af1f931de6a7bfcc28f611a374c1690cf" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>initRailKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1ac12e54f1d03ce816fe30f9ee6c54c8a1" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>initStageSwitchKeeper</name></member>
+      <member refid="classal_1_1EffectObj_1a1f090a87e9f0a9282f5fc281a6d801f0" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>kill</name></member>
+      <member refid="classal_1_1LiveActor_1a0844b9e2818b9c8da6ee2e4f80b11bb9" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>LiveActor</name></member>
+      <member refid="classal_1_1LiveActor_1aa7ac39991177edbd285fc5a63df36e4c" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mActorActionKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a6140f1e885109de285057432d9eee8e3" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mActorExecuteInfo</name></member>
+      <member refid="classal_1_1LiveActor_1a2f3b377af4e14ea4666838117fb88185" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mActorLightCtrl</name></member>
+      <member refid="classal_1_1LiveActor_1ad2a68b6e241bde20463459953fa8a479" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mActorPoseKeeper</name></member>
+      <member refid="classal_1_1EffectObj_1a8c4142940a6bb28eb69e3ed082b05718" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>makeActorAppeared</name></member>
+      <member refid="classal_1_1LiveActor_1a68a239913d3029dfa7d18d580a1b8cf5" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>makeActorDead</name></member>
+      <member refid="classal_1_1MapObjActor_1a381f265a533dd76e26e139e7a2c2133b" prot="public" virt="non-virtual"><scope>al::EffectObj</scope><name>MapObjActor</name></member>
+      <member refid="classal_1_1LiveActor_1a9c97b35b12f4d030648e616f38fda4ea" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mAudioKeeper</name></member>
+      <member refid="classal_1_1EffectObj_1ad1a1ab9f190173558855d1868ec925cd" prot="private" virt="non-virtual"><scope>al::EffectObj</scope><name>mBaseMtx</name></member>
+      <member refid="classal_1_1LiveActor_1a7e5e700a4f6ad109bf8887bda9e0d74b" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mCollider</name></member>
+      <member refid="classal_1_1LiveActor_1a264558d39b987c146f71d1dc34c3ee77" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mCollisionParts</name></member>
+      <member refid="classal_1_1LiveActor_1a7ea955a054ed61a21b269deb91262e60" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mEffectKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a88129f2a6e93c19c112de8e19d454d5f" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mHitSensorKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a916bfd9f744b309bc38ccfb9b0f75a9b" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mModelKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a1277174e8f70219e7e2ad77a39d05ddd" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mNerveKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1adb151ef8af0c77f963984da13e08ce03" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>movement</name></member>
+      <member refid="classal_1_1LiveActor_1aa86188b582bc71dc3cf27bbc9c82383e" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mRailKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a6c99cb0598c5d80d98de7ff6429541c6" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mShadowKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a2c72784ad3b692923e0a1ac1a912181b" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mStageSwitchKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a3ca8887d31218e88da0339176904d95e" prot="protected" virt="non-virtual"><scope>al::EffectObj</scope><name>mSubActorKeeper</name></member>
+      <member refid="classal_1_1LiveActor_1a8fa47cea6a5076e6d5813d87018f5be4" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>receiveMsg</name></member>
+      <member refid="classal_1_1LiveActor_1ac4c0cd084ef4601fbfe71ea4b83e475a" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>startClipped</name></member>
+      <member refid="classal_1_1LiveActor_1af126d1e78e456107c9f94cbda24b25e0" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>updateCollider</name></member>
+      <member refid="classal_1_1IUseAudioKeeper_1a3f33a497a128f0342eb1f99363904e2d" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>v1</name></member>
+      <member refid="classal_1_1IUseAudioKeeper_1a95d203ee6ff57c2f5001803b4ad9bd71" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>v2</name></member>
+      <member refid="classal_1_1LiveActor_1a0bd6ba5911a93d377d9ff71c1f1ed396" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>v22</name></member>
+      <member refid="classal_1_1LiveActor_1af6a18e53dbae3c78ca8f7662f779f050" prot="public" virt="virtual"><scope>al::EffectObj</scope><name>v23</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

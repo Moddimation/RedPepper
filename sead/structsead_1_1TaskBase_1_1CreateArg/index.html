@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Struct sead::TaskBase::CreateArg - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="struct-seadtaskbasecreatearg">Struct sead::TaskBase::CreateArg</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="../classsead_1_1TaskBase/"><strong>TaskBase</strong></a> <strong>&gt;</strong> <a href="./"><strong>CreateArg</strong></a></p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef void(*</td>
+<td style="text-align: left;"><a href="#typedef-singletonfunc"><strong>SingletonFunc</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void *</td>
+<td style="text-align: left;"><a href="#variable-create_callback"><strong>create_callback</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1TaskBase/"><strong>TaskBase</strong></a> **</td>
+<td style="text-align: left;"><a href="#variable-created_task"><strong>created_task</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1TaskClassID/"><strong>TaskClassID</strong></a></td>
+<td style="text-align: left;"><a href="#variable-factory"><strong>factory</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">FaderTaskBase *</td>
+<td style="text-align: left;"><a href="#variable-fader"><strong>fader</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structsead_1_1HeapPolicies/"><strong>HeapPolicies</strong></a></td>
+<td style="text-align: left;"><a href="#variable-heap_policies"><strong>heap_policies</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">SingletonFunc</td>
+<td style="text-align: left;"><a href="#variable-instance_cb"><strong>instance_cb</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1TaskParameter/"><strong>TaskParameter</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-parameter"><strong>parameter</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1TaskBase/"><strong>TaskBase</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-parent"><strong>parent</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1TaskBase/"><strong>TaskBase</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-src_task"><strong>src_task</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">Tag</td>
+<td style="text-align: left;"><a href="#variable-tag"><strong>tag</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1TaskUserID/"><strong>TaskUserID</strong></a></td>
+<td style="text-align: left;"><a href="#variable-user_id"><strong>user_id</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="typedef-singletonfunc">typedef SingletonFunc</h3>
+<pre><code class="language-C++">typedef void(* sead::TaskBase::CreateArg::SingletonFunc) (TaskBase *);
+</code></pre>
+<hr>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-create_callback">variable create_callback</h3>
+<pre><code class="language-C++">void* sead::TaskBase::CreateArg::create_callback;
+</code></pre>
+<hr>
+
+<h3 id="variable-created_task">variable created_task</h3>
+<pre><code class="language-C++">TaskBase** sead::TaskBase::CreateArg::created_task;
+</code></pre>
+<hr>
+
+<h3 id="variable-factory">variable factory</h3>
+<pre><code class="language-C++">TaskClassID sead::TaskBase::CreateArg::factory;
+</code></pre>
+<hr>
+
+<h3 id="variable-fader">variable fader</h3>
+<pre><code class="language-C++">FaderTaskBase* sead::TaskBase::CreateArg::fader;
+</code></pre>
+<hr>
+
+<h3 id="variable-heap_policies">variable heap_policies</h3>
+<pre><code class="language-C++">HeapPolicies sead::TaskBase::CreateArg::heap_policies;
+</code></pre>
+<hr>
+
+<h3 id="variable-instance_cb">variable instance_cb</h3>
+<pre><code class="language-C++">SingletonFunc sead::TaskBase::CreateArg::instance_cb;
+</code></pre>
+<hr>
+
+<h3 id="variable-parameter">variable parameter</h3>
+<pre><code class="language-C++">TaskParameter* sead::TaskBase::CreateArg::parameter;
+</code></pre>
+<hr>
+
+<h3 id="variable-parent">variable parent</h3>
+<pre><code class="language-C++">TaskBase* sead::TaskBase::CreateArg::parent;
+</code></pre>
+<hr>
+
+<h3 id="variable-src_task">variable src_task</h3>
+<pre><code class="language-C++">TaskBase* sead::TaskBase::CreateArg::src_task;
+</code></pre>
+<hr>
+
+<h3 id="variable-tag">variable tag</h3>
+<pre><code class="language-C++">Tag sead::TaskBase::CreateArg::tag;
+</code></pre>
+<hr>
+
+<h3 id="variable-user_id">variable user_id</h3>
+<pre><code class="language-C++">TaskUserID sead::TaskBase::CreateArg::user_id;
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/framework/seadTaskBase.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="alStageSwitchAccesser_8cpp" kind="file" language="C++">
+    <compoundname>alStageSwitchAccesser.cpp</compoundname>
+    <includes refid="alStageSwitchAccesser_8h" local="no">Stage/alStageSwitchAccesser.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="alPlacementInfo_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stage/alStageSwitchAccesser.h</label>
+        <link refid="alStageSwitchAccesser_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Stage/alStageSwitchType.h</label>
+        <link refid="alStageSwitchType_8h_source"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="alByamlIter_8h_source"/>
+      </node>
+      <node id="1">
+        <label>lib/al/src/Stage/alStageSwitchAccesser.cpp</label>
+        <link refid="alStageSwitchAccesser_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;Stage/alStageSwitchAccesser.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">al</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">StageSwitchAccesser::StageSwitchAccesser()<sp/>:<sp/>mId(<sp/>-1<sp/>),<sp/>mType(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>StageSwitchAccesser::initWithPlacementInfo(<sp/>StageSwitchType<sp/>type1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PlacementInfo&amp;<sp/>info,<sp/>StageSwitchType<sp/>type2<sp/>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>type1Name<sp/>=<sp/>getStageSwitchName(<sp/>type1<sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>mType<sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)type2<sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type2<sp/>=<sp/>(StageSwitchType)mType;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mId<sp/><sp/><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mType<sp/>=<sp/>type2;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>info.tryGetIntByKey(<sp/>&amp;mId,<sp/>type1Name<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FUN_0024e734();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>StageSwitchAccesser::isTypeKillDeadOn()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="22"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mType<sp/>==<sp/>StageSwitchType_Kill<sp/>||<sp/>mType<sp/>==<sp/>StageSwitchType_DeadOn;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>StageSwitchAccesser::FUN_0024e734()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="27"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/>mId<sp/>&gt;&gt;<sp/>0x1f<sp/>)<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Stage/alStageSwitchAccesser.cpp"/>
+  </compounddef>
+</doxygen>

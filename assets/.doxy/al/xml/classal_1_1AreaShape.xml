@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1AreaShape" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>al::AreaShape</compoundname>
+    <derivedcompoundref refid="classal_1_1AreaShapeCube" prot="public" virt="non-virtual">al::AreaShapeCube</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1AreaShape_1a2ed987e7315aeb568b44af137ff5480c" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Matrix34f *</type>
+        <definition>const sead::Matrix34f* al::AreaShape::mBaseMtxPtr</definition>
+        <argsstring></argsstring>
+        <name>mBaseMtxPtr</name>
+        <qualifiedname>al::AreaShape::mBaseMtxPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="12" column="31" bodyfile="lib/al/include/AreaObj/alAreaShape.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1AreaShape_1add3b32e4571c385022e056d143f57e1e" prot="private" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::AreaShape::mScale</definition>
+        <argsstring></argsstring>
+        <name>mScale</name>
+        <qualifiedname>al::AreaShape::mScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="13" column="32" bodyfile="lib/al/include/AreaObj/alAreaShape.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1AreaShape_1aa585cf3ddc0482eea86ed1d301317ac5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::AreaShape::calcLocalPos</definition>
+        <argsstring>(sead::Vector3f *out, const sead::Vector3f &amp;trans) const</argsstring>
+        <name>calcLocalPos</name>
+        <qualifiedname>al::AreaShape::calcLocalPos</qualifiedname>
+        <param>
+          <type>sead::Vector3f *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShape_1ac064861c5f0ed46571a73fdbef1ca546" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::AreaShape::setBaseMtxPtr</definition>
+        <argsstring>(const sead::Matrix34f *baseMtxPtr)</argsstring>
+        <name>setBaseMtxPtr</name>
+        <qualifiedname>al::AreaShape::setBaseMtxPtr</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Matrix34f *</type>
+          <declname>baseMtxPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="18" column="14" bodyfile="lib/al/include/AreaObj/alAreaShape.h" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShape_1a8d3c6f602483f5409447ae060d2dbd91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::AreaShape::setScale</definition>
+        <argsstring>(const sead::Vector3f &amp;scale)</argsstring>
+        <name>setScale</name>
+        <qualifiedname>al::AreaShape::setScale</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="23" column="14" bodyfile="lib/al/src/AreaObj/alAreaShape.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShape_1ad05b7f131136d43ba17a3f385ffff3c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>virtual bool al::AreaShape::isInVolume</definition>
+        <argsstring>(const sead::Vector3f &amp;trans) const =0</argsstring>
+        <name>isInVolume</name>
+        <qualifiedname>al::AreaShape::isInVolume</qualifiedname>
+        <reimplementedby refid="classal_1_1AreaShapeCube_1a65a088f910d574fc968af6ca158c1877">isInVolume</reimplementedby>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="26" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShape_1af29e87145096f5a67a020e47e1686997" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::AreaShape::v1</definition>
+        <argsstring>()=0</argsstring>
+        <name>v1</name>
+        <qualifiedname>al::AreaShape::v1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="27" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShape_1af2770016583a8af4fbdc4630b553368d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::AreaShape::v2</definition>
+        <argsstring>()=0</argsstring>
+        <name>v2</name>
+        <qualifiedname>al::AreaShape::v2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="28" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShape_1aec7ecd5c03bd678038316c7678762356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::AreaShape::AreaShape</definition>
+        <argsstring>()</argsstring>
+        <name>AreaShape</name>
+        <qualifiedname>al::AreaShape::AreaShape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShape.h" line="31" column="9" bodyfile="lib/al/src/AreaObj/alAreaShape.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>al::AreaShape</label>
+        <link refid="classal_1_1AreaShape"/>
+      </node>
+      <node id="2">
+        <label>al::AreaShapeCube</label>
+        <link refid="classal_1_1AreaShapeCube"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/AreaObj/alAreaShape.h" line="9" column="1" bodyfile="lib/al/include/AreaObj/alAreaShape.h" bodystart="10" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classal_1_1AreaShape_1aec7ecd5c03bd678038316c7678762356" prot="public" virt="non-virtual"><scope>al::AreaShape</scope><name>AreaShape</name></member>
+      <member refid="classal_1_1AreaShape_1aa585cf3ddc0482eea86ed1d301317ac5" prot="public" virt="non-virtual"><scope>al::AreaShape</scope><name>calcLocalPos</name></member>
+      <member refid="classal_1_1AreaShape_1ad05b7f131136d43ba17a3f385ffff3c6" prot="public" virt="pure-virtual"><scope>al::AreaShape</scope><name>isInVolume</name></member>
+      <member refid="classal_1_1AreaShape_1a2ed987e7315aeb568b44af137ff5480c" prot="private" virt="non-virtual"><scope>al::AreaShape</scope><name>mBaseMtxPtr</name></member>
+      <member refid="classal_1_1AreaShape_1add3b32e4571c385022e056d143f57e1e" prot="private" virt="non-virtual"><scope>al::AreaShape</scope><name>mScale</name></member>
+      <member refid="classal_1_1AreaShape_1ac064861c5f0ed46571a73fdbef1ca546" prot="public" virt="non-virtual"><scope>al::AreaShape</scope><name>setBaseMtxPtr</name></member>
+      <member refid="classal_1_1AreaShape_1a8d3c6f602483f5409447ae060d2dbd91" prot="public" virt="non-virtual"><scope>al::AreaShape</scope><name>setScale</name></member>
+      <member refid="classal_1_1AreaShape_1af29e87145096f5a67a020e47e1686997" prot="public" virt="pure-virtual"><scope>al::AreaShape</scope><name>v1</name></member>
+      <member refid="classal_1_1AreaShape_1af2770016583a8af4fbdc4630b553368d" prot="public" virt="pure-virtual"><scope>al::AreaShape</scope><name>v2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::NerveStateBase - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-alnervestatebase">Class al::NerveStateBase</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>NerveStateBase</strong></a></p>
+<p>Inherits the following classes: <a href="../classal_1_1NerveExecutor/">al::NerveExecutor</a></p>
+<p>Inherited by the following classes: <a href="../classal_1_1HostStateBase/">al::HostStateBase</a>,  <a href="../classal_1_1ActorStateBase/">al::ActorStateBase</a>,  <a href="../classal_1_1HostStateBase/">al::HostStateBase</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-nervestatebase"><strong>NerveStateBase</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-init"><strong>init</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-isdead"><strong>isDead</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-update"><strong>update</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alnerveexecutor">Public Functions inherited from al::NerveExecutor</h2>
+<p>See <a href="../classal_1_1NerveExecutor/">al::NerveExecutor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-nerveexecutor"><strong>NerveExecutor</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-initnerve"><strong>initNerve</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1Nerve/"><strong>Nerve</strong></a> * nrv, <a href="../structal_1_1NameToCreator/"><strong>int</strong></a> step=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-updatenerve"><strong>updateNerve</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classal_1_1NerveExecutor/#function-nerveexecutor"><strong>~NerveExecutor</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1IUseNerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseNerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-nervestatebase">function NerveStateBase</h3>
+<pre><code class="language-C++">al::NerveStateBase::NerveStateBase (
+    const  char * name
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appear">function appear</h3>
+<pre><code class="language-C++">virtual void al::NerveStateBase::appear () 
+</code></pre>
+<hr>
+
+<h3 id="function-control">function control</h3>
+<pre><code class="language-C++">virtual void al::NerveStateBase::control () 
+</code></pre>
+<hr>
+
+<h3 id="function-init">function init</h3>
+<pre><code class="language-C++">virtual void al::NerveStateBase::init () 
+</code></pre>
+<hr>
+
+<h3 id="function-isdead">function isDead</h3>
+<pre><code class="language-C++">inline bool al::NerveStateBase::isDead () const
+</code></pre>
+<hr>
+
+<h3 id="function-kill">function kill</h3>
+<pre><code class="language-C++">virtual void al::NerveStateBase::kill () 
+</code></pre>
+<hr>
+
+<h3 id="function-update">function update</h3>
+<pre><code class="language-C++">virtual bool al::NerveStateBase::update () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Nerve/alNerveStateBase.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

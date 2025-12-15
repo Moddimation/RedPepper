@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_player_model_holder" kind="class" language="C++" prot="public">
+    <compoundname>PlayerModelHolder</compoundname>
+    <basecompoundref refid="class_i_use_player_model_changer" prot="public" virt="non-virtual">IUsePlayerModelChanger</basecompoundref>
+    <basecompoundref refid="class_i_use_player_model_show_hide" prot="public" virt="non-virtual">IUsePlayerModelShowHide</basecompoundref>
+    <basecompoundref refid="class_i_use_player_model_shadow_show_hide" prot="public" virt="non-virtual">IUsePlayerModelShadowShowHide</basecompoundref>
+    <basecompoundref refid="class_i_use_player_model_silhouette_show_hide" prot="public" virt="non-virtual">IUsePlayerModelSilhouetteShowHide</basecompoundref>
+    <includes refid="_player_model_holder_8h" local="no">PlayerModelHolder.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_model_holder_1aedf029945fa2e0770360f4054288a654" prot="private" static="no" mutable="no">
+        <type>PlayerModel *</type>
+        <definition>PlayerModel* PlayerModelHolder::mModels[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>mModels</name>
+        <qualifiedname>PlayerModelHolder::mModels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="49" column="22" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_model_holder_1a70105c2c202eea8ff6d4973703a31cc9" prot="private" static="no" mutable="no">
+        <type><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref></type>
+        <definition>EPlayerFigure PlayerModelHolder::mCurrentFigure</definition>
+        <argsstring></argsstring>
+        <name>mCurrentFigure</name>
+        <qualifiedname>PlayerModelHolder::mCurrentFigure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="50" column="23" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_model_holder_1ad660efdd77d34588ee1df7ecb49d070c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerModelHolder::_30</definition>
+        <argsstring></argsstring>
+        <name>_30</name>
+        <qualifiedname>PlayerModelHolder::_30</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="51" column="23" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_model_holder_1a45cfd1b8701ea97eee1dc8f95209de4d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerModelHolder::mIsHidden</definition>
+        <argsstring></argsstring>
+        <name>mIsHidden</name>
+        <qualifiedname>PlayerModelHolder::mIsHidden</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="52" column="23" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_model_holder_1aa0df1d8432d64cc9bb50a0ac2f7c03df" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerModelHolder::mIsShadowHidden</definition>
+        <argsstring></argsstring>
+        <name>mIsShadowHidden</name>
+        <qualifiedname>PlayerModelHolder::mIsShadowHidden</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="53" column="23" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_model_holder_1a33b301a0d84ad08e76e0a632f14288e2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerModelHolder::mIsSilhouetteHidden</definition>
+        <argsstring></argsstring>
+        <name>mIsSilhouetteHidden</name>
+        <qualifiedname>PlayerModelHolder::mIsSilhouetteHidden</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="54" column="23" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_model_holder_1a5515ab13863f07a60f263b79a87cab31" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* PlayerModelHolder::_34[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>_34</name>
+        <qualifiedname>PlayerModelHolder::_34</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="55" column="22" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_player_model_holder_1a715ed44718db7bb2180d9356e1687b74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PlayerModel *</type>
+        <definition>static PlayerModel * PlayerModelHolder::createNormalPlayerModel</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info, const PlayerActorInitInfo &amp;playerInfo, const sead::Vector3f *transPtr, const sead::Vector3f *rotatePtr, u64 something)</argsstring>
+        <name>createNormalPlayerModel</name>
+        <qualifiedname>PlayerModelHolder::createNormalPlayerModel</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player_actor_init_info" kindref="compound">PlayerActorInitInfo</ref> &amp;</type>
+          <declname>playerInfo</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>transPtr</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>rotatePtr</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>something</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="58" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a8e67b76b3d2c33d97df80e161b945f23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PlayerModel *</type>
+        <definition>static PlayerModel * PlayerModelHolder::createMiniPlayerModel</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info, const PlayerActorInitInfo &amp;playerInfo, const sead::Vector3f *transPtr, const sead::Vector3f *rotatePtr, u64 something)</argsstring>
+        <name>createMiniPlayerModel</name>
+        <qualifiedname>PlayerModelHolder::createMiniPlayerModel</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player_actor_init_info" kindref="compound">PlayerActorInitInfo</ref> &amp;</type>
+          <declname>playerInfo</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>transPtr</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>rotatePtr</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>something</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="63" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1abf5ef2cb5ef5da7c1d73ded35e56c505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PlayerModel *</type>
+        <definition>static PlayerModel * PlayerModelHolder::createFirePlayerModel</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info, const PlayerActorInitInfo &amp;playerInfo, const sead::Vector3f *transPtr, const sead::Vector3f *rotatePtr, u64 something)</argsstring>
+        <name>createFirePlayerModel</name>
+        <qualifiedname>PlayerModelHolder::createFirePlayerModel</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player_actor_init_info" kindref="compound">PlayerActorInitInfo</ref> &amp;</type>
+          <declname>playerInfo</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>transPtr</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>rotatePtr</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>something</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="68" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1aaf13858fc96719f4ce7e38daa78dda40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PlayerModel *</type>
+        <definition>static PlayerModel * PlayerModelHolder::createBoomerangPlayerModel</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info, const PlayerActorInitInfo &amp;playerInfo, const sead::Vector3f *transPtr, const sead::Vector3f *rotatePtr, u64 something)</argsstring>
+        <name>createBoomerangPlayerModel</name>
+        <qualifiedname>PlayerModelHolder::createBoomerangPlayerModel</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player_actor_init_info" kindref="compound">PlayerActorInitInfo</ref> &amp;</type>
+          <declname>playerInfo</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>transPtr</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>rotatePtr</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>something</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="74" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_model_holder_1a975ecd53b42e6f76b0d20671e4632577" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::change</definition>
+        <argsstring>(const EPlayerFigure &amp;figure)</argsstring>
+        <name>change</name>
+        <qualifiedname>PlayerModelHolder::change</qualifiedname>
+        <reimplements refid="class_i_use_player_model_changer_1a12aa9daa3204bdfdd1b492333381d5d1">change</reimplements>
+        <param>
+          <type>const <ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref> &amp;</type>
+          <declname>figure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="83" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1aab46731206a593dbb860851433169ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <qualifiedname>PlayerModelHolder::show</qualifiedname>
+        <reimplements refid="class_i_use_player_model_show_hide_1a4fe6d6b4ca9a8ed977bbc66804120aea">show</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="84" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a5a070ad05266c4e57f9e2229eda42802" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <qualifiedname>PlayerModelHolder::hide</qualifiedname>
+        <reimplements refid="class_i_use_player_model_show_hide_1a0e901c98a7d457c3b791abd495cfbf2e">hide</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="85" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a67fb8d57c49b5a73aae16fadbb775341" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool PlayerModelHolder::isHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>isHidden</name>
+        <qualifiedname>PlayerModelHolder::isHidden</qualifiedname>
+        <reimplements refid="class_i_use_player_model_show_hide_1afb384713571ceea9bb3ebcf97023308c">isHidden</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="86" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a9d7d97fcb808c178c0a9d50eee719299" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::showSilhouette</definition>
+        <argsstring>()</argsstring>
+        <name>showSilhouette</name>
+        <qualifiedname>PlayerModelHolder::showSilhouette</qualifiedname>
+        <reimplements refid="class_i_use_player_model_silhouette_show_hide_1a1a41ffa0e74b548e622701f8674030c1">showSilhouette</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="87" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a34cde22bd4ffce366f52ab84dc6fc97c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::hideSilhouette</definition>
+        <argsstring>()</argsstring>
+        <name>hideSilhouette</name>
+        <qualifiedname>PlayerModelHolder::hideSilhouette</qualifiedname>
+        <reimplements refid="class_i_use_player_model_silhouette_show_hide_1aa48691dca81f95b8efd40ec8bbcf466d">hideSilhouette</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="88" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a39b26a807cd8dbbd557964939a8c1b98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool PlayerModelHolder::isSilhouetteHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>isSilhouetteHidden</name>
+        <qualifiedname>PlayerModelHolder::isSilhouetteHidden</qualifiedname>
+        <reimplements refid="class_i_use_player_model_silhouette_show_hide_1a6e1afe3003b40922e1e44b90e860e2f5">isSilhouetteHidden</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="89" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a2ea7dc1c133bee080bae3fb43fa2dfd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::hideShadow</definition>
+        <argsstring>()</argsstring>
+        <name>hideShadow</name>
+        <qualifiedname>PlayerModelHolder::hideShadow</qualifiedname>
+        <reimplements refid="class_i_use_player_model_shadow_show_hide_1a8ce1b4eb20de4f8898dc94ec79cd071b">hideShadow</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="90" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1aa231c5c7d3ffdfe2142523f6b62e8dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void PlayerModelHolder::showShadow</definition>
+        <argsstring>()</argsstring>
+        <name>showShadow</name>
+        <qualifiedname>PlayerModelHolder::showShadow</qualifiedname>
+        <reimplements refid="class_i_use_player_model_shadow_show_hide_1a111511d91ec90513511dae34eaf56681">showShadow</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="91" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_model_holder_1a2b8a5cabafe537c48c97ad2f75bf95f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlayerModelHolder::PlayerModelHolder</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info, const PlayerActorInitInfo &amp;playerInfo, const sead::Vector3f *transPtr, const sead::Vector3f *rotatePtr, u64 something)</argsstring>
+        <name>PlayerModelHolder</name>
+        <qualifiedname>PlayerModelHolder::PlayerModelHolder</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_player_actor_init_info" kindref="compound">PlayerActorInitInfo</ref> &amp;</type>
+          <declname>playerInfo</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>transPtr</declname>
+        </param>
+        <param>
+          <type>const sead::Vector3f *</type>
+          <declname>rotatePtr</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>something</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerModelHolder.h" line="94" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IUsePlayerModelChanger</label>
+        <link refid="class_i_use_player_model_changer"/>
+      </node>
+      <node id="4">
+        <label>IUsePlayerModelShadowShowHide</label>
+        <link refid="class_i_use_player_model_shadow_show_hide"/>
+      </node>
+      <node id="3">
+        <label>IUsePlayerModelShowHide</label>
+        <link refid="class_i_use_player_model_show_hide"/>
+      </node>
+      <node id="5">
+        <label>IUsePlayerModelSilhouetteShowHide</label>
+        <link refid="class_i_use_player_model_silhouette_show_hide"/>
+      </node>
+      <node id="1">
+        <label>PlayerModelHolder</label>
+        <link refid="class_player_model_holder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IUsePlayerModelChanger</label>
+        <link refid="class_i_use_player_model_changer"/>
+      </node>
+      <node id="4">
+        <label>IUsePlayerModelShadowShowHide</label>
+        <link refid="class_i_use_player_model_shadow_show_hide"/>
+      </node>
+      <node id="3">
+        <label>IUsePlayerModelShowHide</label>
+        <link refid="class_i_use_player_model_show_hide"/>
+      </node>
+      <node id="5">
+        <label>IUsePlayerModelSilhouetteShowHide</label>
+        <link refid="class_i_use_player_model_silhouette_show_hide"/>
+      </node>
+      <node id="1">
+        <label>PlayerModelHolder</label>
+        <link refid="class_player_model_holder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Player/PlayerModelHolder.h" line="43" column="1" bodyfile="Game/include/Player/PlayerModelHolder.h" bodystart="47" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_player_model_holder_1ad660efdd77d34588ee1df7ecb49d070c" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>_30</name></member>
+      <member refid="class_player_model_holder_1a5515ab13863f07a60f263b79a87cab31" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>_34</name></member>
+      <member refid="class_player_model_holder_1a975ecd53b42e6f76b0d20671e4632577" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>change</name></member>
+      <member refid="class_player_model_holder_1aaf13858fc96719f4ce7e38daa78dda40" prot="public" virt="non-virtual"><scope>PlayerModelHolder</scope><name>createBoomerangPlayerModel</name></member>
+      <member refid="class_player_model_holder_1abf5ef2cb5ef5da7c1d73ded35e56c505" prot="public" virt="non-virtual"><scope>PlayerModelHolder</scope><name>createFirePlayerModel</name></member>
+      <member refid="class_player_model_holder_1a8e67b76b3d2c33d97df80e161b945f23" prot="public" virt="non-virtual"><scope>PlayerModelHolder</scope><name>createMiniPlayerModel</name></member>
+      <member refid="class_player_model_holder_1a715ed44718db7bb2180d9356e1687b74" prot="public" virt="non-virtual"><scope>PlayerModelHolder</scope><name>createNormalPlayerModel</name></member>
+      <member refid="class_player_model_holder_1a5a070ad05266c4e57f9e2229eda42802" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>hide</name></member>
+      <member refid="class_player_model_holder_1a2ea7dc1c133bee080bae3fb43fa2dfd7" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>hideShadow</name></member>
+      <member refid="class_player_model_holder_1a34cde22bd4ffce366f52ab84dc6fc97c" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>hideSilhouette</name></member>
+      <member refid="class_player_model_holder_1a67fb8d57c49b5a73aae16fadbb775341" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>isHidden</name></member>
+      <member refid="class_player_model_holder_1a39b26a807cd8dbbd557964939a8c1b98" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>isSilhouetteHidden</name></member>
+      <member refid="class_player_model_holder_1a70105c2c202eea8ff6d4973703a31cc9" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>mCurrentFigure</name></member>
+      <member refid="class_player_model_holder_1a45cfd1b8701ea97eee1dc8f95209de4d" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>mIsHidden</name></member>
+      <member refid="class_player_model_holder_1aa0df1d8432d64cc9bb50a0ac2f7c03df" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>mIsShadowHidden</name></member>
+      <member refid="class_player_model_holder_1a33b301a0d84ad08e76e0a632f14288e2" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>mIsSilhouetteHidden</name></member>
+      <member refid="class_player_model_holder_1aedf029945fa2e0770360f4054288a654" prot="private" virt="non-virtual"><scope>PlayerModelHolder</scope><name>mModels</name></member>
+      <member refid="class_player_model_holder_1a2b8a5cabafe537c48c97ad2f75bf95f0" prot="public" virt="non-virtual"><scope>PlayerModelHolder</scope><name>PlayerModelHolder</name></member>
+      <member refid="class_player_model_holder_1aab46731206a593dbb860851433169ba6" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>show</name></member>
+      <member refid="class_player_model_holder_1aa231c5c7d3ffdfe2142523f6b62e8dd9" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>showShadow</name></member>
+      <member refid="class_player_model_holder_1a9d7d97fcb808c178c0a9d50eee719299" prot="public" virt="virtual"><scope>PlayerModelHolder</scope><name>showSilhouette</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

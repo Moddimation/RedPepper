@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1ActorFactory" kind="class" language="C++" prot="public">
+    <compoundname>al::ActorFactory</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1ActorFactory_1a8e28e55a31e3c777824e17ec517cac35" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1Resource" kindref="compound">Resource</ref> *</type>
+        <definition>Resource* al::ActorFactory::mArchive</definition>
+        <argsstring></argsstring>
+        <name>mArchive</name>
+        <qualifiedname>al::ActorFactory::mArchive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Factory/alActorFactory.h" line="17" column="19" bodyfile="lib/al/include/Factory/alActorFactory.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1ActorFactory_1ac5fdaadd6a1df5cde37e2a383777e461" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1ByamlIter" kindref="compound">ByamlIter</ref> *</type>
+        <definition>ByamlIter* al::ActorFactory::mConvertNameData</definition>
+        <argsstring></argsstring>
+        <name>mConvertNameData</name>
+        <qualifiedname>al::ActorFactory::mConvertNameData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Factory/alActorFactory.h" line="18" column="19" bodyfile="lib/al/include/Factory/alActorFactory.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1ActorFactory_1a29aa5219d0a16ffcaddbb4a75accfaf6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+        <definition>const char * al::ActorFactory::convertName</definition>
+        <argsstring>(const char *objectName) const</argsstring>
+        <name>convertName</name>
+        <qualifiedname>al::ActorFactory::convertName</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+          <declname>objectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Factory/alActorFactory.h" line="21" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1ActorFactory_1a4bec8c32fcea507cf3dc899809853ece" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CreateActorFuncPtr</type>
+        <definition>CreateActorFuncPtr al::ActorFactory::getCreator</definition>
+        <argsstring>(const char *objectName) const</argsstring>
+        <name>getCreator</name>
+        <qualifiedname>al::ActorFactory::getCreator</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+          <declname>objectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Factory/alActorFactory.h" line="22" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1ActorFactory_1abbdd76f6680e36b4bc61f5ffc7dec655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::ActorFactory::ActorFactory</definition>
+        <argsstring>()</argsstring>
+        <name>ActorFactory</name>
+        <qualifiedname>al::ActorFactory::ActorFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Factory/alActorFactory.h" line="25" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/Factory/alActorFactory.h" line="14" column="1" bodyfile="lib/al/include/Factory/alActorFactory.h" bodystart="15" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classal_1_1ActorFactory_1abbdd76f6680e36b4bc61f5ffc7dec655" prot="public" virt="non-virtual"><scope>al::ActorFactory</scope><name>ActorFactory</name></member>
+      <member refid="classal_1_1ActorFactory_1a29aa5219d0a16ffcaddbb4a75accfaf6" prot="public" virt="non-virtual"><scope>al::ActorFactory</scope><name>convertName</name></member>
+      <member refid="classal_1_1ActorFactory_1a4bec8c32fcea507cf3dc899809853ece" prot="public" virt="non-virtual"><scope>al::ActorFactory</scope><name>getCreator</name></member>
+      <member refid="classal_1_1ActorFactory_1a8e28e55a31e3c777824e17ec517cac35" prot="private" virt="non-virtual"><scope>al::ActorFactory</scope><name>mArchive</name></member>
+      <member refid="classal_1_1ActorFactory_1ac5fdaadd6a1df5cde37e2a383777e461" prot="private" virt="non-virtual"><scope>al::ActorFactory</scope><name>mConvertNameData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

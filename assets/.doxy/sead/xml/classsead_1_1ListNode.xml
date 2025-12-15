@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1ListNode" kind="class" language="C++" prot="public">
+    <compoundname>sead::ListNode</compoundname>
+    <derivedcompoundref refid="classsead_1_1TListNode" prot="public" virt="non-virtual">sead::TListNode&lt; FileDevice * &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1TListNode" prot="public" virt="non-virtual">sead::TListNode&lt; TaskBase * &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1TListNode" prot="public" virt="non-virtual">sead::TListNode&lt; T &gt;</derivedcompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsead_1_1ListNode_1a5a83b4dfbe14d4a3034419350b6ed82c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ListImpl</definition>
+        <argsstring></argsstring>
+        <name>ListImpl</name>
+        <qualifiedname>sead::ListNode::ListImpl</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1ListImpl" kindref="compound">ListImpl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="20" column="18" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1ListNode_1a1c656b331b830b04707484ef7cc080fe" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode* sead::ListNode::mPrev</definition>
+        <argsstring></argsstring>
+        <name>mPrev</name>
+        <qualifiedname>sead::ListNode::mPrev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="28" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1ListNode_1ad76f64b1566f62fc971280c992eb54bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode* sead::ListNode::mNext</definition>
+        <argsstring></argsstring>
+        <name>mNext</name>
+        <qualifiedname>sead::ListNode::mNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="29" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1ListNode_1aa816d259659b5b386579dc9a723f113b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode * sead::ListNode::next</definition>
+        <argsstring>() const</argsstring>
+        <name>next</name>
+        <qualifiedname>sead::ListNode::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="11" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ListNode_1a3eee1d6ab52279578f0195d100313e20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode * sead::ListNode::prev</definition>
+        <argsstring>() const</argsstring>
+        <name>prev</name>
+        <qualifiedname>sead::ListNode::prev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="13" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ListNode_1a2f15587150961a7c67358d8141039f8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ListNode::isLinked</definition>
+        <argsstring>() const</argsstring>
+        <name>isLinked</name>
+        <qualifiedname>sead::ListNode::isLinked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="15" column="10" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ListNode_1ae56294b649bfb25ab2b336bb9746b9f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::ListNode::ListNode</definition>
+        <argsstring>()</argsstring>
+        <name>ListNode</name>
+        <qualifiedname>sead::ListNode::ListNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="17" column="5" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsead_1_1ListNode_1a2a7497d723467c627bb2ee69b143b8a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::init_</definition>
+        <argsstring>()</argsstring>
+        <name>init_</name>
+        <qualifiedname>sead::ListNode::init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="22" column="10" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ListNode_1a38ed265f38758b92b496c15622508c5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::insertBack_</definition>
+        <argsstring>(ListNode *node)</argsstring>
+        <name>insertBack_</name>
+        <qualifiedname>sead::ListNode::insertBack_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="24" column="10" bodyfile="lib/sead/modules/src/container/seadListImpl.cpp" bodystart="6" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ListNode_1ad6b2b0baaca80792a573d32121ab7434" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::insertFront_</definition>
+        <argsstring>(ListNode *node)</argsstring>
+        <name>insertFront_</name>
+        <qualifiedname>sead::ListNode::insertFront_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="25" column="10" bodyfile="lib/sead/modules/src/container/seadListImpl.cpp" bodystart="17" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ListNode_1a76fd0d35b8adb81b1ea97e4f8820b763" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::erase_</definition>
+        <argsstring>()</argsstring>
+        <name>erase_</name>
+        <qualifiedname>sead::ListNode::erase_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="26" column="10" bodyfile="lib/sead/modules/src/container/seadListImpl.cpp" bodystart="28" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::TListNode&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1TListNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::TListNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1TListNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::FileDevice</label>
+        <link refid="classsead_1_1FileDevice"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1ListNode"/>
+      </node>
+      <node id="5">
+        <label>sead::TListNode&lt; T &gt;</label>
+        <link refid="classsead_1_1TListNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/sead/include/container/seadListImpl.h" line="9" column="1" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="9" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classsead_1_1ListNode_1a76fd0d35b8adb81b1ea97e4f8820b763" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>erase_</name></member>
+      <member refid="classsead_1_1ListNode_1a2a7497d723467c627bb2ee69b143b8a4" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>init_</name></member>
+      <member refid="classsead_1_1ListNode_1a38ed265f38758b92b496c15622508c5f" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>insertBack_</name></member>
+      <member refid="classsead_1_1ListNode_1ad6b2b0baaca80792a573d32121ab7434" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>insertFront_</name></member>
+      <member refid="classsead_1_1ListNode_1a2f15587150961a7c67358d8141039f8b" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>isLinked</name></member>
+      <member refid="classsead_1_1ListNode_1a5a83b4dfbe14d4a3034419350b6ed82c" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>ListImpl</name></member>
+      <member refid="classsead_1_1ListNode_1ae56294b649bfb25ab2b336bb9746b9f2" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>ListNode</name></member>
+      <member refid="classsead_1_1ListNode_1ad76f64b1566f62fc971280c992eb54bc" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>mNext</name></member>
+      <member refid="classsead_1_1ListNode_1a1c656b331b830b04707484ef7cc080fe" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>mPrev</name></member>
+      <member refid="classsead_1_1ListNode_1aa816d259659b5b386579dc9a723f113b" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>next</name></member>
+      <member refid="classsead_1_1ListNode_1a3eee1d6ab52279578f0195d100313e20" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

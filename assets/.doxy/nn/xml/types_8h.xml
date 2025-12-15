@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includedby refid="Handle_8h" local="no">lib/CTRSDK/include/nn/Handle.h</includedby>
+    <includedby refid="Result_8h" local="no">lib/CTRSDK/include/nn/Result.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>lib/CTRSDK/include/nn/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/CTRSDK/include/nn/Handle.h</label>
+        <link refid="Handle_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lib/CTRSDK/include/nn/Result.h</label>
+        <link refid="Result_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lib/CTRSDK/include/nn/err/CTR/err_Api.h</label>
+        <link refid="err__Api_8h_source"/>
+      </node>
+      <node id="3">
+        <label>lib/CTRSDK/include/nn/fs/CTR/MPCore/detail/fs_UserFileSystem.h</label>
+        <link refid="fs__UserFileSystem_8h_source"/>
+      </node>
+      <node id="8">
+        <label>lib/CTRSDK/include/nn/hid/CTR/hid_HidBase.h</label>
+        <link refid="hid__HidBase_8h_source"/>
+      </node>
+      <node id="14">
+        <label>lib/CTRSDK/include/nn/ndm/ndm_Api.h</label>
+        <link refid="ndm__Api_8h_source"/>
+      </node>
+      <node id="7">
+        <label>lib/CTRSDK/include/nn/os/os_EventBase.h</label>
+        <link refid="os__EventBase_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lib/CTRSDK/include/nn/os/os_HandleObject.h</label>
+        <link refid="os__HandleObject_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lib/CTRSDK/include/nn/os/os_InterruptEvent.h</label>
+        <link refid="os__InterruptEvent_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lib/CTRSDK/include/nn/os/os_WaitObject.h</label>
+        <link refid="os__WaitObject_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lib/CTRSDK/include/nn/srv/detail/srv_Service.h</label>
+        <link refid="srv__Service_8h_source"/>
+      </node>
+      <node id="10">
+        <label>lib/CTRSDK/include/nn/srv/srv_Api.h</label>
+        <link refid="srv__Api_8h_source"/>
+      </node>
+      <node id="11">
+        <label>lib/CTRSDK/include/nn/svc/svc_Api.h</label>
+        <link refid="svc__Api_8h_source"/>
+      </node>
+      <node id="1">
+        <label>lib/CTRSDK/include/nn/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="types_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" prot="public" static="no">
+        <name>NULL</name>
+        <initializer>(void*)0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="8" column="9" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a0c8e04bb5595637e340ed1d2b99e5e11" prot="public" static="no">
+        <name>static_assert</name>
+        <param><defname>COND</defname></param>
+        <param><defname>MSG</defname></param>
+        <initializer>typedef int __static_assert_balls[ ( COND ) ? 1 : -1 ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="36" column="9" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a0e288a46fd933dee49c375e7ab76234b" prot="public" static="no">
+        <name>split</name>
+        <param><defname>S</defname></param>
+        <initializer>__attribute__( ( section( &quot;i.&quot; #S ) ) ) S</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="39" column="9" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="types_8h_1aed742c436da53c1080638ce6ef7d13de" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char u8</definition>
+        <argsstring></argsstring>
+        <name>u8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="11" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a9e6c91d77e24643b888dbd1a1a590054" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="12" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int u32</definition>
+        <argsstring></argsstring>
+        <name>u32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="13" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long u64</definition>
+        <argsstring></argsstring>
+        <name>u64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="14" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a151f780fb455885061d3b77ec1c90c03" prot="public" static="no">
+        <type>signed char</type>
+        <definition>typedef signed char s8</definition>
+        <argsstring></argsstring>
+        <name>s8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="16" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a5ffa4f640862b25ba6d4f635b78bdbe1" prot="public" static="no">
+        <type>signed short</type>
+        <definition>typedef signed short s16</definition>
+        <argsstring></argsstring>
+        <name>s16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="17" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" prot="public" static="no">
+        <type>signed int</type>
+        <definition>typedef signed int s32</definition>
+        <argsstring></argsstring>
+        <name>s32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="18" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" prot="public" static="no">
+        <type>signed long long</type>
+        <definition>typedef signed long long s64</definition>
+        <argsstring></argsstring>
+        <name>s64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="19" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a5f6906312a689f27d70e9d086649d3fd" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float f32</definition>
+        <argsstring></argsstring>
+        <name>f32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="21" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double f64</definition>
+        <argsstring></argsstring>
+        <name>f64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/types.h" line="22" column="28" bodyfile="lib/CTRSDK/include/nn/types.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NULL<sp/>(void*)0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>u8;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>u16;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>u64;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s8;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s16;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s32;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/>s64;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f32;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>nullptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>nullptr<sp/>NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>u32<sp/>uintptr_t;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>s32<sp/>intptr_t;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>static_assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>static_assert(<sp/>COND,<sp/>MSG<sp/>)<sp/>typedef<sp/>int<sp/>__static_assert_balls[<sp/>(<sp/>COND<sp/>)<sp/>?<sp/>1<sp/>:<sp/>-1<sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>split(<sp/>S<sp/>)<sp/>__attribute__(<sp/>(<sp/>section(<sp/>&quot;i.&quot;<sp/>#S<sp/>)<sp/>)<sp/>)<sp/>S</highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/include/nn/types.h"/>
+  </compounddef>
+</doxygen>

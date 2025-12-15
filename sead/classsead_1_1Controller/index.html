@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::Controller - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadcontroller">Class sead::Controller</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>Controller</strong></a></p>
+<p>Inherits the following classes: <a href="../classsead_1_1ControllerBase/">sead::ControllerBase</a></p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-padidx"><strong>PadIdx</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes-inherited-from-seadcontrollerbase">Public Static Attributes inherited from sead::ControllerBase</h2>
+<p>See <a href="../classsead_1_1ControllerBase/">sead::ControllerBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1Vector2/"><strong>Vector2f</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#variable-cinvalidpointer"><strong>cInvalidPointer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1Vector2/"><strong>Vector2i</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#variable-cinvalidpointers32"><strong>cInvalidPointerS32</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const f32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#variable-cstickholdthresholddefault"><strong>cStickHoldThresholdDefault</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const f32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#variable-cstickreleasethresholddefault"><strong>cStickReleaseThresholdDefault</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-controller"><strong>Controller</strong></a> (<a href="../classsead_1_1ControllerMgr/"><strong>ControllerMgr</strong></a> * mgr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="#function-calc"><strong>calc</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">ControllerAddon *</td>
+<td style="text-align: left;"><a href="#function-getaddon"><strong>getAddon</strong></a> (ControllerDefine::AddonId id) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getaddonas"><strong>getAddonAs</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">ControllerAddon *</td>
+<td style="text-align: left;"><a href="#function-getaddonbyorder"><strong>getAddonByOrder</strong></a> (ControllerDefine::AddonId id, int index) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual bool</td>
+<td style="text-align: left;"><a href="#function-isconnected"><strong>isConnected</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="#function-controller"><strong>~Controller</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-seadcontrollerbase">Public Functions inherited from sead::ControllerBase</h2>
+<p>See <a href="../classsead_1_1ControllerBase/">sead::ControllerBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-controllerbase"><strong>ControllerBase</strong></a> (s32 padBitMax, s32 leftStickCrossStartBit, s32 rightStickCrossStartBit, s32 touchKeyBit) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getholdmask"><strong>getHoldMask</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const u32 *</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getholdmaskptr"><strong>getHoldMaskPtr</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">f32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getleftanalogtrigger"><strong>getLeftAnalogTrigger</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1Vector2/"><strong>Vector2f</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getleftstick"><strong>getLeftStick</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getpadholdcount"><strong>getPadHoldCount</strong></a> (s32 bit) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1Vector2/"><strong>Vector2f</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getpointer"><strong>getPointer</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1BoundBox2/"><strong>BoundBox2f</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getpointerbound"><strong>getPointerBound</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1Vector2/"><strong>Vector2i</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getpointerprev"><strong>getPointerPrev</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getreleasemask"><strong>getReleaseMask</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const u32 *</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getreleasemaskptr"><strong>getReleaseMaskPtr</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getrepeatmask"><strong>getRepeatMask</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const u32 *</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getrepeatmaskptr"><strong>getRepeatMaskPtr</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">f32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getrightanalogtrigger"><strong>getRightAnalogTrigger</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1Vector2/"><strong>Vector2f</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getrightstick"><strong>getRightStick</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-gettrigmask"><strong>getTrigMask</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const u32 *</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-gettrigmaskptr"><strong>getTrigMaskPtr</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-ishold"><strong>isHold</strong></a> (u32 mask) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-isholdall"><strong>isHoldAll</strong></a> (u32 mask) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-ispointeroffnow"><strong>isPointerOffNow</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-ispointeron"><strong>isPointerOn</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-ispointeronnow"><strong>isPointerOnNow</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-ispointerunkflag3"><strong>isPointerUnkFlag3</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-isrelease"><strong>isRelease</strong></a> (u32 mask) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-isrepeat"><strong>isRepeat</strong></a> (u32 mask) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-istrig"><strong>isTrig</strong></a> (u32 mask) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-istrigwithrepeat"><strong>isTrigWithRepeat</strong></a> (u32 mask) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-setleftstickcrossthreshold"><strong>setLeftStickCrossThreshold</strong></a> (f32 hold, f32 release) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-setpadrepeat"><strong>setPadRepeat</strong></a> (u32 mask, u8 delay_frame, u8 pulse_frame) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-setpointerbound"><strong>setPointerBound</strong></a> (const <a href="../structsead_1_1BoundBox2/"><strong>BoundBox2f</strong></a> &amp; bound) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-setrightstickcrossthreshold"><strong>setRightStickCrossThreshold</strong></a> (f32 hold, f32 release) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions">Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="#function-calcimpl_"><strong>calcImpl_</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual bool</td>
+<td style="text-align: left;"><a href="#function-isidle_"><strong>isIdle_</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="#function-setidle_"><strong>setIdle_</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-seadcontrollerbase">Protected Functions inherited from sead::ControllerBase</h2>
+<p>See <a href="../classsead_1_1ControllerBase/">sead::ControllerBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-createstickcrossmask_"><strong>createStickCrossMask_</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-getstickhold_"><strong>getStickHold_</strong></a> (u32 prev_hold, const <a href="../structsead_1_1Vector2/"><strong>Vector2f</strong></a> &amp; stick, f32 hold_threshold, f32 release_threshold, s32 start_bit) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-isidlebase_"><strong>isIdleBase_</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-setidlebase_"><strong>setIdleBase_</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-setpointerwithbound_"><strong>setPointerWithBound_</strong></a> (bool is_on, bool touchkey_hold, const <a href="../structsead_1_1Vector2/"><strong>Vector2f</strong></a> &amp; pos) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="../classsead_1_1ControllerBase/#function-updatederivativeparams_"><strong>updateDerivativeParams_</strong></a> (u32 prev_hold, bool prev_pointer_on) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="enum-padidx">enum PadIdx</h3>
+<pre><code class="language-C++">enum sead::Controller::PadIdx {
+    cPadIdx_A = 0,
+    cPadIdx_B = 1,
+    cPadIdx_C = 2,
+    cPadIdx_X = 3,
+    cPadIdx_Y = 4,
+    cPadIdx_Z = 5,
+    cPadIdx_2 = 6,
+    cPadIdx_1 = 7,
+    cPadIdx_Home = 8,
+    cPadIdx_Minus = 9,
+    cPadIdx_Plus = 10,
+    cPadIdx_Start = 11,
+    cPadIdx_Select = 12,
+    cPadIdx_ZL = cPadIdx_C,
+    cPadIdx_ZR = cPadIdx_Z,
+    cPadIdx_L = 13,
+    cPadIdx_R = 14,
+    cPadIdx_Touch = 15,
+    cPadIdx_Up = 16,
+    cPadIdx_Down = 17,
+    cPadIdx_Left = 18,
+    cPadIdx_Right = 19,
+    cPadIdx_LeftStickUp = 20,
+    cPadIdx_LeftStickDown = 21,
+    cPadIdx_LeftStickLeft = 22,
+    cPadIdx_LeftStickRight = 23,
+    cPadIdx_RightStickUp = 24,
+    cPadIdx_RightStickDown = 25,
+    cPadIdx_RightStickLeft = 26,
+    cPadIdx_RightStickRight = 27,
+    cPadIdx_Max = 28
+};
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-controller">function Controller</h3>
+<pre><code class="language-C++">explicit sead::Controller::Controller (
+    ControllerMgr * mgr
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-calc">function calc</h3>
+<pre><code class="language-C++">virtual void sead::Controller::calc () 
+</code></pre>
+<hr>
+
+<h3 id="function-getaddon">function getAddon</h3>
+<pre><code class="language-C++">ControllerAddon * sead::Controller::getAddon (
+    ControllerDefine::AddonId id
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-getaddonas">function getAddonAs</h3>
+<pre><code class="language-C++">template&lt;typename T&gt;
+T sead::Controller::getAddonAs () const
+</code></pre>
+<hr>
+
+<h3 id="function-getaddonbyorder">function getAddonByOrder</h3>
+<pre><code class="language-C++">ControllerAddon * sead::Controller::getAddonByOrder (
+    ControllerDefine::AddonId id,
+    int index
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-isconnected">function isConnected</h3>
+<pre><code class="language-C++">virtual bool sead::Controller::isConnected () const
+</code></pre>
+<hr>
+
+<h3 id="function-controller_1">function ~Controller</h3>
+<pre><code class="language-C++">virtual sead::Controller::~Controller () 
+</code></pre>
+<hr>
+<h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
+<h3 id="function-calcimpl_">function calcImpl_</h3>
+<pre><code class="language-C++">virtual void sead::Controller::calcImpl_ () = 0
+</code></pre>
+<hr>
+
+<h3 id="function-isidle_">function isIdle_</h3>
+<pre><code class="language-C++">virtual bool sead::Controller::isIdle_ () 
+</code></pre>
+<hr>
+
+<h3 id="function-setidle_">function setIdle_</h3>
+<pre><code class="language-C++">virtual void sead::Controller::setIdle_ () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/controller/seadController.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

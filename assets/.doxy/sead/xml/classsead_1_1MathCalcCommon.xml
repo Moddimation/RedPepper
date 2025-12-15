@@ -1,0 +1,2272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1MathCalcCommon" kind="class" language="C++" prot="public">
+    <compoundname>sead::MathCalcCommon</compoundname>
+    <innerclass refid="structsead_1_1MathCalcCommon_1_1AtanSample" prot="public">sead::MathCalcCommon::AtanSample</innerclass>
+    <innerclass refid="structsead_1_1MathCalcCommon_1_1ExpSample" prot="public">sead::MathCalcCommon::ExpSample</innerclass>
+    <innerclass refid="structsead_1_1MathCalcCommon_1_1LogSample" prot="public">sead::MathCalcCommon::LogSample</innerclass>
+    <innerclass refid="structsead_1_1MathCalcCommon_1_1SinCosSample" prot="public">sead::MathCalcCommon::SinCosSample</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsead_1_1MathCalcCommon_1a8b74fdce3f56d0590446c0155ad96740" prot="public" static="yes" mutable="no">
+        <type>const u32</type>
+        <definition>const u32 sead::MathCalcCommon&lt; T &gt;::cQuarterRoundIdx</definition>
+        <argsstring></argsstring>
+        <name>cQuarterRoundIdx</name>
+        <qualifiedname>sead::MathCalcCommon::cQuarterRoundIdx</qualifiedname>
+        <initializer>= 0x40000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="11" column="22" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1MathCalcCommon_1a3756a2014d36c2a1a0a70a3cf5bf5318" prot="public" static="yes" mutable="no">
+        <type>const u32</type>
+        <definition>const u32 sead::MathCalcCommon&lt; T &gt;::cHalfRoundIdx</definition>
+        <argsstring></argsstring>
+        <name>cHalfRoundIdx</name>
+        <qualifiedname>sead::MathCalcCommon::cHalfRoundIdx</qualifiedname>
+        <initializer>= 0x80000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="12" column="22" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1MathCalcCommon_1acce552125e7fadd2a06b45adcf6fc914" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structsead_1_1MathCalcCommon_1_1SinCosSample" kindref="compound">SinCosSample</ref></type>
+        <definition>const SinCosSample sead::MathCalcCommon&lt; T &gt;::cSinCosTbl[256+1]</definition>
+        <argsstring>[256+1]</argsstring>
+        <name>cSinCosTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cSinCosTbl</qualifiedname>
+        <briefdescription>
+<para>Note: this is only defined for T = float at the moment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="164" column="31" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1MathCalcCommon_1aad2221951dfba7870fe7f55d2050864d" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structsead_1_1MathCalcCommon_1_1AtanSample" kindref="compound">AtanSample</ref></type>
+        <definition>const AtanSample sead::MathCalcCommon&lt; T &gt;::cAtanTbl[128+1]</definition>
+        <argsstring>[128+1]</argsstring>
+        <name>cAtanTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cAtanTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="165" column="29" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1MathCalcCommon_1a478fb07536554731598f4ae6235d1fab" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structsead_1_1MathCalcCommon_1_1ExpSample" kindref="compound">ExpSample</ref></type>
+        <definition>const ExpSample sead::MathCalcCommon&lt; T &gt;::cExpTbl[32+1]</definition>
+        <argsstring>[32+1]</argsstring>
+        <name>cExpTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cExpTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="166" column="28" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1MathCalcCommon_1a6f31e0c34bed4511aeccd41f96b91389" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="structsead_1_1MathCalcCommon_1_1LogSample" kindref="compound">LogSample</ref></type>
+        <definition>const LogSample sead::MathCalcCommon&lt; T &gt;::cLogTbl[256+1]</definition>
+        <argsstring>[256+1]</argsstring>
+        <name>cLogTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cLogTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="167" column="28" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ac2b3a68e9102f2163509a5b276e98184" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::piHalf</definition>
+        <argsstring>()</argsstring>
+        <name>piHalf</name>
+        <qualifiedname>sead::MathCalcCommon::piHalf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="36" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a21b89f97243b3dfde157e966cac3d2b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::pi</definition>
+        <argsstring>()</argsstring>
+        <name>pi</name>
+        <qualifiedname>sead::MathCalcCommon::pi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="38" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ae3914e6910e8017ed60c00fe6c005bd7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::pi2</definition>
+        <argsstring>()</argsstring>
+        <name>pi2</name>
+        <qualifiedname>sead::MathCalcCommon::pi2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="40" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3984e9b53d7ee7b73be02740e5445dd9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <qualifiedname>sead::MathCalcCommon::zero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="42" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1abf257d39d58652ebb08c3b66394b6c4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::one</definition>
+        <argsstring>()</argsstring>
+        <name>one</name>
+        <qualifiedname>sead::MathCalcCommon::one</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="44" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a71abee429167103bb0c8544c302fa051" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::ln2</definition>
+        <argsstring>()</argsstring>
+        <name>ln2</name>
+        <qualifiedname>sead::MathCalcCommon::ln2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="46" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a8252adfd5f9c60cecbdcb9df340ef792" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::ln2Inv</definition>
+        <argsstring>()</argsstring>
+        <name>ln2Inv</name>
+        <qualifiedname>sead::MathCalcCommon::ln2Inv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="48" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ac626f5e962d281f01776da1d2acea8b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::neg</definition>
+        <argsstring>(T t)</argsstring>
+        <name>neg</name>
+        <qualifiedname>sead::MathCalcCommon::neg</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad9a9ec47d6f4174442a6c2f8f3a3ce4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::inv</definition>
+        <argsstring>(T t)</argsstring>
+        <name>inv</name>
+        <qualifiedname>sead::MathCalcCommon::inv</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="51" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a738f78407747ee74b0dd9441382a6076" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::sign</definition>
+        <argsstring>(T value)</argsstring>
+        <name>sign</name>
+        <qualifiedname>sead::MathCalcCommon::sign</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Returns -1 for strictly negative values and 1 otherwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="54" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a2e9cb8b63721efa1f7686bda405c803e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::fitSign</definition>
+        <argsstring>(T value, T sign_value)</argsstring>
+        <name>fitSign</name>
+        <qualifiedname>sead::MathCalcCommon::fitSign</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>sign_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="56" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a420be3673047b2f0c3f91c1be89e9d2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::square</definition>
+        <argsstring>(T t)</argsstring>
+        <name>square</name>
+        <qualifiedname>sead::MathCalcCommon::square</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="58" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a15d6a007ea75975af6effcf829c89f35" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::sqrt</definition>
+        <argsstring>(T t)</argsstring>
+        <name>sqrt</name>
+        <qualifiedname>sead::MathCalcCommon::sqrt</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="60" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a763e0cbce59d29930015a9370fb7af56" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::rsqrt</definition>
+        <argsstring>(T t)</argsstring>
+        <name>rsqrt</name>
+        <qualifiedname>sead::MathCalcCommon::rsqrt</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="61" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3c35e3571f742f39a596fcdd3dd5c962" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::pow</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>pow</name>
+        <qualifiedname>sead::MathCalcCommon::pow</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="63" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a7ee61ce4cb8d11e51254eca226396d36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::powTable</definition>
+        <argsstring>(T, T)</argsstring>
+        <name>powTable</name>
+        <qualifiedname>sead::MathCalcCommon::powTable</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="64" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a21e47aa0537794af9227c4358169d78b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::sin</definition>
+        <argsstring>(T t)</argsstring>
+        <name>sin</name>
+        <qualifiedname>sead::MathCalcCommon::sin</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="66" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3501211febadf471b4eac7b27331c3b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::cos</definition>
+        <argsstring>(T t)</argsstring>
+        <name>cos</name>
+        <qualifiedname>sead::MathCalcCommon::cos</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="67" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a4dd715fc8f26531efad65fb547d6696b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::tan</definition>
+        <argsstring>(T t)</argsstring>
+        <name>tan</name>
+        <qualifiedname>sead::MathCalcCommon::tan</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="68" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1afa7f10a93ac5a8bc57de4f126a4dc458" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::asin</definition>
+        <argsstring>(T s)</argsstring>
+        <name>asin</name>
+        <qualifiedname>sead::MathCalcCommon::asin</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a23518ad0916a8abe56e613608e7d0fc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::acos</definition>
+        <argsstring>(T c)</argsstring>
+        <name>acos</name>
+        <qualifiedname>sead::MathCalcCommon::acos</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a082417a47e622c30a8ec7f1b910a8008" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::atan</definition>
+        <argsstring>(T t)</argsstring>
+        <name>atan</name>
+        <qualifiedname>sead::MathCalcCommon::atan</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="72" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1adb4ffee964b415f8ea8ac97c5c73f7fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::atan2</definition>
+        <argsstring>(T y, T x)</argsstring>
+        <name>atan2</name>
+        <qualifiedname>sead::MathCalcCommon::atan2</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="73" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad8ebae4f35b1a86655c131c338f6c215" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::sinIdx</definition>
+        <argsstring>(u32 idx)</argsstring>
+        <name>sinIdx</name>
+        <qualifiedname>sead::MathCalcCommon::sinIdx</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="75" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a0fd014d7ebd870641c5244a1102a5b39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::cosIdx</definition>
+        <argsstring>(u32 idx)</argsstring>
+        <name>cosIdx</name>
+        <qualifiedname>sead::MathCalcCommon::cosIdx</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad12446131052dc71e4a8605eb208d8c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::tanIdx</definition>
+        <argsstring>(u32 idx)</argsstring>
+        <name>tanIdx</name>
+        <qualifiedname>sead::MathCalcCommon::tanIdx</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="77" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1af499a0ac491b5fefea038780b47da28b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>static u32 sead::MathCalcCommon&lt; T &gt;::asinIdx</definition>
+        <argsstring>(T s)</argsstring>
+        <name>asinIdx</name>
+        <qualifiedname>sead::MathCalcCommon::asinIdx</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="79" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a0905d0ec47a04a915f73d1a35894c447" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>static u32 sead::MathCalcCommon&lt; T &gt;::acosIdx</definition>
+        <argsstring>(T c)</argsstring>
+        <name>acosIdx</name>
+        <qualifiedname>sead::MathCalcCommon::acosIdx</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="80" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a77f3a1cc49a6c4096865dac03e878570" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>static u32 sead::MathCalcCommon&lt; T &gt;::atanIdx</definition>
+        <argsstring>(T t)</argsstring>
+        <name>atanIdx</name>
+        <qualifiedname>sead::MathCalcCommon::atanIdx</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="81" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3e0fd9ddd12e9fb721b546924e4c8625" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>static u32 sead::MathCalcCommon&lt; T &gt;::atan2Idx</definition>
+        <argsstring>(T y, T x)</argsstring>
+        <name>atan2Idx</name>
+        <qualifiedname>sead::MathCalcCommon::atan2Idx</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="82" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a75faca754080303849c69e6d7324b41b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sead::MathCalcCommon&lt; T &gt;::sinCosIdx</definition>
+        <argsstring>(T *p_sin, T *p_cos, u32 idx)</argsstring>
+        <name>sinCosIdx</name>
+        <qualifiedname>sead::MathCalcCommon::sinCosIdx</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>p_sin</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>p_cos</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="84" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1abeddd515e4d56f2e292ef65fd3a3634a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::exp</definition>
+        <argsstring>(T t)</argsstring>
+        <name>exp</name>
+        <qualifiedname>sead::MathCalcCommon::exp</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="86" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a7c7c7b91225f7bdc276a7960c0de59ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::log</definition>
+        <argsstring>(T t)</argsstring>
+        <name>log</name>
+        <qualifiedname>sead::MathCalcCommon::log</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="87" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1aea04971da611d0cd23dc895ffd471044" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::log2</definition>
+        <argsstring>(T n)</argsstring>
+        <name>log2</name>
+        <qualifiedname>sead::MathCalcCommon::log2</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="88" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="230" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3526c7d827e80653aff909d1b6785531" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::log10</definition>
+        <argsstring>(T t)</argsstring>
+        <name>log10</name>
+        <qualifiedname>sead::MathCalcCommon::log10</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="89" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a8221329eadc73d05668a9cce91bf74fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::expTable</definition>
+        <argsstring>(T x)</argsstring>
+        <name>expTable</name>
+        <qualifiedname>sead::MathCalcCommon::expTable</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="91" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a72a2fe795413c03774f0430ccdb0b40a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::logTable</definition>
+        <argsstring>(T x)</argsstring>
+        <name>logTable</name>
+        <qualifiedname>sead::MathCalcCommon::logTable</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="92" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a64f9411999a19efff7af32f0bd50b671" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::minNumber</definition>
+        <argsstring>()</argsstring>
+        <name>minNumber</name>
+        <qualifiedname>sead::MathCalcCommon::minNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="94" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a69d848cdb3e694c2f2d52f5459a2040d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::maxNumber</definition>
+        <argsstring>()</argsstring>
+        <name>maxNumber</name>
+        <qualifiedname>sead::MathCalcCommon::maxNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="95" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a8d1f98ba1359f3fc3248303307248597" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::infinity</definition>
+        <argsstring>()</argsstring>
+        <name>infinity</name>
+        <qualifiedname>sead::MathCalcCommon::infinity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="96" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1afe8803f44c388ef925dbb7af499f3d10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::nan</definition>
+        <argsstring>()</argsstring>
+        <name>nan</name>
+        <qualifiedname>sead::MathCalcCommon::nan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="97" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a22a18a9a0ff240a2fea9af613645748a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::abs</definition>
+        <argsstring>(T x)</argsstring>
+        <name>abs</name>
+        <qualifiedname>sead::MathCalcCommon::abs</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="107" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ac12a324e60545d79861ed4764c7c7272" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::max</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>max</name>
+        <qualifiedname>sead::MathCalcCommon::max</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="109" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="328" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad6949112f95f6556a90d334d5e1e166d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::min</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>min</name>
+        <qualifiedname>sead::MathCalcCommon::min</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="110" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a2198adaad9bd5ab4b5df5f6f52598778" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::max3</definition>
+        <argsstring>(T a, T b, T c)</argsstring>
+        <name>max3</name>
+        <qualifiedname>sead::MathCalcCommon::max3</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="111" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="338" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a092ef03584c4f74719822d36f04fab0e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::min3</definition>
+        <argsstring>(T a, T b, T c)</argsstring>
+        <name>min3</name>
+        <qualifiedname>sead::MathCalcCommon::min3</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="112" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="343" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a697da1070de69d667b635e76ddaf0b02" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::deg2rad</definition>
+        <argsstring>(T deg)</argsstring>
+        <name>deg2rad</name>
+        <qualifiedname>sead::MathCalcCommon::deg2rad</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>deg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="114" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="348" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ac6c1c195e517b740722767adfa199061" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::rad2deg</definition>
+        <argsstring>(T rad)</argsstring>
+        <name>rad2deg</name>
+        <qualifiedname>sead::MathCalcCommon::rad2deg</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>rad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="115" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="353" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab805ead0513f4c85ed35fc8dc9be4603" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; T &gt;::deg2idx</definition>
+        <argsstring>(T a)</argsstring>
+        <name>deg2idx</name>
+        <qualifiedname>sead::MathCalcCommon::deg2idx</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="117" column="16" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="358" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab5a14157a26148005156eb5208f8257c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; T &gt;::rad2idx</definition>
+        <argsstring>(T a)</argsstring>
+        <name>rad2idx</name>
+        <qualifiedname>sead::MathCalcCommon::rad2idx</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="118" column="16" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="363" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1adb574440699f5905a5f6e37d396d4bd8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::idx2deg</definition>
+        <argsstring>(u32 a)</argsstring>
+        <name>idx2deg</name>
+        <qualifiedname>sead::MathCalcCommon::idx2deg</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="119" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="368" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a0da5ac53935a8d67e36699fa0472a096" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::idx2rad</definition>
+        <argsstring>(u32 a)</argsstring>
+        <name>idx2rad</name>
+        <qualifiedname>sead::MathCalcCommon::idx2rad</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="120" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="373" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a4533e5c4954f1046e2bef285ed3df367" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::roundAngle</definition>
+        <argsstring>(T)</argsstring>
+        <name>roundAngle</name>
+        <qualifiedname>sead::MathCalcCommon::roundAngle</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="122" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab148a2e2d4ef2ece8dd69dd3283afea9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::angleDist</definition>
+        <argsstring>(T, T)</argsstring>
+        <name>angleDist</name>
+        <qualifiedname>sead::MathCalcCommon::angleDist</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="123" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a9596696f507afdf86961529322e7d73c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::random</definition>
+        <argsstring>()</argsstring>
+        <name>random</name>
+        <qualifiedname>sead::MathCalcCommon::random</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="124" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a6d12c0615e4a42bb928545e99b680dd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::getRand</definition>
+        <argsstring>(T)</argsstring>
+        <name>getRand</name>
+        <qualifiedname>sead::MathCalcCommon::getRand</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="125" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a46f79f0033500733c118b42d860980ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::getRandRange</definition>
+        <argsstring>(T, T)</argsstring>
+        <name>getRandRange</name>
+        <qualifiedname>sead::MathCalcCommon::getRandRange</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="126" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1adc2a7a529136a051d08aafefafce95aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::getRandSign</definition>
+        <argsstring>()</argsstring>
+        <name>getRandSign</name>
+        <qualifiedname>sead::MathCalcCommon::getRandSign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="127" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3b8e8da4f35bb1f3afe803dcc39d8d54" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; T &gt;::roundOff</definition>
+        <argsstring>(T)</argsstring>
+        <name>roundOff</name>
+        <qualifiedname>sead::MathCalcCommon::roundOff</qualifiedname>
+        <param>
+          <type>T</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="128" column="16" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="378" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad7491a76e70c689942afa984fb997564" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; T &gt;::floor</definition>
+        <argsstring>(T)</argsstring>
+        <name>floor</name>
+        <qualifiedname>sead::MathCalcCommon::floor</qualifiedname>
+        <param>
+          <type>T</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="129" column="16" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ae3eac483f40242525fbe94560a6ebcf4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; T &gt;::ceil</definition>
+        <argsstring>(T)</argsstring>
+        <name>ceil</name>
+        <qualifiedname>sead::MathCalcCommon::ceil</qualifiedname>
+        <param>
+          <type>T</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="130" column="16" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="398" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3fcf6b3244ea93efecf350e4ae988671" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::roundUp</definition>
+        <argsstring>(T x, s32 multNumber)</argsstring>
+        <name>roundUp</name>
+        <qualifiedname>sead::MathCalcCommon::roundUp</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>multNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="131" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="408" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad846324d604dbabcaffad4317543cc4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s32</type>
+        <definition>static s32 sead::MathCalcCommon&lt; T &gt;::roundUpPow2</definition>
+        <argsstring>(T x, s32 y)</argsstring>
+        <name>roundUpPow2</name>
+        <qualifiedname>sead::MathCalcCommon::roundUpPow2</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="132" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a01428f40ba9fb538e352f81a6f2ac69c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s32</type>
+        <definition>static s32 sead::MathCalcCommon&lt; T &gt;::roundDownN</definition>
+        <argsstring>(T val, s32 multNumber)</argsstring>
+        <name>roundDownN</name>
+        <qualifiedname>sead::MathCalcCommon::roundDownN</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>multNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="133" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ac0d7160e1b23625a3813b99de8b9b963" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s32</type>
+        <definition>static s32 sead::MathCalcCommon&lt; T &gt;::roundDownPow2</definition>
+        <argsstring>(T x, s32 y)</argsstring>
+        <name>roundDownPow2</name>
+        <qualifiedname>sead::MathCalcCommon::roundDownPow2</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="134" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1adaeeff5c86edd4f2e766912da20978b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::clampMax</definition>
+        <argsstring>(T val, T max_)</argsstring>
+        <name>clampMax</name>
+        <qualifiedname>sead::MathCalcCommon::clampMax</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>max_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="135" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="427" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a586559907d1570e272329f6b1f492716" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::clampMin</definition>
+        <argsstring>(T val, T min_)</argsstring>
+        <name>clampMin</name>
+        <qualifiedname>sead::MathCalcCommon::clampMin</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="136" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="432" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab41d162f25e2c27dae264d285f3702be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::clamp2</definition>
+        <argsstring>(T min_, T val, T max_)</argsstring>
+        <name>clamp2</name>
+        <qualifiedname>sead::MathCalcCommon::clamp2</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>min_</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>max_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a434fc96bfd843f2b3d5245113e6ce627" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::MathCalcCommon&lt; T &gt;::clamp</definition>
+        <argsstring>(T value, T low, T high)</argsstring>
+        <name>clamp</name>
+        <qualifiedname>sead::MathCalcCommon::clamp</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>low</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>high</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="138" column="14" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="437" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a295db1f6590f3f66b3bce0b4d7af8a02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::gcd</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>gcd</name>
+        <qualifiedname>sead::MathCalcCommon::gcd</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="139" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1adbefce649d0c6c2a5f9f25b2f6e03ead" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::lcm</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>lcm</name>
+        <qualifiedname>sead::MathCalcCommon::lcm</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="140" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ad57588377883aba2c66b66617420ac47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::isZero</definition>
+        <argsstring>(T, T)</argsstring>
+        <name>isZero</name>
+        <qualifiedname>sead::MathCalcCommon::isZero</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="141" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ade1e64770c3a2d0cad0a8b8b7857d56c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::isNan</definition>
+        <argsstring>(T)</argsstring>
+        <name>isNan</name>
+        <qualifiedname>sead::MathCalcCommon::isNan</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="142" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1aff8e2dfcdfc9b09843771a385bb93580" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::isPow2</definition>
+        <argsstring>(T)</argsstring>
+        <name>isPow2</name>
+        <qualifiedname>sead::MathCalcCommon::isPow2</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="143" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab2eb1470ab081fbfff483cfeb8602a14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::isMultiplePow2</definition>
+        <argsstring>(T, T)</argsstring>
+        <name>isMultiplePow2</name>
+        <qualifiedname>sead::MathCalcCommon::isMultiplePow2</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="144" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a421cee25cd1ea4b38c6b385a41452255" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::isInfinity</definition>
+        <argsstring>(T)</argsstring>
+        <name>isInfinity</name>
+        <qualifiedname>sead::MathCalcCommon::isInfinity</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="145" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a536c1c9b4cc83093256ef8f8510f4df4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::isIntersect1d</definition>
+        <argsstring>(T, T, T, T)</argsstring>
+        <name>isIntersect1d</name>
+        <qualifiedname>sead::MathCalcCommon::isIntersect1d</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="146" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a7030d1581f07158a315dc929a818f189" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::MathCalcCommon&lt; T &gt;::chase</definition>
+        <argsstring>(T *value, T target, T step)</argsstring>
+        <name>chase</name>
+        <qualifiedname>sead::MathCalcCommon::chase</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds or subtracts <computeroutput>step</computeroutput> from <computeroutput>value</computeroutput> towards <computeroutput>target</computeroutput>. Returns whether the new value is equal to the target. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="150" column="17" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="446" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a6f05a31ee7c8e32a154061dc9d598a73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::chaseAngle</definition>
+        <argsstring>(T *, T, T)</argsstring>
+        <name>chaseAngle</name>
+        <qualifiedname>sead::MathCalcCommon::chaseAngle</qualifiedname>
+        <param>
+          <type>T *</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="151" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1aec80785f1b18516cb6ab367bc85ea5cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::MathCalcCommon&lt; T &gt;::chaseAngleIdx</definition>
+        <argsstring>(u32 *, u32, s64)</argsstring>
+        <name>chaseAngleIdx</name>
+        <qualifiedname>sead::MathCalcCommon::chaseAngleIdx</qualifiedname>
+        <param>
+          <type>u32 *</type>
+        </param>
+        <param>
+          <type>u32</type>
+        </param>
+        <param>
+          <type>s64</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="152" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a3194fecfaad701decb88370014573965" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::lerp</definition>
+        <argsstring>(T a, T b, f32 ratio)</argsstring>
+        <name>lerp</name>
+        <qualifiedname>sead::MathCalcCommon::lerp</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="154" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ac4317672a1628983e91aaea094d4c0ef" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>static u32 sead::MathCalcCommon&lt; T &gt;::atanIdx_</definition>
+        <argsstring>(T t)</argsstring>
+        <name>atanIdx_</name>
+        <qualifiedname>sead::MathCalcCommon::atanIdx_</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="157" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a9d0087eb1606a54b2923533661286544" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::expLn2_</definition>
+        <argsstring>(T x)</argsstring>
+        <name>expLn2_</name>
+        <qualifiedname>sead::MathCalcCommon::expLn2_</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="158" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a5c5a69abe17c5693c6b93e48c42f56ff" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::MathCalcCommon&lt; T &gt;::log1_2_</definition>
+        <argsstring>(T x)</argsstring>
+        <name>log1_2_</name>
+        <qualifiedname>sead::MathCalcCommon::log1_2_</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="159" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a4c00f07b5112236f3b702d4e84baa0d4" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sead::MathCalcCommon&lt; T &gt;::assertGreaterThanOrEqualToZero_</definition>
+        <argsstring>(T)</argsstring>
+        <name>assertGreaterThanOrEqualToZero_</name>
+        <qualifiedname>sead::MathCalcCommon::assertGreaterThanOrEqualToZero_</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="160" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab2400750e881f10a42545688fc9121a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; f32 &gt;::atanIdx_</definition>
+        <argsstring>(f32 t)</argsstring>
+        <name>atanIdx_</name>
+        <qualifiedname>sead::MathCalcCommon::atanIdx_</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="176" column="20" declfile="lib/sead/include/math/seadMathCalcCommon.h" declline="176" declcolumn="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ab12cececabf1b079ec577284e62c233c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classsead_1_1MathCalcCommon" kindref="compound">MathCalcCommon</ref>&lt; float &gt;::SinCosSample</type>
+        <definition>const MathCalcCommon&lt; float &gt;::SinCosSample sead::MathCalcCommon&lt; float &gt;::cSinCosTbl</definition>
+        <argsstring>[]</argsstring>
+        <name>cSinCosTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cSinCosTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="12" column="52" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a022c84985157169f3d6674d7ba2173d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classsead_1_1MathCalcCommon" kindref="compound">MathCalcCommon</ref>&lt; float &gt;::AtanSample</type>
+        <definition>const MathCalcCommon&lt; float &gt;::AtanSample sead::MathCalcCommon&lt; float &gt;::cAtanTbl</definition>
+        <argsstring>[]</argsstring>
+        <name>cAtanTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cAtanTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="15" column="50" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1acf61658c25f0528bc1d316bb7455fc23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classsead_1_1MathCalcCommon" kindref="compound">MathCalcCommon</ref>&lt; float &gt;::ExpSample</type>
+        <definition>const MathCalcCommon&lt; float &gt;::ExpSample sead::MathCalcCommon&lt; float &gt;::cExpTbl</definition>
+        <argsstring>[]</argsstring>
+        <name>cExpTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cExpTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="18" column="49" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a7163f5a38d1b681db0229d7e9d27daab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classsead_1_1MathCalcCommon" kindref="compound">MathCalcCommon</ref>&lt; float &gt;::LogSample</type>
+        <definition>const MathCalcCommon&lt; float &gt;::LogSample sead::MathCalcCommon&lt; float &gt;::cLogTbl</definition>
+        <argsstring>[]</argsstring>
+        <name>cLogTbl</name>
+        <qualifiedname>sead::MathCalcCommon::cLogTbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="21" column="49" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a355b2f808bb7c723e8c0e71cb42e50d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 sead::MathCalcCommon&lt; f32 &gt;::sinIdx</definition>
+        <argsstring>(u32 idx)</argsstring>
+        <name>sinIdx</name>
+        <qualifiedname>sead::MathCalcCommon::sinIdx</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="100" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a5866d804c821af0bdafc53100f33095e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 sead::MathCalcCommon&lt; f32 &gt;::cosIdx</definition>
+        <argsstring>(u32 idx)</argsstring>
+        <name>cosIdx</name>
+        <qualifiedname>sead::MathCalcCommon::cosIdx</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="108" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a7de05c44a31078577e27751b849f8c66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 sead::MathCalcCommon&lt; f32 &gt;::tanIdx</definition>
+        <argsstring>(u32 idx)</argsstring>
+        <name>tanIdx</name>
+        <qualifiedname>sead::MathCalcCommon::tanIdx</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="116" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a8212d81cbe9a1e92b1b6e6bd91c08fa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; f32 &gt;::asinIdx</definition>
+        <argsstring>(f32 s)</argsstring>
+        <name>asinIdx</name>
+        <qualifiedname>sead::MathCalcCommon::asinIdx</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="125" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="125" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1aa2e3a4619d0d513b098b86ddd933540c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; f32 &gt;::acosIdx</definition>
+        <argsstring>(f32 c)</argsstring>
+        <name>acosIdx</name>
+        <qualifiedname>sead::MathCalcCommon::acosIdx</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="144" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="144" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ae66e6b3680a73d2da380cb0446cc139c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; f32 &gt;::atanIdx</definition>
+        <argsstring>(f32 t)</argsstring>
+        <name>atanIdx</name>
+        <qualifiedname>sead::MathCalcCommon::atanIdx</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="163" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="163" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a07b152344da17a276aae2a50f0e1ea77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; f32 &gt;::atan2Idx</definition>
+        <argsstring>(f32 y, f32 x)</argsstring>
+        <name>atan2Idx</name>
+        <qualifiedname>sead::MathCalcCommon::atan2Idx</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="178" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="178" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a1185dfaca16eca301afd65b0e40a0836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MathCalcCommon&lt; f32 &gt;::sinCosIdx</definition>
+        <argsstring>(f32 *pSin, f32 *pCos, u32 idx)</argsstring>
+        <name>sinCosIdx</name>
+        <qualifiedname>sead::MathCalcCommon::sinCosIdx</qualifiedname>
+        <param>
+          <type>f32 *</type>
+          <declname>pSin</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>pCos</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="210" column="28" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="210" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a856e62c4e5a0ffd5cdca131ec00e2e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 sead::MathCalcCommon&lt; f32 &gt;::nan</definition>
+        <argsstring>()</argsstring>
+        <name>nan</name>
+        <qualifiedname>sead::MathCalcCommon::nan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="294" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a94569827f798e163dfe9dcd55a04f437" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f64</type>
+        <definition>f64 sead::MathCalcCommon&lt; f64 &gt;::nan</definition>
+        <argsstring>()</argsstring>
+        <name>nan</name>
+        <qualifiedname>sead::MathCalcCommon::nan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="299" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="299" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1abca5f6b5968fa6ce8a20d0d43909234d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; s32 &gt;::abs</definition>
+        <argsstring>(s32 x)</argsstring>
+        <name>abs</name>
+        <qualifiedname>sead::MathCalcCommon::abs</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="304" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1af43642257bfda4c7739dd89e2353b317" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::MathCalcCommon&lt; u32 &gt;::abs</definition>
+        <argsstring>(u32 x)</argsstring>
+        <name>abs</name>
+        <qualifiedname>sead::MathCalcCommon::abs</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="309" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="309" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a4f96ecf0ae9414292e18f61534b72df5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; s32 &gt;::roundOff</definition>
+        <argsstring>(s32 val)</argsstring>
+        <name>roundOff</name>
+        <qualifiedname>sead::MathCalcCommon::roundOff</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="383" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="383" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1ae433e0fba54137967fb8df429307d7ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; s32 &gt;::floor</definition>
+        <argsstring>(s32 val)</argsstring>
+        <name>floor</name>
+        <qualifiedname>sead::MathCalcCommon::floor</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="393" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="393" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a53f4b1a8033cb5d56d5751134237a804" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; s32 &gt;::ceil</definition>
+        <argsstring>(s32 val)</argsstring>
+        <name>ceil</name>
+        <qualifiedname>sead::MathCalcCommon::ceil</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="403" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="403" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a328085df927be746561b698e9cb7c03b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; u32 &gt;::roundUpPow2</definition>
+        <argsstring>(u32 val, s32 base)</argsstring>
+        <name>roundUpPow2</name>
+        <qualifiedname>sead::MathCalcCommon::roundUpPow2</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="414" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="414" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1MathCalcCommon_1a2ac313d810e27e039061fd38b2b4318a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::MathCalcCommon&lt; s32 &gt;::roundUpPow2</definition>
+        <argsstring>(s32 val, s32 base)</argsstring>
+        <name>roundUpPow2</name>
+        <qualifiedname>sead::MathCalcCommon::roundUpPow2</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.hpp" line="420" column="27" bodyfile="lib/sead/include/math/seadMathCalcCommon.hpp" bodystart="420" bodyend="424"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>sead::MathCalcCommon&lt; T &gt;::AtanSample</label>
+        <link refid="structsead_1_1MathCalcCommon_1_1AtanSample"/>
+      </node>
+      <node id="4">
+        <label>sead::MathCalcCommon&lt; T &gt;::ExpSample</label>
+        <link refid="structsead_1_1MathCalcCommon_1_1ExpSample"/>
+      </node>
+      <node id="5">
+        <label>sead::MathCalcCommon&lt; T &gt;::LogSample</label>
+        <link refid="structsead_1_1MathCalcCommon_1_1LogSample"/>
+      </node>
+      <node id="2">
+        <label>sead::MathCalcCommon&lt; T &gt;::SinCosSample</label>
+        <link refid="structsead_1_1MathCalcCommon_1_1SinCosSample"/>
+      </node>
+      <node id="1">
+        <label>sead::MathCalcCommon&lt; T &gt;</label>
+        <link refid="classsead_1_1MathCalcCommon"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cSinCosTbl</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cAtanTbl</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cExpTbl</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cLogTbl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/math/seadMathCalcCommon.h" line="9" column="1" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="9" bodyend="168"/>
+    <listofallmembers>
+      <member refid="classsead_1_1MathCalcCommon_1a22a18a9a0ff240a2fea9af613645748a" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>abs</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1abca5f6b5968fa6ce8a20d0d43909234d" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>abs</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1af43642257bfda4c7739dd89e2353b317" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>abs</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a23518ad0916a8abe56e613608e7d0fc9" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>acos</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a0905d0ec47a04a915f73d1a35894c447" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>acosIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1aa2e3a4619d0d513b098b86ddd933540c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>acosIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab148a2e2d4ef2ece8dd69dd3283afea9" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>angleDist</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1afa7f10a93ac5a8bc57de4f126a4dc458" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>asin</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1af499a0ac491b5fefea038780b47da28b" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>asinIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a8212d81cbe9a1e92b1b6e6bd91c08fa6" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>asinIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a4c00f07b5112236f3b702d4e84baa0d4" prot="protected" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>assertGreaterThanOrEqualToZero_</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a082417a47e622c30a8ec7f1b910a8008" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atan</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1adb4ffee964b415f8ea8ac97c5c73f7fa" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atan2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3e0fd9ddd12e9fb721b546924e4c8625" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atan2Idx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a07b152344da17a276aae2a50f0e1ea77" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atan2Idx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a77f3a1cc49a6c4096865dac03e878570" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atanIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ae66e6b3680a73d2da380cb0446cc139c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atanIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ac4317672a1628983e91aaea094d4c0ef" prot="protected" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atanIdx_</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab2400750e881f10a42545688fc9121a1" prot="protected" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>atanIdx_</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1aad2221951dfba7870fe7f55d2050864d" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cAtanTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a022c84985157169f3d6674d7ba2173d3" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cAtanTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ae3eac483f40242525fbe94560a6ebcf4" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>ceil</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a53f4b1a8033cb5d56d5751134237a804" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>ceil</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a478fb07536554731598f4ae6235d1fab" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cExpTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1acf61658c25f0528bc1d316bb7455fc23" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cExpTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3756a2014d36c2a1a0a70a3cf5bf5318" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cHalfRoundIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a7030d1581f07158a315dc929a818f189" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>chase</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a6f05a31ee7c8e32a154061dc9d598a73" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>chaseAngle</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1aec80785f1b18516cb6ab367bc85ea5cb" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>chaseAngleIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a434fc96bfd843f2b3d5245113e6ce627" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>clamp</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab41d162f25e2c27dae264d285f3702be" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>clamp2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1adaeeff5c86edd4f2e766912da20978b8" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>clampMax</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a586559907d1570e272329f6b1f492716" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>clampMin</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a6f31e0c34bed4511aeccd41f96b91389" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cLogTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a7163f5a38d1b681db0229d7e9d27daab" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cLogTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3501211febadf471b4eac7b27331c3b5" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cos</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a0fd014d7ebd870641c5244a1102a5b39" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cosIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a5866d804c821af0bdafc53100f33095e" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cosIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a8b74fdce3f56d0590446c0155ad96740" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cQuarterRoundIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1acce552125e7fadd2a06b45adcf6fc914" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cSinCosTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab12cececabf1b079ec577284e62c233c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>cSinCosTbl</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab805ead0513f4c85ed35fc8dc9be4603" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>deg2idx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a697da1070de69d667b635e76ddaf0b02" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>deg2rad</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1abeddd515e4d56f2e292ef65fd3a3634a" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>exp</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a9d0087eb1606a54b2923533661286544" prot="protected" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>expLn2_</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a8221329eadc73d05668a9cce91bf74fe" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>expTable</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a2e9cb8b63721efa1f7686bda405c803e" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>fitSign</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad7491a76e70c689942afa984fb997564" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>floor</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ae433e0fba54137967fb8df429307d7ea" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>floor</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a295db1f6590f3f66b3bce0b4d7af8a02" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>gcd</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a6d12c0615e4a42bb928545e99b680dd8" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>getRand</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a46f79f0033500733c118b42d860980ff" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>getRandRange</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1adc2a7a529136a051d08aafefafce95aa" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>getRandSign</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1adb574440699f5905a5f6e37d396d4bd8" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>idx2deg</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a0da5ac53935a8d67e36699fa0472a096" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>idx2rad</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a8d1f98ba1359f3fc3248303307248597" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>infinity</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad9a9ec47d6f4174442a6c2f8f3a3ce4e" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>inv</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a421cee25cd1ea4b38c6b385a41452255" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>isInfinity</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a536c1c9b4cc83093256ef8f8510f4df4" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>isIntersect1d</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab2eb1470ab081fbfff483cfeb8602a14" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>isMultiplePow2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ade1e64770c3a2d0cad0a8b8b7857d56c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>isNan</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1aff8e2dfcdfc9b09843771a385bb93580" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>isPow2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad57588377883aba2c66b66617420ac47" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>isZero</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1adbefce649d0c6c2a5f9f25b2f6e03ead" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>lcm</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3194fecfaad701decb88370014573965" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>lerp</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a71abee429167103bb0c8544c302fa051" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>ln2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a8252adfd5f9c60cecbdcb9df340ef792" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>ln2Inv</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a7c7c7b91225f7bdc276a7960c0de59ab" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>log</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3526c7d827e80653aff909d1b6785531" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>log10</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a5c5a69abe17c5693c6b93e48c42f56ff" prot="protected" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>log1_2_</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1aea04971da611d0cd23dc895ffd471044" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>log2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a72a2fe795413c03774f0430ccdb0b40a" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>logTable</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ac12a324e60545d79861ed4764c7c7272" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>max</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a2198adaad9bd5ab4b5df5f6f52598778" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>max3</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a69d848cdb3e694c2f2d52f5459a2040d" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>maxNumber</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad6949112f95f6556a90d334d5e1e166d" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>min</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a092ef03584c4f74719822d36f04fab0e" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>min3</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a64f9411999a19efff7af32f0bd50b671" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>minNumber</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1afe8803f44c388ef925dbb7af499f3d10" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>nan</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a856e62c4e5a0ffd5cdca131ec00e2e5e" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>nan</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a94569827f798e163dfe9dcd55a04f437" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>nan</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ac626f5e962d281f01776da1d2acea8b9" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>neg</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1abf257d39d58652ebb08c3b66394b6c4e" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>one</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a21b89f97243b3dfde157e966cac3d2b5" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>pi</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ae3914e6910e8017ed60c00fe6c005bd7" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>pi2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ac2b3a68e9102f2163509a5b276e98184" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>piHalf</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3c35e3571f742f39a596fcdd3dd5c962" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>pow</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a7ee61ce4cb8d11e51254eca226396d36" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>powTable</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ac6c1c195e517b740722767adfa199061" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>rad2deg</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ab5a14157a26148005156eb5208f8257c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>rad2idx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a9596696f507afdf86961529322e7d73c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>random</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a4533e5c4954f1046e2bef285ed3df367" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundAngle</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a01428f40ba9fb538e352f81a6f2ac69c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundDownN</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ac0d7160e1b23625a3813b99de8b9b963" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundDownPow2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3b8e8da4f35bb1f3afe803dcc39d8d54" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundOff</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a4f96ecf0ae9414292e18f61534b72df5" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundOff</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3fcf6b3244ea93efecf350e4ae988671" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundUp</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad846324d604dbabcaffad4317543cc4c" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundUpPow2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a328085df927be746561b698e9cb7c03b" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundUpPow2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a2ac313d810e27e039061fd38b2b4318a" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>roundUpPow2</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a763e0cbce59d29930015a9370fb7af56" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>rsqrt</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a738f78407747ee74b0dd9441382a6076" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sign</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a21e47aa0537794af9227c4358169d78b" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sin</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a75faca754080303849c69e6d7324b41b" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sinCosIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a1185dfaca16eca301afd65b0e40a0836" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sinCosIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad8ebae4f35b1a86655c131c338f6c215" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sinIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a355b2f808bb7c723e8c0e71cb42e50d1" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sinIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a15d6a007ea75975af6effcf829c89f35" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>sqrt</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a420be3673047b2f0c3f91c1be89e9d2b" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>square</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a4dd715fc8f26531efad65fb547d6696b" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>tan</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1ad12446131052dc71e4a8605eb208d8c2" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>tanIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a7de05c44a31078577e27751b849f8c66" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>tanIdx</name></member>
+      <member refid="classsead_1_1MathCalcCommon_1a3984e9b53d7ee7b73be02740e5445dd9" prot="public" virt="non-virtual"><scope>sead::MathCalcCommon</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

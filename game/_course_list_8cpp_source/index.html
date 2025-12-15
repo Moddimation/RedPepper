@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File CourseList.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-courselistcpp">File CourseList.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_c33286056d2acf479cd8641ef845fec1/"><strong>Game</strong></a> <strong>&gt;</strong> <a href="../dir_d858f423bf5825f9a3db826b6a54a3cc/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_c4e25bc9fc705584e5c854c33b9560d4/"><strong>System</strong></a> <strong>&gt;</strong> <a href="../_course_list_8cpp/"><strong>CourseList.cpp</strong></a></p>
+<p><a href="../_course_list_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &quot;System/CourseList.h&quot;
+
+#include &lt;Resource/alResource.h&gt;
+#include &lt;System/Application.h&gt;
+#include &lt;Util/alStringUtil.h&gt;
+#include &lt;Yaml/alByamlIter.h&gt;
+
+#include &quot;System/GameSystem.h&quot;
+#include &quot;System/RootTask.h&quot;
+
+CourseList::Course::Course( const al::ByamlIter* course )
+    : mCourseType( CourseType_Normal ), mStageName( nullptr ), mScenario( -1 ),
+      mMiniatureModelName( &quot;Miniature&quot; ), mCoinCollectNum( 0 )
+
+{
+        const char* type = &quot;Normal&quot;;
+        course-&gt;tryGetStringByKey( &amp;type, &quot;Type&quot; );
+
+        if ( al::isEqualString( type, &quot;KoopaCastle&quot; ) )
+                mCourseType = CourseType_KoopaCastle;
+        else if ( al::isEqualString( type, &quot;KoopaFortress&quot; ) )
+                mCourseType = CourseType_KoopaFortress;
+        else if ( al::isEqualString( type, &quot;KoopaBattleShip&quot; ) )
+                mCourseType = CourseType_KoopaBattleShip;
+        else if ( al::isEqualString( type, &quot;Championship&quot; ) )
+                mCourseType = CourseType_Championship;
+        else if ( al::isEqualString( type, &quot;KinopioHousePresent&quot; ) )
+                mCourseType = CourseType_KinopioHousePresent;
+        else if ( al::isEqualString( type, &quot;KinopioHouseAlbum&quot; ) )
+                mCourseType = CourseType_KinopioHouseAlbum;
+        else if ( al::isEqualString( type, &quot;MysteryBox&quot; ) )
+                mCourseType = CourseType_MysteryBox;
+        else if ( al::isEqualString( type, &quot;Dokan&quot; ) )
+                mCourseType = CourseType_Dokan;
+        else if ( al::isEqualString( type, &quot;Empty&quot; ) )
+                mCourseType = CourseType_Empty;
+
+        course-&gt;tryGetStringByKey( &amp;mStageName, &quot;Stage&quot; );
+        course-&gt;tryGetIntByKey( &amp;mScenario, &quot;Scenario&quot; );
+        course-&gt;tryGetStringByKey( &amp;mMiniatureModelName, &quot;Miniature&quot; );
+        course-&gt;tryGetIntByKey( &amp;mCoinCollectNum, &quot;CollectCoinNum&quot; );
+}
+
+#pragma push
+#pragma no_inline
+
+#ifdef NON_MATCHING
+bool CourseList::Course::isCourseTypeStage( CourseType type )
+{
+        return type &lt;= 4;
+}
+#endif
+
+#pragma pop
+
+#ifdef NON_MATCHING
+// strings and random mov r1, r4
+CourseList::World::World( const al::ByamlIter* world )
+    : mCourses( nullptr ), mNumCourses( 0 ), mIsSpecialWorld( false )
+{
+        const char* type = &quot;World&quot;;
+        if ( world-&gt;tryGetStringByKey( &amp;type, &quot;Type&quot; ) )
+        {
+                mIsSpecialWorld = al::isEqualString( type, &quot;Special&quot; );
+                al::ByamlIter listIter;
+                if ( world-&gt;tryGetIterByKey( &amp;listIter, &quot;Course&quot; ) )
+                {
+                        mNumCourses = listIter.getSize();
+                        if ( mNumCourses )
+                        {
+                                mCourses = new Course*[ mNumCourses ];
+                                for ( int i = 0; i &lt; mNumCourses; i++ )
+                                {
+                                        al::ByamlIter courseIter;
+                                        if ( listIter.tryGetIterByIndex( &amp;courseIter, i ) )
+                                                mCourses[ i ] = new Course( &amp;courseIter );
+                                        else
+                                                mCourses[ i ] = nullptr;
+                                }
+                        }
+                }
+        }
+}
+
+CourseList::List::List( const al::ByamlIter&amp; courseListIter ) : mWorlds( nullptr ), mNumWorlds( 0 )
+{
+        al::ByamlIter worlds;
+        if ( courseListIter.tryGetIterByKey( &amp;worlds, &quot;Worlds&quot; ) )
+        {
+                mNumWorlds = worlds.getSize();
+                if ( mNumWorlds )
+                {
+                        mWorlds = new World*[ mNumWorlds ];
+                        for ( int i = 0; i &lt; mNumWorlds; i++ )
+                        {
+                                al::ByamlIter curWorld;
+                                if ( worlds.tryGetIterByIndex( &amp;curWorld, i ) )
+                                        mWorlds[ i ] = new World( &amp;curWorld );
+                                else
+                                        mWorlds[ i ] = nullptr;
+                        }
+                }
+        }
+}
+#endif
+
+CourseList::CourseList() : mCourseList( 0 )
+{
+        init( al::findOrCreateResource( &quot;ObjectData/GameSystemDataTable&quot; ) );
+}
+
+#ifdef NON_MATCHING
+void CourseList::init( const al::Resource* gameSystemDataTable )
+{
+        mCourseList = new List( al::ByamlIter( gameSystemDataTable-&gt;getByml( &quot;CourseList&quot; ) ) );
+        mNumStages  = 0;
+
+        for ( int i = 0; i &lt; mCourseList-&gt;mNumWorlds; i++ )
+        {
+                World* world = mCourseList-&gt;mWorlds[ i ];
+                for ( int j = 0; j &lt; world-&gt;mNumCourses; j++ )
+                {
+                        Course* course = world-&gt;mCourses[ j ];
+                        if ( Course::isCourseTypeStage( Course::CourseType( course-&gt;mCourseType ) ) )
+                                mNumStages++;
+                }
+        }
+}
+#endif
+
+CourseList* rp::getCourseList()
+{
+        return al::getApplication()-&gt;getRootTask()-&gt;getGameSystem()-&gt;getCourseList();
+}
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

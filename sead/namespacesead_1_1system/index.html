@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Namespace sead::system - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="namespace-seadsystem">Namespace sead::system</h1>
+<p><a href="../namespaces/"><strong>Namespace List</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>system</strong></a></p>
+<h2 id="namespaces">Namespaces</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">namespace</td>
+<td style="text-align: left;"><a href="../namespacesead_1_1system_1_1detail/"><strong>detail</strong></a> <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-debugbreak"><strong>DebugBreak</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-halt"><strong>Halt</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-haltwithdetail"><strong>HaltWithDetail</strong></a> (const char * file, int line, const char * msg, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-haltwithdetailnoformat"><strong>HaltWithDetailNoFormat</strong></a> (const char * file, int line, const char * msg) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-print"><strong>Print</strong></a> (const char * format, ...) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-printstring"><strong>PrintString</strong></a> (const char * format, s32) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-printv"><strong>PrintV</strong></a> (const char * format, va_list) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setwarningenable"><strong>SetWarningEnable</strong></a> (bool enable) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-warning"><strong>Warning</strong></a> (const char * file, int line, const char * msg, ...) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-debugbreak">function DebugBreak</h3>
+<pre><code class="language-C++">void sead::system::DebugBreak () 
+</code></pre>
+<hr>
+
+<h3 id="function-halt">function Halt</h3>
+<pre><code class="language-C++">void sead::system::Halt () 
+</code></pre>
+<hr>
+
+<h3 id="function-haltwithdetail">function HaltWithDetail</h3>
+<pre><code class="language-C++">void sead::system::HaltWithDetail (
+    const char * file,
+    int line,
+    const char * msg,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-haltwithdetailnoformat">function HaltWithDetailNoFormat</h3>
+<pre><code class="language-C++">void sead::system::HaltWithDetailNoFormat (
+    const char * file,
+    int line,
+    const char * msg
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-print">function Print</h3>
+<pre><code class="language-C++">void sead::system::Print (
+    const char * format,
+    ...
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-printstring">function PrintString</h3>
+<pre><code class="language-C++">void sead::system::PrintString (
+    const char * format,
+    s32
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-printv">function PrintV</h3>
+<pre><code class="language-C++">void sead::system::PrintV (
+    const char * format,
+    va_list
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setwarningenable">function SetWarningEnable</h3>
+<pre><code class="language-C++">void sead::system::SetWarningEnable (
+    bool enable
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-warning">function Warning</h3>
+<pre><code class="language-C++">void sead::system::Warning (
+    const char * file,
+    int line,
+    const char * msg,
+    ...
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/basis/seadRawPrint.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1Camera" kind="class" language="C++" prot="public">
+    <compoundname>al::Camera</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1Camera_1a6f8ac7cfca5c9669ef95ba55422f6236" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *<ref refid="structal_1_1NameToCreator" kindref="compound">const</ref></type>
+        <definition>const char* const al::Camera::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>al::Camera::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="25" column="26" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classal_1_1Camera_1a08b7e79371f85fc54ed2ba6d58f45e13" prot="protected" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::Camera::_8</definition>
+        <argsstring></argsstring>
+        <name>_8</name>
+        <qualifiedname>al::Camera::_8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="28" column="36" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1adb0bab8e6aaf69bf585b91fb6567461c" prot="protected" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::Camera::mPos</definition>
+        <argsstring></argsstring>
+        <name>mPos</name>
+        <qualifiedname>al::Camera::mPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="29" column="36" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1ab21c244d3d2a7049002fde6abc9649ac" prot="protected" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::Camera::mTarget</definition>
+        <argsstring></argsstring>
+        <name>mTarget</name>
+        <qualifiedname>al::Camera::mTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="30" column="36" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1aa7c6a55134ca9aa25b4e9fa6e1c97257" prot="protected" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::Camera::_2C</definition>
+        <argsstring></argsstring>
+        <name>_2C</name>
+        <qualifiedname>al::Camera::_2C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="31" column="36" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1a7da9be00806bb983a4060b40d304f7f9" prot="protected" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        <definition>int al::Camera::mInterpoleFrame</definition>
+        <argsstring></argsstring>
+        <name>mInterpoleFrame</name>
+        <qualifiedname>al::Camera::mInterpoleFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="32" column="36" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1a2f067a00a14eccdcb1876f7e57f9c34c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1CameraParamVision" kindref="compound">CameraParamVision</ref> *</type>
+        <definition>CameraParamVision* al::Camera::mVisionParam</definition>
+        <argsstring></argsstring>
+        <name>mVisionParam</name>
+        <qualifiedname>al::Camera::mVisionParam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="33" column="35" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1af4ae6d63afe534fe5d5a75fa25bbfa02" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1CameraDashAngleTunerParam" kindref="compound">CameraDashAngleTunerParam</ref> *</type>
+        <definition>CameraDashAngleTunerParam* al::Camera::mDashAngleTunerParam</definition>
+        <argsstring></argsstring>
+        <name>mDashAngleTunerParam</name>
+        <qualifiedname>al::Camera::mDashAngleTunerParam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="34" column="35" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1a5ad146210796f513290220c7846a0da3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1CameraUnknownParam" kindref="compound">CameraUnknownParam</ref> *</type>
+        <definition>CameraUnknownParam* al::Camera::mUnknownParam</definition>
+        <argsstring></argsstring>
+        <name>mUnknownParam</name>
+        <qualifiedname>al::Camera::mUnknownParam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="35" column="35" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1Camera_1a5909227f2cef0a797977ddca511618bb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1CameraRotatorParam" kindref="compound">CameraRotatorParam</ref> *</type>
+        <definition>CameraRotatorParam* al::Camera::mRotatorParam</definition>
+        <argsstring></argsstring>
+        <name>mRotatorParam</name>
+        <qualifiedname>al::Camera::mRotatorParam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="36" column="35" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1Camera_1af6fb29bed068c5ac3b344313f9df486b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::load</definition>
+        <argsstring>(const ByamlIter *ticket)</argsstring>
+        <name>load</name>
+        <qualifiedname>al::Camera::load</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ByamlIter" kindref="compound">ByamlIter</ref> *</type>
+          <declname>ticket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="39" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="25" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1a73a8c12b36702d5ffee339f3a87f770c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::v1</definition>
+        <argsstring>()</argsstring>
+        <name>v1</name>
+        <qualifiedname>al::Camera::v1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="40" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1afbef657329b41dd5cc4bd19a1cf32283" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::v2</definition>
+        <argsstring>()</argsstring>
+        <name>v2</name>
+        <qualifiedname>al::Camera::v2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="41" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1a910360eb0e7fdae32bd5064f2e62e31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::v3</definition>
+        <argsstring>()</argsstring>
+        <name>v3</name>
+        <qualifiedname>al::Camera::v3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="42" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1a5066ea446f7bee80ba937be0270f74ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::v4</definition>
+        <argsstring>()</argsstring>
+        <name>v4</name>
+        <qualifiedname>al::Camera::v4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="43" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1aa5115317b79f3d2723336ec4ea814ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::v5</definition>
+        <argsstring>()</argsstring>
+        <name>v5</name>
+        <qualifiedname>al::Camera::v5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="44" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1aba4ca08f1f6daab9f7054441285ea9a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::calc</definition>
+        <argsstring>()</argsstring>
+        <name>calc</name>
+        <qualifiedname>al::Camera::calc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="45" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1af2e4522d937bdc61f9b3c7e043533854" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::Camera::v7</definition>
+        <argsstring>()</argsstring>
+        <name>v7</name>
+        <qualifiedname>al::Camera::v7</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="46" column="22" bodyfile="lib/al/src/Camera/alCamera.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1Camera_1a5c0d8bdab0dd4c19a8d4ab3a6fbd6428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::Camera::Camera</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>Camera</name>
+        <qualifiedname>al::Camera::Camera</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Camera/alCamera.h" line="49" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::Camera</label>
+        <link refid="classal_1_1Camera"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mVisionParam</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDashAngleTunerParam</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mUnknownParam</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mRotatorParam</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::CameraDashAngleTunerParam</label>
+        <link refid="classal_1_1CameraDashAngleTunerParam"/>
+      </node>
+      <node id="2">
+        <label>al::CameraParamVision</label>
+        <link refid="classal_1_1CameraParamVision"/>
+      </node>
+      <node id="5">
+        <label>al::CameraRotatorParam</label>
+        <link refid="classal_1_1CameraRotatorParam"/>
+      </node>
+      <node id="4">
+        <label>al::CameraUnknownParam</label>
+        <link refid="classal_1_1CameraUnknownParam"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Camera/alCamera.h" line="22" column="1" bodyfile="lib/al/include/Camera/alCamera.h" bodystart="23" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classal_1_1Camera_1aa7c6a55134ca9aa25b4e9fa6e1c97257" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>_2C</name></member>
+      <member refid="classal_1_1Camera_1a08b7e79371f85fc54ed2ba6d58f45e13" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>_8</name></member>
+      <member refid="classal_1_1Camera_1aba4ca08f1f6daab9f7054441285ea9a8" prot="public" virt="virtual"><scope>al::Camera</scope><name>calc</name></member>
+      <member refid="classal_1_1Camera_1a5c0d8bdab0dd4c19a8d4ab3a6fbd6428" prot="public" virt="non-virtual"><scope>al::Camera</scope><name>Camera</name></member>
+      <member refid="classal_1_1Camera_1af6fb29bed068c5ac3b344313f9df486b" prot="public" virt="virtual"><scope>al::Camera</scope><name>load</name></member>
+      <member refid="classal_1_1Camera_1af4ae6d63afe534fe5d5a75fa25bbfa02" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mDashAngleTunerParam</name></member>
+      <member refid="classal_1_1Camera_1a7da9be00806bb983a4060b40d304f7f9" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mInterpoleFrame</name></member>
+      <member refid="classal_1_1Camera_1a6f8ac7cfca5c9669ef95ba55422f6236" prot="private" virt="non-virtual"><scope>al::Camera</scope><name>mName</name></member>
+      <member refid="classal_1_1Camera_1adb0bab8e6aaf69bf585b91fb6567461c" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mPos</name></member>
+      <member refid="classal_1_1Camera_1a5909227f2cef0a797977ddca511618bb" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mRotatorParam</name></member>
+      <member refid="classal_1_1Camera_1ab21c244d3d2a7049002fde6abc9649ac" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mTarget</name></member>
+      <member refid="classal_1_1Camera_1a5ad146210796f513290220c7846a0da3" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mUnknownParam</name></member>
+      <member refid="classal_1_1Camera_1a2f067a00a14eccdcb1876f7e57f9c34c" prot="protected" virt="non-virtual"><scope>al::Camera</scope><name>mVisionParam</name></member>
+      <member refid="classal_1_1Camera_1a73a8c12b36702d5ffee339f3a87f770c" prot="public" virt="virtual"><scope>al::Camera</scope><name>v1</name></member>
+      <member refid="classal_1_1Camera_1afbef657329b41dd5cc4bd19a1cf32283" prot="public" virt="virtual"><scope>al::Camera</scope><name>v2</name></member>
+      <member refid="classal_1_1Camera_1a910360eb0e7fdae32bd5064f2e62e31c" prot="public" virt="virtual"><scope>al::Camera</scope><name>v3</name></member>
+      <member refid="classal_1_1Camera_1a5066ea446f7bee80ba937be0270f74ea" prot="public" virt="virtual"><scope>al::Camera</scope><name>v4</name></member>
+      <member refid="classal_1_1Camera_1aa5115317b79f3d2723336ec4ea814ce3" prot="public" virt="virtual"><scope>al::Camera</scope><name>v5</name></member>
+      <member refid="classal_1_1Camera_1af2e4522d937bdc61f9b3c7e043533854" prot="public" virt="virtual"><scope>al::Camera</scope><name>v7</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

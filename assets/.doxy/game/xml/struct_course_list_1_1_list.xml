@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct_course_list_1_1_list" kind="struct" language="C++" prot="private">
+    <compoundname>CourseList::List</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_course_list_1_1_list_1a2f34e5d9b4c71713c259592df487d97a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_course_list_1_1_world" kindref="compound">World</ref> **</type>
+        <definition>World** CourseList::List::mWorlds</definition>
+        <argsstring></argsstring>
+        <name>mWorlds</name>
+        <qualifiedname>CourseList::List::mWorlds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/System/CourseList.h" line="53" column="23" bodyfile="Game/include/System/CourseList.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_course_list_1a573fb0bf416df1aa9311e953bae642b7" compoundref="_course_list_8cpp" startline="113" endline="128">CourseList::init</referencedby>
+        <referencedby refid="struct_course_list_1_1_list_1acb9b2619dd2e74e86babd7c10a4d850f" compoundref="_course_list_8cpp" startline="85" endline="104">List</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_course_list_1_1_list_1a92eee9bed8965022cc54635506a78fc1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CourseList::List::mNumWorlds</definition>
+        <argsstring></argsstring>
+        <name>mNumWorlds</name>
+        <qualifiedname>CourseList::List::mNumWorlds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/System/CourseList.h" line="54" column="25" bodyfile="Game/include/System/CourseList.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_course_list_1a573fb0bf416df1aa9311e953bae642b7" compoundref="_course_list_8cpp" startline="113" endline="128">CourseList::init</referencedby>
+        <referencedby refid="struct_course_list_1_1_list_1acb9b2619dd2e74e86babd7c10a4d850f" compoundref="_course_list_8cpp" startline="85" endline="104">List</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_course_list_1_1_list_1acb9b2619dd2e74e86babd7c10a4d850f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CourseList::List::List</definition>
+        <argsstring>(const al::ByamlIter &amp;courseListIter)</argsstring>
+        <name>List</name>
+        <qualifiedname>CourseList::List::List</qualifiedname>
+        <param>
+          <type>const al::ByamlIter &amp;</type>
+          <declname>courseListIter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/System/CourseList.h" line="56" column="17" bodyfile="Game/src/System/CourseList.cpp" bodystart="85" bodyend="104"/>
+        <references refid="struct_course_list_1_1_list_1a92eee9bed8965022cc54635506a78fc1" compoundref="_course_list_8h" startline="54">mNumWorlds</references>
+        <references refid="struct_course_list_1_1_list_1a2f34e5d9b4c71713c259592df487d97a" compoundref="_course_list_8h" startline="53">mWorlds</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>CourseList::Course</label>
+        <link refid="struct_course_list_1_1_course"/>
+      </node>
+      <node id="1">
+        <label>CourseList::List</label>
+        <link refid="struct_course_list_1_1_list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mWorlds</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CourseList::World</label>
+        <link refid="struct_course_list_1_1_world"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mCourses</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/System/CourseList.h" line="51" column="9" bodyfile="Game/include/System/CourseList.h" bodystart="52" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_course_list_1_1_list_1acb9b2619dd2e74e86babd7c10a4d850f" prot="public" virt="non-virtual"><scope>CourseList::List</scope><name>List</name></member>
+      <member refid="struct_course_list_1_1_list_1a92eee9bed8965022cc54635506a78fc1" prot="public" virt="non-virtual"><scope>CourseList::List</scope><name>mNumWorlds</name></member>
+      <member refid="struct_course_list_1_1_list_1a2f34e5d9b4c71713c259592df487d97a" prot="public" virt="non-virtual"><scope>CourseList::List</scope><name>mWorlds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

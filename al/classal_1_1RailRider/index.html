@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::RailRider - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-alrailrider">Class al::RailRider</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>RailRider</strong></a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-railrider"><strong>RailRider</strong></a> (<a href="../classal_1_1Rail/"><strong>Rail</strong></a> * rail) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getcurrentdir"><strong>getCurrentDir</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getcurrentpos"><strong>getCurrentPos</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-isloop"><strong>isLoop</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-isreachedgoal"><strong>isReachedGoal</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-movetonearestrail"><strong>moveToNearestRail</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp; r1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-movetorailstart"><strong>moveToRailStart</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-setspeed"><strong>setSpeed</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>float</strong></a> speed) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-railrider">function RailRider</h3>
+<pre><code class="language-C++">al::RailRider::RailRider (
+    Rail * rail
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getcurrentdir">function getCurrentDir</h3>
+<pre><code class="language-C++">inline const sead::Vector3f &amp; al::RailRider::getCurrentDir () const
+</code></pre>
+<hr>
+
+<h3 id="function-getcurrentpos">function getCurrentPos</h3>
+<pre><code class="language-C++">inline const sead::Vector3f &amp; al::RailRider::getCurrentPos () const
+</code></pre>
+<hr>
+
+<h3 id="function-isloop">function isLoop</h3>
+<pre><code class="language-C++">inline bool al::RailRider::isLoop () const
+</code></pre>
+<hr>
+
+<h3 id="function-isreachedgoal">function isReachedGoal</h3>
+<pre><code class="language-C++">bool al::RailRider::isReachedGoal () const
+</code></pre>
+<hr>
+
+<h3 id="function-movetonearestrail">function moveToNearestRail</h3>
+<pre><code class="language-C++">void al::RailRider::moveToNearestRail (
+    const sead::Vector3f &amp; r1
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-movetorailstart">function moveToRailStart</h3>
+<pre><code class="language-C++">void al::RailRider::moveToRailStart () 
+</code></pre>
+<hr>
+
+<h3 id="function-setspeed">function setSpeed</h3>
+<pre><code class="language-C++">inline void al::RailRider::setSpeed (
+    float speed
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Rail/alRailRider.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

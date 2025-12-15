@@ -1,0 +1,205 @@
+
+
+# File alLiveActorFunction.cpp
+
+[**File List**](files.md) **>** [**al**](dir_9602f8714fac85fdd7f7ceb00b335c03.md) **>** [**src**](dir_efbb2da3221fe95d5cd9a5d2d5dabe34.md) **>** [**LiveActor**](dir_a1d892c08cc8ccf4e69e81fa9f5f26fe.md) **>** [**alLiveActorFunction.cpp**](alLiveActorFunction_8cpp.md)
+
+[Go to the documentation of this file](alLiveActorFunction_8cpp.md)
+
+
+```C++
+#include <Clipping/alClippingActorHolder.h>
+#include <Clipping/alClippingDirector.h>
+#include <Collision/alCollider.h>
+#include <Collision/alCollisionUtil.h>
+#include <Execute/alExecuteTableHolder.h>
+#include <LiveActor/alActorActionKeeper.h>
+#include <LiveActor/alActorPoseFunction.h>
+#include <LiveActor/alHitSensorKeeper.h>
+#include <LiveActor/alLiveActor.h>
+#include <LiveActor/alLiveActorFunction.h>
+#include <LiveActor/alLiveActorKit.h>
+#include <LiveActor/alSensorFunction.h>
+#include <LiveActor/alSubActorFunction.h>
+#include <Math/alMtxUtil.h>
+#include <Model/alAnimPlayerSimple.h>
+#include <Model/alModelCtr.h>
+#include <Model/alModelKeeper.h>
+#include <Nerve/alNerveActionCtrl.h>
+#include <Nerve/alNerveFunction.h>
+
+void alLiveActorFunction::calcAnimDirect( al::LiveActor* actor )
+{
+        sead::Matrix34f baseMtx;
+        actor->mActorPoseKeeper->calcBaseMtx( &baseMtx ); /* alActorPoseFunction::calcBaseMtx */
+        if ( actor->mModelKeeper )
+                al::setBaseMtxAndCalcAnim( actor, baseMtx, actor->mActorPoseKeeper->getScale() /* al::getScale */ );
+        if ( actor->mCollisionParts )
+        {
+                al::preScaleMtx( &baseMtx, actor->mActorPoseKeeper->getScale() /* al::getScale */ );
+                al::syncCollisionMtx( actor, &baseMtx );
+        }
+        if ( actor->getEffectKeeper() )
+                actor->getEffectKeeper()->update();
+        if ( actor->mSubActorKeeper )
+                alSubActorFunction::tryCalcAnim( actor->mSubActorKeeper );
+}
+
+namespace al
+{
+
+// ??
+bool isClipped( const LiveActor* actor )
+{
+        return actor->getLiveActorFlag().isClipped;
+}
+
+bool isInvalidClipping( const LiveActor* actor )
+{
+        return actor->getLiveActorFlag().isInvalidClipping;
+}
+
+bool isDead( const LiveActor* actor )
+{
+        return actor->getLiveActorFlag().isDead;
+}
+
+bool isAlive( const LiveActor* actor )
+{
+        return !actor->getLiveActorFlag().isDead;
+}
+
+void onCollide( LiveActor* actor )
+{
+        Collider* collider                     = actor->getCollider();
+        actor->getLiveActorFlag().isOffCollide = false;
+        if ( collider )
+                collider->onInvalidate();
+}
+
+void offCollide( LiveActor* actor )
+{
+        actor->getLiveActorFlag().isOffCollide = true;
+}
+
+void onDrawClipping( LiveActor* actor )
+{
+        actor->getLiveActorFlag().isDrawClipping = true;
+        if ( !isClipped( actor ) )
+        {
+                alActorSystemFunction::addToExecutorMovement( actor );
+                if ( actor->getHitSensorKeeper() )
+                {
+                        actor->getHitSensorKeeper()->validateBySystem();
+                        alSensorFunction::updateHitSensorsAll( actor );
+                }
+        }
+}
+
+void invalidateClipping( LiveActor* actor )
+{
+        if ( isClipped( actor ) )
+                actor->endClipped();
+
+        if ( !isInvalidClipping( actor ) )
+                getLiveActorKit()->getClippingDirector()->getClippingActorHolder()->invalidateClipping(
+                        actor );
+}
+
+void validateClipping( LiveActor* actor )
+{
+        if ( isInvalidClipping( actor ) )
+                getLiveActorKit()->getClippingDirector()->getClippingActorHolder()->validateClipping( actor );
+}
+
+// ModelKeeper
+
+#ifdef NON_MATCHING
+
+// optimization is too smart
+void hideModel( LiveActor* actor )
+{
+        if ( isAlive( actor ) && !isClipped( actor ) )
+        {
+                if ( actor->getModelKeeper() )
+                        actor->getModelKeeper()->hide();
+                if ( actor->getShadowKeeper() )
+                        hideShadow( actor );
+                alActorSystemFunction::removeFromExecutorDraw( actor );
+        }
+        actor->getLiveActorFlag().isHideModel = true;
+}
+#endif
+
+#ifdef NON_MATCHING
+// register swap, maybe inlined
+bool tryStartMclAnimIfExist( LiveActor* actor, const char* animName )
+{
+        AnimPlayerSimple* animPlayer = actor->getModelKeeper()->getModel()->getMclAnimPlayer();
+        if ( animPlayer && animPlayer->isAnimExist( animName ) )
+        {
+                actor->getModelKeeper()->getModel()->getMclAnimPlayer()->startAnim( animName );
+                return true;
+        }
+        return false;
+}
+#endif
+
+#ifdef NON_MATCHING
+// ldr for getting ModelKeeper is optimized
+void calcJointPos( sead::Vector3f* out, const LiveActor* actor, const char* jointName )
+{
+        const sead::Matrix34f* jointMtx = getJointMtxPtr( actor->getModelKeeper(), jointName );
+        out->x                          = jointMtx->m[ 0 ][ 3 ];
+        out->y                          = jointMtx->m[ 1 ][ 3 ];
+        out->z                          = jointMtx->m[ 2 ][ 3 ];
+}
+#endif
+
+// HitSensorKeeper
+
+HitSensor* getHitSensor( const LiveActor* actor, const char* name )
+{
+        return actor->getHitSensorKeeper()->getSensor( name );
+}
+
+float getSensorRadius( const LiveActor* actor, const char* sensorName )
+{
+        return getHitSensor( actor, sensorName )->getRadius();
+}
+
+// NerveKeeper
+#pragma no_inline
+
+void startNerveAction( LiveActor* actor, const char* actionName )
+{
+        if ( actor->getActorActionKeeper() )
+                actor->getActorActionKeeper()->tryStartActionNoAnim( actionName );
+        alNerveFunction::setNerveAction( actor, actionName );
+}
+
+#ifdef NON_MATCHING
+// registers
+void initNerve( LiveActor* actor, const Nerve* nerve, int maxNerveStates )
+{
+        actor->initNerveKeeper( new NerveKeeper( actor, nerve, maxNerveStates ) );
+}
+#endif
+
+#ifdef NON_MATCHING
+// registers, too big for tail-reorder
+void initNerveAction( LiveActor* actor, const char* name, alNerveFunction::NerveActionCollector* collector, int maxNerveStates )
+{
+        NerveActionCtrl* nerveActionCtrl = new NerveActionCtrl( collector );
+        NerveAction*     nerve           = nerveActionCtrl->findNerve( name );
+        NerveKeeper*     nk              = new NerveKeeper( actor, nerve, maxNerveStates );
+        actor->initNerveKeeper( nk );
+        actor->getNerveKeeper()->initNerveAction( nerveActionCtrl );
+        startNerveAction( actor, name );
+}
+#endif
+
+} // namespace al
+```
+
+

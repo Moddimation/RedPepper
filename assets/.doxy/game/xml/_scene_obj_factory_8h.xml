@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_scene_obj_factory_8h" kind="file" language="C++">
+    <compoundname>SceneObjFactory.h</compoundname>
+    <includes local="no">Scene/alSceneObjHolder.h</includes>
+    <includedby refid="_coin_rotater_8cpp" local="yes">CoinRotater.cpp</includedby>
+    <includedby refid="_ghost_player_8cpp" local="yes">GhostPlayer.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>SceneObjFactory.h</label>
+        <link refid="_scene_obj_factory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Scene/alSceneObjHolder.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>SceneObjFactory.h</label>
+        <link refid="_scene_obj_factory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CoinRotater.cpp</label>
+        <link refid="_coin_rotater_8cpp"/>
+      </node>
+      <node id="3">
+        <label>GhostPlayer.cpp</label>
+        <link refid="_ghost_player_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_scene_obj_factory">SceneObjFactory</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SceneObjType</name>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7ab3c5f7c156476a02da87fbe7abdd00" prot="public">
+          <name>SceneObjType_CameraShaker</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7d1dc4729d2008a235d3dfd4f3dfaf0a" prot="public">
+          <name>SceneObjType_SwitchAreaDirector</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220acabbebd95d7ca04a40f3eb2433d149d9" prot="public">
+          <name>SceneObjType_AudioDirector</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a9783264edafce4e658638cb9f4123c7b" prot="public">
+          <name>SceneObjType_CoinRotater</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220ad293115b8e1b1c37172ed974a0eef42c" prot="public">
+          <name>SceneObjType_CoinCollectInfoKeeper</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a908a79cc1482e7e506f72972bc234f98" prot="public">
+          <name>SceneObjType_ItemHolder</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7b9121e695afa9f45a8d4086b8d884fa" prot="public">
+          <name>SceneObjType_GhostPlayerRecorder</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Scene/SceneObjFactory.h" line="12" column="1" bodyfile="Game/include/Scene/SceneObjFactory.h" bodystart="13" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Scene/alSceneObjHolder.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_scene_obj_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_scene_obj_factory" kindref="compound">SceneObjFactory</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespace_scene_obj_factory_1a1ad46e6cd13da287d7be4d7aadcf30c3" refkind="member"><highlight class="normal">al::SceneObjHolder*<sp/><ref refid="namespace_scene_obj_factory_1a1ad46e6cd13da287d7be4d7aadcf30c3" kindref="member">createSceneObjHolder</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>SceneObjFactory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220" kindref="member">SceneObjType</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7ab3c5f7c156476a02da87fbe7abdd00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7ab3c5f7c156476a02da87fbe7abdd00" kindref="member">SceneObjType_CameraShaker</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="15" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7d1dc4729d2008a235d3dfd4f3dfaf0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7d1dc4729d2008a235d3dfd4f3dfaf0a" kindref="member">SceneObjType_SwitchAreaDirector</ref><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="16" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220acabbebd95d7ca04a40f3eb2433d149d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220acabbebd95d7ca04a40f3eb2433d149d9" kindref="member">SceneObjType_AudioDirector</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/></highlight><highlight class="comment">//<sp/>not<sp/>sure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a9783264edafce4e658638cb9f4123c7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a9783264edafce4e658638cb9f4123c7b" kindref="member">SceneObjType_CoinRotater</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="18" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220ad293115b8e1b1c37172ed974a0eef42c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220ad293115b8e1b1c37172ed974a0eef42c" kindref="member">SceneObjType_CoinCollectInfoKeeper</ref><sp/>=<sp/>9,<sp/></highlight><highlight class="comment">//<sp/>not<sp/>sure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a908a79cc1482e7e506f72972bc234f98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a908a79cc1482e7e506f72972bc234f98" kindref="member">SceneObjType_ItemHolder</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7b9121e695afa9f45a8d4086b8d884fa" kindref="member">SceneObjType_GhostPlayerRecorder</ref><sp/><sp/><sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="21" refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a7b9121e695afa9f45a8d4086b8d884fa" refkind="member"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/Scene/SceneObjFactory.h"/>
+  </compounddef>
+</doxygen>

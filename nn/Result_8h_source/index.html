@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File Result.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-resulth">File Result.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_1e016f672f65000d1caa1843da5325e4/"><strong>CTRSDK</strong></a> <strong>&gt;</strong> <a href="../dir_b105e27ad861a359b82da8d20daf787e/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_98edea970dce97b73b2af390faecf17b/"><strong>nn</strong></a> <strong>&gt;</strong> <a href="../Result_8h/"><strong>Result.h</strong></a></p>
+<p><a href="../Result_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;nn/types.h&gt;
+
+namespace nn {
+
+class Result {
+    s32 mValue;
+
+public:
+    enum Level {
+        Level_Status = -7,
+        Level_Temporary,
+        Level_Permanent,
+        Level_Usage,
+        Level_Reinitialize,
+        Level_Reset,
+        Level_Fatal,
+        Level_Info,
+        Level_Success
+    };
+
+    enum Summary {
+        Summary_Success = 0,
+        Summary_Nop = 1,
+        Summary_WouldBlock = 2,
+        Summary_OutOfResources = 3,
+        Summary_NotFound = 4,
+        Summary_InvalidState = 5,
+        Summary_NotSupported = 6,
+        Summary_InvalidArgument = 7,
+        Summary_WrongArgument = 8,
+        Summary_Cancelled = 9,
+        Summary_StatusChanged = 10,
+        Summary_Internal = 11,
+        Summary_InvalidResultValue = 63
+    };
+
+    enum ModuleType {
+        ModuleType_COMMON = 0,
+        ModuleType_KERNEL = 1,
+        ModuleType_UTIL = 2,
+        ModuleType_FILE_SERVER = 3,
+        ModuleType_LOADER_SERVER = 4,
+        ModuleType_TCB = 5,
+        ModuleType_OS = 6,
+        ModuleType_DBG = 7,
+        ModuleType_DMNT = 8,
+        ModuleType_PDN = 9,
+        ModuleType_GSP = 10,
+        ModuleType_I2C = 11,
+        ModuleType_GPIO = 12,
+        ModuleType_DD = 13,
+        ModuleType_CODEC = 14,
+        ModuleType_SPI = 15,
+        ModuleType_PXI = 16,
+        ModuleType_FS = 17,
+        ModuleType_DI = 18,
+        ModuleType_HID = 19,
+        ModuleType_CAM = 20,
+        ModuleType_PI = 21,
+        ModuleType_PM = 22,
+        ModuleType_PM_LOW = 23,
+        ModuleType_FSI = 24,
+        ModuleType_SRV = 25,
+        ModuleType_NDM = 26,
+        ModuleType_NWM = 27,
+        ModuleType_SOC = 28,
+        ModuleType_LDR = 29,
+        ModuleType_ACC = 30,
+        ModuleType_ROMFS = 31,
+        ModuleType_AM = 32,
+        ModuleType_HIO = 33,
+        ModuleType_UPDATER = 34,
+        ModuleType_MIC = 35,
+        ModuleType_FND = 36,
+        ModuleType_MP = 37,
+        ModuleType_MPWL = 38,
+        ModuleType_AC = 39,
+        ModuleType_HTTP = 40,
+        ModuleType_DSP = 41,
+        ModuleType_SND = 42,
+        ModuleType_DLP = 43,
+        ModuleType_HIO_LOW = 44,
+        ModuleType_CSND = 45,
+        ModuleType_SSL = 46,
+        ModuleType_AM_LOW = 47,
+        ModuleType_NEX = 48,
+        ModuleType_FRIENDS = 49,
+        ModuleType_RDT = 50,
+        ModuleType_APPLET = 51,
+        ModuleType_NIM = 52,
+        ModuleType_PTM = 53,
+        ModuleType_MIDI = 54,
+        ModuleType_MC = 55,
+        ModuleType_SWC = 56,
+        ModuleType_FATFS = 57,
+        ModuleType_NGC = 58,
+        ModuleType_CARD = 59,
+        ModuleType_CARDNOR = 60,
+        ModuleType_SDMC = 61,
+        ModuleType_BOSS = 62,
+        ModuleType_DBM = 63,
+        ModuleType_CONFIG = 64,
+        ModuleType_PS = 65,
+        ModuleType_CEC = 66,
+        ModuleType_IR = 67,
+        ModuleType_UDS = 68,
+        ModuleType_PL = 69,
+        ModuleType_CUP = 70,
+        ModuleType_GYROSCOPE = 71,
+        ModuleType_MCU = 72,
+        ModuleType_NS = 73,
+        ModuleType_NEWS = 74,
+        ModuleType_RO = 75,
+        ModuleType_GD = 76,
+        ModuleType_CARD_SPI = 77,
+        ModuleType_EC = 78,
+        ModuleType_WEB_BROWSER = 79,
+        ModuleType_TEST = 80,
+        ModuleType_ENC = 81,
+        ModuleType_PIA = 82,
+        ModuleType_ACT = 83,
+        ModuleType_VCTL = 84,
+        ModuleType_OLV = 85,
+        ModuleType_NEIA = 86,
+        ModuleType_NPNS = 87,
+        ModuleType_AVD = 90,
+        ModuleType_L2B = 91,
+        ModuleType_MVD = 92,
+        ModuleType_NFC = 93,
+        ModuleType_UART = 94,
+        ModuleType_SPM = 95,
+        ModuleType_QTM = 96,
+        ModuleType_NFP = 97,
+        ModuleType_APP = 254
+    };
+
+    enum Description {
+        Description_InvalidSelection = 1000,
+        Description_TooLarge,
+        Description_NotAuthorized,
+        Description_AlreadyDone,
+        Description_InvalidSize,
+        Description_InvalidEnumValue,
+        Description_InvalidCombination,
+        Description_NoData,
+        Description_Busy,
+        Description_MisalignedAddress,
+        Description_MisalignedSize,
+        Description_OutOfMemory,
+        Description_NotImplemented,
+        Description_InvalidAddress,
+        Description_InvalidPointer,
+        Description_InvalidHandle,
+        Description_NotInitialized,
+        Description_AlreadyInitialized,
+        Description_NotFound,
+        Description_CancelRequested,
+        Description_AlreadyExists,
+        Description_OutOfRange,
+        Description_Timeout,
+        Description_InvalidResultValue,
+        Description_Success = 0
+    };
+
+    Result() { }
+
+    Result(Level level, Summary summary, ModuleType module, int desc)
+        : mValue((((level)&amp;0x1F) &lt;&lt; 27) | (((summary)&amp;0x3F) &lt;&lt; 21) | (((module)&amp;0xFF) &lt;&lt; 10) | ((desc)&amp;0x3FF))
+    {
+    }
+
+    bool Succeeded() const { return mValue &gt;= 0; }
+    bool Failed() const { return mValue &lt; 0; }
+    Level GetLevel() const { return (Level)((mValue &gt;&gt; 27) &amp; 0x1F); }
+    Summary GetSummary() const { return (Summary)((mValue &gt;&gt; 21) &amp; 0x3F); }
+    ModuleType GetModuleType() const { return (ModuleType)((mValue &gt;&gt; 10) &amp; 0xFF); }
+    int GetDescription() const { return (mValue &amp; 0x3FF); }
+    bool IsValid() const { return mValue &gt;= 0x80000000; }
+
+    inline operator bool() { return Succeeded(); }
+};
+
+} // namespace nn
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

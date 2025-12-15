@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1HeapMgr" kind="class" language="C++" prot="public">
+    <compoundname>sead::HeapMgr</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsead_1_1HeapMgr_1a2f9dec1d780f1464613a5db675365a35" prot="public" static="no">
+        <type><ref refid="classsead_1_1FixedPtrArray" kindref="compound">FixedPtrArray</ref>&lt; <ref refid="classsead_1_1Heap" kindref="compound">Heap</ref>, 4 &gt;</type>
+        <definition>typedef FixedPtrArray&lt;Heap, 4&gt; sead::HeapMgr::RootHeaps</definition>
+        <argsstring></argsstring>
+        <name>RootHeaps</name>
+        <qualifiedname>sead::HeapMgr::RootHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="29" column="27" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsead_1_1HeapMgr_1a935a41a7883857c117bfc6bc8eeb9f79" prot="public" static="no">
+        <type><ref refid="classsead_1_1FixedPtrArray" kindref="compound">FixedPtrArray</ref>&lt; <ref refid="classsead_1_1Heap" kindref="compound">Heap</ref>, 4 &gt;</type>
+        <definition>typedef FixedPtrArray&lt;Heap, 4&gt; sead::HeapMgr::IndependentHeaps</definition>
+        <argsstring></argsstring>
+        <name>IndependentHeaps</name>
+        <qualifiedname>sead::HeapMgr::IndependentHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="30" column="27" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1aa768f75418c70cf680a6a00088adc787" prot="public" static="yes" mutable="no">
+        <type><ref refid="classsead_1_1HeapMgr" kindref="compound">HeapMgr</ref></type>
+        <definition>HeapMgr sead::HeapMgr::sInstance</definition>
+        <argsstring></argsstring>
+        <name>sInstance</name>
+        <qualifiedname>sead::HeapMgr::sInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="26" column="20" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1a41f164e72ca9a8e1d87f4cca030e247b" prot="public" static="yes" mutable="no">
+        <type><ref refid="classsead_1_1HeapMgr" kindref="compound">HeapMgr</ref> *</type>
+        <definition>HeapMgr* sead::HeapMgr::sInstancePtr</definition>
+        <argsstring></argsstring>
+        <name>sInstancePtr</name>
+        <qualifiedname>sead::HeapMgr::sInstancePtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="27" column="20" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsead_1_1HeapMgr_1ab1c514bb2e3226e97be2971a4d1aca67" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ScopedCurrentHeapSetter</definition>
+        <argsstring></argsstring>
+        <name>ScopedCurrentHeapSetter</name>
+        <qualifiedname>sead::HeapMgr::ScopedCurrentHeapSetter</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1ScopedCurrentHeapSetter" kindref="compound">ScopedCurrentHeapSetter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="33" column="18" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1a6453f98fb2dd3494a8b223c6e1ad1a72" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsead_1_1Arena" kindref="compound">Arena</ref></type>
+        <definition>Arena sead::HeapMgr::sDefaultArena</definition>
+        <argsstring></argsstring>
+        <name>sDefaultArena</name>
+        <qualifiedname>sead::HeapMgr::sDefaultArena</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="38" column="18" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1a4e747097a0a8d2bc309c5116fab5ed4d" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsead_1_1FixedPtrArray" kindref="compound">RootHeaps</ref></type>
+        <definition>HeapMgr::RootHeaps sead::HeapMgr::sRootHeaps</definition>
+        <argsstring></argsstring>
+        <name>sRootHeaps</name>
+        <qualifiedname>sead::HeapMgr::sRootHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="39" column="22" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1a1ae469741da1e68f339f25519b783e62" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsead_1_1FixedPtrArray" kindref="compound">IndependentHeaps</ref></type>
+        <definition>IndependentHeaps sead::HeapMgr::sIndependentHeaps</definition>
+        <argsstring></argsstring>
+        <name>sIndependentHeaps</name>
+        <qualifiedname>sead::HeapMgr::sIndependentHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="40" column="29" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1aea0adcb57c54252f99738409a60f04fd" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsead_1_1CriticalSection" kindref="compound">CriticalSection</ref></type>
+        <definition>CriticalSection sead::HeapMgr::sHeapTreeLockCS</definition>
+        <argsstring></argsstring>
+        <name>sHeapTreeLockCS</name>
+        <qualifiedname>sead::HeapMgr::sHeapTreeLockCS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="41" column="28" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1ac6cebb9774dc8a704807fba1861c9241" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* sead::HeapMgr::unk</definition>
+        <argsstring></argsstring>
+        <name>unk</name>
+        <qualifiedname>sead::HeapMgr::unk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="43" column="10" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1a392f4f38d23be46fe87749a87948dbef" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* sead::HeapMgr::mAllocFailedCallback</definition>
+        <argsstring></argsstring>
+        <name>mAllocFailedCallback</name>
+        <qualifiedname>sead::HeapMgr::mAllocFailedCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="45" column="9" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1HeapMgr_1a638cec4a2e87ddfa61cb024fc543c190" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 sead::HeapMgr::unk1</definition>
+        <argsstring></argsstring>
+        <name>unk1</name>
+        <qualifiedname>sead::HeapMgr::unk1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="46" column="8" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1adff1e7a13681d6fc3e8d27aff4f5fd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::HeapMgr::HeapMgr</definition>
+        <argsstring>()</argsstring>
+        <name>HeapMgr</name>
+        <qualifiedname>sead::HeapMgr::HeapMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="13" column="5" bodyfile="lib/sead/modules/src/heap/seadHeapMgr.cpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1a46efee493fc721a23ded63979ff4514f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+        <definition>Heap * sead::HeapMgr::getCurrentHeap</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentHeap</name>
+        <qualifiedname>sead::HeapMgr::getCurrentHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="15" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1a8706a53f01d98c8cf9e86c8663f0029d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+        <definition>Heap * sead::HeapMgr::findContainHeap</definition>
+        <argsstring>(const void *ptr) const</argsstring>
+        <name>findContainHeap</name>
+        <qualifiedname>sead::HeapMgr::findContainHeap</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="16" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1af03082158e8a4efc4272d7afad8b51be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool sead::HeapMgr::isContainedInAnyHeap</definition>
+        <argsstring>(const void *ptr)</argsstring>
+        <name>isContainedInAnyHeap</name>
+        <qualifiedname>sead::HeapMgr::isContainedInAnyHeap</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="17" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1a0a15008e656d2b621fac90af6eb2f37c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1HeapMgr" kindref="compound">HeapMgr</ref> *</type>
+        <definition>static HeapMgr * sead::HeapMgr::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>sead::HeapMgr::instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="19" column="20" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1af81e7965f8c2f22c8a984d77f5ec8e2c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>static s32 sead::HeapMgr::getRootHeapNum</definition>
+        <argsstring>()</argsstring>
+        <name>getRootHeapNum</name>
+        <qualifiedname>sead::HeapMgr::getRootHeapNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="21" column="16" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1ae2e23fef8188bbdad993f37d2495375e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+        <definition>static Heap * sead::HeapMgr::getRootHeap</definition>
+        <argsstring>(int index)</argsstring>
+        <name>getRootHeap</name>
+        <qualifiedname>sead::HeapMgr::getRootHeap</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="23" column="17" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsead_1_1HeapMgr_1a2436da2eb284554a02655953b1f234b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1Heap" kindref="compound">sead::Heap</ref> *</type>
+        <definition>sead::Heap * sead::HeapMgr::setCurrentHeap_</definition>
+        <argsstring>(sead::Heap *heap)</argsstring>
+        <name>setCurrentHeap_</name>
+        <qualifiedname>sead::HeapMgr::setCurrentHeap_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">sead::Heap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+<para>Set the current heap to the specified heap and returns the previous &quot;current heap&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="36" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>sead::HeapMgr</label>
+        <link refid="classsead_1_1HeapMgr"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>sInstance</edgelabel>
+          <edgelabel>sInstancePtr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/heap/seadHeapMgr.h" line="11" column="1" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="11" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classsead_1_1HeapMgr_1a8706a53f01d98c8cf9e86c8663f0029d" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>findContainHeap</name></member>
+      <member refid="classsead_1_1HeapMgr_1a46efee493fc721a23ded63979ff4514f" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>getCurrentHeap</name></member>
+      <member refid="classsead_1_1HeapMgr_1ae2e23fef8188bbdad993f37d2495375e" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>getRootHeap</name></member>
+      <member refid="classsead_1_1HeapMgr_1af81e7965f8c2f22c8a984d77f5ec8e2c" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>getRootHeapNum</name></member>
+      <member refid="classsead_1_1HeapMgr_1adff1e7a13681d6fc3e8d27aff4f5fd9f" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>HeapMgr</name></member>
+      <member refid="classsead_1_1HeapMgr_1a935a41a7883857c117bfc6bc8eeb9f79" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>IndependentHeaps</name></member>
+      <member refid="classsead_1_1HeapMgr_1a0a15008e656d2b621fac90af6eb2f37c" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>instance</name></member>
+      <member refid="classsead_1_1HeapMgr_1af03082158e8a4efc4272d7afad8b51be" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>isContainedInAnyHeap</name></member>
+      <member refid="classsead_1_1HeapMgr_1a392f4f38d23be46fe87749a87948dbef" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>mAllocFailedCallback</name></member>
+      <member refid="classsead_1_1HeapMgr_1a2f9dec1d780f1464613a5db675365a35" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>RootHeaps</name></member>
+      <member refid="classsead_1_1HeapMgr_1ab1c514bb2e3226e97be2971a4d1aca67" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>ScopedCurrentHeapSetter</name></member>
+      <member refid="classsead_1_1HeapMgr_1a6453f98fb2dd3494a8b223c6e1ad1a72" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>sDefaultArena</name></member>
+      <member refid="classsead_1_1HeapMgr_1a2436da2eb284554a02655953b1f234b6" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>setCurrentHeap_</name></member>
+      <member refid="classsead_1_1HeapMgr_1aea0adcb57c54252f99738409a60f04fd" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>sHeapTreeLockCS</name></member>
+      <member refid="classsead_1_1HeapMgr_1a1ae469741da1e68f339f25519b783e62" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>sIndependentHeaps</name></member>
+      <member refid="classsead_1_1HeapMgr_1aa768f75418c70cf680a6a00088adc787" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>sInstance</name></member>
+      <member refid="classsead_1_1HeapMgr_1a41f164e72ca9a8e1d87f4cca030e247b" prot="public" virt="non-virtual"><scope>sead::HeapMgr</scope><name>sInstancePtr</name></member>
+      <member refid="classsead_1_1HeapMgr_1a4e747097a0a8d2bc309c5116fab5ed4d" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>sRootHeaps</name></member>
+      <member refid="classsead_1_1HeapMgr_1ac6cebb9774dc8a704807fba1861c9241" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>unk</name></member>
+      <member refid="classsead_1_1HeapMgr_1a638cec4a2e87ddfa61cb024fc543c190" prot="private" virt="non-virtual"><scope>sead::HeapMgr</scope><name>unk1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

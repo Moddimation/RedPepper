@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Namespace nn::svc - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="namespace-nnsvc">Namespace nn::svc</h1>
+<p><a href="../namespaces/"><strong>Namespace List</strong></a> <strong>&gt;</strong> <a href="../namespacenn/"><strong>nn</strong></a> <strong>&gt;</strong> <a href="./"><strong>svc</strong></a></p>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a> u32</td>
+<td style="text-align: left;"><a href="#variable-addr0"><strong>addr0</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a> u32 u32</td>
+<td style="text-align: left;"><a href="#variable-addr1"><strong>addr1</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a> u32 u32 u32 u32</td>
+<td style="text-align: left;"><a href="#variable-op"><strong>op</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a> u32 u32 u32</td>
+<td style="text-align: left;"><a href="#variable-size"><strong>size</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-arbitrateaddress"><strong>ArbitrateAddress</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> arbiter, uintptr_t addr, nn::os::ArbitrationType type, s32 value, s64 ns) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-break"><strong>Break</strong></a> (nn::dbg::BreakReason reason) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-closehandle"><strong>CloseHandle</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> handle) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-connecttoport"><strong>ConnectToPort</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * port, const char * portName) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-controlmemory"><strong>ControlMemory</strong></a> (u32 * addr, u32 addr0, u32 addr1, u32 size, u32 op, u32 perms) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-createaddressarbiter"><strong>CreateAddressArbiter</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * arbiter) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-createevent"><strong>CreateEvent</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * event, nn::os::ResetType type) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-creatememoryblock"><strong>CreateMemoryBlock</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * memblock, u32 addr, u32 size, u32 myperms, u32 otherperms) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-createmutex"><strong>CreateMutex</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * mutex, bool initialLocked) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-duplicatehandle"><strong>DuplicateHandle</strong></a> (<a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * out, <a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> original) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm void</td>
+<td style="text-align: left;"><a href="#function-exitprocess"><strong>ExitProcess</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-getprocessid"><strong>GetProcessId</strong></a> (unsigned int * id, <a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> handle) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-getresourcelimit"><strong>GetResourceLimit</strong></a> (<a href="../structnn_1_1Handle/"><strong>Handle</strong></a> * resourceLimit, <a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> handle) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-getthreadid"><strong>GetThreadId</strong></a> (unsigned int * id, <a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> handle) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-getthreadpriority"><strong>GetThreadPriority</strong></a> (s32 * prio, <a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> thread) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm void</td>
+<td style="text-align: left;"><a href="#function-sleepthread"><strong>SleepThread</strong></a> (u64 nanos) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-waitsynchronizationn"><strong>WaitSynchronizationN</strong></a> (int * out, const <a href="../structnn_1_1Handle/"><strong>nn::Handle</strong></a> * handles, s32 handleCount, bool waitAll, s64 timeout_ns) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">__asm <a href="../classnn_1_1Result/"><strong>nn::Result</strong></a></td>
+<td style="text-align: left;"><a href="#function-__attribute__"><strong>__attribute__</strong></a> ((section("i._ZN2nn3svc13ControlMemoryEPjjjjjj"))) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-addr0">variable addr0</h3>
+<pre><code class="language-C++">__asm nn::Result u32 nn::svc::addr0;
+</code></pre>
+<hr>
+
+<h3 id="variable-addr1">variable addr1</h3>
+<pre><code class="language-C++">__asm nn::Result u32 u32 nn::svc::addr1;
+</code></pre>
+<hr>
+
+<h3 id="variable-op">variable op</h3>
+<pre><code class="language-C++">__asm nn::Result u32 u32 u32 u32 nn::svc::op;
+</code></pre>
+<hr>
+
+<h3 id="variable-size">variable size</h3>
+<pre><code class="language-C++">__asm nn::Result u32 u32 u32 nn::svc::size;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-arbitrateaddress">function ArbitrateAddress</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::ArbitrateAddress (
+    nn::Handle arbiter,
+    uintptr_t addr,
+    nn::os::ArbitrationType type,
+    s32 value,
+    s64 ns
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-break">function Break</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::Break (
+    nn::dbg::BreakReason reason
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-closehandle">function CloseHandle</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::CloseHandle (
+    nn::Handle handle
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-connecttoport">function ConnectToPort</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::ConnectToPort (
+    nn::Handle * port,
+    const char * portName
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-controlmemory">function ControlMemory</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::ControlMemory (
+    u32 * addr,
+    u32 addr0,
+    u32 addr1,
+    u32 size,
+    u32 op,
+    u32 perms
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-createaddressarbiter">function CreateAddressArbiter</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::CreateAddressArbiter (
+    nn::Handle * arbiter
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-createevent">function CreateEvent</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::CreateEvent (
+    nn::Handle * event,
+    nn::os::ResetType type
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-creatememoryblock">function CreateMemoryBlock</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::CreateMemoryBlock (
+    nn::Handle * memblock,
+    u32 addr,
+    u32 size,
+    u32 myperms,
+    u32 otherperms
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-createmutex">function CreateMutex</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::CreateMutex (
+    nn::Handle * mutex,
+    bool initialLocked
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-duplicatehandle">function DuplicateHandle</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::DuplicateHandle (
+    nn::Handle * out,
+    nn::Handle original
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-exitprocess">function ExitProcess</h3>
+<pre><code class="language-C++">__asm void nn::svc::ExitProcess () 
+</code></pre>
+<hr>
+
+<h3 id="function-getprocessid">function GetProcessId</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::GetProcessId (
+    unsigned int * id,
+    nn::Handle handle
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getresourcelimit">function GetResourceLimit</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::GetResourceLimit (
+    Handle * resourceLimit,
+    nn::Handle handle
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getthreadid">function GetThreadId</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::GetThreadId (
+    unsigned int * id,
+    nn::Handle handle
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getthreadpriority">function GetThreadPriority</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::GetThreadPriority (
+    s32 * prio,
+    nn::Handle thread
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sleepthread">function SleepThread</h3>
+<pre><code class="language-C++">__asm void nn::svc::SleepThread (
+    u64 nanos
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-waitsynchronizationn">function WaitSynchronizationN</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::WaitSynchronizationN (
+    int * out,
+    const nn::Handle * handles,
+    s32 handleCount,
+    bool waitAll,
+    s64 timeout_ns
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-__attribute__">function __attribute__</h3>
+<pre><code class="language-C++">__asm nn::Result nn::svc::__attribute__ (
+    (section(&quot;i._ZN2nn3svc13ControlMemoryEPjjjjjj&quot;))
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/CTRSDK/include/nn/svc/svc_Api.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

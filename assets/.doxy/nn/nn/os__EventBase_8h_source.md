@@ -1,0 +1,25 @@
+
+
+# File os\_EventBase.h
+
+[**File List**](files.md) **>** [**CTRSDK**](dir_1e016f672f65000d1caa1843da5325e4.md) **>** [**include**](dir_b105e27ad861a359b82da8d20daf787e.md) **>** [**nn**](dir_98edea970dce97b73b2af390faecf17b.md) **>** [**os**](dir_9291becf67c3b0a132c39dad0aa59ab9.md) **>** [**os\_EventBase.h**](os__EventBase_8h.md)
+
+[Go to the documentation of this file](os__EventBase_8h.md)
+
+
+```C++
+#pragma once
+#include "nn/os/os_InterruptEvent.h"
+
+namespace nn {
+namespace os {
+
+    class EventBase : InterruptEvent {
+
+    };
+
+} // namespace os
+} // namespace nn
+```
+
+

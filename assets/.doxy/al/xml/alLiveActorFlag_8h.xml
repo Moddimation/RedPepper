@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="alLiveActorFlag_8h" kind="file" language="C++">
+    <compoundname>alLiveActorFlag.h</compoundname>
+    <includedby refid="alLiveActor_8h" local="no">lib/al/include/LiveActor/alLiveActor.h</includedby>
+    <includedby refid="alLiveActorFlag_8cpp" local="no">lib/al/src/LiveActor/alLiveActorFlag.cpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>lib/al/include/AreaObj/alSwitchAreaDirector.h</label>
+        <link refid="alSwitchAreaDirector_8h_source"/>
+      </node>
+      <node id="4">
+        <label>lib/al/include/Factory/alActorFactory.h</label>
+        <link refid="alActorFactory_8h_source"/>
+      </node>
+      <node id="5">
+        <label>lib/al/include/LiveActor/alActorPoseFunction.h</label>
+        <link refid="alActorPoseFunction_8h_source"/>
+      </node>
+      <node id="2">
+        <label>lib/al/include/LiveActor/alLiveActor.h</label>
+        <link refid="alLiveActor_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/al/include/LiveActor/alLiveActorFlag.h</label>
+        <link refid="alLiveActorFlag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lib/al/include/LiveActor/alLiveActorGroup.h</label>
+        <link refid="alLiveActorGroup_8h_source"/>
+      </node>
+      <node id="8">
+        <label>lib/al/include/MapObj/alClockMapParts.h</label>
+        <link refid="alClockMapParts_8h_source"/>
+      </node>
+      <node id="9">
+        <label>lib/al/include/MapObj/alFallMapParts.h</label>
+        <link refid="alFallMapParts_8h_source"/>
+      </node>
+      <node id="10">
+        <label>lib/al/include/MapObj/alFixMapParts.h</label>
+        <link refid="alFixMapParts_8h_source"/>
+      </node>
+      <node id="7">
+        <label>lib/al/include/MapObj/alMapObjActor.h</label>
+        <link refid="alMapObjActor_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lib/al/include/Npc/alBreakModel.h</label>
+        <link refid="alBreakModel_8h_source"/>
+      </node>
+      <node id="11">
+        <label>lib/al/include/Npc/alEffectObj.h</label>
+        <link refid="alEffectObj_8h_source"/>
+      </node>
+      <node id="12">
+        <label>lib/al/include/Npc/alSky.h</label>
+        <link refid="alSky_8h_source"/>
+      </node>
+      <node id="14">
+        <label>lib/al/include/Rail/alRailMoveMovement.h</label>
+        <link refid="alRailMoveMovement_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structal_1_1LiveActorFlag" prot="public">al::LiveActorFlag</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">al</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structal_1_1LiveActorFlag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structal_1_1LiveActorFlag" kindref="compound">LiveActorFlag</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDead;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isClipped;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isInvalidClipping;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDrawClipping;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag5;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isHideModel;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isOffCollide;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flag8;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isValidMaterialCode;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1LiveActorFlag" kindref="compound">LiveActorFlag</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alLiveActorFlag.h"/>
+  </compounddef>
+</doxygen>

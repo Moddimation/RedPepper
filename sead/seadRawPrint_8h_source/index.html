@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadRawPrint.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-seadrawprinth">File seadRawPrint.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_0b39da2be11917cc67a96545368ebd76/"><strong>basis</strong></a> <strong>&gt;</strong> <a href="../seadRawPrint_8h/"><strong>seadRawPrint.h</strong></a></p>
+<p><a href="../seadRawPrint_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;stdarg.h&gt;
+
+#include &lt;basis/seadTypes.h&gt;
+
+#ifdef SEAD_DEBUG
+#define SEAD_ASSERT_MSG(condition, message, ...)                                                   \
+    do {                                                                                           \
+        if (!(condition))                                                                          \
+            sead::system::HaltWithDetail(__FILE__, __LINE__, message, ##__VA_ARGS__);              \
+    } while (0)
+#define SEAD_ASSERT(condition)                                                                     \
+    do {                                                                                           \
+        if (!(condition))                                                                          \
+            sead::system::HaltWithDetailNoFormat(__FILE__, __LINE__, #condition);                  \
+    } while (0)
+#define SEAD_WARN(message, ...)                                                                    \
+    do                                                                                             \
+        sead::system::Warning(__FILE__, __LINE__, message, ##__VA_ARGS__);                         \
+    while (0)
+#define SEAD_DEBUG_PRINT(format, ...)                                                              \
+    do                                                                                             \
+        sead::system::Print(format, ##__VA_ARGS__);                                                \
+    while (0)
+#else
+#define SEAD_ASSERT_MSG(condition, message, ...)                                                   \
+    do {                                                                                           \
+        if (false) {                                                                               \
+            static_cast&lt;void&gt;(condition);                                                          \
+            sead::system::detail::CheckFormat(message, ##__VA_ARGS__);                             \
+        }                                                                                          \
+    } while (0)
+#define SEAD_ASSERT(condition)                                                                     \
+    do {                                                                                           \
+        if (false)                                                                                 \
+            static_cast&lt;void&gt;(condition);                                                          \
+    } while (0)
+#define SEAD_WARN(message, ...)                                                                    \
+    do {                                                                                           \
+        if (false)                                                                                 \
+            sead::system::detail::CheckFormat(message, ##__VA_ARGS__);                             \
+    } while (0)
+#define SEAD_DEBUG_PRINT(format, ...)                                                              \
+    do {                                                                                           \
+        if (false)                                                                                 \
+            sead::system::detail::CheckFormat(format, ##__VA_ARGS__);                              \
+    } while (0)
+#endif
+
+namespace sead {
+namespace system {
+namespace detail {
+// Dummy function whose only purpose is to trigger a format string check.
+inline void CheckFormat(const char*, ...) {}
+}  // namespace detail
+
+void Halt();
+void HaltWithDetail(const char* file, int line, const char* msg, ...);
+void HaltWithDetailNoFormat(const char* file, int line, const char* msg);
+void DebugBreak();
+
+void Print(const char* format, ...);
+void PrintV(const char* format, va_list);
+void PrintString(const char* format, s32);
+
+void Warning(const char* file, int line, const char* msg, ...);
+void SetWarningEnable(bool enable);
+}  // namespace system
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

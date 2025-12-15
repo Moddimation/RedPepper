@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_actor_8cpp" kind="file" language="C++">
+    <compoundname>PlayerActor.cpp</compoundname>
+    <includes refid="_player_actor_8h" local="yes">Player/PlayerActor.h</includes>
+    <includes refid="_player_8h" local="yes">Player/Player.h</includes>
+    <includes refid="_player_property_8h" local="yes">Player/PlayerProperty.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>Player/Player.h</label>
+        <link refid="_player_8h"/>
+      </node>
+      <node id="2">
+        <label>Player/PlayerActor.h</label>
+        <link refid="_player_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Player/PlayerProperty.h</label>
+        <link refid="_player_property_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PlayerActor.cpp</label>
+        <link refid="_player_actor_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MapObj/alMapObjActor.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_actor_8h" kindref="compound">Player/PlayerActor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player/Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_property_8h" kindref="compound">Player/PlayerProperty.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_player_actor_1a0ff5bd61c2eb1f8b5125ac451cc21f6a" refkind="member"><highlight class="normal"><ref refid="class_player_property" kindref="compound">PlayerProperty</ref>*<sp/><ref refid="class_player_actor_1a0ff5bd61c2eb1f8b5125ac451cc21f6a" kindref="member">PlayerActor::getProperty</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_player_actor_1a07d56fce170bd7fe635146779574fe5c" kindref="member">mPlayer</ref>-&gt;<ref refid="class_player_1adbc28ab311abf45c532bbac21cae8b28" kindref="member">getProperty</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Player/PlayerActor.cpp"/>
+  </compounddef>
+</doxygen>

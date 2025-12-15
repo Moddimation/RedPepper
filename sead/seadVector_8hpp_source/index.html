@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadVector.hpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-seadvectorhpp">File seadVector.hpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_f6d5c8d1d4c60cd689fcf859a6687fb0/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_9adfe416bc4f0c29a5cf1f3d542cf0b8/"><strong>math</strong></a> <strong>&gt;</strong> <a href="../seadVector_8hpp/"><strong>seadVector.hpp</strong></a></p>
+<p><a href="../seadVector_8hpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;math/seadVectorCalcCtr.h&gt;
+#ifndef SEAD_MATH_VECTOR_H_
+#include &lt;math/seadVector.h&gt;
+#endif
+
+namespace sead {
+template &lt;typename T&gt;
+inline Vector2&lt;T&gt;::Vector2(T x_, T y_) {
+    Vector2CalcCtr&lt;T&gt;::set(*this, x_, y_);
+}
+
+template &lt;typename T&gt;
+inline Vector2&lt;T&gt;&amp; Vector2&lt;T&gt;::operator+=(const Vector2&lt;T&gt;&amp; other) {
+    Vector2CalcCtr&lt;T&gt;::add(*this, *this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector2&lt;T&gt;&amp; Vector2&lt;T&gt;::operator-=(const Vector2&lt;T&gt;&amp; other) {
+    Vector2CalcCtr&lt;T&gt;::sub(*this, *this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector2&lt;T&gt;&amp; Vector2&lt;T&gt;::operator*=(T t) {
+    this-&gt;x *= t;
+    this-&gt;y *= t;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector2&lt;T&gt;&amp; Vector2&lt;T&gt;::operator/=(T t) {
+    this-&gt;x /= t;
+    this-&gt;y /= t;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector2&lt;T&gt;&amp; Vector2&lt;T&gt;::operator=(const Vector2&lt;T&gt;&amp; other) {
+    Vector2CalcCtr&lt;T&gt;::set(*this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline void Vector2&lt;T&gt;::set(const Vector2&lt;T&gt;&amp; other) {
+    Vector2CalcCtr&lt;T&gt;::set(*this, other);
+}
+
+template &lt;typename T&gt;
+inline void Vector2&lt;T&gt;::set(T x_, T y_) {
+    Vector2CalcCtr&lt;T&gt;::set(*this, x_, y_);
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;::Vector3(T x_, T y_, T z_) {
+    Vector3CalcCtr&lt;T&gt;::set(*this, x_, y_, z_);
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator=(const Vector3&lt;T&gt;&amp; other) {
+    Vector3CalcCtr&lt;T&gt;::set(*this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline bool Vector3&lt;T&gt;::operator==(const Vector3&amp; rhs) const {
+    return this-&gt;x == rhs.x &amp;&amp; this-&gt;y == rhs.y &amp;&amp; this-&gt;z == rhs.z;
+}
+
+template &lt;typename T&gt;
+inline bool Vector3&lt;T&gt;::operator!=(const Vector3&amp; rhs) const {
+    return !operator==(rhs);
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator+=(const Vector3&lt;T&gt;&amp; other) {
+    Vector3CalcCtr&lt;T&gt;::add(*this, *this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator-=(const Vector3&lt;T&gt;&amp; other) {
+    Vector3CalcCtr&lt;T&gt;::sub(*this, *this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator*=(T t) {
+    Vector3CalcCtr&lt;T&gt;::multScalar(*this, *this, t);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator*=(const Mtx33&amp; m) {
+    mul(m);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator*=(const Mtx34&amp; m) {
+    mul(m);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector3&lt;T&gt;&amp; Vector3&lt;T&gt;::operator/=(T t) {
+    this-&gt;x /= t;
+    this-&gt;y /= t;
+    this-&gt;z /= t;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline T Vector3&lt;T&gt;::dot(const Vector3&lt;T&gt;&amp; t) const {
+    return Vector3CalcCtr&lt;T&gt;::dot(*this, t);
+}
+
+template &lt;typename T&gt;
+inline T Vector3&lt;T&gt;::length() const {
+    return Vector3CalcCtr&lt;T&gt;::length(*this);
+}
+
+template &lt;typename T&gt;
+inline T Vector3&lt;T&gt;::squaredLength() const {
+    return Vector3CalcCtr&lt;T&gt;::squaredLength(*this);
+}
+
+template &lt;typename T&gt;
+inline bool Vector3&lt;T&gt;::equals(const Vector3&lt;T&gt;&amp; rhs, T epsilon) const {
+    return Vector3CalcCtr&lt;T&gt;::equals(*this, rhs, epsilon);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::add(const Vector3&lt;T&gt;&amp; a) {
+    Vector3CalcCtr&lt;T&gt;::add(*this, *this, a);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::mul(const Mtx33&amp; m) {
+    setMul(m, *this);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::mul(const Mtx34&amp; m) {
+    setMul(m, *this);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::multScalar(T t) {
+    Vector3CalcCtr&lt;T&gt;::multScalar(*this, *this, t);
+}
+
+template &lt;typename T&gt;
+inline T Vector3&lt;T&gt;::normalize() {
+    return Vector3CalcCtr&lt;T&gt;::normalize(*this);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::set(const Vector3&lt;T&gt;&amp; other) {
+    Vector3CalcCtr&lt;T&gt;::set(*this, other);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::set(T x_, T y_, T z_) {
+    Vector3CalcCtr&lt;T&gt;::set(*this, x_, y_, z_);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::setCross(const Vector3&lt;T&gt;&amp; a, const Vector3&lt;T&gt;&amp; b) {
+    Vector3CalcCtr&lt;T&gt;::cross(*this, a, b);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::setScaleAdd(T t, const Vector3&lt;T&gt;&amp; a, const Vector3&lt;T&gt;&amp; b) {
+    Vector3CalcCtr&lt;T&gt;::multScalarAdd(*this, t, a, b);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::setMul(const Mtx33&amp; m, const Vector3&lt;T&gt;&amp; a) {
+    Vector3CalcCtr&lt;T&gt;::mul(*this, m, a);
+}
+
+template &lt;typename T&gt;
+inline void Vector3&lt;T&gt;::setMul(const Mtx34&amp; m, const Vector3&lt;T&gt;&amp; a) {
+    Vector3CalcCtr&lt;T&gt;::mul(*this, m, a);
+}
+
+template &lt;typename T&gt;
+inline Vector4&lt;T&gt;::Vector4(T x_, T y_, T z_, T w_) {
+    Vector4CalcCtr&lt;T&gt;::set(*this, x_, y_, z_, w_);
+}
+
+template &lt;typename T&gt;
+inline Vector4&lt;T&gt;&amp; Vector4&lt;T&gt;::operator+=(const Vector4&lt;T&gt;&amp; other) {
+    this-&gt;x += other.x;
+    this-&gt;y += other.y;
+    this-&gt;z += other.z;
+    this-&gt;w += other.w;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector4&lt;T&gt;&amp; Vector4&lt;T&gt;::operator-=(const Vector4&lt;T&gt;&amp; other) {
+    this-&gt;x -= other.x;
+    this-&gt;y -= other.y;
+    this-&gt;z -= other.z;
+    this-&gt;w -= other.w;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector4&lt;T&gt;&amp; Vector4&lt;T&gt;::operator*=(T t) {
+    this-&gt;x *= t;
+    this-&gt;y *= t;
+    this-&gt;z *= t;
+    this-&gt;w *= t;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector4&lt;T&gt;&amp; Vector4&lt;T&gt;::operator/=(T t) {
+    this-&gt;x /= t;
+    this-&gt;y /= t;
+    this-&gt;z /= t;
+    this-&gt;w /= t;
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline Vector4&lt;T&gt;&amp; Vector4&lt;T&gt;::operator=(const Vector4&lt;T&gt;&amp; other) {
+    Vector4CalcCtr&lt;T&gt;::set(*this, other);
+    return *this;
+}
+
+template &lt;typename T&gt;
+inline void Vector4&lt;T&gt;::set(const Vector4&lt;T&gt;&amp; other) {
+    Vector4CalcCtr&lt;T&gt;::set(*this, other);
+}
+
+template &lt;typename T&gt;
+inline void Vector4&lt;T&gt;::set(T x_, T y_, T z_, T w_) {
+    Vector4CalcCtr&lt;T&gt;::set(*this, x_, y_, z_, w_);
+}
+
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

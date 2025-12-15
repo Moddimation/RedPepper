@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::Random - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadrandom">Class sead::Random</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>Random</strong></a></p>
+<p><em>A fast non-cryptographically secure pseudorandom number generator based on Xorshift128.</em> </p>
+<ul>
+<li><code>#include &lt;seadRandom.h&gt;</code></li>
+</ul>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-random-13"><strong>Random</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-random-23"><strong>Random</strong></a> (u32 seed) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-random-33"><strong>Random</strong></a> (u32 seed_x, u32 seed_y, u32 seed_z, u32 seed_w) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-getbool"><strong>getBool</strong></a> () <br><em>Generate a random boolean.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-getcontext"><strong>getContext</strong></a> (u32 * x, u32 * y, u32 * z, u32 * w) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">f32</td>
+<td style="text-align: left;"><a href="#function-getf32"><strong>getF32</strong></a> () <br><em>Generate a random f32 in [0, 1).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">f32</td>
+<td style="text-align: left;"><a href="#function-getf32range"><strong>getF32Range</strong></a> (f32 a, f32 b) <br><em>Generate a random f32 in [a, b).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">f64</td>
+<td style="text-align: left;"><a href="#function-getf64"><strong>getF64</strong></a> () <br><em>Generate a random f64 in [0, 1).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">f64</td>
+<td style="text-align: left;"><a href="#function-getf64range"><strong>getF64Range</strong></a> (f64 a, f64 b) <br><em>Generate a random f64 in [a, b).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#function-gets32range"><strong>getS32Range</strong></a> (s32 a, s32 b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s64</td>
+<td style="text-align: left;"><a href="#function-gets64range"><strong>getS64Range</strong></a> (s64 a, s64 b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="#function-getu32-12"><strong>getU32</strong></a> () <br><em>Generate a random u32.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="#function-getu32-22"><strong>getU32</strong></a> (u32 max) <br><em>Generate a random u32 in [0 .. max).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">u64</td>
+<td style="text-align: left;"><a href="#function-getu64"><strong>getU64</strong></a> () <br><em>Generate a random u64.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-init-13"><strong>init</strong></a> () <br><em>Reset and seed the engine with the current system tick count.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-init-23"><strong>init</strong></a> (u32 seed) <br><em>Reset and seed the engine with the specified value.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-init-33"><strong>init</strong></a> (u32 seed_x, u32 seed_y, u32 seed_z, u32 seed_w) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-random-13">function Random [1/3]</h3>
+<pre><code class="language-C++">inline sead::Random::Random () 
+</code></pre>
+<hr>
+
+<h3 id="function-random-23">function Random [2/3]</h3>
+<pre><code class="language-C++">inline sead::Random::Random (
+    u32 seed
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-random-33">function Random [3/3]</h3>
+<pre><code class="language-C++">inline sead::Random::Random (
+    u32 seed_x,
+    u32 seed_y,
+    u32 seed_z,
+    u32 seed_w
+) 
+</code></pre>
+<p><strong>Warning:</strong></p>
+<p>Parameters have to be chosen carefully to get a long period. Using this is not recommended. </p>
+<hr>
+
+<h3 id="function-getbool">function getBool</h3>
+<p><em>Generate a random boolean.</em> </p>
+<pre><code class="language-C++">bool sead::Random::getBool () 
+</code></pre>
+<hr>
+
+<h3 id="function-getcontext">function getContext</h3>
+<pre><code class="language-C++">void sead::Random::getContext (
+    u32 * x,
+    u32 * y,
+    u32 * z,
+    u32 * w
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-getf32">function getF32</h3>
+<p><em>Generate a random f32 in [0, 1).</em> </p>
+<pre><code class="language-C++">inline f32 sead::Random::getF32 () 
+</code></pre>
+<hr>
+
+<h3 id="function-getf32range">function getF32Range</h3>
+<p><em>Generate a random f32 in [a, b).</em> </p>
+<pre><code class="language-C++">inline f32 sead::Random::getF32Range (
+    f32 a,
+    f32 b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getf64">function getF64</h3>
+<p><em>Generate a random f64 in [0, 1).</em> </p>
+<pre><code class="language-C++">f64 sead::Random::getF64 () 
+</code></pre>
+<hr>
+
+<h3 id="function-getf64range">function getF64Range</h3>
+<p><em>Generate a random f64 in [a, b).</em> </p>
+<pre><code class="language-C++">f64 sead::Random::getF64Range (
+    f64 a,
+    f64 b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-gets32range">function getS32Range</h3>
+<pre><code class="language-C++">inline s32 sead::Random::getS32Range (
+    s32 a,
+    s32 b
+) 
+</code></pre>
+<p>Generate a random s32 in [a .. b). Note that this does not provide a uniform distribution. </p>
+<hr>
+
+<h3 id="function-gets64range">function getS64Range</h3>
+<pre><code class="language-C++">inline s64 sead::Random::getS64Range (
+    s64 a,
+    s64 b
+) 
+</code></pre>
+<p>Generate a random s64 in [a .. b). Note that this does not provide a uniform distribution. </p>
+<hr>
+
+<h3 id="function-getu32-12">function getU32 [1/2]</h3>
+<p><em>Generate a random u32.</em> </p>
+<pre><code class="language-C++">u32 sead::Random::getU32 () 
+</code></pre>
+<hr>
+
+<h3 id="function-getu32-22">function getU32 [2/2]</h3>
+<p><em>Generate a random u32 in [0 .. max).</em> </p>
+<pre><code class="language-C++">inline u32 sead::Random::getU32 (
+    u32 max
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getu64">function getU64</h3>
+<p><em>Generate a random u64.</em> </p>
+<pre><code class="language-C++">u64 sead::Random::getU64 () 
+</code></pre>
+<hr>
+
+<h3 id="function-init-13">function init [1/3]</h3>
+<p><em>Reset and seed the engine with the current system tick count.</em> </p>
+<pre><code class="language-C++">void sead::Random::init () 
+</code></pre>
+<hr>
+
+<h3 id="function-init-23">function init [2/3]</h3>
+<p><em>Reset and seed the engine with the specified value.</em> </p>
+<pre><code class="language-C++">void sead::Random::init (
+    u32 seed
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-init-33">function init [3/3]</h3>
+<pre><code class="language-C++">void sead::Random::init (
+    u32 seed_x,
+    u32 seed_y,
+    u32 seed_z,
+    u32 seed_w
+) 
+</code></pre>
+<p><strong>Warning:</strong></p>
+<p>Parameters have to be chosen carefully to get a long period. Using this is not recommended. </p>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/random/seadRandom.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

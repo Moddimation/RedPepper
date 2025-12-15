@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File TrickHintPanel.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-trickhintpanelcpp">File TrickHintPanel.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_c33286056d2acf479cd8641ef845fec1/"><strong>Game</strong></a> <strong>&gt;</strong> <a href="../dir_d858f423bf5825f9a3db826b6a54a3cc/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_9fb1f6495822aa302d379b21d455a7ad/"><strong>MapObj</strong></a> <strong>&gt;</strong> <a href="../_trick_hint_panel_8cpp/"><strong>TrickHintPanel.cpp</strong></a></p>
+<p><a href="../_trick_hint_panel_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &quot;MapObj/TrickHintPanel.h&quot;
+
+#include &lt;LiveActor/alActorActionKeeper.h&gt;
+#include &lt;LiveActor/alActorInitUtil.h&gt;
+#include &lt;LiveActor/alLiveActorFunction.h&gt;
+#include &lt;LiveActor/alSensorMsg.h&gt;
+#include &lt;Nerve/alNerve.h&gt;
+#include &lt;Nerve/alNerveFunction.h&gt;
+#include &lt;Nerve/alNerveStateBase.h&gt;
+
+namespace NrvTrickHintPanel
+{
+
+NERVE_DEF( TrickHintPanel, Wait );
+NERVE_DEF( TrickHintPanel, On );
+NERVE_DEF( TrickHintPanel, nrv3 );
+NERVE_DEF( TrickHintPanel, Off );
+
+} // namespace NrvTrickHintPanel
+
+TrickHintPanel::TrickHintPanel( const sead::SafeString&amp; name )
+    : MapObjActor( name ), _96( 0 ), mPlayedSound( false )
+{
+}
+
+extern &quot;C&quot; u32 FUN_002278CC( al::LiveActor* actor, char* str );
+
+void TrickHintPanel::init( const al::ActorInitInfo&amp; info )
+{
+        al::initActor( this, info );
+        al::initNerve( this, &amp;NrvTrickHintPanel::Wait, 0 );
+        _96 = FUN_002278CC( this, &quot;&quot; );
+        makeActorAppeared();
+}
+
+bool TrickHintPanel::receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me )
+{
+        if ( al::isMsgPlayerFloorTouch( msg ) )
+        {
+                if ( al::isNerve( this, &amp;NrvTrickHintPanel::Wait ) )
+                {
+                        al::setNerve( this, &amp;NrvTrickHintPanel::On );
+                        return true;
+                }
+
+                if ( al::isNerve( this, &amp;NrvTrickHintPanel::nrv3 ) )
+                {
+                        al::setNerve( this, &amp;NrvTrickHintPanel::nrv3 );
+                        return true;
+                }
+        }
+        return false;
+}
+
+void TrickHintPanel::exeWait()
+{
+}
+
+extern &quot;C&quot; int FUN_0026A9B8( u32 );
+extern &quot;C&quot; int FUN_0026AA60( u32 );
+extern &quot;C&quot; int FUN_002786F4();
+
+#ifdef NON_MATCHING
+
+// inline nops
+void TrickHintPanel::exeOn()
+{
+        if ( !mPlayedSound )
+        {
+                al::startHitReactionStart( this );
+                mPlayedSound = true;
+        }
+        al::startHitReaction( this, &quot;オン&quot; ); // &quot;オン&quot; -&gt; On
+        FUN_0026A9B8( _96 );
+        al::invalidateClipping( this );
+        al::setNerve( this, &amp;NrvTrickHintPanel::nrv3 );
+}
+#endif
+
+void TrickHintPanel::exenrv3()
+{
+        if ( !FUN_002786F4() || al::isGreaterStep( this, 20 ) )
+                al::setNerve( this, &amp;NrvTrickHintPanel::Off );
+}
+
+void TrickHintPanel::exeOff()
+{
+        if ( FUN_002786F4() )
+        {
+                FUN_0026AA60( _96 );
+                al::validateClipping( this );
+                al::setNerve( this, &amp;NrvTrickHintPanel::Wait );
+        }
+}
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1961 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1FileDevice" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>sead::FileDevice</compoundname>
+    <basecompoundref refid="classsead_1_1TListNode" prot="public" virt="non-virtual">sead::TListNode&lt; FileDevice * &gt;</basecompoundref>
+    <basecompoundref refid="classsead_1_1IDisposer" prot="public" virt="non-virtual">sead::IDisposer</basecompoundref>
+    <innerclass refid="structsead_1_1FileDevice_1_1LoadArg" prot="public">sead::FileDevice::LoadArg</innerclass>
+    <innerclass refid="structsead_1_1FileDevice_1_1SaveArg" prot="public">sead::FileDevice::SaveArg</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FileOpenFlag</name>
+        <qualifiedname>sead::FileDevice::FileOpenFlag</qualifiedname>
+        <enumvalue id="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea86de4a36d87d60ecb87a9e3319225cec" prot="public">
+          <name>cFileOpenFlag_ReadOnly</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea8568f237040af4d8e9a64c76eb5b7e7b" prot="public">
+          <name>cFileOpenFlag_WriteOnly</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea2e5a237be07358cc9534a90a82e9c84e" prot="public">
+          <name>cFileOpenFlag_ReadWrite</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea555709d0d0505c334d7c908361484d13" prot="public">
+          <name>cFileOpenFlag_Create</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="44" column="5" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SeekOrigin</name>
+        <qualifiedname>sead::FileDevice::SeekOrigin</qualifiedname>
+        <enumvalue id="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29afc9e1feacf5ccc99c9f106ec3035e96c" prot="public">
+          <name>cSeekOrigin_Begin</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29a4757baca9b89ef242e964c0eaa368062" prot="public">
+          <name>cSeekOrigin_Current</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29ad9e1dbaa5ce9807e767a625a25d86eb0" prot="public">
+          <name>cSeekOrigin_End</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="51" column="5" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsead_1_1FileDevice_1ac017d67214a54d4c18367e5a2ac4c6cb" prot="public" static="yes" mutable="no">
+        <type>const s32</type>
+        <definition>const s32 sead::FileDevice::cBufferMinAlignment</definition>
+        <argsstring></argsstring>
+        <name>cBufferMinAlignment</name>
+        <qualifiedname>sead::FileDevice::cBufferMinAlignment</qualifiedname>
+        <initializer>= 0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="300" column="22" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1FileDevice_1a2955b18f2d061f836214937d3f202a06" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsead_1_1FixedSafeString" kindref="compound">FixedSafeString</ref>&lt; 32 &gt;</type>
+        <definition>FixedSafeString&lt;32&gt; sead::FileDevice::mDriveName</definition>
+        <argsstring></argsstring>
+        <name>mDriveName</name>
+        <qualifiedname>sead::FileDevice::mDriveName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="334" column="21" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1FileDevice_1a1f78043ad649afa617834c9617b4fd05" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::mPermission</definition>
+        <argsstring></argsstring>
+        <name>mPermission</name>
+        <qualifiedname>sead::FileDevice::mPermission</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="335" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a69159c85f8f197926ba1ee28f0e3e356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::FileDevice::FileDevice</definition>
+        <argsstring>()</argsstring>
+        <name>FileDevice</name>
+        <qualifiedname>sead::FileDevice::FileDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="84" column="5" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ae0795cffbf21a8dff087f36bda13ed17" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::FileDevice::FileDevice</definition>
+        <argsstring>(const SafeString &amp;name)</argsstring>
+        <name>FileDevice</name>
+        <qualifiedname>sead::FileDevice::FileDevice</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="86" column="14" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a1d62978cc09e3f0a54cd64eb77cea5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sead::FileDevice::~FileDevice</definition>
+        <argsstring>()</argsstring>
+        <name>~FileDevice</name>
+        <qualifiedname>sead::FileDevice::~FileDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="91" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a186c8cdcecdb8ab5ef8ef0eecc0f4489" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+        <definition>const SafeString &amp; sead::FileDevice::getDriveName</definition>
+        <argsstring>() const</argsstring>
+        <name>getDriveName</name>
+        <qualifiedname>sead::FileDevice::getDriveName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="93" column="22" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ad875c052b098a056e0a0cc1479a13770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FileDevice::setDriveName</definition>
+        <argsstring>(const SafeString &amp;name)</argsstring>
+        <name>setDriveName</name>
+        <qualifiedname>sead::FileDevice::setDriveName</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="95" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ad7635ecad0563ee711ef33233310550f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::hasPermission</definition>
+        <argsstring>() const</argsstring>
+        <name>hasPermission</name>
+        <qualifiedname>sead::FileDevice::hasPermission</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="103" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac5dd30105251cfec954733f06ca88cc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FileDevice::setHasPermission</definition>
+        <argsstring>(bool perm)</argsstring>
+        <name>setHasPermission</name>
+        <qualifiedname>sead::FileDevice::setHasPermission</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>perm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="105" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ab64bd95f3e268a27171e2802c0be0b9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::isAvailable</definition>
+        <argsstring>() const</argsstring>
+        <name>isAvailable</name>
+        <qualifiedname>sead::FileDevice::isAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac4efc7ae25740160f46d8cd758d5eb70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8 *</type>
+        <definition>u8 * sead::FileDevice::tryLoad</definition>
+        <argsstring>(LoadArg &amp;arg)</argsstring>
+        <name>tryLoad</name>
+        <qualifiedname>sead::FileDevice::tryLoad</qualifiedname>
+        <param>
+          <type><ref refid="structsead_1_1FileDevice_1_1LoadArg" kindref="compound">LoadArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="109" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a4edbeb7b5b44e76b59972799e6af9525" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::save</definition>
+        <argsstring>(SaveArg &amp;arg)</argsstring>
+        <name>save</name>
+        <qualifiedname>sead::FileDevice::save</qualifiedname>
+        <param>
+          <type><ref refid="structsead_1_1FileDevice_1_1SaveArg" kindref="compound">SaveArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="111" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="111" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a965c4dffd48247ae498735538db61486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::trySave</definition>
+        <argsstring>(SaveArg &amp;arg)</argsstring>
+        <name>trySave</name>
+        <qualifiedname>sead::FileDevice::trySave</qualifiedname>
+        <param>
+          <type><ref refid="structsead_1_1FileDevice_1_1SaveArg" kindref="compound">SaveArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a51d3da05079989db37702df1eefc35c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice * sead::FileDevice::open</definition>
+        <argsstring>(FileHandle *handle, const SafeString &amp;path, FileOpenFlag flag, u32 divSize=0)</argsstring>
+        <name>open</name>
+        <qualifiedname>sead::FileDevice::open</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>FileOpenFlag</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>divSize</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="121" column="16" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="121" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac8cccb553c624aa8e26f0ca2fecb1a99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice * sead::FileDevice::tryOpen</definition>
+        <argsstring>(FileHandle *handle, const SafeString &amp;path, FileOpenFlag flag, u32 divSize=0)</argsstring>
+        <name>tryOpen</name>
+        <qualifiedname>sead::FileDevice::tryOpen</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>FileOpenFlag</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>divSize</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="131" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1af0baf8385420389e4883f07affa99f60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::close</definition>
+        <argsstring>(FileHandle *handle)</argsstring>
+        <name>close</name>
+        <qualifiedname>sead::FileDevice::close</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="134" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="134" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a40bced68b401f553adfa95bc65314c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryClose</definition>
+        <argsstring>(FileHandle *handle)</argsstring>
+        <name>tryClose</name>
+        <qualifiedname>sead::FileDevice::tryClose</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a5b263da48946655cb0fe44de61872f3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::flush</definition>
+        <argsstring>(FileHandle *handle)</argsstring>
+        <name>flush</name>
+        <qualifiedname>sead::FileDevice::flush</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="144" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="144" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a9d1b506d40459519290e4f354df22711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryFlush</definition>
+        <argsstring>(FileHandle *handle)</argsstring>
+        <name>tryFlush</name>
+        <qualifiedname>sead::FileDevice::tryFlush</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ad1baac48c2285606e8b6dd23c406104d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::remove</definition>
+        <argsstring>(const SafeString &amp;str)</argsstring>
+        <name>remove</name>
+        <qualifiedname>sead::FileDevice::remove</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="154" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a6e9974adb9ad4b24e510860381f1bff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryRemove</definition>
+        <argsstring>(const SafeString &amp;str)</argsstring>
+        <name>tryRemove</name>
+        <qualifiedname>sead::FileDevice::tryRemove</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a5de2bfdb5d3a9469e5607d3e88521a8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::FileDevice::read</definition>
+        <argsstring>(FileHandle *handle, u8 *data, u32 size)</argsstring>
+        <name>read</name>
+        <qualifiedname>sead::FileDevice::read</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="164" column="9" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a82967cb13edaa293df29fe06fb23999f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryRead</definition>
+        <argsstring>(u32 *bytesRead, FileHandle *handle, u8 *outBuffer, u32 bytesToRead)</argsstring>
+        <name>tryRead</name>
+        <qualifiedname>sead::FileDevice::tryRead</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>bytesRead</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>outBuffer</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>bytesToRead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a8246178536bd765e06482de5822231ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::FileDevice::write</definition>
+        <argsstring>(FileHandle *handle, const u8 *data, u32 size)</argsstring>
+        <name>write</name>
+        <qualifiedname>sead::FileDevice::write</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="173" column="9" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a9a695184420ce315a1f7d455b9c17ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryWrite</definition>
+        <argsstring>(u32 *bytesWritten, FileHandle *handle, const u8 *inBuffer, u32 bytesToWrite)</argsstring>
+        <name>tryWrite</name>
+        <qualifiedname>sead::FileDevice::tryWrite</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>bytesWritten</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>inBuffer</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>bytesToWrite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="180" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a9db3902bb2236605656280e3663ae42e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::seek</definition>
+        <argsstring>(FileHandle *handle, s32 offset, SeekOrigin origin)</argsstring>
+        <name>seek</name>
+        <qualifiedname>sead::FileDevice::seek</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>SeekOrigin</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="182" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="182" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a3a785708c4a545551594f711048f6d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::trySeek</definition>
+        <argsstring>(FileHandle *handle, s32 offset, SeekOrigin origin)</argsstring>
+        <name>trySeek</name>
+        <qualifiedname>sead::FileDevice::trySeek</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>SeekOrigin</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a27d18ecf03c5c3cb6073f6f0df005c3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::FileDevice::getCurrentSeekPos</definition>
+        <argsstring>(FileHandle *handle)</argsstring>
+        <name>getCurrentSeekPos</name>
+        <qualifiedname>sead::FileDevice::getCurrentSeekPos</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="192" column="9" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ab7706e9cdd4b2b22770697d8c26bdf24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryGetCurrentSeekPos</definition>
+        <argsstring>(u32 *seekPos, FileHandle *handle)</argsstring>
+        <name>tryGetCurrentSeekPos</name>
+        <qualifiedname>sead::FileDevice::tryGetCurrentSeekPos</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>seekPos</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="199" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac22b6c9fd4bfdccba4d75299dee54a6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::FileDevice::getFileSize</definition>
+        <argsstring>(const SafeString &amp;path)</argsstring>
+        <name>getFileSize</name>
+        <qualifiedname>sead::FileDevice::getFileSize</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="201" column="9" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="201" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a563e14de359f06f7d10727533129d8c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryGetFileSize</definition>
+        <argsstring>(u32 *fileSize, const SafeString &amp;path)</argsstring>
+        <name>tryGetFileSize</name>
+        <qualifiedname>sead::FileDevice::tryGetFileSize</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>fileSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="208" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a51b0f9b41f114a156a2b49f6b26eeeb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::FileDevice::getFileSize</definition>
+        <argsstring>(FileHandle *handle)</argsstring>
+        <name>getFileSize</name>
+        <qualifiedname>sead::FileDevice::getFileSize</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="210" column="9" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="210" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a3ccab776de7e3be2120de4ca505b56ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryGetFileSize</definition>
+        <argsstring>(u32 *size, FileHandle *handle)</argsstring>
+        <name>tryGetFileSize</name>
+        <qualifiedname>sead::FileDevice::tryGetFileSize</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="217" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a31ca9b4f899d2551b830fd67f59f084f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::isExistFile</definition>
+        <argsstring>(const SafeString &amp;path)</argsstring>
+        <name>isExistFile</name>
+        <qualifiedname>sead::FileDevice::isExistFile</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="219" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="219" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a0c321bc366d95098aa97bd89a5bbd98b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryIsExistFile</definition>
+        <argsstring>(bool *exists, const SafeString &amp;path)</argsstring>
+        <name>tryIsExistFile</name>
+        <qualifiedname>sead::FileDevice::tryIsExistFile</qualifiedname>
+        <param>
+          <type>bool *</type>
+          <declname>exists</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="226" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a709669264aa7d244f9bcc02cea70db79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::isExistDirectory</definition>
+        <argsstring>(const SafeString &amp;path)</argsstring>
+        <name>isExistDirectory</name>
+        <qualifiedname>sead::FileDevice::isExistDirectory</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="228" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="228" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a696c7fa09d9de4a4c6c1d2e713f6e8d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryIsExistDirectory</definition>
+        <argsstring>(bool *exists, const SafeString &amp;path)</argsstring>
+        <name>tryIsExistDirectory</name>
+        <qualifiedname>sead::FileDevice::tryIsExistDirectory</qualifiedname>
+        <param>
+          <type>bool *</type>
+          <declname>exists</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="235" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac21b756944aed7dd44ec9a256db8856e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice * sead::FileDevice::openDirectory</definition>
+        <argsstring>(DirectoryHandle *handle, const SafeString &amp;path)</argsstring>
+        <name>openDirectory</name>
+        <qualifiedname>sead::FileDevice::openDirectory</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="237" column="16" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="237" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac4520467032716eb55f9597e2ff02ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice * sead::FileDevice::tryOpenDirectory</definition>
+        <argsstring>(DirectoryHandle *handle, const SafeString &amp;path)</argsstring>
+        <name>tryOpenDirectory</name>
+        <qualifiedname>sead::FileDevice::tryOpenDirectory</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="246" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1abdb5b64b2669a69f9ea0cec0f695f7b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::closeDirectory</definition>
+        <argsstring>(DirectoryHandle *handle)</argsstring>
+        <name>closeDirectory</name>
+        <qualifiedname>sead::FileDevice::closeDirectory</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="248" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="248" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1adf87b8129b9849c881e35aaf653fd49f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryCloseDirectory</definition>
+        <argsstring>(DirectoryHandle *handle)</argsstring>
+        <name>tryCloseDirectory</name>
+        <qualifiedname>sead::FileDevice::tryCloseDirectory</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="256" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a29fbe2591dee5fd417b24de8adf66c76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::FileDevice::readDirectory</definition>
+        <argsstring>(DirectoryHandle *handle, DirectoryEntry *entries, u32 num_entries)</argsstring>
+        <name>readDirectory</name>
+        <qualifiedname>sead::FileDevice::readDirectory</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="structsead_1_1DirectoryEntry" kindref="compound">DirectoryEntry</ref> *</type>
+          <declname>entries</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>num_entries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="258" column="9" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="258" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a6c3c478169c9611db8db724ccca40ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryReadDirectory</definition>
+        <argsstring>(u32 *entriesRead, DirectoryHandle *handle, DirectoryEntry *entries, u32 entriesToRead)</argsstring>
+        <name>tryReadDirectory</name>
+        <qualifiedname>sead::FileDevice::tryReadDirectory</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>entriesRead</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="structsead_1_1DirectoryEntry" kindref="compound">DirectoryEntry</ref> *</type>
+          <declname>entries</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>entriesToRead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="265" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a75b157868fd945ff12132951c9a4b7cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::makeDirectory</definition>
+        <argsstring>(const SafeString &amp;path, u32 x)</argsstring>
+        <name>makeDirectory</name>
+        <qualifiedname>sead::FileDevice::makeDirectory</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="269" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="269" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a313d81bc4db8a6ec22d5577a2cab9479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryMakeDirectory</definition>
+        <argsstring>(const SafeString &amp;path, u32)</argsstring>
+        <name>tryMakeDirectory</name>
+        <qualifiedname>sead::FileDevice::tryMakeDirectory</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>u32</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="277" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a807057c828e24ef3f60584ca3a034572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::makeDirectoryWithParent</definition>
+        <argsstring>(const SafeString &amp;path, u32 x)</argsstring>
+        <name>makeDirectoryWithParent</name>
+        <qualifiedname>sead::FileDevice::makeDirectoryWithParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="279" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="279" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ab89dc573d3c1f2cd157d4a1c19aa437f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::FileDevice::tryMakeDirectoryWithParent</definition>
+        <argsstring>(const SafeString &amp;path, u32)</argsstring>
+        <name>tryMakeDirectoryWithParent</name>
+        <qualifiedname>sead::FileDevice::tryMakeDirectoryWithParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>u32</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="287" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a77e689089136df0629942ffe1fd6aacc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::FileDevice::getLastRawError</definition>
+        <argsstring>() const</argsstring>
+        <name>getLastRawError</name>
+        <qualifiedname>sead::FileDevice::getLastRawError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="289" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ad0eee3a76e72fea584f831c8099b7455" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FileDevice::traceFilePath</definition>
+        <argsstring>(const SafeString &amp;path) const</argsstring>
+        <name>traceFilePath</name>
+        <qualifiedname>sead::FileDevice::traceFilePath</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="291" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a03ceb8110ef5a2c69827e20b1ca2553b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FileDevice::traceDirectoryPath</definition>
+        <argsstring>(const SafeString &amp;path) const</argsstring>
+        <name>traceDirectoryPath</name>
+        <qualifiedname>sead::FileDevice::traceDirectoryPath</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="292" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1aafecc84d3bb872a8cbf5ab6f7a4da5f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FileDevice::resolveFilePath</definition>
+        <argsstring>(BufferedSafeString *out, const SafeString &amp;path) const</argsstring>
+        <name>resolveFilePath</name>
+        <qualifiedname>sead::FileDevice::resolveFilePath</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1BufferedSafeStringBase" kindref="compound">BufferedSafeString</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="293" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac21ce1de7725e5ffe82f7dcf77fdaf57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FileDevice::resolveDirectoryPath</definition>
+        <argsstring>(BufferedSafeString *out, const SafeString &amp;path) const</argsstring>
+        <name>resolveDirectoryPath</name>
+        <qualifiedname>sead::FileDevice::resolveDirectoryPath</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1BufferedSafeStringBase" kindref="compound">BufferedSafeString</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="294" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a851caaff885d3dc94216020c21d967c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::isMatchDevice_</definition>
+        <argsstring>(const HandleBase *handle) const</argsstring>
+        <name>isMatchDevice_</name>
+        <qualifiedname>sead::FileDevice::isMatchDevice_</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1HandleBase" kindref="compound">HandleBase</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="295" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a71201e8905adcd655bbf76cddb0dd3c3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doIsAvailable_</definition>
+        <argsstring>() const =0</argsstring>
+        <name>doIsAvailable_</name>
+        <qualifiedname>sead::FileDevice::doIsAvailable_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="304" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a36cd7ef9cfc8d188d9e9583de967dedb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>u8 *</type>
+        <definition>virtual u8 * sead::FileDevice::doLoad_</definition>
+        <argsstring>(LoadArg &amp;arg)</argsstring>
+        <name>doLoad_</name>
+        <qualifiedname>sead::FileDevice::doLoad_</qualifiedname>
+        <param>
+          <type><ref refid="structsead_1_1FileDevice_1_1LoadArg" kindref="compound">LoadArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="305" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ac4b5c6db5f5a788bbfacb99bfaeccdc7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doSave_</definition>
+        <argsstring>(SaveArg &amp;arg)</argsstring>
+        <name>doSave_</name>
+        <qualifiedname>sead::FileDevice::doSave_</qualifiedname>
+        <param>
+          <type><ref refid="structsead_1_1FileDevice_1_1SaveArg" kindref="compound">SaveArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="306" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a13c7cf8857aba7a609faf1b3d13258dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+        <definition>virtual FileDevice * sead::FileDevice::doOpen_</definition>
+        <argsstring>(FileHandle *handle, const SafeString &amp;path, FileOpenFlag flag)=0</argsstring>
+        <name>doOpen_</name>
+        <qualifiedname>sead::FileDevice::doOpen_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>FileOpenFlag</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="307" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a6a0aa1d3e2c60a2c30cd2edb90d9ff6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doClose_</definition>
+        <argsstring>(FileHandle *handle)=0</argsstring>
+        <name>doClose_</name>
+        <qualifiedname>sead::FileDevice::doClose_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="308" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a80b8c67f73b3f45e4626bc970c6fcfae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doFlush_</definition>
+        <argsstring>(FileHandle *handle)=0</argsstring>
+        <name>doFlush_</name>
+        <qualifiedname>sead::FileDevice::doFlush_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="309" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1abb057fbe719fc68b07200a20dd3bff39" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doRemove_</definition>
+        <argsstring>(const SafeString &amp;str)=0</argsstring>
+        <name>doRemove_</name>
+        <qualifiedname>sead::FileDevice::doRemove_</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="310" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a8766f64d18be7c800b0200adf8c44c13" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doRead_</definition>
+        <argsstring>(u32 *bytesRead, FileHandle *handle, u8 *outBuffer, u32 bytesToRead)=0</argsstring>
+        <name>doRead_</name>
+        <qualifiedname>sead::FileDevice::doRead_</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>bytesRead</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>u8 *</type>
+          <declname>outBuffer</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>bytesToRead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="311" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ad3d5dd39afdd422c9861356d942158b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doWrite_</definition>
+        <argsstring>(u32 *bytesWritten, FileHandle *handle, const u8 *inBuffer, u32 bytesToWrite)=0</argsstring>
+        <name>doWrite_</name>
+        <qualifiedname>sead::FileDevice::doWrite_</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>bytesWritten</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const u8 *</type>
+          <declname>inBuffer</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>bytesToWrite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="312" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a790458d92614b0fce940c2b6c1e1cca7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doSeek_</definition>
+        <argsstring>(FileHandle *handle, s32 offset, SeekOrigin origin)=0</argsstring>
+        <name>doSeek_</name>
+        <qualifiedname>sead::FileDevice::doSeek_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>SeekOrigin</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="314" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a2a177e35ac8d02b767a0f885286d0c0b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doGetCurrentSeekPos_</definition>
+        <argsstring>(u32 *seekPos, FileHandle *handle)=0</argsstring>
+        <name>doGetCurrentSeekPos_</name>
+        <qualifiedname>sead::FileDevice::doGetCurrentSeekPos_</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>seekPos</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="315" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a77f081eb6ad22df62641db8b14a039b5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doGetFileSize_</definition>
+        <argsstring>(u32 *fileSize, const SafeString &amp;path)=0</argsstring>
+        <name>doGetFileSize_</name>
+        <qualifiedname>sead::FileDevice::doGetFileSize_</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>fileSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="316" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a11b0dc769662a61a095e01c7195ec43d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doGetFileSize_</definition>
+        <argsstring>(u32 *fileSize, FileHandle *handle)=0</argsstring>
+        <name>doGetFileSize_</name>
+        <qualifiedname>sead::FileDevice::doGetFileSize_</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>fileSize</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="317" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a5def144e7d00a04e7af93342f26eb602" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doIsExistFile_</definition>
+        <argsstring>(bool *exists, const SafeString &amp;path)=0</argsstring>
+        <name>doIsExistFile_</name>
+        <qualifiedname>sead::FileDevice::doIsExistFile_</qualifiedname>
+        <param>
+          <type>bool *</type>
+          <declname>exists</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="318" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a314aff47ea9fb130c0de0f17cb848255" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doIsExistDirectory_</definition>
+        <argsstring>(bool *exists, const SafeString &amp;path)=0</argsstring>
+        <name>doIsExistDirectory_</name>
+        <qualifiedname>sead::FileDevice::doIsExistDirectory_</qualifiedname>
+        <param>
+          <type>bool *</type>
+          <declname>exists</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="319" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1aafde41ddc94f26ebcd345e14e667c8bf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+        <definition>virtual FileDevice * sead::FileDevice::doOpenDirectory_</definition>
+        <argsstring>(DirectoryHandle *handle, const SafeString &amp;path)=0</argsstring>
+        <name>doOpenDirectory_</name>
+        <qualifiedname>sead::FileDevice::doOpenDirectory_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="320" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ab1865369951e19c90d86930990657f62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doCloseDirectory_</definition>
+        <argsstring>(DirectoryHandle *handle)=0</argsstring>
+        <name>doCloseDirectory_</name>
+        <qualifiedname>sead::FileDevice::doCloseDirectory_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="321" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a7bb989a2d729e56d6a9d84012280a2d2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doReadDirectory_</definition>
+        <argsstring>(u32 *entriesRead, DirectoryHandle *handle, DirectoryEntry *entries, u32 entriesToRead)=0</argsstring>
+        <name>doReadDirectory_</name>
+        <qualifiedname>sead::FileDevice::doReadDirectory_</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>entriesRead</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1DirectoryHandle" kindref="compound">DirectoryHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="structsead_1_1DirectoryEntry" kindref="compound">DirectoryEntry</ref> *</type>
+          <declname>entries</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>entriesToRead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="322" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a043484a9ed8b7ae7848a06ee983e7fde" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::FileDevice::doMakeDirectory_</definition>
+        <argsstring>(const SafeString &amp;path, u32)=0</argsstring>
+        <name>doMakeDirectory_</name>
+        <qualifiedname>sead::FileDevice::doMakeDirectory_</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>u32</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="324" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ae41ef0fb453f1c639dbae1bbc69a9de5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>s32</type>
+        <definition>virtual s32 sead::FileDevice::doGetLastRawError_</definition>
+        <argsstring>() const =0</argsstring>
+        <name>doGetLastRawError_</name>
+        <qualifiedname>sead::FileDevice::doGetLastRawError_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="325" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ad4da374f01c0bb7c1e9d6738a36b88e0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FileDevice::doTracePath_</definition>
+        <argsstring>(const SafeString &amp;path) const</argsstring>
+        <name>doTracePath_</name>
+        <qualifiedname>sead::FileDevice::doTracePath_</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="326" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1ab0e29576251671635f491c8d567bdd7f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::FileDevice::doResolvePath_</definition>
+        <argsstring>(BufferedSafeString *out, const SafeString &amp;path) const</argsstring>
+        <name>doResolvePath_</name>
+        <qualifiedname>sead::FileDevice::doResolvePath_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1BufferedSafeStringBase" kindref="compound">BufferedSafeString</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1SafeStringBase" kindref="compound">SafeString</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="327" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a2916099ff28d845d52ba867b23e397e3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FileDevice::setFileHandleDivSize_</definition>
+        <argsstring>(FileHandle *handle, u32 divSize) const</argsstring>
+        <name>setFileHandleDivSize_</name>
+        <qualifiedname>sead::FileDevice::setFileHandleDivSize_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1FileHandle" kindref="compound">FileHandle</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>divSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="329" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1adc314d4fe584e3d5f37c0bc22c950bcc" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FileDevice::setHandleBaseFileDevice_</definition>
+        <argsstring>(HandleBase *handle, FileDevice *device) const</argsstring>
+        <name>setHandleBaseFileDevice_</name>
+        <qualifiedname>sead::FileDevice::setHandleBaseFileDevice_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1HandleBase" kindref="compound">HandleBase</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="330" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1aac0269c4feed812491fe5a89ae019eb8" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::FileDevice::setHandleBaseOriginalFileDevice_</definition>
+        <argsstring>(HandleBase *handle, FileDevice *device) const</argsstring>
+        <name>setHandleBaseOriginalFileDevice_</name>
+        <qualifiedname>sead::FileDevice::setHandleBaseOriginalFileDevice_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1HandleBase" kindref="compound">HandleBase</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1FileDevice" kindref="compound">FileDevice</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="331" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1FileDevice_1a974bdcc1c5fca9069fef7fb65f3c0745" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray" kindref="compound">HandleBuffer</ref> &amp;</type>
+        <definition>HandleBuffer &amp; sead::FileDevice::getHandleBaseHandleBuffer_</definition>
+        <argsstring>(HandleBase *handle) const</argsstring>
+        <name>getHandleBaseHandleBuffer_</name>
+        <qualifiedname>sead::FileDevice::getHandleBaseHandleBuffer_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1HandleBase" kindref="compound">HandleBase</ref> *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="332" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::TListNode&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1TListNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::FileDevice</label>
+        <link refid="classsead_1_1FileDevice"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1IDisposer"/>
+      </node>
+      <node id="3">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1ListNode"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>sead::FixedSafeString&lt; 32 &gt;</label>
+        <link refid="classsead_1_1FixedSafeString"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::FixedSafeStringBase&lt; char, L &gt;</label>
+        <link refid="classsead_1_1FixedSafeStringBase"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::TList&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1TList"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::TListNode&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1TListNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mList</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::BufferedSafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1BufferedSafeStringBase"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::FileDevice</label>
+        <link refid="classsead_1_1FileDevice"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mDriveName</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1IDisposer"/>
+      </node>
+      <node id="5">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1ListImpl"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1ListNode"/>
+      </node>
+      <node id="11">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1SafeStringBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/filedevice/seadFileDevice.h" line="40" column="1" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="40" bodyend="336"/>
+    <listofallmembers>
+      <member refid="classsead_1_1FileDevice_1ac017d67214a54d4c18367e5a2ac4c6cb" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cBufferMinAlignment</name></member>
+      <member refid="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea555709d0d0505c334d7c908361484d13" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cFileOpenFlag_Create</name></member>
+      <member refid="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea86de4a36d87d60ecb87a9e3319225cec" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cFileOpenFlag_ReadOnly</name></member>
+      <member refid="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea2e5a237be07358cc9534a90a82e9c84e" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cFileOpenFlag_ReadWrite</name></member>
+      <member refid="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84ea8568f237040af4d8e9a64c76eb5b7e7b" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cFileOpenFlag_WriteOnly</name></member>
+      <member refid="classsead_1_1FileDevice_1af0baf8385420389e4883f07affa99f60" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>close</name></member>
+      <member refid="classsead_1_1FileDevice_1abdb5b64b2669a69f9ea0cec0f695f7b1" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>closeDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29afc9e1feacf5ccc99c9f106ec3035e96c" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cSeekOrigin_Begin</name></member>
+      <member refid="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29a4757baca9b89ef242e964c0eaa368062" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cSeekOrigin_Current</name></member>
+      <member refid="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29ad9e1dbaa5ce9807e767a625a25d86eb0" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>cSeekOrigin_End</name></member>
+      <member refid="classsead_1_1FileDevice_1a6a0aa1d3e2c60a2c30cd2edb90d9ff6c" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doClose_</name></member>
+      <member refid="classsead_1_1FileDevice_1ab1865369951e19c90d86930990657f62" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doCloseDirectory_</name></member>
+      <member refid="classsead_1_1FileDevice_1a80b8c67f73b3f45e4626bc970c6fcfae" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doFlush_</name></member>
+      <member refid="classsead_1_1FileDevice_1a2a177e35ac8d02b767a0f885286d0c0b" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doGetCurrentSeekPos_</name></member>
+      <member refid="classsead_1_1FileDevice_1a77f081eb6ad22df62641db8b14a039b5" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doGetFileSize_</name></member>
+      <member refid="classsead_1_1FileDevice_1a11b0dc769662a61a095e01c7195ec43d" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doGetFileSize_</name></member>
+      <member refid="classsead_1_1FileDevice_1ae41ef0fb453f1c639dbae1bbc69a9de5" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doGetLastRawError_</name></member>
+      <member refid="classsead_1_1FileDevice_1a71201e8905adcd655bbf76cddb0dd3c3" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doIsAvailable_</name></member>
+      <member refid="classsead_1_1FileDevice_1a314aff47ea9fb130c0de0f17cb848255" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doIsExistDirectory_</name></member>
+      <member refid="classsead_1_1FileDevice_1a5def144e7d00a04e7af93342f26eb602" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doIsExistFile_</name></member>
+      <member refid="classsead_1_1FileDevice_1a36cd7ef9cfc8d188d9e9583de967dedb" prot="protected" virt="virtual"><scope>sead::FileDevice</scope><name>doLoad_</name></member>
+      <member refid="classsead_1_1FileDevice_1a043484a9ed8b7ae7848a06ee983e7fde" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doMakeDirectory_</name></member>
+      <member refid="classsead_1_1FileDevice_1a13c7cf8857aba7a609faf1b3d13258dc" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doOpen_</name></member>
+      <member refid="classsead_1_1FileDevice_1aafde41ddc94f26ebcd345e14e667c8bf" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doOpenDirectory_</name></member>
+      <member refid="classsead_1_1FileDevice_1a8766f64d18be7c800b0200adf8c44c13" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doRead_</name></member>
+      <member refid="classsead_1_1FileDevice_1a7bb989a2d729e56d6a9d84012280a2d2" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doReadDirectory_</name></member>
+      <member refid="classsead_1_1FileDevice_1abb057fbe719fc68b07200a20dd3bff39" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doRemove_</name></member>
+      <member refid="classsead_1_1FileDevice_1ab0e29576251671635f491c8d567bdd7f" prot="protected" virt="virtual"><scope>sead::FileDevice</scope><name>doResolvePath_</name></member>
+      <member refid="classsead_1_1FileDevice_1ac4b5c6db5f5a788bbfacb99bfaeccdc7" prot="protected" virt="virtual"><scope>sead::FileDevice</scope><name>doSave_</name></member>
+      <member refid="classsead_1_1FileDevice_1a790458d92614b0fce940c2b6c1e1cca7" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doSeek_</name></member>
+      <member refid="classsead_1_1FileDevice_1ad4da374f01c0bb7c1e9d6738a36b88e0" prot="protected" virt="virtual"><scope>sead::FileDevice</scope><name>doTracePath_</name></member>
+      <member refid="classsead_1_1FileDevice_1ad3d5dd39afdd422c9861356d942158b8" prot="protected" virt="pure-virtual"><scope>sead::FileDevice</scope><name>doWrite_</name></member>
+      <member refid="classsead_1_1TListNode_1af9fdc310dab7d974c91529eebec09ddd" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>erase</name></member>
+      <member refid="classsead_1_1FileDevice_1a69159c85f8f197926ba1ee28f0e3e356" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>FileDevice</name></member>
+      <member refid="classsead_1_1FileDevice_1ae0795cffbf21a8dff087f36bda13ed17" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>FileDevice</name></member>
+      <member refid="classsead_1_1FileDevice_1aeeb60e5924be4ec7f120c3c5f22de84e" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>FileOpenFlag</name></member>
+      <member refid="classsead_1_1FileDevice_1a5b263da48946655cb0fe44de61872f3a" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>flush</name></member>
+      <member refid="classsead_1_1FileDevice_1a27d18ecf03c5c3cb6073f6f0df005c3c" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>getCurrentSeekPos</name></member>
+      <member refid="classsead_1_1IDisposer_1a4787eac6c96ec41a402a87785ca1c1e5" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>getDisposerHeap_</name></member>
+      <member refid="classsead_1_1FileDevice_1a186c8cdcecdb8ab5ef8ef0eecc0f4489" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>getDriveName</name></member>
+      <member refid="classsead_1_1FileDevice_1ac22b6c9fd4bfdccba4d75299dee54a6b" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>getFileSize</name></member>
+      <member refid="classsead_1_1FileDevice_1a51b0f9b41f114a156a2b49f6b26eeeb7" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>getFileSize</name></member>
+      <member refid="classsead_1_1FileDevice_1a974bdcc1c5fca9069fef7fb65f3c0745" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>getHandleBaseHandleBuffer_</name></member>
+      <member refid="classsead_1_1FileDevice_1a77e689089136df0629942ffe1fd6aacc" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>getLastRawError</name></member>
+      <member refid="classsead_1_1IDisposer_1ad80f0bcae4db9dc8d86b972cf79242ff" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>getListNodeOffset</name></member>
+      <member refid="classsead_1_1FileDevice_1ad7635ecad0563ee711ef33233310550f" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>hasPermission</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>HeapNullOption</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a7924dc86bb92083cfe17af344f18efdb" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>HeapNullOption_AlwaysUseSpecifiedHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1ae6e1545ced87f4418a3a522abd0134b7" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>HeapNullOption_DoNotAppendDisposerIfNoHeapSpecified</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a9c3b6e23a61f6b9e12b642cd907a8a49" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>HeapNullOption_UseSpecifiedOrContainHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a895cc222e6fbc909fe05e321660128b1a6fd315b4de876d836ebb7a643d6db3b0" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>HeapNullOption_UseSpecifiedOrCurrentHeap</name></member>
+      <member refid="classsead_1_1IDisposer_1a2dce641e279c1e5cd489227548dadf78" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1IDisposer_1a674d1dfb9528774610a5e90fe3d8f394" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1FileDevice_1ab64bd95f3e268a27171e2802c0be0b9f" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>isAvailable</name></member>
+      <member refid="classsead_1_1FileDevice_1a709669264aa7d244f9bcc02cea70db79" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>isExistDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a31ca9b4f899d2551b830fd67f59f084f" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>isExistFile</name></member>
+      <member refid="classsead_1_1ListNode_1a2f15587150961a7c67358d8141039f8b" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>isLinked</name></member>
+      <member refid="classsead_1_1FileDevice_1a851caaff885d3dc94216020c21d967c0" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>isMatchDevice_</name></member>
+      <member refid="classsead_1_1ListNode_1ae56294b649bfb25ab2b336bb9746b9f2" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>ListNode</name></member>
+      <member refid="classsead_1_1FileDevice_1a75b157868fd945ff12132951c9a4b7cc" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>makeDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a807057c828e24ef3f60584ca3a034572" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>makeDirectoryWithParent</name></member>
+      <member refid="classsead_1_1TListNode_1ab3d5b19543aad7adfcce3b41a0567744" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>mData</name></member>
+      <member refid="classsead_1_1FileDevice_1a2955b18f2d061f836214937d3f202a06" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>mDriveName</name></member>
+      <member refid="classsead_1_1TListNode_1a93f6620cfb18b0c941864aec6ab052d2" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>mList</name></member>
+      <member refid="classsead_1_1FileDevice_1a1f78043ad649afa617834c9617b4fd05" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>mPermission</name></member>
+      <member refid="classsead_1_1ListNode_1aa816d259659b5b386579dc9a723f113b" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>next</name></member>
+      <member refid="classsead_1_1FileDevice_1a51d3da05079989db37702df1eefc35c2" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>open</name></member>
+      <member refid="classsead_1_1FileDevice_1ac21b756944aed7dd44ec9a256db8856e" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>openDirectory</name></member>
+      <member refid="classsead_1_1ListNode_1a3eee1d6ab52279578f0195d100313e20" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>prev</name></member>
+      <member refid="classsead_1_1FileDevice_1a5de2bfdb5d3a9469e5607d3e88521a8c" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>read</name></member>
+      <member refid="classsead_1_1FileDevice_1a29fbe2591dee5fd417b24de8adf66c76" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>readDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1ad1baac48c2285606e8b6dd23c406104d" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>remove</name></member>
+      <member refid="classsead_1_1FileDevice_1ac21ce1de7725e5ffe82f7dcf77fdaf57" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>resolveDirectoryPath</name></member>
+      <member refid="classsead_1_1FileDevice_1aafecc84d3bb872a8cbf5ab6f7a4da5f4" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>resolveFilePath</name></member>
+      <member refid="classsead_1_1FileDevice_1a4edbeb7b5b44e76b59972799e6af9525" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>save</name></member>
+      <member refid="classsead_1_1FileDevice_1a9db3902bb2236605656280e3663ae42e" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>seek</name></member>
+      <member refid="classsead_1_1FileDevice_1a080ab42c39c6a145bf671232f3886f29" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>SeekOrigin</name></member>
+      <member refid="classsead_1_1FileDevice_1ad875c052b098a056e0a0cc1479a13770" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>setDriveName</name></member>
+      <member refid="classsead_1_1FileDevice_1a2916099ff28d845d52ba867b23e397e3" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>setFileHandleDivSize_</name></member>
+      <member refid="classsead_1_1FileDevice_1adc314d4fe584e3d5f37c0bc22c950bcc" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>setHandleBaseFileDevice_</name></member>
+      <member refid="classsead_1_1FileDevice_1aac0269c4feed812491fe5a89ae019eb8" prot="protected" virt="non-virtual"><scope>sead::FileDevice</scope><name>setHandleBaseOriginalFileDevice_</name></member>
+      <member refid="classsead_1_1FileDevice_1ac5dd30105251cfec954733f06ca88cc8" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>setHasPermission</name></member>
+      <member refid="classsead_1_1TListNode_1acf6ff1cdb46f3cc57a267dee52e0703e" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>TListNode</name></member>
+      <member refid="classsead_1_1TListNode_1a4dfef58e9e2e5612c5f848bafb2bdc3a" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>TListNode</name></member>
+      <member refid="classsead_1_1FileDevice_1a03ceb8110ef5a2c69827e20b1ca2553b" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>traceDirectoryPath</name></member>
+      <member refid="classsead_1_1FileDevice_1ad0eee3a76e72fea584f831c8099b7455" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>traceFilePath</name></member>
+      <member refid="classsead_1_1FileDevice_1a40bced68b401f553adfa95bc65314c2c" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryClose</name></member>
+      <member refid="classsead_1_1FileDevice_1adf87b8129b9849c881e35aaf653fd49f" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryCloseDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a9d1b506d40459519290e4f354df22711" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryFlush</name></member>
+      <member refid="classsead_1_1FileDevice_1ab7706e9cdd4b2b22770697d8c26bdf24" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryGetCurrentSeekPos</name></member>
+      <member refid="classsead_1_1FileDevice_1a563e14de359f06f7d10727533129d8c3" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryGetFileSize</name></member>
+      <member refid="classsead_1_1FileDevice_1a3ccab776de7e3be2120de4ca505b56ba" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryGetFileSize</name></member>
+      <member refid="classsead_1_1FileDevice_1a696c7fa09d9de4a4c6c1d2e713f6e8d4" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryIsExistDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a0c321bc366d95098aa97bd89a5bbd98b" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryIsExistFile</name></member>
+      <member refid="classsead_1_1FileDevice_1ac4efc7ae25740160f46d8cd758d5eb70" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryLoad</name></member>
+      <member refid="classsead_1_1FileDevice_1a313d81bc4db8a6ec22d5577a2cab9479" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryMakeDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1ab89dc573d3c1f2cd157d4a1c19aa437f" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryMakeDirectoryWithParent</name></member>
+      <member refid="classsead_1_1FileDevice_1ac8cccb553c624aa8e26f0ca2fecb1a99" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryOpen</name></member>
+      <member refid="classsead_1_1FileDevice_1ac4520467032716eb55f9597e2ff02ee2" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryOpenDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a82967cb13edaa293df29fe06fb23999f" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryRead</name></member>
+      <member refid="classsead_1_1FileDevice_1a6c3c478169c9611db8db724ccca40ace" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryReadDirectory</name></member>
+      <member refid="classsead_1_1FileDevice_1a6e9974adb9ad4b24e510860381f1bff3" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryRemove</name></member>
+      <member refid="classsead_1_1FileDevice_1a965c4dffd48247ae498735538db61486" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>trySave</name></member>
+      <member refid="classsead_1_1FileDevice_1a3a785708c4a545551594f711048f6d26" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>trySeek</name></member>
+      <member refid="classsead_1_1FileDevice_1a9a695184420ce315a1f7d455b9c17ede" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>tryWrite</name></member>
+      <member refid="classsead_1_1FileDevice_1a8246178536bd765e06482de5822231ed" prot="public" virt="non-virtual"><scope>sead::FileDevice</scope><name>write</name></member>
+      <member refid="classsead_1_1FileDevice_1a1d62978cc09e3f0a54cd64eb77cea5e5" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>~FileDevice</name></member>
+      <member refid="classsead_1_1IDisposer_1a36e2b9b062febed0893f3530bc427f0a" prot="public" virt="virtual"><scope>sead::FileDevice</scope><name>~IDisposer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

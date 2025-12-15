@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::EffectObj - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-aleffectobj">Class al::EffectObj</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>EffectObj</strong></a></p>
+<p>Inherits the following classes: <a href="../classal_1_1MapObjActor/">al::MapObjActor</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-effectobj"><strong>EffectObj</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::SafeString &amp; name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Matrix34f *</td>
+<td style="text-align: left;"><a href="#function-getbasemtx"><strong>getBaseMtx</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-init"><strong>init</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../classal_1_1ActorInitInfo/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-makeactorappeared"><strong>makeActorAppeared</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-almapobjactor">Public Functions inherited from al::MapObjActor</h2>
+<p>See <a href="../classal_1_1MapObjActor/">al::MapObjActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1MapObjActor/#function-mapobjactor"><strong>MapObjActor</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::SafeString &amp; name) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alliveactor">Public Functions inherited from al::LiveActor</h2>
+<p>See <a href="../classal_1_1LiveActor/">al::LiveActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-liveactor"><strong>LiveActor</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-attacksensor"><strong>attackSensor</strong></a> (<a href="../classal_1_1HitSensor/"><strong>HitSensor</strong></a> * me, <a href="../classal_1_1HitSensor/"><strong>HitSensor</strong></a> * other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-calcandsetbasemtx"><strong>calcAndSetBaseMtx</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-calcanim"><strong>calcAnim</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-draw"><strong>draw</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-endclipped"><strong>endClipped</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ActorActionKeeper/"><strong>ActorActionKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getactoractionkeeper"><strong>getActorActionKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ActorExecuteInfo/"><strong>ActorExecuteInfo</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getactorexecuteinfo"><strong>getActorExecuteInfo</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ActorPoseKeeperBase/"><strong>ActorPoseKeeperBase</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getactorposekeeper"><strong>getActorPoseKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1AudioKeeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Matrix34f *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getbasemtx"><strong>getBaseMtx</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1Collider/"><strong>Collider</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getcollider"><strong>getCollider</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1EffectKeeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1HitSensorKeeper/"><strong>HitSensorKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-gethitsensorkeeper"><strong>getHitSensorKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1LiveActorFlag/"><strong>LiveActorFlag</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getliveactorflag-12"><strong>getLiveActorFlag</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1LiveActorFlag/"><strong>LiveActorFlag</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getliveactorflag-22"><strong>getLiveActorFlag</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ModelKeeper/"><strong>ModelKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getmodelkeeper"><strong>getModelKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../structal_1_1NameToCreator/"><strong>char</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getname"><strong>getName</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1RailKeeper/"><strong>RailKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getrailkeeper"><strong>getRailKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ShadowKeeper/"><strong>ShadowKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getshadowkeeper"><strong>getShadowKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1StageSwitchKeeper/"><strong>StageSwitchKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-getstageswitchkeeper"><strong>getStageSwitchKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-init"><strong>init</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../classal_1_1ActorInitInfo/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-initafterplacement"><strong>initAfterPlacement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-initcollider"><strong>initCollider</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>float</strong></a> radius, <a href="../structal_1_1NameToCreator/"><strong>float</strong></a> yOffset, <a href="../structal_1_1NameToCreator/"><strong>u32</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-initnervekeeper"><strong>initNerveKeeper</strong></a> (<a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> * nk) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-initposekeeper"><strong>initPoseKeeper</strong></a> (<a href="../classal_1_1ActorPoseKeeperBase/"><strong>ActorPoseKeeperBase</strong></a> * pPoseKeeper) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-initrailkeeper"><strong>initRailKeeper</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../classal_1_1ActorInitInfo/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-initstageswitchkeeper"><strong>initStageSwitchKeeper</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-makeactorappeared"><strong>makeActorAppeared</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-makeactordead"><strong>makeActorDead</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-movement"><strong>movement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-receivemsg"><strong>receiveMsg</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>u32</strong></a> msg, <a href="../classal_1_1HitSensor/"><strong>HitSensor</strong></a> * other, <a href="../classal_1_1HitSensor/"><strong>HitSensor</strong></a> * me) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-startclipped"><strong>startClipped</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-updatecollider"><strong>updateCollider</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-v22"><strong>v22</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#function-v23"><strong>v23</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1IUseNerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseNerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseeffectkeeper">Public Functions inherited from al::IUseEffectKeeper</h2>
+<p>See <a href="../classal_1_1IUseEffectKeeper/">al::IUseEffectKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1EffectKeeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseEffectKeeper/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseaudiokeeper">Public Functions inherited from al::IUseAudioKeeper</h2>
+<p>See <a href="../classal_1_1IUseAudioKeeper/">al::IUseAudioKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1AudioKeeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseAudioKeeper/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1IUseAudioKeeper/#function-v1"><strong>v1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1IUseAudioKeeper/#function-v2"><strong>v2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusestageswitch">Public Functions inherited from al::IUseStageSwitch</h2>
+<p>See <a href="../classal_1_1IUseStageSwitch/">al::IUseStageSwitch</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1StageSwitchKeeper/"><strong>StageSwitchKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1IUseStageSwitch/#function-getstageswitchkeeper"><strong>getStageSwitchKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1IUseStageSwitch/#function-initstageswitchkeeper"><strong>initStageSwitchKeeper</strong></a> () = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-alliveactor">Protected Attributes inherited from al::LiveActor</h2>
+<p>See <a href="../classal_1_1LiveActor/">al::LiveActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-_4c"><strong>_4C</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ActorActionKeeper/"><strong>ActorActionKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mactoractionkeeper"><strong>mActorActionKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ActorExecuteInfo/"><strong>ActorExecuteInfo</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mactorexecuteinfo"><strong>mActorExecuteInfo</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>ActorLightCtrl</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mactorlightctrl"><strong>mActorLightCtrl</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ActorPoseKeeperBase/"><strong>ActorPoseKeeperBase</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mactorposekeeper"><strong>mActorPoseKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1AudioKeeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-maudiokeeper"><strong>mAudioKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1Collider/"><strong>Collider</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mcollider"><strong>mCollider</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1CollisionParts/"><strong>CollisionParts</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mcollisionparts"><strong>mCollisionParts</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1EffectKeeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-meffectkeeper"><strong>mEffectKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1HitSensorKeeper/"><strong>HitSensorKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mhitsensorkeeper"><strong>mHitSensorKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ModelKeeper/"><strong>ModelKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mmodelkeeper"><strong>mModelKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1NerveKeeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mnervekeeper"><strong>mNerveKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1RailKeeper/"><strong>RailKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mrailkeeper"><strong>mRailKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1ShadowKeeper/"><strong>ShadowKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mshadowkeeper"><strong>mShadowKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1StageSwitchKeeper/"><strong>StageSwitchKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-mstageswitchkeeper"><strong>mStageSwitchKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1SubActorKeeper/"><strong>SubActorKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1LiveActor/#variable-msubactorkeeper"><strong>mSubActorKeeper</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-effectobj">function EffectObj</h3>
+<pre><code class="language-C++">al::EffectObj::EffectObj (
+    const sead::SafeString &amp; name
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-control">function control</h3>
+<pre><code class="language-C++">virtual void al::EffectObj::control () 
+</code></pre>
+<p>Implements <a href="../classal_1_1LiveActor/#function-control"><em>al::LiveActor::control</em></a></p>
+<hr>
+
+<h3 id="function-getbasemtx">function getBaseMtx</h3>
+<pre><code class="language-C++">virtual const sead::Matrix34f * al::EffectObj::getBaseMtx () const
+</code></pre>
+<p>Implements <a href="../classal_1_1LiveActor/#function-getbasemtx"><em>al::LiveActor::getBaseMtx</em></a></p>
+<hr>
+
+<h3 id="function-init">function init</h3>
+<pre><code class="language-C++">virtual void al::EffectObj::init (
+    const  ActorInitInfo &amp; info
+) 
+</code></pre>
+<p>Implements <a href="../classal_1_1LiveActor/#function-init"><em>al::LiveActor::init</em></a></p>
+<hr>
+
+<h3 id="function-kill">function kill</h3>
+<pre><code class="language-C++">virtual void al::EffectObj::kill () 
+</code></pre>
+<p>Implements <a href="../classal_1_1LiveActor/#function-kill"><em>al::LiveActor::kill</em></a></p>
+<hr>
+
+<h3 id="function-makeactorappeared">function makeActorAppeared</h3>
+<pre><code class="language-C++">virtual void al::EffectObj::makeActorAppeared () 
+</code></pre>
+<p>Implements <a href="../classal_1_1LiveActor/#function-makeactorappeared"><em>al::LiveActor::makeActorAppeared</em></a></p>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Npc/alEffectObj.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

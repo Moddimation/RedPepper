@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="os__Types_8h" kind="file" language="C++">
+    <compoundname>os_Types.h</compoundname>
+    <includedby refid="svc__Api_8h" local="no">lib/CTRSDK/include/nn/svc/svc_Api.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>lib/CTRSDK/include/nn/os/os_Types.h</label>
+        <link refid="os__Types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lib/CTRSDK/include/nn/svc/svc_Api.h</label>
+        <link refid="svc__Api_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacenn">nn</innernamespace>
+    <innernamespace refid="namespacenn_1_1os">nn::os</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">nn<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">os<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>ArbitrationType<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArbitrationType_SIGNAL<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArbitrationType_WAIT_IF_LESS_THAN<sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArbitrationType_DECREMENT_AND_WAIT_IF_LESS_THAN<sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArbitrationType_WAIT_IF_LESS_THAN_TIMEOUT<sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArbitrationType_DECREMENT_AND_WAIT_IF_LESS_THAN_TIMEOUT<sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>ResetType<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResetType_ONESHOT<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResetType_STICKY<sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ResetType_PULSE<sp/>=<sp/>2<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>os</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nn</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/include/nn/os/os_Types.h"/>
+  </compounddef>
+</doxygen>

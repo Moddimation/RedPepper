@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File math_VEC3.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-math_vec3cpp">File math_VEC3.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_1e016f672f65000d1caa1843da5325e4/"><strong>CTRSDK</strong></a> <strong>&gt;</strong> <a href="../dir_a4ee87762c46a7490fc221af34a02561/"><strong>sources</strong></a> <strong>&gt;</strong> <a href="../dir_d5048eb808a3c734e97f8e3445eed677/"><strong>math</strong></a> <strong>&gt;</strong> <a href="../math__VEC3_8cpp/"><strong>math_VEC3.cpp</strong></a></p>
+<p><a href="../math__VEC3_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;nn/math/math_VEC3.h&gt;
+
+namespace nn {
+namespace math {
+    namespace ARMv6 {
+
+        // clang-format off
+
+    __asm void __attribute__((section(&quot;i._ZN2nn4math5ARMv610VEC3SubAsmEPNS0_4VEC3EPKS2_S5_&quot;))) VEC3SubAsm(VEC3* out, const VEC3* v1, const VEC3* v2)
+    {
+        vldmia r1, {s0, s1, s2}
+        vldmia r2, {s3, s4, s5}
+        vsub.f32 s6, s0, s3
+        vsub.f32 s7, s1, s4
+        vsub.f32 s8, s2, s5
+        vstmia r0, {s6, s7, s8}
+        bx lr
+    }
+
+    __asm void __attribute__((section(&quot;i._ZN2nn4math5ARMv610VEC3MulAsmEPNS0_4VEC3EPKS2_f&quot;))) VEC3MulAsm(VEC3* out, const VEC3* v1, float f)
+    {
+        vldmia r1, {s1, s2, s3}
+        vmul.f32 s4, s1, s0
+        vmul.f32 s5, s2, s0
+        vmul.f32 s6, s3, s0
+        vstmia r0, {s4, s5, s6}
+        bx lr
+    }
+
+        // clang-format on
+
+    } // namespace ARMv6
+} // namespace math
+} // namespace nn
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

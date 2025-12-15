@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::Rail - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-alrail">Class al::Rail</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>Rail</strong></a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-rail"><strong>Rail</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>float</strong></a></td>
+<td style="text-align: left;"><a href="#function-calcnearestrailposcoord"><strong>calcNearestRailPosCoord</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;, <a href="../structal_1_1NameToCreator/"><strong>float</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-calcposdir"><strong>calcPosDir</strong></a> (sead::Vector3f *, sead::Vector3f *, <a href="../structal_1_1NameToCreator/"><strong>float</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>float</strong></a></td>
+<td style="text-align: left;"><a href="#function-gettotallength"><strong>getTotalLength</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-init"><strong>init</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="../classal_1_1ByamlIter/"><strong>PlacementInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-isclosed"><strong>isClosed</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>float</strong></a></td>
+<td style="text-align: left;"><a href="#function-normalizelength"><strong>normalizeLength</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>float</strong></a>) const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-rail">function Rail</h3>
+<pre><code class="language-C++">al::Rail::Rail () 
+</code></pre>
+<hr>
+
+<h3 id="function-calcnearestrailposcoord">function calcNearestRailPosCoord</h3>
+<pre><code class="language-C++">float al::Rail::calcNearestRailPosCoord (
+    const sead::Vector3f &amp;,
+    float
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-calcposdir">function calcPosDir</h3>
+<pre><code class="language-C++">void al::Rail::calcPosDir (
+    sead::Vector3f *,
+    sead::Vector3f *,
+    float
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-gettotallength">function getTotalLength</h3>
+<pre><code class="language-C++">float al::Rail::getTotalLength () const
+</code></pre>
+<hr>
+
+<h3 id="function-init">function init</h3>
+<pre><code class="language-C++">void al::Rail::init (
+    const  PlacementInfo &amp; info
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-isclosed">function isClosed</h3>
+<pre><code class="language-C++">inline bool al::Rail::isClosed () const
+</code></pre>
+<hr>
+
+<h3 id="function-normalizelength">function normalizeLength</h3>
+<pre><code class="language-C++">float al::Rail::normalizeLength (
+    float
+) const
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Rail/alRail.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

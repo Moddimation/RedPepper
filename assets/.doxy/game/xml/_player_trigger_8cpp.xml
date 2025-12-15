@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_trigger_8cpp" kind="file" language="C++">
+    <compoundname>PlayerTrigger.cpp</compoundname>
+    <includes refid="_player_trigger_8h" local="yes">Player/PlayerTrigger.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Player/PlayerTrigger.h</label>
+        <link refid="_player_trigger_8h"/>
+      </node>
+      <node id="1">
+        <label>PlayerTrigger.cpp</label>
+        <link refid="_player_trigger_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_trigger_8h" kindref="compound">Player/PlayerTrigger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_player_trigger_1a2f040acbe99fed9fb2ceddb546c37b98" refkind="member"><highlight class="normal"><ref refid="class_player_trigger_1a2f040acbe99fed9fb2ceddb546c37b98" kindref="member">PlayerTrigger::PlayerTrigger</ref>()<sp/>:<sp/>mSensorTrigger(<sp/>0<sp/>),<sp/>mCollisionTrigger(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_player_trigger_1ac3f60fbee11b06e48fd4e14e4be09064" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_trigger_1ac3f60fbee11b06e48fd4e14e4be09064" kindref="member">PlayerTrigger::set</ref>(<sp/><ref refid="class_player_trigger_1a7337644112eb9e4a4dcea65701b7c9e5" kindref="member">PlayerTrigger::ESensorTrigger</ref><sp/>trigger<sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_trigger_1a8c637e534bdfd95909e9ede3c6f676db" kindref="member">mSensorTrigger</ref><sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>trigger;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_player_trigger_1a0270a949ce7eb0d78c3e8c60f5170bf5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_trigger_1ac3f60fbee11b06e48fd4e14e4be09064" kindref="member">PlayerTrigger::set</ref>(<sp/><ref refid="class_player_trigger_1a6949994070bb9cb2b9569439c808478d" kindref="member">PlayerTrigger::ECollisionTrigger</ref><sp/>trigger<sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_trigger_1a368ec264974946437dd1af3e6ec78115" kindref="member">mCollisionTrigger</ref><sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>trigger;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_player_trigger_1ad745a605de97ab1ae56cb6b1bbc9bfcd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_trigger_1ad745a605de97ab1ae56cb6b1bbc9bfcd" kindref="member">PlayerTrigger::isOn</ref>(<sp/><ref refid="class_player_trigger_1a7337644112eb9e4a4dcea65701b7c9e5" kindref="member">PlayerTrigger::ESensorTrigger</ref><sp/>trigger<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="18"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_player_trigger_1a8c637e534bdfd95909e9ede3c6f676db" kindref="member">mSensorTrigger</ref><sp/>&amp;<sp/>(<sp/>1<sp/>&lt;&lt;<sp/>trigger<sp/>)<sp/>)<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_player_trigger_1a6a0321836d3482e548faec72b8d3053d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_trigger_1ad745a605de97ab1ae56cb6b1bbc9bfcd" kindref="member">PlayerTrigger::isOn</ref>(<sp/><ref refid="class_player_trigger_1a6949994070bb9cb2b9569439c808478d" kindref="member">PlayerTrigger::ECollisionTrigger</ref><sp/>trigger<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="23"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_player_trigger_1a368ec264974946437dd1af3e6ec78115" kindref="member">mCollisionTrigger</ref><sp/>&amp;<sp/>(<sp/>1<sp/>&lt;&lt;<sp/>trigger<sp/>)<sp/>)<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_player_trigger_1a5fddb203b0f71ae6879af77c368bedca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_trigger_1a5fddb203b0f71ae6879af77c368bedca" kindref="member">PlayerTrigger::clearSensorTrigger</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_trigger_1a8c637e534bdfd95909e9ede3c6f676db" kindref="member">mSensorTrigger</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_player_trigger_1ac731810aa3be676f8b58c40149e386a0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_trigger_1ac731810aa3be676f8b58c40149e386a0" kindref="member">PlayerTrigger::clearCollisionTrigger</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_trigger_1a368ec264974946437dd1af3e6ec78115" kindref="member">mCollisionTrigger</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Player/PlayerTrigger.cpp"/>
+  </compounddef>
+</doxygen>

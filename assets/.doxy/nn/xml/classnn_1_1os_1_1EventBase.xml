@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classnn_1_1os_1_1EventBase" kind="class" language="C++" prot="public">
+    <compoundname>nn::os::EventBase</compoundname>
+    <basecompoundref refid="classnn_1_1os_1_1InterruptEvent" prot="private" virt="non-virtual">nn::os::InterruptEvent</basecompoundref>
+    <derivedcompoundref refid="classnn_1_1hid_1_1CTR_1_1HidBase" prot="private" virt="non-virtual">nn::hid::CTR::HidBase</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>nn::hid::CTR::HidBase</label>
+        <link refid="classnn_1_1hid_1_1CTR_1_1HidBase"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nn::os::EventBase</label>
+        <link refid="classnn_1_1os_1_1EventBase"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nn::os::HandleObject</label>
+        <link refid="structnn_1_1os_1_1HandleObject"/>
+      </node>
+      <node id="2">
+        <label>nn::os::InterruptEvent</label>
+        <link refid="classnn_1_1os_1_1InterruptEvent"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nn::os::WaitObject</label>
+        <link refid="classnn_1_1os_1_1WaitObject"/>
+        <childnode refid="4" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>nn::Handle</label>
+        <link refid="structnn_1_1Handle"/>
+      </node>
+      <node id="1">
+        <label>nn::os::EventBase</label>
+        <link refid="classnn_1_1os_1_1EventBase"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nn::os::HandleObject</label>
+        <link refid="structnn_1_1os_1_1HandleObject"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_Handle</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn::os::InterruptEvent</label>
+        <link refid="classnn_1_1os_1_1InterruptEvent"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nn::os::WaitObject</label>
+        <link refid="classnn_1_1os_1_1WaitObject"/>
+        <childnode refid="4" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/CTRSDK/include/nn/os/os_EventBase.h" line="7" column="5" bodyfile="lib/CTRSDK/include/nn/os/os_EventBase.h" bodystart="7" bodyend="9"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="alFactory_8h" kind="file" language="C++">
+    <compoundname>alFactory.h</compoundname>
+    <includedby refid="alActorFactory_8h" local="no">lib/al/include/Factory/alActorFactory.h</includedby>
+    <includedby refid="alAreaObjFactory_8h" local="no">lib/al/include/Factory/alAreaObjFactory.h</includedby>
+    <includedby refid="alCameraFactory_8h" local="no">lib/al/include/Factory/alCameraFactory.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>lib/al/include/Factory/alActorFactory.h</label>
+        <link refid="alActorFactory_8h_source"/>
+      </node>
+      <node id="3">
+        <label>lib/al/include/Factory/alAreaObjFactory.h</label>
+        <link refid="alAreaObjFactory_8h_source"/>
+      </node>
+      <node id="4">
+        <label>lib/al/include/Factory/alCameraFactory.h</label>
+        <link refid="alCameraFactory_8h_source"/>
+      </node>
+      <node id="1">
+        <label>lib/al/include/Factory/alFactory.h</label>
+        <link refid="alFactory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structal_1_1CreateFuncPtr" prot="public">al::CreateFuncPtr</innerclass>
+    <innerclass refid="structal_1_1NameToCreator" prot="public">al::NameToCreator</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">al</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="7" refid="structal_1_1CreateFuncPtr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structal_1_1CreateFuncPtr" kindref="compound">CreateFuncPtr</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structal_1_1NameToCreator" kindref="compound">T</ref>*<sp/>(<sp/>*Type<sp/>)(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="13" refid="structal_1_1NameToCreator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structal_1_1NameToCreator" kindref="compound">NameToCreator</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1NameToCreator" kindref="compound">T</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>creator;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Factory/alFactory.h"/>
+  </compounddef>
+</doxygen>

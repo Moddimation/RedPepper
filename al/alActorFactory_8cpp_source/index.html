@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alActorFactory.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-alactorfactorycpp">File alActorFactory.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_39b5099aa57315b839bd41800a0f814b/"><strong>Factory</strong></a> <strong>&gt;</strong> <a href="../alActorFactory_8cpp/"><strong>alActorFactory.cpp</strong></a></p>
+<p><a href="../alActorFactory_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;Factory/alActorFactory.h&gt;
+#include &lt;Resource/alResource.h&gt;
+#include &lt;Yaml/alByamlIter.h&gt;
+
+namespace al
+{
+
+#ifdef NON_MATCHING
+// unnecessary streq for mConvertNameData missing
+ActorFactory::ActorFactory()
+    : mArchive( nullptr ), mConvertNameData( nullptr )
+{
+        mArchive = al::findOrCreateResource( &quot;SystemData/CreatorClassNameTable&quot; );
+        mConvertNameData =
+                new ByamlIter( static_cast&lt;const u8*&gt;( mArchive-&gt;getByml( &quot;CreatorClassNameTable&quot; ) ) );
+}
+#endif
+
+} // namespace al
+
+#include &lt;MapObj/alFallMapParts.h&gt;
+#include &lt;Npc/alEffectObj.h&gt;
+#include &lt;Npc/alSky.h&gt;
+
+#include &quot;Enemy/Togezo.h&quot;
+#include &quot;MapObj/NoteObj.h&quot; // GAMEUSE
+#include &quot;MapObj/NoteObjGenerator.h&quot;
+#include &quot;MapObj/TrickHintPanel.h&quot;
+
+namespace al
+{
+
+template &lt;typename T&gt;
+LiveActor* createActorFunction( const char* name )
+{
+        return new T( name );
+}
+
+const NameToActorCreator split( sActorFactoryEntries )[] = {
+        { &quot;Kinopio&quot;, nullptr },
+        { &quot;Luigi&quot;, nullptr },
+        { &quot;Peach&quot;, nullptr },
+        { &quot;PeachForTitle&quot;, nullptr },
+        { &quot;BlockDragonGenerator&quot;, nullptr },
+        { &quot;BombHei&quot;, nullptr },
+        { &quot;BombHeiGenerator&quot;, nullptr },
+        { &quot;BombHeiTail&quot;, nullptr },
+        { &quot;BombHeiTailGenerator&quot;, nullptr },
+        { &quot;BoomerangBros&quot;, nullptr },
+        { &quot;Bubble&quot;, nullptr },
+        { &quot;Bug&quot;, nullptr },
+        { &quot;Chorobon&quot;, nullptr },
+        { &quot;ChorobonGenerator&quot;, nullptr },
+        { &quot;Choropu&quot;, nullptr },
+        { &quot;Dossun&quot;, nullptr },
+        { &quot;DossunTail&quot;, nullptr },
+        { &quot;EnemyCounter&quot;, nullptr },
+        { &quot;Fugumannen&quot;, nullptr },
+        { &quot;FugumannenGenerator&quot;, nullptr },
+        { &quot;GamaguchiKun&quot;, nullptr },
+        { &quot;Gesso&quot;, nullptr },
+        { &quot;GhostPlayer&quot;, nullptr },
+        { &quot;HammerBros&quot;, nullptr },
+        { &quot;Hoppun&quot;, nullptr },
+        { &quot;Indy&quot;, nullptr },
+        { &quot;Kameck&quot;, nullptr },
+        { &quot;Karon&quot;, nullptr },
+        { &quot;Killer&quot;, nullptr },
+        { &quot;KillerGenerator&quot;, nullptr },
+        { &quot;KillerMagnum&quot;, nullptr },
+        { &quot;Kuribo&quot;, nullptr },
+        { &quot;KuriboTail&quot;, nullptr },
+        { &quot;KuriboTailSearch&quot;, nullptr },
+        { &quot;KuriboTower&quot;, nullptr },
+        { &quot;Meragon&quot;, nullptr },
+        { &quot;Nokonoko&quot;, nullptr },
+        { &quot;PackunFire&quot;, nullptr },
+        { &quot;PackunFlower&quot;, nullptr },
+        { &quot;PackunInk&quot;, nullptr },
+        { &quot;PataKuribo&quot;, nullptr },
+        { &quot;Poo&quot;, nullptr },
+        { &quot;Pukupuku&quot;, nullptr },
+        { &quot;PukupukuGenerator&quot;, nullptr },
+        { &quot;PukupukuLoopRail&quot;, nullptr },
+        { &quot;SamboBody&quot;, nullptr },
+        { &quot;SamboHead&quot;, nullptr },
+        { &quot;Sokuten&quot;, nullptr },
+        { &quot;TentenGenerator&quot;, nullptr },
+        { &quot;Teresa&quot;, nullptr },
+        { &quot;TeresaGroup&quot;, nullptr },
+        { &quot;TeresaRail&quot;, nullptr },
+        { &quot;TogeMetbo&quot;, nullptr },
+        { &quot;Togezo&quot;, createActorFunction&lt;Togezo&gt; },
+        { &quot;Utsubo&quot;, nullptr },
+        { &quot;Wanwan&quot;, nullptr },
+        { &quot;WooGan&quot;, nullptr },
+        { &quot;WooGanSand&quot;, nullptr },
+        { &quot;Bunbun&quot;, nullptr },
+        { &quot;BunbunAndPunpunTagObj&quot;, nullptr },
+        { &quot;BunbunMysteryBox&quot;, nullptr },
+        { &quot;Koopa&quot;, nullptr },
+        { &quot;Punpun&quot;, nullptr },
+        { &quot;PunpunStageDamageFire&quot;, nullptr },
+        { &quot;BoomerangFlower&quot;, nullptr },
+        { &quot;Coin&quot;, nullptr },
+        { &quot;CoinBox&quot;, nullptr },
+        { &quot;CoinCollect&quot;, nullptr },
+        { &quot;CoinGathering&quot;, nullptr },
+        { &quot;CoinGenerator&quot;, nullptr },
+        { &quot;CoinRailGenerator&quot;, nullptr },
+        { &quot;CoinRailMoveGenerator&quot;, nullptr },
+        { &quot;CoinRedStarter&quot;, nullptr },
+        { &quot;CoinRing&quot;, nullptr },
+        { &quot;FireFlower&quot;, nullptr },
+        { &quot;KickKoura&quot;, nullptr },
+        { &quot;KinokoOneUp&quot;, nullptr },
+        { &quot;KinokoOneUpFast&quot;, nullptr },
+        { &quot;KinokoPoison&quot;, nullptr },
+        { &quot;KinokoPoisonFast&quot;, nullptr },
+        { &quot;KinokoSuper&quot;, nullptr },
+        { &quot;KinokoSuperFast&quot;, nullptr },
+        { &quot;PatapataWing&quot;, nullptr },
+        { &quot;PropellerBlock&quot;, nullptr },
+        { &quot;SuperLeaf&quot;, nullptr },
+        { &quot;SuperLeafSpecial&quot;, nullptr },
+        { &quot;SuperStar&quot;, nullptr },
+        { &quot;Telescope&quot;, nullptr },
+        { &quot;TelescopeTarget&quot;, nullptr },
+        { &quot;TimerClock&quot;, nullptr },
+        { &quot;AppearStep&quot;, nullptr },
+        { &quot;AquariumSwimDebris&quot;, nullptr },
+        { &quot;BalanceTruck&quot;, nullptr },
+        { &quot;BeatBlock&quot;, nullptr },
+        { &quot;BeatBlockHolder&quot;, nullptr },
+        { &quot;Bird&quot;, nullptr },
+        { &quot;BlindCloud&quot;, nullptr },
+        { &quot;BlockBrick&quot;, nullptr },
+        { &quot;BlockBrickItem&quot;, nullptr },
+        { &quot;BlockEmpty&quot;, nullptr },
+        { &quot;BlockHelp&quot;, nullptr },
+        { &quot;BlockNote&quot;, nullptr },
+        { &quot;BlockNoteSuper&quot;, nullptr },
+        { &quot;BlockQuestion&quot;, nullptr },
+        { &quot;BlockQuestionFlying&quot;, nullptr },
+        { &quot;BlockQuestionLong&quot;, nullptr },
+        { &quot;BlockRailCurve&quot;, nullptr },
+        { &quot;BlockRailStraight&quot;, nullptr },
+        { &quot;BlockRailTerminater&quot;, nullptr },
+        { &quot;BlockRoulette&quot;, nullptr },
+        { &quot;BlockTransparent&quot;, nullptr },
+        { &quot;BoneRollerCoaster&quot;, nullptr },
+        { &quot;BridgePukupukuBreakBridge&quot;, nullptr },
+        { &quot;Burner&quot;, nullptr },
+        { &quot;Candlestand&quot;, nullptr },
+        { &quot;CandlestandFire&quot;, nullptr },
+        { &quot;CandlestandObserver&quot;, nullptr },
+        { &quot;CourseSelectObj&quot;, nullptr },
+        { &quot;EntranceCameraObj&quot;, nullptr },
+        { &quot;FallStone&quot;, nullptr },
+        { &quot;FireBarCore&quot;, nullptr },
+        { &quot;FrameOutChecker&quot;, nullptr },
+        { &quot;Garigari&quot;, nullptr },
+        { &quot;GeneratorBox&quot;, nullptr },
+        { &quot;GeneratorBoxHop&quot;, nullptr },
+        { &quot;GeneratorBoxHopChild&quot;, nullptr },
+        { &quot;GeneratorEnemy&quot;, nullptr },
+        { &quot;GoAndReturnParts&quot;, nullptr },
+        { &quot;Gorori&quot;, nullptr },
+        { &quot;GororiGenerator&quot;, nullptr },
+        { &quot;Grass&quot;, nullptr },
+        { &quot;GrassMike&quot;, nullptr },
+        { &quot;GroundRiserAttachment&quot;, nullptr },
+        { &quot;GyroLauncher&quot;, nullptr },
+        { &quot;JumpFlipBoard&quot;, nullptr },
+        { &quot;Kabehei&quot;, nullptr },
+        { &quot;KeyMoveAndFallParts&quot;, nullptr },
+        { &quot;KickStone&quot;, nullptr },
+        { &quot;KickStoneStrong&quot;, nullptr },
+        { &quot;KoopaCollapseStep&quot;, nullptr },
+        { &quot;KoopaDoor&quot;, nullptr },
+        { &quot;KoopaDoorLast&quot;, nullptr },
+        { &quot;KoopaFireGenerator&quot;, nullptr },
+        { &quot;KoopaPillar&quot;, nullptr },
+        { &quot;KoopaSwitch&quot;, nullptr },
+        { &quot;LavaConveyer&quot;, nullptr },
+        { &quot;LavaGeyser&quot;, nullptr },
+        { &quot;LiftGeyser&quot;, nullptr },
+        { &quot;LiftGeyserStep&quot;, nullptr },
+        { &quot;MarinePlant&quot;, nullptr },
+        { &quot;NeedleBar&quot;, nullptr },
+        { &quot;NeedleBarCore&quot;, nullptr },
+        { &quot;NeedleBlock&quot;, nullptr },
+        { &quot;NeedleFloor&quot;, nullptr },
+        { &quot;NeedlePlant&quot;, nullptr },
+        { &quot;NeedleRoller&quot;, nullptr },
+        { &quot;NeedleTrap&quot;, nullptr },
+        { &quot;NutLift&quot;, nullptr },
+        { &quot;PatanBoard&quot;, nullptr },
+        { &quot;PatanBoardStarter&quot;, nullptr },
+        { &quot;PatanBox&quot;, nullptr },
+        { &quot;PeraObj&quot;, nullptr },
+        { &quot;PhotoAlbum&quot;, nullptr },
+        { &quot;Picket&quot;, nullptr },
+        { &quot;Plant&quot;, nullptr },
+        { &quot;Pole&quot;, nullptr },
+        { &quot;PresentBox&quot;, nullptr },
+        { &quot;RailDotDrawer&quot;, nullptr },
+        { &quot;RestartObj&quot;, nullptr },
+        { &quot;Rope&quot;, nullptr },
+        { &quot;ShadowObj&quot;, nullptr },
+        { &quot;SpikeStick&quot;, nullptr },
+        { &quot;StickNeedle&quot;, nullptr },
+        { &quot;SwingNeedleRoller&quot;, nullptr },
+        { &quot;SwingSpike&quot;, nullptr },
+        { &quot;TrampleSwitch&quot;, nullptr },
+        { &quot;Trampoline&quot;, nullptr },
+        { &quot;TransparentWall&quot;, nullptr },
+        { &quot;TreeA&quot;, nullptr },
+        { &quot;TrickHintPanel&quot;, createActorFunction&lt;TrickHintPanel&gt; },
+        { &quot;Trilift&quot;, nullptr },
+        { &quot;UpperBlock&quot;, nullptr },
+        { &quot;WarpLift&quot;, nullptr },
+        { &quot;WoodBox&quot;, nullptr },
+        { &quot;Seagull&quot;, nullptr },
+        { &quot;SoundEmitObj&quot;, nullptr },
+        { &quot;NoteObj&quot;, createActorFunction&lt;NoteObj&gt; },
+        { &quot;NoteObjGenerator&quot;, createActorFunction&lt;NoteObjGenerator&gt; },
+        { &quot;WarpAreaPoint&quot;, nullptr },
+        { &quot;WarpCube&quot;, nullptr },
+        { &quot;WarpPorter&quot;, nullptr },
+        { &quot;Dokan&quot;, nullptr },
+        { &quot;WarpDoor&quot;, nullptr },
+        { &quot;AttackRevolvingPanel&quot;, nullptr },
+        { &quot;ClockMapParts&quot;, nullptr },
+        { &quot;CollapseBreakMapParts&quot;, nullptr },
+        { &quot;CollapseMapParts&quot;, nullptr },
+        { &quot;FallMapParts&quot;, createActorFunction&lt;al::FallMapParts&gt; },
+        { &quot;FixMapParts&quot;, nullptr },
+        { &quot;FloaterMapParts&quot;, nullptr },
+        { &quot;KeyMoveMapParts&quot;, nullptr },
+        { &quot;RailMoveMapParts&quot;, nullptr },
+        { &quot;RollingReflectMapParts&quot;, nullptr },
+        { &quot;RollingShakeMapParts&quot;, nullptr },
+        { &quot;RotateMapParts&quot;, nullptr },
+        { &quot;SeesawMapParts&quot;, nullptr },
+        { &quot;SlideMapParts&quot;, nullptr },
+        { &quot;SwingLift&quot;, nullptr },
+        { &quot;SwingMapParts&quot;, nullptr },
+        { &quot;SwitchRotateMapParts&quot;, nullptr },
+        { &quot;SwitchSlideMapParts&quot;, nullptr },
+        { &quot;VisibleSwitchMapParts&quot;, nullptr },
+        { &quot;WheelMapParts&quot;, nullptr },
+        { &quot;WobbleMapParts&quot;, nullptr },
+        { &quot;Sky&quot;, createActorFunction&lt;al::Sky&gt; },
+        { &quot;EffectObj&quot;, createActorFunction&lt;al::EffectObj&gt; },
+        { &quot;EffectObjFollowCamera&quot;, nullptr },
+        { &quot;EffectObjLiftLiner&quot;, nullptr },
+        { &quot;EffectObjReEmit&quot;, nullptr },
+        { &quot;EffectObjSensor&quot;, nullptr },
+        { &quot;EffectObjStream&quot;, nullptr },
+        { &quot;EffectObjSwitch&quot;, nullptr },
+        { &quot;WaterFlowCube&quot;, nullptr },
+        { &quot;StreetPassObj&quot;, nullptr },
+        { &quot;DemoStarter&quot;, nullptr } };
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

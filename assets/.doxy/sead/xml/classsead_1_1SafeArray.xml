@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1SafeArray" kind="class" language="C++" prot="public">
+    <compoundname>sead::SafeArray</compoundname>
+    <includes refid="seadSafeArray_8h" local="no">seadSafeArray.h</includes>
+    <innerclass refid="classsead_1_1SafeArray_1_1constIterator" prot="public">sead::SafeArray::constIterator</innerclass>
+    <innerclass refid="classsead_1_1SafeArray_1_1iterator" prot="public">sead::SafeArray::iterator</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>s32</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsead_1_1SafeArray_1ab955804e7b902985a9d97e0b8c8a5cf6" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::SafeArray&lt; T, N &gt;::mBuffer[N]</definition>
+        <argsstring>[N]</argsstring>
+        <name>mBuffer</name>
+        <qualifiedname>sead::SafeArray::mBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="12" column="7" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a161d7a3747bf8fd4acab71c4801f11cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; sead::SafeArray&lt; T, N &gt;::operator[]</definition>
+        <argsstring>(s32 idx)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>sead::SafeArray::operator[]</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="14" column="7" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="14" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a4bb52b08479d63fb747cf58315c3c92f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; sead::SafeArray&lt; T, N &gt;::operator[]</definition>
+        <argsstring>(s32 idx) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>sead::SafeArray::operator[]</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="27" column="13" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1afefddd74a205f56bce7958824dde5de3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; sead::SafeArray&lt; T, N &gt;::operator()</definition>
+        <argsstring>(s32 idx)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>sead::SafeArray::operator()</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="40" column="7" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a81c2c34e7830e208c853e73c325afa31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; sead::SafeArray&lt; T, N &gt;::operator()</definition>
+        <argsstring>(s32 idx) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>sead::SafeArray::operator()</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="42" column="13" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1abb85b00266af62860a042ccd6fff53ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; sead::SafeArray&lt; T, N &gt;::front</definition>
+        <argsstring>()</argsstring>
+        <name>front</name>
+        <qualifiedname>sead::SafeArray::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="44" column="7" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a85214c831f7fec4322753660b346819e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; sead::SafeArray&lt; T, N &gt;::front</definition>
+        <argsstring>() const</argsstring>
+        <name>front</name>
+        <qualifiedname>sead::SafeArray::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="46" column="13" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a08ec42ddc31aa914be9753737cc30794" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; sead::SafeArray&lt; T, N &gt;::back</definition>
+        <argsstring>()</argsstring>
+        <name>back</name>
+        <qualifiedname>sead::SafeArray::back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="48" column="7" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1abddc851101f8f37a68c659aedba034a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; sead::SafeArray&lt; T, N &gt;::back</definition>
+        <argsstring>() const</argsstring>
+        <name>back</name>
+        <qualifiedname>sead::SafeArray::back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="50" column="13" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a8b6ce92255b53fbd54c6dc2e1c4c15f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int sead::SafeArray&lt; T, N &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>sead::SafeArray::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="52" column="9" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a3374df14c893f56efef0e4efe4390426" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 sead::SafeArray&lt; T, N &gt;::getByteSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getByteSize</name>
+        <qualifiedname>sead::SafeArray::getByteSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="54" column="9" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a4dbee1a2b9e88017bdd41f72ea67d078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * sead::SafeArray&lt; T, N &gt;::getBufferPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getBufferPtr</name>
+        <qualifiedname>sead::SafeArray::getBufferPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="56" column="7" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1ae55529943ec1b0ea68c2ab94842bafc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * sead::SafeArray&lt; T, N &gt;::getBufferPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getBufferPtr</name>
+        <qualifiedname>sead::SafeArray::getBufferPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="58" column="13" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a5440cfb80f13a146f81b9769b11a8eb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::SafeArray&lt; T, N &gt;::fill</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>fill</name>
+        <qualifiedname>sead::SafeArray::fill</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="60" column="10" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1adc97af94cb74261314fe76ade1a5eeef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator sead::SafeArray&lt; T, N &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>sead::SafeArray::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="94" column="14" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a6206998e0049d94e5680a9585a5d81f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator sead::SafeArray&lt; T, N &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>sead::SafeArray::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="96" column="14" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a8afcdf1d774cb81c008fac34c0cd142b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray_1_1constIterator" kindref="compound">constIterator</ref></type>
+        <definition>constIterator sead::SafeArray&lt; T, N &gt;::constBegin</definition>
+        <argsstring>() const</argsstring>
+        <name>constBegin</name>
+        <qualifiedname>sead::SafeArray::constBegin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="127" column="19" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a16e15ad98544b681468fa1ec4d4df385" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray_1_1constIterator" kindref="compound">constIterator</ref></type>
+        <definition>constIterator sead::SafeArray&lt; T, N &gt;::constEnd</definition>
+        <argsstring>() const</argsstring>
+        <name>constEnd</name>
+        <qualifiedname>sead::SafeArray::constEnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="129" column="19" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1a2a8fbeeed0e85bb37685b19a17a81839" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray_1_1constIterator" kindref="compound">constIterator</ref></type>
+        <definition>constIterator sead::SafeArray&lt; T, N &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>sead::SafeArray::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="131" column="19" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1SafeArray_1ace427a882839aa28e8de836b2f9ec1c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1SafeArray_1_1constIterator" kindref="compound">constIterator</ref></type>
+        <definition>constIterator sead::SafeArray&lt; T, N &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>sead::SafeArray::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="133" column="19" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A lightweight std::array like wrapper for a C style array. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sead/include/container/seadSafeArray.h" line="10" column="1" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="10" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classsead_1_1SafeArray_1a08ec42ddc31aa914be9753737cc30794" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>back</name></member>
+      <member refid="classsead_1_1SafeArray_1abddc851101f8f37a68c659aedba034a7" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>back</name></member>
+      <member refid="classsead_1_1SafeArray_1adc97af94cb74261314fe76ade1a5eeef" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>begin</name></member>
+      <member refid="classsead_1_1SafeArray_1a2a8fbeeed0e85bb37685b19a17a81839" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>begin</name></member>
+      <member refid="classsead_1_1SafeArray_1a8afcdf1d774cb81c008fac34c0cd142b" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>constBegin</name></member>
+      <member refid="classsead_1_1SafeArray_1a16e15ad98544b681468fa1ec4d4df385" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>constEnd</name></member>
+      <member refid="classsead_1_1SafeArray_1a6206998e0049d94e5680a9585a5d81f5" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>end</name></member>
+      <member refid="classsead_1_1SafeArray_1ace427a882839aa28e8de836b2f9ec1c7" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>end</name></member>
+      <member refid="classsead_1_1SafeArray_1a5440cfb80f13a146f81b9769b11a8eb9" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>fill</name></member>
+      <member refid="classsead_1_1SafeArray_1abb85b00266af62860a042ccd6fff53ce" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>front</name></member>
+      <member refid="classsead_1_1SafeArray_1a85214c831f7fec4322753660b346819e" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>front</name></member>
+      <member refid="classsead_1_1SafeArray_1a4dbee1a2b9e88017bdd41f72ea67d078" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>getBufferPtr</name></member>
+      <member refid="classsead_1_1SafeArray_1ae55529943ec1b0ea68c2ab94842bafc1" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>getBufferPtr</name></member>
+      <member refid="classsead_1_1SafeArray_1a3374df14c893f56efef0e4efe4390426" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>getByteSize</name></member>
+      <member refid="classsead_1_1SafeArray_1ab955804e7b902985a9d97e0b8c8a5cf6" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>mBuffer</name></member>
+      <member refid="classsead_1_1SafeArray_1afefddd74a205f56bce7958824dde5de3" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>operator()</name></member>
+      <member refid="classsead_1_1SafeArray_1a81c2c34e7830e208c853e73c325afa31" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>operator()</name></member>
+      <member refid="classsead_1_1SafeArray_1a161d7a3747bf8fd4acab71c4801f11cd" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>operator[]</name></member>
+      <member refid="classsead_1_1SafeArray_1a4bb52b08479d63fb747cf58315c3c92f" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>operator[]</name></member>
+      <member refid="classsead_1_1SafeArray_1a8b6ce92255b53fbd54c6dc2e1c4c15f6" prot="public" virt="non-virtual"><scope>sead::SafeArray</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::ControllerDefine - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-seadcontrollerdefine">Class sead::ControllerDefine</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>ControllerDefine</strong></a></p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-addonid"><strong>AddonId</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-controllerid"><strong>ControllerId</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-deviceid"><strong>DeviceId</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="enum-addonid">enum AddonId</h3>
+<pre><code class="language-C++">enum sead::ControllerDefine::AddonId {
+    cAddon_Null = 0,
+    cAddon_Accelerometer = 1,
+    cAddon_PatternRumble = 2,
+    cAddon_UserDefine = 3
+};
+</code></pre>
+<hr>
+
+<h3 id="enum-controllerid">enum ControllerId</h3>
+<pre><code class="language-C++">enum sead::ControllerDefine::ControllerId {
+    cController_Null = 0,
+    cController_Win = 1,
+    cController_Ctr = 2,
+    cController_CtrDebug = 3,
+    cController_WiiRemote = 4,
+    cController_CafeDebug = 5,
+    cController_WinDRC = 6,
+    cController_CafeRemote = 7,
+    cController_CafeDRC = 8,
+    cController_Merge = 9,
+    cController_UserDefine = 10,
+    _15 = 15,
+    _16 = 16
+};
+</code></pre>
+<hr>
+
+<h3 id="enum-deviceid">enum DeviceId</h3>
+<pre><code class="language-C++">enum sead::ControllerDefine::DeviceId {
+    cDevice_Null = 0,
+    cDevice_KeyboardMouse = 1,
+    cDevice_CtrHid = 2,
+    cDevice_WinJoyPad = 3,
+    cDevice_RvlWPad = 4,
+    cDevice_WinWPad = 5,
+    cDevice_CafeDebugPad = 6,
+    cDevice_CafeWPad = 7,
+    cDevice_CafeVPad = 8,
+    cDevice_UserDefine = 9
+};
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/controller/seadControllerDefine.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

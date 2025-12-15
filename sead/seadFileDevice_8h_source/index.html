@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadFileDevice.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-seadfiledeviceh">File seadFileDevice.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_7044d06d73f55fc69eeb2fc5b54c157b/"><strong>filedevice</strong></a> <strong>&gt;</strong> <a href="../seadFileDevice_8h/"><strong>seadFileDevice.h</strong></a></p>
+<p><a href="../seadFileDevice_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#ifndef SEAD_FILEDEVICE_H_
+#define SEAD_FILEDEVICE_H_
+
+#include &lt;basis/seadTypes.h&gt;
+#include &lt;container/seadSafeArray.h&gt;
+#include &lt;container/seadTList.h&gt;
+#include &lt;heap/seadDisposer.h&gt;
+#include &lt;heap/seadHeap.h&gt;
+#include &lt;prim/seadRuntimeTypeInfo.h&gt;
+#include &lt;prim/seadSafeString.h&gt;
+
+namespace sead {
+class FileDevice;
+
+typedef SafeArray&lt;u8, 32&gt; HandleBuffer;
+
+class HandleBase {
+public:
+    HandleBase() : mDevice(nullptr), mOriginalDevice(nullptr) {};
+    virtual ~HandleBase() {};
+
+    FileDevice* getDevice() const { return mDevice; }
+
+    FileDevice* getOriginalDevice() const { return mOriginalDevice; }
+
+    bool isOpened() const { return mOriginalDevice != nullptr; }
+
+protected:
+    friend class FileDevice;
+
+    FileDevice* mDevice;
+    FileDevice* mOriginalDevice;
+    HandleBuffer mHandleBuffer;
+};
+
+class FileHandle;
+class DirectoryHandle;
+struct DirectoryEntry;
+
+class FileDevice : public TListNode&lt;FileDevice*&gt;, public IDisposer {
+    SEAD_RTTI_BASE(FileDevice)
+
+public:
+    enum FileOpenFlag {
+        cFileOpenFlag_ReadOnly = 0,   // r
+        cFileOpenFlag_WriteOnly = 1,  // w
+        cFileOpenFlag_ReadWrite = 2,  // r+
+        cFileOpenFlag_Create = 3      // w+
+    };
+
+    enum SeekOrigin { cSeekOrigin_Begin = 0, cSeekOrigin_Current = 1, cSeekOrigin_End = 2 };
+
+    struct LoadArg {
+        LoadArg()
+            : buffer(nullptr), buffer_size(0), heap(nullptr), alignment(0),
+              buffer_size_alignment(0), div_size(0), assert_on_alloc_fail(true),
+              check_read_entire_file(true), read_size(0), roundup_size(0), need_unload(false) {}
+
+        SafeString path;
+        u8* buffer;
+        u32 buffer_size;
+        Heap* heap;
+        s32 alignment;
+        s32 buffer_size_alignment;
+        u32 div_size;
+        bool assert_on_alloc_fail;
+        bool check_read_entire_file;
+        u32 read_size;
+        u32 roundup_size;
+        bool need_unload;
+    };
+
+    struct SaveArg {
+        SaveArg() : path(&quot;&quot;), buffer(nullptr), buffer_size(0), write_size(0) {}
+
+        SafeString path;
+        const u8* buffer;
+        u32 buffer_size;
+        u32 write_size;
+    };
+
+public:
+    FileDevice() : TListNode&lt;FileDevice*&gt;(this), IDisposer(), mDriveName(), mPermission(true) {}
+
+    explicit FileDevice(const SafeString&amp; name)
+        : TListNode&lt;FileDevice*&gt;(this), IDisposer(), mDriveName(), mPermission(true) {
+        setDriveName(name);
+    }
+
+    virtual ~FileDevice();
+
+    const SafeString&amp; getDriveName() const { return mDriveName; }
+
+    void setDriveName(const SafeString&amp; name) {
+#ifdef SEAD_DEBUG
+        if (name.include(':'))
+            SEAD_WARN(&quot;drive name should not include ':'. (in %s)&quot;, name.cstr());
+#endif
+        mDriveName = name;
+    }
+
+    bool hasPermission() const { return mPermission; }
+
+    void setHasPermission(bool perm) { mPermission = perm; }
+
+    bool isAvailable() const;
+
+    u8* tryLoad(LoadArg&amp; arg);
+
+    bool save(SaveArg&amp; arg) {
+        if (!trySave(arg)) {
+            SEAD_ASSERT_MSG(false, &quot;file save error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool trySave(SaveArg&amp; arg);
+
+    FileDevice* open(FileHandle* handle, const SafeString&amp; path, FileOpenFlag flag,
+                     u32 divSize = 0) {
+        FileDevice* device = tryOpen(handle, path, flag, divSize);
+        if (!device) {
+            SEAD_ASSERT_MSG(false, &quot;file open error&quot;);
+            return nullptr;
+        }
+        return device;
+    }
+
+    FileDevice* tryOpen(FileHandle* handle, const SafeString&amp; path, FileOpenFlag flag,
+                        u32 divSize = 0);
+
+    bool close(FileHandle* handle) {
+        if (!tryClose(handle)) {
+            SEAD_ASSERT_MSG(false, &quot;file close error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool tryClose(FileHandle* handle);
+
+    bool flush(FileHandle* handle) {
+        if (!tryFlush(handle)) {
+            SEAD_ASSERT_MSG(false, &quot;file flush error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool tryFlush(FileHandle* handle);
+
+    bool remove(const SafeString&amp; str) {
+        if (!tryRemove(str)) {
+            SEAD_ASSERT_MSG(false, &quot;file remove error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool tryRemove(const SafeString&amp; str);
+
+    u32 read(FileHandle* handle, u8* data, u32 size) {
+        u32 bytes_read = 0;
+        if (!tryRead(&amp;bytes_read, handle, data, size))
+            SEAD_ASSERT_MSG(false, &quot;file read error&quot;);
+        return bytes_read;
+    }
+
+    bool tryRead(u32* bytesRead, FileHandle* handle, u8* outBuffer, u32 bytesToRead);
+
+    u32 write(FileHandle* handle, const u8* data, u32 size) {
+        u32 bytes_written = 0;
+        if (!tryWrite(&amp;bytes_written, handle, data, size))
+            SEAD_ASSERT_MSG(false, &quot;file write error&quot;);
+        return bytes_written;
+    }
+
+    bool tryWrite(u32* bytesWritten, FileHandle* handle, const u8* inBuffer, u32 bytesToWrite);
+
+    bool seek(FileHandle* handle, s32 offset, SeekOrigin origin) {
+        if (!trySeek(handle, offset, origin)) {
+            SEAD_ASSERT_MSG(false, &quot;file seek error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool trySeek(FileHandle* handle, s32 offset, SeekOrigin origin);
+
+    u32 getCurrentSeekPos(FileHandle* handle) {
+        u32 seek_pos = 0;
+        if (!tryGetCurrentSeekPos(&amp;seek_pos, handle))
+            SEAD_ASSERT_MSG(false, &quot;tryGetCurrentSeekPos error&quot;);
+        return seek_pos;
+    }
+
+    bool tryGetCurrentSeekPos(u32* seekPos, FileHandle* handle);
+
+    u32 getFileSize(const SafeString&amp; path) {
+        u32 file_size = 0;
+        if (!tryGetFileSize(&amp;file_size, path))
+            SEAD_ASSERT_MSG(false, &quot;tryGetFileSize error&quot;);
+        return file_size;
+    }
+
+    bool tryGetFileSize(u32* fileSize, const SafeString&amp; path);
+
+    u32 getFileSize(FileHandle* handle) {
+        u32 file_size = 0;
+        if (!tryGetFileSize(&amp;file_size, handle))
+            SEAD_ASSERT_MSG(false, &quot;tryGetFileSize error&quot;);
+        return file_size;
+    }
+
+    bool tryGetFileSize(u32* size, FileHandle* handle);
+
+    bool isExistFile(const SafeString&amp; path) {
+        bool exists = false;
+        if (!tryIsExistFile(&amp;exists, path))
+            SEAD_ASSERT_MSG(false, &quot;tryIsExistFile error&quot;);
+        return exists;
+    }
+
+    bool tryIsExistFile(bool* exists, const SafeString&amp; path);
+
+    bool isExistDirectory(const SafeString&amp; path) {
+        bool exists = false;
+        if (!tryIsExistDirectory(&amp;exists, path))
+            SEAD_ASSERT_MSG(false, &quot;isExistDirectory failed&quot;);
+        return exists;
+    }
+
+    bool tryIsExistDirectory(bool* exists, const SafeString&amp; path);
+
+    FileDevice* openDirectory(DirectoryHandle* handle, const SafeString&amp; path) {
+        FileDevice* device = tryOpenDirectory(handle, path);
+        if (!device) {
+            SEAD_ASSERT_MSG(false, &quot;directory open error&quot;);
+            return nullptr;
+        }
+        return device;
+    }
+
+    FileDevice* tryOpenDirectory(DirectoryHandle* handle, const SafeString&amp; path);
+
+    bool closeDirectory(DirectoryHandle* handle) {
+        if (!tryCloseDirectory(handle)) {
+            SEAD_ASSERT_MSG(false, &quot;directory close error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool tryCloseDirectory(DirectoryHandle* handle);
+
+    u32 readDirectory(DirectoryHandle* handle, DirectoryEntry* entries, u32 num_entries) {
+        u32 entries_read = 0;
+        if (!tryReadDirectory(&amp;entries_read, handle, entries, num_entries))
+            SEAD_ASSERT_MSG(false, &quot;directory read error&quot;);
+        return entries_read;
+    }
+
+    bool tryReadDirectory(u32* entriesRead, DirectoryHandle* handle, DirectoryEntry* entries,
+
+                          u32 entriesToRead);
+
+    bool makeDirectory(const SafeString&amp; path, u32 x) {
+        if (!tryMakeDirectory(path, x)) {
+            SEAD_ASSERT_MSG(false, &quot;directory make error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool tryMakeDirectory(const SafeString&amp; path, u32);
+
+    bool makeDirectoryWithParent(const SafeString&amp; path, u32 x) {
+        if (!tryMakeDirectoryWithParent(path, x)) {
+            SEAD_ASSERT_MSG(false, &quot;directory make with parent error&quot;);
+            return false;
+        }
+        return true;
+    }
+
+    bool tryMakeDirectoryWithParent(const SafeString&amp; path, u32);
+
+    s32 getLastRawError() const;
+
+    virtual void traceFilePath(const SafeString&amp; path) const;
+    virtual void traceDirectoryPath(const SafeString&amp; path) const;
+    virtual void resolveFilePath(BufferedSafeString* out, const SafeString&amp; path) const;
+    virtual void resolveDirectoryPath(BufferedSafeString* out, const SafeString&amp; path) const;
+    virtual bool isMatchDevice_(const HandleBase* handle) const;
+
+#ifdef SWITCH
+    static const s32 cBufferMinAlignment = 0x20;
+#else
+    static const s32 cBufferMinAlignment = 0x40;
+#endif
+
+protected:
+    virtual bool doIsAvailable_() const = 0;
+    virtual u8* doLoad_(LoadArg&amp; arg);
+    virtual bool doSave_(SaveArg&amp; arg);
+    virtual FileDevice* doOpen_(FileHandle* handle, const SafeString&amp; path, FileOpenFlag flag) = 0;
+    virtual bool doClose_(FileHandle* handle) = 0;
+    virtual bool doFlush_(FileHandle* handle) = 0;
+    virtual bool doRemove_(const SafeString&amp; str) = 0;
+    virtual bool doRead_(u32* bytesRead, FileHandle* handle, u8* outBuffer, u32 bytesToRead) = 0;
+    virtual bool doWrite_(u32* bytesWritten, FileHandle* handle, const u8* inBuffer,
+                          u32 bytesToWrite) = 0;
+    virtual bool doSeek_(FileHandle* handle, s32 offset, SeekOrigin origin) = 0;
+    virtual bool doGetCurrentSeekPos_(u32* seekPos, FileHandle* handle) = 0;
+    virtual bool doGetFileSize_(u32* fileSize, const SafeString&amp; path) = 0;
+    virtual bool doGetFileSize_(u32* fileSize, FileHandle* handle) = 0;
+    virtual bool doIsExistFile_(bool* exists, const SafeString&amp; path) = 0;
+    virtual bool doIsExistDirectory_(bool* exists, const SafeString&amp; path) = 0;
+    virtual FileDevice* doOpenDirectory_(DirectoryHandle* handle, const SafeString&amp; path) = 0;
+    virtual bool doCloseDirectory_(DirectoryHandle* handle) = 0;
+    virtual bool doReadDirectory_(u32* entriesRead, DirectoryHandle* handle,
+                                  DirectoryEntry* entries, u32 entriesToRead) = 0;
+    virtual bool doMakeDirectory_(const SafeString&amp; path, u32) = 0;
+    virtual s32 doGetLastRawError_() const = 0;
+    virtual void doTracePath_(const SafeString&amp; path) const;
+    virtual void doResolvePath_(BufferedSafeString* out, const SafeString&amp; path) const;
+
+    void setFileHandleDivSize_(FileHandle* handle, u32 divSize) const;
+    void setHandleBaseFileDevice_(HandleBase* handle, FileDevice* device) const;
+    void setHandleBaseOriginalFileDevice_(HandleBase* handle, FileDevice* device) const;
+    HandleBuffer&amp; getHandleBaseHandleBuffer_(HandleBase* handle) const;
+
+    FixedSafeString&lt;32&gt; mDriveName;
+    bool mPermission;
+};
+
+class FileHandle : public HandleBase {
+public:
+    FileHandle() : HandleBase(), mDivSize(0) {}
+
+    virtual ~FileHandle() {
+        FileDevice* _device = mOriginalDevice;
+        if (_device != NULL)
+            _device-&gt;tryClose(this);
+    }
+
+    bool close();
+    bool tryClose();
+
+    bool flush();
+    bool tryFlush();
+
+    u32 read(u8* outBuffer, u32 bytesToRead);
+    bool tryRead(u32* actual_size, u8* data, u32 size);
+
+    u32 write(const u8* data, u32 size);
+    bool tryWrite(u32* actual_size, const u8* data, u32 size);
+
+    bool seek(s32 offset, FileDevice::SeekOrigin origin);
+    bool trySeek(s32 offset, FileDevice::SeekOrigin origin);
+    u32 getCurrentSeekPos();
+    bool tryGetCurrentSeekPos(u32* pos);
+
+    u32 getFileSize();
+    bool tryGetFileSize(u32* size);
+
+    u32 getDivSize() const { return mDivSize; }
+
+protected:
+    friend class FileDevice;
+
+    s32 mDivSize;
+};
+
+class DirectoryHandle : public HandleBase {
+public:
+    DirectoryHandle() : HandleBase() {}
+
+    virtual ~DirectoryHandle() {
+        FileDevice* _device = mOriginalDevice;
+        if (_device != NULL)
+            _device-&gt;tryCloseDirectory(this);
+    }
+
+    bool close();
+    bool tryClose();
+    u32 read(DirectoryEntry* entries, u32 count);
+    bool tryRead(u32* actual_count, DirectoryEntry* entries, u32 count);
+};
+
+struct DirectoryEntry {
+    DirectoryEntry() : name(), is_directory(false) {}
+
+    FixedSafeString&lt;256&gt; name;
+    bool is_directory;
+};
+
+}  // namespace sead
+
+#endif  // SEAD_FILEDEVICE_H_
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

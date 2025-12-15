@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1IUseAudioKeeper" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>al::IUseAudioKeeper</compoundname>
+    <derivedcompoundref refid="classal_1_1LayoutActor" prot="public" virt="non-virtual">al::LayoutActor</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1LiveActor" prot="public" virt="non-virtual">al::LiveActor</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1Scene" prot="public" virt="non-virtual">al::Scene</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1IUseAudioKeeper_1a3f33a497a128f0342eb1f99363904e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::IUseAudioKeeper::v1</definition>
+        <argsstring>()</argsstring>
+        <name>v1</name>
+        <qualifiedname>al::IUseAudioKeeper::v1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Audio/alAudioKeeper.h" line="15" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1IUseAudioKeeper_1a95d203ee6ff57c2f5001803b4ad9bd71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::IUseAudioKeeper::v2</definition>
+        <argsstring>()</argsstring>
+        <name>v2</name>
+        <qualifiedname>al::IUseAudioKeeper::v2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Audio/alAudioKeeper.h" line="16" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1IUseAudioKeeper_1a0c4f8543143365d5741170d689d159ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1AudioKeeper" kindref="compound">AudioKeeper</ref> *</type>
+        <definition>virtual AudioKeeper * al::IUseAudioKeeper::getAudioKeeper</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getAudioKeeper</name>
+        <qualifiedname>al::IUseAudioKeeper::getAudioKeeper</qualifiedname>
+        <reimplementedby refid="classal_1_1LayoutActor_1aa502dbf93dde6245a2d111522e3866de">getAudioKeeper</reimplementedby>
+        <reimplementedby refid="classal_1_1LiveActor_1ac3c6a9b0ac6ff5b87cac38823bf91371">getAudioKeeper</reimplementedby>
+        <reimplementedby refid="classal_1_1Scene_1a8bcf995cf6910934661274227ed6ebbf">getAudioKeeper</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Audio/alAudioKeeper.h" line="18" column="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>al::BreakModel</label>
+        <link refid="classal_1_1BreakModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::ClockMapParts</label>
+        <link refid="classal_1_1ClockMapParts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::EffectObj</label>
+        <link refid="classal_1_1EffectObj"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::FallMapParts</label>
+        <link refid="classal_1_1FallMapParts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>al::FixMapParts</label>
+        <link refid="classal_1_1FixMapParts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1IUseAudioKeeper"/>
+      </node>
+      <node id="2">
+        <label>al::LayoutActor</label>
+        <link refid="classal_1_1LayoutActor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1LiveActor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::MapObjActor</label>
+        <link refid="classal_1_1MapObjActor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>al::Scene</label>
+        <link refid="classal_1_1Scene"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>al::Sky</label>
+        <link refid="classal_1_1Sky"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>al::SwitchAreaDirector</label>
+        <link refid="classal_1_1SwitchAreaDirector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::WipeSimple</label>
+        <link refid="classal_1_1WipeSimple"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/Audio/alAudioKeeper.h" line="12" column="1" bodyfile="lib/al/include/Audio/alAudioKeeper.h" bodystart="13" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classal_1_1IUseAudioKeeper_1a0c4f8543143365d5741170d689d159ce" prot="public" virt="pure-virtual"><scope>al::IUseAudioKeeper</scope><name>getAudioKeeper</name></member>
+      <member refid="classal_1_1IUseAudioKeeper_1a3f33a497a128f0342eb1f99363904e2d" prot="public" virt="virtual"><scope>al::IUseAudioKeeper</scope><name>v1</name></member>
+      <member refid="classal_1_1IUseAudioKeeper_1a95d203ee6ff57c2f5001803b4ad9bd71" prot="public" virt="virtual"><scope>al::IUseAudioKeeper</scope><name>v2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

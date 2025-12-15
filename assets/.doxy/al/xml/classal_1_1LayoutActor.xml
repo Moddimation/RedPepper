@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1LayoutActor" kind="class" language="C++" prot="public">
+    <compoundname>al::LayoutActor</compoundname>
+    <basecompoundref refid="classal_1_1IUseNerve" prot="public" virt="non-virtual">al::IUseNerve</basecompoundref>
+    <basecompoundref refid="classal_1_1IUseAudioKeeper" prot="public" virt="non-virtual">al::IUseAudioKeeper</basecompoundref>
+    <basecompoundref refid="classal_1_1IUseEffectKeeper" prot="public" virt="non-virtual">al::IUseEffectKeeper</basecompoundref>
+    <derivedcompoundref refid="classal_1_1WipeSimple" prot="public" virt="non-virtual">al::WipeSimple</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a658afdb7a1fd7c1ac7e0ade57cf4150f" prot="protected" static="no" mutable="no">
+        <type>sead::SafeString</type>
+        <definition>sead::SafeString al::LayoutActor::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>al::LayoutActor::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="16" column="26" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a0bc10131dec81f027b5d01bad10049e1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1NerveKeeper" kindref="compound">NerveKeeper</ref> *</type>
+        <definition>NerveKeeper* al::LayoutActor::mNerveKeeper</definition>
+        <argsstring></argsstring>
+        <name>mNerveKeeper</name>
+        <qualifiedname>al::LayoutActor::mNerveKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="17" column="25" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a96760598aea0a9ae3b0ae6f6b6719e2a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1AudioKeeper" kindref="compound">AudioKeeper</ref> *</type>
+        <definition>AudioKeeper* al::LayoutActor::mAudioKeeper</definition>
+        <argsstring></argsstring>
+        <name>mAudioKeeper</name>
+        <qualifiedname>al::LayoutActor::mAudioKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="18" column="25" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a3c798aab62725f10fda6c441e0b2e769" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1EffectKeeper" kindref="compound">EffectKeeper</ref> *</type>
+        <definition>EffectKeeper* al::LayoutActor::mEffectKeeper</definition>
+        <argsstring></argsstring>
+        <name>mEffectKeeper</name>
+        <qualifiedname>al::LayoutActor::mEffectKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="19" column="25" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a46f7f1658c245b4e0d744c97275a354e" prot="protected" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref> *</type>
+        <definition>void* al::LayoutActor::_20</definition>
+        <argsstring></argsstring>
+        <name>_20</name>
+        <qualifiedname>al::LayoutActor::_20</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="20" column="25" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a0ff5a47fcd626bd1f45ed2793acd0391" prot="protected" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref> *</type>
+        <definition>void* al::LayoutActor::_24</definition>
+        <argsstring></argsstring>
+        <name>_24</name>
+        <qualifiedname>al::LayoutActor::_24</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="21" column="25" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1ae7b23463030cff1728f311601977b488" prot="protected" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref> *</type>
+        <definition>void* al::LayoutActor::_28</definition>
+        <argsstring></argsstring>
+        <name>_28</name>
+        <qualifiedname>al::LayoutActor::_28</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="22" column="25" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1LayoutActor_1a8585f9bb9e250bbbbcb9ef32b1091182" prot="protected" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::LayoutActor::mIsAlive</definition>
+        <argsstring></argsstring>
+        <name>mIsAlive</name>
+        <qualifiedname>al::LayoutActor::mIsAlive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="23" column="26" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a3f4205f116e5cc15508f7cfe1054433c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::LayoutActor::initNerve</definition>
+        <argsstring>(const Nerve *nerve, int maxNerveStates=0)</argsstring>
+        <name>initNerve</name>
+        <qualifiedname>al::LayoutActor::initNerve</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1Nerve" kindref="compound">Nerve</ref> *</type>
+          <declname>nerve</declname>
+        </param>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+          <declname>maxNerveStates</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="26" column="14" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1ad817acb5e850b2fa1c4c29fc1d4ec143" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1NerveKeeper" kindref="compound">NerveKeeper</ref> *</type>
+        <definition>NerveKeeper * al::LayoutActor::getNerveKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getNerveKeeper</name>
+        <qualifiedname>al::LayoutActor::getNerveKeeper</qualifiedname>
+        <reimplements refid="classal_1_1IUseNerve_1aa3b5bb2047eaab092052b8d5ffcb580d">getNerveKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="29" column="30" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a27623acb1aff9a2f53951d3472b091e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::LayoutActor::appear</definition>
+        <argsstring>()</argsstring>
+        <name>appear</name>
+        <qualifiedname>al::LayoutActor::appear</qualifiedname>
+        <reimplementedby refid="classal_1_1WipeSimple_1a26e6b8c82c96f4221ca2b1fee0a5d9ad">appear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="30" column="31" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a4d0411a6ccb52be6c6ad335e3ae657db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::LayoutActor::kill</definition>
+        <argsstring>()</argsstring>
+        <name>kill</name>
+        <qualifiedname>al::LayoutActor::kill</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="31" column="31" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a8ff16ea496eb91278e0f6180ccb2c6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::LayoutActor::movement</definition>
+        <argsstring>()</argsstring>
+        <name>movement</name>
+        <qualifiedname>al::LayoutActor::movement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="32" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1aec3ecf1cea11ea26f22f0d35c413dd7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::LayoutActor::calcAnim</definition>
+        <argsstring>()</argsstring>
+        <name>calcAnim</name>
+        <qualifiedname>al::LayoutActor::calcAnim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="33" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1aa502dbf93dde6245a2d111522e3866de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1AudioKeeper" kindref="compound">AudioKeeper</ref> *</type>
+        <definition>AudioKeeper * al::LayoutActor::getAudioKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getAudioKeeper</name>
+        <qualifiedname>al::LayoutActor::getAudioKeeper</qualifiedname>
+        <reimplements refid="classal_1_1IUseAudioKeeper_1a0c4f8543143365d5741170d689d159ce">getAudioKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="34" column="30" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a2cdbe37b30a07776a6728d4cf4b64d95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1EffectKeeper" kindref="compound">EffectKeeper</ref> *</type>
+        <definition>EffectKeeper * al::LayoutActor::getEffectKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getEffectKeeper</name>
+        <qualifiedname>al::LayoutActor::getEffectKeeper</qualifiedname>
+        <reimplements refid="classal_1_1IUseEffectKeeper_1a987095cf653d73e75789d1df65f3c4f7">getEffectKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="35" column="30" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1ae1011acc66f2c5dde49d8888e6afdcd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::LayoutActor::control</definition>
+        <argsstring>()</argsstring>
+        <name>control</name>
+        <qualifiedname>al::LayoutActor::control</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="36" column="31" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a71b3b1940644877548d9c0a91d760707" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::LayoutActor::unk1</definition>
+        <argsstring>()</argsstring>
+        <name>unk1</name>
+        <qualifiedname>al::LayoutActor::unk1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="37" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1a29d7e7969bbc4e1ccbec709d65cfa7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::LayoutActor::unk2</definition>
+        <argsstring>()</argsstring>
+        <name>unk2</name>
+        <qualifiedname>al::LayoutActor::unk2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="38" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1LayoutActor_1ac9c5b8c6dec8a48fa5b147230586cb88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::LayoutActor::LayoutActor</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>LayoutActor</name>
+        <qualifiedname>al::LayoutActor::LayoutActor</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Layout/alLayoutActor.h" line="41" column="9" bodyfile="lib/al/src/Layout/alLayoutActor.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1IUseAudioKeeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1IUseEffectKeeper"/>
+      </node>
+      <node id="2">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1IUseNerve"/>
+      </node>
+      <node id="1">
+        <label>al::LayoutActor</label>
+        <link refid="classal_1_1LayoutActor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::WipeSimple</label>
+        <link refid="classal_1_1WipeSimple"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>al::AudioKeeper</label>
+        <link refid="classal_1_1AudioKeeper"/>
+      </node>
+      <node id="7">
+        <label>al::EffectKeeper</label>
+        <link refid="classal_1_1EffectKeeper"/>
+      </node>
+      <node id="3">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1IUseAudioKeeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1IUseEffectKeeper"/>
+      </node>
+      <node id="2">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1IUseNerve"/>
+      </node>
+      <node id="1">
+        <label>al::LayoutActor</label>
+        <link refid="classal_1_1LayoutActor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mAudioKeeper</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mEffectKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1NerveKeeper"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Layout/alLayoutActor.h" line="13" column="1" bodyfile="lib/al/include/Layout/alLayoutActor.h" bodystart="14" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classal_1_1LayoutActor_1a46f7f1658c245b4e0d744c97275a354e" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>_20</name></member>
+      <member refid="classal_1_1LayoutActor_1a0ff5a47fcd626bd1f45ed2793acd0391" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>_24</name></member>
+      <member refid="classal_1_1LayoutActor_1ae7b23463030cff1728f311601977b488" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>_28</name></member>
+      <member refid="classal_1_1LayoutActor_1a27623acb1aff9a2f53951d3472b091e3" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>appear</name></member>
+      <member refid="classal_1_1LayoutActor_1aec3ecf1cea11ea26f22f0d35c413dd7f" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>calcAnim</name></member>
+      <member refid="classal_1_1LayoutActor_1ae1011acc66f2c5dde49d8888e6afdcd0" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>control</name></member>
+      <member refid="classal_1_1LayoutActor_1aa502dbf93dde6245a2d111522e3866de" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>getAudioKeeper</name></member>
+      <member refid="classal_1_1LayoutActor_1a2cdbe37b30a07776a6728d4cf4b64d95" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>getEffectKeeper</name></member>
+      <member refid="classal_1_1LayoutActor_1ad817acb5e850b2fa1c4c29fc1d4ec143" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>getNerveKeeper</name></member>
+      <member refid="classal_1_1LayoutActor_1a3f4205f116e5cc15508f7cfe1054433c" prot="public" virt="non-virtual"><scope>al::LayoutActor</scope><name>initNerve</name></member>
+      <member refid="classal_1_1LayoutActor_1a4d0411a6ccb52be6c6ad335e3ae657db" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>kill</name></member>
+      <member refid="classal_1_1LayoutActor_1ac9c5b8c6dec8a48fa5b147230586cb88" prot="public" virt="non-virtual"><scope>al::LayoutActor</scope><name>LayoutActor</name></member>
+      <member refid="classal_1_1LayoutActor_1a96760598aea0a9ae3b0ae6f6b6719e2a" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>mAudioKeeper</name></member>
+      <member refid="classal_1_1LayoutActor_1a3c798aab62725f10fda6c441e0b2e769" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>mEffectKeeper</name></member>
+      <member refid="classal_1_1LayoutActor_1a8585f9bb9e250bbbbcb9ef32b1091182" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>mIsAlive</name></member>
+      <member refid="classal_1_1LayoutActor_1a658afdb7a1fd7c1ac7e0ade57cf4150f" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>mName</name></member>
+      <member refid="classal_1_1LayoutActor_1a0bc10131dec81f027b5d01bad10049e1" prot="protected" virt="non-virtual"><scope>al::LayoutActor</scope><name>mNerveKeeper</name></member>
+      <member refid="classal_1_1LayoutActor_1a8ff16ea496eb91278e0f6180ccb2c6de" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>movement</name></member>
+      <member refid="classal_1_1LayoutActor_1a71b3b1940644877548d9c0a91d760707" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>unk1</name></member>
+      <member refid="classal_1_1LayoutActor_1a29d7e7969bbc4e1ccbec709d65cfa7c0" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>unk2</name></member>
+      <member refid="classal_1_1IUseAudioKeeper_1a3f33a497a128f0342eb1f99363904e2d" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>v1</name></member>
+      <member refid="classal_1_1IUseAudioKeeper_1a95d203ee6ff57c2f5001803b4ad9bd71" prot="public" virt="virtual"><scope>al::LayoutActor</scope><name>v2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

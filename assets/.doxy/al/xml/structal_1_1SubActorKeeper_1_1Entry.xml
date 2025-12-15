@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structal_1_1SubActorKeeper_1_1Entry" kind="struct" language="C++" prot="private">
+    <compoundname>al::SubActorKeeper::Entry</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structal_1_1SubActorKeeper_1_1Entry_1a37c5c8698053fab5b5af53856b590c14" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1LiveActor" kindref="compound">LiveActor</ref> *</type>
+        <definition>LiveActor* al::SubActorKeeper::Entry::actor</definition>
+        <argsstring></argsstring>
+        <name>actor</name>
+        <qualifiedname>al::SubActorKeeper::Entry::actor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="20" column="27" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structal_1_1SubActorKeeper_1_1Entry_1a3fd61c31be3c94f4d97f55e5ef89af48" prot="public" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref> *</type>
+        <definition>void* al::SubActorKeeper::Entry::_4</definition>
+        <argsstring></argsstring>
+        <name>_4</name>
+        <qualifiedname>al::SubActorKeeper::Entry::_4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="21" column="27" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structal_1_1SubActorKeeper_1_1Entry_1a3a81b56c9a039d7ebe854f65dc0f201f" prot="public" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">u32</ref></type>
+        <definition>u32 al::SubActorKeeper::Entry::_8</definition>
+        <argsstring></argsstring>
+        <name>_8</name>
+        <qualifiedname>al::SubActorKeeper::Entry::_8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="22" column="28" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>al::ActorActionKeeper</label>
+        <link refid="classal_1_1ActorActionKeeper"/>
+      </node>
+      <node id="8">
+        <label>al::ActorExecuteInfo</label>
+        <link refid="classal_1_1ActorExecuteInfo"/>
+      </node>
+      <node id="7">
+        <label>al::ActorPoseKeeperBase</label>
+        <link refid="classal_1_1ActorPoseKeeperBase"/>
+      </node>
+      <node id="16">
+        <label>al::AudioKeeper</label>
+        <link refid="classal_1_1AudioKeeper"/>
+      </node>
+      <node id="10">
+        <label>al::Collider</label>
+        <link refid="classal_1_1Collider"/>
+      </node>
+      <node id="11">
+        <label>al::CollisionParts</label>
+        <link refid="classal_1_1CollisionParts"/>
+      </node>
+      <node id="15">
+        <label>al::EffectKeeper</label>
+        <link refid="classal_1_1EffectKeeper"/>
+      </node>
+      <node id="14">
+        <label>al::HitSensorKeeper</label>
+        <link refid="classal_1_1HitSensorKeeper"/>
+      </node>
+      <node id="5">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1IUseAudioKeeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1IUseEffectKeeper"/>
+      </node>
+      <node id="3">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1IUseNerve"/>
+      </node>
+      <node id="6">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1IUseStageSwitch"/>
+      </node>
+      <node id="2">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1LiveActor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mActorPoseKeeper</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mActorExecuteInfo</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mActorActionKeeper</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mCollider</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mCollisionParts</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mModelKeeper</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mHitSensorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mEffectKeeper</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mAudioKeeper</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mStageSwitchKeeper</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mRailKeeper</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mShadowKeeper</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mSubActorKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>al::ModelKeeper</label>
+        <link refid="classal_1_1ModelKeeper"/>
+      </node>
+      <node id="13">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1NerveKeeper"/>
+      </node>
+      <node id="18">
+        <label>al::RailKeeper</label>
+        <link refid="classal_1_1RailKeeper"/>
+      </node>
+      <node id="19">
+        <label>al::ShadowKeeper</label>
+        <link refid="classal_1_1ShadowKeeper"/>
+      </node>
+      <node id="17">
+        <label>al::StageSwitchKeeper</label>
+        <link refid="classal_1_1StageSwitchKeeper"/>
+      </node>
+      <node id="20">
+        <label>al::SubActorKeeper</label>
+        <link refid="classal_1_1SubActorKeeper"/>
+      </node>
+      <node id="1">
+        <label>al::SubActorKeeper::Entry</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>actor</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/LiveActor/alSubActorKeeper.h" line="18" column="9" bodyfile="lib/al/include/LiveActor/alSubActorKeeper.h" bodystart="19" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structal_1_1SubActorKeeper_1_1Entry_1a3fd61c31be3c94f4d97f55e5ef89af48" prot="public" virt="non-virtual"><scope>al::SubActorKeeper::Entry</scope><name>_4</name></member>
+      <member refid="structal_1_1SubActorKeeper_1_1Entry_1a3a81b56c9a039d7ebe854f65dc0f201f" prot="public" virt="non-virtual"><scope>al::SubActorKeeper::Entry</scope><name>_8</name></member>
+      <member refid="structal_1_1SubActorKeeper_1_1Entry_1a37c5c8698053fab5b5af53856b590c14" prot="public" virt="non-virtual"><scope>al::SubActorKeeper::Entry</scope><name>actor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

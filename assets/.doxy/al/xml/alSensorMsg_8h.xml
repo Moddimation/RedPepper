@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="alSensorMsg_8h" kind="file" language="C++">
+    <compoundname>alSensorMsg.h</compoundname>
+    <includedby refid="alSensorMsg_8cpp" local="no">lib/al/src/LiveActor/alSensorMsg.cpp</includedby>
+    <includedby refid="alFallMapParts_8cpp" local="no">lib/al/src/MapObj/alFallMapParts.cpp</includedby>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="alSensorMsg_8h_1ae9193a98737d88d066061b1d9e20f658" prot="public" static="no">
+        <name>AL_LIVEACTOR_SENSORMSG</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>        bool sendMsg##TYPE( HitSensor* to, HitSensor* from ); \
+        bool isMsg##TYPE( u32 msg );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSensorMsg.h" line="41" column="9" bodyfile="lib/al/include/LiveActor/alSensorMsg.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">al</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HitSensor;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>SensorMsg</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_UpperPunch<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerStatueTouch<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerRollingAttack<sp/><sp/><sp/><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerInvincibleAttack<sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerFireBallAttack<sp/><sp/><sp/>=<sp/>17,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerTailAttack<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>18,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerKick<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>19,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerBoomerangAttack<sp/><sp/>=<sp/>20,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerBoomerangReflect<sp/>=<sp/>22,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerBoomerangBreak<sp/><sp/><sp/>=<sp/>23,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_ItemGet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>26,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerFloorTouch<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>27,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_PlayerInvincibleTouch<sp/><sp/>=<sp/>30,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_34<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>34,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_KickKouraReflect<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>36,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_KickKouraBreak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>37,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_KickStoneAttack<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>40,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_41<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>41,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_EnemyAttack<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>45,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_GororiAttack<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>46,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_GororiBigAttack<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>47,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_49<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>49,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_50<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>50,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_51<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>51,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_52<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>52,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_53<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>53,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_55<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>55,<sp/></highlight><highlight class="comment">//<sp/>something<sp/>with<sp/>the<sp/>KoopaLast<sp/>door</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SensorMsg_58<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>58<sp/><sp/></highlight><highlight class="comment">//<sp/>something<sp/>with<sp/>the<sp/>KoopaLast<sp/>door</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AL_LIVEACTOR_SENSORMSG(<sp/>TYPE<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>sendMsg##TYPE(<sp/>HitSensor*<sp/>to,<sp/>HitSensor*<sp/>from<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>isMsg##TYPE(<sp/>u32<sp/>msg<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>UpperPunch<sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>9<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerStatueTouch<sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerRollingAttack<sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>14<sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerInvincibleAttack<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerFireBallAttack<sp/>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerTailAttack<sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerKick<sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerBoomerangAttack<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerBoomerangReflect<sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerBoomerangBreak<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerFloorTouch<sp/>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>PlayerInvincibleTouch<sp/>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>34<sp/>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>KickKouraReflect<sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>KickKouraBreak<sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>KickStoneAttack<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>41<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>EnemyAttack<sp/>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>GororiAttack<sp/>)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>GororiBigAttack<sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>49<sp/>)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>50<sp/>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>51<sp/>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>52<sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>53<sp/>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>55<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">AL_LIVEACTOR_SENSORMSG(<sp/>58<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>AL_LIVEACTOR_SENSORMSG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alSensorMsg.h"/>
+  </compounddef>
+</doxygen>

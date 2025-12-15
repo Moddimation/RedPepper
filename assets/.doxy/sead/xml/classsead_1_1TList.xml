@@ -1,0 +1,630 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1TList" kind="class" language="C++" prot="public">
+    <compoundname>sead::TList</compoundname>
+    <basecompoundref refid="classsead_1_1ListImpl" prot="public" virt="non-virtual">sead::ListImpl</basecompoundref>
+    <innerclass refid="classsead_1_1TList_1_1iterator" prot="public">sead::TList::iterator</innerclass>
+    <innerclass refid="classsead_1_1TList_1_1robustIterator" prot="public">sead::TList::robustIterator</innerclass>
+    <innerclass refid="structsead_1_1TList_1_1RobustRange" prot="public">sead::TList::RobustRange</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsead_1_1TList_1a1eb1e94aab9d69d52d97bb54a99d40b1" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* sead::TList&lt; T &gt;::CompareCallback) (const T *, const T *)</definition>
+        <argsstring>)(const T *, const T *)</argsstring>
+        <name>CompareCallback</name>
+        <qualifiedname>sead::TList::CompareCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="13" column="13" bodyfile="lib/sead/include/container/seadTList.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1TList_1ad85c319dc80ea1071b50cd8a651b43e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::TList&lt; T &gt;::TList</definition>
+        <argsstring>()</argsstring>
+        <name>TList</name>
+        <qualifiedname>sead::TList::TList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="15" column="5" bodyfile="lib/sead/include/container/seadTList.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1ac71056fd75c5e8539beaf31c69d5dc8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::pushBack</definition>
+        <argsstring>(TListNode&lt; T &gt; *item)</argsstring>
+        <name>pushBack</name>
+        <qualifiedname>sead::TList::pushBack</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="17" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a1a4ebfd3540b659480ef5d6e0dd7e2d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::pushFront</definition>
+        <argsstring>(TListNode&lt; T &gt; *item)</argsstring>
+        <name>pushFront</name>
+        <qualifiedname>sead::TList::pushFront</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="23" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1ace0905e8cf4cc1d63f12364f3e837e6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::popBack</definition>
+        <argsstring>()</argsstring>
+        <name>popBack</name>
+        <qualifiedname>sead::TList::popBack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="29" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a6edebbbca2ba902ff16ae3ed92a318d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::popFront</definition>
+        <argsstring>()</argsstring>
+        <name>popFront</name>
+        <qualifiedname>sead::TList::popFront</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="31" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a94db09f3be2b1544eb1ee5df6d806edb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::insertBefore</definition>
+        <argsstring>(TListNode&lt; T &gt; *node, TListNode&lt; T &gt; *node_to_insert)</argsstring>
+        <name>insertBefore</name>
+        <qualifiedname>sead::TList::insertBefore</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node_to_insert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="33" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a0be5c4c348a54a8a62d2a7dd9414f0bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::insertAfter</definition>
+        <argsstring>(TListNode&lt; T &gt; *node, TListNode&lt; T &gt; *node_to_insert)</argsstring>
+        <name>insertAfter</name>
+        <qualifiedname>sead::TList::insertAfter</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node_to_insert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="37" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a8b98d869459469ea16ea8741fb4d34e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::erase</definition>
+        <argsstring>(TListNode&lt; T &gt; *item)</argsstring>
+        <name>erase</name>
+        <qualifiedname>sead::TList::erase</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="41" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a2bf2a7761af6b0a906cc68b15de7e901" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::front</definition>
+        <argsstring>() const</argsstring>
+        <name>front</name>
+        <qualifiedname>sead::TList::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="48" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a502e1269afbc44a6b91413fc440aee8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::back</definition>
+        <argsstring>() const</argsstring>
+        <name>back</name>
+        <qualifiedname>sead::TList::back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="50" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a8a94ba9100a5aedf5a70d98bdf027038" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::nth</definition>
+        <argsstring>(int n) const</argsstring>
+        <name>nth</name>
+        <qualifiedname>sead::TList::nth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="52" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1aa107d3affe453e23369478e102822ef1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>s32</type>
+        <definition>s32 sead::TList&lt; T &gt;::indexOf</definition>
+        <argsstring>(const TListNode&lt; T &gt; *node) const</argsstring>
+        <name>indexOf</name>
+        <qualifiedname>sead::TList::indexOf</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="54" column="9" bodyfile="lib/sead/include/container/seadTList.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1adba3e03bf4aa39d89b2fe36aa0886289" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::swap</definition>
+        <argsstring>(TListNode&lt; T &gt; *n1, TListNode&lt; T &gt; *n2)</argsstring>
+        <name>swap</name>
+        <qualifiedname>sead::TList::swap</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>n2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="56" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a88085dabf519a75db7d032b802fc7c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::moveAfter</definition>
+        <argsstring>(TListNode&lt; T &gt; *basis, TListNode&lt; T &gt; *n)</argsstring>
+        <name>moveAfter</name>
+        <qualifiedname>sead::TList::moveAfter</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>basis</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="58" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1ace76c299882df06112277f5233d11fdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::moveBefore</definition>
+        <argsstring>(TListNode&lt; T &gt; *basis, TListNode&lt; T &gt; *n)</argsstring>
+        <name>moveBefore</name>
+        <qualifiedname>sead::TList::moveBefore</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>basis</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="60" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a1ddaa1f4d13c29830d2650e7e3f3db6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::sort</definition>
+        <argsstring>(s32 offset, CompareCallback cmp)</argsstring>
+        <name>sort</name>
+        <qualifiedname>sead::TList::sort</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>CompareCallback</type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="62" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a1a17f3acdfc1d8a53072442b43ed504e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::mergeSort</definition>
+        <argsstring>(s32 offset, CompareCallback cmp)</argsstring>
+        <name>mergeSort</name>
+        <qualifiedname>sead::TList::mergeSort</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>CompareCallback</type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="64" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a99be215cc871e430251beda79932189d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::find</definition>
+        <argsstring>(const void *ptr, s32 offset, CompareCallback cmp) const</argsstring>
+        <name>find</name>
+        <qualifiedname>sead::TList::find</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>CompareCallback</type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="66" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a122e78213ffcdaa894c55af9064d12f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::uniq</definition>
+        <argsstring>(s32 offset, CompareCallback cmp)</argsstring>
+        <name>uniq</name>
+        <qualifiedname>sead::TList::uniq</qualifiedname>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>CompareCallback</type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="70" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1ae9067f5bcfdfd46f43f9e38df3afc75b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::TList&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>sead::TList::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="72" column="10" bodyfile="lib/sead/include/container/seadTList.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a9f143e957b7cf895ede205f78e0af09b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::prev</definition>
+        <argsstring>(const TListNode&lt; T &gt; *node) const</argsstring>
+        <name>prev</name>
+        <qualifiedname>sead::TList::prev</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="74" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a6736b1bee07d147ccf38c8447426c407" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+        <definition>TListNode&lt; T &gt; * sead::TList&lt; T &gt;::next</definition>
+        <argsstring>(const TListNode&lt; T &gt; *node) const</argsstring>
+        <name>next</name>
+        <qualifiedname>sead::TList::next</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1TListNode" kindref="compound">TListNode</ref>&lt; T &gt; *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="81" column="15" bodyfile="lib/sead/include/container/seadTList.h" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a172712f1222d297197441674b926ed58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TList_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator sead::TList&lt; T &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>sead::TList::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="114" column="14" bodyfile="lib/sead/include/container/seadTList.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1ac935a6eabcb8c1afd6fb17ab64393e35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TList_1_1iterator" kindref="compound">iterator</ref></type>
+        <definition>iterator sead::TList&lt; T &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>sead::TList::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="116" column="14" bodyfile="lib/sead/include/container/seadTList.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a48dd3134160ed826373da31f8eef217b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TList_1_1robustIterator" kindref="compound">robustIterator</ref></type>
+        <definition>robustIterator sead::TList&lt; T &gt;::robustBegin</definition>
+        <argsstring>() const</argsstring>
+        <name>robustBegin</name>
+        <qualifiedname>sead::TList::robustBegin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="157" column="20" bodyfile="lib/sead/include/container/seadTList.h" bodystart="157" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1acfcf0a57a3d85ca83917cc3eb3c7a608" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1TList_1_1robustIterator" kindref="compound">robustIterator</ref></type>
+        <definition>robustIterator sead::TList&lt; T &gt;::robustEnd</definition>
+        <argsstring>() const</argsstring>
+        <name>robustEnd</name>
+        <qualifiedname>sead::TList::robustEnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="161" column="20" bodyfile="lib/sead/include/container/seadTList.h" bodystart="161" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1TList_1a1bc77fba385bb69fd3b3e66fed7293b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structsead_1_1TList_1_1RobustRange" kindref="compound">RobustRange</ref></type>
+        <definition>RobustRange sead::TList&lt; T &gt;::robustRange</definition>
+        <argsstring>() const</argsstring>
+        <name>robustRange</name>
+        <qualifiedname>sead::TList::robustRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="175" column="17" bodyfile="lib/sead/include/container/seadTList.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classsead_1_1TList_1a534f45250633c3420c8c63013d9597a0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int sead::TList&lt; T &gt;::compareT</definition>
+        <argsstring>(const T *a, const T *b)</argsstring>
+        <name>compareT</name>
+        <qualifiedname>sead::TList::compareT</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadTList.h" line="178" column="16" bodyfile="lib/sead/include/container/seadTList.h" bodystart="178" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1ListImpl"/>
+      </node>
+      <node id="1">
+        <label>sead::TList&lt; T &gt;</label>
+        <link refid="classsead_1_1TList"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1ListImpl"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1ListNode"/>
+      </node>
+      <node id="1">
+        <label>sead::TList&lt; T &gt;</label>
+        <link refid="classsead_1_1TList"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/container/seadTList.h" line="11" column="1" bodyfile="lib/sead/include/container/seadTList.h" bodystart="11" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classsead_1_1TList_1a502e1269afbc44a6b91413fc440aee8f" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>back</name></member>
+      <member refid="classsead_1_1TList_1a172712f1222d297197441674b926ed58" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>begin</name></member>
+      <member refid="classsead_1_1ListImpl_1ae40cfaaec4f02b01fa964a0e0f397204" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>checkLinks</name></member>
+      <member refid="classsead_1_1TList_1ae9067f5bcfdfd46f43f9e38df3afc75b" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>clear</name></member>
+      <member refid="classsead_1_1TList_1a1eb1e94aab9d69d52d97bb54a99d40b1" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>CompareCallback</name></member>
+      <member refid="classsead_1_1ListImpl_1a2023e56060a6c743dca2e3de8b418bb7" prot="protected" virt="non-virtual"><scope>sead::TList</scope><name>CompareCallbackImpl</name></member>
+      <member refid="classsead_1_1TList_1a534f45250633c3420c8c63013d9597a0" prot="private" virt="non-virtual"><scope>sead::TList</scope><name>compareT</name></member>
+      <member refid="classsead_1_1TList_1ac935a6eabcb8c1afd6fb17ab64393e35" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>end</name></member>
+      <member refid="classsead_1_1TList_1a8b98d869459469ea16ea8741fb4d34e5" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>erase</name></member>
+      <member refid="classsead_1_1ListImpl_1a504b8b6e875b713243aa461ee0ed5173" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>erase</name></member>
+      <member refid="classsead_1_1TList_1a99be215cc871e430251beda79932189d" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>find</name></member>
+      <member refid="classsead_1_1ListImpl_1a67d9ad4b8b49fad79a6a54440bba225b" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>find</name></member>
+      <member refid="classsead_1_1TList_1a2bf2a7761af6b0a906cc68b15de7e901" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>front</name></member>
+      <member refid="classsead_1_1TList_1aa107d3affe453e23369478e102822ef1" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>indexOf</name></member>
+      <member refid="classsead_1_1ListImpl_1a2a37cb4662be4fe9a5120fc221f0d772" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>indexOf</name></member>
+      <member refid="classsead_1_1TList_1a0be5c4c348a54a8a62d2a7dd9414f0bc" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>insertAfter</name></member>
+      <member refid="classsead_1_1ListImpl_1a89fdfd474c581521884bce9bec1434d4" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>insertAfter</name></member>
+      <member refid="classsead_1_1TList_1a94db09f3be2b1544eb1ee5df6d806edb" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>insertBefore</name></member>
+      <member refid="classsead_1_1ListImpl_1a1113d827863a9ddd63751108f099cd8f" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>insertBefore</name></member>
+      <member refid="classsead_1_1ListImpl_1a4916484393db40b9ebab6a57282a3e37" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>isEmpty</name></member>
+      <member refid="classsead_1_1ListImpl_1a733c329c91ffa5ee168a84b29088ef30" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>ListImpl</name></member>
+      <member refid="classsead_1_1ListImpl_1a2509cce417414e30964c097e92b60433" prot="protected" virt="non-virtual"><scope>sead::TList</scope><name>mCount</name></member>
+      <member refid="classsead_1_1TList_1a1a17f3acdfc1d8a53072442b43ed504e" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>mergeSort</name></member>
+      <member refid="classsead_1_1ListImpl_1a1a1e5b44d702600661362e300efd2906" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>mergeSort</name></member>
+      <member refid="classsead_1_1ListImpl_1a27422f4c46b1562f1890dfb52b1c853f" prot="protected" virt="non-virtual"><scope>sead::TList</scope><name>mergeSortImpl_</name></member>
+      <member refid="classsead_1_1TList_1a88085dabf519a75db7d032b802fc7c65" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>moveAfter</name></member>
+      <member refid="classsead_1_1ListImpl_1a8d24395b5525725472a6dafe71f014d4" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>moveAfter</name></member>
+      <member refid="classsead_1_1TList_1ace76c299882df06112277f5233d11fdb" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>moveBefore</name></member>
+      <member refid="classsead_1_1ListImpl_1a04bb06fe90a23a66d2ea18c76c06c988" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>moveBefore</name></member>
+      <member refid="classsead_1_1ListImpl_1ab962d9ee6b6c1641a0fef78e828e9f2c" prot="protected" virt="non-virtual"><scope>sead::TList</scope><name>mStartEnd</name></member>
+      <member refid="classsead_1_1TList_1a6736b1bee07d147ccf38c8447426c407" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>next</name></member>
+      <member refid="classsead_1_1TList_1a8a94ba9100a5aedf5a70d98bdf027038" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>nth</name></member>
+      <member refid="classsead_1_1TList_1ace0905e8cf4cc1d63f12364f3e837e6b" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>popBack</name></member>
+      <member refid="classsead_1_1TList_1a6edebbbca2ba902ff16ae3ed92a318d4" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>popFront</name></member>
+      <member refid="classsead_1_1TList_1a9f143e957b7cf895ede205f78e0af09b" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>prev</name></member>
+      <member refid="classsead_1_1TList_1ac71056fd75c5e8539beaf31c69d5dc8f" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>pushBack</name></member>
+      <member refid="classsead_1_1ListImpl_1a14fe79ee1bb35b33eb8a2907e01f8898" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>pushBack</name></member>
+      <member refid="classsead_1_1TList_1a1a4ebfd3540b659480ef5d6e0dd7e2d5" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>pushFront</name></member>
+      <member refid="classsead_1_1ListImpl_1a4a481951b09a431e7fd10fd7f12d8fb8" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>pushFront</name></member>
+      <member refid="classsead_1_1ListImpl_1a04c10d88020602d5ba9cd221e018fd69" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>reverse</name></member>
+      <member refid="classsead_1_1TList_1a48dd3134160ed826373da31f8eef217b" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>robustBegin</name></member>
+      <member refid="classsead_1_1TList_1acfcf0a57a3d85ca83917cc3eb3c7a608" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>robustEnd</name></member>
+      <member refid="classsead_1_1TList_1a1bc77fba385bb69fd3b3e66fed7293b6" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>robustRange</name></member>
+      <member refid="classsead_1_1ListImpl_1abaf3041517889b9e5aed5f5b4d00bf09" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>shuffle</name></member>
+      <member refid="classsead_1_1ListImpl_1ac7840d0ad78e670e747808243f78cbb6" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>shuffle</name></member>
+      <member refid="classsead_1_1ListImpl_1af11a3598a6da9a36e6a4dedf7040a22f" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>size</name></member>
+      <member refid="classsead_1_1TList_1a1ddaa1f4d13c29830d2650e7e3f3db6e" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>sort</name></member>
+      <member refid="classsead_1_1ListImpl_1a6eaa9f1a3936313e1d957e5def64f027" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>sort</name></member>
+      <member refid="classsead_1_1TList_1adba3e03bf4aa39d89b2fe36aa0886289" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>swap</name></member>
+      <member refid="classsead_1_1ListImpl_1a085cc7b977147fe371007d001fcc7d35" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>swap</name></member>
+      <member refid="classsead_1_1TList_1ad85c319dc80ea1071b50cd8a651b43e6" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>TList</name></member>
+      <member refid="classsead_1_1TList_1a122e78213ffcdaa894c55af9064d12f2" prot="public" virt="non-virtual"><scope>sead::TList</scope><name>uniq</name></member>
+      <member refid="classsead_1_1ListImpl_1a51ed16b3f9329f0657784b165130c2f5" prot="protected" virt="non-virtual" ambiguityscope="sead::ListImpl::"><scope>sead::TList</scope><name>uniq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

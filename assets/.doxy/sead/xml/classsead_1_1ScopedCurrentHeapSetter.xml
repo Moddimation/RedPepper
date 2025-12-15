@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1ScopedCurrentHeapSetter" kind="class" language="C++" prot="public">
+    <compoundname>sead::ScopedCurrentHeapSetter</compoundname>
+    <includes refid="seadHeapMgr_8h" local="no">seadHeapMgr.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1ScopedCurrentHeapSetter_1acad8127e201b0c78bc9bf712514fbea0" prot="protected" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t sead::ScopedCurrentHeapSetter::mPreviousHeap</definition>
+        <argsstring></argsstring>
+        <name>mPreviousHeap</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::mPreviousHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="80" column="15" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1ScopedCurrentHeapSetter_1a811192f91f5ccabc51481382f125735a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::ScopedCurrentHeapSetter::ScopedCurrentHeapSetter</definition>
+        <argsstring>(sead::Heap *heap)</argsstring>
+        <name>ScopedCurrentHeapSetter</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::ScopedCurrentHeapSetter</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">sead::Heap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="53" column="14" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedCurrentHeapSetter_1afb0257af3d8b636ef77491b6d33020f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::ScopedCurrentHeapSetter::~ScopedCurrentHeapSetter</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedCurrentHeapSetter</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::~ScopedCurrentHeapSetter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="60" column="5" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1ScopedCurrentHeapSetter_1a77fdbe4608053692e5c7b898e573faa5" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+        <definition>Heap * sead::ScopedCurrentHeapSetter::getPreviousHeap_</definition>
+        <argsstring>() const</argsstring>
+        <name>getPreviousHeap_</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::getPreviousHeap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>Only call this if hasPreviousHeap returns true. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="67" column="10" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedCurrentHeapSetter_1ab3268076f495f2b744961e572f9e7bcc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ScopedCurrentHeapSetter::setPreviousHeap_</definition>
+        <argsstring>(Heap *heap)</argsstring>
+        <name>setPreviousHeap_</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::setPreviousHeap_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1Heap" kindref="compound">Heap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="69" column="10" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedCurrentHeapSetter_1a52212d9f79c0e3b4fcb28b25da0868d7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ScopedCurrentHeapSetter::setPreviousHeapToNone_</definition>
+        <argsstring>()</argsstring>
+        <name>setPreviousHeapToNone_</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::setPreviousHeapToNone_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="71" column="10" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1ScopedCurrentHeapSetter_1abf5e9e2108e366eec27b309703bb30a7" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ScopedCurrentHeapSetter::hasPreviousHeap_</definition>
+        <argsstring>() const</argsstring>
+        <name>hasPreviousHeap_</name>
+        <qualifiedname>sead::ScopedCurrentHeapSetter::hasPreviousHeap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadHeapMgr.h" line="73" column="10" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="73" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Sets the &quot;current heap&quot; to the specified heap and restores the previous &quot;current heap&quot; when this goes out of scope. </para>
+    </detaileddescription>
+    <location file="lib/sead/include/heap/seadHeapMgr.h" line="51" column="1" bodyfile="lib/sead/include/heap/seadHeapMgr.h" bodystart="51" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1a77fdbe4608053692e5c7b898e573faa5" prot="protected" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>getPreviousHeap_</name></member>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1abf5e9e2108e366eec27b309703bb30a7" prot="protected" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>hasPreviousHeap_</name></member>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1acad8127e201b0c78bc9bf712514fbea0" prot="protected" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>mPreviousHeap</name></member>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1a811192f91f5ccabc51481382f125735a" prot="public" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>ScopedCurrentHeapSetter</name></member>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1ab3268076f495f2b744961e572f9e7bcc" prot="protected" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>setPreviousHeap_</name></member>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1a52212d9f79c0e3b4fcb28b25da0868d7" prot="protected" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>setPreviousHeapToNone_</name></member>
+      <member refid="classsead_1_1ScopedCurrentHeapSetter_1afb0257af3d8b636ef77491b6d33020f5" prot="public" virt="non-virtual"><scope>sead::ScopedCurrentHeapSetter</scope><name>~ScopedCurrentHeapSetter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

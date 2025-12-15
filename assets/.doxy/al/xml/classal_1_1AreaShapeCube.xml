@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1AreaShapeCube" kind="class" language="C++" prot="public">
+    <compoundname>al::AreaShapeCube</compoundname>
+    <basecompoundref refid="classal_1_1AreaShape" prot="public" virt="non-virtual">al::AreaShape</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1AreaShapeCube_1aead28897fdca68041779f634430d3e74" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::AreaShapeCube::mIsCubeBase</definition>
+        <argsstring></argsstring>
+        <name>mIsCubeBase</name>
+        <qualifiedname>al::AreaShapeCube::mIsCubeBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShapeCube.h" line="11" column="14" bodyfile="lib/al/include/AreaObj/alAreaShapeCube.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1AreaShapeCube_1a65a088f910d574fc968af6ca158c1877" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>virtual bool al::AreaShapeCube::isInVolume</definition>
+        <argsstring>(const sead::Vector3f &amp;trans) const</argsstring>
+        <name>isInVolume</name>
+        <qualifiedname>al::AreaShapeCube::isInVolume</qualifiedname>
+        <reimplements refid="classal_1_1AreaShape_1ad05b7f131136d43ba17a3f385ffff3c6">isInVolume</reimplements>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShapeCube.h" line="14" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1AreaShapeCube_1ad6e559aec7f7179a04ebc82c4c330976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::AreaShapeCube::AreaShapeCube</definition>
+        <argsstring>(bool isCubeBase)</argsstring>
+        <name>AreaShapeCube</name>
+        <qualifiedname>al::AreaShapeCube::AreaShapeCube</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+          <declname>isCubeBase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaShapeCube.h" line="17" column="9" bodyfile="lib/al/src/AreaObj/alAreaShapeCube.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>al::AreaShape</label>
+        <link refid="classal_1_1AreaShape"/>
+      </node>
+      <node id="1">
+        <label>al::AreaShapeCube</label>
+        <link refid="classal_1_1AreaShapeCube"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>al::AreaShape</label>
+        <link refid="classal_1_1AreaShape"/>
+      </node>
+      <node id="1">
+        <label>al::AreaShapeCube</label>
+        <link refid="classal_1_1AreaShapeCube"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/AreaObj/alAreaShapeCube.h" line="8" column="1" bodyfile="lib/al/include/AreaObj/alAreaShapeCube.h" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classal_1_1AreaShape_1aec7ecd5c03bd678038316c7678762356" prot="public" virt="non-virtual"><scope>al::AreaShapeCube</scope><name>AreaShape</name></member>
+      <member refid="classal_1_1AreaShapeCube_1ad6e559aec7f7179a04ebc82c4c330976" prot="public" virt="non-virtual"><scope>al::AreaShapeCube</scope><name>AreaShapeCube</name></member>
+      <member refid="classal_1_1AreaShape_1aa585cf3ddc0482eea86ed1d301317ac5" prot="public" virt="non-virtual"><scope>al::AreaShapeCube</scope><name>calcLocalPos</name></member>
+      <member refid="classal_1_1AreaShapeCube_1a65a088f910d574fc968af6ca158c1877" prot="public" virt="virtual"><scope>al::AreaShapeCube</scope><name>isInVolume</name></member>
+      <member refid="classal_1_1AreaShapeCube_1aead28897fdca68041779f634430d3e74" prot="private" virt="non-virtual"><scope>al::AreaShapeCube</scope><name>mIsCubeBase</name></member>
+      <member refid="classal_1_1AreaShape_1ac064861c5f0ed46571a73fdbef1ca546" prot="public" virt="non-virtual"><scope>al::AreaShapeCube</scope><name>setBaseMtxPtr</name></member>
+      <member refid="classal_1_1AreaShape_1a8d3c6f602483f5409447ae060d2dbd91" prot="public" virt="non-virtual"><scope>al::AreaShapeCube</scope><name>setScale</name></member>
+      <member refid="classal_1_1AreaShape_1af29e87145096f5a67a020e47e1686997" prot="public" virt="pure-virtual"><scope>al::AreaShapeCube</scope><name>v1</name></member>
+      <member refid="classal_1_1AreaShape_1af2770016583a8af4fbdc4630b553368d" prot="public" virt="pure-virtual"><scope>al::AreaShapeCube</scope><name>v2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

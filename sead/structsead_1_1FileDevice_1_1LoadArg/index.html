@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Struct sead::FileDevice::LoadArg - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="struct-seadfiledeviceloadarg">Struct sead::FileDevice::LoadArg</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="../classsead_1_1FileDevice/"><strong>FileDevice</strong></a> <strong>&gt;</strong> <a href="./"><strong>LoadArg</strong></a></p>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#variable-alignment"><strong>alignment</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#variable-assert_on_alloc_fail"><strong>assert_on_alloc_fail</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u8 *</td>
+<td style="text-align: left;"><a href="#variable-buffer"><strong>buffer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="#variable-buffer_size"><strong>buffer_size</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">s32</td>
+<td style="text-align: left;"><a href="#variable-buffer_size_alignment"><strong>buffer_size_alignment</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#variable-check_read_entire_file"><strong>check_read_entire_file</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="#variable-div_size"><strong>div_size</strong></a>  <br><em>Read chunk size.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1Heap/"><strong>Heap</strong></a> *</td>
+<td style="text-align: left;"><a href="#variable-heap"><strong>heap</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#variable-need_unload"><strong>need_unload</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1SafeStringBase/"><strong>SafeString</strong></a></td>
+<td style="text-align: left;"><a href="#variable-path"><strong>path</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="#variable-read_size"><strong>read_size</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">u32</td>
+<td style="text-align: left;"><a href="#variable-roundup_size"><strong>roundup_size</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-loadarg"><strong>LoadArg</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-alignment">variable alignment</h3>
+<pre><code class="language-C++">s32 sead::FileDevice::LoadArg::alignment;
+</code></pre>
+<hr>
+
+<h3 id="variable-assert_on_alloc_fail">variable assert_on_alloc_fail</h3>
+<pre><code class="language-C++">bool sead::FileDevice::LoadArg::assert_on_alloc_fail;
+</code></pre>
+<hr>
+
+<h3 id="variable-buffer">variable buffer</h3>
+<pre><code class="language-C++">u8* sead::FileDevice::LoadArg::buffer;
+</code></pre>
+<hr>
+
+<h3 id="variable-buffer_size">variable buffer_size</h3>
+<pre><code class="language-C++">u32 sead::FileDevice::LoadArg::buffer_size;
+</code></pre>
+<hr>
+
+<h3 id="variable-buffer_size_alignment">variable buffer_size_alignment</h3>
+<pre><code class="language-C++">s32 sead::FileDevice::LoadArg::buffer_size_alignment;
+</code></pre>
+<hr>
+
+<h3 id="variable-check_read_entire_file">variable check_read_entire_file</h3>
+<pre><code class="language-C++">bool sead::FileDevice::LoadArg::check_read_entire_file;
+</code></pre>
+<hr>
+
+<h3 id="variable-div_size">variable div_size</h3>
+<p><em>Read chunk size.</em> </p>
+<pre><code class="language-C++">u32 sead::FileDevice::LoadArg::div_size;
+</code></pre>
+<hr>
+
+<h3 id="variable-heap">variable heap</h3>
+<pre><code class="language-C++">Heap* sead::FileDevice::LoadArg::heap;
+</code></pre>
+<hr>
+
+<h3 id="variable-need_unload">variable need_unload</h3>
+<pre><code class="language-C++">bool sead::FileDevice::LoadArg::need_unload;
+</code></pre>
+<hr>
+
+<h3 id="variable-path">variable path</h3>
+<pre><code class="language-C++">SafeString sead::FileDevice::LoadArg::path;
+</code></pre>
+<hr>
+
+<h3 id="variable-read_size">variable read_size</h3>
+<pre><code class="language-C++">u32 sead::FileDevice::LoadArg::read_size;
+</code></pre>
+<hr>
+
+<h3 id="variable-roundup_size">variable roundup_size</h3>
+<pre><code class="language-C++">u32 sead::FileDevice::LoadArg::roundup_size;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-loadarg">function LoadArg</h3>
+<pre><code class="language-C++">inline sead::FileDevice::LoadArg::LoadArg () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/filedevice/seadFileDevice.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

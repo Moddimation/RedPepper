@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::ActorPoseKeeperBase - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="class-alactorposekeeperbase">Class al::ActorPoseKeeperBase</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>ActorPoseKeeperBase</strong></a></p>
+<p>Inherited by the following classes: <a href="../classal_1_1ActorPoseKeeperTFSV/">al::ActorPoseKeeperTFSV</a>,  <a href="../classal_1_1ActorPoseKeeperTQSV/">al::ActorPoseKeeperTQSV</a>,  <a href="../classal_1_1ActorPoseKeeperTRSV/">al::ActorPoseKeeperTRSV</a></p>
+<h2 id="public-static-attributes">Public Static Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f</td>
+<td style="text-align: left;"><a href="#variable-sdefaultgravity"><strong>sDefaultGravity</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-actorposekeeperbase"><strong>ActorPoseKeeperBase</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-calcbasemtx"><strong>calcBaseMtx</strong></a> (sead::Matrix34f * out) = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-copypose"><strong>copyPose</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> <a href="./"><strong>ActorPoseKeeperBase</strong></a> * from) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getfront"><strong>getFront</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual sead::Vector3f *</td>
+<td style="text-align: left;"><a href="#function-getfrontptr"><strong>getFrontPtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getgravity"><strong>getGravity</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual sead::Vector3f *</td>
+<td style="text-align: left;"><a href="#function-getgravityptr"><strong>getGravityPtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Quatf &amp;</td>
+<td style="text-align: left;"><a href="#function-getquat"><strong>getQuat</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual sead::Quatf *</td>
+<td style="text-align: left;"><a href="#function-getquatptr"><strong>getQuatPtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getrotate"><strong>getRotate</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual sead::Vector3f *</td>
+<td style="text-align: left;"><a href="#function-getrotateptr"><strong>getRotatePtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getscale"><strong>getScale</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual sead::Vector3f *</td>
+<td style="text-align: left;"><a href="#function-getscaleptr"><strong>getScalePtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-gettrans"><strong>getTrans</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">sead::Vector3f *</td>
+<td style="text-align: left;"><a href="#function-gettransptr"><strong>getTransPtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp;</td>
+<td style="text-align: left;"><a href="#function-getvelocity"><strong>getVelocity</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual sead::Vector3f *</td>
+<td style="text-align: left;"><a href="#function-getvelocityptr"><strong>getVelocityPtr</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-updateposemtx"><strong>updatePoseMtx</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Matrix34f * mtx) = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-updateposequat"><strong>updatePoseQuat</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Quatf &amp; quat) = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../structal_1_1NameToCreator/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-updateposerotate"><strong>updatePoseRotate</strong></a> (<a href="../structal_1_1NameToCreator/"><strong>const</strong></a> sead::Vector3f &amp; rot) = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes-documentation">Public Static Attributes Documentation</h2>
+<h3 id="variable-sdefaultgravity">variable sDefaultGravity</h3>
+<pre><code class="language-C++">const sead::Vector3f al::ActorPoseKeeperBase::sDefaultGravity;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-actorposekeeperbase">function ActorPoseKeeperBase</h3>
+<pre><code class="language-C++">al::ActorPoseKeeperBase::ActorPoseKeeperBase () 
+</code></pre>
+<hr>
+
+<h3 id="function-calcbasemtx">function calcBaseMtx</h3>
+<pre><code class="language-C++">virtual void al::ActorPoseKeeperBase::calcBaseMtx (
+    sead::Matrix34f * out
+) = 0
+</code></pre>
+<hr>
+
+<h3 id="function-copypose">function copyPose</h3>
+<pre><code class="language-C++">virtual void al::ActorPoseKeeperBase::copyPose (
+    const  ActorPoseKeeperBase * from
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getfront">function getFront</h3>
+<pre><code class="language-C++">virtual const sead::Vector3f &amp; al::ActorPoseKeeperBase::getFront () const
+</code></pre>
+<hr>
+
+<h3 id="function-getfrontptr">function getFrontPtr</h3>
+<pre><code class="language-C++">virtual sead::Vector3f * al::ActorPoseKeeperBase::getFrontPtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-getgravity">function getGravity</h3>
+<pre><code class="language-C++">virtual const sead::Vector3f &amp; al::ActorPoseKeeperBase::getGravity () const
+</code></pre>
+<hr>
+
+<h3 id="function-getgravityptr">function getGravityPtr</h3>
+<pre><code class="language-C++">virtual sead::Vector3f * al::ActorPoseKeeperBase::getGravityPtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-getquat">function getQuat</h3>
+<pre><code class="language-C++">virtual const sead::Quatf &amp; al::ActorPoseKeeperBase::getQuat () const
+</code></pre>
+<hr>
+
+<h3 id="function-getquatptr">function getQuatPtr</h3>
+<pre><code class="language-C++">virtual sead::Quatf * al::ActorPoseKeeperBase::getQuatPtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-getrotate">function getRotate</h3>
+<pre><code class="language-C++">virtual const sead::Vector3f &amp; al::ActorPoseKeeperBase::getRotate () const
+</code></pre>
+<hr>
+
+<h3 id="function-getrotateptr">function getRotatePtr</h3>
+<pre><code class="language-C++">virtual sead::Vector3f * al::ActorPoseKeeperBase::getRotatePtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-getscale">function getScale</h3>
+<pre><code class="language-C++">virtual const sead::Vector3f &amp; al::ActorPoseKeeperBase::getScale () const
+</code></pre>
+<hr>
+
+<h3 id="function-getscaleptr">function getScalePtr</h3>
+<pre><code class="language-C++">virtual sead::Vector3f * al::ActorPoseKeeperBase::getScalePtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-gettrans">function getTrans</h3>
+<pre><code class="language-C++">inline const sead::Vector3f &amp; al::ActorPoseKeeperBase::getTrans () const
+</code></pre>
+<hr>
+
+<h3 id="function-gettransptr">function getTransPtr</h3>
+<pre><code class="language-C++">inline sead::Vector3f * al::ActorPoseKeeperBase::getTransPtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-getvelocity">function getVelocity</h3>
+<pre><code class="language-C++">virtual const sead::Vector3f &amp; al::ActorPoseKeeperBase::getVelocity () const
+</code></pre>
+<hr>
+
+<h3 id="function-getvelocityptr">function getVelocityPtr</h3>
+<pre><code class="language-C++">virtual sead::Vector3f * al::ActorPoseKeeperBase::getVelocityPtr () 
+</code></pre>
+<hr>
+
+<h3 id="function-updateposemtx">function updatePoseMtx</h3>
+<pre><code class="language-C++">virtual void al::ActorPoseKeeperBase::updatePoseMtx (
+    const sead::Matrix34f * mtx
+) = 0
+</code></pre>
+<hr>
+
+<h3 id="function-updateposequat">function updatePoseQuat</h3>
+<pre><code class="language-C++">virtual void al::ActorPoseKeeperBase::updatePoseQuat (
+    const sead::Quatf &amp; quat
+) = 0
+</code></pre>
+<hr>
+
+<h3 id="function-updateposerotate">function updatePoseRotate</h3>
+<pre><code class="language-C++">virtual void al::ActorPoseKeeperBase::updatePoseRotate (
+    const sead::Vector3f &amp; rot
+) = 0
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/LiveActor/alActorPoseKeeper.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1OffsetList_1_1robustIterator" kind="class" language="C++" prot="public">
+    <compoundname>sead::OffsetList::robustIterator</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1OffsetList_1_1robustIterator_1a9800d2ce812b752437511efbc1902ad9" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* sead::OffsetList&lt; T &gt;::robustIterator::mPtr</definition>
+        <argsstring></argsstring>
+        <name>mPtr</name>
+        <qualifiedname>sead::OffsetList::robustIterator::mPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="151" column="11" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1OffsetList_1_1robustIterator_1ad9a686d3a9dc63478eac8f1f09a02e28" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1ListNode" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode* sead::OffsetList&lt; T &gt;::robustIterator::mNextNode</definition>
+        <argsstring></argsstring>
+        <name>mNextNode</name>
+        <qualifiedname>sead::OffsetList::robustIterator::mNextNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="152" column="18" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1OffsetList_1_1robustIterator_1a783c4bba6ad14e2e1b1f7f299f41ba23" prot="private" static="no" mutable="no">
+        <type>s32</type>
+        <definition>s32 sead::OffsetList&lt; T &gt;::robustIterator::mOffset</definition>
+        <argsstring></argsstring>
+        <name>mOffset</name>
+        <qualifiedname>sead::OffsetList::robustIterator::mOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="153" column="13" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1OffsetList_1_1robustIterator_1af9f4e58e2df94db28c2f02ad1e3d7380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::OffsetList&lt; T &gt;::robustIterator::robustIterator</definition>
+        <argsstring>(T *ptr, s32 offset)</argsstring>
+        <name>robustIterator</name>
+        <qualifiedname>sead::OffsetList::robustIterator::robustIterator</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="132" column="9" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1OffsetList_1_1robustIterator_1a845084a42fa5dd616744f11a14dc5f27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::OffsetList&lt; T &gt;::robustIterator::operator==</definition>
+        <argsstring>(const robustIterator &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>sead::OffsetList::robustIterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1OffsetList_1_1robustIterator" kindref="compound">robustIterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="136" column="14" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1OffsetList_1_1robustIterator_1ae3c3e6de69b80b8d7ae1c83c2202ff6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::OffsetList&lt; T &gt;::robustIterator::operator!=</definition>
+        <argsstring>(const robustIterator &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>sead::OffsetList::robustIterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1OffsetList_1_1robustIterator" kindref="compound">robustIterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="138" column="14" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1OffsetList_1_1robustIterator_1a95325d42d380c5e76f10a8816aabaf61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1OffsetList_1_1robustIterator" kindref="compound">robustIterator</ref> &amp;</type>
+        <definition>robustIterator &amp; sead::OffsetList&lt; T &gt;::robustIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>sead::OffsetList::robustIterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="140" column="24" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1OffsetList_1_1robustIterator_1a21b2de12a04dd879a60a28b94f406e20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; sead::OffsetList&lt; T &gt;::robustIterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>sead::OffsetList::robustIterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="146" column="11" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1OffsetList_1_1robustIterator_1ad903e4317a34025e55e536edfb6e4268" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * sead::OffsetList&lt; T &gt;::robustIterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>sead::OffsetList::robustIterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadOffsetList.h" line="148" column="11" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sead/include/container/seadOffsetList.h" line="130" column="5" bodyfile="lib/sead/include/container/seadOffsetList.h" bodystart="130" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1ad9a686d3a9dc63478eac8f1f09a02e28" prot="private" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>mNextNode</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1a783c4bba6ad14e2e1b1f7f299f41ba23" prot="private" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>mOffset</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1a9800d2ce812b752437511efbc1902ad9" prot="private" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>mPtr</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1ae3c3e6de69b80b8d7ae1c83c2202ff6a" prot="public" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>operator!=</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1a21b2de12a04dd879a60a28b94f406e20" prot="public" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>operator*</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1a95325d42d380c5e76f10a8816aabaf61" prot="public" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>operator++</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1ad903e4317a34025e55e536edfb6e4268" prot="public" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>operator-&gt;</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1a845084a42fa5dd616744f11a14dc5f27" prot="public" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>operator==</name></member>
+      <member refid="classsead_1_1OffsetList_1_1robustIterator_1af9f4e58e2df94db28c2f02ad1e3d7380" prot="public" virt="non-virtual"><scope>sead::OffsetList::robustIterator</scope><name>robustIterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

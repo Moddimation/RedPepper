@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alKeyPoseKeeper.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-alkeyposekeepercpp">File alKeyPoseKeeper.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_69ac5a2fe1a36920040982de9aaf0ac3/"><strong>KeyPose</strong></a> <strong>&gt;</strong> <a href="../alKeyPoseKeeper_8cpp/"><strong>alKeyPoseKeeper.cpp</strong></a></p>
+<p><a href="../alKeyPoseKeeper_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;KeyPose/alKeyPose.h&gt;
+#include &lt;KeyPose/alKeyPoseKeeper.h&gt;
+#include &lt;LiveActor/alActorInitInfo.h&gt;
+#include &lt;Placement/alPlacementFunction.h&gt;
+
+namespace al
+{
+
+KeyPoseKeeper::KeyPoseKeeper()
+    : mKeyPoses( nullptr ), mKeyPoseAmount( 0 ), mCurrentKeyPoseIdx( 0 ), mMoveTypeInt( 0 ), _10( true ),
+      _11( false )
+{
+}
+
+#ifdef NON_MATCHING
+
+// puts size of KeyPose in r7 and does weird stuff
+void KeyPoseKeeper::init( const ActorInitInfo&amp; info )
+{
+        int linkChildNum = calcLinkChildNum( info );
+        mKeyPoseAmount   = linkChildNum + 1;
+        al::tryGetArg3( &amp;mMoveTypeInt, info );
+        mKeyPoses = new KeyPose[ mKeyPoseAmount ];
+        mKeyPoses-&gt;init( getPlacementInfo( info ) );
+        for ( int i = 0; i &lt; mKeyPoseAmount - 1; i++ )
+        {
+                PlacementInfo keyPoseInfo;
+                getLinksInfoByIndex( &amp;keyPoseInfo, info, i );
+                mKeyPoses[ i ].init( keyPoseInfo );
+        }
+}
+#endif
+
+const KeyPose* KeyPoseKeeper::getCurrentKeyPose() const
+{
+        return &amp;mKeyPoses[ mCurrentKeyPoseIdx ];
+}
+
+#pragma no_inline
+
+const KeyPose* KeyPoseKeeper::getNextKeyPose() const
+{
+        int idx;
+        if ( _10 )
+        {
+                idx = mCurrentKeyPoseIdx + 1;
+                if ( idx &gt;= mKeyPoseAmount )
+                        idx = 0;
+        }
+        else
+        {
+                idx = mCurrentKeyPoseIdx - 1;
+                if ( idx &lt; 0 )
+                        idx = mKeyPoseAmount - 1;
+        }
+        return &amp;mKeyPoses[ idx ];
+}
+
+#ifdef NON_MATCHING
+// r4 not being pushed
+const sead::Vector3f&amp; getCurrentKeyTrans( const KeyPoseKeeper* p )
+{
+        return p-&gt;getCurrentKeyPose()-&gt;getTrans();
+}
+#endif
+
+#ifdef NON_MATCHING
+const sead::Vector3f&amp; getNextKeyTrans( const KeyPoseKeeper* p )
+{
+        return p-&gt;getNextKeyPose()-&gt;getTrans();
+}
+#endif
+
+#ifdef NON_MATCHING
+const PlacementInfo* getNextKeyPlacementInfo( const KeyPoseKeeper* p )
+{
+        return p-&gt;getNextKeyPose()-&gt;getPlacementInfo();
+}
+#endif
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

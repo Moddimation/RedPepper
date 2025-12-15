@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1FogDirector" kind="class" language="C++" prot="public">
+    <compoundname>al::FogDirector</compoundname>
+    <basecompoundref refid="classal_1_1IUseExecutor" prot="public" virt="non-virtual">al::IUseExecutor</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classal_1_1FogDirector_1af379eac098b5d85d90a767cb868effbc" prot="public" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">u8</ref> *</type>
+        <definition>u8* al::FogDirector::_4[0x78]</definition>
+        <argsstring>[0x78]</argsstring>
+        <name>_4</name>
+        <qualifiedname>al::FogDirector::_4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Fog/alFogDirector.h" line="12" column="18" bodyfile="lib/al/include/Fog/alFogDirector.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1FogDirector_1a405e0efa9a0572e08e733ecf24175077" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1ByamlIter" kindref="compound">ByamlIter</ref></type>
+        <definition>ByamlIter al::FogDirector::_7C</definition>
+        <argsstring></argsstring>
+        <name>_7C</name>
+        <qualifiedname>al::FogDirector::_7C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Fog/alFogDirector.h" line="13" column="19" bodyfile="lib/al/include/Fog/alFogDirector.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1FogDirector_1aa4a905dfae440ac662c14ebeb55eb99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::FogDirector::endInit</definition>
+        <argsstring>()</argsstring>
+        <name>endInit</name>
+        <qualifiedname>al::FogDirector::endInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Fog/alFogDirector.h" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1FogDirector_1ac84e4e52f99783f371f70f54f9ee4d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>virtual void al::FogDirector::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>al::FogDirector::execute</qualifiedname>
+        <reimplements refid="classal_1_1IUseExecutor_1a7dfb7a8f75823e159a78f557cc92c5fa">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Fog/alFogDirector.h" line="19" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>al::FogDirector</label>
+        <link refid="classal_1_1FogDirector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::IUseExecutor</label>
+        <link refid="classal_1_1IUseExecutor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>al::ByamlContainerHeader</label>
+        <link refid="classal_1_1ByamlContainerHeader"/>
+      </node>
+      <node id="4">
+        <label>al::ByamlHeader</label>
+        <link refid="classal_1_1ByamlHeader"/>
+      </node>
+      <node id="3">
+        <label>al::ByamlIter</label>
+        <link refid="classal_1_1ByamlIter"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mContainerHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::FogDirector</label>
+        <link refid="classal_1_1FogDirector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_7C</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::IUseExecutor</label>
+        <link refid="classal_1_1IUseExecutor"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Fog/alFogDirector.h" line="9" column="1" bodyfile="lib/al/include/Fog/alFogDirector.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classal_1_1FogDirector_1af379eac098b5d85d90a767cb868effbc" prot="public" virt="non-virtual"><scope>al::FogDirector</scope><name>_4</name></member>
+      <member refid="classal_1_1FogDirector_1a405e0efa9a0572e08e733ecf24175077" prot="public" virt="non-virtual"><scope>al::FogDirector</scope><name>_7C</name></member>
+      <member refid="classal_1_1IUseExecutor_1af19b8ae80aa93e8f60fbcedede4f2828" prot="public" virt="virtual"><scope>al::FogDirector</scope><name>draw</name></member>
+      <member refid="classal_1_1FogDirector_1aa4a905dfae440ac662c14ebeb55eb99c" prot="public" virt="non-virtual"><scope>al::FogDirector</scope><name>endInit</name></member>
+      <member refid="classal_1_1FogDirector_1ac84e4e52f99783f371f70f54f9ee4d21" prot="public" virt="virtual"><scope>al::FogDirector</scope><name>execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

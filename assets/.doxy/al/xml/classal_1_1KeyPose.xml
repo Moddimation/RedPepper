@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1KeyPose" kind="class" language="C++" prot="public">
+    <compoundname>al::KeyPose</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1KeyPose_1a7c18d820c785ceab7e7d69718513c469" prot="private" static="no" mutable="no">
+        <type>sead::Quatf</type>
+        <definition>sead::Quatf al::KeyPose::mQuat</definition>
+        <argsstring></argsstring>
+        <name>mQuat</name>
+        <qualifiedname>al::KeyPose::mQuat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="13" column="30" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPose_1ac618402b5dea1f2ceec79c5ab2d386c4" prot="private" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::KeyPose::mTrans</definition>
+        <argsstring></argsstring>
+        <name>mTrans</name>
+        <qualifiedname>al::KeyPose::mTrans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="14" column="30" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPose_1a527829baf9109b14b891a96b4db954ab" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ByamlIter" kindref="compound">PlacementInfo</ref> *</type>
+        <definition>const PlacementInfo* al::KeyPose::mPlacementInfo</definition>
+        <argsstring></argsstring>
+        <name>mPlacementInfo</name>
+        <qualifiedname>al::KeyPose::mPlacementInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="15" column="29" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1KeyPose_1ad7a539363a251bf65e827ea0a0d43fdc" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">float</ref></type>
+        <definition>float al::KeyPose::_20</definition>
+        <argsstring></argsstring>
+        <name>_20</name>
+        <qualifiedname>al::KeyPose::_20</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="16" column="30" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1KeyPose_1a9c996ca6c9b07a83af07ed7173256abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::KeyPose::init</definition>
+        <argsstring>(const PlacementInfo &amp;info)</argsstring>
+        <name>init</name>
+        <qualifiedname>al::KeyPose::init</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ByamlIter" kindref="compound">PlacementInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="19" column="14" bodyfile="lib/al/src/KeyPose/alKeyPose.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPose_1a0c50b3f47353642a44e45a612892b0c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Quatf &amp;</type>
+        <definition>const sead::Quatf &amp; al::KeyPose::getQuat</definition>
+        <argsstring>() const</argsstring>
+        <name>getQuat</name>
+        <qualifiedname>al::KeyPose::getQuat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="21" column="27" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPose_1a3f5befaf191b441282cee35b7c09b5b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::KeyPose::getTrans</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrans</name>
+        <qualifiedname>al::KeyPose::getTrans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="26" column="30" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPose_1aecd03f1b0363a920f5ed96453804a96c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="classal_1_1ByamlIter" kindref="compound">PlacementInfo</ref> *</type>
+        <definition>const PlacementInfo * al::KeyPose::getPlacementInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlacementInfo</name>
+        <qualifiedname>al::KeyPose::getPlacementInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="31" column="29" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1KeyPose_1aab6b33c42235785ed56b756517dc788a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::KeyPose::KeyPose</definition>
+        <argsstring>()</argsstring>
+        <name>KeyPose</name>
+        <qualifiedname>al::KeyPose::KeyPose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/KeyPose/alKeyPose.h" line="37" column="9" bodyfile="lib/al/src/KeyPose/alKeyPose.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/KeyPose/alKeyPose.h" line="10" column="1" bodyfile="lib/al/include/KeyPose/alKeyPose.h" bodystart="11" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classal_1_1KeyPose_1ad7a539363a251bf65e827ea0a0d43fdc" prot="private" virt="non-virtual"><scope>al::KeyPose</scope><name>_20</name></member>
+      <member refid="classal_1_1KeyPose_1aecd03f1b0363a920f5ed96453804a96c" prot="public" virt="non-virtual"><scope>al::KeyPose</scope><name>getPlacementInfo</name></member>
+      <member refid="classal_1_1KeyPose_1a0c50b3f47353642a44e45a612892b0c4" prot="public" virt="non-virtual"><scope>al::KeyPose</scope><name>getQuat</name></member>
+      <member refid="classal_1_1KeyPose_1a3f5befaf191b441282cee35b7c09b5b7" prot="public" virt="non-virtual"><scope>al::KeyPose</scope><name>getTrans</name></member>
+      <member refid="classal_1_1KeyPose_1a9c996ca6c9b07a83af07ed7173256abe" prot="public" virt="non-virtual"><scope>al::KeyPose</scope><name>init</name></member>
+      <member refid="classal_1_1KeyPose_1aab6b33c42235785ed56b756517dc788a" prot="public" virt="non-virtual"><scope>al::KeyPose</scope><name>KeyPose</name></member>
+      <member refid="classal_1_1KeyPose_1a527829baf9109b14b891a96b4db954ab" prot="private" virt="non-virtual"><scope>al::KeyPose</scope><name>mPlacementInfo</name></member>
+      <member refid="classal_1_1KeyPose_1a7c18d820c785ceab7e7d69718513c469" prot="private" virt="non-virtual"><scope>al::KeyPose</scope><name>mQuat</name></member>
+      <member refid="classal_1_1KeyPose_1ac618402b5dea1f2ceec79c5ab2d386c4" prot="private" virt="non-virtual"><scope>al::KeyPose</scope><name>mTrans</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

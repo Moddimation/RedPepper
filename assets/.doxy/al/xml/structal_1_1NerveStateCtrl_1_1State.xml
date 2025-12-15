@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structal_1_1NerveStateCtrl_1_1State" kind="struct" language="C++" prot="private">
+    <compoundname>al::NerveStateCtrl::State</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structal_1_1NerveStateCtrl_1_1State_1a3e674b87c4a9a6729a70b5993bec2127" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1NerveStateBase" kindref="compound">NerveStateBase</ref> *</type>
+        <definition>NerveStateBase* al::NerveStateCtrl::State::mState</definition>
+        <argsstring></argsstring>
+        <name>mState</name>
+        <qualifiedname>al::NerveStateCtrl::State::mState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="14" column="32" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structal_1_1NerveStateCtrl_1_1State_1a83f8cc5efd8763dd38c094079e5e937a" prot="public" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1Nerve" kindref="compound">Nerve</ref> *</type>
+        <definition>const Nerve* al::NerveStateCtrl::State::mHostStateNerve</definition>
+        <argsstring></argsstring>
+        <name>mHostStateNerve</name>
+        <qualifiedname>al::NerveStateCtrl::State::mHostStateNerve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="15" column="32" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structal_1_1NerveStateCtrl_1_1State_1a27ad85a871d6737aa577321d9c1c3438" prot="public" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1NameToCreator" kindref="compound">char</ref> *</type>
+        <definition>const char* al::NerveStateCtrl::State::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>al::NerveStateCtrl::State::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="16" column="32" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1IUseNerve"/>
+      </node>
+      <node id="5">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1Nerve"/>
+      </node>
+      <node id="3">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1NerveExecutor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1NerveStateBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::NerveStateCtrl::State</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="12" column="9" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structal_1_1NerveStateCtrl_1_1State_1a83f8cc5efd8763dd38c094079e5e937a" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl::State</scope><name>mHostStateNerve</name></member>
+      <member refid="structal_1_1NerveStateCtrl_1_1State_1a27ad85a871d6737aa577321d9c1c3438" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl::State</scope><name>mName</name></member>
+      <member refid="structal_1_1NerveStateCtrl_1_1State_1a3e674b87c4a9a6729a70b5993bec2127" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl::State</scope><name>mState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

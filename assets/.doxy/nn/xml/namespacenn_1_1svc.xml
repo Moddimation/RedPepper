@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacenn_1_1svc" kind="namespace" language="C++">
+    <compoundname>nn::svc</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="svc__Api_8cpp_1abe0df90a897ae243b0bae5ee3001e694" prot="public" static="no" mutable="no">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref> u32</type>
+        <definition>__asm nn::Result u32 nn::svc::addr0</definition>
+        <argsstring></argsstring>
+        <name>addr0</name>
+        <qualifiedname>nn::svc::addr0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/sources/svc/svc_Api.cpp" line="8" column="42" bodyfile="lib/CTRSDK/sources/svc/svc_Api.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="svc__Api_8cpp_1a54e1857a6a7c4d55207785d2ed6b015f" prot="public" static="no" mutable="no">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref> u32 u32</type>
+        <definition>__asm nn::Result u32 u32 nn::svc::addr1</definition>
+        <argsstring></argsstring>
+        <name>addr1</name>
+        <qualifiedname>nn::svc::addr1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/sources/svc/svc_Api.cpp" line="8" column="52" bodyfile="lib/CTRSDK/sources/svc/svc_Api.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="svc__Api_8cpp_1aa5fe56c5c46a309b8fc39e10ae1d2139" prot="public" static="no" mutable="no">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref> u32 u32 u32</type>
+        <definition>__asm nn::Result u32 u32 u32 nn::svc::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>nn::svc::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/sources/svc/svc_Api.cpp" line="8" column="62" bodyfile="lib/CTRSDK/sources/svc/svc_Api.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="svc__Api_8cpp_1abc9a7b717780a497e64847f2aa117800" prot="public" static="no" mutable="no">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref> u32 u32 u32 u32</type>
+        <definition>__asm nn::Result u32 u32 u32 u32 nn::svc::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <qualifiedname>nn::svc::op</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/sources/svc/svc_Api.cpp" line="8" column="71" bodyfile="lib/CTRSDK/sources/svc/svc_Api.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="svc__Api_8h_1a4a6e2625ba8547cbec1257bbd9474a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::ControlMemory</definition>
+        <argsstring>(u32 *addr, u32 addr0, u32 addr1, u32 size, u32 op, u32 perms)</argsstring>
+        <name>ControlMemory</name>
+        <qualifiedname>nn::svc::ControlMemory</qualifiedname>
+        <param>
+          <type>u32 *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>addr0</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>addr1</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>perms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="10" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="10" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1aabb557cf740d0d95a6a4d51c19cea0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm void</type>
+        <definition>__asm void nn::svc::ExitProcess</definition>
+        <argsstring>()</argsstring>
+        <name>ExitProcess</name>
+        <qualifiedname>nn::svc::ExitProcess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="11" column="16" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="11" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a12e74bde27e3f54783e293870c0cc7f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm void</type>
+        <definition>__asm void nn::svc::SleepThread</definition>
+        <argsstring>(u64 nanos)</argsstring>
+        <name>SleepThread</name>
+        <qualifiedname>nn::svc::SleepThread</qualifiedname>
+        <param>
+          <type>u64</type>
+          <declname>nanos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="12" column="16" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="12" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1af423bd563f3cfdad386a5feb46e4b3ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::GetThreadPriority</definition>
+        <argsstring>(s32 *prio, nn::Handle thread)</argsstring>
+        <name>GetThreadPriority</name>
+        <qualifiedname>nn::svc::GetThreadPriority</qualifiedname>
+        <param>
+          <type>s32 *</type>
+          <declname>prio</declname>
+        </param>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>thread</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="13" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="13" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a13941658a36b8feaac3ea63290485946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::CreateMutex</definition>
+        <argsstring>(nn::Handle *mutex, bool initialLocked)</argsstring>
+        <name>CreateMutex</name>
+        <qualifiedname>nn::svc::CreateMutex</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialLocked</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="14" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="14" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a5e62580a1b8fd0331a7f4d4cd8de6c95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::CreateEvent</definition>
+        <argsstring>(nn::Handle *event, nn::os::ResetType type)</argsstring>
+        <name>CreateEvent</name>
+        <qualifiedname>nn::svc::CreateEvent</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>nn::os::ResetType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="15" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="15" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a71967dc6b151106acbb3550d8d014de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::CreateMemoryBlock</definition>
+        <argsstring>(nn::Handle *memblock, u32 addr, u32 size, u32 myperms, u32 otherperms)</argsstring>
+        <name>CreateMemoryBlock</name>
+        <qualifiedname>nn::svc::CreateMemoryBlock</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>memblock</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>myperms</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>otherperms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="16" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="16" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a7a67666d4a98259432c34dc8b0fdda5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::CreateAddressArbiter</definition>
+        <argsstring>(nn::Handle *arbiter)</argsstring>
+        <name>CreateAddressArbiter</name>
+        <qualifiedname>nn::svc::CreateAddressArbiter</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>arbiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="17" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="17" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1aea32f2baa2f61385d58ae8d48c21b993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::ArbitrateAddress</definition>
+        <argsstring>(nn::Handle arbiter, uintptr_t addr, nn::os::ArbitrationType type, s32 value, s64 ns)</argsstring>
+        <name>ArbitrateAddress</name>
+        <qualifiedname>nn::svc::ArbitrateAddress</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>arbiter</declname>
+        </param>
+        <param>
+          <type>uintptr_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>nn::os::ArbitrationType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>s64</type>
+          <declname>ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="18" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="18" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a8cdfea90fe7d8faddb1a6ca995ac42a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::CloseHandle</definition>
+        <argsstring>(nn::Handle handle)</argsstring>
+        <name>CloseHandle</name>
+        <qualifiedname>nn::svc::CloseHandle</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="19" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="19" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1adca1d1a938b73acab8bff7c678581104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::WaitSynchronizationN</definition>
+        <argsstring>(int *out, const nn::Handle *handles, s32 handleCount, bool waitAll, s64 timeout_ns)</argsstring>
+        <name>WaitSynchronizationN</name>
+        <qualifiedname>nn::svc::WaitSynchronizationN</qualifiedname>
+        <param>
+          <type>int *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>handles</declname>
+        </param>
+        <param>
+          <type>s32</type>
+          <declname>handleCount</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitAll</declname>
+        </param>
+        <param>
+          <type>s64</type>
+          <declname>timeout_ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="20" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="20" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a5e8cf98701f93a25c93d9c30b189d82a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::DuplicateHandle</definition>
+        <argsstring>(nn::Handle *out, nn::Handle original)</argsstring>
+        <name>DuplicateHandle</name>
+        <qualifiedname>nn::svc::DuplicateHandle</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>original</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="21" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="21" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a9244e7c127f4a6603fae9b443e682395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::ConnectToPort</definition>
+        <argsstring>(nn::Handle *port, const char *portName)</argsstring>
+        <name>ConnectToPort</name>
+        <qualifiedname>nn::svc::ConnectToPort</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref> *</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>portName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="22" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="22" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1aadac5e53f365d600ce486f7532bb2b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::GetProcessId</definition>
+        <argsstring>(unsigned int *id, nn::Handle handle)</argsstring>
+        <name>GetProcessId</name>
+        <qualifiedname>nn::svc::GetProcessId</qualifiedname>
+        <param>
+          <type>unsigned int *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="23" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="23" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a19caea684c57eaa0123ee55efa14cd1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::GetThreadId</definition>
+        <argsstring>(unsigned int *id, nn::Handle handle)</argsstring>
+        <name>GetThreadId</name>
+        <qualifiedname>nn::svc::GetThreadId</qualifiedname>
+        <param>
+          <type>unsigned int *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="24" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="24" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a6689498d36173586718c8f14e52e4102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::GetResourceLimit</definition>
+        <argsstring>(Handle *resourceLimit, nn::Handle handle)</argsstring>
+        <name>GetResourceLimit</name>
+        <qualifiedname>nn::svc::GetResourceLimit</qualifiedname>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">Handle</ref> *</type>
+          <declname>resourceLimit</declname>
+        </param>
+        <param>
+          <type><ref refid="structnn_1_1Handle" kindref="compound">nn::Handle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="25" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="25" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8h_1a9f50b52349c2c68a393cd53180823733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::Break</definition>
+        <argsstring>(nn::dbg::BreakReason reason)</argsstring>
+        <name>Break</name>
+        <qualifiedname>nn::svc::Break</qualifiedname>
+        <param>
+          <type>nn::dbg::BreakReason</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="28" column="22" declfile="lib/CTRSDK/include/nn/svc/svc_Api.h" declline="28" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="svc__Api_8cpp_1a570f60fbb7105daff68df4cb41f8a8bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>__asm <ref refid="classnn_1_1Result" kindref="compound">nn::Result</ref></type>
+        <definition>__asm nn::Result nn::svc::__attribute__</definition>
+        <argsstring>((section(&quot;i._ZN2nn3svc13ControlMemoryEPjjjjjj&quot;))) ControlMemory(u32 *addr</argsstring>
+        <name>__attribute__</name>
+        <qualifiedname>nn::svc::__attribute__</qualifiedname>
+        <param>
+          <type>(section(&quot;i._ZN2nn3svc13ControlMemoryEPjjjjjj&quot;))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/sources/svc/svc_Api.cpp" line="8" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/CTRSDK/include/nn/svc/svc_Api.h" line="9" column="1"/>
+  </compounddef>
+</doxygen>

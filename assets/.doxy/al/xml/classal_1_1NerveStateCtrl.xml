@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1NerveStateCtrl" kind="class" language="C++" prot="public">
+    <compoundname>al::NerveStateCtrl</compoundname>
+    <innerclass refid="structal_1_1NerveStateCtrl_1_1State" prot="private">al::NerveStateCtrl::State</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1NerveStateCtrl_1ac74dba3995676c1975c1dda48a0653b6" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        <definition>int al::NerveStateCtrl::mCapacity</definition>
+        <argsstring></argsstring>
+        <name>mCapacity</name>
+        <qualifiedname>al::NerveStateCtrl::mCapacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="19" column="16" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1NerveStateCtrl_1a362d0bb7acfdc6bfd89a41f0d8c716b7" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+        <definition>int al::NerveStateCtrl::mStateCount</definition>
+        <argsstring></argsstring>
+        <name>mStateCount</name>
+        <qualifiedname>al::NerveStateCtrl::mStateCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="20" column="16" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1NerveStateCtrl_1a92498b2cf0da425921603638ee33d840" prot="private" static="no" mutable="no">
+        <type>State *</type>
+        <definition>State* al::NerveStateCtrl::mStates</definition>
+        <argsstring></argsstring>
+        <name>mStates</name>
+        <qualifiedname>al::NerveStateCtrl::mStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="21" column="15" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1NerveStateCtrl_1a5e74b80947f4491598fca74d3e77ab71" prot="private" static="no" mutable="no">
+        <type>State *</type>
+        <definition>State* al::NerveStateCtrl::mCurrentState</definition>
+        <argsstring></argsstring>
+        <name>mCurrentState</name>
+        <qualifiedname>al::NerveStateCtrl::mCurrentState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="22" column="15" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1ad51df69ee36a587616213a2d8d008db5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>State *</type>
+        <definition>NerveStateCtrl::State * al::NerveStateCtrl::findStateInfo</definition>
+        <argsstring>(const Nerve *nerve)</argsstring>
+        <name>findStateInfo</name>
+        <qualifiedname>al::NerveStateCtrl::findStateInfo</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1Nerve" kindref="compound">Nerve</ref> *</type>
+          <declname>nerve</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="24" column="15" bodyfile="lib/al/src/Nerve/alNerveStateCtrl.cpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1a2eec0f99b63646e9d8b6da06e3f30349" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> State *</type>
+        <definition>const State * al::NerveStateCtrl::getCurrentState</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentState</name>
+        <qualifiedname>al::NerveStateCtrl::getCurrentState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="27" column="21" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1abaeb3c5da31345111ae1152cf1e58a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::NerveStateCtrl::startState</definition>
+        <argsstring>(const Nerve *nerve)</argsstring>
+        <name>startState</name>
+        <qualifiedname>al::NerveStateCtrl::startState</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">const</ref> <ref refid="structal_1_1Nerve" kindref="compound">Nerve</ref> *</type>
+          <declname>nerve</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="32" column="14" bodyfile="lib/al/src/Nerve/alNerveStateCtrl.cpp" bodystart="33" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1a06c982f87081447c91a00bf48e8ccd74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">void</ref></type>
+        <definition>void al::NerveStateCtrl::tryEndCurrentState</definition>
+        <argsstring>()</argsstring>
+        <name>tryEndCurrentState</name>
+        <qualifiedname>al::NerveStateCtrl::tryEndCurrentState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="33" column="14" bodyfile="lib/al/src/Nerve/alNerveStateCtrl.cpp" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1a6da9a7ed8600607ff28d7bf09cdc34a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::NerveStateCtrl::updateCurrentState</definition>
+        <argsstring>()</argsstring>
+        <name>updateCurrentState</name>
+        <qualifiedname>al::NerveStateCtrl::updateCurrentState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="34" column="14" bodyfile="lib/al/src/Nerve/alNerveStateCtrl.cpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1aaa24137e739a4af222c5e0b325e7be1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structal_1_1NameToCreator" kindref="compound">bool</ref></type>
+        <definition>bool al::NerveStateCtrl::isCurrentStateEnd</definition>
+        <argsstring>() const</argsstring>
+        <name>isCurrentStateEnd</name>
+        <qualifiedname>al::NerveStateCtrl::isCurrentStateEnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="35" column="14" bodyfile="lib/al/src/Nerve/alNerveStateCtrl.cpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1NerveStateCtrl_1a7fdb46e5283660985d8f92f1af41c18b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::NerveStateCtrl::NerveStateCtrl</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>NerveStateCtrl</name>
+        <qualifiedname>al::NerveStateCtrl::NerveStateCtrl</qualifiedname>
+        <param>
+          <type><ref refid="structal_1_1NameToCreator" kindref="compound">int</ref></type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="38" column="9" bodyfile="lib/al/src/Nerve/alNerveStateCtrl.cpp" bodystart="7" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="9" column="1" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="10" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classal_1_1NerveStateCtrl_1ad51df69ee36a587616213a2d8d008db5" prot="private" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>findStateInfo</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a2eec0f99b63646e9d8b6da06e3f30349" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>getCurrentState</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1aaa24137e739a4af222c5e0b325e7be1d" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>isCurrentStateEnd</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1ac74dba3995676c1975c1dda48a0653b6" prot="private" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>mCapacity</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a5e74b80947f4491598fca74d3e77ab71" prot="private" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>mCurrentState</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a362d0bb7acfdc6bfd89a41f0d8c716b7" prot="private" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>mStateCount</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a92498b2cf0da425921603638ee33d840" prot="private" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>mStates</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a7fdb46e5283660985d8f92f1af41c18b" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>NerveStateCtrl</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1abaeb3c5da31345111ae1152cf1e58a63" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>startState</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a06c982f87081447c91a00bf48e8ccd74" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>tryEndCurrentState</name></member>
+      <member refid="classal_1_1NerveStateCtrl_1a6da9a7ed8600607ff28d7bf09cdc34a1" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl</scope><name>updateCurrentState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

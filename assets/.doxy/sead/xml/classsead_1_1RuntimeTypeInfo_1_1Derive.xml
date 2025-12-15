@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1RuntimeTypeInfo_1_1Derive" kind="class" language="C++" prot="public">
+    <compoundname>sead::RuntimeTypeInfo::Derive</compoundname>
+    <basecompoundref refid="classsead_1_1RuntimeTypeInfo_1_1Interface" prot="public" virt="non-virtual">sead::RuntimeTypeInfo::Interface</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename BaseType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1RuntimeTypeInfo_1_1Derive_1a294b0dbad2bd243c1f6e799d0552853d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::RuntimeTypeInfo::Derive&lt; BaseType &gt;::Derive</definition>
+        <argsstring>()</argsstring>
+        <name>Derive</name>
+        <qualifiedname>sead::RuntimeTypeInfo::Derive::Derive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadRuntimeTypeInfo.h" line="25" column="5" bodyfile="lib/sead/include/prim/seadRuntimeTypeInfo.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1RuntimeTypeInfo_1_1Derive_1a5db6100b6e221a33fa6566f4806994e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::RuntimeTypeInfo::Derive&lt; BaseType &gt;::isDerived</definition>
+        <argsstring>(const Interface *typeInfo) const</argsstring>
+        <name>isDerived</name>
+        <qualifiedname>sead::RuntimeTypeInfo::Derive::isDerived</qualifiedname>
+        <reimplements refid="classsead_1_1RuntimeTypeInfo_1_1Interface_1aa122b2ac37f3bac36a513d47b7ef8ebf">isDerived</reimplements>
+        <param>
+          <type>const <ref refid="classsead_1_1RuntimeTypeInfo_1_1Interface" kindref="compound">Interface</ref> *</type>
+          <declname>typeInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadRuntimeTypeInfo.h" line="27" column="18" bodyfile="lib/sead/include/prim/seadRuntimeTypeInfo.h" bodystart="27" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::RuntimeTypeInfo::Derive&lt; BaseType &gt;</label>
+        <link refid="classsead_1_1RuntimeTypeInfo_1_1Derive"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::RuntimeTypeInfo::Interface</label>
+        <link refid="classsead_1_1RuntimeTypeInfo_1_1Interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sead::RuntimeTypeInfo::Derive&lt; BaseType &gt;</label>
+        <link refid="classsead_1_1RuntimeTypeInfo_1_1Derive"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::RuntimeTypeInfo::Interface</label>
+        <link refid="classsead_1_1RuntimeTypeInfo_1_1Interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/prim/seadRuntimeTypeInfo.h" line="23" column="1" bodyfile="lib/sead/include/prim/seadRuntimeTypeInfo.h" bodystart="23" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classsead_1_1RuntimeTypeInfo_1_1Derive_1a294b0dbad2bd243c1f6e799d0552853d" prot="public" virt="non-virtual"><scope>sead::RuntimeTypeInfo::Derive</scope><name>Derive</name></member>
+      <member refid="classsead_1_1RuntimeTypeInfo_1_1Interface_1a420b1c36f6f649c229204bd0f74cf5c3" prot="public" virt="non-virtual"><scope>sead::RuntimeTypeInfo::Derive</scope><name>Interface</name></member>
+      <member refid="classsead_1_1RuntimeTypeInfo_1_1Derive_1a5db6100b6e221a33fa6566f4806994e7" prot="public" virt="virtual"><scope>sead::RuntimeTypeInfo::Derive</scope><name>isDerived</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

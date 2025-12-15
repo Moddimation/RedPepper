@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_note_obj_generator_8h" kind="file" language="C++">
+    <compoundname>NoteObjGenerator.h</compoundname>
+    <includes local="no">MapObj/alMapObjActor.h</includes>
+    <includedby refid="_note_obj_8h" local="yes">NoteObj.h</includedby>
+    <includedby refid="_note_obj_generator_8cpp" local="yes">NoteObjGenerator.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>NoteObjGenerator.h</label>
+        <link refid="_note_obj_generator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MapObj/alMapObjActor.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>NoteObj.h</label>
+        <link refid="_note_obj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NoteObjGenerator.h</label>
+        <link refid="_note_obj_generator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NoteObj.cpp</label>
+        <link refid="_note_obj_8cpp"/>
+      </node>
+      <node id="4">
+        <label>NoteObjGenerator.cpp</label>
+        <link refid="_note_obj_generator_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_note_obj_generator" prot="public">NoteObjGenerator</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;MapObj/alMapObjActor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActorGroup;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_note_obj_generator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_note_obj_generator" kindref="compound">NoteObjGenerator</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>al::MapObjActor</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="class_note_obj_generator_1a476c901740e50e3c24d9dcce07abd21a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::LiveActorGroup*<sp/><ref refid="class_note_obj_generator_1a476c901740e50e3c24d9dcce07abd21a" kindref="member">mNoteObjGroup</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_note_obj_generator_1aa3b236aa6b4d589003e03c54e5c939c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1aa3b236aa6b4d589003e03c54e5c939c3" kindref="member">_64</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_note_obj_generator_1a6952b1a395e77b0be9b8f56e18c34102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1a6952b1a395e77b0be9b8f56e18c34102" kindref="member">_68</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_note_obj_generator_1ab7c0b88ac7aec1630319c166cdb7d4c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1ab7c0b88ac7aec1630319c166cdb7d4c2" kindref="member">_6C</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_note_obj_generator_1a95c90fa1d6b89f0add2cdc4047de5b30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1a95c90fa1d6b89f0add2cdc4047de5b30" kindref="member">_70</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_note_obj_generator_1aaf7fb70ba44704dc91f1fd00f5f5ee39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1aaf7fb70ba44704dc91f1fd00f5f5ee39" kindref="member">_74</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_note_obj_generator_1a4920dcfca8ac65d9986158e04497d5a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1a4920dcfca8ac65d9986158e04497d5a7" kindref="member">_78</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_note_obj_generator_1af511ec8d4457b684c02a59a782bfc4db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1af511ec8d4457b684c02a59a782bfc4db" kindref="member">_7C</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_note_obj_generator_1a5df7ae3f3e85094a08701bc843b58b65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1a5df7ae3f3e85094a08701bc843b58b65" kindref="member">_80</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_note_obj_generator_1ae24d450bff41041a91acd80216d298f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator_1ae24d450bff41041a91acd80216d298f5" kindref="member">_84</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_generator_1abd60f977eca4616bc2e0be2d46ce095a" kindref="member">exeWait</ref>();</highlight></codeline>
+<codeline lineno="26" refid="class_note_obj_generator_1af6d5cfef5751aa01af68dc09ea82c70c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_generator_1af6d5cfef5751aa01af68dc09ea82c70c" kindref="member">exeMove</ref>();</highlight></codeline>
+<codeline lineno="27" refid="class_note_obj_generator_1a8f8c9cb3244f9329b982180926b03620" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_generator_1a8f8c9cb3244f9329b982180926b03620" kindref="member">exeDisappear</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_generator_1a252ae678a8ba8c8c8889113f467b77da" kindref="member">exeSuccess</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_generator" kindref="compound">NoteObjGenerator</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/MapObj/NoteObjGenerator.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Struct JMapData - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="struct-jmapdata">Struct JMapData</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="./"><strong>JMapData</strong></a></p>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#variable-_0"><strong>_0</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#variable-_c"><strong>_C</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#variable-mdataoffset"><strong>mDataOffset</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#variable-mnumdata"><strong>mNumData</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="../structJMapItem/"><strong>JMapItem</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-getitem"><strong>getItem</strong></a> (s32 index) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structJMapItem/"><strong>JMapItem</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-getitems"><strong>getItems</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions">Public Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>JMapData</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-fromdata"><strong>fromData</strong></a> (const void * data) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-_0">variable _0</h3>
+<pre><code class="language-C++">int JMapData::_0;
+</code></pre>
+<hr>
+
+<h3 id="variable-_c">variable _C</h3>
+<pre><code class="language-C++">int JMapData::_C;
+</code></pre>
+<hr>
+
+<h3 id="variable-mdataoffset">variable mDataOffset</h3>
+<pre><code class="language-C++">int JMapData::mDataOffset;
+</code></pre>
+<hr>
+
+<h3 id="variable-mnumdata">variable mNumData</h3>
+<pre><code class="language-C++">int JMapData::mNumData;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-getitem">function getItem</h3>
+<pre><code class="language-C++">inline const JMapItem * JMapData::getItem (
+    s32 index
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getitems">function getItems</h3>
+<pre><code class="language-C++">inline const JMapItem * JMapData::getItems () 
+</code></pre>
+<hr>
+<h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
+<h3 id="function-fromdata">function fromData</h3>
+<pre><code class="language-C++">static inline const JMapData * JMapData::fromData (
+    const void * data
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Util/alJMapInfo.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

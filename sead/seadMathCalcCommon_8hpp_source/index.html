@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadMathCalcCommon.hpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-seadmathcalccommonhpp">File seadMathCalcCommon.hpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_f6d5c8d1d4c60cd689fcf859a6687fb0/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_9adfe416bc4f0c29a5cf1f3d542cf0b8/"><strong>math</strong></a> <strong>&gt;</strong> <a href="../seadMathCalcCommon_8hpp/"><strong>seadMathCalcCommon.hpp</strong></a></p>
+<p><a href="../seadMathCalcCommon_8hpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;math.h&gt;
+#include &lt;basis/seadRawPrint.h&gt;
+#ifndef SEAD_MATH_MATH_CALC_COMMON_H_
+#include &lt;math/seadMathCalcCommon.h&gt;
+#endif
+#include &lt;prim/seadBitUtil.h&gt;
+
+namespace sead {
+template &lt;&gt;
+const MathCalcCommon&lt;float&gt;::SinCosSample MathCalcCommon&lt;float&gt;::cSinCosTbl[];
+
+template &lt;&gt;
+const MathCalcCommon&lt;float&gt;::AtanSample MathCalcCommon&lt;float&gt;::cAtanTbl[];
+
+template &lt;&gt;
+const MathCalcCommon&lt;float&gt;::ExpSample MathCalcCommon&lt;float&gt;::cExpTbl[];
+
+template &lt;&gt;
+const MathCalcCommon&lt;float&gt;::LogSample MathCalcCommon&lt;float&gt;::cLogTbl[];
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::sign(T value) {
+    return value &lt; 0 ? -1 : 1;
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::sqrt(T t) {
+    return sqrt(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::rsqrt(T t) {
+    return 1 / sqrt(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::pow(T x, T y) {
+    return pow(x, y);
+}
+
+/*template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::sin(T t)
+{
+    if constexpr (std::is_same_v&lt;T, float&gt;) {
+        const auto as_int = BitUtil::bitCast&lt;u32&gt;(t);
+        const SinCosSample&amp; sample = cSinCosTbl[as_int &gt;&gt; 18];
+        return sample.sin_val + sample.sin_delta * (as_int &amp; 0xFFFFFFu) * 0x1p-24f;
+    } else {
+        static_assert(!std::is_same&lt;T, T&gt;(), &quot;Unsupported type&quot;);
+    }
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::cos(T t)
+{
+    if constexpr (std::is_same_v&lt;T, float&gt;) {
+        const auto as_int = BitUtil::bitCast&lt;u32&gt;(t);
+        const SinCosSample&amp; sample = cSinCosTbl[as_int &gt;&gt; 18];
+        return sample.cos_val + sample.cos_delta * (as_int &amp; 0xFFFFFFu) * 0x1p-24f;
+    } else {
+        static_assert(!std::is_same&lt;T, T&gt;(), &quot;Unsupported type&quot;);
+    }
+}*/
+
+/*template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::tan(T t)
+{
+    return tan(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::asin(T t)
+{
+    if constexpr (std::is_floating_point&lt;T&gt;())
+        SEAD_ASSERT_MSG(-1.0 &lt;= t &amp;&amp; t &lt;= 1.0, &quot;t(%f) is not in [-1, 1].&quot;, t);
+    return std::asin(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::acos(T t)
+{
+    if constexpr (std::is_floating_point&lt;T&gt;())
+        SEAD_ASSERT_MSG(-1.0 &lt;= t &amp;&amp; t &lt;= 1.0, &quot;t(%f) is not in [-1, 1].&quot;, t);
+    return std::acos(t);
+}*/
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::atan(T t) {
+    return atan(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::atan2(T y, T x) {
+    return atan2(y, x);
+}
+
+template &lt;&gt;
+inline f32 MathCalcCommon&lt;f32&gt;::sinIdx(u32 idx) {
+    u32 index = (idx &gt;&gt; 24) &amp; 0xff;
+    u32 rest = idx &amp; 0xffffff;
+
+    return cSinCosTbl[index].sin_val + cSinCosTbl[index].sin_delta * rest / 0x1000000;
+}
+
+template &lt;&gt;
+inline f32 MathCalcCommon&lt;f32&gt;::cosIdx(u32 idx) {
+    u32 index = (idx &gt;&gt; 24) &amp; 0xff;
+    u32 rest = idx &amp; 0xffffff;
+
+    return cSinCosTbl[index].cos_val + cSinCosTbl[index].cos_delta * rest / 0x1000000;
+}
+
+template &lt;&gt;
+inline f32 MathCalcCommon&lt;f32&gt;::tanIdx(u32 idx) {
+    u32 index = (idx &gt;&gt; 24) &amp; 0xff;
+    f32 rest = static_cast&lt;f32&gt;(idx &amp; 0xffffff) / 0x1000000;
+    const SinCosSample&amp; sample = cSinCosTbl[index];
+
+    return (sample.sin_val + sample.sin_delta * rest) / (sample.cos_val + sample.cos_delta * rest);
+}
+
+template &lt;&gt;
+inline u32 MathCalcCommon&lt;f32&gt;::asinIdx(f32 s) {
+    SEAD_ASSERT_MSG(s &lt;= 1 &amp;&amp; s &gt;= -1, &quot;s(%f) is not in [-1, 1].&quot;, s);
+
+    const f32 rsqrt_2 = 0.7071067690849304f;  // rsqrt(2)
+
+    if (s &gt;= 0)
+        if (s &gt; rsqrt_2)
+            return 0x40000000 - atanIdx_(sqrt(1 - s * s) / s);
+
+        else
+            return atanIdx_(s / sqrt(1 - s * s));
+    else if (s &lt; -rsqrt_2)
+        return 0xC0000000 + atanIdx_(-sqrt(1 - s * s) / s);
+
+    else
+        return -atanIdx_(-s / sqrt(1 - s * s));
+}
+
+template &lt;&gt;
+inline u32 MathCalcCommon&lt;f32&gt;::acosIdx(f32 c) {
+    SEAD_ASSERT_MSG(c &lt;= 1 &amp;&amp; c &gt;= -1, &quot;c(%f) is not in [-1, 1].&quot;, c);
+
+    const f32 rsqrt_2 = 0.7071067690849304f;  // rsqrt(2)
+
+    if (c &gt;= 0)
+        if (c &gt; rsqrt_2)
+            return atanIdx_(sqrt(1 - c * c) / c);
+
+        else
+            return 0x40000000 - atanIdx_(c / sqrt(1 - c * c));
+    else if (c &lt; -rsqrt_2)
+        return 0x80000000 - atanIdx_(-sqrt(1 - c * c) / c);
+
+    else
+        return 0x40000000 + atanIdx_(-c / sqrt(1 - c * c));
+}
+
+template &lt;&gt;
+inline u32 MathCalcCommon&lt;f32&gt;::atanIdx(f32 t) {
+    if (t &gt;= 0)
+        if (t &gt; 1)
+            return 0x40000000 - atanIdx_(1 / t);
+
+        else
+            return atanIdx_(t);
+    else if (t &lt; -1)
+        return 0xC0000000 + atanIdx_(-1 / t);
+
+    else
+        return -atanIdx_(-t);
+}
+
+template &lt;&gt;
+inline u32 MathCalcCommon&lt;f32&gt;::atan2Idx(f32 y, f32 x) {
+    if (x == 0 &amp;&amp; y == 0)
+        return 0;
+
+    if (x &gt;= 0) {
+        if (y &gt;= 0)
+            if (x &gt;= y)
+                return atanIdx_(y / x);
+
+            else
+                return 0x40000000 - atanIdx_(x / y);
+        else if (x &gt;= -y)
+            return -atanIdx_(-y / x);
+
+        else
+            return 0xC0000000 + atanIdx_(x / -y);
+    } else {
+        if (y &gt;= 0)
+            if (-x &gt;= y)
+                return 0x80000000 - atanIdx_(y / -x);
+
+            else
+                return 0x40000000 + atanIdx_(-x / y);
+        else if (x &lt;= y)
+            return 0x80000000 + atanIdx_(y / x);
+
+        else
+            return 0xC0000000 - atanIdx_(x / y);
+    }
+}
+
+template &lt;&gt;
+inline void MathCalcCommon&lt;f32&gt;::sinCosIdx(f32* pSin, f32* pCos, u32 idx) {
+    u32 index = (idx &gt;&gt; 24) &amp; 0xff;
+    f32 rest = static_cast&lt;f32&gt;(idx &amp; 0xffffff) / 0x1000000;
+    const SinCosSample&amp; sample = cSinCosTbl[index];
+
+    /*if (pSin != NULL)*/ *pSin = sample.sin_val + sample.sin_delta * rest;
+    /*if (pCos != NULL)*/ *pCos = sample.cos_val + sample.cos_delta * rest;
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::exp(T t) {
+    return exp(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::log(T t) {
+    return log(t);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::log2(T n) {
+    return log2(n);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::log10(T t) {
+    return log10(t);
+}
+
+/*template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::minNumber()
+{
+    return std::numeric_limits&lt;T&gt;::min();
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::maxNumber()
+{
+    return std::numeric_limits&lt;T&gt;::max();
+}
+
+template &lt;&gt;
+inline float MathCalcCommon&lt;float&gt;::minNumber()
+{
+    return -std::numeric_limits&lt;float&gt;::max();
+}
+
+template &lt;&gt;
+inline float MathCalcCommon&lt;float&gt;::maxNumber()
+{
+    return std::numeric_limits&lt;float&gt;::max();
+}
+
+template &lt;&gt;
+inline double MathCalcCommon&lt;double&gt;::minNumber()
+{
+    return -std::numeric_limits&lt;double&gt;::max();
+}
+
+template &lt;&gt;
+inline double MathCalcCommon&lt;double&gt;::maxNumber()
+{
+    return std::numeric_limits&lt;double&gt;::max();
+}
+
+template &lt;&gt;
+inline long double MathCalcCommon&lt;long double&gt;::minNumber()
+{
+    return -std::numeric_limits&lt;long double&gt;::max();
+}
+
+template &lt;&gt;
+inline long double MathCalcCommon&lt;long double&gt;::maxNumber()
+{
+    return std::numeric_limits&lt;long double&gt;::max();
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::infinity()
+{
+    return std::numeric_limits&lt;T&gt;::infinity();
+}*/
+
+template &lt;&gt;
+inline f32 MathCalcCommon&lt;f32&gt;::nan() {
+    return BitUtil::bitCast&lt;f32&gt;(0x7FFFFFFF);
+}
+
+template &lt;&gt;
+inline f64 MathCalcCommon&lt;f64&gt;::nan() {
+    return BitUtil::bitCast&lt;f64&gt;(0x7FFFFFFFFFFFFFFF);
+}
+
+template &lt;&gt;
+inline s32 MathCalcCommon&lt;s32&gt;::abs(s32 x) {
+    return (x ^ x &gt;&gt; 31) - (x &gt;&gt; 31);
+}
+
+template &lt;&gt;
+inline u32 MathCalcCommon&lt;u32&gt;::abs(u32 x) {
+    return x;
+}
+
+#ifdef cafe
+
+template &lt;&gt;
+inline f32 MathCalcCommon&lt;f32&gt;::abs(f32 x) {
+    return std::abs(x);
+}
+
+template &lt;&gt;
+inline f64 MathCalcCommon&lt;f64&gt;::abs(f64 x) {
+    return std::abs(x);
+}
+
+#endif  // cafe
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::max(T a, T b) {
+    return a &lt; b ? b : a;
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::min(T a, T b) {
+    return a &lt; b ? a : b;
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::max3(T a, T b, T c) {
+    return max(max(a, b), c);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::min3(T a, T b, T c) {
+    return min(min(a, b), c);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::deg2rad(T deg) {
+    return deg * (numbers::pi_v / static_cast&lt;T&gt;(180));
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::rad2deg(T rad) {
+    return rad * (static_cast&lt;T&gt;(180) / numbers::pi_v);
+}
+
+template &lt;typename T&gt;
+inline u32 MathCalcCommon&lt;T&gt;::deg2idx(T a) {
+    return static_cast&lt;u32&gt;(a * (cHalfRoundIdx / static_cast&lt;T&gt;(180)));
+}
+
+template &lt;typename T&gt;
+inline u32 MathCalcCommon&lt;T&gt;::rad2idx(T a) {
+    return static_cast&lt;u32&gt;(a * (cHalfRoundIdx / pi()));
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::idx2deg(u32 a) {
+    return static_cast&lt;T&gt;(a * (static_cast&lt;T&gt;(180) / cHalfRoundIdx));
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::idx2rad(u32 a) {
+    return static_cast&lt;T&gt;(a * (pi() / cHalfRoundIdx));
+}
+
+template &lt;typename T&gt;
+inline s32 MathCalcCommon&lt;T&gt;::roundOff(T val) {
+    return floor(val + 0.5f);
+}
+
+template &lt;&gt;
+inline s32 MathCalcCommon&lt;s32&gt;::roundOff(s32 val) {
+    return val;
+}
+
+template &lt;typename T&gt;
+inline s32 MathCalcCommon&lt;T&gt;::floor(T val) {
+    return floor(val);
+}
+
+template &lt;&gt;
+inline s32 MathCalcCommon&lt;s32&gt;::floor(s32 val) {
+    return val;
+}
+
+template &lt;typename T&gt;
+inline s32 MathCalcCommon&lt;T&gt;::ceil(T val) {
+    return ceil(val);
+}
+
+template &lt;&gt;
+inline s32 MathCalcCommon&lt;s32&gt;::ceil(s32 val) {
+    return val;
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::roundUp(T x, s32 multNumber) {
+    SEAD_ASSERT(multNumber &gt; 0);
+    return (x + multNumber - 1) / multNumber * multNumber;
+}
+
+template &lt;&gt;
+inline s32 MathCalcCommon&lt;u32&gt;::roundUpPow2(u32 val, s32 base) {
+    SEAD_ASSERT_MSG((u32(base - 1) &amp; u32(base)) == 0, &quot;illegal param[val:%d, base:%d]&quot;, val, base);
+    return (val + base - 1) &amp; (u32)-base;
+}
+
+template &lt;&gt;
+inline s32 MathCalcCommon&lt;s32&gt;::roundUpPow2(s32 val, s32 base) {
+    SEAD_ASSERT_MSG(val &gt;= 0 &amp;&amp; (u32(base - 1) &amp; u32(base)) == 0, &quot;illegal param[val:%d, base:%d]&quot;,
+                    val, base);
+    return (val + base - 1) &amp; (u32)-base;
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::clampMax(T val, T max_) {
+    return min(val, max_);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::clampMin(T val, T min_) {
+    return max(val, min_);
+}
+
+template &lt;typename T&gt;
+inline T MathCalcCommon&lt;T&gt;::clamp(T value, T low, T high) {
+    if (value &lt; low)
+        value = low;
+    else if (value &gt; high)
+        value = high;
+    return value;
+}
+
+template &lt;typename T&gt;
+inline bool MathCalcCommon&lt;T&gt;::chase(T* value, T target, T step) {
+    const T current = *value;
+
+    if (current &lt; target) {
+        const T new_value = current + step;
+        if (target &lt;= new_value || new_value &lt; current) {
+            *value = target;
+            return true;
+        }
+        *value = new_value;
+        return false;
+    }
+
+    if (current &gt; target) {
+        const T new_value = current - step;
+        if (target &gt;= new_value || current &lt; new_value) {
+            *value = target;
+            return true;
+        }
+        *value = new_value;
+        return false;
+    }
+
+    return true;
+}
+
+template &lt;typename T, typename T2&gt;
+inline T lerp(T a, T b, T2 t) {
+    return a + (b - a) * t;
+}
+
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

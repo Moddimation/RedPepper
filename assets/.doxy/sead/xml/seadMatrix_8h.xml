@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="seadMatrix_8h" kind="file" language="C++">
+    <compoundname>seadMatrix.h</compoundname>
+    <includes refid="seadTypes_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="seadMathPolicies_8h" local="no">math/seadMathPolicies.h</includes>
+    <includes refid="seadQuat_8h" local="no">math/seadQuat.h</includes>
+    <includes refid="seadVector_8h" local="no">math/seadVector.h</includes>
+    <includes refid="seadMatrix_8hpp" local="no">math/seadMatrix.hpp</includes>
+    <includedby refid="seadMatrix_8hpp" local="no">lib/sead/include/math/seadMatrix.hpp</includedby>
+    <includedby refid="seadMatrix_8cpp" local="no">lib/sead/modules/src/math/seadMatrix.cpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="seadRawPrint_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="seadTypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math/seadMathBase.h</label>
+        <link refid="seadMathBase_8h_source"/>
+      </node>
+      <node id="12">
+        <label>math/seadMathCalcCommon.h</label>
+        <link refid="seadMathCalcCommon_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="seadMathCalcCommon_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="seadMathNumbers_8h_source"/>
+      </node>
+      <node id="4">
+        <label>math/seadMathPolicies.h</label>
+        <link refid="seadMathPolicies_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib/sead/include/math/seadMatrix.h</label>
+        <link refid="seadMatrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>math/seadMatrix.hpp</label>
+        <link refid="seadMatrix_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>math/seadMatrixCalcCommon.h</label>
+        <link refid="seadMatrixCalcCommon_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>math/seadMatrixCalcCommon.hpp</label>
+        <link refid="seadMatrixCalcCommon_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>math/seadQuat.h</label>
+        <link refid="seadQuat_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>math/seadQuat.hpp</label>
+        <link refid="seadQuat_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>math/seadQuatCalcCommon.h</label>
+        <link refid="seadQuatCalcCommon_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>math/seadQuatCalcCommon.hpp</label>
+        <link refid="seadQuatCalcCommon_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>math/seadVector.h</label>
+        <link refid="seadVector_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>math/seadVector.hpp</label>
+        <link refid="seadVector_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>math/seadVectorCalcCtr.h</label>
+        <link refid="seadVectorCalcCtr_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>math/seadVectorCalcCtr.hpp</label>
+        <link refid="seadVectorCalcCtr_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="seadBitUtil_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+      <node id="16">
+        <label>stdarg.h</label>
+      </node>
+      <node id="18">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>lib/sead/include/math/seadMatrix.h</label>
+        <link refid="seadMatrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lib/sead/include/math/seadMatrix.hpp</label>
+        <link refid="seadMatrix_8hpp_source"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1Matrix22" prot="public">sead::Matrix22</innerclass>
+    <innerclass refid="classsead_1_1Matrix33" prot="public">sead::Matrix33</innerclass>
+    <innerclass refid="classsead_1_1Matrix34" prot="public">sead::Matrix34</innerclass>
+    <innerclass refid="classsead_1_1Matrix44" prot="public">sead::Matrix44</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="seadMatrix_8h_1a305ecb0af27fe37259ec39cc94d700b5" prot="public" static="no">
+        <name>SEAD_MATH_MATRIX_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrix.h" line="280" column="9" bodyfile="lib/sead/include/math/seadMatrix.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;basis/seadTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadMathPolicies.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadQuat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sead<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix22;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix33;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix34;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix44;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1Matrix22" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx22Base<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>n)<sp/>{};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22</ref>(T<sp/>a00,<sp/>T<sp/>a01,<sp/>T<sp/>a10,<sp/>T<sp/>a11);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeIdentity();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeZero();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverseTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transpose();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22</ref><sp/>zero;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22</ref><sp/>ident;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="51" refid="classsead_1_1Matrix33" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx33Base<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>n)<sp/>{};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref>(T<sp/>a00,<sp/>T<sp/>a01,<sp/>T<sp/>a02,<sp/>T<sp/>a10,<sp/>T<sp/>a11,<sp/>T<sp/>a12,<sp/>T<sp/>a20,<sp/>T<sp/>a21,<sp/>T<sp/>a22);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>mtx34);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeIdentity();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeZero();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverseTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transpose();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromQuat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeR(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRIdx(u32<sp/>xr,<sp/>u32<sp/>yr,<sp/>u32<sp/>zr);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRzxyIdx(u32<sp/>xr,<sp/>u32<sp/>yr,<sp/>u32<sp/>zr);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeS(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeS(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSR(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRzxyIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toQuat(<ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref><sp/>zero;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33</ref><sp/>ident;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="98" refid="classsead_1_1Matrix34" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx34Base<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Mtx33</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Mtx44</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vector4&lt;T&gt;</ref><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref>(T<sp/>_00,<sp/>T<sp/>_01,<sp/>T<sp/>_02,<sp/>T<sp/>_03,<sp/>T<sp/>_10,<sp/>T<sp/>_11,<sp/>T<sp/>_12,<sp/>T<sp/>_13,<sp/>T<sp/>_20,<sp/>T<sp/>_21,<sp/>T<sp/>_22,<sp/>T<sp/>_23);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Mtx33</ref>&amp;<sp/>mtx33,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t<sp/>=<sp/>Vec3::zero);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Mtx44</ref>&amp;<sp/>mtx44);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeIdentity();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeZero();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverse33(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverseTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Mtx33</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transpose();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromQuat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeQT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeR(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRIdx(u32<sp/>xr,<sp/>u32<sp/>yr,<sp/>u32<sp/>zr);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRTIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRzxyIdx(u32<sp/>xr,<sp/>u32<sp/>yr,<sp/>u32<sp/>zr);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRzxyTIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeS(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeS(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSR(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRTIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRzxyIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeSRzxyTIdx(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeST(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeT(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeT(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toQuat(<ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getBase(<ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>o,<sp/>s32<sp/>axis)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getRow(<ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>o,<sp/>s32<sp/>row)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getTranslation(<ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>o)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getRotation(<ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>o)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scaleAllElements(T<sp/>s);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scaleBases(T<sp/>sx,<sp/>T<sp/>sy,<sp/>T<sp/>sz);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setBase(s32<sp/>axis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRow(s32<sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranslation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranslation(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref><sp/>zero;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34</ref><sp/>ident;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="170" refid="classsead_1_1Matrix44" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx44Base<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Mtx33</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vector4&lt;T&gt;</ref><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>n)<sp/>{};</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref>(T<sp/>_00,<sp/>T<sp/>_01,<sp/>T<sp/>_02,<sp/>T<sp/>_03,<sp/>T<sp/>_10,<sp/>T<sp/>_11,<sp/>T<sp/>_12,<sp/>T<sp/>_13,<sp/>T<sp/>_20,<sp/>T<sp/>_21,<sp/>T<sp/>_22,<sp/>T<sp/>_23,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>_30,<sp/>T<sp/>_31,<sp/>T<sp/>_32,<sp/>T<sp/>_33);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Mtx33</ref>&amp;<sp/>mtx33,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>t<sp/>=<sp/>Vec3::zero,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>vw<sp/>=<sp/>Vec4::ew);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>mtx34,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>vw<sp/>=<sp/>Vec4::ew);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/>operator()(s32<sp/>i,<sp/>s32<sp/>j);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeIdentity();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeZero();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverse(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInverseTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMul(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTranspose(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transpose();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromQuat(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeR(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRIdx(u32<sp/>xr,<sp/>u32<sp/>yr,<sp/>u32<sp/>zr);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>makeRzxyIdx(u32<sp/>xr,<sp/>u32<sp/>yr,<sp/>u32<sp/>zr);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toQuat(<ref refid="structsead_1_1Quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getCol(<ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>o,<sp/>s32<sp/>axis)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getRow(<ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>o,<sp/>s32<sp/>row)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scaleAllElements(T<sp/>s);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scaleBases(T<sp/>sx,<sp/>T<sp/>sy,<sp/>T<sp/>sz,<sp/>T<sp/>sw);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCol(s32<sp/>axis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRow(s32<sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1Vector4" kindref="compound">Vec4</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref><sp/>zero;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44</ref><sp/>ident;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22&lt;f32&gt;</ref><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22f</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;f32&gt;</ref><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33f</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;f32&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34f</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;f32&gt;</ref><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44f</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;f32&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrixf</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22f</ref><sp/>Matrix22f::zero;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22f</ref><sp/>Matrix22f::ident;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33f</ref><sp/>Matrix33f::zero;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33f</ref><sp/>Matrix33f::ident;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34f</ref><sp/>Matrix34f::zero;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34f</ref><sp/>Matrix34f::ident;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44f</ref><sp/>Matrix44f::zero;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44f</ref><sp/>Matrix44f::ident;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix22" kindref="compound">Matrix22&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix33" kindref="compound">Matrix33&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix34" kindref="compound">Matrix34&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1Matrix44" kindref="compound">Matrix44&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_MATH_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadMatrix.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SEAD_MATH_MATRIX_H_</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/math/seadMatrix.h"/>
+  </compounddef>
+</doxygen>

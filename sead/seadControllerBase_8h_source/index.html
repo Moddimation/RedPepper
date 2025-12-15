@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadControllerBase.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <!--Upper bar-->
+      <div id="bar">
+
+          <!--Project text / logo-->
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
+          <div style="display: flex; flex-direction: column; align-items: start;">
+            
+            <!--Both progress badges-->
+            <a href="https://github.com/RedPepperDec">
+              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
+            </a>
+            <a href="https://decomp.dev/RedPepperDec">
+              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
+            </a>
+          </div>
+          
+          <p> </p>
+          
+          <!--Add each nav head here-->
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            </li>
+            <li>
+              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            </li>
+      </div>
+      
+      <h1 id="file-seadcontrollerbaseh">File seadControllerBase.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_cd2d5cfab44c6d4772a878eddd4f7857/"><strong>controller</strong></a> <strong>&gt;</strong> <a href="../seadControllerBase_8h/"><strong>seadControllerBase.h</strong></a></p>
+<p><a href="../seadControllerBase_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;math/seadBoundBox.h&gt;
+#include &lt;math/seadVector.h&gt;
+#include &lt;prim/seadBitFlag.h&gt;
+#include &lt;prim/seadRuntimeTypeInfo.h&gt;
+
+namespace sead {
+class ControllerBase {
+    SEAD_RTTI_BASE(ControllerBase)
+public:
+    static const f32 cStickHoldThresholdDefault;
+    static const f32 cStickReleaseThresholdDefault;
+    static const Vector2f cInvalidPointer;
+    static const Vector2i cInvalidPointerS32;
+
+    ControllerBase(s32 padBitMax, s32 leftStickCrossStartBit, s32 rightStickCrossStartBit,
+                   s32 touchKeyBit);
+
+    u32 getHoldMask() const { return mPadHold.getDirect(); }
+
+    u32 getTrigMask() const { return mPadTrig.getDirect(); }
+
+    u32 getReleaseMask() const { return mPadRelease.getDirect(); }
+
+    u32 getRepeatMask() const { return mPadRepeat.getDirect(); }
+
+    const u32* getHoldMaskPtr() const { return mPadHold.getPtr(); }
+
+    const u32* getTrigMaskPtr() const { return mPadTrig.getPtr(); }
+
+    const u32* getReleaseMaskPtr() const { return mPadRelease.getPtr(); }
+
+    const u32* getRepeatMaskPtr() const { return mPadRepeat.getPtr(); }
+
+    u32 getPadHoldCount(s32 bit) const;
+
+    const Vector2f&amp; getLeftStick() const { return mLeftStick; }
+
+    const Vector2f&amp; getRightStick() const { return mRightStick; }
+
+    f32 getLeftAnalogTrigger() const { return mLeftAnalogTrigger; }
+
+    f32 getRightAnalogTrigger() const { return mRightAnalogTrigger; }
+
+    const Vector2f&amp; getPointer() const { return mPointer; }
+
+    const Vector2i&amp; getPointerPrev() const { return mPointerS32; }
+
+    bool isPointerOn() const { return mPointerFlag.isOn(cPointerOn); }
+
+    bool isPointerOnNow() const { return mPointerFlag.isOn(cPointerOnNow); }
+
+    bool isPointerOffNow() const { return mPointerFlag.isOn(cPointerOffNow); }
+
+    bool isPointerUnkFlag3() const { return mPointerFlag.isOn(cPointerUnkFlag3); }
+
+    bool isHold(u32 mask) const { return mask &amp; getHoldMask(); }
+
+    bool isTrig(u32 mask) const { return mask &amp; getTrigMask(); }
+
+    bool isHoldAll(u32 mask) const { return (mask &amp; getHoldMask()) == mask; }
+
+    bool isRelease(u32 mask) const { return mask &amp; getReleaseMask(); }
+
+    bool isRepeat(u32 mask) const { return mask &amp; getRepeatMask(); }
+
+    bool isTrigWithRepeat(u32 mask) const {
+        u32 trig = getTrigMask();
+        u32 repeat = getRepeatMask();
+        return (repeat | trig) &amp; mask;
+    }
+
+    void setPadRepeat(u32 mask, u8 delay_frame, u8 pulse_frame);
+
+    void setLeftStickCrossThreshold(f32 hold, f32 release);
+    void setRightStickCrossThreshold(f32 hold, f32 release);
+
+    void setPointerBound(const BoundBox2f&amp; bound);
+
+    const BoundBox2f&amp; getPointerBound() const { return mPointerBound; }
+
+protected:
+    bool isIdleBase_();
+    void setIdleBase_();
+    void setPointerWithBound_(bool is_on, bool touchkey_hold, const Vector2f&amp; pos);
+    void updateDerivativeParams_(u32 prev_hold, bool prev_pointer_on);
+    u32 getStickHold_(u32 prev_hold, const Vector2f&amp; stick, f32 hold_threshold,
+                      f32 release_threshold, s32 start_bit);
+    u32 createStickCrossMask_();
+
+private:
+    enum { cPadIdx_MaxBase = 32 };
+
+    enum PointerFlagMask {
+        cPointerOn = 1 &lt;&lt; 0,
+        cPointerOnNow = 1 &lt;&lt; 1,
+        cPointerOffNow = 1 &lt;&lt; 2,
+        cPointerUnkFlag3 = 1 &lt;&lt; 3
+    };
+
+    enum { cCrossUp, cCrossDown, cCrossLeft, cCrossRight };
+
+    BitFlag32 mPadTrig;
+    BitFlag32 mPadRelease;
+    BitFlag32 mPadRepeat;
+    BitFlag32 mPointerFlag;
+    Vector2i mPointerS32;
+    BoundBox2f mPointerBound;
+    u32 mPadHoldCounts[cPadIdx_MaxBase];
+    u8 mPadRepeatDelays[cPadIdx_MaxBase];
+    u8 mPadRepeatPulses[cPadIdx_MaxBase];
+    f32 mLeftStickHoldThreshold;
+    f32 mRightStickHoldThreshold;
+    f32 mLeftStickReleaseThreshold;
+    f32 mRightStickReleaseThreshold;
+    s32 mPadBitMax;
+    s32 mLeftStickCrossStartBit;
+    s32 mRightStickCrossStartBit;
+    s32 mTouchKeyBit;
+    s32 mIdleFrame;
+    BitFlag32 mPadHold;
+    Vector2f mPointer;
+    Vector2f mLeftStick;
+    Vector2f mRightStick;
+    f32 mLeftAnalogTrigger;
+    f32 mRightAnalogTrigger;
+
+    friend class Controller;
+    friend class ControllerWrapper;
+    friend class ControllerWrapperBase;
+};
+#ifdef cafe
+static_assert(sizeof(ControllerBase) == 0x130, &quot;sead::ControllerBase size mismatch&quot;);
+#endif  // cafe
+
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>
