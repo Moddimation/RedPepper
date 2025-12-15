@@ -109,4 +109,5 @@ jobs:
           git add data/*.csv
           git config set advice.addIgnoredFile false
           git commit --amend --no-edit || true
+          git push -f
 

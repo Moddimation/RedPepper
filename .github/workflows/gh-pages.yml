@@ -52,6 +52,8 @@ jobs:
               iconv -f SHIFT_JIS -t "$TO_ENCODING" -c "$FILE" > "$FILE.tmp" 2>/dev/null
               
               if [ $? -eq 0 ] && [ -s "$FILE.tmp" ]; then
+                # Apply fixes: ¥ -> \ and ‾ -> ~
+                sed -i 's/¥/\\/g; s/‾/~/g' "$FILE.tmp"
                 mv "$FILE.tmp" "$FILE"
               else
                 rm -f "$FILE.tmp"
@@ -61,11 +63,9 @@ jobs:
         done
 
     - name: Build and Deploy
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         mkdir priv
         mv RedPepperWiki priv/RedPepperWiki
-        wget https://github.com/RedPepperDec/RedPepper/blob/main/readme.md?raw=true -O priv/RedPepperWiki/docs/index.md
         python -m mkdocs gh-deploy --config-file priv/RedPepperWiki/mkdocs.yml --force --remote-branch website
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
