@@ -19,6 +19,8 @@ jobs:
       with:
         submodules: recursive
         fetch-depth: 0
+        persist-credentials: false
+        access-token: ${{ secrets.GH_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -38,6 +40,7 @@ jobs:
         owner: 'RedPepperDec'
         repository: 'RedPepperWiki'
         branch: 'master'
+        persist-credentials: false
         access-token: ${{ secrets.GH_TOKEN }}
         
     - name: Convert Charset
@@ -61,11 +64,12 @@ jobs:
             done
           done
         done
-
     - name: Build and Deploy
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         mkdir priv
         mv RedPepperWiki priv/RedPepperWiki
+        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/RedPepperDec/RedPepper.git
         python -m mkdocs gh-deploy --config-file priv/RedPepperWiki/mkdocs.yml --force --remote-branch website
+

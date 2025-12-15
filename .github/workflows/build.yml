@@ -18,10 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+          persist-credentials: false
+          access-token: ${{ secrets.GH_TOKEN }}
 
       - name: Checkout build repo
         uses: actions/checkout@v4
@@ -104,10 +106,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git config user.name "GitHub Actions"
-          git add data/*.csv
-          git config set advice.addIgnoredFile false
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add data/ || true
           git commit --amend --no-edit || true
           git push -f
-
