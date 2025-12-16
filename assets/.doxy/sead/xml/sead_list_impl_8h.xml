@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_list_impl_8h" kind="file" language="C++">
+    <compoundname>seadListImpl.h</compoundname>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includedby refid="sead_disposer_8h" local="no">seadDisposer.h</includedby>
+    <includedby refid="sead_list_impl_8cpp" local="no">seadListImpl.cpp</includedby>
+    <includedby refid="sead_mem_block_8h" local="no">seadMemBlock.h</includedby>
+    <includedby refid="sead_offset_list_8h" local="no">seadOffsetList.h</includedby>
+    <includedby refid="sead_t_list_8h" local="no">seadTList.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>seadOffsetList.h</label>
+        <link refid="sead_offset_list_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>seadTList.h</label>
+        <link refid="sead_t_list_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="7">
+        <label>seadFileDevice.h</label>
+        <link refid="sead_file_device_8h"/>
+      </node>
+      <node id="13">
+        <label>seadCalculateTask.h</label>
+        <link refid="sead_calculate_task_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>seadHeapPolicies.h</label>
+        <link refid="sead_heap_policies_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>seadMethodTree.h</label>
+        <link refid="sead_method_tree_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>seadTaskBase.h</label>
+        <link refid="sead_task_base_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>seadTaskMgr.h</label>
+        <link refid="sead_task_mgr_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadDisposer.h</label>
+        <link refid="sead_disposer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadExpHeap.h</label>
+        <link refid="sead_exp_heap_8h"/>
+      </node>
+      <node id="8">
+        <label>seadFrameHeap.h</label>
+        <link refid="sead_frame_heap_8h"/>
+      </node>
+      <node id="5">
+        <label>seadHeap.h</label>
+        <link refid="sead_heap_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>seadHeapMgr.h</label>
+        <link refid="sead_heap_mgr_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>seadMemBlock.h</label>
+        <link refid="sead_mem_block_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadCriticalSection.h</label>
+        <link refid="sead_critical_section_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>seadListImpl.cpp</label>
+        <link refid="sead_list_impl_8cpp"/>
+      </node>
+      <node id="10">
+        <label>seadHeapMgr.cpp</label>
+        <link refid="sead_heap_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_list_node" prot="public">sead::ListNode</innerclass>
+    <innerclass refid="classsead_1_1_list_impl" prot="public">sead::ListImpl</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SEAD_LIST_IMPL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_LIST_IMPL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Random;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classsead_1_1_list_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_list_node_1aa816d259659b5b386579dc9a723f113b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_node_1aa816d259659b5b386579dc9a723f113b" kindref="member">next</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classsead_1_1_list_node_1a3eee1d6ab52279578f0195d100313e20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_node_1a3eee1d6ab52279578f0195d100313e20" kindref="member">prev</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" kindref="member">isLinked</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref><sp/>||<sp/><ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_list_node_1ae56294b649bfb25ab2b336bb9746b9f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node_1ae56294b649bfb25ab2b336bb9746b9f2" kindref="member">ListNode</ref>()<sp/>:<sp/><ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref>(nullptr),<sp/><ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref>(nullptr)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classsead_1_1_list_node_1a5a83b4dfbe14d4a3034419350b6ed82c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_list_impl" kindref="compound">ListImpl</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_list_node_1a2a7497d723467c627bb2ee69b143b8a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1a2a7497d723467c627bb2ee69b143b8a4" kindref="member">init_</ref>()<sp/>{<sp/>;<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" kindref="member">insertBack_</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" kindref="member">insertFront_</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node_1a76fd0d35b8adb81b1ea97e4f8820b763" kindref="member">erase_</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classsead_1_1_list_impl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_list_impl" kindref="compound">ListImpl</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="classsead_1_1_list_impl_1a733c329c91ffa5ee168a84b29088ef30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a733c329c91ffa5ee168a84b29088ef30" kindref="member">ListImpl</ref>()<sp/>:<sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>(),<sp/><ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>(0)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref><sp/>=<sp/>&amp;<ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref><sp/>=<sp/>&amp;<ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classsead_1_1_list_impl_1a4916484393db40b9ebab6a57282a3e37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a4916484393db40b9ebab6a57282a3e37" kindref="member">isEmpty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref><sp/>==<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classsead_1_1_list_impl_1af11a3598a6da9a36e6a4dedf7040a22f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_list_impl_1af11a3598a6da9a36e6a4dedf7040a22f" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classsead_1_1_list_impl_1a04c10d88020602d5ba9cd221e018fd69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a04c10d88020602d5ba9cd221e018fd69" kindref="member">reverse</ref>();</highlight></codeline>
+<codeline lineno="44" refid="classsead_1_1_list_impl_1abaf3041517889b9e5aed5f5b4d00bf09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1abaf3041517889b9e5aed5f5b4d00bf09" kindref="member">shuffle</ref>();</highlight></codeline>
+<codeline lineno="45" refid="classsead_1_1_list_impl_1ac7840d0ad78e670e747808243f78cbb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1ac7840d0ad78e670e747808243f78cbb6" kindref="member">shuffle</ref>(<ref refid="classsead_1_1_random" kindref="compound">Random</ref>*<sp/>random);</highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1_list_impl_1ae40cfaaec4f02b01fa964a0e0f397204" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1ae40cfaaec4f02b01fa964a0e0f397204" kindref="member">checkLinks</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classsead_1_1_list_impl_1a2023e56060a6c743dca2e3de8b418bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">int</ref><sp/>(*<ref refid="classsead_1_1_list_impl_1a2023e56060a6c743dca2e3de8b418bb7" kindref="member">CompareCallbackImpl</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ComparePredicate&gt;</highlight></codeline>
+<codeline lineno="52" refid="classsead_1_1_list_impl_1a6eaa9f1a3936313e1d957e5def64f027" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a6eaa9f1a3936313e1d957e5def64f027" kindref="member">sort</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>offset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">ComparePredicate</ref>&amp;<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">cmp</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">mergeSort&lt;T, ComparePredicate&gt;</ref>(offset,<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">cmp</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ComparePredicate&gt;</highlight></codeline>
+<codeline lineno="57" refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">mergeSort</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>offset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">ComparePredicate</ref>&amp;<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">cmp</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">mergeSortImpl_&lt;T, ComparePredicate&gt;</ref>(<ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref>,<sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref>,<sp/><ref refid="classsead_1_1_list_impl_1af11a3598a6da9a36e6a4dedf7040a22f" kindref="member">size</ref>(),<sp/>offset,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">cmp</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classsead_1_1_list_impl_1a14fe79ee1bb35b33eb8a2907e01f8898" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a14fe79ee1bb35b33eb8a2907e01f8898" kindref="member">pushBack</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">item</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" kindref="member">insertFront_</ref>(<ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">item</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classsead_1_1_list_impl_1a4a481951b09a431e7fd10fd7f12d8fb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a4a481951b09a431e7fd10fd7f12d8fb8" kindref="member">pushFront</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">item</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" kindref="member">insertBack_</ref>(<ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">item</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a6c77a0620e8c64c2b1c31ea4cb1ed7ea" kindref="member">popBack</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a39610e1022a3fa66da47d6f7a0265c04" kindref="member">popFront</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classsead_1_1_list_impl_1a1113d827863a9ddd63751108f099cd8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1113d827863a9ddd63751108f099cd8f" kindref="member">insertBefore</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node</ref>,<sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node_to_insert</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node</ref>-&gt;insertFront_(<ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node_to_insert</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classsead_1_1_list_impl_1a89fdfd474c581521884bce9bec1434d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a89fdfd474c581521884bce9bec1434d4" kindref="member">insertAfter</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node</ref>,<sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node_to_insert</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node</ref>-&gt;insertBack_(<ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">node_to_insert</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classsead_1_1_list_impl_1a504b8b6e875b713243aa461ee0ed5173" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a504b8b6e875b713243aa461ee0ed5173" kindref="member">erase</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">item</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">item</ref>-&gt;erase_();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--<ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classsead_1_1_list_impl_1af94e0db9f99e3993d2ba8c3c197f354e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1af94e0db9f99e3993d2ba8c3c197f354e" kindref="member">front</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref><sp/>&gt;=<sp/>1<sp/>?<sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" kindref="member">mNext</ref><sp/>:<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classsead_1_1_list_impl_1a4b267247bd5040cd8dd5cacd0118e32e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a4b267247bd5040cd8dd5cacd0118e32e" kindref="member">back</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref><sp/>&gt;=<sp/>1<sp/>?<sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>.<ref refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" kindref="member">mPrev</ref><sp/>:<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a41e7499f20d437132a58c5b0c260eadb" kindref="member">nth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">n</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_list_impl_1a2a37cb4662be4fe9a5120fc221f0d772" kindref="member">indexOf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a085cc7b977147fe371007d001fcc7d35" kindref="member">swap</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">n1</ref>,<sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">n2</ref>);</highlight></codeline>
+<codeline lineno="98" refid="classsead_1_1_list_impl_1a8d24395b5525725472a6dafe71f014d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a8d24395b5525725472a6dafe71f014d4" kindref="member">moveAfter</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">basis</ref>,<sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">n</ref>);</highlight></codeline>
+<codeline lineno="99" refid="classsead_1_1_list_impl_1a04bb06fe90a23a66d2ea18c76c06c988" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a04bb06fe90a23a66d2ea18c76c06c988" kindref="member">moveBefore</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">basis</ref>,<sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">n</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classsead_1_1_list_impl_1a67d9ad4b8b49fad79a6a54440bba225b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a67d9ad4b8b49fad79a6a54440bba225b" kindref="member">find</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">ptr</ref>,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>offset,<sp/><ref refid="classsead_1_1_list_impl_1a2023e56060a6c743dca2e3de8b418bb7" kindref="member">CompareCallbackImpl</ref><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">cmp</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102" refid="classsead_1_1_list_impl_1a51ed16b3f9329f0657784b165130c2f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a51ed16b3f9329f0657784b165130c2f5" kindref="member">uniq</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>offset,<sp/><ref refid="classsead_1_1_list_impl_1a2023e56060a6c743dca2e3de8b418bb7" kindref="member">CompareCallbackImpl</ref><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">cmp</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a20674598c0afdd2358be9107b2b15a0d" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME:<sp/>this<sp/>should<sp/>take<sp/>an<sp/>rvalue<sp/>reference<sp/>for<sp/>predicate.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ComparePredicate&gt;</highlight></codeline>
+<codeline lineno="108" refid="classsead_1_1_list_impl_1a27422f4c46b1562f1890dfb52b1c853f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a27422f4c46b1562f1890dfb52b1c853f" kindref="member">mergeSortImpl_</ref>(<ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1af94e0db9f99e3993d2ba8c3c197f354e" kindref="member">front</ref>,<sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref>*<sp/><ref refid="classsead_1_1_list_impl_1a4b267247bd5040cd8dd5cacd0118e32e" kindref="member">back</ref>,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">num</ref>,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>offset,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">ComparePredicate</ref>&amp;<sp/><ref refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" kindref="member">predicate</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112" refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref><sp/><ref refid="classsead_1_1_list_impl_1ab962d9ee6b6c1641a0fef78e828e9f2c" kindref="member">mStartEnd</ref>;</highlight></codeline>
+<codeline lineno="113" refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_list_impl_1a2509cce417414e30964c097e92b60433" kindref="member">mCount</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>SEAD_LIST_IMPL_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/container/seadListImpl.h"/>
+  </compounddef>
+</doxygen>

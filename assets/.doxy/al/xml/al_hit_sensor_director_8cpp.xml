@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_hit_sensor_director_8cpp" kind="file" language="C++">
+    <compoundname>alHitSensorDirector.cpp</compoundname>
+    <includes refid="al_execute_table_holder_8h" local="no">Execute/alExecuteTableHolder.h</includes>
+    <includes refid="al_sensor_hit_group_8h" local="no">HitSensor/alSensorHitGroup.h</includes>
+    <includes refid="al_hit_sensor_director_8h" local="no">LiveActor/alHitSensorDirector.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Execute/alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Execute/alExecuteTableHolder.h</label>
+        <link refid="al_execute_table_holder_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+      <node id="6">
+        <label>HitSensor/alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>HitSensor/alSensorHitGroup.h</label>
+        <link refid="al_sensor_hit_group_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>HitSensor/alSensorType.h</label>
+        <link refid="al_sensor_type_8h"/>
+      </node>
+      <node id="11">
+        <label>LiveActor/alHitSensorDirector.h</label>
+        <link refid="al_hit_sensor_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alHitSensorDirector.cpp</label>
+        <link refid="al_hit_sensor_director_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="8">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="9">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_execute_table_holder_8h" kindref="compound">Execute/alExecuteTableHolder.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_sensor_hit_group_8h" kindref="compound">HitSensor/alSensorHitGroup.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_hit_sensor_director_8h" kindref="compound">LiveActor/alHitSensorDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_hit_sensor_director_1a1e11a4d7511d7dcabf643f4fa48ce240" refkind="member"><highlight class="normal"><ref refid="classal_1_1_hit_sensor_director_1a1e11a4d7511d7dcabf643f4fa48ce240" kindref="member">HitSensorDirector::HitSensorDirector</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mPlayerHitGroup(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mRideHitGroup(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mEyeHitGroup(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mSimpleHitGroup(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mMapObjHitGroup(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mCharacterHitGroup(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director_1aa89ee17b37023aaf93d0a19c17d94bf1" kindref="member">mPlayerHitGroup</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>(<sp/>16,<sp/></highlight><highlight class="stringliteral">&quot;Player&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director_1a733861786fcae72e56113c2e3c14e670" kindref="member">mRideHitGroup</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>(<sp/>128,<sp/></highlight><highlight class="stringliteral">&quot;Ride&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director_1a23b3d7ae60a217fb20dc519b97b69b3a" kindref="member">mEyeHitGroup</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>(<sp/>512,<sp/></highlight><highlight class="stringliteral">&quot;Eye&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director_1a95ce1661d5abdae6c59c15f652f3878f" kindref="member">mSimpleHitGroup</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>(<sp/>2048,<sp/></highlight><highlight class="stringliteral">&quot;Simple&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director_1aeb8843e4a35bc603721aa727923ca3a2" kindref="member">mMapObjHitGroup</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>(<sp/>1024,<sp/></highlight><highlight class="stringliteral">&quot;MapObj&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director_1a847239c594dee2c362fe747c76719d78" kindref="member">mCharacterHitGroup</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>(<sp/>1024,<sp/></highlight><highlight class="stringliteral">&quot;Character&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a3791a3e8c5fcfdb807bb2d43875c59d1" kindref="member">registerExecutorUser</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;センサー&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alHitSensorDirector.cpp"/>
+  </compounddef>
+</doxygen>

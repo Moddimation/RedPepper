@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_coin_rotater" kind="class" language="C++" prot="public">
+    <compoundname>CoinRotater</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">al::LiveActor</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">al::ISceneObj</basecompoundref>
+    <includes refid="_coin_rotater_8h" local="no">CoinRotater.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_coin_rotater_1a206295bace441b8c26b1a79db8276de1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CoinRotater::mRotateY</definition>
+        <argsstring></argsstring>
+        <name>mRotateY</name>
+        <qualifiedname>CoinRotater::mRotateY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="9" column="15" bodyfile="Game/include/MapObj/CoinRotater.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_coin_rotater_1adfae9a55421e0885960013f1ca4c36cf" compoundref="_coin_rotater_8h" startline="13" endline="16">getRotateY</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_coin_rotater_1afa99ce24dc92ecca9c7fb9d503623a87" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 CoinRotater::_68[0x64]</definition>
+        <argsstring>[0x64]</argsstring>
+        <name>_68</name>
+        <qualifiedname>CoinRotater::_68</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="10" column="15" bodyfile="Game/include/MapObj/CoinRotater.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_coin_rotater_1adfae9a55421e0885960013f1ca4c36cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CoinRotater::getRotateY</definition>
+        <argsstring>()</argsstring>
+        <name>getRotateY</name>
+        <qualifiedname>CoinRotater::getRotateY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="13" column="15" bodyfile="Game/include/MapObj/CoinRotater.h" bodystart="13" bodyend="16"/>
+        <references refid="class_coin_rotater_1a206295bace441b8c26b1a79db8276de1" compoundref="_coin_rotater_8h" startline="9">mRotateY</references>
+        <referencedby refid="namespacerp_1a4f58ad73f89ce46fb895c8269092a7da" compoundref="_coin_rotater_8cpp" startline="37" endline="41">rp::getCoinRotateY</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_coin_rotater_1a5a1090c31498df0ad9514c91f92082a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>const char * CoinRotater::getSceneObjName</definition>
+        <argsstring>() const</argsstring>
+        <name>getSceneObjName</name>
+        <qualifiedname>CoinRotater::getSceneObjName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="19" column="28" bodyfile="Game/src/MapObj/CoinRotater.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coin_rotater_1a41b5dacdf28a7da5898c152266dccc94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CoinRotater::initAfterPlacementSceneObj</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info)</argsstring>
+        <name>initAfterPlacementSceneObj</name>
+        <qualifiedname>CoinRotater::initAfterPlacementSceneObj</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="20" column="29" bodyfile="Game/src/MapObj/CoinRotater.cpp" bodystart="23" bodyend="27"/>
+        <references refid="_coin_rotater_8cpp_1acf452f1c1b9f6ba9421f1d1a3cfa4de9">FUN_00277de0</references>
+      </memberdef>
+      <memberdef kind="function" id="class_coin_rotater_1afbbf00c865c79edfac7fe78f8e2832fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CoinRotater::movement</definition>
+        <argsstring>()</argsstring>
+        <name>movement</name>
+        <qualifiedname>CoinRotater::movement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="22" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_coin_rotater_1a941546058c86dd0c6a6255386e4f64f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CoinRotater::CoinRotater</definition>
+        <argsstring>()</argsstring>
+        <name>CoinRotater</name>
+        <qualifiedname>CoinRotater::CoinRotater</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/CoinRotater.h" line="25" column="9" bodyfile="Game/src/MapObj/CoinRotater.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CoinRotater</label>
+        <link refid="class_coin_rotater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::ISceneObj</label>
+      </node>
+      <node id="2">
+        <label>al::LiveActor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CoinRotater</label>
+        <link refid="class_coin_rotater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::ISceneObj</label>
+      </node>
+      <node id="2">
+        <label>al::LiveActor</label>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/MapObj/CoinRotater.h" line="6" column="1" bodyfile="Game/include/MapObj/CoinRotater.h" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_coin_rotater_1afa99ce24dc92ecca9c7fb9d503623a87" prot="private" virt="non-virtual"><scope>CoinRotater</scope><name>_68</name></member>
+      <member refid="class_coin_rotater_1a941546058c86dd0c6a6255386e4f64f0" prot="public" virt="non-virtual"><scope>CoinRotater</scope><name>CoinRotater</name></member>
+      <member refid="class_coin_rotater_1adfae9a55421e0885960013f1ca4c36cf" prot="public" virt="non-virtual"><scope>CoinRotater</scope><name>getRotateY</name></member>
+      <member refid="class_coin_rotater_1a5a1090c31498df0ad9514c91f92082a1" prot="public" virt="virtual"><scope>CoinRotater</scope><name>getSceneObjName</name></member>
+      <member refid="class_coin_rotater_1a41b5dacdf28a7da5898c152266dccc94" prot="public" virt="virtual"><scope>CoinRotater</scope><name>initAfterPlacementSceneObj</name></member>
+      <member refid="class_coin_rotater_1afbbf00c865c79edfac7fe78f8e2832fb" prot="public" virt="virtual"><scope>CoinRotater</scope><name>movement</name></member>
+      <member refid="class_coin_rotater_1a206295bace441b8c26b1a79db8276de1" prot="private" virt="non-virtual"><scope>CoinRotater</scope><name>mRotateY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

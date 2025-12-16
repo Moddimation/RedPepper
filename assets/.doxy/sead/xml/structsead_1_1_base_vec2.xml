@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsead_1_1_base_vec2" kind="struct" language="C++" prot="public">
+    <compoundname>sead::BaseVec2</compoundname>
+    <derivedcompoundref refid="structsead_1_1_vector2" prot="public" virt="non-virtual">sead::Vector2&lt; s32 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structsead_1_1_vector2" prot="public" virt="non-virtual">sead::Vector2&lt; f32 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structsead_1_1_vector2" prot="public" virt="non-virtual">sead::Vector2&lt; T &gt;</derivedcompoundref>
+    <includes refid="sead_math_base_8h" local="no">seadMathBase.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BaseVec2&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>sead::BaseVec2::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathBase.h" line="6" column="7" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1aacd9b09dd3aecc6d29524e2852b1727a" compoundref="sead_vector_calc_ctr_8hpp" startline="15" endline="18">sead::Vector2CalcCtr&lt; T &gt;::add</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a3421f69777e504414d54788238a5fd65" compoundref="sead_bound_box_8h" startline="32" endline="32">sead::BoundBox2&lt; T &gt;::getBL</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a43505458afc0980329ef9cf98b1315cb" compoundref="sead_bound_box_8h" startline="20" endline="20">sead::BoundBox2&lt; T &gt;::getHalfSizeX</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1af242ddf877d2cee807724fe01358c41c" compoundref="sead_bound_box_8h" startline="16" endline="16">sead::BoundBox2&lt; T &gt;::getSizeX</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a231301bb4530bbb21d55322deb701e31" compoundref="sead_bound_box_8h" startline="30" endline="30">sead::BoundBox2&lt; T &gt;::getTR</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a77b6d044218fd6612174ddc7f6f5949f" compoundref="sead_bound_box_8hpp" startline="26" endline="28">sead::BoundBox2&lt; T &gt;::isInside</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a312fdcac8feeafcc3fe5f443c630844b" compoundref="sead_bound_box_8hpp" startline="100" endline="102">sead::BoundBox2&lt; T &gt;::offset</referencedby>
+        <referencedby refid="structsead_1_1_vector2_1a902d4685c1cbf02f8ca7f941d64ae22c" compoundref="sead_vector_8h" startline="50" endline="50">sead::Vector2&lt; T &gt;::operator==</referencedby>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1a880bbd55c03f168c17c4cbcfd50af6d7" compoundref="sead_vector_calc_ctr_8hpp" startline="27" endline="30">sead::Vector2CalcCtr&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1a525b23030618a5576bc68139b4fcab65" compoundref="sead_vector_calc_ctr_8hpp" startline="33" endline="36">sead::Vector2CalcCtr&lt; T &gt;::set</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a060525e20f64f32a8729f3d4bf140bc6" compoundref="sead_bound_box_8h" startline="49" endline="51">sead::BoundBox2&lt; T &gt;::setFromCenterAndXY</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1aac016e9148a19506e1dbc9afc2745e81" compoundref="sead_bound_box_8hpp" startline="86" endline="89">sead::BoundBox2&lt; T &gt;::setFromCornerAndXY</referencedby>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1a732d7853f1d4a608f3bc94e9003827a6" compoundref="sead_vector_calc_ctr_8hpp" startline="21" endline="24">sead::Vector2CalcCtr&lt; T &gt;::sub</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BaseVec2&lt; T &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>sead::BaseVec2::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathBase.h" line="7" column="7" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1aacd9b09dd3aecc6d29524e2852b1727a" compoundref="sead_vector_calc_ctr_8hpp" startline="15" endline="18">sead::Vector2CalcCtr&lt; T &gt;::add</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a3421f69777e504414d54788238a5fd65" compoundref="sead_bound_box_8h" startline="32" endline="32">sead::BoundBox2&lt; T &gt;::getBL</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a776671ecce157dbec422d12aa3a66474" compoundref="sead_bound_box_8h" startline="22" endline="22">sead::BoundBox2&lt; T &gt;::getHalfSizeY</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a28f2bd7ae452083ccee0fca97baa592b" compoundref="sead_bound_box_8h" startline="18" endline="18">sead::BoundBox2&lt; T &gt;::getSizeY</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a231301bb4530bbb21d55322deb701e31" compoundref="sead_bound_box_8h" startline="30" endline="30">sead::BoundBox2&lt; T &gt;::getTR</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a77b6d044218fd6612174ddc7f6f5949f" compoundref="sead_bound_box_8hpp" startline="26" endline="28">sead::BoundBox2&lt; T &gt;::isInside</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a312fdcac8feeafcc3fe5f443c630844b" compoundref="sead_bound_box_8hpp" startline="100" endline="102">sead::BoundBox2&lt; T &gt;::offset</referencedby>
+        <referencedby refid="structsead_1_1_vector2_1a902d4685c1cbf02f8ca7f941d64ae22c" compoundref="sead_vector_8h" startline="50" endline="50">sead::Vector2&lt; T &gt;::operator==</referencedby>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1a880bbd55c03f168c17c4cbcfd50af6d7" compoundref="sead_vector_calc_ctr_8hpp" startline="27" endline="30">sead::Vector2CalcCtr&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1a525b23030618a5576bc68139b4fcab65" compoundref="sead_vector_calc_ctr_8hpp" startline="33" endline="36">sead::Vector2CalcCtr&lt; T &gt;::set</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1a060525e20f64f32a8729f3d4bf140bc6" compoundref="sead_bound_box_8h" startline="49" endline="51">sead::BoundBox2&lt; T &gt;::setFromCenterAndXY</referencedby>
+        <referencedby refid="structsead_1_1_bound_box2_1aac016e9148a19506e1dbc9afc2745e81" compoundref="sead_bound_box_8hpp" startline="86" endline="89">sead::BoundBox2&lt; T &gt;::setFromCornerAndXY</referencedby>
+        <referencedby refid="classsead_1_1_vector2_calc_ctr_1a732d7853f1d4a608f3bc94e9003827a6" compoundref="sead_vector_calc_ctr_8hpp" startline="21" endline="24">sead::Vector2CalcCtr&lt; T &gt;::sub</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sead::Vector2&lt; f32 &gt;</label>
+        <link refid="structsead_1_1_vector2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; f32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::Vector2&lt; s32 &gt;</label>
+        <link refid="structsead_1_1_vector2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="template-instance">
+          <edgelabel>&lt; s32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::BaseVec2&lt; T &gt;</label>
+        <link refid="structsead_1_1_base_vec2"/>
+      </node>
+      <node id="4">
+        <label>sead::Vector2&lt; T &gt;</label>
+        <link refid="structsead_1_1_vector2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/sead/include/math/seadMathBase.h" line="5" column="1" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" prot="public" virt="non-virtual"><scope>sead::BaseVec2</scope><name>x</name></member>
+      <member refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" prot="public" virt="non-virtual"><scope>sead::BaseVec2</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

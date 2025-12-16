@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::ScopedLock - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-seadscopedlock">Class sead::ScopedLock</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>ScopedLock</strong></a></p>
+<ul>
+<li><code>#include &lt;seadScopedLock.h&gt;</code></li>
+</ul>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-scopedlock-12"><strong>ScopedLock</strong></a> (T * lock) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-scopedlock-22"><strong>ScopedLock</strong></a> (const <a href="./"><strong>ScopedLock</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>ScopedLock</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator"><strong>operator=</strong></a> (const <a href="./"><strong>ScopedLock</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="#function-scopedlock"><strong>~ScopedLock</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">T *</td>
+<td style="text-align: left;"><a href="#variable-mlocked"><strong>mLocked</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-scopedlock-12">function ScopedLock [1/2]</h3>
+<pre><code class="language-C++">inline explicit sead::ScopedLock::ScopedLock (
+    T * lock
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-scopedlock-22">function ScopedLock [2/2]</h3>
+<pre><code class="language-C++">sead::ScopedLock::ScopedLock (
+    const ScopedLock &amp; other
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator">function operator=</h3>
+<pre><code class="language-C++">ScopedLock &amp; sead::ScopedLock::operator= (
+    const ScopedLock &amp; other
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-scopedlock">function ~ScopedLock</h3>
+<pre><code class="language-C++">inline virtual sead::ScopedLock::~ScopedLock () 
+</code></pre>
+<hr>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-mlocked">variable mLocked</h3>
+<pre><code class="language-C++">T* sead::ScopedLock&lt; T &gt;::mLocked;
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/prim/seadScopedLock.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_sensor_type_8h" kind="file" language="C++">
+    <compoundname>alSensorType.h</compoundname>
+    <includedby refid="al_hit_sensor_8h" local="no">alHitSensor.h</includedby>
+    <includedby refid="al_sensor_function_8h" local="no">alSensorFunction.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>alSensorHitGroup.h</label>
+        <link refid="al_sensor_hit_group_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alSensorType.h</label>
+        <link refid="al_sensor_type_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>alHitSensorKeeper.h</label>
+        <link refid="al_hit_sensor_keeper_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>alSensorFunction.h</label>
+        <link refid="al_sensor_function_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alHitSensor.cpp</label>
+        <link refid="al_hit_sensor_8cpp"/>
+      </node>
+      <node id="11">
+        <label>alSensorHitGroup.cpp</label>
+        <link refid="al_sensor_hit_group_8cpp"/>
+      </node>
+      <node id="10">
+        <label>alHitSensorDirector.cpp</label>
+        <link refid="al_hit_sensor_director_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alHitSensorFunction.cpp</label>
+        <link refid="al_hit_sensor_function_8cpp"/>
+      </node>
+      <node id="6">
+        <label>alHitSensorKeeper.cpp</label>
+        <link refid="al_hit_sensor_keeper_8cpp"/>
+      </node>
+      <node id="7">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="8">
+        <label>alSensorFunction.cpp</label>
+        <link refid="al_sensor_function_8cpp"/>
+      </node>
+      <node id="12">
+        <label>alSensorMsg.cpp</label>
+        <link refid="al_sensor_msg_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>somewhy<sp/>getting<sp/>optimized<sp/>to<sp/>byte?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359" kindref="member">SensorType</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a748147844aeefd3b1ea46da544fd5918" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a748147844aeefd3b1ea46da544fd5918" kindref="member">SensorType_Eye</ref>,</highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a4c71b3b18a6d10884641cb729df85157" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a4c71b3b18a6d10884641cb729df85157" kindref="member">SensorType_Player</ref>,</highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a4c1d107e487df545256a4523e2821ce0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a4c1d107e487df545256a4523e2821ce0" kindref="member">SensorType_Npc</ref>,</highlight></codeline>
+<codeline lineno="11" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a93f1230853a3869c9eaa25c88e50ed87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a93f1230853a3869c9eaa25c88e50ed87" kindref="member">SensorType_Ride</ref>,</highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a40924894f9c9c0d8d213cfa276b79bc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a40924894f9c9c0d8d213cfa276b79bc2" kindref="member">SensorType_Enemy</ref>,</highlight></codeline>
+<codeline lineno="13" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359ac9bfaa97125b51fbc0f46ae831902866" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359ac9bfaa97125b51fbc0f46ae831902866" kindref="member">SensorType_EnemyBody</ref>,</highlight></codeline>
+<codeline lineno="14" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a180a254b8483948fbc694d26c620cfd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a180a254b8483948fbc694d26c620cfd4" kindref="member">SensorType_EnemyAttack</ref>,</highlight></codeline>
+<codeline lineno="15" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359af7427d45534df1d19040ea1c5b925024" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359af7427d45534df1d19040ea1c5b925024" kindref="member">SensorType_Dossun</ref>,</highlight></codeline>
+<codeline lineno="16" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359acf71030315e76ec61eea5c21bebbdb8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359acf71030315e76ec61eea5c21bebbdb8c" kindref="member">SensorType_KillerMagnum</ref>,</highlight></codeline>
+<codeline lineno="17" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a51087dbd63c699aaac332676d51abbef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a51087dbd63c699aaac332676d51abbef" kindref="member">SensorType_EnemySimple</ref>,</highlight></codeline>
+<codeline lineno="18" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a284ebc1bee5aac63a7e9144361c8efda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a284ebc1bee5aac63a7e9144361c8efda" kindref="member">SensorType_MapObj</ref>,</highlight></codeline>
+<codeline lineno="19" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a03fe8f17270bc0e3c81eb6d0bab0b709" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a03fe8f17270bc0e3c81eb6d0bab0b709" kindref="member">SensorType_MapObjSimple</ref>,</highlight></codeline>
+<codeline lineno="20" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a5f2c0b1e05fd80cbabc89d7dd2a808ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a5f2c0b1e05fd80cbabc89d7dd2a808ae" kindref="member">SensorType_Bindable</ref>,</highlight></codeline>
+<codeline lineno="21" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359adc0a9433695d62127ce3ae6dfb3dba98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359adc0a9433695d62127ce3ae6dfb3dba98" kindref="member">SensorType_CollisionParts</ref>,</highlight></codeline>
+<codeline lineno="22" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a669d26a66c68e54f10021749e4c65122" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a669d26a66c68e54f10021749e4c65122" kindref="member">SensorType_KickKoura</ref>,</highlight></codeline>
+<codeline lineno="23" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359aa3e9b077fdaa77f0aecf89b150a7fdb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359aa3e9b077fdaa77f0aecf89b150a7fdb0" kindref="member">SensorType_PlayerFireBall</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359aacde5e1dbed33c07fd96beb10495494e" kindref="member">SensorType_WooGanSandBody</ref></highlight></codeline>
+<codeline lineno="25" refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359aacde5e1dbed33c07fd96beb10495494e" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/HitSensor/alSensorType.h"/>
+  </compounddef>
+</doxygen>

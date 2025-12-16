@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_live_actor_group_8h" kind="file" language="C++">
+    <compoundname>alLiveActorGroup.h</compoundname>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes local="no">container/seadPtrArray.h</includes>
+    <includedby refid="al_live_actor_8cpp" local="no">alLiveActor.cpp</includedby>
+    <includedby refid="al_live_actor_group_8cpp" local="no">alLiveActorGroup.cpp</includedby>
+    <includedby refid="al_live_actor_kit_8cpp" local="no">alLiveActorKit.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="1">
+        <label>alLiveActorGroup.h</label>
+        <link refid="al_live_actor_group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="8">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="10">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="9">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alLiveActorGroup.h</label>
+        <link refid="al_live_actor_group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alLiveActor.cpp</label>
+        <link refid="al_live_actor_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alLiveActorGroup.cpp</label>
+        <link refid="al_live_actor_group_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_live_actor_group" prot="public">al::LiveActorGroup</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;container/seadPtrArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classal_1_1_live_actor_group" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_live_actor_group" kindref="compound">LiveActorGroup</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_live_actor_group_1a5dcdc6cf5f9676cfefeda4b35e1ae657" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_group_1a5dcdc6cf5f9676cfefeda4b35e1ae657" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::PtrArray&lt;LiveActor&gt;<sp/><ref refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" kindref="member">mActors</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_group_1ac17422942de352ee090a5621207e8a72" kindref="member">killAll</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_group_1af1490dcc730b3558086f98c996dd5893" kindref="member">makeActorDeadAll</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_live_actor_group_1afc1418ffcb6bf1317b37ee4c01c9af16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::PtrArray&lt;T&gt;&amp;<sp/><ref refid="classal_1_1_live_actor_group_1afc1418ffcb6bf1317b37ee4c01c9af16" kindref="member">getArray</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">sead::PtrArray&lt;T&gt;&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/><ref refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" kindref="member">mActors</ref><sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_group_1a4eaceaecd4e53a8299db75fd2ea5dd8c" kindref="member">registerActor</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_group" kindref="compound">LiveActorGroup</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">bufSize</ref><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alLiveActorGroup.h"/>
+  </compounddef>
+</doxygen>

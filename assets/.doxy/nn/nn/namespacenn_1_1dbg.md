@@ -56,7 +56,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  void | [**Break**](#function-break) (BreakReason reason) <br> |
+|  void | [**Break**](#function-break) ([**BreakReason**](namespacenn_1_1dbg.md#enum-breakreason) reason) <br> |
 
 
 

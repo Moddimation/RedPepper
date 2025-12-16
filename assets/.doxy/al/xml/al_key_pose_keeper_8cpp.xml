@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_key_pose_keeper_8cpp" kind="file" language="C++">
+    <compoundname>alKeyPoseKeeper.cpp</compoundname>
+    <includes refid="al_key_pose_8h" local="no">KeyPose/alKeyPose.h</includes>
+    <includes refid="al_key_pose_keeper_8h" local="no">KeyPose/alKeyPoseKeeper.h</includes>
+    <includes refid="al_actor_init_info_8h" local="no">LiveActor/alActorInitInfo.h</includes>
+    <includes refid="al_placement_function_8h" local="no">Placement/alPlacementFunction.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>KeyPose/alKeyPose.h</label>
+        <link refid="al_key_pose_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>KeyPose/alKeyPoseKeeper.h</label>
+        <link refid="al_key_pose_keeper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LiveActor/alActorInitInfo.h</label>
+        <link refid="al_actor_init_info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Placement/alPlacementFunction.h</label>
+        <link refid="al_placement_function_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alKeyPoseKeeper.cpp</label>
+        <link refid="al_key_pose_keeper_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="6">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="9">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_key_pose_8h" kindref="compound">KeyPose/alKeyPose.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_key_pose_keeper_8h" kindref="compound">KeyPose/alKeyPoseKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_init_info_8h" kindref="compound">LiveActor/alActorInitInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_placement_function_8h" kindref="compound">Placement/alPlacementFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classal_1_1_key_pose_keeper_1a024a9c01d0d764ec4b4fd9fe900b76d7" refkind="member"><highlight class="normal"><ref refid="classal_1_1_key_pose_keeper_1a024a9c01d0d764ec4b4fd9fe900b76d7" kindref="member">KeyPoseKeeper::KeyPoseKeeper</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mKeyPoses(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mKeyPoseAmount(<sp/>0<sp/>),<sp/>mCurrentKeyPoseIdx(<sp/>0<sp/>),<sp/>mMoveTypeInt(<sp/>0<sp/>),<sp/>_10(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">true</ref><sp/>),</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_11(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>puts<sp/>size<sp/>of<sp/>KeyPose<sp/>in<sp/>r7<sp/>and<sp/>does<sp/>weird<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_key_pose_keeper_1a0bc7df044243d75df66ab1349d82eeb6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper_1a0bc7df044243d75df66ab1349d82eeb6" kindref="member">KeyPoseKeeper::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">linkChildNum</ref><sp/>=<sp/><ref refid="namespaceal_1a2ae0956bce3b62dd864b31477e6c994e" kindref="member">calcLinkChildNum</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" kindref="member">mKeyPoseAmount</ref><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">linkChildNum</ref><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a34996b89c11d6564f275f7564bb378ce" kindref="member">al::tryGetArg3</ref>(<sp/>&amp;<ref refid="classal_1_1_key_pose_keeper_1ae207052573c7f33cbbf3fb5069e60944" kindref="member">mMoveTypeInt</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" kindref="member">mKeyPoses</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose" kindref="compound">KeyPose</ref>[<sp/><ref refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" kindref="member">mKeyPoseAmount</ref><sp/>];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" kindref="member">mKeyPoses</ref>-&gt;<ref refid="classal_1_1_key_pose_1a9c996ca6c9b07a83af07ed7173256abe" kindref="member">init</ref>(<sp/><ref refid="namespaceal_1abd3d9183db47277f998d723e177b3119" kindref="member">getPlacementInfo</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>=<sp/>0;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>&lt;<sp/><ref refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" kindref="member">mKeyPoseAmount</ref><sp/>-<sp/>1;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref>++<sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">keyPoseInfo</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ace0de04aadafd103d0aade05e0b6cc77" kindref="member">getLinksInfoByIndex</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">keyPoseInfo</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" kindref="member">mKeyPoses</ref>[<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>].<ref refid="classal_1_1_key_pose_1a9c996ca6c9b07a83af07ed7173256abe" kindref="member">init</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">keyPoseInfo</ref><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classal_1_1_key_pose_keeper_1a32aed9d07a4fde4ef401515cfe1a0f36" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose" kindref="compound">KeyPose</ref>*<sp/><ref refid="classal_1_1_key_pose_keeper_1a32aed9d07a4fde4ef401515cfe1a0f36" kindref="member">KeyPoseKeeper::getCurrentKeyPose</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" kindref="member">mKeyPoses</ref>[<sp/><ref refid="classal_1_1_key_pose_keeper_1aa82f7455b94fdb6a4e4d036c1c370936" kindref="member">mCurrentKeyPoseIdx</ref><sp/>];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classal_1_1_key_pose_keeper_1abcbbedd9d4b43f1848c885fedb69f205" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose" kindref="compound">KeyPose</ref>*<sp/><ref refid="classal_1_1_key_pose_keeper_1abcbbedd9d4b43f1848c885fedb69f205" kindref="member">KeyPoseKeeper::getNextKeyPose</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_key_pose_keeper_1a16d20ed5f4a13516ecc8b1a4b815786a" kindref="member">_10</ref><sp/>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>=<sp/><ref refid="classal_1_1_key_pose_keeper_1aa82f7455b94fdb6a4e4d036c1c370936" kindref="member">mCurrentKeyPoseIdx</ref><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>&gt;=<sp/><ref refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" kindref="member">mKeyPoseAmount</ref><sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>=<sp/><ref refid="classal_1_1_key_pose_keeper_1aa82f7455b94fdb6a4e4d036c1c370936" kindref="member">mCurrentKeyPoseIdx</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>&lt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>=<sp/><ref refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" kindref="member">mKeyPoseAmount</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" kindref="member">mKeyPoses</ref>[<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">idx</ref><sp/>];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>r4<sp/>not<sp/>being<sp/>pushed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespaceal_1aefefed630f34aa90a6884f9160cc5d1a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1aefefed630f34aa90a6884f9160cc5d1a" kindref="member">getCurrentKeyTrans</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>-&gt;getCurrentKeyPose()-&gt;getTrans();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="namespaceal_1ac79c5fdde7644bab889cd43f62542449" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1ac79c5fdde7644bab889cd43f62542449" kindref="member">getNextKeyTrans</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>-&gt;getNextKeyPose()-&gt;getTrans();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="namespaceal_1a94da8b244b21cdf3074d62fd0a64803d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>*<sp/><ref refid="namespaceal_1a94da8b244b21cdf3074d62fd0a64803d" kindref="member">getNextKeyPlacementInfo</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>-&gt;getNextKeyPose()-&gt;getPlacementInfo();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/KeyPose/alKeyPoseKeeper.cpp"/>
+  </compounddef>
+</doxygen>

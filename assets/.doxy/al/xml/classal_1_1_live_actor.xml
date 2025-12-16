@@ -1,0 +1,1527 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_live_actor" kind="class" language="C++" prot="public">
+    <compoundname>al::LiveActor</compoundname>
+    <basecompoundref refid="classal_1_1_i_use_nerve" prot="public" virt="non-virtual">al::IUseNerve</basecompoundref>
+    <basecompoundref refid="classal_1_1_i_use_effect_keeper" prot="public" virt="non-virtual">al::IUseEffectKeeper</basecompoundref>
+    <basecompoundref refid="classal_1_1_i_use_audio_keeper" prot="public" virt="non-virtual">al::IUseAudioKeeper</basecompoundref>
+    <basecompoundref refid="classal_1_1_i_use_stage_switch" prot="public" virt="non-virtual">al::IUseStageSwitch</basecompoundref>
+    <derivedcompoundref refid="classal_1_1_break_model" prot="public" virt="non-virtual">al::BreakModel</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_map_obj_actor" prot="public" virt="non-virtual">al::MapObjActor</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_switch_area_director" prot="public" virt="non-virtual">al::SwitchAreaDirector</derivedcompoundref>
+    <includes refid="al_live_actor_8h" local="no">alLiveActor.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classal_1_1_live_actor_1afd21f4a77946107c9637982679123bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">class</ref></type>
+        <definition>friend class ::alActorPoseFunction</definition>
+        <argsstring></argsstring>
+        <name>::alActorPoseFunction</name>
+        <qualifiedname>al::LiveActor::alActorPoseFunction</qualifiedname>
+        <param>
+          <type><ref refid="classal_actor_pose_function" kindref="compound">::alActorPoseFunction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="33" column="22" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classal_1_1_live_actor_1a1825049e96e9693462eacbe1a2bdf5ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">class</ref></type>
+        <definition>friend class ::alLiveActorFunction</definition>
+        <argsstring></argsstring>
+        <name>::alLiveActorFunction</name>
+        <qualifiedname>al::LiveActor::alLiveActorFunction</qualifiedname>
+        <param>
+          <type><ref refid="classal_live_actor_function" kindref="compound">::alLiveActorFunction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="34" column="22" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_live_actor_1afaa1cc510b8c7fe2b4bbbcf369a923ae" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+        <definition>const char* al::LiveActor::mActorName</definition>
+        <argsstring></argsstring>
+        <name>mActorName</name>
+        <qualifiedname>al::LiveActor::mActorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="37" column="20" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a17e507f79ac435c79df0f0fb09204b7a" compoundref="al_live_actor_8h" startline="61" endline="64">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1ab4da7fba99815d608300c8d34b8165af" prot="private" static="no" mutable="no">
+        <type><ref refid="structal_1_1_live_actor_flag" kindref="compound">LiveActorFlag</ref></type>
+        <definition>LiveActorFlag al::LiveActor::mLiveActorFlag</definition>
+        <argsstring></argsstring>
+        <name>mLiveActorFlag</name>
+        <qualifiedname>al::LiveActor::mLiveActorFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="58" column="23" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a302e89a156c4c82e0839e1b12cd6ee2a" compoundref="al_live_actor_8cpp" startline="45" endline="54">calcAnim</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" compoundref="al_live_actor_8h" startline="106" endline="109">getLiveActorFlag</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1a7a1746a03d5ec4225ff1caea5de0b1b1" compoundref="al_live_actor_8h" startline="111" endline="114">getLiveActorFlag</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref> *</type>
+        <definition>ActorPoseKeeperBase* al::LiveActor::mActorPoseKeeper</definition>
+        <argsstring></argsstring>
+        <name>mActorPoseKeeper</name>
+        <qualifiedname>al::LiveActor::mActorPoseKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="40" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a302e89a156c4c82e0839e1b12cd6ee2a" compoundref="al_live_actor_8cpp" startline="45" endline="54">calcAnim</referencedby>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+        <referencedby refid="classal_actor_pose_function_1ae35e8200d3aaea1d2a788ed587fec2a2" compoundref="al_actor_pose_function_8h" startline="10" endline="13">alActorPoseFunction::calcBaseMtx</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" compoundref="al_live_actor_8h" startline="66" endline="69">getActorPoseKeeper</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" compoundref="al_live_actor_8cpp" startline="98" endline="101">initPoseKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a6140f1e885109de285057432d9eee8e3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_actor_execute_info" kindref="compound">ActorExecuteInfo</ref> *</type>
+        <definition>ActorExecuteInfo* al::LiveActor::mActorExecuteInfo</definition>
+        <argsstring></argsstring>
+        <name>mActorExecuteInfo</name>
+        <qualifiedname>al::LiveActor::mActorExecuteInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="41" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a5169d28f9220ac7e7a6d4ac66b3f034a" compoundref="al_live_actor_8h" startline="71" endline="74">getActorExecuteInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1aa7ac39991177edbd285fc5a63df36e4c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_actor_action_keeper" kindref="compound">ActorActionKeeper</ref> *</type>
+        <definition>ActorActionKeeper* al::LiveActor::mActorActionKeeper</definition>
+        <argsstring></argsstring>
+        <name>mActorActionKeeper</name>
+        <qualifiedname>al::LiveActor::mActorActionKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="42" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a5bf4ac2feae435913bdf2a06c2b08fcd" compoundref="al_live_actor_8h" startline="76" endline="79">getActorActionKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a7e5e700a4f6ad109bf8887bda9e0d74b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_collider" kindref="compound">Collider</ref> *</type>
+        <definition>Collider* al::LiveActor::mCollider</definition>
+        <argsstring></argsstring>
+        <name>mCollider</name>
+        <qualifiedname>al::LiveActor::mCollider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="43" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1ae6c7bd5aee8154f6f24070f76e196d0e" compoundref="al_live_actor_8h" startline="81" endline="84">getCollider</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a264558d39b987c146f71d1dc34c3ee77" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_collision_parts" kindref="compound">CollisionParts</ref> *</type>
+        <definition>CollisionParts* al::LiveActor::mCollisionParts</definition>
+        <argsstring></argsstring>
+        <name>mCollisionParts</name>
+        <qualifiedname>al::LiveActor::mCollisionParts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="44" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a916bfd9f744b309bc38ccfb9b0f75a9b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_model_keeper" kindref="compound">ModelKeeper</ref> *</type>
+        <definition>ModelKeeper* al::LiveActor::mModelKeeper</definition>
+        <argsstring></argsstring>
+        <name>mModelKeeper</name>
+        <qualifiedname>al::LiveActor::mModelKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="45" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" compoundref="al_live_actor_8h" startline="86" endline="89">getModelKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a1277174e8f70219e7e2ad77a39d05ddd" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref> *</type>
+        <definition>NerveKeeper* al::LiveActor::mNerveKeeper</definition>
+        <argsstring></argsstring>
+        <name>mNerveKeeper</name>
+        <qualifiedname>al::LiveActor::mNerveKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="46" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a5486c54d6e327e41c6596c7cd70bcb22" compoundref="al_live_actor_8cpp" startline="22" endline="25">getNerveKeeper</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1a51ea90ce0396305cd603867dac1b34a0" compoundref="al_live_actor_8cpp" startline="93" endline="96">initNerveKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a88129f2a6e93c19c112de8e19d454d5f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_hit_sensor_keeper" kindref="compound">HitSensorKeeper</ref> *</type>
+        <definition>HitSensorKeeper* al::LiveActor::mHitSensorKeeper</definition>
+        <argsstring></argsstring>
+        <name>mHitSensorKeeper</name>
+        <qualifiedname>al::LiveActor::mHitSensorKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="47" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a7f3594ced84a6aeef57c6253dde39bf6" compoundref="al_live_actor_8h" startline="91" endline="94">getHitSensorKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a7ea955a054ed61a21b269deb91262e60" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_effect_keeper" kindref="compound">EffectKeeper</ref> *</type>
+        <definition>EffectKeeper* al::LiveActor::mEffectKeeper</definition>
+        <argsstring></argsstring>
+        <name>mEffectKeeper</name>
+        <qualifiedname>al::LiveActor::mEffectKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="48" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a05672f1ab160cc1ae4a27f08e0383beb" compoundref="al_live_actor_8cpp" startline="69" endline="72">getEffectKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a9c97b35b12f4d030648e616f38fda4ea" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_audio_keeper" kindref="compound">AudioKeeper</ref> *</type>
+        <definition>AudioKeeper* al::LiveActor::mAudioKeeper</definition>
+        <argsstring></argsstring>
+        <name>mAudioKeeper</name>
+        <qualifiedname>al::LiveActor::mAudioKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="49" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1ac3c6a9b0ac6ff5b87cac38823bf91371" compoundref="al_live_actor_8cpp" startline="74" endline="77">getAudioKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a2c72784ad3b692923e0a1ac1a912181b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_stage_switch_keeper" kindref="compound">StageSwitchKeeper</ref> *</type>
+        <definition>StageSwitchKeeper* al::LiveActor::mStageSwitchKeeper</definition>
+        <argsstring></argsstring>
+        <name>mStageSwitchKeeper</name>
+        <qualifiedname>al::LiveActor::mStageSwitchKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="50" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a9526ca8dda63c09a6a0beedc3c226dca" compoundref="al_live_actor_8cpp" startline="79" endline="82">getStageSwitchKeeper</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1ac12e54f1d03ce816fe30f9ee6c54c8a1" compoundref="al_live_actor_8cpp" startline="84" endline="87">initStageSwitchKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1aa86188b582bc71dc3cf27bbc9c82383e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_rail_keeper" kindref="compound">RailKeeper</ref> *</type>
+        <definition>RailKeeper* al::LiveActor::mRailKeeper</definition>
+        <argsstring></argsstring>
+        <name>mRailKeeper</name>
+        <qualifiedname>al::LiveActor::mRailKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="51" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" compoundref="al_live_actor_8h" startline="96" endline="99">getRailKeeper</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1af1f931de6a7bfcc28f611a374c1690cf" compoundref="al_live_actor_8cpp" startline="103" endline="106">initRailKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a6c99cb0598c5d80d98de7ff6429541c6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_shadow_keeper" kindref="compound">ShadowKeeper</ref> *</type>
+        <definition>ShadowKeeper* al::LiveActor::mShadowKeeper</definition>
+        <argsstring></argsstring>
+        <name>mShadowKeeper</name>
+        <qualifiedname>al::LiveActor::mShadowKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="52" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_1adc6585ed5cf3fa651b05b546ef365c25" compoundref="al_live_actor_8h" startline="101" endline="104">getShadowKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a2f3b377af4e14ea4666838117fb88185" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">ActorLightCtrl</ref> *</type>
+        <definition>ActorLightCtrl* al::LiveActor::mActorLightCtrl</definition>
+        <argsstring></argsstring>
+        <name>mActorLightCtrl</name>
+        <qualifiedname>al::LiveActor::mActorLightCtrl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="53" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1aa11b2c18af8f11324d3eed176bd6abba" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref> *</type>
+        <definition>void* al::LiveActor::_4C</definition>
+        <argsstring></argsstring>
+        <name>_4C</name>
+        <qualifiedname>al::LiveActor::_4C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="54" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_1a3ca8887d31218e88da0339176904d95e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_sub_actor_keeper" kindref="compound">SubActorKeeper</ref> *</type>
+        <definition>SubActorKeeper* al::LiveActor::mSubActorKeeper</definition>
+        <argsstring></argsstring>
+        <name>mSubActorKeeper</name>
+        <qualifiedname>al::LiveActor::mSubActorKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="55" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_live_actor_1a17e507f79ac435c79df0f0fb09204b7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+        <definition>const char * al::LiveActor::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>al::LiveActor::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="61" column="20" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="61" bodyend="64"/>
+        <references refid="classal_1_1_live_actor_1afaa1cc510b8c7fe2b4bbbcf369a923ae" compoundref="al_live_actor_8h" startline="37">mActorName</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref> *</type>
+        <definition>ActorPoseKeeperBase * al::LiveActor::getActorPoseKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getActorPoseKeeper</name>
+        <qualifiedname>al::LiveActor::getActorPoseKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="66" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="66" bodyend="69"/>
+        <references refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" compoundref="al_live_actor_8h" startline="40">mActorPoseKeeper</references>
+        <referencedby refid="namespaceal_1a6f5065f1f9256e98785da21958d9ed5d" compoundref="al_actor_pose_keeper_8cpp" startline="376" endline="383">al::calcFrontDir</referencedby>
+        <referencedby refid="namespaceal_1a3f7578990844423cf6ef286091ff5f14" compoundref="al_actor_pose_keeper_8cpp" startline="358" endline="365">al::calcSideDir</referencedby>
+        <referencedby refid="namespaceal_1ae7ad48c684668988b0eaab1daab7750c" compoundref="al_actor_pose_keeper_8cpp" startline="367" endline="374">al::calcUpDir</referencedby>
+        <referencedby refid="namespaceal_1a296cbe28bc75d476ef115e2971c89500" compoundref="al_actor_pose_keeper_8cpp" startline="288" endline="291">al::getFront</referencedby>
+        <referencedby refid="namespaceal_1a600e03b1af0ece1d33083782cd50fcee" compoundref="al_actor_pose_keeper_8cpp" startline="323" endline="326">al::getFrontPtr</referencedby>
+        <referencedby refid="namespaceal_1a33a72d0594ed1adba698daed83794803" compoundref="al_actor_pose_keeper_8cpp" startline="298" endline="301">al::getGravity</referencedby>
+        <referencedby refid="namespaceal_1af779b5920d21a1d26011180ec081c802" compoundref="al_actor_pose_keeper_8cpp" startline="333" endline="336">al::getGravityPtr</referencedby>
+        <referencedby refid="namespaceal_1a51d78749b96e2d197ae59ded8faf784e" compoundref="al_actor_pose_keeper_8cpp" startline="293" endline="296">al::getQuat</referencedby>
+        <referencedby refid="namespaceal_1a78b42eb7fb86899e5c46a997ac03dd91" compoundref="al_actor_pose_keeper_8cpp" startline="328" endline="331">al::getQuatPtr</referencedby>
+        <referencedby refid="namespaceal_1a21ee0146e68076d59135441cfe7aec6a" compoundref="al_actor_pose_keeper_8cpp" startline="273" endline="276">al::getRotate</referencedby>
+        <referencedby refid="namespaceal_1af96572d54174dcd97afa31d240690c92" compoundref="al_actor_pose_keeper_8cpp" startline="308" endline="311">al::getRotatePtr</referencedby>
+        <referencedby refid="namespaceal_1ad66111fc56036a7ca800ff136d3a68c5" compoundref="al_actor_pose_keeper_8cpp" startline="278" endline="281">al::getScale</referencedby>
+        <referencedby refid="namespaceal_1a9f2e2243753f1015921cda3d586f5238" compoundref="al_actor_pose_keeper_8cpp" startline="313" endline="316">al::getScalePtr</referencedby>
+        <referencedby refid="namespaceal_1ab9ac85c3ba2c227660523ce91c2ca10e" compoundref="al_actor_pose_keeper_8cpp" startline="268" endline="271">al::getTrans</referencedby>
+        <referencedby refid="namespaceal_1a49dad189ff02d28837741f4192df745f" compoundref="al_actor_pose_keeper_8cpp" startline="303" endline="306">al::getTransPtr</referencedby>
+        <referencedby refid="namespaceal_1a2a0acded3a32a5abe57b78d112aa9bec" compoundref="al_actor_pose_keeper_8cpp" startline="283" endline="286">al::getVelocity</referencedby>
+        <referencedby refid="namespaceal_1a02231d5f779acbf2649764e154de8629" compoundref="al_actor_pose_keeper_8cpp" startline="318" endline="321">al::getVelocityPtr</referencedby>
+        <referencedby refid="namespaceal_1a1a75bc04b03e619858a37d48e7de9256" compoundref="al_actor_pose_keeper_8cpp" startline="253" endline="256">al::setFront</referencedby>
+        <referencedby refid="namespaceal_1acd5901a1bb65746c57c8e03d849424c2" compoundref="al_actor_pose_keeper_8cpp" startline="263" endline="266">al::setGravity</referencedby>
+        <referencedby refid="namespaceal_1a53f6fc4407108ec810b4765f6d0681f3" compoundref="al_actor_pose_keeper_8cpp" startline="258" endline="261">al::setQuat</referencedby>
+        <referencedby refid="namespaceal_1acf95646b4531b37e4385dec0fea969f0" compoundref="al_actor_pose_keeper_8cpp" startline="229" endline="232">al::setRotate</referencedby>
+        <referencedby refid="namespaceal_1a58d52f5333d9398a3b178120c7a61849" compoundref="al_actor_pose_keeper_8cpp" startline="234" endline="237">al::setScale</referencedby>
+        <referencedby refid="namespaceal_1a3893d7e6385ef62457746d2409ba745e" compoundref="al_actor_pose_keeper_8cpp" startline="224" endline="227">al::setTrans</referencedby>
+        <referencedby refid="namespaceal_1ac59a4fad6af604bbb165dee7b79ea332" compoundref="al_actor_pose_keeper_8cpp" startline="239" endline="242">al::setVelocity</referencedby>
+        <referencedby refid="namespaceal_1a0f6b69f4bae9b61c180c3e7289f7acfb" compoundref="al_actor_pose_keeper_8cpp" startline="244" endline="251">al::setVelocityZero</referencedby>
+        <referencedby refid="namespaceal_1a7a9f3683a9f68f407ff0dcb968a3afed" compoundref="al_actor_pose_keeper_8cpp" startline="348" endline="351">al::updatePoseMtx</referencedby>
+        <referencedby refid="namespaceal_1a66a993657c57ef7dc3db86cb88f1be78" compoundref="al_actor_pose_keeper_8cpp" startline="343" endline="346">al::updatePoseQuat</referencedby>
+        <referencedby refid="namespaceal_1aba795665e914da0480bda1b40a151832" compoundref="al_actor_pose_keeper_8cpp" startline="338" endline="341">al::updatePoseRotate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a5169d28f9220ac7e7a6d4ac66b3f034a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_actor_execute_info" kindref="compound">ActorExecuteInfo</ref> *</type>
+        <definition>ActorExecuteInfo * al::LiveActor::getActorExecuteInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>getActorExecuteInfo</name>
+        <qualifiedname>al::LiveActor::getActorExecuteInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="71" column="26" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="71" bodyend="74"/>
+        <references refid="classal_1_1_live_actor_1a6140f1e885109de285057432d9eee8e3" compoundref="al_live_actor_8h" startline="41">mActorExecuteInfo</references>
+        <referencedby refid="namespaceal_actor_system_function_1aecd31a65f2e55c3263285e9a90e9aedb" compoundref="al_execute_table_holder_8cpp" startline="30" endline="33">alActorSystemFunction::addToExecutorMovement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a5bf4ac2feae435913bdf2a06c2b08fcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_actor_action_keeper" kindref="compound">ActorActionKeeper</ref> *</type>
+        <definition>ActorActionKeeper * al::LiveActor::getActorActionKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getActorActionKeeper</name>
+        <qualifiedname>al::LiveActor::getActorActionKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="76" column="27" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="76" bodyend="79"/>
+        <references refid="classal_1_1_live_actor_1aa7ac39991177edbd285fc5a63df36e4c" compoundref="al_live_actor_8h" startline="42">mActorActionKeeper</references>
+        <referencedby refid="namespaceal_1ad3dc1c4ef582193a5c8721113c062b44" compoundref="al_live_actor_function_8cpp" startline="164" endline="169">al::startNerveAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ae6c7bd5aee8154f6f24070f76e196d0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_collider" kindref="compound">Collider</ref> *</type>
+        <definition>Collider * al::LiveActor::getCollider</definition>
+        <argsstring>() const</argsstring>
+        <name>getCollider</name>
+        <qualifiedname>al::LiveActor::getCollider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="81" column="18" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="81" bodyend="84"/>
+        <references refid="classal_1_1_live_actor_1a7e5e700a4f6ad109bf8887bda9e0d74b" compoundref="al_live_actor_8h" startline="43">mCollider</references>
+        <referencedby refid="namespaceal_1acc203541cd37fbf83f4fc3723a6cfa17" compoundref="al_collision_util_8cpp" startline="8" endline="11">al::isCollidedGround</referencedby>
+        <referencedby refid="namespaceal_1a0cfa1c01768bd0864c4e1bddebb7f848" compoundref="al_live_actor_function_8cpp" startline="62" endline="68">al::onCollide</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_model_keeper" kindref="compound">ModelKeeper</ref> *</type>
+        <definition>ModelKeeper * al::LiveActor::getModelKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getModelKeeper</name>
+        <qualifiedname>al::LiveActor::getModelKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="86" column="21" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="86" bodyend="89"/>
+        <references refid="classal_1_1_live_actor_1a916bfd9f744b309bc38ccfb9b0f75a9b" compoundref="al_live_actor_8h" startline="45">mModelKeeper</references>
+        <referencedby refid="namespaceal_1a602a7ecb60130fbbd51fff90f690134f" compoundref="al_live_actor_function_8cpp" startline="140" endline="146">al::calcJointPos</referencedby>
+        <referencedby refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" compoundref="al_live_actor_function_8cpp" startline="110" endline="121">al::hideModel</referencedby>
+        <referencedby refid="namespaceal_1a1c7667b0bfb5ff035d2b7f403db72a7b" compoundref="al_live_actor_function_8cpp" startline="126" endline="135">al::tryStartMclAnimIfExist</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a7f3594ced84a6aeef57c6253dde39bf6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_hit_sensor_keeper" kindref="compound">HitSensorKeeper</ref> *</type>
+        <definition>HitSensorKeeper * al::LiveActor::getHitSensorKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getHitSensorKeeper</name>
+        <qualifiedname>al::LiveActor::getHitSensorKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="91" column="25" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="91" bodyend="94"/>
+        <references refid="classal_1_1_live_actor_1a88129f2a6e93c19c112de8e19d454d5f" compoundref="al_live_actor_8h" startline="47">mHitSensorKeeper</references>
+        <referencedby refid="namespaceal_1ae1a739e92a1781a6a606653fbf7a7527" compoundref="al_live_actor_function_8cpp" startline="151" endline="154">al::getHitSensor</referencedby>
+        <referencedby refid="namespaceal_1a29437e120198435450c779a7262bc829" compoundref="al_live_actor_function_8cpp" startline="75" endline="87">al::onDrawClipping</referencedby>
+        <referencedby refid="namespaceal_sensor_function_1a4570bd7791091f21b23ecdaf59d8ebad" compoundref="al_sensor_function_8cpp" startline="63" endline="66">alSensorFunction::updateHitSensorsAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_rail_keeper" kindref="compound">RailKeeper</ref> *</type>
+        <definition>RailKeeper * al::LiveActor::getRailKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getRailKeeper</name>
+        <qualifiedname>al::LiveActor::getRailKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="96" column="20" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="96" bodyend="99"/>
+        <references refid="classal_1_1_live_actor_1aa86188b582bc71dc3cf27bbc9c82383e" compoundref="al_live_actor_8h" startline="51">mRailKeeper</references>
+        <referencedby refid="namespaceal_1a6cded99fabe040e24450c2703f5086e7" compoundref="al_rail_function_8cpp" startline="19" endline="22">al::getRailDir</referencedby>
+        <referencedby refid="namespaceal_1aa712d41b8805e9cee4c2d8ae018d07da" compoundref="al_rail_function_8cpp" startline="34" endline="39">al::isExistRail</referencedby>
+        <referencedby refid="namespaceal_1a17968271fa7a2c88c441b029fb31508c" compoundref="al_rail_function_8cpp" startline="29" endline="32">al::isLoopRail</referencedby>
+        <referencedby refid="namespaceal_1aa697a2468d7fa5c5dbac6ddd27275785" compoundref="al_rail_function_8cpp" startline="24" endline="27">al::isRailReachedGoal</referencedby>
+        <referencedby refid="namespaceal_1a7a0914108d4e2f7a72ab089314fb170b" compoundref="al_rail_function_8cpp" startline="12" endline="16">al::setSyncRailToStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1adc6585ed5cf3fa651b05b546ef365c25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_shadow_keeper" kindref="compound">ShadowKeeper</ref> *</type>
+        <definition>ShadowKeeper * al::LiveActor::getShadowKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getShadowKeeper</name>
+        <qualifiedname>al::LiveActor::getShadowKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="101" column="22" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="101" bodyend="104"/>
+        <references refid="classal_1_1_live_actor_1a6c99cb0598c5d80d98de7ff6429541c6" compoundref="al_live_actor_8h" startline="52">mShadowKeeper</references>
+        <referencedby refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" compoundref="al_live_actor_function_8cpp" startline="110" endline="121">al::hideModel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structal_1_1_live_actor_flag" kindref="compound">LiveActorFlag</ref> &amp;</type>
+        <definition>LiveActorFlag &amp; al::LiveActor::getLiveActorFlag</definition>
+        <argsstring>()</argsstring>
+        <name>getLiveActorFlag</name>
+        <qualifiedname>al::LiveActor::getLiveActorFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="106" column="23" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="106" bodyend="109"/>
+        <references refid="classal_1_1_live_actor_1ab4da7fba99815d608300c8d34b8165af" compoundref="al_live_actor_8h" startline="58">mLiveActorFlag</references>
+        <referencedby refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" compoundref="al_live_actor_function_8cpp" startline="110" endline="121">al::hideModel</referencedby>
+        <referencedby refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" compoundref="al_live_actor_function_8cpp" startline="57" endline="60">al::isAlive</referencedby>
+        <referencedby refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" compoundref="al_live_actor_function_8cpp" startline="42" endline="45">al::isClipped</referencedby>
+        <referencedby refid="namespaceal_1a62c2c9d897bed88133376646c4d13651" compoundref="al_live_actor_function_8cpp" startline="52" endline="55">al::isDead</referencedby>
+        <referencedby refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" compoundref="al_live_actor_function_8cpp" startline="47" endline="50">al::isInvalidClipping</referencedby>
+        <referencedby refid="namespaceal_1a95326d060e34a176519243f32f5bca18" compoundref="al_live_actor_function_8cpp" startline="70" endline="73">al::offCollide</referencedby>
+        <referencedby refid="namespaceal_1a0cfa1c01768bd0864c4e1bddebb7f848" compoundref="al_live_actor_function_8cpp" startline="62" endline="68">al::onCollide</referencedby>
+        <referencedby refid="namespaceal_1a29437e120198435450c779a7262bc829" compoundref="al_live_actor_function_8cpp" startline="75" endline="87">al::onDrawClipping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a7a1746a03d5ec4225ff1caea5de0b1b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="structal_1_1_live_actor_flag" kindref="compound">LiveActorFlag</ref> &amp;</type>
+        <definition>const LiveActorFlag &amp; al::LiveActor::getLiveActorFlag</definition>
+        <argsstring>() const</argsstring>
+        <name>getLiveActorFlag</name>
+        <qualifiedname>al::LiveActor::getLiveActorFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="111" column="29" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="111" bodyend="114"/>
+        <references refid="classal_1_1_live_actor_1ab4da7fba99815d608300c8d34b8165af" compoundref="al_live_actor_8h" startline="58">mLiveActorFlag</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a5486c54d6e327e41c6596c7cd70bcb22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref> *</type>
+        <definition>NerveKeeper * al::LiveActor::getNerveKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getNerveKeeper</name>
+        <qualifiedname>al::LiveActor::getNerveKeeper</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_nerve_1aa3b5bb2047eaab092052b8d5ffcb580d">getNerveKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="117" column="29" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="22" bodyend="25"/>
+        <references refid="classal_1_1_live_actor_1a1277174e8f70219e7e2ad77a39d05ddd" compoundref="al_live_actor_8h" startline="46">mNerveKeeper</references>
+        <referencedby refid="namespaceal_1a8f883cda476a5ff886e6e069fc1a8b0c" compoundref="al_live_actor_function_8cpp" startline="181" endline="189">al::initNerveAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::initPoseKeeper</definition>
+        <argsstring>(ActorPoseKeeperBase *pPoseKeeper)</argsstring>
+        <name>initPoseKeeper</name>
+        <qualifiedname>al::LiveActor::initPoseKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref> *</type>
+          <declname>pPoseKeeper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="119" column="14" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="98" bodyend="101"/>
+        <references refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" compoundref="al_live_actor_8h" startline="40">mActorPoseKeeper</references>
+        <referencedby refid="namespaceal_1a7945b977c7ce78baf0832ae6247adc47" compoundref="al_actor_pose_keeper_8cpp" startline="179" endline="182">al::initActorPoseTFGSV</referencedby>
+        <referencedby refid="namespaceal_1ab9389568f9c35d648e228f8efbefbd10" compoundref="al_actor_pose_keeper_8cpp" startline="174" endline="177">al::initActorPoseTFSV</referencedby>
+        <referencedby refid="namespaceal_1a8ca853109d39be4968475c5e99d161a0" compoundref="al_actor_pose_keeper_8cpp" startline="184" endline="187">al::initActorPoseTQSV</referencedby>
+        <referencedby refid="namespaceal_1a6b9cd163a7677d250f18c5dbad105ed7" compoundref="al_actor_pose_keeper_8cpp" startline="189" endline="192">al::initActorPoseTRSV</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ab13ab96fe475444c29928033aa62f45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::initCollider</definition>
+        <argsstring>(float radius, float yOffset, u32)</argsstring>
+        <name>initCollider</name>
+        <qualifiedname>al::LiveActor::initCollider</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">float</ref></type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">float</ref></type>
+          <declname>yOffset</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="120" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a51ea90ce0396305cd603867dac1b34a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::initNerveKeeper</definition>
+        <argsstring>(NerveKeeper *nk)</argsstring>
+        <name>initNerveKeeper</name>
+        <qualifiedname>al::LiveActor::initNerveKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref> *</type>
+          <declname>nk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="121" column="14" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="93" bodyend="96"/>
+        <references refid="classal_1_1_live_actor_1a1277174e8f70219e7e2ad77a39d05ddd" compoundref="al_live_actor_8h" startline="46">mNerveKeeper</references>
+        <referencedby refid="namespaceal_1a765397d5b8fff63737e5237c28f02ebb" compoundref="al_live_actor_function_8cpp" startline="173" endline="176">al::initNerve</referencedby>
+        <referencedby refid="namespaceal_1a8f883cda476a5ff886e6e069fc1a8b0c" compoundref="al_live_actor_function_8cpp" startline="181" endline="189">al::initNerveAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1af1f931de6a7bfcc28f611a374c1690cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::initRailKeeper</definition>
+        <argsstring>(const ActorInitInfo &amp;info)</argsstring>
+        <name>initRailKeeper</name>
+        <qualifiedname>al::LiveActor::initRailKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="122" column="14" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="103" bodyend="106"/>
+        <references refid="namespaceal_1abd3d9183db47277f998d723e177b3119" compoundref="al_actor_init_info_8h" startline="32" endline="35">al::getPlacementInfo</references>
+        <references refid="classal_1_1_live_actor_1aa86188b582bc71dc3cf27bbc9c82383e" compoundref="al_live_actor_8h" startline="51">mRailKeeper</references>
+        <references refid="namespaceal_1a5c4c69c1e31b930a50243811e32da93c" compoundref="al_rail_keeper_8cpp" startline="16" endline="22">al::tryCreateRailKeeper</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a9a6f10b39164deabef1930afe254de46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::init</definition>
+        <argsstring>(const ActorInitInfo &amp;info)</argsstring>
+        <name>init</name>
+        <qualifiedname>al::LiveActor::init</qualifiedname>
+        <reimplementedby refid="classal_1_1_clock_map_parts_1ae64f7befa57d2a45a0d25b8082ce5948">init</reimplementedby>
+        <reimplementedby refid="classal_1_1_fall_map_parts_1a6885299dbc669d1443d05b6019125302">init</reimplementedby>
+        <reimplementedby refid="classal_1_1_fix_map_parts_1acb267e4a043700149567de6c2763d184">init</reimplementedby>
+        <reimplementedby refid="classal_1_1_break_model_1a8d59430632e94fc91d55532d87cce8ba">init</reimplementedby>
+        <reimplementedby refid="classal_1_1_effect_obj_1ac04f3f4e547a696b6ceba94df45d3758">init</reimplementedby>
+        <reimplementedby refid="classal_1_1_sky_1aaa9e24a0a9f86f3fac997a1ae3516033">init</reimplementedby>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="124" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="27" bodyend="29"/>
+        <referencedby refid="namespaceal_1aaa9e6d118963b8cd7f38d15de30d4d55" compoundref="al_actor_init_util_8cpp" startline="38" endline="44">al::initCreateActorNoPlacementInfo</referencedby>
+        <referencedby refid="namespaceal_1abe217cb0086d50a3344b4a0613bc368b" compoundref="al_actor_init_util_8cpp" startline="46" endline="49">al::initCreateActorWithPlacementInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a79dcdde5eac13045c43a7c70cbc1009e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::initAfterPlacement</definition>
+        <argsstring>()</argsstring>
+        <name>initAfterPlacement</name>
+        <qualifiedname>al::LiveActor::initAfterPlacement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="125" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a837c7a850e38668f36ea7dc0bd7864c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::appear</definition>
+        <argsstring>()</argsstring>
+        <name>appear</name>
+        <qualifiedname>al::LiveActor::appear</qualifiedname>
+        <reimplementedby refid="classal_1_1_fix_map_parts_1a9be59e05c19dbd558b046e05fde9c250">appear</reimplementedby>
+        <reimplementedby refid="classal_1_1_break_model_1acbc0553aa6e7b59f5d59c5e5d1bb139c">appear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="126" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="35" bodyend="38"/>
+        <references refid="classal_1_1_live_actor_1a21647e167d28b0db31785628cbded72c">makeActorAppeared</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a21647e167d28b0db31785628cbded72c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::makeActorAppeared</definition>
+        <argsstring>()</argsstring>
+        <name>makeActorAppeared</name>
+        <qualifiedname>al::LiveActor::makeActorAppeared</qualifiedname>
+        <reimplementedby refid="classal_1_1_effect_obj_1a8c4142940a6bb28eb69e3ed082b05718">makeActorAppeared</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="127" column="40"/>
+        <referencedby refid="classal_1_1_live_actor_1a837c7a850e38668f36ea7dc0bd7864c1" compoundref="al_live_actor_8cpp" startline="35" endline="38">appear</referencedby>
+        <referencedby refid="classal_1_1_break_model_1acbc0553aa6e7b59f5d59c5e5d1bb139c" compoundref="al_break_model_8cpp" startline="33" endline="45">al::BreakModel::appear</referencedby>
+        <referencedby refid="classal_1_1_sky_1aaa9e24a0a9f86f3fac997a1ae3516033" compoundref="al_sky_8cpp" startline="15" endline="23">al::Sky::init</referencedby>
+        <referencedby refid="classal_1_1_effect_obj_1a8c4142940a6bb28eb69e3ed082b05718" compoundref="al_effect_obj_8cpp" startline="28" endline="33">al::EffectObj::makeActorAppeared</referencedby>
+        <referencedby refid="classal_sub_actor_function_1afb4d28ced26171df5cf5dd12868e5062" compoundref="al_sub_actor_function_8cpp" startline="6" endline="14">alSubActorFunction::trySyncAlive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ac17a125c51d1a66778be4aa8f7c04556" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::kill</definition>
+        <argsstring>()</argsstring>
+        <name>kill</name>
+        <qualifiedname>al::LiveActor::kill</qualifiedname>
+        <reimplementedby refid="classal_1_1_effect_obj_1a1f090a87e9f0a9282f5fc281a6d801f0">kill</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="128" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="40" bodyend="43"/>
+        <references refid="classal_1_1_live_actor_1a68a239913d3029dfa7d18d580a1b8cf5">makeActorDead</references>
+        <referencedby refid="classal_1_1_break_model_1abc62d4ac69d955e77be15430023e3501" compoundref="al_break_model_8cpp" startline="51" endline="55">al::BreakModel::exeBreak</referencedby>
+        <referencedby refid="classal_1_1_effect_obj_1a1f090a87e9f0a9282f5fc281a6d801f0" compoundref="al_effect_obj_8cpp" startline="35" endline="39">al::EffectObj::kill</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a68a239913d3029dfa7d18d580a1b8cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::makeActorDead</definition>
+        <argsstring>()</argsstring>
+        <name>makeActorDead</name>
+        <qualifiedname>al::LiveActor::makeActorDead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="129" column="40"/>
+        <referencedby refid="classal_1_1_break_model_1a8d59430632e94fc91d55532d87cce8ba" compoundref="al_break_model_8cpp" startline="25" endline="31">al::BreakModel::init</referencedby>
+        <referencedby refid="classal_1_1_live_actor_1ac17a125c51d1a66778be4aa8f7c04556" compoundref="al_live_actor_8cpp" startline="40" endline="43">kill</referencedby>
+        <referencedby refid="classal_sub_actor_function_1a4f5832b48f286e3b4016e854650c5a51" compoundref="al_sub_actor_function_8cpp" startline="16" endline="24">alSubActorFunction::trySyncDead</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1adb151ef8af0c77f963984da13e08ce03" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::movement</definition>
+        <argsstring>()</argsstring>
+        <name>movement</name>
+        <qualifiedname>al::LiveActor::movement</qualifiedname>
+        <reimplementedby refid="classal_1_1_switch_area_director_1a23f76f51128ca23ecca06ae1e50ada27">movement</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="130" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a302e89a156c4c82e0839e1b12cd6ee2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::calcAnim</definition>
+        <argsstring>()</argsstring>
+        <name>calcAnim</name>
+        <qualifiedname>al::LiveActor::calcAnim</qualifiedname>
+        <reimplementedby refid="classal_1_1_sky_1aad1ba2690aa630099ecfbb620fa195b4">calcAnim</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="131" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="45" bodyend="54"/>
+        <references refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</references>
+        <references refid="classal_1_1_live_actor_1ac3c6a9b0ac6ff5b87cac38823bf91371" compoundref="al_live_actor_8cpp" startline="74" endline="77">getAudioKeeper</references>
+        <references refid="structal_1_1_live_actor_flag_1a990ea6ccc7afb5a19ff7c23b641c5edc" compoundref="al_live_actor_flag_8h" startline="9">al::LiveActorFlag::isClipped</references>
+        <references refid="structal_1_1_live_actor_flag_1a45f909530a7292fbf937ba456c21e162" compoundref="al_live_actor_flag_8h" startline="8">al::LiveActorFlag::isDead</references>
+        <references refid="structal_1_1_live_actor_flag_1adf5cc51591f45b9d99eb9f97d143f0d6" compoundref="al_live_actor_flag_8h" startline="11">al::LiveActorFlag::isDrawClipping</references>
+        <references refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" compoundref="al_live_actor_8h" startline="40">mActorPoseKeeper</references>
+        <references refid="classal_1_1_live_actor_1ab4da7fba99815d608300c8d34b8165af" compoundref="al_live_actor_8h" startline="58">mLiveActorFlag</references>
+        <referencedby refid="classal_1_1_sky_1aad1ba2690aa630099ecfbb620fa195b4" compoundref="al_sky_8cpp" startline="25" endline="29">al::Sky::calcAnim</referencedby>
+        <referencedby refid="classal_sub_actor_function_1a31c2fe252de14a0c157d22012cedcd6a" compoundref="al_sub_actor_function_8cpp" startline="46" endline="54">alSubActorFunction::tryCalcAnim</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a81fc9bc68d5f3d4b9aca7b4ce1146e14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>al::LiveActor::draw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="132" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ac4c0cd084ef4601fbfe71ea4b83e475a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::startClipped</definition>
+        <argsstring>()</argsstring>
+        <name>startClipped</name>
+        <qualifiedname>al::LiveActor::startClipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="133" column="40"/>
+        <referencedby refid="classal_sub_actor_function_1a9e6db02ef89b793fea07d07bc72beed2" compoundref="al_sub_actor_function_8cpp" startline="26" endline="34">alSubActorFunction::trySyncClippingStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a488ab648a97ff7a2826b1976b4cd0352" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::endClipped</definition>
+        <argsstring>()</argsstring>
+        <name>endClipped</name>
+        <qualifiedname>al::LiveActor::endClipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="134" column="40"/>
+        <referencedby refid="namespaceal_1a515a2b12c390af7bd21efb868109a386" compoundref="al_live_actor_function_8cpp" startline="89" endline="97">al::invalidateClipping</referencedby>
+        <referencedby refid="classal_sub_actor_function_1a55ca58b2cbf0f687f6f675a8b64f3d88" compoundref="al_sub_actor_function_8cpp" startline="36" endline="44">alSubActorFunction::trySyncClippingEnd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1aa31fea9f8531ebb95bf9d76f67ac3fbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::attackSensor</definition>
+        <argsstring>(HitSensor *me, HitSensor *other)</argsstring>
+        <name>attackSensor</name>
+        <qualifiedname>al::LiveActor::attackSensor</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> *</type>
+          <declname>me</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="135" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a8fa47cea6a5076e6d5813d87018f5be4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::LiveActor::receiveMsg</definition>
+        <argsstring>(u32 msg, HitSensor *other, HitSensor *me)</argsstring>
+        <name>receiveMsg</name>
+        <qualifiedname>al::LiveActor::receiveMsg</qualifiedname>
+        <reimplementedby refid="classal_1_1_fall_map_parts_1afa44c9d7320a572e7820a334c508c11b">receiveMsg</reimplementedby>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref></type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> *</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="136" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a92f34cfbe784ce3595ab68fcad7e8b15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Matrix34f *</type>
+        <definition>virtual const sead::Matrix34f * al::LiveActor::getBaseMtx</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseMtx</name>
+        <qualifiedname>al::LiveActor::getBaseMtx</qualifiedname>
+        <reimplementedby refid="classal_1_1_effect_obj_1a67437d3e3da27d8b0c61d7228a556eec">getBaseMtx</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="137" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a05672f1ab160cc1ae4a27f08e0383beb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_effect_keeper" kindref="compound">EffectKeeper</ref> *</type>
+        <definition>EffectKeeper * al::LiveActor::getEffectKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getEffectKeeper</name>
+        <qualifiedname>al::LiveActor::getEffectKeeper</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_effect_keeper_1a987095cf653d73e75789d1df65f3c4f7">getEffectKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="138" column="39" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="69" bodyend="72"/>
+        <references refid="classal_1_1_live_actor_1a7ea955a054ed61a21b269deb91262e60" compoundref="al_live_actor_8h" startline="48">mEffectKeeper</references>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ac3c6a9b0ac6ff5b87cac38823bf91371" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_audio_keeper" kindref="compound">AudioKeeper</ref> *</type>
+        <definition>AudioKeeper * al::LiveActor::getAudioKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getAudioKeeper</name>
+        <qualifiedname>al::LiveActor::getAudioKeeper</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_audio_keeper_1a0c4f8543143365d5741170d689d159ce">getAudioKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="139" column="39" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="74" bodyend="77"/>
+        <references refid="classal_1_1_live_actor_1a9c97b35b12f4d030648e616f38fda4ea" compoundref="al_live_actor_8h" startline="49">mAudioKeeper</references>
+        <referencedby refid="classal_1_1_live_actor_1a302e89a156c4c82e0839e1b12cd6ee2a" compoundref="al_live_actor_8cpp" startline="45" endline="54">calcAnim</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a9526ca8dda63c09a6a0beedc3c226dca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_stage_switch_keeper" kindref="compound">StageSwitchKeeper</ref> *</type>
+        <definition>StageSwitchKeeper * al::LiveActor::getStageSwitchKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getStageSwitchKeeper</name>
+        <qualifiedname>al::LiveActor::getStageSwitchKeeper</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_stage_switch_1a36ec96bf79a932f3d9c1de9359b8b75b">getStageSwitchKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="140" column="39" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="79" bodyend="82"/>
+        <references refid="classal_1_1_live_actor_1a2c72784ad3b692923e0a1ac1a912181b" compoundref="al_live_actor_8h" startline="50">mStageSwitchKeeper</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ac12e54f1d03ce816fe30f9ee6c54c8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::initStageSwitchKeeper</definition>
+        <argsstring>()</argsstring>
+        <name>initStageSwitchKeeper</name>
+        <qualifiedname>al::LiveActor::initStageSwitchKeeper</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_stage_switch_1a9a8de012f4aa541e208c49b309e8f760">initStageSwitchKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="141" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="84" bodyend="87"/>
+        <references refid="classal_1_1_live_actor_1a2c72784ad3b692923e0a1ac1a912181b" compoundref="al_live_actor_8h" startline="50">mStageSwitchKeeper</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1ae67beb9c034bbcfdb4a73a441d5c11b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActor::control</definition>
+        <argsstring>()</argsstring>
+        <name>control</name>
+        <qualifiedname>al::LiveActor::control</qualifiedname>
+        <reimplementedby refid="classal_1_1_effect_obj_1a56622840751d06b8bc8cefe027c2a5cf">control</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="142" column="40" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a99cde7b786085e8db809ee02d6820560" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::calcAndSetBaseMtx</definition>
+        <argsstring>()</argsstring>
+        <name>calcAndSetBaseMtx</name>
+        <qualifiedname>al::LiveActor::calcAndSetBaseMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="143" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1af126d1e78e456107c9f94cbda24b25e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::updateCollider</definition>
+        <argsstring>()</argsstring>
+        <name>updateCollider</name>
+        <qualifiedname>al::LiveActor::updateCollider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="144" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a0bd6ba5911a93d377d9ff71c1f1ed396" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::v22</definition>
+        <argsstring>()</argsstring>
+        <name>v22</name>
+        <qualifiedname>al::LiveActor::v22</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="145" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1af6a18e53dbae3c78ca8f7662f779f050" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::LiveActor::v23</definition>
+        <argsstring>()</argsstring>
+        <name>v23</name>
+        <qualifiedname>al::LiveActor::v23</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="146" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_1a0844b9e2818b9c8da6ee2e4f80b11bb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::LiveActor::LiveActor</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>LiveActor</name>
+        <qualifiedname>al::LiveActor::LiveActor</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActor.h" line="149" column="9" bodyfile="lib/al/src/LiveActor/alLiveActor.cpp" bodystart="11" bodyend="20"/>
+        <references refid="classal_1_1_live_actor_kit_1a1d532e8fc1eb4b8632e02ce8cda34451" compoundref="al_live_actor_kit_8h" startline="45" endline="48">al::LiveActorKit::getAllActors</references>
+        <references refid="namespaceal_1a90e3320d3b7aca38201d0227e5842a6d" compoundref="al_live_actor_kit_8cpp" startline="51" endline="54">al::getLiveActorKit</references>
+        <references refid="classal_1_1_live_actor_group_1a4eaceaecd4e53a8299db75fd2ea5dd8c" compoundref="al_live_actor_group_8cpp" startline="14" endline="17">al::LiveActorGroup::registerActor</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>al::BreakModel</label>
+        <link refid="classal_1_1_break_model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::ClockMapParts</label>
+        <link refid="classal_1_1_clock_map_parts"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::EffectObj</label>
+        <link refid="classal_1_1_effect_obj"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>al::FallMapParts</label>
+        <link refid="classal_1_1_fall_map_parts"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>al::FixMapParts</label>
+        <link refid="classal_1_1_fix_map_parts"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1_i_use_audio_keeper"/>
+      </node>
+      <node id="3">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1_i_use_effect_keeper"/>
+      </node>
+      <node id="2">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="5">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1_i_use_stage_switch"/>
+      </node>
+      <node id="1">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1_live_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::MapObjActor</label>
+        <link refid="classal_1_1_map_obj_actor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>al::Sky</label>
+        <link refid="classal_1_1_sky"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>al::SwitchAreaDirector</label>
+        <link refid="classal_1_1_switch_area_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>JMapData</label>
+        <link refid="struct_j_map_data"/>
+      </node>
+      <node id="15">
+        <label>JMapInfo</label>
+        <link refid="class_j_map_info"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>al::ActionAnimCtrl</label>
+        <link refid="classal_1_1_action_anim_ctrl"/>
+      </node>
+      <node id="9">
+        <label>al::ActorActionKeeper</label>
+        <link refid="classal_1_1_actor_action_keeper"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mActionAnimCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::ActorExecuteInfo</label>
+        <link refid="classal_1_1_actor_execute_info"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mRequestKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::ActorPoseKeeperBase</label>
+        <link refid="classal_1_1_actor_pose_keeper_base"/>
+      </node>
+      <node id="21">
+        <label>al::AnimInfoTable</label>
+        <link refid="classal_1_1_anim_info_table"/>
+      </node>
+      <node id="20">
+        <label>al::AnimPlayerSimple</label>
+        <link refid="classal_1_1_anim_player_simple"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mAnimInfoTable</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>al::AnimPlayerSkl</label>
+        <link refid="classal_1_1_anim_player_skl"/>
+      </node>
+      <node id="32">
+        <label>al::AudioKeeper</label>
+        <link refid="classal_1_1_audio_keeper"/>
+      </node>
+      <node id="11">
+        <label>al::Collider</label>
+        <link refid="classal_1_1_collider"/>
+      </node>
+      <node id="12">
+        <label>al::CollisionParts</label>
+        <link refid="classal_1_1_collision_parts"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_8</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mCollisionServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>al::EffectKeeper</label>
+        <link refid="classal_1_1_effect_keeper"/>
+      </node>
+      <node id="8">
+        <label>al::ExecuteRequestKeeper</label>
+        <link refid="classal_1_1_execute_request_keeper"/>
+      </node>
+      <node id="30">
+        <label>al::HitSensorKeeper</label>
+        <link refid="classal_1_1_hit_sensor_keeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1_i_use_audio_keeper"/>
+      </node>
+      <node id="3">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1_i_use_effect_keeper"/>
+      </node>
+      <node id="2">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="5">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1_i_use_stage_switch"/>
+      </node>
+      <node id="14">
+        <label>al::KCollisionHeader</label>
+        <link refid="structal_1_1_k_collision_header"/>
+      </node>
+      <node id="13">
+        <label>al::KCollisionServer</label>
+        <link refid="classal_1_1_k_collision_server"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mAttributeInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1_live_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mActorPoseKeeper</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mActorExecuteInfo</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mActorActionKeeper</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mCollider</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mCollisionParts</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mModelKeeper</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mHitSensorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mEffectKeeper</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mAudioKeeper</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mStageSwitchKeeper</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mRailKeeper</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>mShadowKeeper</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>mSubActorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>mLiveActorFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>al::LiveActorFlag</label>
+        <link refid="structal_1_1_live_actor_flag"/>
+      </node>
+      <node id="17">
+        <label>al::ModelKeeper</label>
+        <link refid="classal_1_1_model_keeper"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="29">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>al::NerveActionCtrl</label>
+        <link refid="classal_1_1_nerve_action_ctrl"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mNerveActions</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1_nerve_keeper"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mEndNerve</edgelabel>
+          <edgelabel>mNerve</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mStateCtrl</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mActionCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>al::NerveStateCtrl</label>
+        <link refid="classal_1_1_nerve_state_ctrl"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mCurrentState</edgelabel>
+          <edgelabel>mStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>al::NerveStateCtrl::State</label>
+        <link refid="structal_1_1_nerve_state_ctrl_1_1_state"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>al::Rail</label>
+        <link refid="classal_1_1_rail"/>
+      </node>
+      <node id="35">
+        <label>al::RailKeeper</label>
+        <link refid="classal_1_1_rail_keeper"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>mRailRider</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>al::RailRider</label>
+        <link refid="classal_1_1_rail_rider"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>al::ShadowKeeper</label>
+        <link refid="classal_1_1_shadow_keeper"/>
+      </node>
+      <node id="34">
+        <label>al::StageSwitchAccesser</label>
+        <link refid="classal_1_1_stage_switch_accesser"/>
+      </node>
+      <node id="33">
+        <label>al::StageSwitchKeeper</label>
+        <link refid="classal_1_1_stage_switch_keeper"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>mSwitches</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>al::SubActorKeeper</label>
+        <link refid="classal_1_1_sub_actor_keeper"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>alModelCtr</label>
+        <link refid="classal_model_ctr"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mSklAnimPlayer</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mMclAnimPlayer</edgelabel>
+          <edgelabel>mMtpAnimPlayer</edgelabel>
+          <edgelabel>mMtsAnimPlayer</edgelabel>
+          <edgelabel>mVisAnimPlayer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/LiveActor/alLiveActor.h" line="28" column="1" bodyfile="lib/al/include/LiveActor/alLiveActor.h" bodystart="32" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classal_1_1_live_actor_1afd21f4a77946107c9637982679123bc8" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>::alActorPoseFunction</name></member>
+      <member refid="classal_1_1_live_actor_1a1825049e96e9693462eacbe1a2bdf5ab" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>::alLiveActorFunction</name></member>
+      <member refid="classal_1_1_live_actor_1aa11b2c18af8f11324d3eed176bd6abba" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>_4C</name></member>
+      <member refid="classal_1_1_live_actor_1a837c7a850e38668f36ea7dc0bd7864c1" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>appear</name></member>
+      <member refid="classal_1_1_live_actor_1aa31fea9f8531ebb95bf9d76f67ac3fbc" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>attackSensor</name></member>
+      <member refid="classal_1_1_live_actor_1a99cde7b786085e8db809ee02d6820560" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>calcAndSetBaseMtx</name></member>
+      <member refid="classal_1_1_live_actor_1a302e89a156c4c82e0839e1b12cd6ee2a" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>calcAnim</name></member>
+      <member refid="classal_1_1_live_actor_1ae67beb9c034bbcfdb4a73a441d5c11b4" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>control</name></member>
+      <member refid="classal_1_1_live_actor_1a81fc9bc68d5f3d4b9aca7b4ce1146e14" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>draw</name></member>
+      <member refid="classal_1_1_live_actor_1a488ab648a97ff7a2826b1976b4cd0352" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>endClipped</name></member>
+      <member refid="classal_1_1_live_actor_1a5bf4ac2feae435913bdf2a06c2b08fcd" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getActorActionKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a5169d28f9220ac7e7a6d4ac66b3f034a" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getActorExecuteInfo</name></member>
+      <member refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getActorPoseKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1ac3c6a9b0ac6ff5b87cac38823bf91371" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>getAudioKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a92f34cfbe784ce3595ab68fcad7e8b15" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>getBaseMtx</name></member>
+      <member refid="classal_1_1_live_actor_1ae6c7bd5aee8154f6f24070f76e196d0e" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getCollider</name></member>
+      <member refid="classal_1_1_live_actor_1a05672f1ab160cc1ae4a27f08e0383beb" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>getEffectKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a7f3594ced84a6aeef57c6253dde39bf6" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getHitSensorKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getLiveActorFlag</name></member>
+      <member refid="classal_1_1_live_actor_1a7a1746a03d5ec4225ff1caea5de0b1b1" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getLiveActorFlag</name></member>
+      <member refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getModelKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a17e507f79ac435c79df0f0fb09204b7a" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getName</name></member>
+      <member refid="classal_1_1_live_actor_1a5486c54d6e327e41c6596c7cd70bcb22" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>getNerveKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getRailKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1adc6585ed5cf3fa651b05b546ef365c25" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>getShadowKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a9526ca8dda63c09a6a0beedc3c226dca" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>getStageSwitchKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a9a6f10b39164deabef1930afe254de46" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>init</name></member>
+      <member refid="classal_1_1_live_actor_1a79dcdde5eac13045c43a7c70cbc1009e" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>initAfterPlacement</name></member>
+      <member refid="classal_1_1_live_actor_1ab13ab96fe475444c29928033aa62f45a" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>initCollider</name></member>
+      <member refid="classal_1_1_live_actor_1a51ea90ce0396305cd603867dac1b34a0" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>initNerveKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>initPoseKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1af1f931de6a7bfcc28f611a374c1690cf" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>initRailKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1ac12e54f1d03ce816fe30f9ee6c54c8a1" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>initStageSwitchKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1ac17a125c51d1a66778be4aa8f7c04556" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>kill</name></member>
+      <member refid="classal_1_1_live_actor_1a0844b9e2818b9c8da6ee2e4f80b11bb9" prot="public" virt="non-virtual"><scope>al::LiveActor</scope><name>LiveActor</name></member>
+      <member refid="classal_1_1_live_actor_1aa7ac39991177edbd285fc5a63df36e4c" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mActorActionKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a6140f1e885109de285057432d9eee8e3" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mActorExecuteInfo</name></member>
+      <member refid="classal_1_1_live_actor_1a2f3b377af4e14ea4666838117fb88185" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mActorLightCtrl</name></member>
+      <member refid="classal_1_1_live_actor_1afaa1cc510b8c7fe2b4bbbcf369a923ae" prot="private" virt="non-virtual"><scope>al::LiveActor</scope><name>mActorName</name></member>
+      <member refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mActorPoseKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a21647e167d28b0db31785628cbded72c" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>makeActorAppeared</name></member>
+      <member refid="classal_1_1_live_actor_1a68a239913d3029dfa7d18d580a1b8cf5" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>makeActorDead</name></member>
+      <member refid="classal_1_1_live_actor_1a9c97b35b12f4d030648e616f38fda4ea" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mAudioKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a7e5e700a4f6ad109bf8887bda9e0d74b" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mCollider</name></member>
+      <member refid="classal_1_1_live_actor_1a264558d39b987c146f71d1dc34c3ee77" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mCollisionParts</name></member>
+      <member refid="classal_1_1_live_actor_1a7ea955a054ed61a21b269deb91262e60" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mEffectKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a88129f2a6e93c19c112de8e19d454d5f" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mHitSensorKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1ab4da7fba99815d608300c8d34b8165af" prot="private" virt="non-virtual"><scope>al::LiveActor</scope><name>mLiveActorFlag</name></member>
+      <member refid="classal_1_1_live_actor_1a916bfd9f744b309bc38ccfb9b0f75a9b" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mModelKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a1277174e8f70219e7e2ad77a39d05ddd" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mNerveKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1adb151ef8af0c77f963984da13e08ce03" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>movement</name></member>
+      <member refid="classal_1_1_live_actor_1aa86188b582bc71dc3cf27bbc9c82383e" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mRailKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a6c99cb0598c5d80d98de7ff6429541c6" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mShadowKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a2c72784ad3b692923e0a1ac1a912181b" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mStageSwitchKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a3ca8887d31218e88da0339176904d95e" prot="protected" virt="non-virtual"><scope>al::LiveActor</scope><name>mSubActorKeeper</name></member>
+      <member refid="classal_1_1_live_actor_1a8fa47cea6a5076e6d5813d87018f5be4" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>receiveMsg</name></member>
+      <member refid="classal_1_1_live_actor_1ac4c0cd084ef4601fbfe71ea4b83e475a" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>startClipped</name></member>
+      <member refid="classal_1_1_live_actor_1af126d1e78e456107c9f94cbda24b25e0" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>updateCollider</name></member>
+      <member refid="classal_1_1_i_use_audio_keeper_1a3f33a497a128f0342eb1f99363904e2d" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>v1</name></member>
+      <member refid="classal_1_1_i_use_audio_keeper_1a95d203ee6ff57c2f5001803b4ad9bd71" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>v2</name></member>
+      <member refid="classal_1_1_live_actor_1a0bd6ba5911a93d377d9ff71c1f1ed396" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>v22</name></member>
+      <member refid="classal_1_1_live_actor_1af6a18e53dbae3c78ca8f7662f779f050" prot="public" virt="virtual"><scope>al::LiveActor</scope><name>v23</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

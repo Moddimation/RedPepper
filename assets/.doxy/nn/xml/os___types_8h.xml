@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="os___types_8h" kind="file" language="C++">
+    <compoundname>os_Types.h</compoundname>
+    <includedby refid="svc___api_8h" local="no">svc_Api.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>os_Types.h</label>
+        <link refid="os___types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>svc_Api.h</label>
+        <link refid="svc___api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>crt0.cpp</label>
+        <link refid="crt0_8cpp"/>
+      </node>
+      <node id="4">
+        <label>dbg_Api.cpp</label>
+        <link refid="dbg___api_8cpp"/>
+      </node>
+      <node id="5">
+        <label>svc_Api.cpp</label>
+        <link refid="svc___api_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacenn">nn</innernamespace>
+    <innernamespace refid="namespacenn_1_1os">nn::os</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenn" kindref="compound">nn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">os<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24a" kindref="member">ArbitrationType</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aaf139f4b6ccf490a55c6cae6ba8c60d79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aaf139f4b6ccf490a55c6cae6ba8c60d79" kindref="member">ArbitrationType_SIGNAL</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="9" refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aabd5a177da0f3e068dcef5c10691804f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aabd5a177da0f3e068dcef5c10691804f3" kindref="member">ArbitrationType_WAIT_IF_LESS_THAN</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="10" refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aa9ad40992fbd1af0c0dff713d84ddaabf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aa9ad40992fbd1af0c0dff713d84ddaabf" kindref="member">ArbitrationType_DECREMENT_AND_WAIT_IF_LESS_THAN</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="11" refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aaa42c3b4e74f036be085f30d40c23fb95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aaa42c3b4e74f036be085f30d40c23fb95" kindref="member">ArbitrationType_WAIT_IF_LESS_THAN_TIMEOUT</ref><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="12" refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aaf78bce54c47cbffcf807213ae9acd206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1ad8356e3fd0372e814a661f7ccaf6d24aaf78bce54c47cbffcf807213ae9acd206" kindref="member">ArbitrationType_DECREMENT_AND_WAIT_IF_LESS_THAN_TIMEOUT</ref><sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44" kindref="member">ResetType</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44a8cd7f7755ce3e044b73879dcad1a0a87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44a8cd7f7755ce3e044b73879dcad1a0a87" kindref="member">ResetType_ONESHOT</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="18" refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44a788e5a293e7d4e134b1d9eaea237d21b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44a788e5a293e7d4e134b1d9eaea237d21b" kindref="member">ResetType_STICKY</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44a120cfbfbaebeb70733f5c00bbed826be" kindref="member">ResetType_PULSE</ref><sp/>=<sp/>2<sp/></highlight></codeline>
+<codeline lineno="20" refid="namespacenn_1_1os_1a5f8d5a17a12bae4027b54d735c25de44a120cfbfbaebeb70733f5c00bbed826be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>os</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nn</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/include/nn/os/os_Types.h"/>
+  </compounddef>
+</doxygen>

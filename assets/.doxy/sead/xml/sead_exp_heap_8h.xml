@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_exp_heap_8h" kind="file" language="C++">
+    <compoundname>seadExpHeap.h</compoundname>
+    <includes refid="sead_heap_8h" local="no">heap/seadHeap.h</includes>
+    <includes refid="sead_mem_block_8h" local="no">heap/seadMemBlock.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>basis/seadNew.h</label>
+        <link refid="sead_new_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>container/seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>container/seadOffsetList.h</label>
+        <link refid="sead_offset_list_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>heap/seadDisposer.h</label>
+        <link refid="sead_disposer_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadExpHeap.h</label>
+        <link refid="sead_exp_heap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>heap/seadHeap.h</label>
+        <link refid="sead_heap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>heap/seadMemBlock.h</label>
+        <link refid="sead_mem_block_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>prim/seadBitFlag.h</label>
+        <link refid="sead_bit_flag_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>prim/seadNamable.h</label>
+        <link refid="sead_namable_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>prim/seadPtrUtil.h</label>
+        <link refid="sead_ptr_util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>prim/seadRuntimeTypeInfo.h</label>
+        <link refid="sead_runtime_type_info_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>prim/seadSafeString.h</label>
+        <link refid="sead_safe_string_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>thread/seadCriticalSection.h</label>
+        <link refid="sead_critical_section_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>new</label>
+      </node>
+      <node id="7">
+        <label>nn/types.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsead_1_1_exp_heap" prot="public">sead::ExpHeap</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_heap_8h" kindref="compound">heap/seadHeap.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_mem_block_8h" kindref="compound">heap/seadMemBlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="classsead_1_1_exp_heap" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sead_runtime_type_info_8h_1af63206c0c6ef06a2ea9b46b690feda73" kindref="member">SEAD_RTTI_OVERRIDE</ref>(<ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>,<sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0" kindref="member">AllocMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0a8d5f5a08273b132c0ac703aabbfd4020" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0a8d5f5a08273b132c0ac703aabbfd4020" kindref="member">AllocMode_FirstFit</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="12" refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0af94a7144a19b742e789c003827dacbd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0af94a7144a19b742e789c003827dacbd9" kindref="member">AllocMode_BestFit</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4c" kindref="member">FindFreeBlockMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca00cc43b001caf85eaddf78e0c70639b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca00cc43b001caf85eaddf78e0c70639b9" kindref="member">FindFreeBlockMode_Auto</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca1c27c10679ebc003a90da767024e4fac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca1c27c10679ebc003a90da767024e4fac" kindref="member">FindFreeBlockMode_FromFreeList</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="18" refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4cae7c0132d76fb5572633ee6851d10cde4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4cae7c0132d76fb5572633ee6851d10cde4" kindref="member">FindFreeBlockMode_ByIteratingMemBlock</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIXME:<sp/>incomplete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref><sp/>{};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classsead_1_1_exp_heap_1ac5e36511216402d74ec51dc11c1f95c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1ac5e36511216402d74ec51dc11c1f95c9" kindref="member">create</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_safe_string_base" kindref="compound">SafeString</ref>&amp;<sp/>name,<sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>parent,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" kindref="member">HeapDirection</ref><sp/>direction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26" refid="classsead_1_1_exp_heap_1a79d060a5ca7406699750f7529dab4284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a79d060a5ca7406699750f7529dab4284" kindref="member">create</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_safe_string_base" kindref="compound">SafeString</ref>&amp;<sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classsead_1_1_exp_heap_1a9249703d7137219579cb59be7e6314de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a9249703d7137219579cb59be7e6314de" kindref="member">tryCreate</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_safe_string_base" kindref="compound">SafeString</ref>&amp;<sp/>name,<sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>parent,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" kindref="member">HeapDirection</ref><sp/>direction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30" refid="classsead_1_1_exp_heap_1a11741039d90918494e3e76952ee3e202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a11741039d90918494e3e76952ee3e202" kindref="member">tryCreate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_safe_string_base" kindref="compound">SafeString</ref>&amp;<sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classsead_1_1_exp_heap_1acffa09c3f59a521597fba7105f67d3cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1acffa09c3f59a521597fba7105f67d3cc" kindref="member">getManagementAreaSize</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classsead_1_1_exp_heap_1a364400610a524703dc8bc82174fce3a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a364400610a524703dc8bc82174fce3a2" kindref="member">destroy</ref>();</highlight></codeline>
+<codeline lineno="35" refid="classsead_1_1_exp_heap_1a67f52afab58af6e4dcc99a266c684da7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a67f52afab58af6e4dcc99a266c684da7" kindref="member">adjust</ref>();</highlight></codeline>
+<codeline lineno="36" refid="classsead_1_1_exp_heap_1a11059435324cd04f7cd455013d9a4be1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classsead_1_1_exp_heap_1a11059435324cd04f7cd455013d9a4be1" kindref="member">tryAlloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>alignment);</highlight></codeline>
+<codeline lineno="37" refid="classsead_1_1_exp_heap_1a2ddba5b52fdc917ebe82fa4f1da66ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a2ddba5b52fdc917ebe82fa4f1da66ee2" kindref="member">free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr);</highlight></codeline>
+<codeline lineno="38" refid="classsead_1_1_exp_heap_1ac028ef5f1f43617417c337c500c8e8db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classsead_1_1_exp_heap_1ac028ef5f1f43617417c337c500c8e8db" kindref="member">resizeFront</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p_void,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="39" refid="classsead_1_1_exp_heap_1ab85b4568d3a137fc222a83ef4c6e3526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classsead_1_1_exp_heap_1ab85b4568d3a137fc222a83ef4c6e3526" kindref="member">resizeBack</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p_void,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="40" refid="classsead_1_1_exp_heap_1a000a081bf0dae5b6c4139deb1df5fbc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classsead_1_1_exp_heap_1a000a081bf0dae5b6c4139deb1df5fbc1" kindref="member">tryRealloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>alignment);</highlight></codeline>
+<codeline lineno="41" refid="classsead_1_1_exp_heap_1aa7f179b37e835b0e5ea6e5594df0beb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1aa7f179b37e835b0e5ea6e5594df0beb9" kindref="member">freeAll</ref>();</highlight></codeline>
+<codeline lineno="42" refid="classsead_1_1_exp_heap_1afe311f78a305a926e052e07affa1e28c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uintptr_t<sp/><ref refid="classsead_1_1_exp_heap_1afe311f78a305a926e052e07affa1e28c" kindref="member">getStartAddress</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="classsead_1_1_exp_heap_1a811b6a7d0191e9adeec3e626e2a4192a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uintptr_t<sp/><ref refid="classsead_1_1_exp_heap_1a811b6a7d0191e9adeec3e626e2a4192a" kindref="member">getEndAddress</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="classsead_1_1_exp_heap_1af87c010c8d161e1a4082b6578775ca65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1af87c010c8d161e1a4082b6578775ca65" kindref="member">getSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45" refid="classsead_1_1_exp_heap_1a21700b0c116be4c5f8b9cc55686f54fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a21700b0c116be4c5f8b9cc55686f54fc" kindref="member">getFreeSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1_exp_heap_1a1d0514cf01982aab86c29b8ea8c5f2e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a1d0514cf01982aab86c29b8ea8c5f2e9" kindref="member">getMaxAllocatableSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>alignment)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="classsead_1_1_exp_heap_1a1e3d3d68258c6720c9815760c00e114e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a1e3d3d68258c6720c9815760c00e114e" kindref="member">isInclude</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>p_void)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="classsead_1_1_exp_heap_1a9ba9ea7e13fd541682458637f1e698b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a9ba9ea7e13fd541682458637f1e698b7" kindref="member">isEmpty</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="classsead_1_1_exp_heap_1a23cbb1b5d3dbbef44a97f1743ea8f668" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a23cbb1b5d3dbbef44a97f1743ea8f668" kindref="member">isFreeable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="classsead_1_1_exp_heap_1a2095e35388394a13ee17bc602a286738" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a2095e35388394a13ee17bc602a286738" kindref="member">isResizable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51" refid="classsead_1_1_exp_heap_1abba4e56a9efca37402394ca38c7df4ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1abba4e56a9efca37402394ca38c7df4ff" kindref="member">isAdjustable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52" refid="classsead_1_1_exp_heap_1a3b4fde4077f92755d155dbe816d7bd37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a3b4fde4077f92755d155dbe816d7bd37" kindref="member">dump</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53" refid="classsead_1_1_exp_heap_1a2f5cd523e0d2f575f2a01d854930babe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a2f5cd523e0d2f575f2a01d854930babe" kindref="member">dumpYAML</ref>(WriteStream&amp;<sp/>stream,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54" refid="classsead_1_1_exp_heap_1a8ad334603f8aea14c53ced6938bca9ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a8ad334603f8aea14c53ced6938bca9ef" kindref="member">genInformation_</ref>(hostio::Context*<sp/>context);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classsead_1_1_exp_heap_1ab02d1e7c4ee4af4b691992399862e457" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_exp_heap_1ab02d1e7c4ee4af4b691992399862e457" kindref="member">destroyAndGetAllocatableSize</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref>);</highlight></codeline>
+<codeline lineno="57" refid="classsead_1_1_exp_heap_1af32ace0bc644cb29e90091374d33cddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1af32ace0bc644cb29e90091374d33cddb" kindref="member">setFindFreeBlockMode</ref>(<ref refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4c" kindref="member">FindFreeBlockMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classsead_1_1_exp_heap_1a68f113be513712d534b7e568a46bd610" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="classsead_1_1_exp_heap_1a68f113be513712d534b7e568a46bd610" kindref="member">getAllocMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" kindref="member">mAllocMode</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classsead_1_1_exp_heap_1ad6a227767c7d4664b3de109eb48b0fff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1ad6a227767c7d4664b3de109eb48b0fff" kindref="member">setAllocMode</ref>(<ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>mode)<sp/>{<sp/><ref refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" kindref="member">mAllocMode</ref><sp/>=<sp/>mode;<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>XXX:<sp/>this<sp/>isn&apos;t<sp/>const-correct...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classsead_1_1_exp_heap_1a4ca133a304504c9542e98dbf572923b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a4ca133a304504c9542e98dbf572923b8" kindref="member">getAllocatedSize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classsead_1_1_exp_heap_1a5419b4fcb65d98c363a4fc84d6e55677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a5419b4fcb65d98c363a4fc84d6e55677" kindref="member">dumpFreeList</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67" refid="classsead_1_1_exp_heap_1aba8d8091d76aa488e6c767cc1630f7d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1aba8d8091d76aa488e6c767cc1630f7d6" kindref="member">dumpUseList</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classsead_1_1_exp_heap_1affcc30db8e2b38a4d0d2dc48da63f921" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1affcc30db8e2b38a4d0d2dc48da63f921" kindref="member">checkFreeList</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70" refid="classsead_1_1_exp_heap_1a116ad494334d919eb799a522601a4457" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a116ad494334d919eb799a522601a4457" kindref="member">tryCheckFreeList</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71" refid="classsead_1_1_exp_heap_1aa52ffd389eddfc88008184ed6121cfeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1aa52ffd389eddfc88008184ed6121cfeb" kindref="member">checkUseList</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72" refid="classsead_1_1_exp_heap_1a1f00bf86710c0c23cd2f17e70953971f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a1f00bf86710c0c23cd2f17e70953971f" kindref="member">tryCheckUseList</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="classsead_1_1_exp_heap_1aebc74bfb0c2768cbb40c5771aa9f2e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_exp_heap_1aebc74bfb0c2768cbb40c5771aa9f2e4a" kindref="member">ExpHeap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_safe_string_base" kindref="compound">SafeString</ref>&amp;<sp/>name,<sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>parent,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>address,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" kindref="member">HeapDirection</ref><sp/>direction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77" refid="classsead_1_1_exp_heap_1ad4252143db76d3ce1a124ed2fa915bde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1ad4252143db76d3ce1a124ed2fa915bde" kindref="member">~ExpHeap</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classsead_1_1_exp_heap_1a98b2a75fdd1bdc670f1fe7a5dd01b06b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a98b2a75fdd1bdc670f1fe7a5dd01b06b" kindref="member">doCreate</ref>(<ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>*,<sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classsead_1_1_exp_heap_1a6b6bf445f051deb504141b806b4dcdc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a6b6bf445f051deb504141b806b4dcdc9" kindref="member">createMaxSizeFreeMemBlock_</ref>(<ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref>*);</highlight></codeline>
+<codeline lineno="82" refid="classsead_1_1_exp_heap_1af6623adc79ca488f1906142e3d686444" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1af6623adc79ca488f1906142e3d686444" kindref="member">findFreeMemBlockFromHead_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83" refid="classsead_1_1_exp_heap_1aab270b225c25412e139ab4b83add5796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1aab270b225c25412e139ab4b83add5796" kindref="member">findFreeMemBlockFromHead_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref>,<sp/><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84" refid="classsead_1_1_exp_heap_1afab5cbd686857d325905755ed1ba84e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1afab5cbd686857d325905755ed1ba84e2" kindref="member">findFreeMemBlockFromTail_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85" refid="classsead_1_1_exp_heap_1aa491960f61917a1b0477365df5c50561" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1aa491960f61917a1b0477365df5c50561" kindref="member">findFreeMemBlockFromTail_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref>,<sp/><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86" refid="classsead_1_1_exp_heap_1a3153caac18654780c785f5f9aab01e21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a3153caac18654780c785f5f9aab01e21" kindref="member">findLastMemBlockIfFree_</ref>();</highlight></codeline>
+<codeline lineno="87" refid="classsead_1_1_exp_heap_1a3d83cb285da4bcf322c97f99ee85c93e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a3d83cb285da4bcf322c97f99ee85c93e" kindref="member">findFirstMemBlockIfFree_</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classsead_1_1_exp_heap_1af2608310c307a0cc339f9cd8e8643ea0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1af2608310c307a0cc339f9cd8e8643ea0" kindref="member">pushToUseList_</ref>(<ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*);</highlight></codeline>
+<codeline lineno="90" refid="classsead_1_1_exp_heap_1a7a8d90546fd5f177141ee8acb66be099" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a7a8d90546fd5f177141ee8acb66be099" kindref="member">pushToFreeList_</ref>(<ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classsead_1_1_exp_heap_1a47a28ddde1146fd58825b7c76424c886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a47a28ddde1146fd58825b7c76424c886" kindref="member">adjustBack_</ref>();</highlight></codeline>
+<codeline lineno="93" refid="classsead_1_1_exp_heap_1a1973709be227b5a4116bd09a4e870c22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_exp_heap_1a1973709be227b5a4116bd09a4e870c22" kindref="member">adjustFront_</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classsead_1_1_exp_heap_1a27550ccca0ce5decc736ca52e262841e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a27550ccca0ce5decc736ca52e262841e" kindref="member">allocFromHead_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96" refid="classsead_1_1_exp_heap_1a4e09f80ca894427fb1d7c420352bb5ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a4e09f80ca894427fb1d7c420352bb5ad" kindref="member">allocFromHead_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref>);</highlight></codeline>
+<codeline lineno="97" refid="classsead_1_1_exp_heap_1a36c83bd8fa48a4201a10ddbaf22c3a33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1a36c83bd8fa48a4201a10ddbaf22c3a33" kindref="member">allocFromTail_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98" refid="classsead_1_1_exp_heap_1acce20d80b0d3d5351747a1fa166b9a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_exp_heap_1acce20d80b0d3d5351747a1fa166b9a5f" kindref="member">allocFromTail_</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classsead_1_1_exp_heap_1ae8f079fab9c8981be8690ec8374a51ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_exp_heap_1ae8f079fab9c8981be8690ec8374a51ee" kindref="member">compareMemBlockAddr_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" kindref="member">mAllocMode</ref>;</highlight></codeline>
+<codeline lineno="103" refid="classsead_1_1_exp_heap_1a8a3189764c03f7f11fa086d45b8bee24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="classsead_1_1_exp_heap_1a8a3189764c03f7f11fa086d45b8bee24" kindref="member">mFindFreeBlockMode</ref>;</highlight></codeline>
+<codeline lineno="104" refid="classsead_1_1_exp_heap_1a27a42ba2432e2852b5682916c357e71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_offset_list" kindref="compound">MemBlockList</ref><sp/><ref refid="classsead_1_1_exp_heap_1a27a42ba2432e2852b5682916c357e71e" kindref="member">mFreeList</ref>;</highlight></codeline>
+<codeline lineno="105" refid="classsead_1_1_exp_heap_1a36767a263da939c08d9661f73b5c33ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_offset_list" kindref="compound">MemBlockList</ref><sp/><ref refid="classsead_1_1_exp_heap_1a36767a263da939c08d9661f73b5c33ea" kindref="member">mUseList</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/heap/seadExpHeap.h"/>
+  </compounddef>
+</doxygen>

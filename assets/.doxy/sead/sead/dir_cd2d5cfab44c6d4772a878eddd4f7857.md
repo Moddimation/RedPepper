@@ -1,6 +1,6 @@
 
 
-# Dir lib/sead/include/controller
+# Dir controller
 
 
 
@@ -21,10 +21,10 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**seadController.h**](seadController_8h.md) <br> |
-| file | [**seadControllerBase.h**](seadControllerBase_8h.md) <br> |
-| file | [**seadControllerDefine.h**](seadControllerDefine_8h.md) <br> |
-| file | [**seadControllerMgr.h**](seadControllerMgr_8h.md) <br> |
+| file | [**seadController.h**](sead_controller_8h.md) <br> |
+| file | [**seadControllerBase.h**](sead_controller_base_8h.md) <br> |
+| file | [**seadControllerDefine.h**](sead_controller_define_8h.md) <br> |
+| file | [**seadControllerMgr.h**](sead_controller_mgr_8h.md) <br> |
 
 
 

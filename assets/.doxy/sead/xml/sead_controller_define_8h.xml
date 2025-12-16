@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_controller_define_8h" kind="file" language="C++">
+    <compoundname>seadControllerDefine.h</compoundname>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includedby refid="sead_controller_8h" local="no">seadController.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadControllerDefine.h</label>
+        <link refid="sead_controller_define_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadControllerDefine.h</label>
+        <link refid="sead_controller_define_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_controller_define" prot="public">sead::ControllerDefine</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classsead_1_1_controller_define" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_controller_define" kindref="compound">ControllerDefine</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99" kindref="member">ControllerId</ref><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ad63954076e1a77608968c1f3d8cb3449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ad63954076e1a77608968c1f3d8cb3449" kindref="member">cController_Null</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ac700c8076f98d934a9493756e99a9378" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ac700c8076f98d934a9493756e99a9378" kindref="member">cController_Win</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="12" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99af670d7c5d9b88ef26da72630c3e28219" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99af670d7c5d9b88ef26da72630c3e28219" kindref="member">cController_Ctr</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="13" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99af41380e0a91ba18bf747da9f236b5011" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99af41380e0a91ba18bf747da9f236b5011" kindref="member">cController_CtrDebug</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="14" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ab9990df0637e1009b046b0724780ffe6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ab9990df0637e1009b046b0724780ffe6" kindref="member">cController_WiiRemote</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99adcd8bc219c1e4331a24d86de8253fdde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99adcd8bc219c1e4331a24d86de8253fdde" kindref="member">cController_CafeDebug</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a89047ef9376d1ca898635cfc131b20f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a89047ef9376d1ca898635cfc131b20f8" kindref="member">cController_WinDRC</ref><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a1f43f925696802f6e788ab3e5079ffa9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a1f43f925696802f6e788ab3e5079ffa9" kindref="member">cController_CafeRemote</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="18" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a795067bde2dcabc7bd1d265ffb06c2a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a795067bde2dcabc7bd1d265ffb06c2a5" kindref="member">cController_CafeDRC</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="19" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ab025717775c7ee6738cf7ace4e47fff6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99ab025717775c7ee6738cf7ace4e47fff6" kindref="member">cController_Merge</ref><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="20" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a5cfe61cfaeb40bf91a901bcaa08dfefb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a5cfe61cfaeb40bf91a901bcaa08dfefb" kindref="member">cController_UserDefine</ref><sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a8614beda698a4d453000a7d9b45a4b05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a8614beda698a4d453000a7d9b45a4b05" kindref="member">_15</ref><sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a6184396398edf62a0f01b23635db0fdb" kindref="member">_16</ref><sp/>=<sp/>16</highlight></codeline>
+<codeline lineno="24" refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99a6184396398edf62a0f01b23635db0fdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3b" kindref="member">DeviceId</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3bad9af55bec28aedd7c880c356e8943936" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3bad9af55bec28aedd7c880c356e8943936" kindref="member">cDevice_Null</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="28" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba9429854788e0a4e94a51c9a33ec3d720" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba9429854788e0a4e94a51c9a33ec3d720" kindref="member">cDevice_KeyboardMouse</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="29" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba524d35038ba7f525caef5f14c75b40f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba524d35038ba7f525caef5f14c75b40f9" kindref="member">cDevice_CtrHid</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="30" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba9d36d731b8c27d5c75f72f369490ff91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba9d36d731b8c27d5c75f72f369490ff91" kindref="member">cDevice_WinJoyPad</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="31" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba8d79f89b196559c21a5b4eb78f53a12e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba8d79f89b196559c21a5b4eb78f53a12e" kindref="member">cDevice_RvlWPad</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="32" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba80ca30055347e71d074add53b5aae6f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba80ca30055347e71d074add53b5aae6f5" kindref="member">cDevice_WinWPad</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="33" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba3098c750ab32a23d6edbb4bf54ffcc08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba3098c750ab32a23d6edbb4bf54ffcc08" kindref="member">cDevice_CafeDebugPad</ref><sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="34" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba327188599513d4a14770b614df2cdccc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba327188599513d4a14770b614df2cdccc" kindref="member">cDevice_CafeWPad</ref><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="35" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba56b436faca9a7db134e8c558171de07f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3ba56b436faca9a7db134e8c558171de07f" kindref="member">cDevice_CafeVPad</ref><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3bac6103e33e7d9336fba3164c4e1afc260" kindref="member">cDevice_UserDefine</ref><sp/>=<sp/>9</highlight></codeline>
+<codeline lineno="37" refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3bac6103e33e7d9336fba3164c4e1afc260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4" kindref="member">AddonId</ref><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4a940bdcefc2a965f8f8edbf80dcb4d21a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4a940bdcefc2a965f8f8edbf80dcb4d21a" kindref="member">cAddon_Null</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="41" refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4abbbe63198c986e61fced35c00d48d70a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4abbbe63198c986e61fced35c00d48d70a" kindref="member">cAddon_Accelerometer</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="42" refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4a2aaf497dc1d27f1417a7b029f5fd3a4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4a2aaf497dc1d27f1417a7b029f5fd3a4f" kindref="member">cAddon_PatternRumble</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4a860cd09624c7dfa4c0921bb6632c0bdc" kindref="member">cAddon_UserDefine</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="44" refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4a860cd09624c7dfa4c0921bb6632c0bdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/controller/seadControllerDefine.h"/>
+  </compounddef>
+</doxygen>

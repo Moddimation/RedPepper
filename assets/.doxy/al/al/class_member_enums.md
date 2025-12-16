@@ -5,12 +5,12 @@
 
 ## m
 
-* **MoveType** ([**al::KeyPoseKeeper**](classal_1_1KeyPoseKeeper.md))
+* **MoveType** ([**al::KeyPoseKeeper**](classal_1_1_key_pose_keeper.md))
 
 
 ## t
 
-* **Type** ([**JMapItem**](structJMapItem.md))
+* **Type** ([**JMapItem**](struct_j_map_item.md))
 
 
 

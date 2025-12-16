@@ -61,7 +61,7 @@
 |  void | [**HaltWithDetail**](#function-haltwithdetail) (const char \* file, int line, const char \* msg, ...) <br> |
 |  void | [**HaltWithDetailNoFormat**](#function-haltwithdetailnoformat) (const char \* file, int line, const char \* msg) <br> |
 |  void | [**Print**](#function-print) (const char \* format, ...) <br> |
-|  void | [**PrintString**](#function-printstring) (const char \* format, s32) <br> |
+|  void | [**PrintString**](#function-printstring) (const char \* format, [**s32**](_l_m_s___types_8h.md#typedef-s32)) <br> |
 |  void | [**PrintV**](#function-printv) (const char \* format, va\_list) <br> |
 |  void | [**SetWarningEnable**](#function-setwarningenable) (bool enable) <br> |
 |  void | [**Warning**](#function-warning) (const char \* file, int line, const char \* msg, ...) <br> |

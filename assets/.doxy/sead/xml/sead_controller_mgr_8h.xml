@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_controller_mgr_8h" kind="file" language="C++">
+    <compoundname>seadControllerMgr.h</compoundname>
+    <includes refid="sead_offset_list_8h" local="no">container/seadOffsetList.h</includes>
+    <includes refid="sead_ptr_array_8h" local="no">container/seadPtrArray.h</includes>
+    <includes refid="sead_controller_8h" local="no">controller/seadController.h</includes>
+    <includes refid="sead_calculate_task_8h" local="no">framework/seadCalculateTask.h</includes>
+    <includes refid="sead_task_mgr_8h" local="no">framework/seadTaskMgr.h</includes>
+    <includes refid="sead_task_parameter_8h" local="no">framework/seadTaskParameter.h</includes>
+    <includes refid="sead_disposer_8h" local="no">heap/seadDisposer.h</includes>
+    <includes refid="sead_runtime_type_info_8h" local="no">prim/seadRuntimeTypeInfo.h</includes>
+    <incdepgraph>
+      <node id="38">
+        <label>basis/seadNew.h</label>
+        <link refid="sead_new_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>container/seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>container/seadOffsetList.h</label>
+        <link refid="sead_offset_list_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>container/seadPtrArray.h</label>
+        <link refid="sead_ptr_array_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>container/seadTList.h</label>
+        <link refid="sead_t_list_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>container/seadTreeNode.h</label>
+        <link refid="sead_tree_node_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>controller/seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>controller/seadControllerBase.h</label>
+        <link refid="sead_controller_base_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>controller/seadControllerDefine.h</label>
+        <link refid="sead_controller_define_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>framework/seadCalculateTask.h</label>
+        <link refid="sead_calculate_task_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>framework/seadHeapPolicies.h</label>
+        <link refid="sead_heap_policies_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>framework/seadMethodTree.h</label>
+        <link refid="sead_method_tree_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>framework/seadTaskBase.h</label>
+        <link refid="sead_task_base_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>framework/seadTaskID.h</label>
+        <link refid="sead_task_i_d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>framework/seadTaskMgr.h</label>
+        <link refid="sead_task_mgr_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>framework/seadTaskParameter.h</label>
+        <link refid="sead_task_parameter_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>heap/seadArena.h</label>
+        <link refid="sead_arena_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>heap/seadDisposer.h</label>
+        <link refid="sead_disposer_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>heap/seadHeap.h</label>
+        <link refid="sead_heap_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>heap/seadHeapMgr.h</label>
+        <link refid="sead_heap_mgr_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>math/seadBoundBox.h</label>
+        <link refid="sead_bound_box_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>math/seadBoundBox.hpp</label>
+        <link refid="sead_bound_box_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>math/seadMathBase.h</label>
+        <link refid="sead_math_base_8h"/>
+      </node>
+      <node id="26">
+        <label>math/seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="sead_math_numbers_8h"/>
+      </node>
+      <node id="21">
+        <label>math/seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>math/seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>math/seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>math/seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>math/seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>prim/ctr/seadMemUtilCtr.hpp</label>
+        <link refid="sead_mem_util_ctr_8hpp"/>
+      </node>
+      <node id="31">
+        <label>prim/seadBitFlag.h</label>
+        <link refid="sead_bit_flag_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>prim/seadMemUtil.h</label>
+        <link refid="sead_mem_util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>prim/seadNamable.h</label>
+        <link refid="sead_namable_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>prim/seadPtrUtil.h</label>
+        <link refid="sead_ptr_util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>prim/seadRuntimeTypeInfo.h</label>
+        <link refid="sead_runtime_type_info_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>prim/seadSafeString.h</label>
+        <link refid="sead_safe_string_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>prim/seadStorageFor.h</label>
+        <link refid="sead_storage_for_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>random/seadRandom.h</label>
+        <link refid="sead_random_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>thread/seadAtomic.h</label>
+        <link refid="sead_atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>thread/seadCriticalSection.h</label>
+        <link refid="sead_critical_section_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>algorithm</label>
+      </node>
+      <node id="20">
+        <label>math.h</label>
+      </node>
+      <node id="39">
+        <label>new</label>
+      </node>
+      <node id="22">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+      <node id="6">
+        <label>nn/types.h</label>
+      </node>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="40">
+        <label>stddef.h</label>
+      </node>
+      <node id="15">
+        <label>string.h</label>
+      </node>
+      <node id="44">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsead_1_1_controller_mgr" prot="public">sead::ControllerMgr</innerclass>
+    <innerclass refid="classsead_1_1_controller_mgr_1_1_construct_arg" prot="private">sead::ControllerMgr::ConstructArg</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_offset_list_8h" kindref="compound">container/seadOffsetList.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_ptr_array_8h" kindref="compound">container/seadPtrArray.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_controller_8h" kindref="compound">controller/seadController.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_calculate_task_8h" kindref="compound">framework/seadCalculateTask.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_task_mgr_8h" kindref="compound">framework/seadTaskMgr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_task_parameter_8h" kindref="compound">framework/seadTaskParameter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_disposer_8h" kindref="compound">heap/seadDisposer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_runtime_type_info_8h" kindref="compound">prim/seadRuntimeTypeInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ControlDevice;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Controller;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ControllerAddon;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_controller_mgr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_controller_mgr" kindref="compound">ControllerMgr</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_calculate_task" kindref="compound">CalculateTask</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sead_task_mgr_8h_1ae90b6ab8dcaadf86ccefac431db6f524" kindref="member">SEAD_TASK_SINGLETON</ref>(<ref refid="classsead_1_1_controller_mgr" kindref="compound">ControllerMgr</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sead_runtime_type_info_8h_1af63206c0c6ef06a2ea9b46b690feda73" kindref="member">SEAD_RTTI_OVERRIDE</ref>(<ref refid="classsead_1_1_controller_mgr" kindref="compound">ControllerMgr</ref>,<sp/><ref refid="classsead_1_1_calculate_task" kindref="compound">CalculateTask</ref>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_controller_mgr_1_1_construct_arg" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_controller_mgr_1_1_construct_arg" kindref="compound">ConstructArg</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_task_construct_arg" kindref="compound">TaskConstructArg</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classsead_1_1_controller_mgr_1_1_construct_arg_1ab40162f8dfe7403a39e8e5884c891393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_mgr_1_1_construct_arg_1ab40162f8dfe7403a39e8e5884c891393" kindref="member">ConstructArg</ref>()<sp/>:<sp/><ref refid="structsead_1_1_task_construct_arg" kindref="compound">TaskConstructArg</ref>(),<sp/><ref refid="classsead_1_1_controller_mgr_1_1_construct_arg_1a83b587f19cd91c80fc7b2fe07b4610e9" kindref="member">mHeapArray</ref>()<sp/>{<sp/><ref refid="structsead_1_1_task_construct_arg_1abb0f0d3bba470be199814aee2576ea4c" kindref="member">heap_array</ref><sp/>=<sp/>&amp;<ref refid="classsead_1_1_controller_mgr_1_1_construct_arg_1a83b587f19cd91c80fc7b2fe07b4610e9" kindref="member">mHeapArray</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classsead_1_1_controller_mgr_1_1_construct_arg_1a83b587f19cd91c80fc7b2fe07b4610e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_array" kindref="compound">HeapArray</ref><sp/><ref refid="classsead_1_1_controller_mgr_1_1_construct_arg_1a83b587f19cd91c80fc7b2fe07b4610e9" kindref="member">mHeapArray</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="classsead_1_1_controller_mgr_1ae8df17391a70a311b117fd06dd98e1da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_mgr_1ae8df17391a70a311b117fd06dd98e1da" kindref="member">ControllerMgr</ref>();</highlight></codeline>
+<codeline lineno="33" refid="classsead_1_1_controller_mgr_1a47ee2ccced62e5d44ce2652e83d6d819" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1a47ee2ccced62e5d44ce2652e83d6d819" kindref="member">ControllerMgr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_task_construct_arg" kindref="compound">TaskConstructArg</ref>&amp;<sp/>arg);</highlight></codeline>
+<codeline lineno="34" refid="classsead_1_1_controller_mgr_1adb18a5b5d381ed7223b2b4ded5200d27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1adb18a5b5d381ed7223b2b4ded5200d27" kindref="member">~ControllerMgr</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classsead_1_1_controller_mgr_1a472c6c9575a5eff66488c1a692af2fe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1a472c6c9575a5eff66488c1a692af2fe4" kindref="member">prepare</ref>();</highlight></codeline>
+<codeline lineno="37" refid="classsead_1_1_controller_mgr_1abda013d6fb790060299d24780a48a3a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1abda013d6fb790060299d24780a48a3a3" kindref="member">calc</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classsead_1_1_controller_mgr_1aaa0eb4cc144c36fae93d082a723643ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1aaa0eb4cc144c36fae93d082a723643ec" kindref="member">initialize</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>controller_max,<sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>heap);</highlight></codeline>
+<codeline lineno="40" refid="classsead_1_1_controller_mgr_1aa95e08b08aff2f00eaea1bc639d70255" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1aa95e08b08aff2f00eaea1bc639d70255" kindref="member">finalize</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classsead_1_1_controller_mgr_1ae49abb00d7dfa58cbb1f21aad7cddac3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1ae49abb00d7dfa58cbb1f21aad7cddac3" kindref="member">initializeDefault</ref>(<ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>heap);</highlight></codeline>
+<codeline lineno="43" refid="classsead_1_1_controller_mgr_1afaf7a5fc69361dc4a370133e260a032e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1afaf7a5fc69361dc4a370133e260a032e" kindref="member">finalizeDefault</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Add/remove<sp/>devices<sp/>&amp;<sp/>controllers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classsead_1_1_controller_mgr_1ab03d7f6bc9458210640d3315775fdf30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller" kindref="compound">Controller</ref>*<sp/><ref refid="classsead_1_1_controller_mgr_1ab03d7f6bc9458210640d3315775fdf30" kindref="member">getControllerByOrder</ref>(<ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99" kindref="member">ControllerDefine::ControllerId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="classsead_1_1_controller_mgr_1a54773422897e0dfaffa5ed5b5f50b467" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ControlDevice*<sp/><ref refid="classsead_1_1_controller_mgr_1a54773422897e0dfaffa5ed5b5f50b467" kindref="member">getControlDevice</ref>(<ref refid="classsead_1_1_controller_define_1aea67283177158d992bcad7da87e52f3b" kindref="member">ControllerDefine::DeviceId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="classsead_1_1_controller_mgr_1a07d5d4f1531cafe34023cc6a2f8d0d46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ControllerAddon*<sp/><ref refid="classsead_1_1_controller_mgr_1a07d5d4f1531cafe34023cc6a2f8d0d46" kindref="member">getControllerAddon</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>index,<sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4" kindref="member">ControllerDefine::AddonId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="classsead_1_1_controller_mgr_1a13d1db48abfb3161dfe382e40e2ce052" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ControllerAddon*<sp/><ref refid="classsead_1_1_controller_mgr_1a13d1db48abfb3161dfe382e40e2ce052" kindref="member">getControllerAddonByOrder</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>controller_index,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4" kindref="member">ControllerDefine::AddonId</ref><sp/>addon_id,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addon_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="55" refid="classsead_1_1_controller_mgr_1a5e60c05be61d7ee23d039e70a2af2b26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_controller_mgr_1a5e60c05be61d7ee23d039e70a2af2b26" kindref="member">getControllerByOrderAs</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="57" refid="classsead_1_1_controller_mgr_1a62bc1f27ab136ca7926ff5daed3649af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_controller_mgr_1a62bc1f27ab136ca7926ff5daed3649af" kindref="member">getControlDeviceAs</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_controller_mgr_1a1f82016063064ba9c7aeab2d32de23b4" kindref="member">getControllerAddonAs</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classsead_1_1_controller_mgr_1aa4c9e19fe6b8f3632a94483b20bc964f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_controller_mgr_1aa4c9e19fe6b8f3632a94483b20bc964f" kindref="member">findControllerPort</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller" kindref="compound">Controller</ref>*<sp/>controller)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classsead_1_1_controller_mgr_1ae7742ab65d5ab9a3206e9a839904eff2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DelegateThread*<sp/><ref refid="classsead_1_1_controller_mgr_1ae7742ab65d5ab9a3206e9a839904eff2" kindref="member">getFramework</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classsead_1_1_controller_mgr_1ac2183733b737abf601094a023ad9d244" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller" kindref="compound">Controller</ref>*<sp/><ref refid="classsead_1_1_controller_mgr_1ac2183733b737abf601094a023ad9d244" kindref="member">getController</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_controller_mgr_1a08e70a20046ef89a3c54457124ce2d05" kindref="member">mControllers</ref>[port];<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classsead_1_1_controller_mgr_1abb8298d200932687f605938d1446759a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_offset_list" kindref="compound">OffsetList&lt;ControlDevice&gt;</ref><sp/><ref refid="classsead_1_1_controller_mgr_1abb8298d200932687f605938d1446759a" kindref="member">mDevices</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classsead_1_1_controller_mgr_1a08e70a20046ef89a3c54457124ce2d05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_ptr_array" kindref="compound">PtrArray&lt;Controller&gt;</ref><sp/><ref refid="classsead_1_1_controller_mgr_1a08e70a20046ef89a3c54457124ce2d05" kindref="member">mControllers</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="75" refid="classsead_1_1_controller_mgr_1a1f82016063064ba9c7aeab2d32de23b4" refkind="member"><highlight class="normal">T<sp/><ref refid="classsead_1_1_controller_mgr_1a1f82016063064ba9c7aeab2d32de23b4" kindref="member">ControllerMgr::getControllerAddonAs</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>index)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_controller" kindref="compound">Controller</ref>*<sp/>controller<sp/>=<sp/><ref refid="classsead_1_1_controller_mgr_1a08e70a20046ef89a3c54457124ce2d05" kindref="member">mControllers</ref>.at(index);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(controller)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>controller-&gt;<ref refid="classsead_1_1_controller_1ae2177742e5c548bb8b94ece686f0c26b" kindref="member">getAddonAs</ref>&lt;T&gt;();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/controller/seadControllerMgr.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_key_pose_keeper_8h" kind="file" language="C++">
+    <compoundname>alKeyPoseKeeper.h</compoundname>
+    <includes refid="al_placement_info_8h" local="no">Placement/alPlacementInfo.h</includes>
+    <includes local="no">math/seadVector.h</includes>
+    <includedby refid="al_key_pose_keeper_8cpp" local="no">alKeyPoseKeeper.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alKeyPoseKeeper.h</label>
+        <link refid="al_key_pose_keeper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="4">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alKeyPoseKeeper.h</label>
+        <link refid="al_key_pose_keeper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alKeyPoseKeeper.cpp</label>
+        <link refid="al_key_pose_keeper_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_key_pose_keeper" prot="public">al::KeyPoseKeeper</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_placement_info_8h" kindref="compound">Placement/alPlacementInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KeyPose;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ActorInitInfo;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_key_pose_keeper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433d" kindref="member">MoveType</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433daeb00c0589520e58b04314c8bf717fe30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433daeb00c0589520e58b04314c8bf717fe30" kindref="member">MoveType_Loop</ref>,</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433da89e8ab2e8d231a18b7f04ee9a3372d0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433da89e8ab2e8d231a18b7f04ee9a3372d0f" kindref="member">MoveType_Turn</ref>,</highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433dadfec5dbab8ba0811ea9ddd79aa18ac93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433dadfec5dbab8ba0811ea9ddd79aa18ac93" kindref="member">MoveType_Stop</ref>,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433da8e698298ad9d42ea2ba5a39ad000e8d9" kindref="member">MoveType_Restart</ref></highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433da8e698298ad9d42ea2ba5a39ad000e8d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose" kindref="compound">KeyPose</ref>*<sp/><ref refid="classal_1_1_key_pose_keeper_1a280ed89e50086f9a252751a48f784aa1" kindref="member">mKeyPoses</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1a3837f9bdac7be2740b81eea012a85df1" kindref="member">mKeyPoseAmount</ref>;</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_key_pose_keeper_1aa82f7455b94fdb6a4e4d036c1c370936" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1aa82f7455b94fdb6a4e4d036c1c370936" kindref="member">mCurrentKeyPoseIdx</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="classal_1_1_key_pose_keeper_1ae207052573c7f33cbbf3fb5069e60944" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1ae207052573c7f33cbbf3fb5069e60944" kindref="member">mMoveTypeInt</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_key_pose_keeper_1aa0916e01b138683dc68c97cab6a4726f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1afba0b8cf7ce8e5656010f9c247af433d" kindref="member">MoveType</ref><sp/><ref refid="classal_1_1_key_pose_keeper_1aa0916e01b138683dc68c97cab6a4726f" kindref="member">mMoveType</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_key_pose_keeper_1a16d20ed5f4a13516ecc8b1a4b815786a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper_1a16d20ed5f4a13516ecc8b1a4b815786a" kindref="member">_10</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classal_1_1_key_pose_keeper_1aada884183ca47cb27980c3ff9e58181a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper_1aada884183ca47cb27980c3ff9e58181a" kindref="member">_11</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper_1a0bc7df044243d75df66ab1349d82eeb6" kindref="member">init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose" kindref="compound">KeyPose</ref>*<sp/><ref refid="classal_1_1_key_pose_keeper_1a32aed9d07a4fde4ef401515cfe1a0f36" kindref="member">getCurrentKeyPose</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose" kindref="compound">KeyPose</ref>*<sp/><ref refid="classal_1_1_key_pose_keeper_1abcbbedd9d4b43f1848c885fedb69f205" kindref="member">getNextKeyPose</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_key_pose_keeper_1a024a9c01d0d764ec4b4fd9fe900b76d7" kindref="member">KeyPoseKeeper</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1aefefed630f34aa90a6884f9160cc5d1a" kindref="member">getCurrentKeyTrans</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1ac79c5fdde7644bab889cd43f62542449" kindref="member">getNextKeyTrans</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>*<sp/><sp/><ref refid="namespaceal_1a94da8b244b21cdf3074d62fd0a64803d" kindref="member">getNextKeyPlacementInfo</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_key_pose_keeper" kindref="compound">KeyPoseKeeper</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/KeyPose/alKeyPoseKeeper.h"/>
+  </compounddef>
+</doxygen>

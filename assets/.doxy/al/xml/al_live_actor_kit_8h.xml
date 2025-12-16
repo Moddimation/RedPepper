@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_live_actor_kit_8h" kind="file" language="C++">
+    <compoundname>alLiveActorKit.h</compoundname>
+    <includedby refid="al_execute_table_holder_8cpp" local="no">alExecuteTableHolder.cpp</includedby>
+    <includedby refid="al_live_actor_8cpp" local="no">alLiveActor.cpp</includedby>
+    <includedby refid="al_live_actor_function_8cpp" local="no">alLiveActorFunction.cpp</includedby>
+    <includedby refid="al_live_actor_kit_8cpp" local="no">alLiveActorKit.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alLiveActorKit.h</label>
+        <link refid="al_live_actor_kit_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alExecuteTableHolder.cpp</label>
+        <link refid="al_execute_table_holder_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alLiveActor.cpp</label>
+        <link refid="al_live_actor_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="5">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_live_actor_kit" prot="public">al::LiveActorKit</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExecuteDirector;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">EffectSystem;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FogDirector;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ClippingDirector;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CollisionDirector;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HitSensorDirector;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActorGroup;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_live_actor_kit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_live_actor_kit_1a543269742d86312bf3944dd5730ce224" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a543269742d86312bf3944dd5730ce224" kindref="member">mAllActorsBufferSize</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_live_actor_kit_1a74934e155429477da4959d80544e4817" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director" kindref="compound">ExecuteDirector</ref>*<sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a74934e155429477da4959d80544e4817" kindref="member">mExecuteDirector</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_live_actor_kit_1af7d3f9c8d87f52a1942d3bb5ec20e295" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_effect_system" kindref="compound">EffectSystem</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1af7d3f9c8d87f52a1942d3bb5ec20e295" kindref="member">mEffectSystem</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_live_actor_kit_1a549da8dca10bf0eba1d7083b0550b92f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a549da8dca10bf0eba1d7083b0550b92f" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_live_actor_kit_1a7bed2e9d61253fbadb960bd5e2c41813" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a7bed2e9d61253fbadb960bd5e2c41813" kindref="member">_10</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_live_actor_kit_1a65f8cca42cd82e7a02097aa3d8e34b56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_fog_director" kindref="compound">FogDirector</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a65f8cca42cd82e7a02097aa3d8e34b56" kindref="member">mFogDirector</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_live_actor_kit_1a0b869657dce1d3773f440be2d8a8fbbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a0b869657dce1d3773f440be2d8a8fbbb" kindref="member">_18</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_live_actor_kit_1a61589a8f628e6faa250e039eb5053f05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a61589a8f628e6faa250e039eb5053f05" kindref="member">_1C</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classal_1_1_live_actor_kit_1a0ad3325a551d42f2b4c8e2d8504cbd71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a0ad3325a551d42f2b4c8e2d8504cbd71" kindref="member">_20</ref>;</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_live_actor_kit_1a4315c7b4bba2f37a1781284b1a0c3db9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_director" kindref="compound">ClippingDirector</ref>*<sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a4315c7b4bba2f37a1781284b1a0c3db9" kindref="member">mClippingDirector</ref>;</highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_live_actor_kit_1afbcad93383420f14f7b15ecc8d82e9b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_collision_director" kindref="compound">CollisionDirector</ref>*<sp/><ref refid="classal_1_1_live_actor_kit_1afbcad93383420f14f7b15ecc8d82e9b5" kindref="member">mCollisionDirector</ref>;</highlight></codeline>
+<codeline lineno="27" refid="classal_1_1_live_actor_kit_1a758cbfa129d7cbf5c1d2821bd46d1f4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_director" kindref="compound">HitSensorDirector</ref>*<sp/><ref refid="classal_1_1_live_actor_kit_1a758cbfa129d7cbf5c1d2821bd46d1f4c" kindref="member">mHitSensorDirector</ref>;</highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_live_actor_kit_1a6e4e6167a9bbf6f51eb1b1e0326d9103" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a6e4e6167a9bbf6f51eb1b1e0326d9103" kindref="member">_30</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classal_1_1_live_actor_kit_1a85da050e91a88cd649005eff91b9fb82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a85da050e91a88cd649005eff91b9fb82" kindref="member">_34</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_live_actor_kit_1a6a6ef35e1ca8b3b9026e297e60340bed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a6a6ef35e1ca8b3b9026e297e60340bed" kindref="member">_38</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classal_1_1_live_actor_kit_1a4ef9e4fb99a83ca2d6eaa4c11f180161" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_group" kindref="compound">LiveActorGroup</ref>*<sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a4ef9e4fb99a83ca2d6eaa4c11f180161" kindref="member">mAllActors</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classal_1_1_live_actor_kit_1added64b2fe5e1976475a638c2590b24b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1added64b2fe5e1976475a638c2590b24b" kindref="member">_40</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classal_1_1_live_actor_kit_1a38b1c3c603ddc13fd46765fb440859c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_director" kindref="compound">ClippingDirector</ref>*<sp/><ref refid="classal_1_1_live_actor_kit_1a38b1c3c603ddc13fd46765fb440859c1" kindref="member">getClippingDirector</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit_1a4315c7b4bba2f37a1781284b1a0c3db9" kindref="member">mClippingDirector</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classal_1_1_live_actor_kit_1a63c43537d585fe12182691dae6c36f4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director" kindref="compound">ExecuteDirector</ref>*<sp/><ref refid="classal_1_1_live_actor_kit_1a63c43537d585fe12182691dae6c36f4e" kindref="member">getExecuteDirector</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit_1a74934e155429477da4959d80544e4817" kindref="member">mExecuteDirector</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classal_1_1_live_actor_kit_1a1d532e8fc1eb4b8632e02ce8cda34451" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_group" kindref="compound">LiveActorGroup</ref>*<sp/><ref refid="classal_1_1_live_actor_kit_1a1d532e8fc1eb4b8632e02ce8cda34451" kindref="member">getAllActors</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="46"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit_1a4ef9e4fb99a83ca2d6eaa4c11f180161" kindref="member">mAllActors</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classal_1_1_live_actor_kit_1a2fa66637753c292940cf6ba3c09a81f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit_1a2fa66637753c292940cf6ba3c09a81f6" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit_1a9ba2e1999a725f28bd4ed8b4351e8046" kindref="member">endInit</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">groupBufSize</ref><sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ac7135439652f37f8f62629b498e9c892" kindref="member">initLiveActorKit</ref>(<sp/><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kit</ref><sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>*<sp/><ref refid="namespaceal_1a90e3320d3b7aca38201d0227e5842a6d" kindref="member">getLiveActorKit</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespaceal_1a6cf4a36f7839490223dd4466092668c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a6cf4a36f7839490223dd4466092668c4" kindref="member">executeDraw</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kit</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="62" refid="namespaceal_1abee5eb4f2e3d4f8b4756c9b477171d1a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1abee5eb4f2e3d4f8b4756c9b477171d1a" kindref="member">executeDrawList</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kit</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alLiveActorKit.h"/>
+  </compounddef>
+</doxygen>

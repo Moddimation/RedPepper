@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_matrix33_calc_common" kind="class" language="C++" prot="public">
+    <compoundname>sead::Matrix33CalcCommon</compoundname>
+    <includes refid="sead_matrix_calc_common_8h" local="no">seadMatrixCalcCommon.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" prot="public" static="no">
+        <type><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt; T &gt;::Mtx33Base</type>
+        <definition>typedef Policies&lt;T&gt;::Mtx33Base sead::Matrix33CalcCommon&lt; T &gt;::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>sead::Matrix33CalcCommon::Base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="27" column="43" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsead_1_1_matrix33_calc_common_1aaaacd06f6831ca1ac1ab554af2e2b153" prot="public" static="no">
+        <type><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt; T &gt;::Mtx34Base</type>
+        <definition>typedef Policies&lt;T&gt;::Mtx34Base sead::Matrix33CalcCommon&lt; T &gt;::Mtx34</definition>
+        <argsstring></argsstring>
+        <name>Mtx34</name>
+        <qualifiedname>sead::Matrix33CalcCommon::Mtx34</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="29" column="43" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsead_1_1_matrix33_calc_common_1a30f215fbdf089641d758e1447077647e" prot="public" static="no">
+        <type><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt; T &gt;::QuatBase</type>
+        <definition>typedef Policies&lt;T&gt;::QuatBase sead::Matrix33CalcCommon&lt; T &gt;::Quat</definition>
+        <argsstring></argsstring>
+        <name>Quat</name>
+        <qualifiedname>sead::Matrix33CalcCommon::Quat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="31" column="42" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" prot="public" static="no">
+        <type><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt; T &gt;::Vec3Base</type>
+        <definition>typedef Policies&lt;T&gt;::Vec3Base sead::Matrix33CalcCommon&lt; T &gt;::Vec3</definition>
+        <argsstring></argsstring>
+        <name>Vec3</name>
+        <qualifiedname>sead::Matrix33CalcCommon::Vec3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="32" column="42" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1af587e50739f0587d96e9303628dce065" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeIdentity</definition>
+        <argsstring>(Base &amp;o)</argsstring>
+        <name>makeIdentity</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeIdentity</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="35" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="131" bodyend="143"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1a6f8d3b4793330161d0c34a0dd36fc2bd" compoundref="sead_matrix_8hpp" startline="106" endline="108">sead::Matrix33&lt; T &gt;::makeIdentity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a510273ea6bdf78bcb3de55c12517b20a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeZero</definition>
+        <argsstring>(Base &amp;o)</argsstring>
+        <name>makeZero</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeZero</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="36" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="146" bodyend="158"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1a23a2cde4367187b423f6a52c501ddb3c" compoundref="sead_matrix_8hpp" startline="111" endline="113">sead::Matrix33&lt; T &gt;::makeZero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a5953356677586d06c3f08009d8acda79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::copy</definition>
+        <argsstring>(Base &amp;o, const Base &amp;n)</argsstring>
+        <name>copy</name>
+        <qualifiedname>sead::Matrix33CalcCommon::copy</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="38" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="161" bodyend="173"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1ae77515248c89f175d4d2800e5121e624" compoundref="sead_matrix_8hpp" startline="85" endline="87">sead::Matrix33&lt; T &gt;::Matrix33</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_1a654e1e7b82d006cb90ff200fc979c353" compoundref="sead_matrix_8hpp" startline="100" endline="103">sead::Matrix33&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a617e03c959e67636ddbcefd57cae7849" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::copy</definition>
+        <argsstring>(Base &amp;o, const Mtx34 &amp;n)</argsstring>
+        <name>copy</name>
+        <qualifiedname>sead::Matrix33CalcCommon::copy</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aaaacd06f6831ca1ac1ab554af2e2b153" kindref="member">Mtx34</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="39" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="176" bodyend="188"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="structsead_1_1_base_mtx34_1a7c78e2a433712a197c6cf12551eedea6" compoundref="sead_math_base_8h" startline="45">sead::BaseMtx34&lt; T &gt;::m</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a8ed7bd3d8cfa53d8763773adf284a974" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::inverse</definition>
+        <argsstring>(Base &amp;o, const Base &amp;n)</argsstring>
+        <name>inverse</name>
+        <qualifiedname>sead::Matrix33CalcCommon::inverse</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="40" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="191" bodyend="223"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1abd7d56e3ad87b05f1a004910837f23b4" compoundref="sead_matrix_8hpp" startline="116" endline="118">sead::Matrix33&lt; T &gt;::setInverse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1abd9cb16b994ccbfec9fc5a7af49cc32d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::inverseTranspose</definition>
+        <argsstring>(Base &amp;o, const Base &amp;n)</argsstring>
+        <name>inverseTranspose</name>
+        <qualifiedname>sead::Matrix33CalcCommon::inverseTranspose</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="41" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="226" bodyend="258"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1a97c4a00c7a6f2bd539dc17c31cfceb24" compoundref="sead_matrix_8hpp" startline="121" endline="123">sead::Matrix33&lt; T &gt;::setInverseTranspose</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a4710d2e973ff38bee5115a15f04f6b04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::multiply</definition>
+        <argsstring>(Base &amp;o, const Base &amp;a, const Base &amp;b)</argsstring>
+        <name>multiply</name>
+        <qualifiedname>sead::Matrix33CalcCommon::multiply</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="42" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="261" bodyend="297"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1acf1342c98887674c04651d547e29983d" compoundref="sead_matrix_8hpp" startline="131" endline="133">sead::Matrix33&lt; T &gt;::setMul</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_1a9e01c118379716abc0a3562ccdadbd47" compoundref="sead_matrix_8hpp" startline="136" endline="138">sead::Matrix33&lt; T &gt;::setMul</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_1a0b456407be7e1621dc016575dfd9202a" compoundref="sead_matrix_8hpp" startline="126" endline="128">sead::Matrix33&lt; T &gt;::setMul</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a411d69b2b1892698d6dfc555fc421c30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::multiply</definition>
+        <argsstring>(Base &amp;o, const Mtx34 &amp;a, const Base &amp;b)</argsstring>
+        <name>multiply</name>
+        <qualifiedname>sead::Matrix33CalcCommon::multiply</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aaaacd06f6831ca1ac1ab554af2e2b153" kindref="member">Mtx34</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="43" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="300" bodyend="336"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="structsead_1_1_base_mtx34_1a7c78e2a433712a197c6cf12551eedea6" compoundref="sead_math_base_8h" startline="45">sead::BaseMtx34&lt; T &gt;::m</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1aebb0bfec4e007e348694c728037a4ac3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::multiply</definition>
+        <argsstring>(Base &amp;o, const Base &amp;a, const Mtx34 &amp;b)</argsstring>
+        <name>multiply</name>
+        <qualifiedname>sead::Matrix33CalcCommon::multiply</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aaaacd06f6831ca1ac1ab554af2e2b153" kindref="member">Mtx34</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="44" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="339" bodyend="375"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="structsead_1_1_base_mtx34_1a7c78e2a433712a197c6cf12551eedea6" compoundref="sead_math_base_8h" startline="45">sead::BaseMtx34&lt; T &gt;::m</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1aa5b7611fba1a50307154d2590e2facea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::transpose</definition>
+        <argsstring>(Base &amp;o)</argsstring>
+        <name>transpose</name>
+        <qualifiedname>sead::Matrix33CalcCommon::transpose</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="45" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="378" bodyend="396"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1a1f57ca5732730a3a827ead239a5ecce8" compoundref="sead_matrix_8hpp" startline="146" endline="148">sead::Matrix33&lt; T &gt;::transpose</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a63efe4a61666ee947ec6e778c97cf9ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::transposeTo</definition>
+        <argsstring>(Base &amp;o, const Base &amp;n)</argsstring>
+        <name>transposeTo</name>
+        <qualifiedname>sead::Matrix33CalcCommon::transposeTo</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="46" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="399" bodyend="413"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="sead_raw_print_8h_1aa429f09b46fc86bd27fea3e1b4acadf4" compoundref="sead_raw_print_8h" startline="34" endline="38">SEAD_ASSERT</references>
+        <referencedby refid="classsead_1_1_matrix33_1a985007e67602d7ba9ab2e274f24eed12" compoundref="sead_matrix_8hpp" startline="141" endline="143">sead::Matrix33&lt; T &gt;::setTranspose</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a989bacd529a86b40832be5a8209c5462" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeQ</definition>
+        <argsstring>(Base &amp;o, const Quat &amp;q)</argsstring>
+        <name>makeQ</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeQ</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1a30f215fbdf089641d758e1447077647e" kindref="member">Quat</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="48" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="416" bodyend="440"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" compoundref="sead_math_base_8h" startline="30">sead::BaseQuat&lt; T &gt;::w</references>
+        <references refid="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" compoundref="sead_math_base_8h" startline="27">sead::BaseQuat&lt; T &gt;::x</references>
+        <references refid="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" compoundref="sead_math_base_8h" startline="28">sead::BaseQuat&lt; T &gt;::y</references>
+        <references refid="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" compoundref="sead_math_base_8h" startline="29">sead::BaseQuat&lt; T &gt;::z</references>
+        <referencedby refid="classsead_1_1_matrix33_1a7386b74c451135248d6980265205f05e" compoundref="sead_matrix_8hpp" startline="151" endline="153">sead::Matrix33&lt; T &gt;::fromQuat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a169b66ffecd4bf6db046f3ef2aba4649" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeR</definition>
+        <argsstring>(Base &amp;o, const Vec3 &amp;r)</argsstring>
+        <name>makeR</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeR</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" kindref="member">Vec3</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="49" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="443" bodyend="461"/>
+        <references refid="classsead_1_1_math_calc_common_1a3501211febadf471b4eac7b27331c3b5">sead::MathCalcCommon&lt; T &gt;::cos</references>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a21e47aa0537794af9227c4358169d78b">sead::MathCalcCommon&lt; T &gt;::sin</references>
+        <referencedby refid="classsead_1_1_matrix33_1a0a7eed9d3ebef642492e793eac219088" compoundref="sead_matrix_8hpp" startline="156" endline="158">sead::Matrix33&lt; T &gt;::makeR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a7301daf00671b1aa896bef34baf5efdc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeRIdx</definition>
+        <argsstring>(Base &amp;o, u32 xr, u32 yr, u32 zr)</argsstring>
+        <name>makeRIdx</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeRIdx</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>xr</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>yr</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>zr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="50" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="464" bodyend="483"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a75faca754080303849c69e6d7324b41b">sead::MathCalcCommon&lt; T &gt;::sinCosIdx</references>
+        <referencedby refid="classsead_1_1_matrix33_1a44d7da89b57887fd9a5649efc5fe6965" compoundref="sead_matrix_8hpp" startline="161" endline="163">sead::Matrix33&lt; T &gt;::makeRIdx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a2fb55bb3ceacca491fb9e338c8484d8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeRzxyIdx</definition>
+        <argsstring>(Base &amp;o, u32 xr, u32 yr, u32 zr)</argsstring>
+        <name>makeRzxyIdx</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeRzxyIdx</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>xr</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>yr</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>zr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="51" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="486" bodyend="505"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a75faca754080303849c69e6d7324b41b">sead::MathCalcCommon&lt; T &gt;::sinCosIdx</references>
+        <referencedby refid="classsead_1_1_matrix33_1aeeb2de0762b125499bdd2dcff5a297b0" compoundref="sead_matrix_8hpp" startline="166" endline="168">sead::Matrix33&lt; T &gt;::makeRzxyIdx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1aeaeee81eaa6f1931cb9de4c47a4acebc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeS</definition>
+        <argsstring>(Base &amp;o, const Vec3 &amp;s)</argsstring>
+        <name>makeS</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeS</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" kindref="member">Vec3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="52" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="508" bodyend="520"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <referencedby refid="classsead_1_1_matrix33_1a739a68b4ff27b38220274dafe14b5578" compoundref="sead_matrix_8hpp" startline="171" endline="173">sead::Matrix33&lt; T &gt;::makeS</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_1abddf3d64e2c04490d71d0bb621104c43" compoundref="sead_matrix_8hpp" startline="176" endline="179">sead::Matrix33&lt; T &gt;::makeS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a38fb504cf85e0a6e57ca9380c970ffa9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeSR</definition>
+        <argsstring>(Base &amp;o, const Vec3 &amp;s, const Vec3 &amp;r)</argsstring>
+        <name>makeSR</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeSR</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" kindref="member">Vec3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" kindref="member">Vec3</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="53" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="523" bodyend="541"/>
+        <references refid="classsead_1_1_math_calc_common_1a3501211febadf471b4eac7b27331c3b5">sead::MathCalcCommon&lt; T &gt;::cos</references>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a21e47aa0537794af9227c4358169d78b">sead::MathCalcCommon&lt; T &gt;::sin</references>
+        <referencedby refid="classsead_1_1_matrix33_1a6d4441eebd8a95d022ce5449cb5f16b5" compoundref="sead_matrix_8hpp" startline="182" endline="184">sead::Matrix33&lt; T &gt;::makeSR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a3d69be4ff27e6a73855d3d79f8708ebe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeSRIdx</definition>
+        <argsstring>(Base &amp;o, const Vec3 &amp;s, const Vector3&lt; u32 &gt; &amp;r)</argsstring>
+        <name>makeSRIdx</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeSRIdx</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" kindref="member">Vec3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&lt; <ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref> &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="54" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="544" bodyend="563"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a75faca754080303849c69e6d7324b41b">sead::MathCalcCommon&lt; T &gt;::sinCosIdx</references>
+        <referencedby refid="classsead_1_1_matrix33_1af36e92b99d143cca9d7bc5ecfa6a66a9" compoundref="sead_matrix_8hpp" startline="187" endline="189">sead::Matrix33&lt; T &gt;::makeSRIdx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1af6a4b6be8e74bb9a2d0242d8e02867c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::makeSRzxyIdx</definition>
+        <argsstring>(Base &amp;o, const Vec3 &amp;s, const Vector3&lt; u32 &gt; &amp;r)</argsstring>
+        <name>makeSRzxyIdx</name>
+        <qualifiedname>sead::Matrix33CalcCommon::makeSRzxyIdx</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" kindref="member">Vec3</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&lt; <ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref> &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="55" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="566" bodyend="585"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a75faca754080303849c69e6d7324b41b">sead::MathCalcCommon&lt; T &gt;::sinCosIdx</references>
+        <referencedby refid="classsead_1_1_matrix33_1a2fbdb5304775c33f77c09062758d0a45" compoundref="sead_matrix_8hpp" startline="192" endline="194">sead::Matrix33&lt; T &gt;::makeSRzxyIdx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_matrix33_calc_common_1a418ee7b6f22849076c0aaf6b2fea1644" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::Matrix33CalcCommon&lt; T &gt;::toQuat</definition>
+        <argsstring>(Quat &amp;q, const Base &amp;n)</argsstring>
+        <name>toQuat</name>
+        <qualifiedname>sead::Matrix33CalcCommon::toQuat</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_matrix33_calc_common_1a30f215fbdf089641d758e1447077647e" kindref="member">Quat</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" kindref="member">Base</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="56" column="17" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.hpp" bodystart="588" bodyend="654"/>
+        <references refid="structsead_1_1_base_mtx33_1a1f5d24914005638d7a5d810fdaa265a3" compoundref="sead_math_base_8h" startline="40">sead::BaseMtx33&lt; T &gt;::m</references>
+        <references refid="classsead_1_1_math_calc_common_1a15d6a007ea75975af6effcf829c89f35" compoundref="sead_math_calc_common_8hpp" startline="29" endline="31">sead::MathCalcCommon&lt; T &gt;::sqrt</references>
+        <references refid="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" compoundref="sead_math_base_8h" startline="30">sead::BaseQuat&lt; T &gt;::w</references>
+        <references refid="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" compoundref="sead_math_base_8h" startline="27">sead::BaseQuat&lt; T &gt;::x</references>
+        <references refid="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" compoundref="sead_math_base_8h" startline="28">sead::BaseQuat&lt; T &gt;::y</references>
+        <references refid="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" compoundref="sead_math_base_8h" startline="29">sead::BaseQuat&lt; T &gt;::z</references>
+        <referencedby refid="classsead_1_1_matrix33_1a97785f658956c10e9d846d347c6e95c9" compoundref="sead_matrix_8hpp" startline="197" endline="199">sead::Matrix33&lt; T &gt;::toQuat</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sead/include/math/seadMatrixCalcCommon.h" line="25" column="1" bodyfile="lib/sead/include/math/seadMatrixCalcCommon.h" bodystart="25" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_matrix33_calc_common_1ad800bae22a5dd783fabeeeb6153588ff" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>Base</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a5953356677586d06c3f08009d8acda79" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>copy</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a617e03c959e67636ddbcefd57cae7849" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>copy</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a8ed7bd3d8cfa53d8763773adf284a974" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>inverse</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1abd9cb16b994ccbfec9fc5a7af49cc32d" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>inverseTranspose</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1af587e50739f0587d96e9303628dce065" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeIdentity</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a989bacd529a86b40832be5a8209c5462" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeQ</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a169b66ffecd4bf6db046f3ef2aba4649" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeR</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a7301daf00671b1aa896bef34baf5efdc" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeRIdx</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a2fb55bb3ceacca491fb9e338c8484d8e" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeRzxyIdx</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1aeaeee81eaa6f1931cb9de4c47a4acebc" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeS</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a38fb504cf85e0a6e57ca9380c970ffa9" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeSR</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a3d69be4ff27e6a73855d3d79f8708ebe" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeSRIdx</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1af6a4b6be8e74bb9a2d0242d8e02867c8" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeSRzxyIdx</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a510273ea6bdf78bcb3de55c12517b20a" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>makeZero</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1aaaacd06f6831ca1ac1ab554af2e2b153" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>Mtx34</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a4710d2e973ff38bee5115a15f04f6b04" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>multiply</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a411d69b2b1892698d6dfc555fc421c30" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>multiply</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1aebb0bfec4e007e348694c728037a4ac3" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>multiply</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a30f215fbdf089641d758e1447077647e" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>Quat</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a418ee7b6f22849076c0aaf6b2fea1644" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>toQuat</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1aa5b7611fba1a50307154d2590e2facea" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>transpose</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1a63efe4a61666ee947ec6e778c97cf9ac" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>transposeTo</name></member>
+      <member refid="classsead_1_1_matrix33_calc_common_1aab372d88992aabb82e351d8b9fc4abbd" prot="public" virt="non-virtual"><scope>sead::Matrix33CalcCommon</scope><name>Vec3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

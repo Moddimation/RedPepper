@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsead_1_1_atomic" kind="struct" language="C++" prot="public">
+    <compoundname>sead::Atomic</compoundname>
+    <basecompoundref refid="structsead_1_1_atomic_base" prot="public" virt="non-virtual">sead::AtomicBase&lt; T &gt;</basecompoundref>
+    <includes refid="sead_atomic_8h" local="no">seadAtomic.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsead_1_1_atomic_1a494e95f9f2f7800cdf5c1cd02124e05c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::fetchAdd</definition>
+        <argsstring>(T x)</argsstring>
+        <name>fetchAdd</name>
+        <qualifiedname>sead::Atomic::fetchAdd</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="76" column="7"/>
+        <referencedby refid="structsead_1_1_atomic_1a81369b5ee1b6a15c5b9f213cb17871d8" compoundref="sead_atomic_8h" startline="82" endline="82">sead::Atomic&lt; T &gt;::increment</referencedby>
+        <referencedby refid="structsead_1_1_atomic_1af834ac493ed770d19cc96bc38c06c988" compoundref="sead_atomic_8h" startline="102" endline="102">sead::Atomic&lt; T &gt;::operator++</referencedby>
+        <referencedby refid="structsead_1_1_atomic_1aae419f6e1a8d2395fd0c93daefac7b5f" compoundref="sead_atomic_8h" startline="104" endline="104">sead::Atomic&lt; T &gt;::operator++</referencedby>
+        <referencedby refid="structsead_1_1_atomic_1ab23619c66e977155b4759be1f54605d6" compoundref="sead_atomic_8h" startline="92" endline="92">sead::Atomic&lt; T &gt;::operator+=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1ae633bff08058eb50128e97ac14cb3fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::fetchSub</definition>
+        <argsstring>(T x)</argsstring>
+        <name>fetchSub</name>
+        <qualifiedname>sead::Atomic::fetchSub</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="77" column="7"/>
+        <referencedby refid="structsead_1_1_atomic_1ae72acc3f086f3fd6448b9ac727c6bd2a" compoundref="sead_atomic_8h" startline="84" endline="84">sead::Atomic&lt; T &gt;::decrement</referencedby>
+        <referencedby refid="structsead_1_1_atomic_1af5076502a8d97a485928204f128c8fa5" compoundref="sead_atomic_8h" startline="106" endline="106">sead::Atomic&lt; T &gt;::operator--</referencedby>
+        <referencedby refid="structsead_1_1_atomic_1a8dfd3e97f00ea76aa539db0c27651ad6" compoundref="sead_atomic_8h" startline="108" endline="108">sead::Atomic&lt; T &gt;::operator--</referencedby>
+        <referencedby refid="structsead_1_1_atomic_1a398e882bded9c4199d6e7fbed967ff14" compoundref="sead_atomic_8h" startline="94" endline="94">sead::Atomic&lt; T &gt;::operator-=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1add813197499c874af63d2437a38081c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::fetchAnd</definition>
+        <argsstring>(T x)</argsstring>
+        <name>fetchAnd</name>
+        <qualifiedname>sead::Atomic::fetchAnd</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="78" column="7"/>
+        <referencedby refid="structsead_1_1_atomic_1a3e8e51e147a6e3417bf7cb1845e78ce0" compoundref="sead_atomic_8h" startline="96" endline="96">sead::Atomic&lt; T &gt;::operator&amp;=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1ace7deeae8f89c21c8f051d1f5c5a7433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::fetchOr</definition>
+        <argsstring>(T x)</argsstring>
+        <name>fetchOr</name>
+        <qualifiedname>sead::Atomic::fetchOr</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="79" column="7"/>
+        <referencedby refid="structsead_1_1_atomic_1acdf1018b90120e642c5fad258ce21f86" compoundref="sead_atomic_8h" startline="98" endline="98">sead::Atomic&lt; T &gt;::operator|=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a466f8e7085491011c68e720304c074ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::fetchXor</definition>
+        <argsstring>(T x)</argsstring>
+        <name>fetchXor</name>
+        <qualifiedname>sead::Atomic::fetchXor</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="80" column="7"/>
+        <referencedby refid="structsead_1_1_atomic_1a447db0430f98bf827c2108ca33cf51a6" compoundref="sead_atomic_8h" startline="100" endline="100">sead::Atomic&lt; T &gt;::operator^=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a81369b5ee1b6a15c5b9f213cb17871d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::increment</definition>
+        <argsstring>()</argsstring>
+        <name>increment</name>
+        <qualifiedname>sead::Atomic::increment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="82" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="82" bodyend="82"/>
+        <references refid="structsead_1_1_atomic_1a494e95f9f2f7800cdf5c1cd02124e05c">sead::Atomic&lt; T &gt;::fetchAdd</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1ae72acc3f086f3fd6448b9ac727c6bd2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::decrement</definition>
+        <argsstring>()</argsstring>
+        <name>decrement</name>
+        <qualifiedname>sead::Atomic::decrement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="84" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="84" bodyend="84"/>
+        <references refid="structsead_1_1_atomic_1ae633bff08058eb50128e97ac14cb3fc1">sead::Atomic&lt; T &gt;::fetchSub</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a169d3d83db609bfde5c107aeb032b955" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::Atomic&lt; T &gt;::isBitOn</definition>
+        <argsstring>(unsigned int bit) const</argsstring>
+        <name>isBitOn</name>
+        <qualifiedname>sead::Atomic::isBitOn</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a540036e3c8e3bd3fa716598c2696c92e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::Atomic&lt; T &gt;::setBitOn</definition>
+        <argsstring>(unsigned int bit)</argsstring>
+        <name>setBitOn</name>
+        <qualifiedname>sead::Atomic::setBitOn</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether the bit was cleared and is now set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a0a8c06b3dceae38ad86ce63a8b318d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::Atomic&lt; T &gt;::setBitOff</definition>
+        <argsstring>(unsigned int bit)</argsstring>
+        <name>setBitOff</name>
+        <qualifiedname>sead::Atomic::setBitOff</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether the bit was set and is now cleared. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1ab23619c66e977155b4759be1f54605d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator+=</definition>
+        <argsstring>(T x)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>sead::Atomic::operator+=</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="92" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="92" bodyend="92"/>
+        <references refid="structsead_1_1_atomic_1a494e95f9f2f7800cdf5c1cd02124e05c">sead::Atomic&lt; T &gt;::fetchAdd</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a398e882bded9c4199d6e7fbed967ff14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator-=</definition>
+        <argsstring>(T x)</argsstring>
+        <name>operator-=</name>
+        <qualifiedname>sead::Atomic::operator-=</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="94" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="94" bodyend="94"/>
+        <references refid="structsead_1_1_atomic_1ae633bff08058eb50128e97ac14cb3fc1">sead::Atomic&lt; T &gt;::fetchSub</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a3e8e51e147a6e3417bf7cb1845e78ce0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator&amp;=</definition>
+        <argsstring>(T x)</argsstring>
+        <name>operator&amp;=</name>
+        <qualifiedname>sead::Atomic::operator&amp;=</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="96" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="96" bodyend="96"/>
+        <references refid="structsead_1_1_atomic_1add813197499c874af63d2437a38081c2">sead::Atomic&lt; T &gt;::fetchAnd</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1acdf1018b90120e642c5fad258ce21f86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator|=</definition>
+        <argsstring>(T x)</argsstring>
+        <name>operator|=</name>
+        <qualifiedname>sead::Atomic::operator|=</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="98" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="98" bodyend="98"/>
+        <references refid="structsead_1_1_atomic_1ace7deeae8f89c21c8f051d1f5c5a7433">sead::Atomic&lt; T &gt;::fetchOr</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a447db0430f98bf827c2108ca33cf51a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator^=</definition>
+        <argsstring>(T x)</argsstring>
+        <name>operator^=</name>
+        <qualifiedname>sead::Atomic::operator^=</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="100" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="100" bodyend="100"/>
+        <references refid="structsead_1_1_atomic_1a466f8e7085491011c68e720304c074ea">sead::Atomic&lt; T &gt;::fetchXor</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1af834ac493ed770d19cc96bc38c06c988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>sead::Atomic::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="102" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="102" bodyend="102"/>
+        <references refid="structsead_1_1_atomic_1a494e95f9f2f7800cdf5c1cd02124e05c">sead::Atomic&lt; T &gt;::fetchAdd</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1aae419f6e1a8d2395fd0c93daefac7b5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>sead::Atomic::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="104" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="104" bodyend="104"/>
+        <references refid="structsead_1_1_atomic_1a494e95f9f2f7800cdf5c1cd02124e05c">sead::Atomic&lt; T &gt;::fetchAdd</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1af5076502a8d97a485928204f128c8fa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>sead::Atomic::operator--</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="106" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="106" bodyend="106"/>
+        <references refid="structsead_1_1_atomic_1ae633bff08058eb50128e97ac14cb3fc1">sead::Atomic&lt; T &gt;::fetchSub</references>
+      </memberdef>
+      <memberdef kind="function" id="structsead_1_1_atomic_1a8dfd3e97f00ea76aa539db0c27651ad6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::Atomic&lt; T &gt;::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <qualifiedname>sead::Atomic::operator--</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/thread/seadAtomic.h" line="108" column="7" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="108" bodyend="108"/>
+        <references refid="structsead_1_1_atomic_1ae633bff08058eb50128e97ac14cb3fc1">sead::Atomic&lt; T &gt;::fetchSub</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sead::Atomic&lt; uintptr_t &gt;</label>
+        <link refid="structsead_1_1_atomic"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; uintptr_t &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::Atomic&lt; T &gt;</label>
+        <link refid="structsead_1_1_atomic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::AtomicBase&lt; T &gt;</label>
+        <link refid="structsead_1_1_atomic_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sead::Atomic&lt; T &gt;</label>
+        <link refid="structsead_1_1_atomic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::AtomicBase&lt; T &gt;</label>
+        <link refid="structsead_1_1_atomic_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/thread/seadAtomic.h" line="75" column="1" bodyfile="lib/sead/include/thread/seadAtomic.h" bodystart="75" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structsead_1_1_atomic_base_1af8ce605a69715810b7efe79fa84a128e" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>AtomicBase</name></member>
+      <member refid="structsead_1_1_atomic_base_1a47eb8f23dffc3f0d8221c848de61991f" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>AtomicBase</name></member>
+      <member refid="structsead_1_1_atomic_base_1a9040aca0119edd90980480e1e243cafd" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>AtomicBase</name></member>
+      <member refid="structsead_1_1_atomic_base_1aea9a9ee05e7f59d6f0556e0074a5f670" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>compareExchange</name></member>
+      <member refid="structsead_1_1_atomic_1ae72acc3f086f3fd6448b9ac727c6bd2a" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>decrement</name></member>
+      <member refid="structsead_1_1_atomic_base_1aee5de68843ff1a93812f13589a08701f" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>exchange</name></member>
+      <member refid="structsead_1_1_atomic_1a494e95f9f2f7800cdf5c1cd02124e05c" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>fetchAdd</name></member>
+      <member refid="structsead_1_1_atomic_1add813197499c874af63d2437a38081c2" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>fetchAnd</name></member>
+      <member refid="structsead_1_1_atomic_1ace7deeae8f89c21c8f051d1f5c5a7433" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>fetchOr</name></member>
+      <member refid="structsead_1_1_atomic_1ae633bff08058eb50128e97ac14cb3fc1" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>fetchSub</name></member>
+      <member refid="structsead_1_1_atomic_1a466f8e7085491011c68e720304c074ea" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>fetchXor</name></member>
+      <member refid="structsead_1_1_atomic_1a81369b5ee1b6a15c5b9f213cb17871d8" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>increment</name></member>
+      <member refid="structsead_1_1_atomic_1a169d3d83db609bfde5c107aeb032b955" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>isBitOn</name></member>
+      <member refid="structsead_1_1_atomic_base_1ae13ceb880bffe98ef4c08401ccec7887" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>load</name></member>
+      <member refid="structsead_1_1_atomic_base_1aede717933abf6f380763c4f33e32cdf6" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator T</name></member>
+      <member refid="structsead_1_1_atomic_1a3e8e51e147a6e3417bf7cb1845e78ce0" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator&amp;=</name></member>
+      <member refid="structsead_1_1_atomic_1af834ac493ed770d19cc96bc38c06c988" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator++</name></member>
+      <member refid="structsead_1_1_atomic_1aae419f6e1a8d2395fd0c93daefac7b5f" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator++</name></member>
+      <member refid="structsead_1_1_atomic_1ab23619c66e977155b4759be1f54605d6" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator+=</name></member>
+      <member refid="structsead_1_1_atomic_1af5076502a8d97a485928204f128c8fa5" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator--</name></member>
+      <member refid="structsead_1_1_atomic_1a8dfd3e97f00ea76aa539db0c27651ad6" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator--</name></member>
+      <member refid="structsead_1_1_atomic_1a398e882bded9c4199d6e7fbed967ff14" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator-=</name></member>
+      <member refid="structsead_1_1_atomic_base_1a72f63a752d6b9e46287c573545742a4c" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator=</name></member>
+      <member refid="structsead_1_1_atomic_base_1a5d0bb140fbb42cc7580e4bc377ee1660" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator=</name></member>
+      <member refid="structsead_1_1_atomic_1a447db0430f98bf827c2108ca33cf51a6" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator^=</name></member>
+      <member refid="structsead_1_1_atomic_1acdf1018b90120e642c5fad258ce21f86" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>operator|=</name></member>
+      <member refid="structsead_1_1_atomic_1a0a8c06b3dceae38ad86ce63a8b318d3d" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>setBitOff</name></member>
+      <member refid="structsead_1_1_atomic_1a540036e3c8e3bd3fa716598c2696c92e" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>setBitOn</name></member>
+      <member refid="structsead_1_1_atomic_base_1a88869d55fde9648720a22fafeb075d2d" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>store</name></member>
+      <member refid="structsead_1_1_atomic_base_1ad4879f32dcce50ab24c459c5384b0c38" prot="public" virt="non-virtual"><scope>sead::Atomic</scope><name>storeNonAtomic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_hit_sensor" kind="class" language="C++" prot="public">
+    <compoundname>al::HitSensor</compoundname>
+    <includes refid="al_hit_sensor_8h" local="no">alHitSensor.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classal_1_1_hit_sensor_1a3292b55ba0d5de844644506a69f57075" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">class</ref></type>
+        <definition>friend class HitSensorKeeper</definition>
+        <argsstring></argsstring>
+        <name>HitSensorKeeper</name>
+        <qualifiedname>al::HitSensor::HitSensorKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor_keeper" kindref="compound">HitSensorKeeper</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="15" column="22" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1af4976d33add85b98598b91e2ad195d38" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+        <definition>const char* al::HitSensor::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>al::HitSensor::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="18" column="25" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1af69b6ef21094b36d1ba1573edf1ffbcb" compoundref="al_hit_sensor_8h" startline="36" endline="39">getName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1af9088316f338febfdc5975d4b33f5aa4" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359" kindref="member">SensorType</ref></type>
+        <definition>SensorType al::HitSensor::mSensorType</definition>
+        <argsstring></argsstring>
+        <name>mSensorType</name>
+        <qualifiedname>al::HitSensor::mSensorType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="19" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1a1d245e1bd602b69f7e66308310123772" compoundref="al_hit_sensor_8h" startline="46" endline="49">getType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a433f5295cf888f11d0019ac675fdf81c" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref></type>
+        <definition>u32 al::HitSensor::_8</definition>
+        <argsstring></argsstring>
+        <name>_8</name>
+        <qualifiedname>al::HitSensor::_8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="20" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a2d559187fa1dcb827524c05627d0b882" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref></type>
+        <definition>u32 al::HitSensor::_C</definition>
+        <argsstring></argsstring>
+        <name>_C</name>
+        <qualifiedname>al::HitSensor::_C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="21" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1ac738bc36b93413bf13bf35430eaa1e9d" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">float</ref></type>
+        <definition>float al::HitSensor::_10</definition>
+        <argsstring></argsstring>
+        <name>_10</name>
+        <qualifiedname>al::HitSensor::_10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="22" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1ad37a91c923b78ef0ec1f507c887305fa" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">float</ref></type>
+        <definition>float al::HitSensor::mSensorRadius</definition>
+        <argsstring></argsstring>
+        <name>mSensorRadius</name>
+        <qualifiedname>al::HitSensor::mSensorRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="23" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1acc87f3ccd09851276d3079c2a1ba7112" compoundref="al_hit_sensor_8h" startline="51" endline="54">getRadius</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u16</ref></type>
+        <definition>u16 al::HitSensor::mMaxSensorCount</definition>
+        <argsstring></argsstring>
+        <name>mMaxSensorCount</name>
+        <qualifiedname>al::HitSensor::mMaxSensorCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="24" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" compoundref="al_hit_sensor_8cpp" startline="18" endline="27">invalidate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" compoundref="al_hit_sensor_8cpp" startline="39" endline="47">invalidateBySystem</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" compoundref="al_hit_sensor_8cpp" startline="7" endline="16">validate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" compoundref="al_hit_sensor_8cpp" startline="29" endline="37">validateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u16</ref></type>
+        <definition>u16 al::HitSensor::mSensorCount</definition>
+        <argsstring></argsstring>
+        <name>mSensorCount</name>
+        <qualifiedname>al::HitSensor::mSensorCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="25" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" compoundref="al_hit_sensor_8cpp" startline="18" endline="27">invalidate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" compoundref="al_hit_sensor_8cpp" startline="39" endline="47">invalidateBySystem</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" compoundref="al_hit_sensor_8cpp" startline="7" endline="16">validate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" compoundref="al_hit_sensor_8cpp" startline="29" endline="37">validateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a9e8ed023282f0610949d081cce8ce0ad" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> **</type>
+        <definition>HitSensor** al::HitSensor::mSensors</definition>
+        <argsstring></argsstring>
+        <name>mSensors</name>
+        <qualifiedname>al::HitSensor::mSensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="26" column="24" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref> *</type>
+        <definition>SensorHitGroup* al::HitSensor::mSensorHitGroup</definition>
+        <argsstring></argsstring>
+        <name>mSensorHitGroup</name>
+        <qualifiedname>al::HitSensor::mSensorHitGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="27" column="25" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" compoundref="al_hit_sensor_8cpp" startline="18" endline="27">invalidate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" compoundref="al_hit_sensor_8cpp" startline="39" endline="47">invalidateBySystem</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" compoundref="al_hit_sensor_8cpp" startline="7" endline="16">validate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" compoundref="al_hit_sensor_8cpp" startline="29" endline="37">validateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::HitSensor::mIsValidBySystem</definition>
+        <argsstring></argsstring>
+        <name>mIsValidBySystem</name>
+        <qualifiedname>al::HitSensor::mIsValidBySystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="28" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" compoundref="al_hit_sensor_8cpp" startline="18" endline="27">invalidate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" compoundref="al_hit_sensor_8cpp" startline="39" endline="47">invalidateBySystem</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" compoundref="al_hit_sensor_8cpp" startline="7" endline="16">validate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" compoundref="al_hit_sensor_8cpp" startline="29" endline="37">validateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::HitSensor::mIsValid</definition>
+        <argsstring></argsstring>
+        <name>mIsValid</name>
+        <qualifiedname>al::HitSensor::mIsValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="29" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" compoundref="al_hit_sensor_8cpp" startline="18" endline="27">invalidate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" compoundref="al_hit_sensor_8cpp" startline="39" endline="47">invalidateBySystem</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" compoundref="al_hit_sensor_8cpp" startline="7" endline="16">validate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" compoundref="al_hit_sensor_8cpp" startline="29" endline="37">validateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a466c402a236227ed64cdd02c0e226f92" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref> *</type>
+        <definition>LiveActor* al::HitSensor::mHostActor</definition>
+        <argsstring></argsstring>
+        <name>mHostActor</name>
+        <qualifiedname>al::HitSensor::mHostActor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="30" column="25" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classal_1_1_hit_sensor_1ae2e9059d8aee55d423cc900e8468cca8" compoundref="al_hit_sensor_8h" startline="41" endline="44">getHost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1a56c51ba9b62fa68e24527bd5003195a5" prot="private" static="no" mutable="no">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f* al::HitSensor::mFollowPos</definition>
+        <argsstring></argsstring>
+        <name>mFollowPos</name>
+        <qualifiedname>al::HitSensor::mFollowPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="31" column="25" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1ab55278291848f4caa769736ac748efb5" prot="private" static="no" mutable="no">
+        <type>sead::Matrix34f *</type>
+        <definition>sead::Matrix34f* al::HitSensor::mFollowMtx</definition>
+        <argsstring></argsstring>
+        <name>mFollowMtx</name>
+        <qualifiedname>al::HitSensor::mFollowMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="32" column="25" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_hit_sensor_1aa483c24a1c1e8e0df8b15a6ae370fd3f" prot="private" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::HitSensor::_34</definition>
+        <argsstring></argsstring>
+        <name>_34</name>
+        <qualifiedname>al::HitSensor::_34</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="33" column="26" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1af69b6ef21094b36d1ba1573edf1ffbcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+        <definition>const char * al::HitSensor::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>al::HitSensor::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="36" column="20" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="36" bodyend="39"/>
+        <references refid="classal_1_1_hit_sensor_1af4976d33add85b98598b91e2ad195d38" compoundref="al_hit_sensor_8h" startline="18">mName</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1ae2e9059d8aee55d423cc900e8468cca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref> *</type>
+        <definition>LiveActor * al::HitSensor::getHost</definition>
+        <argsstring>()</argsstring>
+        <name>getHost</name>
+        <qualifiedname>al::HitSensor::getHost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="41" column="19" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="41" bodyend="44"/>
+        <references refid="classal_1_1_hit_sensor_1a466c402a236227ed64cdd02c0e226f92" compoundref="al_hit_sensor_8h" startline="30">mHostActor</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1a1d245e1bd602b69f7e66308310123772" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref></type>
+        <definition>u32 al::HitSensor::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <qualifiedname>al::HitSensor::getType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="46" column="13" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="46" bodyend="49"/>
+        <references refid="classal_1_1_hit_sensor_1af9088316f338febfdc5975d4b33f5aa4" compoundref="al_hit_sensor_8h" startline="19">mSensorType</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1acc87f3ccd09851276d3079c2a1ba7112" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">float</ref></type>
+        <definition>float al::HitSensor::getRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getRadius</name>
+        <qualifiedname>al::HitSensor::getRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="51" column="15" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="51" bodyend="54"/>
+        <references refid="classal_1_1_hit_sensor_1ad37a91c923b78ef0ec1f507c887305fa" compoundref="al_hit_sensor_8h" startline="23">mSensorRadius</references>
+        <referencedby refid="namespaceal_1ac6ff1aa3b5d0aa487e5e4dfafe091b42" compoundref="al_live_actor_function_8cpp" startline="156" endline="159">al::getSensorRadius</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::HitSensor::validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <qualifiedname>al::HitSensor::validate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="56" column="14" bodyfile="lib/al/src/HitSensor/alHitSensor.cpp" bodystart="7" bodyend="16"/>
+        <references refid="classal_1_1_sensor_hit_group_1a28fd223b7160d94249cb20ec380e8ed8" compoundref="al_sensor_hit_group_8cpp" startline="6" endline="9">al::SensorHitGroup::add</references>
+        <references refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" compoundref="al_hit_sensor_8h" startline="29">mIsValid</references>
+        <references refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" compoundref="al_hit_sensor_8h" startline="28">mIsValidBySystem</references>
+        <references refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" compoundref="al_hit_sensor_8h" startline="24">mMaxSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" compoundref="al_hit_sensor_8h" startline="25">mSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" compoundref="al_hit_sensor_8h" startline="27">mSensorHitGroup</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::HitSensor::invalidate</definition>
+        <argsstring>()</argsstring>
+        <name>invalidate</name>
+        <qualifiedname>al::HitSensor::invalidate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="57" column="14" bodyfile="lib/al/src/HitSensor/alHitSensor.cpp" bodystart="18" bodyend="27"/>
+        <references refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" compoundref="al_hit_sensor_8h" startline="29">mIsValid</references>
+        <references refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" compoundref="al_hit_sensor_8h" startline="28">mIsValidBySystem</references>
+        <references refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" compoundref="al_hit_sensor_8h" startline="24">mMaxSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" compoundref="al_hit_sensor_8h" startline="25">mSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" compoundref="al_hit_sensor_8h" startline="27">mSensorHitGroup</references>
+        <references refid="classal_1_1_sensor_hit_group_1a61d1f45e572d8fde8469cbfb31d7ab93">al::SensorHitGroup::remove</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::HitSensor::validateBySystem</definition>
+        <argsstring>()</argsstring>
+        <name>validateBySystem</name>
+        <qualifiedname>al::HitSensor::validateBySystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="58" column="14" bodyfile="lib/al/src/HitSensor/alHitSensor.cpp" bodystart="29" bodyend="37"/>
+        <references refid="classal_1_1_sensor_hit_group_1a28fd223b7160d94249cb20ec380e8ed8" compoundref="al_sensor_hit_group_8cpp" startline="6" endline="9">al::SensorHitGroup::add</references>
+        <references refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" compoundref="al_hit_sensor_8h" startline="29">mIsValid</references>
+        <references refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" compoundref="al_hit_sensor_8h" startline="28">mIsValidBySystem</references>
+        <references refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" compoundref="al_hit_sensor_8h" startline="24">mMaxSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" compoundref="al_hit_sensor_8h" startline="25">mSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" compoundref="al_hit_sensor_8h" startline="27">mSensorHitGroup</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::HitSensor::invalidateBySystem</definition>
+        <argsstring>()</argsstring>
+        <name>invalidateBySystem</name>
+        <qualifiedname>al::HitSensor::invalidateBySystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="59" column="14" bodyfile="lib/al/src/HitSensor/alHitSensor.cpp" bodystart="39" bodyend="47"/>
+        <references refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" compoundref="al_hit_sensor_8h" startline="29">mIsValid</references>
+        <references refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" compoundref="al_hit_sensor_8h" startline="28">mIsValidBySystem</references>
+        <references refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" compoundref="al_hit_sensor_8h" startline="24">mMaxSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" compoundref="al_hit_sensor_8h" startline="25">mSensorCount</references>
+        <references refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" compoundref="al_hit_sensor_8h" startline="27">mSensorHitGroup</references>
+        <references refid="classal_1_1_sensor_hit_group_1a61d1f45e572d8fde8469cbfb31d7ab93">al::SensorHitGroup::remove</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_hit_sensor_1ab64eb75fc020938a040a3575c297efa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::HitSensor::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>al::HitSensor::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alHitSensor.h" line="60" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="18">
+        <label>JMapData</label>
+        <link refid="struct_j_map_data"/>
+      </node>
+      <node id="17">
+        <label>JMapInfo</label>
+        <link refid="class_j_map_info"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>al::ActionAnimCtrl</label>
+        <link refid="classal_1_1_action_anim_ctrl"/>
+      </node>
+      <node id="11">
+        <label>al::ActorActionKeeper</label>
+        <link refid="classal_1_1_actor_action_keeper"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mActionAnimCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::ActorExecuteInfo</label>
+        <link refid="classal_1_1_actor_execute_info"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mRequestKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::ActorPoseKeeperBase</label>
+        <link refid="classal_1_1_actor_pose_keeper_base"/>
+      </node>
+      <node id="23">
+        <label>al::AnimInfoTable</label>
+        <link refid="classal_1_1_anim_info_table"/>
+      </node>
+      <node id="22">
+        <label>al::AnimPlayerSimple</label>
+        <link refid="classal_1_1_anim_player_simple"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mAnimInfoTable</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>al::AnimPlayerSkl</label>
+        <link refid="classal_1_1_anim_player_skl"/>
+      </node>
+      <node id="34">
+        <label>al::AudioKeeper</label>
+        <link refid="classal_1_1_audio_keeper"/>
+      </node>
+      <node id="13">
+        <label>al::Collider</label>
+        <link refid="classal_1_1_collider"/>
+      </node>
+      <node id="14">
+        <label>al::CollisionParts</label>
+        <link refid="classal_1_1_collision_parts"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_8</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mCollisionServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>al::EffectKeeper</label>
+        <link refid="classal_1_1_effect_keeper"/>
+      </node>
+      <node id="10">
+        <label>al::ExecuteRequestKeeper</label>
+        <link refid="classal_1_1_execute_request_keeper"/>
+      </node>
+      <node id="1">
+        <label>al::HitSensor</label>
+        <link refid="classal_1_1_hit_sensor"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mSensors</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mSensorHitGroup</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mHostActor</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>al::HitSensorKeeper</label>
+        <link refid="classal_1_1_hit_sensor_keeper"/>
+      </node>
+      <node id="6">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1_i_use_audio_keeper"/>
+      </node>
+      <node id="5">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1_i_use_effect_keeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="7">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1_i_use_stage_switch"/>
+      </node>
+      <node id="16">
+        <label>al::KCollisionHeader</label>
+        <link refid="structal_1_1_k_collision_header"/>
+      </node>
+      <node id="15">
+        <label>al::KCollisionServer</label>
+        <link refid="classal_1_1_k_collision_server"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mAttributeInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1_live_actor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mActorPoseKeeper</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mActorExecuteInfo</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mActorActionKeeper</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mCollider</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mCollisionParts</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mModelKeeper</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mHitSensorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mEffectKeeper</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>mAudioKeeper</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mStageSwitchKeeper</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>mRailKeeper</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>mShadowKeeper</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>mSubActorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>mLiveActorFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>al::LiveActorFlag</label>
+        <link refid="structal_1_1_live_actor_flag"/>
+      </node>
+      <node id="19">
+        <label>al::ModelKeeper</label>
+        <link refid="classal_1_1_model_keeper"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="31">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>al::NerveActionCtrl</label>
+        <link refid="classal_1_1_nerve_action_ctrl"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mNerveActions</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1_nerve_keeper"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mEndNerve</edgelabel>
+          <edgelabel>mNerve</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mStateCtrl</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mActionCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>al::NerveStateCtrl</label>
+        <link refid="classal_1_1_nerve_state_ctrl"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mCurrentState</edgelabel>
+          <edgelabel>mStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>al::NerveStateCtrl::State</label>
+        <link refid="structal_1_1_nerve_state_ctrl_1_1_state"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>al::Rail</label>
+        <link refid="classal_1_1_rail"/>
+      </node>
+      <node id="37">
+        <label>al::RailKeeper</label>
+        <link refid="classal_1_1_rail_keeper"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>mRailRider</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>al::RailRider</label>
+        <link refid="classal_1_1_rail_rider"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::SensorHitGroup</label>
+        <link refid="classal_1_1_sensor_hit_group"/>
+      </node>
+      <node id="40">
+        <label>al::ShadowKeeper</label>
+        <link refid="classal_1_1_shadow_keeper"/>
+      </node>
+      <node id="36">
+        <label>al::StageSwitchAccesser</label>
+        <link refid="classal_1_1_stage_switch_accesser"/>
+      </node>
+      <node id="35">
+        <label>al::StageSwitchKeeper</label>
+        <link refid="classal_1_1_stage_switch_keeper"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>mSwitches</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>al::SubActorKeeper</label>
+        <link refid="classal_1_1_sub_actor_keeper"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>alModelCtr</label>
+        <link refid="classal_model_ctr"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mSklAnimPlayer</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mMclAnimPlayer</edgelabel>
+          <edgelabel>mMtpAnimPlayer</edgelabel>
+          <edgelabel>mMtsAnimPlayer</edgelabel>
+          <edgelabel>mVisAnimPlayer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/HitSensor/alHitSensor.h" line="13" column="1" bodyfile="lib/al/include/HitSensor/alHitSensor.h" bodystart="14" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classal_1_1_hit_sensor_1ac738bc36b93413bf13bf35430eaa1e9d" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>_10</name></member>
+      <member refid="classal_1_1_hit_sensor_1aa483c24a1c1e8e0df8b15a6ae370fd3f" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>_34</name></member>
+      <member refid="classal_1_1_hit_sensor_1a433f5295cf888f11d0019ac675fdf81c" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>_8</name></member>
+      <member refid="classal_1_1_hit_sensor_1a2d559187fa1dcb827524c05627d0b882" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>_C</name></member>
+      <member refid="classal_1_1_hit_sensor_1ae2e9059d8aee55d423cc900e8468cca8" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>getHost</name></member>
+      <member refid="classal_1_1_hit_sensor_1af69b6ef21094b36d1ba1573edf1ffbcb" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>getName</name></member>
+      <member refid="classal_1_1_hit_sensor_1acc87f3ccd09851276d3079c2a1ba7112" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>getRadius</name></member>
+      <member refid="classal_1_1_hit_sensor_1a1d245e1bd602b69f7e66308310123772" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>getType</name></member>
+      <member refid="classal_1_1_hit_sensor_1a3292b55ba0d5de844644506a69f57075" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>HitSensorKeeper</name></member>
+      <member refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>invalidate</name></member>
+      <member refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>invalidateBySystem</name></member>
+      <member refid="classal_1_1_hit_sensor_1ab55278291848f4caa769736ac748efb5" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mFollowMtx</name></member>
+      <member refid="classal_1_1_hit_sensor_1a56c51ba9b62fa68e24527bd5003195a5" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mFollowPos</name></member>
+      <member refid="classal_1_1_hit_sensor_1a466c402a236227ed64cdd02c0e226f92" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mHostActor</name></member>
+      <member refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mIsValid</name></member>
+      <member refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mIsValidBySystem</name></member>
+      <member refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mMaxSensorCount</name></member>
+      <member refid="classal_1_1_hit_sensor_1af4976d33add85b98598b91e2ad195d38" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mName</name></member>
+      <member refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mSensorCount</name></member>
+      <member refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mSensorHitGroup</name></member>
+      <member refid="classal_1_1_hit_sensor_1ad37a91c923b78ef0ec1f507c887305fa" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mSensorRadius</name></member>
+      <member refid="classal_1_1_hit_sensor_1a9e8ed023282f0610949d081cce8ce0ad" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mSensors</name></member>
+      <member refid="classal_1_1_hit_sensor_1af9088316f338febfdc5975d4b33f5aa4" prot="private" virt="non-virtual"><scope>al::HitSensor</scope><name>mSensorType</name></member>
+      <member refid="classal_1_1_hit_sensor_1ab64eb75fc020938a040a3575c297efa3" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>update</name></member>
+      <member refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>validate</name></member>
+      <member refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" prot="public" virt="non-virtual"><scope>al::HitSensor</scope><name>validateBySystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

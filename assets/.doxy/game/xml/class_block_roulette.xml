@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_block_roulette" kind="class" language="C++" prot="public">
+    <compoundname>BlockRoulette</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">al::MapObjActor</basecompoundref>
+    <includes refid="_block_roulette_8h" local="no">BlockRoulette.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_block_roulette_1ad9fa0708c5db9f0f860c7d7fc5ca177a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BlockRoulette::_60</definition>
+        <argsstring></argsstring>
+        <name>_60</name>
+        <qualifiedname>BlockRoulette::_60</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/BlockRoulette.h" line="8" column="13" bodyfile="Game/include/MapObj/BlockRoulette.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_block_roulette_1a7fd8c03e92cf942b5d7c84990ad2d31e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BlockRoulette::_64</definition>
+        <argsstring></argsstring>
+        <name>_64</name>
+        <qualifiedname>BlockRoulette::_64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/BlockRoulette.h" line="9" column="13" bodyfile="Game/include/MapObj/BlockRoulette.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_block_roulette_1afbfd2cd92e0a50ffca567d461d516d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void BlockRoulette::init</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info)</argsstring>
+        <name>init</name>
+        <qualifiedname>BlockRoulette::init</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/BlockRoulette.h" line="12" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_block_roulette_1a20c8092246e9fd8273b2c723ca6f145d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool BlockRoulette::receiveMsg</definition>
+        <argsstring>(u32 msg, al::HitSensor *other, al::HitSensor *me)</argsstring>
+        <name>receiveMsg</name>
+        <qualifiedname>BlockRoulette::receiveMsg</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>al::HitSensor *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>al::HitSensor *</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/BlockRoulette.h" line="13" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_block_roulette_1a5c30c83a7af92c7479d934016bf1ed42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BlockRoulette::BlockRoulette</definition>
+        <argsstring>(const sead::SafeString &amp;name)</argsstring>
+        <name>BlockRoulette</name>
+        <qualifiedname>BlockRoulette::BlockRoulette</qualifiedname>
+        <param>
+          <type>const sead::SafeString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/MapObj/BlockRoulette.h" line="16" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BlockRoulette</label>
+        <link refid="class_block_roulette"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::MapObjActor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BlockRoulette</label>
+        <link refid="class_block_roulette"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::MapObjActor</label>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/MapObj/BlockRoulette.h" line="5" column="1" bodyfile="Game/include/MapObj/BlockRoulette.h" bodystart="6" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_block_roulette_1ad9fa0708c5db9f0f860c7d7fc5ca177a" prot="private" virt="non-virtual"><scope>BlockRoulette</scope><name>_60</name></member>
+      <member refid="class_block_roulette_1a7fd8c03e92cf942b5d7c84990ad2d31e" prot="private" virt="non-virtual"><scope>BlockRoulette</scope><name>_64</name></member>
+      <member refid="class_block_roulette_1a5c30c83a7af92c7479d934016bf1ed42" prot="public" virt="non-virtual"><scope>BlockRoulette</scope><name>BlockRoulette</name></member>
+      <member refid="class_block_roulette_1afbfd2cd92e0a50ffca567d461d516d1e" prot="public" virt="virtual"><scope>BlockRoulette</scope><name>init</name></member>
+      <member refid="class_block_roulette_1a20c8092246e9fd8273b2c723ca6f145d" prot="public" virt="virtual"><scope>BlockRoulette</scope><name>receiveMsg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

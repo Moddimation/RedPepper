@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::WipeSimple - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-alwipesimple">Class al::WipeSimple</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>WipeSimple</strong></a></p>
+<ul>
+<li><code>#include &lt;alWipeSimple.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classal_1_1_layout_actor/">al::LayoutActor</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-wipesimple"><strong>WipeSimple</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * name, <a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * archive, <a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_layout_init_info/"><strong>LayoutInitInfo</strong></a> &amp; info, <a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * suffix=<a href="../classal_1_1_functor_v0_m/"><strong>nullptr</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-execlose"><strong>exeClose</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exeopen"><strong>exeOpen</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exewait"><strong>exeWait</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-iscloseend"><strong>isCloseEnd</strong></a> () const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-allayoutactor">Public Functions inherited from al::LayoutActor</h2>
+<p>See <a href="../classal_1_1_layout_actor/">al::LayoutActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-layoutactor"><strong>LayoutActor</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-calcanim"><strong>calcAnim</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_effect_keeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-initnerve"><strong>initNerve</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../structal_1_1_nerve/"><strong>Nerve</strong></a> * nerve, <a href="../classal_1_1_functor_v0_m/"><strong>int</strong></a> maxNerveStates=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-movement"><strong>movement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-unk1"><strong>unk1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#function-unk2"><strong>unk2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1_i_use_nerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_nerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseaudiokeeper">Public Functions inherited from al::IUseAudioKeeper</h2>
+<p>See <a href="../classal_1_1_i_use_audio_keeper/">al::IUseAudioKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-v1"><strong>v1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-v2"><strong>v2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseeffectkeeper">Public Functions inherited from al::IUseEffectKeeper</h2>
+<p>See <a href="../classal_1_1_i_use_effect_keeper/">al::IUseEffectKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_effect_keeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_effect_keeper/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-allayoutactor">Protected Attributes inherited from al::LayoutActor</h2>
+<p>See <a href="../classal_1_1_layout_actor/">al::LayoutActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-_20"><strong>_20</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-_24"><strong>_24</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-_28"><strong>_28</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-maudiokeeper"><strong>mAudioKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_effect_keeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-meffectkeeper"><strong>mEffectKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-misalive"><strong>mIsAlive</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">sead::SafeString</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-mname"><strong>mName</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_layout_actor/#variable-mnervekeeper"><strong>mNerveKeeper</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-wipesimple">function WipeSimple</h3>
+<pre><code class="language-C++">al::WipeSimple::WipeSimple (
+    const  char * name,
+    const  char * archive,
+    const  LayoutInitInfo &amp; info,
+    const  char * suffix=nullptr
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appear">function appear</h3>
+<pre><code class="language-C++">virtual void al::WipeSimple::appear () 
+</code></pre>
+<p>Implements <a href="../classal_1_1_layout_actor/#function-appear"><em>al::LayoutActor::appear</em></a></p>
+<hr>
+
+<h3 id="function-execlose">function exeClose</h3>
+<pre><code class="language-C++">void al::WipeSimple::exeClose () 
+</code></pre>
+<hr>
+
+<h3 id="function-exeopen">function exeOpen</h3>
+<pre><code class="language-C++">void al::WipeSimple::exeOpen () 
+</code></pre>
+<hr>
+
+<h3 id="function-exewait">function exeWait</h3>
+<pre><code class="language-C++">void al::WipeSimple::exeWait () 
+</code></pre>
+<hr>
+
+<h3 id="function-iscloseend">function isCloseEnd</h3>
+<pre><code class="language-C++">bool al::WipeSimple::isCloseEnd () const
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Layout/alWipeSimple.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

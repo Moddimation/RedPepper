@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_break_model_8cpp" kind="file" language="C++">
+    <compoundname>alBreakModel.cpp</compoundname>
+    <includes refid="al_actor_init_util_8h" local="no">LiveActor/alActorInitUtil.h</includes>
+    <includes refid="al_actor_pose_keeper_8h" local="no">LiveActor/alActorPoseKeeper.h</includes>
+    <includes refid="al_live_actor_function_8h" local="no">LiveActor/alLiveActorFunction.h</includes>
+    <includes refid="al_nerve_8h" local="no">Nerve/alNerve.h</includes>
+    <includes refid="al_nerve_function_8h" local="no">Nerve/alNerveFunction.h</includes>
+    <includes refid="al_break_model_8h" local="no">Npc/alBreakModel.h</includes>
+    <incdepgraph>
+      <node id="18">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="19">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alActorInitUtil.h</label>
+        <link refid="al_actor_init_util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alActorPoseKeeper.h</label>
+        <link refid="al_actor_pose_keeper_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="10">
+        <label>LiveActor/alLiveActorFunction.h</label>
+        <link refid="al_live_actor_function_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Nerve/alNerveFunction.h</label>
+        <link refid="al_nerve_function_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="15">
+        <label>Nerve/alNerveStateBase.h</label>
+        <link refid="al_nerve_state_base_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Npc/alBreakModel.h</label>
+        <link refid="al_break_model_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alBreakModel.cpp</label>
+        <link refid="al_break_model_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="8">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="9">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="5">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <innernamespace refid="namespaceal_1_1_nrv_break_model">al::NrvBreakModel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_init_util_8h" kindref="compound">LiveActor/alActorInitUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_pose_keeper_8h" kindref="compound">LiveActor/alActorPoseKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_function_8h" kindref="compound">LiveActor/alLiveActorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_8h" kindref="compound">Nerve/alNerve.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_function_8h" kindref="compound">Nerve/alNerveFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_break_model_8h" kindref="compound">Npc/alBreakModel.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespaceal_1_1_nrv_break_model" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NrvBreakModel</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="al_nerve_8h_1aa673fd862e01ac28f82a4f9deb64b2fa" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="classal_1_1_break_model" kindref="compound">BreakModel</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Wait</ref><sp/>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="al_nerve_8h_1aa673fd862e01ac28f82a4f9deb64b2fa" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="classal_1_1_break_model" kindref="compound">BreakModel</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Break</ref><sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NrvBreakModel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_break_model_1ad11e2e202ea5a6fe7c232d17dcfda5f1" refkind="member"><highlight class="normal"><ref refid="classal_1_1_break_model_1ad11e2e202ea5a6fe7c232d17dcfda5f1" kindref="member">BreakModel::BreakModel</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">parent</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">modelArchiveName</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">parentBaseMtx</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">breakActionName</ref><sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>(<sp/>name<sp/>),<sp/>mParent(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">parent</ref><sp/>),<sp/>mParentBaseMtx(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">parentBaseMtx</ref><sp/>),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mModelArchiveName(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">modelArchiveName</ref><sp/>),<sp/>mBreakActionName(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">breakActionName</ref><sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_break_model_1a8d59430632e94fc91d55532d87cce8ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_break_model_1a8d59430632e94fc91d55532d87cce8ba" kindref="member">BreakModel::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a006520e6dfa0fec01702fc626e92dc7b" kindref="member">initActorWithArchiveName</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/><ref refid="classal_1_1_break_model_1a3eb67ad57077cdd47ecd7036fcc290be" kindref="member">mModelArchiveName</ref><sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a765397d5b8fff63737e5237c28f02ebb" kindref="member">initNerve</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvBreakModel::Wait<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a515a2b12c390af7bd21efb868109a386" kindref="member">invalidateClipping</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_1a68a239913d3029dfa7d18d580a1b8cf5" kindref="member">makeActorDead</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_break_model_1acbc0553aa6e7b59f5d59c5e5d1bb139c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_break_model_1acbc0553aa6e7b59f5d59c5e5d1bb139c" kindref="member">BreakModel::appear</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_break_model_1a0bbe0f4e16d954ae5229c6d07697e656" kindref="member">mParentBaseMtx</ref><sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a7a9f3683a9f68f407ff0dcb968a3afed" kindref="member">updatePoseMtx</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_break_model_1a0bbe0f4e16d954ae5229c6d07697e656" kindref="member">mParentBaseMtx</ref><sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a0c159e1e3d5089c2e41244166609b484" kindref="member">copyPose</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_break_model_1a4b376af7613c4307d263d0f7e48b0609" kindref="member">mParent</ref><sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_break_model_1a5a8849cd30ea1b47f21106b365ad4cef" kindref="member">mBreakActionName</ref><sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a5e52f9af7a3182dac16d0af53fc4c35d" kindref="member">startAction</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_break_model_1a5a8849cd30ea1b47f21106b365ad4cef" kindref="member">mBreakActionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a532ade3c60897b2dac244f18cff3a3e7" kindref="member">setNerve</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvBreakModel::Break<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_1a21647e167d28b0db31785628cbded72c" kindref="member">LiveActor::makeActorAppeared</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classal_1_1_break_model_1a7d1d54b97beb43bbfef577652f16f4b3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_break_model_1a7d1d54b97beb43bbfef577652f16f4b3" kindref="member">BreakModel::exeWait</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classal_1_1_break_model_1abc62d4ac69d955e77be15430023e3501" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_break_model_1abc62d4ac69d955e77be15430023e3501" kindref="member">BreakModel::exeBreak</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1ae081c26e01e14b58b22b789b7dc77519" kindref="member">isActionEnd</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_1ac17a125c51d1a66778be4aa8f7c04556" kindref="member">kill</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Npc/alBreakModel.cpp"/>
+  </compounddef>
+</doxygen>

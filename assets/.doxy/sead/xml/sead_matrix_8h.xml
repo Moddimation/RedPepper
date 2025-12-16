@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_matrix_8h" kind="file" language="C++">
+    <compoundname>seadMatrix.h</compoundname>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="sead_math_policies_8h" local="no">math/seadMathPolicies.h</includes>
+    <includes refid="sead_quat_8h" local="no">math/seadQuat.h</includes>
+    <includes refid="sead_vector_8h" local="no">math/seadVector.h</includes>
+    <includes refid="sead_matrix_8hpp" local="no">math/seadMatrix.hpp</includes>
+    <includedby refid="sead_matrix_8cpp" local="no">seadMatrix.cpp</includedby>
+    <includedby refid="sead_matrix_8hpp" local="no">seadMatrix.hpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math/seadMathBase.h</label>
+        <link refid="sead_math_base_8h"/>
+      </node>
+      <node id="12">
+        <label>math/seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="sead_math_numbers_8h"/>
+      </node>
+      <node id="4">
+        <label>math/seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadMatrix.h</label>
+        <link refid="sead_matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>math/seadMatrix.hpp</label>
+        <link refid="sead_matrix_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>math/seadMatrixCalcCommon.h</label>
+        <link refid="sead_matrix_calc_common_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>math/seadMatrixCalcCommon.hpp</label>
+        <link refid="sead_matrix_calc_common_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>math/seadQuat.h</label>
+        <link refid="sead_quat_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>math/seadQuat.hpp</label>
+        <link refid="sead_quat_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>math/seadQuatCalcCommon.h</label>
+        <link refid="sead_quat_calc_common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>math/seadQuatCalcCommon.hpp</label>
+        <link refid="sead_quat_calc_common_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>math/seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>math/seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>math/seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>math/seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+      <node id="16">
+        <label>stdarg.h</label>
+      </node>
+      <node id="18">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>seadMatrix.h</label>
+        <link refid="sead_matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadMatrix.hpp</label>
+        <link refid="sead_matrix_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadMatrix.cpp</label>
+        <link refid="sead_matrix_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_matrix22" prot="public">sead::Matrix22</innerclass>
+    <innerclass refid="classsead_1_1_matrix33" prot="public">sead::Matrix33</innerclass>
+    <innerclass refid="classsead_1_1_matrix34" prot="public">sead::Matrix34</innerclass>
+    <innerclass refid="classsead_1_1_matrix44" prot="public">sead::Matrix44</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="sead_matrix_8h_1a305ecb0af27fe37259ec39cc94d700b5" prot="public" static="no">
+        <name>SEAD_MATH_MATRIX_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMatrix.h" line="280" column="9" bodyfile="lib/sead/include/math/seadMatrix.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_math_policies_8h" kindref="compound">math/seadMathPolicies.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_quat_8h" kindref="compound">math/seadQuat.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_vector_8h" kindref="compound">math/seadVector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix22;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix33;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix34;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix44;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_matrix22" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx22Base<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classsead_1_1_matrix22_1a2789612a6753c415ef4434ced8ee931e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix22_1a2789612a6753c415ef4434ced8ee931e" kindref="member">Matrix22</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classsead_1_1_matrix22_1a411db8213e03a70266d56b5298587cf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix22_1a411db8213e03a70266d56b5298587cf3" kindref="member">Matrix22</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Self</ref>&amp;<sp/>n)<sp/>{};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix22_1a2789612a6753c415ef4434ced8ee931e" kindref="member">Matrix22</ref>(T<sp/>a00,<sp/>T<sp/>a01,<sp/>T<sp/>a10,<sp/>T<sp/>a11);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_matrix22_1ac18b3dcef5e0498b1b1f95b12517472a" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="classsead_1_1_matrix22_1ac18b3dcef5e0498b1b1f95b12517472a" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/><ref refid="classsead_1_1_matrix22_1ad900dd41e18963f92109e48ebdcfcc0a" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1adfa976ed74fbbec34c962ccd58671100" kindref="member">makeIdentity</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a28d0e9ac81cf4650c468fa76af8784af" kindref="member">makeZero</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1ae1d5702bfe09b722eaf6904afff5f756" kindref="member">setInverse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a69ff0c22ef8024e27692bc12228f2042" kindref="member">setInverseTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a73c09d61f7c1cf0f114a731b59b06750" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a581b980c5f7c7cd557550ff80d6dbf9b" kindref="member">setTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a297b5b4143b15dcb12aec7e853ad5245" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22_1a98ae394baae549f89cad37981e7cdf54" kindref="member">transpose</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1_matrix22_1ad77965763748d3a7fc7d967e107f1930" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22</ref><sp/><ref refid="classsead_1_1_matrix22_1ad77965763748d3a7fc7d967e107f1930" kindref="member">zero</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classsead_1_1_matrix22_1aec282434aedb942d4a2da964adbc63c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22</ref><sp/><ref refid="classsead_1_1_matrix22_1aec282434aedb942d4a2da964adbc63c5" kindref="member">ident</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="51" refid="classsead_1_1_matrix33" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx33Base<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classsead_1_1_matrix33_1aef060259de9a2e37f086bb66effddf5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix33_1aef060259de9a2e37f086bb66effddf5e" kindref="member">Mtx34</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="classsead_1_1_matrix33_1a575589f35071ce08bbd50722dd543d68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix33_1a575589f35071ce08bbd50722dd543d68" kindref="member">Matrix33</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classsead_1_1_matrix33_1ac7b450a719c0b0d043d27b7b26ab26ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix33_1ac7b450a719c0b0d043d27b7b26ab26ff" kindref="member">Matrix33</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Self</ref>&amp;<sp/>n)<sp/>{};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix33_1a575589f35071ce08bbd50722dd543d68" kindref="member">Matrix33</ref>(T<sp/>a00,<sp/>T<sp/>a01,<sp/>T<sp/>a02,<sp/>T<sp/>a10,<sp/>T<sp/>a11,<sp/>T<sp/>a12,<sp/>T<sp/>a20,<sp/>T<sp/>a21,<sp/>T<sp/>a22);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix33_1a575589f35071ce08bbd50722dd543d68" kindref="member">Matrix33</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1aef060259de9a2e37f086bb66effddf5e" kindref="member">Mtx34</ref>&amp;<sp/>mtx34);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_matrix33_1a2e0ac23471c735f086158fb25004f0b6" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="classsead_1_1_matrix33_1a2e0ac23471c735f086158fb25004f0b6" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/><ref refid="classsead_1_1_matrix33_1a654e1e7b82d006cb90ff200fc979c353" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a6f8d3b4793330161d0c34a0dd36fc2bd" kindref="member">makeIdentity</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a23a2cde4367187b423f6a52c501ddb3c" kindref="member">makeZero</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1abd7d56e3ad87b05f1a004910837f23b4" kindref="member">setInverse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a97c4a00c7a6f2bd539dc17c31cfceb24" kindref="member">setInverseTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a0b456407be7e1621dc016575dfd9202a" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a0b456407be7e1621dc016575dfd9202a" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1aef060259de9a2e37f086bb66effddf5e" kindref="member">Mtx34</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a0b456407be7e1621dc016575dfd9202a" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1aef060259de9a2e37f086bb66effddf5e" kindref="member">Mtx34</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a985007e67602d7ba9ab2e274f24eed12" kindref="member">setTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7656eaa9ca8d104131bab14b5d367725" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a1f57ca5732730a3a827ead239a5ecce8" kindref="member">transpose</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a7386b74c451135248d6980265205f05e" kindref="member">fromQuat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a0a7eed9d3ebef642492e793eac219088" kindref="member">makeR</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a44d7da89b57887fd9a5649efc5fe6965" kindref="member">makeRIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>xr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>yr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>zr);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1aeeb2de0762b125499bdd2dcff5a297b0" kindref="member">makeRzxyIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>xr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>yr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>zr);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a739a68b4ff27b38220274dafe14b5578" kindref="member">makeS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a739a68b4ff27b38220274dafe14b5578" kindref="member">makeS</ref>(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a6d4441eebd8a95d022ce5449cb5f16b5" kindref="member">makeSR</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1af36e92b99d143cca9d7bc5ecfa6a66a9" kindref="member">makeSRIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a2fbdb5304775c33f77c09062758d0a45" kindref="member">makeSRzxyIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a50b3db1ebc563ad85c2ec3c662a181c6" kindref="member">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33_1a97785f658956c10e9d846d347c6e95c9" kindref="member">toQuat</ref>(<ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classsead_1_1_matrix33_1a5947c480b761c747ac13e4805109523c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33</ref><sp/><ref refid="classsead_1_1_matrix33_1a5947c480b761c747ac13e4805109523c" kindref="member">zero</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classsead_1_1_matrix33_1a4f05e771d7a5ae67ecfb4139cc5a903c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33</ref><sp/><ref refid="classsead_1_1_matrix33_1a4f05e771d7a5ae67ecfb4139cc5a903c" kindref="member">ident</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="98" refid="classsead_1_1_matrix34" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx34Base<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="classsead_1_1_matrix34_1a612a9b55846c892168d806520f8ed7a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix34_1a612a9b55846c892168d806520f8ed7a5" kindref="member">Self</ref>;</highlight></codeline>
+<codeline lineno="101" refid="classsead_1_1_matrix34_1ac1ce3ad380ec7db5350f36dad177e60a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix34_1ac1ce3ad380ec7db5350f36dad177e60a" kindref="member">Mtx33</ref>;</highlight></codeline>
+<codeline lineno="102" refid="classsead_1_1_matrix34_1a7440da6def5914217657ce362f14b3ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix34_1a7440da6def5914217657ce362f14b3ae" kindref="member">Mtx44</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classsead_1_1_matrix34_1aa9f66185e6f3e6609ee5f79f10567a0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix34_1aa9f66185e6f3e6609ee5f79f10567a0e" kindref="member">Vec3</ref>;</highlight></codeline>
+<codeline lineno="105" refid="classsead_1_1_matrix34_1a261dd1e8d92c3a5ea1da3da99181f3ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix34_1a261dd1e8d92c3a5ea1da3da99181f3ae" kindref="member">Vec4</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108" refid="classsead_1_1_matrix34_1a39eb57ee9853568801326cafb3660e4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix34_1a39eb57ee9853568801326cafb3660e4e" kindref="member">Matrix34</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classsead_1_1_matrix34_1a574fb8c5b039fbd1c445b0de3a4c528a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix34_1a574fb8c5b039fbd1c445b0de3a4c528a" kindref="member">Matrix34</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix34_1a39eb57ee9853568801326cafb3660e4e" kindref="member">Matrix34</ref>(T<sp/>_00,<sp/>T<sp/>_01,<sp/>T<sp/>_02,<sp/>T<sp/>_03,<sp/>T<sp/>_10,<sp/>T<sp/>_11,<sp/>T<sp/>_12,<sp/>T<sp/>_13,<sp/>T<sp/>_20,<sp/>T<sp/>_21,<sp/>T<sp/>_22,<sp/>T<sp/>_23);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix34_1a39eb57ee9853568801326cafb3660e4e" kindref="member">Matrix34</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Mtx33</ref>&amp;<sp/>mtx33,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t<sp/>=<sp/><ref refid="structsead_1_1_vector3_1a61d8ebd73ea92791ee76426f991d4dc6" kindref="member">Vec3::zero</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix34_1a39eb57ee9853568801326cafb3660e4e" kindref="member">Matrix34</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Mtx44</ref>&amp;<sp/>mtx44);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_matrix34_1ab259fa12c54c1076589901a06a8a8973" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="classsead_1_1_matrix34_1ab259fa12c54c1076589901a06a8a8973" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/><ref refid="classsead_1_1_matrix34_1a753506a2ddd846f421e56e823d6c0c7e" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1aae26b836f815856ed9c0a85b0fe4ba23" kindref="member">makeIdentity</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a9e773a5e2964896e0bf7f74d262c4f7d" kindref="member">makeZero</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a61a24375ad20e2e69e53e5db42c689d9" kindref="member">setInverse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1abe72890e30c41254ecb7586ab52fcb39" kindref="member">setInverse33</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1ac9146671d4eb78d481a98f44b334009d" kindref="member">setInverseTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1ad0998d60c5f005fabe23f11930a89cb9" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1ad0998d60c5f005fabe23f11930a89cb9" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Mtx33</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a74365fa967523830a03809d87bf0a890" kindref="member">setTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a036e0acf2e3a35412946cfa7cf3f8d51" kindref="member">transpose</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1afeefdc1de2d15e06a8e05735ab0400db" kindref="member">fromQuat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a5e13b1c3113d079805cfaf8bd977a0c2" kindref="member">makeQT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a5d67f70e983650480c479e9c1198ec77" kindref="member">makeR</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a3aa9e91a23b5c0acef957f77202d1bf3" kindref="member">makeRIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>xr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>yr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>zr);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a03cb345771d5ae04e6f3c08472008fcd" kindref="member">makeRT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a78715208ef31bf61909843e36f8a98ad" kindref="member">makeRTIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a57278e81fd6632d877a503ead0db4570" kindref="member">makeRzxyIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>xr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>yr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>zr);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a3d3708f07d6a7258585a778c36227ed8" kindref="member">makeRzxyTIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a8ccb14d43a4067efe2ef49fc1b598c32" kindref="member">makeS</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a8ccb14d43a4067efe2ef49fc1b598c32" kindref="member">makeS</ref>(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a323e9d17901eb06c6da154b7ec647c7f" kindref="member">makeSR</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a86e831333844660f7f77b512a161bbc7" kindref="member">makeSRIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a100ae57d411215edf4020c826b85ebf3" kindref="member">makeSRT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a53964971b21f1444b53b6df00298b6a1" kindref="member">makeSRTIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a5b469b9e08313339138dd8ce59436198" kindref="member">makeSRzxyIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a28fd26ba3c930a209d427d668a31e4b6" kindref="member">makeSRzxyTIdx</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;u32&gt;</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1afcce1a23212a061730c7adee962c1388" kindref="member">makeST</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>s,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a367e56f31d3cdc0bd9c9dc802ae78301" kindref="member">makeT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a367e56f31d3cdc0bd9c9dc802ae78301" kindref="member">makeT</ref>(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a2e282d205e9d89c66d9dccbbb63e30e1" kindref="member">toQuat</ref>(<ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a38fc1479a0255441441c98da97ad2322" kindref="member">getBase</ref>(<ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>o,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>axis)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a992eb1708228f78600c2abfac9ce6aef" kindref="member">getRow</ref>(<ref refid="structsead_1_1_vector4" kindref="compound">Vec4</ref>&amp;<sp/>o,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>row)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a5f4c1bf6ae99aaceeb256e043ef04abf" kindref="member">getTranslation</ref>(<ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>o)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a3092ddb4ea0a907fb6bf3e3571769e25" kindref="member">getRotation</ref>(<ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>o)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a65f56a0305efe0924aa5e344950dc607" kindref="member">scaleAllElements</ref>(T<sp/>s);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a4a9ced7e7063dccbbada1d9175f1393f" kindref="member">scaleBases</ref>(T<sp/>sx,<sp/>T<sp/>sy,<sp/>T<sp/>sz);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a412f26e8b9aaeeba85c00f1e59c601c2" kindref="member">setBase</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>axis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1a16178b297a56eee00f7a66891a94cd09" kindref="member">setRow</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vec4</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1ad64d2f2f8ee50cd22049b2756a97be1e" kindref="member">setTranslation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34_1ad64d2f2f8ee50cd22049b2756a97be1e" kindref="member">setTranslation</ref>(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="classsead_1_1_matrix34_1a892f7d22e5a54a71d9e550cef75c31b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34</ref><sp/><ref refid="classsead_1_1_matrix34_1a892f7d22e5a54a71d9e550cef75c31b3" kindref="member">zero</ref>;</highlight></codeline>
+<codeline lineno="166" refid="classsead_1_1_matrix34_1a926735afcb139d1787a795a94d1665e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34</ref><sp/><ref refid="classsead_1_1_matrix34_1a926735afcb139d1787a795a94d1665e9" kindref="member">ident</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="170" refid="classsead_1_1_matrix44" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt;T&gt;::Mtx44Base<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172" refid="classsead_1_1_matrix44_1a2f81f052ee17f5c27b40381773287ab9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix44_1a2f81f052ee17f5c27b40381773287ab9" kindref="member">Self</ref>;</highlight></codeline>
+<codeline lineno="173" refid="classsead_1_1_matrix44_1aad73c0196135de6d01137c71ae0c0069" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix44_1aad73c0196135de6d01137c71ae0c0069" kindref="member">Mtx33</ref>;</highlight></codeline>
+<codeline lineno="174" refid="classsead_1_1_matrix44_1a81951a4a5052dabd5691043be062cfd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix44_1a81951a4a5052dabd5691043be062cfd9" kindref="member">Mtx34</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classsead_1_1_matrix44_1a6e62bcef7da4a923ac33f7842793885f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix44_1a6e62bcef7da4a923ac33f7842793885f" kindref="member">Vec3</ref>;</highlight></codeline>
+<codeline lineno="177" refid="classsead_1_1_matrix44_1a714372634a92c67a1fb8d619f1512f4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_matrix44_1a714372634a92c67a1fb8d619f1512f4d" kindref="member">Vec4</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180" refid="classsead_1_1_matrix44_1aced3208de815eb605f1bb57dba273cd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix44_1aced3208de815eb605f1bb57dba273cd4" kindref="member">Matrix44</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="classsead_1_1_matrix44_1aaff7aa33bd5b48d7f49ee489ca037248" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix44_1aaff7aa33bd5b48d7f49ee489ca037248" kindref="member">Matrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>n)<sp/>{};</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix44_1aced3208de815eb605f1bb57dba273cd4" kindref="member">Matrix44</ref>(T<sp/>_00,<sp/>T<sp/>_01,<sp/>T<sp/>_02,<sp/>T<sp/>_03,<sp/>T<sp/>_10,<sp/>T<sp/>_11,<sp/>T<sp/>_12,<sp/>T<sp/>_13,<sp/>T<sp/>_20,<sp/>T<sp/>_21,<sp/>T<sp/>_22,<sp/>T<sp/>_23,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>_30,<sp/>T<sp/>_31,<sp/>T<sp/>_32,<sp/>T<sp/>_33);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix44_1aced3208de815eb605f1bb57dba273cd4" kindref="member">Matrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1aad73c0196135de6d01137c71ae0c0069" kindref="member">Mtx33</ref>&amp;<sp/>mtx33,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a6e62bcef7da4a923ac33f7842793885f" kindref="member">Vec3</ref>&amp;<sp/>t<sp/>=<sp/><ref refid="structsead_1_1_vector3_1a61d8ebd73ea92791ee76426f991d4dc6" kindref="member">Vec3::zero</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a714372634a92c67a1fb8d619f1512f4d" kindref="member">Vec4</ref>&amp;<sp/>vw<sp/>=<sp/><ref refid="structsead_1_1_vector4_1ae8805170dc7aa60af934784632f46bba" kindref="member">Vec4::ew</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix44_1aced3208de815eb605f1bb57dba273cd4" kindref="member">Matrix44</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a81951a4a5052dabd5691043be062cfd9" kindref="member">Mtx34</ref>&amp;<sp/>mtx34,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a714372634a92c67a1fb8d619f1512f4d" kindref="member">Vec4</ref>&amp;<sp/>vw<sp/>=<sp/><ref refid="structsead_1_1_vector4_1ae8805170dc7aa60af934784632f46bba" kindref="member">Vec4::ew</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_matrix44_1a0dc9ec4de0c5e1c5c140cb8d8ce0c5f0" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="classsead_1_1_matrix44_1a0dc9ec4de0c5e1c5c140cb8d8ce0c5f0" kindref="member">operator()</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>i,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>j);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_matrix44_1a2f81f052ee17f5c27b40381773287ab9" kindref="member">Self</ref>&amp;<sp/><ref refid="classsead_1_1_matrix44_1a72915a6f6b650088ca16377b760aaa06" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a2f81f052ee17f5c27b40381773287ab9" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a13e1126cc7677196c2c5c0b8bceb9062" kindref="member">makeIdentity</ref>();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1ada6343d596de318fada383c01772c6e9" kindref="member">makeZero</ref>();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a71601ad013cbbff1960df3ecfa5edc53" kindref="member">setInverse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a2f81f052ee17f5c27b40381773287ab9" kindref="member">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="198" refid="classsead_1_1_matrix44_1ac135256d2a77515fa7881a3372fb89e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1ac135256d2a77515fa7881a3372fb89e7" kindref="member">setInverseTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a0339e3d3e2063c35d18840fecbfb25aa" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a0339e3d3e2063c35d18840fecbfb25aa" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a0339e3d3e2063c35d18840fecbfb25aa" kindref="member">setMul</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Mtx34</ref>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1af525c845ba8365100b044ed2fd60f7f7" kindref="member">setTranspose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Self</ref>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a216d8695c3e9d9998f15a61b41d0422f" kindref="member">transpose</ref>();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a7c61a07b051fafce06bb6e732a54de55" kindref="member">fromQuat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a8b454a1ae8a9adb557946e32694db9ab" kindref="member">makeR</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a51e1f69f40a8956a8a92b3e4c7a01951" kindref="member">makeRIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>xr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>yr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>zr);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a20fbed19394e380ebb4ea0eed71eca0c" kindref="member">makeRzxyIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>xr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>yr,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>zr);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a7d5493212e70a1218db725c259b65206" kindref="member">toQuat</ref>(<ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref>&amp;<sp/>q)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1ae6aa5e30dabdb1ace4e60833e0873b72" kindref="member">getCol</ref>(<ref refid="structsead_1_1_vector4" kindref="compound">Vec4</ref>&amp;<sp/>o,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>axis)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1af0ac63427c8666907921c92d400a3c8e" kindref="member">getRow</ref>(<ref refid="structsead_1_1_vector4" kindref="compound">Vec4</ref>&amp;<sp/>o,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>row)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a965023eb18fe363fa51dc8d29203b260" kindref="member">scaleAllElements</ref>(T<sp/>s);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1aa1aa0b3e481f6784f8716e1a61758e99" kindref="member">scaleBases</ref>(T<sp/>sx,<sp/>T<sp/>sy,<sp/>T<sp/>sz,<sp/>T<sp/>sw);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a1a3b4f505f0b49a0deae5f878f7d73c5" kindref="member">setCol</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>axis,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vec4</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44_1a92805f5d668cf5c6d85a631e329c21b6" kindref="member">setRow</ref>(<ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vec4</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="classsead_1_1_matrix44_1a195a1631c6a906a7e74118240d0a6b79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44</ref><sp/><ref refid="classsead_1_1_matrix44_1a195a1631c6a906a7e74118240d0a6b79" kindref="member">zero</ref>;</highlight></codeline>
+<codeline lineno="220" refid="classsead_1_1_matrix44_1a729c188157d0785a9d1193315ed9884b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44</ref><sp/><ref refid="classsead_1_1_matrix44_1a729c188157d0785a9d1193315ed9884b" kindref="member">ident</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="namespacesead_1a6b0ce1e5ed9ab8efd58c4b405b3e31d7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1a6b0ce1e5ed9ab8efd58c4b405b3e31d7" kindref="member">Matrix22f</ref>;</highlight></codeline>
+<codeline lineno="224" refid="namespacesead_1a250d1aab512efea9bd74c7b737335de1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1a250d1aab512efea9bd74c7b737335de1" kindref="member">Matrix33f</ref>;</highlight></codeline>
+<codeline lineno="225" refid="namespacesead_1ae1f1344042dc6c6fb86c5e36e606ce9d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1ae1f1344042dc6c6fb86c5e36e606ce9d" kindref="member">Matrix34f</ref>;</highlight></codeline>
+<codeline lineno="226" refid="namespacesead_1a8410b160aeecb5868c8f113251f079ab" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1a8410b160aeecb5868c8f113251f079ab" kindref="member">Matrix44f</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="namespacesead_1a99979e644d2a44cf135d106a8564a485" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1a99979e644d2a44cf135d106a8564a485" kindref="member">Matrixf</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22f</ref><sp/><ref refid="classsead_1_1_matrix22_1ad77965763748d3a7fc7d967e107f1930" kindref="member">Matrix22f::zero</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22f</ref><sp/><ref refid="classsead_1_1_matrix22_1aec282434aedb942d4a2da964adbc63c5" kindref="member">Matrix22f::ident</ref>;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33f</ref><sp/><ref refid="classsead_1_1_matrix33_1a5947c480b761c747ac13e4805109523c" kindref="member">Matrix33f::zero</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33f</ref><sp/><ref refid="classsead_1_1_matrix33_1a4f05e771d7a5ae67ecfb4139cc5a903c" kindref="member">Matrix33f::ident</ref>;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34f</ref><sp/><ref refid="classsead_1_1_matrix34_1a892f7d22e5a54a71d9e550cef75c31b3" kindref="member">Matrix34f::zero</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34f</ref><sp/><ref refid="classsead_1_1_matrix34_1a926735afcb139d1787a795a94d1665e9" kindref="member">Matrix34f::ident</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44f</ref><sp/><ref refid="classsead_1_1_matrix44_1a195a1631c6a906a7e74118240d0a6b79" kindref="member">Matrix44f::zero</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44f</ref><sp/><ref refid="classsead_1_1_matrix44_1a729c188157d0785a9d1193315ed9884b" kindref="member">Matrix44f::ident</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="255" refid="classsead_1_1_matrix22_1aa5cdb93e84548864012f8100deb10bff" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="258" refid="classsead_1_1_matrix22_1aedf3a630cec45ae83829963900427b6f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix22" kindref="compound">Matrix22&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="261" refid="classsead_1_1_matrix33_1a2efe0d3c1c9ccea8df0aa619fa27c6a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="264" refid="classsead_1_1_matrix33_1af72a97bf70494d5ee4cca26ea9ffecb5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix33" kindref="compound">Matrix33&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="267" refid="classsead_1_1_matrix34_1a0ef51728b5de5d26a96ab5e25f2275af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="270" refid="classsead_1_1_matrix34_1a72308c9de9ededa7592abcad1b5be7d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix34" kindref="compound">Matrix34&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="273" refid="classsead_1_1_matrix44_1a074aebb4c22a8ea9e5dffa09947e8264" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;f64&gt;::zero</ref>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="276" refid="classsead_1_1_matrix44_1a74b8202d20242d112bd0f3fa5f4fef62" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;f64&gt;</ref><sp/><ref refid="classsead_1_1_matrix44" kindref="compound">Matrix44&lt;f64&gt;::ident</ref>;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="sead_matrix_8h_1a305ecb0af27fe37259ec39cc94d700b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_MATH_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_matrix_8hpp" kindref="compound">math/seadMatrix.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SEAD_MATH_MATRIX_H_</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/math/seadMatrix.h"/>
+  </compounddef>
+</doxygen>

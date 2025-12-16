@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_layout_actor_8h" kind="file" language="C++">
+    <compoundname>alLayoutActor.h</compoundname>
+    <includes refid="al_audio_keeper_8h" local="no">Audio/alAudioKeeper.h</includes>
+    <includes refid="al_effect_keeper_8h" local="no">Effect/alEffectKeeper.h</includes>
+    <includes refid="al_nerve_8h" local="no">Nerve/alNerve.h</includes>
+    <includes local="no">prim/seadSafeString.h</includes>
+    <includedby refid="al_layout_actor_8cpp" local="no">alLayoutActor.cpp</includedby>
+    <includedby refid="al_wipe_simple_8h" local="no">alWipeSimple.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="3">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alLayoutActor.h</label>
+        <link refid="al_layout_actor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="8">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alLayoutActor.h</label>
+        <link refid="al_layout_actor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alWipeSimple.h</label>
+        <link refid="al_wipe_simple_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alLayoutActor.cpp</label>
+        <link refid="al_layout_actor_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alWipeSimple.cpp</label>
+        <link refid="al_wipe_simple_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_layout_actor" prot="public">al::LayoutActor</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_audio_keeper_8h" kindref="compound">Audio/alAudioKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_effect_keeper_8h" kindref="compound">Effect/alEffectKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_8h" kindref="compound">Nerve/alNerve.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;prim/seadSafeString.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LayoutInitInfo;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">NerveKeeper;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_layout_actor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_nerve" kindref="compound">IUseNerve</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_audio_keeper" kindref="compound">IUseAudioKeeper</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_effect_keeper" kindref="compound">IUseEffectKeeper</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_layout_actor_1a658afdb7a1fd7c1ac7e0ade57cf4150f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::SafeString<sp/><ref refid="classal_1_1_layout_actor_1a658afdb7a1fd7c1ac7e0ade57cf4150f" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_layout_actor_1a0bc10131dec81f027b5d01bad10049e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a0bc10131dec81f027b5d01bad10049e1" kindref="member">mNerveKeeper</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_layout_actor_1a96760598aea0a9ae3b0ae6f6b6719e2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_audio_keeper" kindref="compound">AudioKeeper</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a96760598aea0a9ae3b0ae6f6b6719e2a" kindref="member">mAudioKeeper</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_layout_actor_1a3c798aab62725f10fda6c441e0b2e769" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_effect_keeper" kindref="compound">EffectKeeper</ref>*<sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a3c798aab62725f10fda6c441e0b2e769" kindref="member">mEffectKeeper</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_layout_actor_1a46f7f1658c245b4e0d744c97275a354e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a46f7f1658c245b4e0d744c97275a354e" kindref="member">_20</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_layout_actor_1a0ff5a47fcd626bd1f45ed2793acd0391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a0ff5a47fcd626bd1f45ed2793acd0391" kindref="member">_24</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_layout_actor_1ae7b23463030cff1728f311601977b488" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1ae7b23463030cff1728f311601977b488" kindref="member">_28</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_layout_actor_1a8585f9bb9e250bbbbcb9ef32b1091182" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a8585f9bb9e250bbbbcb9ef32b1091182" kindref="member">mIsAlive</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a3f4205f116e5cc15508f7cfe1054433c" kindref="member">initNerve</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>*<sp/><sp/><ref refid="classal_1_1_layout_actor_1ad817acb5e850b2fa1c4c29fc1d4ec143" kindref="member">getNerveKeeper</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a27623acb1aff9a2f53951d3472b091e3" kindref="member">appear</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a4d0411a6ccb52be6c6ad335e3ae657db" kindref="member">kill</ref>();</highlight></codeline>
+<codeline lineno="32" refid="classal_1_1_layout_actor_1a8ff16ea496eb91278e0f6180ccb2c6de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a8ff16ea496eb91278e0f6180ccb2c6de" kindref="member">movement</ref>();</highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_layout_actor_1aec3ecf1cea11ea26f22f0d35c413dd7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1aec3ecf1cea11ea26f22f0d35c413dd7f" kindref="member">calcAnim</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_audio_keeper" kindref="compound">AudioKeeper</ref>*<sp/><sp/><ref refid="classal_1_1_layout_actor_1aa502dbf93dde6245a2d111522e3866de" kindref="member">getAudioKeeper</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_effect_keeper" kindref="compound">EffectKeeper</ref>*<sp/><ref refid="classal_1_1_layout_actor_1a2cdbe37b30a07776a6728d4cf4b64d95" kindref="member">getEffectKeeper</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1ae1011acc66f2c5dde49d8888e6afdcd0" kindref="member">control</ref>();</highlight></codeline>
+<codeline lineno="37" refid="classal_1_1_layout_actor_1a71b3b1940644877548d9c0a91d760707" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a71b3b1940644877548d9c0a91d760707" kindref="member">unk1</ref>();</highlight></codeline>
+<codeline lineno="38" refid="classal_1_1_layout_actor_1a29d7e7969bbc4e1ccbec709d65cfa7c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a29d7e7969bbc4e1ccbec709d65cfa7c0" kindref="member">unk2</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespaceal_1ae737a10e6aa08572d6de4f3a725d19cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae737a10e6aa08572d6de4f3a725d19cc" kindref="member">initLayoutActor</ref>(<sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">layoutActor</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_init_info" kindref="compound">LayoutInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">archiveName</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="namespaceal_1a5e52f9af7a3182dac16d0af53fc4c35d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceal_1a5e52f9af7a3182dac16d0af53fc4c35d" kindref="member">startAction</ref>(<sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="47" refid="namespaceal_1ae081c26e01e14b58b22b789b7dc77519" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceal_1ae081c26e01e14b58b22b789b7dc77519" kindref="member">isActionEnd</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="48" refid="namespaceal_1a6e2c47b599a4c7fdb3ce87fcd35e9808" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceal_1a6e2c47b599a4c7fdb3ce87fcd35e9808" kindref="member">setActionFrameRate</ref>(<sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rate</ref><sp/>);</highlight></codeline>
+<codeline lineno="49" refid="namespaceal_1a101312e0d7d9c69d5e81cbf37f8bfe8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a101312e0d7d9c69d5e81cbf37f8bfe8d" kindref="member">getActionFrameMax</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="namespaceal_1a77f798081a85bf85785a89b14a8e3110" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a77f798081a85bf85785a89b14a8e3110" kindref="member">setPaneString</ref>(<sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">paneName</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">text</ref><sp/>);</highlight></codeline>
+<codeline lineno="52" refid="namespaceal_1ae3933d9583a3a04d3c6fc9c0bb460d32" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae3933d9583a3a04d3c6fc9c0bb460d32" kindref="member">hidePane</ref>(<sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">paneName</ref><sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Layout/alLayoutActor.h"/>
+  </compounddef>
+</doxygen>

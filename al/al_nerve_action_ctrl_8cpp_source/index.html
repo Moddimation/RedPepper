@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alNerveActionCtrl.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-alnerveactionctrlcpp">File alNerveActionCtrl.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_800da44cd95379813241ef8b1979e11a/"><strong>Nerve</strong></a> <strong>&gt;</strong> <a href="../al_nerve_action_ctrl_8cpp/"><strong>alNerveActionCtrl.cpp</strong></a></p>
+<p><a href="../al_nerve_action_ctrl_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;Nerve/alNerveActionCtrl.h&gt;
+#include &lt;Util/alStringUtil.h&gt;
+
+// instruction order (5)
+
+#ifdef NON_MATCHING
+al::NerveAction::NerveAction() : mNextNode( nullptr )
+{
+        alNerveFunction::NerveActionCollector::getCurrentCollector()-&gt;addNerve( this );
+}
+#endif
+
+namespace alNerveFunction
+{
+
+NerveActionCollector* split( NerveActionCollector::sCurrentCollector );
+
+NerveActionCollector::NerveActionCollector()
+    : mNumNodes( 0 ), mStartNode( nullptr ), mEndNode( nullptr )
+{
+        sCurrentCollector = this;
+}
+
+void NerveActionCollector::addNerve( al::NerveAction* nerve )
+{
+        if ( mStartNode == nullptr )
+        {
+                mStartNode = nerve;
+                mEndNode   = nerve;
+        }
+        else
+        {
+                mEndNode-&gt;mNextNode = nerve;
+                mEndNode            = nerve;
+        }
+        mNumNodes++;
+}
+
+} // namespace alNerveFunction
+
+namespace al
+{
+
+NerveActionCtrl::NerveActionCtrl( alNerveFunction::NerveActionCollector* collector )
+    : mNumNerveActions( 0 ), mNerveActions( nullptr )
+{
+        mNumNerveActions = collector-&gt;mNumNodes;
+        mNerveActions    = new NerveAction*[ mNumNerveActions ];
+
+        // uglily copies from linked list to pointer array
+        NerveAction* cur = collector-&gt;mStartNode;
+        int          i   = mNumNerveActions &lt;= 0 ? 0 : mNumNerveActions &amp; 1;
+        if ( i == 1 )
+        {
+                mNerveActions[ 0 ] = cur;
+                cur                = cur-&gt;mNextNode;
+        }
+        if ( i &lt; mNumNerveActions )
+                do
+                {
+                        mNerveActions[ i ]     = cur;
+                        cur                    = cur-&gt;mNextNode;
+                        mNerveActions[ i + 1 ] = cur;
+                        cur                    = cur-&gt;mNextNode;
+                        i += 2;
+                } while ( i &lt; mNumNerveActions );
+}
+
+NerveAction* NerveActionCtrl::findNerve( const char* pName ) const
+{
+        for ( int i = 0; i &lt; mNumNerveActions; i++ )
+        {
+                NerveAction* cur  = mNerveActions[ i ];
+                const char*  name = cur-&gt;getName();
+                if ( isEqualString( name, pName ) )
+                        return cur;
+        }
+        return nullptr;
+}
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

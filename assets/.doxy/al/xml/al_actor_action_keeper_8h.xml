@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_actor_action_keeper_8h" kind="file" language="C++">
+    <compoundname>alActorActionKeeper.h</compoundname>
+    <includedby refid="al_actor_action_keeper_8cpp" local="no">alActorActionKeeper.cpp</includedby>
+    <includedby refid="al_live_actor_function_8cpp" local="no">alLiveActorFunction.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alActorActionKeeper.h</label>
+        <link refid="al_actor_action_keeper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alActorActionKeeper.cpp</label>
+        <link refid="al_actor_action_keeper_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_actor_action_keeper" prot="public">al::ActorActionKeeper</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" prot="public" static="no">
+        <name>AL_LIVEACTOR_REACTION</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>void startHitReaction##TYPE( const LiveActor* actor );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorActionKeeper.h" line="23" column="9" bodyfile="lib/al/include/LiveActor/alActorActionKeeper.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ActionAnimCtrl;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActor;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classal_1_1_actor_action_keeper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_actor_action_keeper" kindref="compound">ActorActionKeeper</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_actor_action_keeper_1a43859c07c057a898ca294548793ba295" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_action_keeper_1a43859c07c057a898ca294548793ba295" kindref="member">_0</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_actor_action_keeper_1ab351d650f133ec85cd34a7914405e20b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_action_keeper_1ab351d650f133ec85cd34a7914405e20b" kindref="member">_4</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_actor_action_keeper_1a2987600f4a671028f647bee4eac09ec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_action_anim_ctrl" kindref="compound">ActionAnimCtrl</ref>*<sp/><ref refid="classal_1_1_actor_action_keeper_1a2987600f4a671028f647bee4eac09ec5" kindref="member">mActionAnimCtrl</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_actor_action_keeper_1aa06458d85c2363e07fd6e01507afbf20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_action_keeper_1aa06458d85c2363e07fd6e01507afbf20" kindref="member">tryStartActionNoAnim</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespaceal_1aaa64b4fa40b99f5bd4cc6588f02cc4e1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aaa64b4fa40b99f5bd4cc6588f02cc4e1" kindref="member">startHitReaction</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AL_LIVEACTOR_REACTION(<sp/>TYPE<sp/>)<sp/>void<sp/>startHitReaction##TYPE(<sp/>const<sp/>LiveActor*<sp/>actor<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Appear<sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Disappear<sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>PressDown<sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Death<sp/>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Hit<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>BlowHit<sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Break<sp/>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Start<sp/>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>End<sp/>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>OnGround<sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="al_actor_action_keeper_8h_1a92c41f76349bd95ed15e79d4b00c191a" kindref="member">AL_LIVEACTOR_REACTION</ref>(<sp/>Get<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>AL_LIVEACTOR_REACTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alActorActionKeeper.h"/>
+  </compounddef>
+</doxygen>

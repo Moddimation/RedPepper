@@ -14,7 +14,7 @@
 
 
 
-Inherits the following classes: al::MapObjActor
+Inherits the following classes: al::MapObjActor,  al::MapObjActor
 
 
 
@@ -53,12 +53,17 @@ Inherits the following classes: al::MapObjActor
 
 | Type | Name |
 | ---: | :--- |
-|   | [**Coin**](#function-coin) (const sead::SafeString & name) <br> |
-| virtual void | [**init**](#function-init) (const al::ActorInitInfo & info) <br> |
-| virtual void | [**initAfterPlacement**](#function-initafterplacement) () <br> |
+|   | [**Coin**](#function-coin-12) (const sead::SafeString & name) <br> |
+|   | [**Coin**](#function-coin-12) (const sead::SafeString & name) <br> |
+| virtual void | [**init**](#function-init-12) (const al::ActorInitInfo & info) <br> |
+| virtual void | [**init**](#function-init-12) (const al::ActorInitInfo & info) <br> |
+| virtual void | [**initAfterPlacement**](#function-initafterplacement-12) () <br> |
+| virtual void | [**initAfterPlacement**](#function-initafterplacement-12) () <br> |
 | virtual void | [**kill**](#function-kill) () <br> |
-| virtual void | [**makeActorAppeared**](#function-makeactorappeared) () <br> |
-| virtual bool | [**receiveMsg**](#function-receivemsg) (u32 msg, al::HitSensor \* other, al::HitSensor \* me) <br> |
+| virtual void | [**makeActorAppeared**](#function-makeactorappeared-12) () <br> |
+| virtual void | [**makeActorAppeared**](#function-makeactorappeared-12) () <br> |
+| virtual bool | [**receiveMsg**](#function-receivemsg-12) (u32 msg, al::HitSensor \* other, al::HitSensor \* me) <br> |
+| virtual bool | [**receiveMsg**](#function-receivemsg-12) (u32 msg, al::HitSensor \* other, al::HitSensor \* me) <br> |
 | virtual void | [**v24**](#function-v24) () <br> |
 | virtual void | [**v25**](#function-v25) () <br> |
 | virtual void | [**v26**](#function-v26) () <br> |
@@ -95,7 +100,7 @@ Inherits the following classes: al::MapObjActor
 
 
 
-### function Coin 
+### function Coin [1/2]
 
 ```C++
 Coin::Coin (
@@ -110,7 +115,22 @@ Coin::Coin (
 
 
 
-### function init 
+### function Coin [1/2]
+
+```C++
+Coin::Coin (
+    const sead::SafeString & name
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function init [1/2]
 
 ```C++
 virtual void Coin::init (
@@ -125,7 +145,35 @@ virtual void Coin::init (
 
 
 
-### function initAfterPlacement 
+### function init [1/2]
+
+```C++
+virtual void Coin::init (
+    const al::ActorInitInfo & info
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function initAfterPlacement [1/2]
+
+```C++
+virtual void Coin::initAfterPlacement () 
+```
+
+
+
+
+<hr>
+
+
+
+### function initAfterPlacement [1/2]
 
 ```C++
 virtual void Coin::initAfterPlacement () 
@@ -151,7 +199,7 @@ virtual void Coin::kill ()
 
 
 
-### function makeActorAppeared 
+### function makeActorAppeared [1/2]
 
 ```C++
 virtual void Coin::makeActorAppeared () 
@@ -164,7 +212,37 @@ virtual void Coin::makeActorAppeared ()
 
 
 
-### function receiveMsg 
+### function makeActorAppeared [1/2]
+
+```C++
+virtual void Coin::makeActorAppeared () 
+```
+
+
+
+
+<hr>
+
+
+
+### function receiveMsg [1/2]
+
+```C++
+virtual bool Coin::receiveMsg (
+    u32 msg,
+    al::HitSensor * other,
+    al::HitSensor * me
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function receiveMsg [1/2]
 
 ```C++
 virtual bool Coin::receiveMsg (

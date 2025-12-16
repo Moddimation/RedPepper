@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_byaml_string_table_iter" kind="class" language="C++" prot="public">
+    <compoundname>al::ByamlStringTableIter</compoundname>
+    <includes refid="al_byaml_string_table_iter_8h" local="no">alByamlStringTableIter.h</includes>
+    <innerclass refid="structal_1_1_byaml_string_table_iter_1_1_header" prot="private">al::ByamlStringTableIter::Header</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classal_1_1_byaml_string_table_iter_1aa68dd2456b90cbddcc9890039bc7ec3d" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref> *</type>
+        <definition>const u8* al::ByamlStringTableIter::mData</definition>
+        <argsstring></argsstring>
+        <name>mData</name>
+        <qualifiedname>al::ByamlStringTableIter::mData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="19" column="30" bodyfile="lib/al/include/Yaml/alByamlStringTableIter.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_string_table_iter_1a715c02156d3ab321ed45708f2c0c3855" compoundref="al_byaml_string_table_iter_8cpp" startline="7" endline="29">findStringIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_byaml_string_table_iter_1ad517c7b59471f5068d3868f61bd68aff" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">uintptr_t</ref></type>
+        <definition>uintptr_t al::ByamlStringTableIter::mDataPtr</definition>
+        <argsstring></argsstring>
+        <name>mDataPtr</name>
+        <qualifiedname>al::ByamlStringTableIter::mDataPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="20" column="31" bodyfile="lib/al/include/Yaml/alByamlStringTableIter.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_string_table_iter_1a111be148b26446faa569b0c7e4bcb7ff" compoundref="al_byaml_string_table_iter_8h" startline="29" endline="32">getAddressTable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_byaml_string_table_iter_1a3dcd5c65f69ec9a85977e5d1b822be52" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="structal_1_1_byaml_string_table_iter_1_1_header" kindref="compound">Header</ref> *</type>
+        <definition>const Header* al::ByamlStringTableIter::mHeader</definition>
+        <argsstring></argsstring>
+        <name>mHeader</name>
+        <qualifiedname>al::ByamlStringTableIter::mHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="21" column="30" bodyfile="lib/al/include/Yaml/alByamlStringTableIter.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_string_table_iter_1a715c02156d3ab321ed45708f2c0c3855" compoundref="al_byaml_string_table_iter_8cpp" startline="7" endline="29">findStringIndex</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_byaml_string_table_iter_1a8229f3d16aaaa89d41008d265d9f82f9" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">union</ref> <ref refid="classal_1_1_byaml_string_table_iter" kindref="compound">al::ByamlStringTableIter</ref></type>
+        <definition>union al::ByamlStringTableIter al::ByamlStringTableIter</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>al::ByamlStringTableIter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="22" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_byaml_string_table_iter_1a1fa6436decd6be95fba9b251f2f9a54a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>al::ByamlStringTableIter::ByamlStringTableIter</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ByamlStringTableIter</name>
+        <qualifiedname>al::ByamlStringTableIter::ByamlStringTableIter</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="25" column="9" bodyfile="lib/al/include/Yaml/alByamlStringTableIter.h" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_string_table_iter_1a111be148b26446faa569b0c7e4bcb7ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref> *</type>
+        <definition>const u32 * al::ByamlStringTableIter::getAddressTable</definition>
+        <argsstring>() const</argsstring>
+        <name>getAddressTable</name>
+        <qualifiedname>al::ByamlStringTableIter::getAddressTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="29" column="19" bodyfile="lib/al/include/Yaml/alByamlStringTableIter.h" bodystart="29" bodyend="32"/>
+        <references refid="classal_1_1_byaml_string_table_iter_1ad517c7b59471f5068d3868f61bd68aff" compoundref="al_byaml_string_table_iter_8h" startline="20">mDataPtr</references>
+        <referencedby refid="classal_1_1_byaml_string_table_iter_1a715c02156d3ab321ed45708f2c0c3855" compoundref="al_byaml_string_table_iter_8cpp" startline="7" endline="29">findStringIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_string_table_iter_1a715c02156d3ab321ed45708f2c0c3855" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        <definition>int al::ByamlStringTableIter::findStringIndex</definition>
+        <argsstring>(const char *str) const</argsstring>
+        <name>findStringIndex</name>
+        <qualifiedname>al::ByamlStringTableIter::findStringIndex</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="34" column="13" bodyfile="lib/al/src/Yaml/alByamlStringTableIter.cpp" bodystart="7" bodyend="29"/>
+        <references refid="classal_1_1_byaml_string_table_iter_1a111be148b26446faa569b0c7e4bcb7ff" compoundref="al_byaml_string_table_iter_8h" startline="29" endline="32">getAddressTable</references>
+        <references refid="classal_1_1_byaml_string_table_iter_1aa68dd2456b90cbddcc9890039bc7ec3d" compoundref="al_byaml_string_table_iter_8h" startline="19">mData</references>
+        <references refid="classal_1_1_byaml_string_table_iter_1a3dcd5c65f69ec9a85977e5d1b822be52" compoundref="al_byaml_string_table_iter_8h" startline="21">mHeader</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::ByamlStringTableIter</label>
+        <link refid="classal_1_1_byaml_string_table_iter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ByamlStringTableIter::Header</label>
+        <link refid="structal_1_1_byaml_string_table_iter_1_1_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Yaml/alByamlStringTableIter.h" line="8" column="1" bodyfile="lib/al/include/Yaml/alByamlStringTableIter.h" bodystart="9" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classal_1_1_byaml_string_table_iter_1a1fa6436decd6be95fba9b251f2f9a54a" prot="public" virt="non-virtual"><scope>al::ByamlStringTableIter</scope><name>ByamlStringTableIter</name></member>
+      <member refid="classal_1_1_byaml_string_table_iter_1a715c02156d3ab321ed45708f2c0c3855" prot="public" virt="non-virtual"><scope>al::ByamlStringTableIter</scope><name>findStringIndex</name></member>
+      <member refid="classal_1_1_byaml_string_table_iter_1a111be148b26446faa569b0c7e4bcb7ff" prot="public" virt="non-virtual"><scope>al::ByamlStringTableIter</scope><name>getAddressTable</name></member>
+      <member refid="classal_1_1_byaml_string_table_iter_1aa68dd2456b90cbddcc9890039bc7ec3d" prot="public" virt="non-virtual"><scope>al::ByamlStringTableIter</scope><name>mData</name></member>
+      <member refid="classal_1_1_byaml_string_table_iter_1ad517c7b59471f5068d3868f61bd68aff" prot="public" virt="non-virtual"><scope>al::ByamlStringTableIter</scope><name>mDataPtr</name></member>
+      <member refid="classal_1_1_byaml_string_table_iter_1a3dcd5c65f69ec9a85977e5d1b822be52" prot="public" virt="non-virtual"><scope>al::ByamlStringTableIter</scope><name>mHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

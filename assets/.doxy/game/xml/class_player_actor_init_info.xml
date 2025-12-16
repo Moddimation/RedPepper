@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_player_actor_init_info" kind="class" language="C++" prot="public">
+    <compoundname>PlayerActorInitInfo</compoundname>
+    <includes refid="_player_actor_init_info_8h" local="no">PlayerActorInitInfo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_actor_init_info_1aec74a650c86725b8fd3ada2a4de032c4" prot="private" static="no" mutable="no">
+        <type>const <ref refid="struct_player_model_info" kindref="compound">PlayerModelInfo</ref> *</type>
+        <definition>const PlayerModelInfo* PlayerActorInitInfo::mModelInfo</definition>
+        <argsstring></argsstring>
+        <name>mModelInfo</name>
+        <qualifiedname>PlayerActorInitInfo::mModelInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActorInitInfo.h" line="25" column="31" bodyfile="Game/include/Player/PlayerActorInitInfo.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_actor_init_info_1a84239313d3d3b27e608eb80793bf68a4" prot="private" static="no" mutable="no">
+        <type>const <ref refid="struct_player_anim_info" kindref="compound">PlayerAnimInfo</ref> *</type>
+        <definition>const PlayerAnimInfo* PlayerActorInitInfo::mAnimInfo</definition>
+        <argsstring></argsstring>
+        <name>mAnimInfo</name>
+        <qualifiedname>PlayerActorInitInfo::mAnimInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActorInitInfo.h" line="26" column="31" bodyfile="Game/include/Player/PlayerActorInitInfo.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_actor_init_info_1a3c5b0f78b90f3e8a6651085731f37eed" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* PlayerActorInitInfo::_8</definition>
+        <argsstring></argsstring>
+        <name>_8</name>
+        <qualifiedname>PlayerActorInitInfo::_8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActorInitInfo.h" line="27" column="31" bodyfile="Game/include/Player/PlayerActorInitInfo.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_actor_init_info_1a759944dbaf85020144a7137b1ea98be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlayerActorInitInfo::PlayerActorInitInfo</definition>
+        <argsstring>()</argsstring>
+        <name>PlayerActorInitInfo</name>
+        <qualifiedname>PlayerActorInitInfo::PlayerActorInitInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActorInitInfo.h" line="30" column="9" bodyfile="Game/src/Player/PlayerActorInitInfo.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PlayerActorInitInfo</label>
+        <link refid="class_player_actor_init_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mModelInfo</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mAnimInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PlayerAnimInfo</label>
+        <link refid="struct_player_anim_info"/>
+      </node>
+      <node id="2">
+        <label>PlayerModelInfo</label>
+        <link refid="struct_player_model_info"/>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Player/PlayerActorInitInfo.h" line="23" column="1" bodyfile="Game/include/Player/PlayerActorInitInfo.h" bodystart="24" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_player_actor_init_info_1a3c5b0f78b90f3e8a6651085731f37eed" prot="private" virt="non-virtual"><scope>PlayerActorInitInfo</scope><name>_8</name></member>
+      <member refid="class_player_actor_init_info_1a84239313d3d3b27e608eb80793bf68a4" prot="private" virt="non-virtual"><scope>PlayerActorInitInfo</scope><name>mAnimInfo</name></member>
+      <member refid="class_player_actor_init_info_1aec74a650c86725b8fd3ada2a4de032c4" prot="private" virt="non-virtual"><scope>PlayerActorInitInfo</scope><name>mModelInfo</name></member>
+      <member refid="class_player_actor_init_info_1a759944dbaf85020144a7137b1ea98be7" prot="public" virt="non-virtual"><scope>PlayerActorInitInfo</scope><name>PlayerActorInitInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

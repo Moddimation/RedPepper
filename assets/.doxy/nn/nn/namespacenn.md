@@ -43,8 +43,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| struct | [**Handle**](structnn_1_1Handle.md) <br> |
-| class | [**Result**](classnn_1_1Result.md) <br> |
+| struct | [**Handle**](structnn_1_1_handle.md) <br> |
+| class | [**Result**](classnn_1_1_result.md) <br> |
 
 
 

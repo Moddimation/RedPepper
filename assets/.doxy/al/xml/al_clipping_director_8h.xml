@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_clipping_director_8h" kind="file" language="C++">
+    <compoundname>alClippingDirector.h</compoundname>
+    <includes refid="al_execute_director_8h" local="no">Execute/alExecuteDirector.h</includes>
+    <includedby refid="al_live_actor_function_8cpp" local="no">alLiveActorFunction.cpp</includedby>
+    <includedby refid="al_live_actor_kit_8cpp" local="no">alLiveActorKit.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alClippingDirector.h</label>
+        <link refid="al_clipping_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Execute/alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alClippingDirector.h</label>
+        <link refid="al_clipping_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_clipping_director" prot="public">al::ClippingDirector</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_execute_director_8h" kindref="compound">Execute/alExecuteDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ClippingActorHolder;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_clipping_director" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_clipping_director" kindref="compound">ClippingDirector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_executor" kindref="compound">IUseExecutor</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_clipping_director_1a7fec450e92d930f4598c38d2ed062378" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_director_1a7fec450e92d930f4598c38d2ed062378" kindref="member">_4</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_clipping_director_1a474685511dda384a2f748ba71767b22e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_actor_holder" kindref="compound">ClippingActorHolder</ref>*<sp/><ref refid="classal_1_1_clipping_director_1a474685511dda384a2f748ba71767b22e" kindref="member">mClippingActorHolder</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_clipping_director_1a79d348f10a477744cfdedeb8a90edcd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_director_1a79d348f10a477744cfdedeb8a90edcd5" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_clipping_director_1a73b3f8371c26ec3b5420b342e9740cee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_director_1a73b3f8371c26ec3b5420b342e9740cee" kindref="member">_10</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_clipping_director_1a9662dedfc0c10421c4c60a18dd6c3240" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_clipping_director_1a9662dedfc0c10421c4c60a18dd6c3240" kindref="member">endInit</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_actor_holder" kindref="compound">ClippingActorHolder</ref>*<sp/><ref refid="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" kindref="member">getClippingActorHolder</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_clipping_director_1a474685511dda384a2f748ba71767b22e" kindref="member">mClippingActorHolder</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_clipping_director_1ac32279e53a8e01953fb3a07c96218c5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_clipping_director_1ac32279e53a8e01953fb3a07c96218c5c" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_clipping_director_1a706c86e98afc4a6bca66954732e7f183" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_clipping_director_1a706c86e98afc4a6bca66954732e7f183" kindref="member">ClippingDirector</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Clipping/alClippingDirector.h"/>
+  </compounddef>
+</doxygen>

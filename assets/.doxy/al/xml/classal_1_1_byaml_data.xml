@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_byaml_data" kind="class" language="C++" prot="public">
+    <compoundname>al::ByamlData</compoundname>
+    <includes refid="al_byaml_data_8h" local="no">alByamlData.h</includes>
+    <innerclass refid="unional_1_1_byaml_data_1_1_value" prot="private">al::ByamlData::Value</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_byaml_data_1a86931c8c4326ac7eb12af603277e5bd0" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">union</ref> <ref refid="unional_1_1_byaml_data_1_1_value" kindref="compound">al::ByamlData::Value</ref></type>
+        <definition>union al::ByamlData::Value al::ByamlData::mValue</definition>
+        <argsstring></argsstring>
+        <name>mValue</name>
+        <qualifiedname>al::ByamlData::mValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlData.h" line="27" column="16"/>
+        <referencedby refid="classal_1_1_byaml_data_1aefd4857767f597b7203f16c2ab461f8e" compoundref="al_byaml_data_8h" startline="42" endline="45">getFloatValue</referencedby>
+        <referencedby refid="classal_1_1_byaml_data_1afb22bc771f283d3b81e9f80eeae32be5" compoundref="al_byaml_data_8h" startline="37" endline="40">getIntValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_byaml_data_1a61739218989ebe72e29e8b143d9e469d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43" kindref="member">ByamlDataType</ref></type>
+        <definition>ByamlDataType al::ByamlData::mType</definition>
+        <argsstring></argsstring>
+        <name>mType</name>
+        <qualifiedname>al::ByamlData::mType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlData.h" line="29" column="23" bodyfile="lib/al/include/Yaml/alByamlData.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_data_1ac9fb37b52357fb3a4baa075d3c08de62" compoundref="al_byaml_data_8h" startline="32" endline="35">getType</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_byaml_data_1ac9fb37b52357fb3a4baa075d3c08de62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43" kindref="member">ByamlDataType</ref></type>
+        <definition>ByamlDataType al::ByamlData::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <qualifiedname>al::ByamlData::getType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlData.h" line="32" column="23" bodyfile="lib/al/include/Yaml/alByamlData.h" bodystart="32" bodyend="35"/>
+        <references refid="classal_1_1_byaml_data_1a61739218989ebe72e29e8b143d9e469d" compoundref="al_byaml_data_8h" startline="29">mType</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_data_1afb22bc771f283d3b81e9f80eeae32be5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        <definition>int al::ByamlData::getIntValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getIntValue</name>
+        <qualifiedname>al::ByamlData::getIntValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlData.h" line="37" column="13" bodyfile="lib/al/include/Yaml/alByamlData.h" bodystart="37" bodyend="40"/>
+        <references refid="classal_1_1_byaml_data_1a86931c8c4326ac7eb12af603277e5bd0">mValue</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_data_1aefd4857767f597b7203f16c2ab461f8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">float</ref></type>
+        <definition>float al::ByamlData::getFloatValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getFloatValue</name>
+        <qualifiedname>al::ByamlData::getFloatValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlData.h" line="42" column="15" bodyfile="lib/al/include/Yaml/alByamlData.h" bodystart="42" bodyend="45"/>
+        <references refid="classal_1_1_byaml_data_1a86931c8c4326ac7eb12af603277e5bd0">mValue</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::ByamlData</label>
+        <link refid="classal_1_1_byaml_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ByamlData::Value</label>
+        <link refid="unional_1_1_byaml_data_1_1_value"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Yaml/alByamlData.h" line="20" column="1" bodyfile="lib/al/include/Yaml/alByamlData.h" bodystart="21" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classal_1_1_byaml_data_1aefd4857767f597b7203f16c2ab461f8e" prot="public" virt="non-virtual"><scope>al::ByamlData</scope><name>getFloatValue</name></member>
+      <member refid="classal_1_1_byaml_data_1afb22bc771f283d3b81e9f80eeae32be5" prot="public" virt="non-virtual"><scope>al::ByamlData</scope><name>getIntValue</name></member>
+      <member refid="classal_1_1_byaml_data_1ac9fb37b52357fb3a4baa075d3c08de62" prot="public" virt="non-virtual"><scope>al::ByamlData</scope><name>getType</name></member>
+      <member refid="classal_1_1_byaml_data_1a61739218989ebe72e29e8b143d9e469d" prot="private" virt="non-virtual"><scope>al::ByamlData</scope><name>mType</name></member>
+      <member refid="classal_1_1_byaml_data_1a86931c8c4326ac7eb12af603277e5bd0" prot="private" virt="non-virtual"><scope>al::ByamlData</scope><name>mValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

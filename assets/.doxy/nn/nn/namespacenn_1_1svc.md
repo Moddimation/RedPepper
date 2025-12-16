@@ -35,10 +35,10 @@
 
 | Type | Name |
 | ---: | :--- |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) u32 | [**addr0**](#variable-addr0)  <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) u32 u32 | [**addr1**](#variable-addr1)  <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) u32 u32 u32 u32 | [**op**](#variable-op)  <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) u32 u32 u32 | [**size**](#variable-size)  <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) [**u32**](types_8h.md#typedef-u32) | [**addr0**](#variable-addr0)  <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) [**u32**](types_8h.md#typedef-u32) [**u32**](types_8h.md#typedef-u32) | [**addr1**](#variable-addr1)  <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) [**u32**](types_8h.md#typedef-u32) [**u32**](types_8h.md#typedef-u32) [**u32**](types_8h.md#typedef-u32) [**u32**](types_8h.md#typedef-u32) | [**op**](#variable-op)  <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) [**u32**](types_8h.md#typedef-u32) [**u32**](types_8h.md#typedef-u32) [**u32**](types_8h.md#typedef-u32) | [**size**](#variable-size)  <br> |
 
 
 
@@ -59,24 +59,24 @@
 
 | Type | Name |
 | ---: | :--- |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**ArbitrateAddress**](#function-arbitrateaddress) ([**nn::Handle**](structnn_1_1Handle.md) arbiter, uintptr\_t addr, nn::os::ArbitrationType type, s32 value, s64 ns) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**Break**](#function-break) (nn::dbg::BreakReason reason) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**CloseHandle**](#function-closehandle) ([**nn::Handle**](structnn_1_1Handle.md) handle) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**ConnectToPort**](#function-connecttoport) ([**nn::Handle**](structnn_1_1Handle.md) \* port, const char \* portName) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**ControlMemory**](#function-controlmemory) (u32 \* addr, u32 addr0, u32 addr1, u32 size, u32 op, u32 perms) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**CreateAddressArbiter**](#function-createaddressarbiter) ([**nn::Handle**](structnn_1_1Handle.md) \* arbiter) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**CreateEvent**](#function-createevent) ([**nn::Handle**](structnn_1_1Handle.md) \* event, nn::os::ResetType type) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**CreateMemoryBlock**](#function-creatememoryblock) ([**nn::Handle**](structnn_1_1Handle.md) \* memblock, u32 addr, u32 size, u32 myperms, u32 otherperms) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**CreateMutex**](#function-createmutex) ([**nn::Handle**](structnn_1_1Handle.md) \* mutex, bool initialLocked) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**DuplicateHandle**](#function-duplicatehandle) ([**nn::Handle**](structnn_1_1Handle.md) \* out, [**nn::Handle**](structnn_1_1Handle.md) original) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**ArbitrateAddress**](#function-arbitrateaddress) ([**nn::Handle**](structnn_1_1_handle.md) arbiter, [**uintptr\_t**](types_8h.md#typedef-uintptr_t) addr, [**nn::os::ArbitrationType**](namespacenn_1_1os.md#enum-arbitrationtype) type, [**s32**](types_8h.md#typedef-s32) value, [**s64**](types_8h.md#typedef-s64) ns) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**Break**](#function-break) ([**nn::dbg::BreakReason**](namespacenn_1_1dbg.md#enum-breakreason) reason) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**CloseHandle**](#function-closehandle) ([**nn::Handle**](structnn_1_1_handle.md) handle) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**ConnectToPort**](#function-connecttoport) ([**nn::Handle**](structnn_1_1_handle.md) \* port, const char \* portName) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**ControlMemory**](#function-controlmemory) ([**u32**](types_8h.md#typedef-u32) \* addr, [**u32**](types_8h.md#typedef-u32) addr0, [**u32**](types_8h.md#typedef-u32) addr1, [**u32**](types_8h.md#typedef-u32) size, [**u32**](types_8h.md#typedef-u32) op, [**u32**](types_8h.md#typedef-u32) perms) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**CreateAddressArbiter**](#function-createaddressarbiter) ([**nn::Handle**](structnn_1_1_handle.md) \* arbiter) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**CreateEvent**](#function-createevent) ([**nn::Handle**](structnn_1_1_handle.md) \* event, [**nn::os::ResetType**](namespacenn_1_1os.md#enum-resettype) type) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**CreateMemoryBlock**](#function-creatememoryblock) ([**nn::Handle**](structnn_1_1_handle.md) \* memblock, [**u32**](types_8h.md#typedef-u32) addr, [**u32**](types_8h.md#typedef-u32) size, [**u32**](types_8h.md#typedef-u32) myperms, [**u32**](types_8h.md#typedef-u32) otherperms) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**CreateMutex**](#function-createmutex) ([**nn::Handle**](structnn_1_1_handle.md) \* mutex, bool initialLocked) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**DuplicateHandle**](#function-duplicatehandle) ([**nn::Handle**](structnn_1_1_handle.md) \* out, [**nn::Handle**](structnn_1_1_handle.md) original) <br> |
 |  \_\_asm void | [**ExitProcess**](#function-exitprocess) () <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**GetProcessId**](#function-getprocessid) (unsigned int \* id, [**nn::Handle**](structnn_1_1Handle.md) handle) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**GetResourceLimit**](#function-getresourcelimit) ([**Handle**](structnn_1_1Handle.md) \* resourceLimit, [**nn::Handle**](structnn_1_1Handle.md) handle) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**GetThreadId**](#function-getthreadid) (unsigned int \* id, [**nn::Handle**](structnn_1_1Handle.md) handle) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**GetThreadPriority**](#function-getthreadpriority) (s32 \* prio, [**nn::Handle**](structnn_1_1Handle.md) thread) <br> |
-|  \_\_asm void | [**SleepThread**](#function-sleepthread) (u64 nanos) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**WaitSynchronizationN**](#function-waitsynchronizationn) (int \* out, const [**nn::Handle**](structnn_1_1Handle.md) \* handles, s32 handleCount, bool waitAll, s64 timeout\_ns) <br> |
-|  \_\_asm [**nn::Result**](classnn_1_1Result.md) | [**\_\_attribute\_\_**](#function-__attribute__) ((section("i.\_ZN2nn3svc13ControlMemoryEPjjjjjj"))) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**GetProcessId**](#function-getprocessid) (unsigned int \* id, [**nn::Handle**](structnn_1_1_handle.md) handle) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**GetResourceLimit**](#function-getresourcelimit) ([**Handle**](structnn_1_1_handle.md) \* resourceLimit, [**nn::Handle**](structnn_1_1_handle.md) handle) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**GetThreadId**](#function-getthreadid) (unsigned int \* id, [**nn::Handle**](structnn_1_1_handle.md) handle) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**GetThreadPriority**](#function-getthreadpriority) ([**s32**](types_8h.md#typedef-s32) \* prio, [**nn::Handle**](structnn_1_1_handle.md) thread) <br> |
+|  \_\_asm void | [**SleepThread**](#function-sleepthread) ([**u64**](types_8h.md#typedef-u64) nanos) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**WaitSynchronizationN**](#function-waitsynchronizationn) (int \* out, const [**nn::Handle**](structnn_1_1_handle.md) \* handles, [**s32**](types_8h.md#typedef-s32) handleCount, bool waitAll, [**s64**](types_8h.md#typedef-s64) timeout\_ns) <br> |
+|  \_\_asm [**nn::Result**](classnn_1_1_result.md) | [**\_\_attribute\_\_**](#function-__attribute__) ((section("i.\_ZN2nn3svc13ControlMemoryEPjjjjjj"))) <br> |
 
 
 

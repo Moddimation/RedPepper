@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadAtomic.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-seadatomich">File seadAtomic.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_f6d5c8d1d4c60cd689fcf859a6687fb0/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_7decd9aa268b6db69560826d30024d61/"><strong>thread</strong></a> <strong>&gt;</strong> <a href="../sead_atomic_8h/"><strong>seadAtomic.h</strong></a></p>
+<p><a href="../sead_atomic_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;basis/seadTypes.h&gt;
+#ifdef NNSDK
+#include &lt;atomic&gt;
+#endif
+
+namespace sead {
+struct AtomicDirectInitTag {};
+
+template &lt;class T&gt;
+struct AtomicBase {
+public:
+    AtomicBase(T value);  // NOLINT(google-explicit-constructor)
+    AtomicBase(AtomicDirectInitTag, T value);
+
+    AtomicBase(const AtomicBase&amp; rhs) { *this = rhs; }
+
+    operator T() const { return load(); }
+
+    AtomicBase&amp; operator=(const AtomicBase&amp; rhs) {
+        store(rhs.load());
+        return *this;
+    }
+
+    AtomicBase&amp; operator=(T value) {
+        store(value);
+        return *this;
+    }
+
+    T load() const;
+    void store(T value);
+    void storeNonAtomic(T value);
+    T exchange(T value);
+    bool compareExchange(T expected, T desired, T* original = nullptr);
+
+protected:
+#ifdef NNSDK
+    // Nintendo appears to have manually implemented atomics with volatile and platform specific
+    // intrinsics (e.g. __builtin_arm_ldrex).
+    // For ease of implementation and portability, we will use std::atomic and cast to volatile
+    // when necessary. That is formally undefined behavior, but it should be safe because
+    // sead is built with -fno-strict-aliasing and because of the following static assertions.
+    std::atomic&lt;T&gt; mValue;
+    static_assert(sizeof(mValue) == sizeof(T),
+                  &quot;std::atomic&lt;T&gt; and T do not have the same size; unsupported case&quot;);
+    static_assert(alignof(decltype(mValue)) == alignof(volatile T),
+                  &quot;std::atomic&lt;T&gt; and T do not have the same alignment; unsupported case&quot;);
+    static_assert(std::atomic&lt;T&gt;::is_always_lock_free,
+                  &quot;std::atomic&lt;T&gt;::is_always_lock_free is not true; unsupported case&quot;);
+
+    const volatile T* getValuePtr() const { return reinterpret_cast&lt;const volatile T*&gt;(&amp;mValue); }
+
+    volatile T* getValuePtr() { return reinterpret_cast&lt;volatile T*&gt;(&amp;mValue); }
+
+#endif
+};
+
+template &lt;class T&gt;
+struct Atomic : AtomicBase&lt;T&gt; {
+    T fetchAdd(T x);
+    T fetchSub(T x);
+    T fetchAnd(T x);
+    T fetchOr(T x);
+    T fetchXor(T x);
+
+    T increment() { return fetchAdd(1); }
+
+    T decrement() { return fetchSub(1); }
+
+    bool isBitOn(unsigned int bit) const;
+    bool setBitOn(unsigned int bit);
+    bool setBitOff(unsigned int bit);
+
+    T operator+=(T x) { return fetchAdd(x); }
+
+    T operator-=(T x) { return fetchSub(x); }
+
+    T operator&amp;=(T x) { return fetchAnd(x); }
+
+    T operator|=(T x) { return fetchOr(x); }
+
+    T operator^=(T x) { return fetchXor(x); }
+
+    T operator++() { return fetchAdd(1) + 1; }
+
+    T operator++(int) { return fetchAdd(1); }
+
+    T operator--() { return fetchSub(1) - 1; }
+
+    T operator--(int) { return fetchSub(1); }
+};
+
+template &lt;class T&gt;
+struct Atomic&lt;T*&gt; : AtomicBase&lt;T*&gt; {
+    T&amp; operator*() const { return *this-&gt;load(); }
+
+    T* operator-&gt;() const { return this-&gt;load(); }
+};
+
+// Implementation.
+
+#ifdef NNSDK
+template &lt;class T&gt;
+inline AtomicBase&lt;T&gt;::AtomicBase(T value) {
+    storeNonAtomic(value);
+}
+
+template &lt;class T&gt;
+inline AtomicBase&lt;T&gt;::AtomicBase(AtomicDirectInitTag, T value) : mValue(value) {}
+
+template &lt;class T&gt;
+inline T AtomicBase&lt;T&gt;::load() const {
+#ifdef MATCHING_HACK_NX_CLANG
+    // Using std::atomic&lt;T&gt;::load prevents LLVM from folding ldr+sext into ldrsw.
+    return *getValuePtr();
+#else
+    return mValue.load(std::memory_order_relaxed);
+#endif
+}
+
+template &lt;class T&gt;
+inline void AtomicBase&lt;T&gt;::store(T value) {
+    mValue.store(value, std::memory_order_relaxed);
+}
+
+template &lt;class T&gt;
+inline void AtomicBase&lt;T&gt;::storeNonAtomic(T value) {
+    *getValuePtr() = value;
+}
+
+template &lt;class T&gt;
+inline T AtomicBase&lt;T&gt;::exchange(T value) {
+    return mValue.exchange(value, std::memory_order_relaxed);
+}
+
+template &lt;class T&gt;
+inline bool AtomicBase&lt;T&gt;::compareExchange(T expected, T desired, T* original) {
+#ifdef MATCHING_HACK_NX_CLANG
+    // Unlike Clang (https://reviews.llvm.org/D13033), Nintendo's implementation does not use clrex.
+    do {
+        T value = __builtin_arm_ldrex(getValuePtr());
+        if (value != expected) {
+            if (original)
+                *original = value;
+            return false;
+        }
+    } while (__builtin_arm_strex(desired, getValuePtr()));
+    return true;
+#else
+    T value = expected;
+    if (mValue.compare_exchange_strong(value, desired, std::memory_order_relaxed))
+        return true;
+    if (original)
+        *original = value;
+    return false;
+#endif
+}
+
+#ifdef MATCHING_HACK_NX_CLANG
+namespace detail {
+// To match Nintendo's implementation of atomics.
+template &lt;typename T, typename F&gt;
+inline T atomicReadModifyWrite(volatile T* value_ptr, F op) {
+    T value;
+    do {
+        value = __builtin_arm_ldrex(value_ptr);
+    } while (__builtin_arm_strex(op(value), value_ptr));
+    return value;
+}
+}  // namespace detail
+#endif
+
+template &lt;class T&gt;
+inline T Atomic&lt;T&gt;::fetchAdd(T x) {
+#ifdef MATCHING_HACK_NX_CLANG
+    return detail::atomicReadModifyWrite(this-&gt;getValuePtr(), [&amp;](T val) { return val + x; });
+#else
+    return this-&gt;mValue.fetch_add(x, std::memory_order_relaxed);
+#endif
+}
+
+template &lt;class T&gt;
+inline T Atomic&lt;T&gt;::fetchSub(T x) {
+#ifdef MATCHING_HACK_NX_CLANG
+    return detail::atomicReadModifyWrite(this-&gt;getValuePtr(), [&amp;](T val) { return val - x; });
+#else
+    return this-&gt;mValue.fetch_sub(x, std::memory_order_relaxed);
+#endif
+}
+
+template &lt;class T&gt;
+inline T Atomic&lt;T&gt;::fetchAnd(T x) {
+#ifdef MATCHING_HACK_NX_CLANG
+    return detail::atomicReadModifyWrite(this-&gt;getValuePtr(), [&amp;](T val) { return val &amp; x; });
+#else
+    return this-&gt;mValue.fetch_and(x, std::memory_order_relaxed);
+#endif
+}
+
+template &lt;class T&gt;
+inline T Atomic&lt;T&gt;::fetchOr(T x) {
+#ifdef MATCHING_HACK_NX_CLANG
+    return detail::atomicReadModifyWrite(this-&gt;getValuePtr(), [&amp;](T val) { return val | x; });
+#else
+    return this-&gt;mValue.fetch_or(x, std::memory_order_relaxed);
+#endif
+}
+
+template &lt;class T&gt;
+inline T Atomic&lt;T&gt;::fetchXor(T x) {
+#ifdef MATCHING_HACK_NX_CLANG
+    return detail::atomicReadModifyWrite(this-&gt;getValuePtr(), [&amp;](T val) { return val ^ x; });
+#else
+    return this-&gt;mValue.fetch_xor(x, std::memory_order_relaxed);
+#endif
+}
+
+template &lt;class T&gt;
+bool Atomic&lt;T&gt;::isBitOn(unsigned int bit) const {
+    return (this-&gt;load() &amp; (1 &lt;&lt; bit)) != 0;
+}
+
+template &lt;class T&gt;
+bool Atomic&lt;T&gt;::setBitOn(unsigned int bit) {
+#ifdef MATCHING_HACK_NX_CLANG
+    const auto old = detail::atomicReadModifyWrite(this-&gt;getValuePtr(),
+                                                   [bit](T val) { return val | (1 &lt;&lt; bit); });
+#else
+    const auto old = this-&gt;mValue.fetch_or(1 &lt;&lt; bit, std::memory_order_relaxed);
+#endif
+    return (old &amp; (1 &lt;&lt; bit)) == 0;
+}
+
+template &lt;class T&gt;
+bool Atomic&lt;T&gt;::setBitOff(unsigned int bit) {
+#ifdef MATCHING_HACK_NX_CLANG
+    const auto old = detail::atomicReadModifyWrite(this-&gt;getValuePtr(),
+                                                   [bit](T val) { return val &amp; ~(1 &lt;&lt; bit); });
+#else
+    const auto old = this-&gt;mValue.fetch_and(~(1 &lt;&lt; bit), std::memory_order_relaxed);
+#endif
+    return (old &amp; (1 &lt;&lt; bit)) != 0;
+}
+#else  // NNSDK
+// #error &quot;Unknown platform&quot;
+#endif
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

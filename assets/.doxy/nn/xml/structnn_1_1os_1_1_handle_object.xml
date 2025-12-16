@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structnn_1_1os_1_1_handle_object" kind="struct" language="C++" prot="public">
+    <compoundname>nn::os::HandleObject</compoundname>
+    <derivedcompoundref refid="classnn_1_1os_1_1_wait_object" prot="private" virt="non-virtual">nn::os::WaitObject</derivedcompoundref>
+    <includes refid="os___handle_object_8h" local="no">os_HandleObject.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnn_1_1os_1_1_handle_object_1af67b3008356477c8060389469c563af3" prot="public" static="no" mutable="no">
+        <type><ref refid="structnn_1_1_handle" kindref="compound">Handle</ref></type>
+        <definition>Handle nn::os::HandleObject::m_Handle</definition>
+        <argsstring></argsstring>
+        <name>m_Handle</name>
+        <qualifiedname>nn::os::HandleObject::m_Handle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/CTRSDK/include/nn/os/os_HandleObject.h" line="8" column="16" bodyfile="lib/CTRSDK/include/nn/os/os_HandleObject.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>nn::hid::CTR::HidBase</label>
+        <link refid="classnn_1_1hid_1_1_c_t_r_1_1_hid_base"/>
+        <childnode refid="4" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>nn::os::EventBase</label>
+        <link refid="classnn_1_1os_1_1_event_base"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>nn::os::HandleObject</label>
+        <link refid="structnn_1_1os_1_1_handle_object"/>
+      </node>
+      <node id="3">
+        <label>nn::os::InterruptEvent</label>
+        <link refid="classnn_1_1os_1_1_interrupt_event"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn::os::WaitObject</label>
+        <link refid="classnn_1_1os_1_1_wait_object"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>nn::Handle</label>
+        <link refid="structnn_1_1_handle"/>
+      </node>
+      <node id="1">
+        <label>nn::os::HandleObject</label>
+        <link refid="structnn_1_1os_1_1_handle_object"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_Handle</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/CTRSDK/include/nn/os/os_HandleObject.h" line="7" column="5" bodyfile="lib/CTRSDK/include/nn/os/os_HandleObject.h" bodystart="7" bodyend="9"/>
+    <listofallmembers>
+      <member refid="structnn_1_1os_1_1_handle_object_1af67b3008356477c8060389469c563af3" prot="public" virt="non-virtual"><scope>nn::os::HandleObject</scope><name>m_Handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

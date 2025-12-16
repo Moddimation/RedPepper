@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_mtx_util_8h" kind="file" language="C++">
+    <compoundname>alMtxUtil.h</compoundname>
+    <includes local="no">math/seadMatrix.h</includes>
+    <includes local="no">math/seadVector.h</includes>
+    <includedby refid="al_live_actor_function_8cpp" local="no">alLiveActorFunction.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alMtxUtil.h</label>
+        <link refid="al_mtx_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="3">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alMtxUtil.h</label>
+        <link refid="al_mtx_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadMatrix.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1a71489fba91c7888259bb2dcf58dae61c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a71489fba91c7888259bb2dcf58dae61c" kindref="member">preScaleMtx</ref>(<sp/>sead::Matrix34f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/>);</highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1a912d3a6d7a0a1e3bf212a93c9009b90e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a912d3a6d7a0a1e3bf212a93c9009b90e" kindref="member">calcMtxLocalTrans</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">mtx</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">trans</ref><sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Math/alMtxUtil.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_area_shape_8cpp" kind="file" language="C++">
+    <compoundname>alAreaShape.cpp</compoundname>
+    <includes refid="al_area_shape_8h" local="no">AreaObj/alAreaShape.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>AreaObj/alAreaShape.h</label>
+        <link refid="al_area_shape_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alAreaShape.cpp</label>
+        <link refid="al_area_shape_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_area_shape_8h" kindref="compound">AreaObj/alAreaShape.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classal_1_1_area_shape_1aec7ecd5c03bd678038316c7678762356" refkind="member"><highlight class="normal"><ref refid="classal_1_1_area_shape_1aec7ecd5c03bd678038316c7678762356" kindref="member">AreaShape::AreaShape</ref>()<sp/>:<sp/>mBaseMtxPtr(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mScale(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>1,<sp/>1,<sp/>1<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TODO:<sp/>Move<sp/>this<sp/>to<sp/>header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_area_shape_1a8d3c6f602483f5409447ae060d2dbd91" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_area_shape_1a8d3c6f602483f5409447ae060d2dbd91" kindref="member">AreaShape::setScale</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">scale</ref><sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_area_shape_1add3b32e4571c385022e056d143f57e1e" kindref="member">mScale</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">scale</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/AreaObj/alAreaShape.cpp"/>
+  </compounddef>
+</doxygen>

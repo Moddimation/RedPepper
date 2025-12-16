@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_method_tree_node" kind="class" language="C++" prot="public">
+    <compoundname>sead::MethodTreeNode</compoundname>
+    <basecompoundref refid="classsead_1_1_i_disposer" prot="public" virt="non-virtual">sead::IDisposer</basecompoundref>
+    <basecompoundref refid="classsead_1_1_t_tree_node" prot="public" virt="non-virtual">sead::TTreeNode&lt; MethodTreeNode * &gt;</basecompoundref>
+    <basecompoundref refid="classsead_1_1_i_namable" prot="public" virt="non-virtual">sead::INamable</basecompoundref>
+    <includes refid="sead_method_tree_8h" local="no">seadMethodTree.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PauseFlag</name>
+        <qualifiedname>sead::MethodTreeNode::PauseFlag</qualifiedname>
+        <enumvalue id="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986fa1ce432845630ea33dcfa6c9b565766fb" prot="public">
+          <name>cPause_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986fad97fa1536de732fa8b997b94fc81e1f4" prot="public">
+          <name>cPause_Self</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986fa4262fb01c7d4884634cd388ab2ef201f" prot="public">
+          <name>cPause_Child</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986faa7403902c94a118f4a17d247be6f08d8" prot="public">
+          <name>cPause_Both</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="21" column="5" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsead_1_1_method_tree_node_1a89058010fc50e77d54916ffb7a58b1f2" prot="public" static="no">
+        <type><ref refid="classsead_1_1_i_delegate2" kindref="compound">IDelegate2</ref>&lt; <ref refid="classsead_1_1_method_tree_node" kindref="compound">MethodTreeNode</ref> *, <ref refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986f" kindref="member">PauseFlag</ref> &gt;</type>
+        <definition>typedef IDelegate2&lt;MethodTreeNode*, PauseFlag&gt; sead::MethodTreeNode::PauseEventDelegate</definition>
+        <argsstring></argsstring>
+        <name>PauseEventDelegate</name>
+        <qualifiedname>sead::MethodTreeNode::PauseEventDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="28" column="24" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1_method_tree_node_1aaaf21e5889c566c361de35567ad0c5cf" prot="private" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 sead::MethodTreeNode::mDelegateHolder[0x10]</definition>
+        <argsstring>[0x10]</argsstring>
+        <name>mDelegateHolder</name>
+        <qualifiedname>sead::MethodTreeNode::mDelegateHolder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="57" column="8" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_method_tree_node_1aa60e04b57ef182e6dd5689155eb44239" prot="private" static="no" mutable="yes">
+        <type><ref refid="classsead_1_1_critical_section" kindref="compound">CriticalSection</ref> *</type>
+        <definition>CriticalSection* sead::MethodTreeNode::mCriticalSection</definition>
+        <argsstring></argsstring>
+        <name>mCriticalSection</name>
+        <qualifiedname>sead::MethodTreeNode::mCriticalSection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="58" column="29" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_method_tree_node_1a7e898375f9a29e3750b0363d97075026" prot="private" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 sead::MethodTreeNode::mPriority</definition>
+        <argsstring></argsstring>
+        <name>mPriority</name>
+        <qualifiedname>sead::MethodTreeNode::mPriority</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="59" column="9" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_method_tree_node_1a5b3278f7a6d2a038d761ed3d90d15fc1" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacesead_1a55d96beed0ac0184c69a3e02812e5fc8" kindref="member">BitFlag32</ref></type>
+        <definition>BitFlag32 sead::MethodTreeNode::mPauseFlag</definition>
+        <argsstring></argsstring>
+        <name>mPauseFlag</name>
+        <qualifiedname>sead::MethodTreeNode::mPauseFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="60" column="15" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_method_tree_node_1a7be81f69034223090bb3eac9ba432365" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_method_tree_node_1a89058010fc50e77d54916ffb7a58b1f2" kindref="member">PauseEventDelegate</ref> *</type>
+        <definition>PauseEventDelegate* sead::MethodTreeNode::mPauseEventDelegate</definition>
+        <argsstring></argsstring>
+        <name>mPauseEventDelegate</name>
+        <qualifiedname>sead::MethodTreeNode::mPauseEventDelegate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="61" column="24" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_method_tree_node_1a30e24140b33115aded0a7044d2888997" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* sead::MethodTreeNode::mUserID</definition>
+        <argsstring></argsstring>
+        <name>mUserID</name>
+        <qualifiedname>sead::MethodTreeNode::mUserID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="62" column="10" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1ab9d617430d2a7212d5ebd73f82e0f4c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual sead::MethodTreeNode::~MethodTreeNode</definition>
+        <argsstring>()</argsstring>
+        <name>~MethodTreeNode</name>
+        <qualifiedname>sead::MethodTreeNode::~MethodTreeNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="41" column="13" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="41" bodyend="41"/>
+        <references refid="classsead_1_1_method_tree_node_1adc15e6717097d620e74ca3df9139ae8c">detachAll</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1a30c30d6e15f1cb20207a81866ae9927b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::call</definition>
+        <argsstring>()</argsstring>
+        <name>call</name>
+        <qualifiedname>sead::MethodTreeNode::call</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1adc15e6717097d620e74ca3df9139ae8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::detachAll</definition>
+        <argsstring>()</argsstring>
+        <name>detachAll</name>
+        <qualifiedname>sead::MethodTreeNode::detachAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="44" column="10"/>
+        <referencedby refid="classsead_1_1_method_tree_node_1ab9d617430d2a7212d5ebd73f82e0f4c3" compoundref="sead_method_tree_8h" startline="41" endline="41">~MethodTreeNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1ab353e71e6ddc3c026acfcf998ce091ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::pushBackChild</definition>
+        <argsstring>(MethodTreeNode *node)</argsstring>
+        <name>pushBackChild</name>
+        <qualifiedname>sead::MethodTreeNode::pushBackChild</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_method_tree_node" kindref="compound">MethodTreeNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1a8df0c1892e9fca2636195feac6608249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::pushFrontChild</definition>
+        <argsstring>(MethodTreeNode *node)</argsstring>
+        <name>pushFrontChild</name>
+        <qualifiedname>sead::MethodTreeNode::pushFrontChild</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_method_tree_node" kindref="compound">MethodTreeNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1ad4dc6dc5ec64b12cc5cf522a75c92a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::setPauseFlag</definition>
+        <argsstring>(PauseFlag flag)</argsstring>
+        <name>setPauseFlag</name>
+        <qualifiedname>sead::MethodTreeNode::setPauseFlag</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986f" kindref="member">PauseFlag</ref></type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="48" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1ae47a79e2b89cc604b8ce24de77f9b39a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::attachMutexRec_</definition>
+        <argsstring>(CriticalSection *m) const</argsstring>
+        <name>attachMutexRec_</name>
+        <qualifiedname>sead::MethodTreeNode::attachMutexRec_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_critical_section" kindref="compound">CriticalSection</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1a99c457c3aa17827e57bccaf9a806e7e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::callRec_</definition>
+        <argsstring>()</argsstring>
+        <name>callRec_</name>
+        <qualifiedname>sead::MethodTreeNode::callRec_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1a99d4a700f0b56f466f9c007ebcd057bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::lock_</definition>
+        <argsstring>()</argsstring>
+        <name>lock_</name>
+        <qualifiedname>sead::MethodTreeNode::lock_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_method_tree_node_1a773ac1d768319e4c3c9d2d86312889f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::MethodTreeNode::unlock_</definition>
+        <argsstring>()</argsstring>
+        <name>unlock_</name>
+        <qualifiedname>sead::MethodTreeNode::unlock_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadMethodTree.h" line="55" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sead::TTreeNode&lt; MethodTreeNode * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; MethodTreeNode * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+      </node>
+      <node id="6">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+      </node>
+      <node id="1">
+        <label>sead::MethodTreeNode</label>
+        <link refid="classsead_1_1_method_tree_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::TTreeNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::TreeNode</label>
+        <link refid="classsead_1_1_tree_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sead::BitFlag&lt; u32 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; u32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="template-instance">
+          <edgelabel>&lt; Heap &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="template-instance">
+          <edgelabel>&lt; IDisposer &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::SafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sead::TTreeNode&lt; MethodTreeNode * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="template-instance">
+          <edgelabel>&lt; MethodTreeNode * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+      <node id="12">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1_critical_section"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>sead::IDelegate2&lt; T, U &gt;</label>
+        <link refid="classsead_1_1_i_delegate2"/>
+      </node>
+      <node id="2">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDisposerHeap</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mINamableName</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1_list_impl"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::MethodTreeNode</label>
+        <link refid="classsead_1_1_method_tree_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mPauseFlag</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mPauseEventDelegate</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>sead::TTreeNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sead::TreeNode</label>
+        <link refid="classsead_1_1_tree_node"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mChild</edgelabel>
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mParent</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/framework/seadMethodTree.h" line="17" column="1" bodyfile="lib/sead/include/framework/seadMethodTree.h" bodystart="17" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_method_tree_node_1ae47a79e2b89cc604b8ce24de77f9b39a" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>attachMutexRec_</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a30c30d6e15f1cb20207a81866ae9927b" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>call</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a99c457c3aa17827e57bccaf9a806e7e3" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>callRec_</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a61ab330a11d20ba618e8fba059eb4a86" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>child</name></member>
+      <member refid="classsead_1_1_tree_node_1a090c955de5fb5822fead1c03584c64a9" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>clearChildLinksRecursively_</name></member>
+      <member refid="classsead_1_1_tree_node_1aec816a942c1d2ba7cba0d125cac29d11" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>clearLinks</name></member>
+      <member refid="classsead_1_1_tree_node_1aab0d65612e31951fedf9aabdb71a3299" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>countChildren</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986faa7403902c94a118f4a17d247be6f08d8" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>cPause_Both</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986fa4262fb01c7d4884634cd388ab2ef201f" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>cPause_Child</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986fa1ce432845630ea33dcfa6c9b565766fb" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>cPause_None</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986fad97fa1536de732fa8b997b94fc81e1f4" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>cPause_Self</name></member>
+      <member refid="classsead_1_1_method_tree_node_1adc15e6717097d620e74ca3df9139ae8c" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>detachAll</name></member>
+      <member refid="classsead_1_1_tree_node_1a749f1c3f42b145dd3514ae5b07d6d8eb" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>detachSubTree</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a0dfe9db179b06b4fe631ed431944322f" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>findRoot</name></member>
+      <member refid="classsead_1_1_t_tree_node_1af12010b51ae04ddeb20823947dc2ccdf" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>findRoot</name></member>
+      <member refid="classsead_1_1_i_disposer_1a4787eac6c96ec41a402a87785ca1c1e5" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>getDisposerHeap_</name></member>
+      <member refid="classsead_1_1_i_disposer_1ad80f0bcae4db9dc8d86b972cf79242ff" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>getListNodeOffset</name></member>
+      <member refid="classsead_1_1_i_namable_1afbca7ad5cea53df4afb3cf6a2f59f83c" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>getName</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>HeapNullOption</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a7924dc86bb92083cfe17af344f18efdb" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>HeapNullOption_AlwaysUseSpecifiedHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1ae6e1545ced87f4418a3a522abd0134b7" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>HeapNullOption_DoNotAppendDisposerIfNoHeapSpecified</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a9c3b6e23a61f6b9e12b642cd907a8a49" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>HeapNullOption_UseSpecifiedOrContainHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a6fd315b4de876d836ebb7a643d6db3b0" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>HeapNullOption_UseSpecifiedOrCurrentHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a2dce641e279c1e5cd489227548dadf78" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1_i_disposer_1a674d1dfb9528774610a5e90fe3d8f394" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1_i_namable_1a429adcb44a16a9c029fcb39d868c4d7f" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>INamable</name></member>
+      <member refid="classsead_1_1_i_namable_1ae752fa1a117c354f04f96d99248fe605" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>INamable</name></member>
+      <member refid="classsead_1_1_t_tree_node_1ab85ef907fdad971086902e776c9a5fec" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>insertAfterSelf</name></member>
+      <member refid="classsead_1_1_tree_node_1a3c677ecc5117d2c8d417c39cd0ca4cbf" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::MethodTreeNode</scope><name>insertAfterSelf</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a6465ef19dacaf7f069a53be32089cf7a" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>insertBeforeSelf</name></member>
+      <member refid="classsead_1_1_tree_node_1a2db64cd9ca5744af9442e9734a8d553f" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::MethodTreeNode</scope><name>insertBeforeSelf</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a99d4a700f0b56f466f9c007ebcd057bf" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>lock_</name></member>
+      <member refid="classsead_1_1_tree_node_1a93a0fc9b18eac55ba41f065fdca8b60a" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mChild</name></member>
+      <member refid="classsead_1_1_method_tree_node_1aa60e04b57ef182e6dd5689155eb44239" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mCriticalSection</name></member>
+      <member refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mData</name></member>
+      <member refid="classsead_1_1_method_tree_node_1aaaf21e5889c566c361de35567ad0c5cf" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mDelegateHolder</name></member>
+      <member refid="classsead_1_1_i_disposer_1a8fba43a568227601ee03c0e021115682" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mDisposerHeap</name></member>
+      <member refid="classsead_1_1_i_namable_1a27d3d45caadcb0abcf88747db7bbc20b" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mINamableName</name></member>
+      <member refid="classsead_1_1_i_disposer_1a3a161656c0dc9f124d29d24550151d00" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mListNode</name></member>
+      <member refid="classsead_1_1_tree_node_1ae7732ae6d9202afa7511f74cae7c7a17" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mNext</name></member>
+      <member refid="classsead_1_1_tree_node_1a19c8279ee858edfe503a44640771132f" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mParent</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a7be81f69034223090bb3eac9ba432365" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mPauseEventDelegate</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a5b3278f7a6d2a038d761ed3d90d15fc1" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mPauseFlag</name></member>
+      <member refid="classsead_1_1_tree_node_1af6d7a2e562b9de922d14e49122ccff60" prot="protected" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mPrev</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a7e898375f9a29e3750b0363d97075026" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mPriority</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a30e24140b33115aded0a7044d2888997" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>mUserID</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a78b0080a6ba72c2518d66aeae6ddeeb3" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>next</name></member>
+      <member refid="classsead_1_1_t_tree_node_1af93b9188533d45f2a0f49e0d6082dbf3" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>parent</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a89058010fc50e77d54916ffb7a58b1f2" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>PauseEventDelegate</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ae2a9b0ae330bc4134c5b03febcce986f" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>PauseFlag</name></member>
+      <member refid="classsead_1_1_t_tree_node_1ab81ae31c8f56b5a5033361b465ae6cda" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>prev</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ab353e71e6ddc3c026acfcf998ce091ea" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>pushBackChild</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a5f62ef7352d06fb7b34e14a9d7c3ee25" prot="public" virt="non-virtual" ambiguityscope="TTreeNode&lt; MethodTreeNode * &gt;::"><scope>sead::MethodTreeNode</scope><name>pushBackChild</name></member>
+      <member refid="classsead_1_1_tree_node_1abb408c3466e722cf8bb68c727e173358" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::MethodTreeNode</scope><name>pushBackChild</name></member>
+      <member refid="classsead_1_1_t_tree_node_1aa1f6ad8b816883e60a820d048ca5af4b" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>pushBackSibling</name></member>
+      <member refid="classsead_1_1_tree_node_1a513f48a11d3f15b7f62d707850ee7b5f" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::MethodTreeNode</scope><name>pushBackSibling</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a8df0c1892e9fca2636195feac6608249" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>pushFrontChild</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a21a95c035fb197e00ee012be916ec156" prot="public" virt="non-virtual" ambiguityscope="TTreeNode&lt; MethodTreeNode * &gt;::"><scope>sead::MethodTreeNode</scope><name>pushFrontChild</name></member>
+      <member refid="classsead_1_1_tree_node_1a098db96c6bc0734908902ecd31011023" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::MethodTreeNode</scope><name>pushFrontChild</name></member>
+      <member refid="classsead_1_1_i_namable_1acd4b503966fa742e89f2507e909b5468" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>setName</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ad4dc6dc5ec64b12cc5cf522a75c92a5d" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>setPauseFlag</name></member>
+      <member refid="classsead_1_1_tree_node_1a7c2aebe458b714419300deda28c64417" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>TreeNode</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a5c17783cd87334698a4f24a5386cf7bc" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>TTreeNode</name></member>
+      <member refid="classsead_1_1_t_tree_node_1abe420cd6c45b269839f28ded345e17f1" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>TTreeNode</name></member>
+      <member refid="classsead_1_1_method_tree_node_1a773ac1d768319e4c3c9d2d86312889f1" prot="private" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>unlock_</name></member>
+      <member refid="classsead_1_1_t_tree_node_1abdf524d3aa27940029db880ed4d15d22" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>value</name></member>
+      <member refid="classsead_1_1_t_tree_node_1abaa5ead9c29923c58296e638df24097e" prot="public" virt="non-virtual"><scope>sead::MethodTreeNode</scope><name>value</name></member>
+      <member refid="classsead_1_1_i_disposer_1a36e2b9b062febed0893f3530bc427f0a" prot="public" virt="virtual"><scope>sead::MethodTreeNode</scope><name>~IDisposer</name></member>
+      <member refid="classsead_1_1_method_tree_node_1ab9d617430d2a7212d5ebd73f82e0f4c3" prot="public" virt="virtual"><scope>sead::MethodTreeNode</scope><name>~MethodTreeNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

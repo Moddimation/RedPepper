@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_i_scene_obj" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>al::ISceneObj</compoundname>
+    <derivedcompoundref refid="classal_1_1_camera_director" prot="public" virt="non-virtual">al::CameraDirector</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_switch_area_director" prot="public" virt="non-virtual">al::SwitchAreaDirector</derivedcompoundref>
+    <includes refid="al_i_scene_obj_8h" local="no">alISceneObj.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_i_scene_obj_1a8fba37aa60f1d9fb9558e3409b4a3dd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+        <definition>virtual const char * al::ISceneObj::getSceneObjName</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getSceneObjName</name>
+        <qualifiedname>al::ISceneObj::getSceneObjName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alISceneObj.h" line="10" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_i_scene_obj_1a726fffcc3cb0021591e8ecbcc30fa868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ISceneObj::initAfterPlacementSceneObj</definition>
+        <argsstring>(const ActorInitInfo &amp;info)</argsstring>
+        <name>initAfterPlacementSceneObj</name>
+        <qualifiedname>al::ISceneObj::initAfterPlacementSceneObj</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alISceneObj.h" line="12" column="22" bodyfile="lib/al/include/Scene/alISceneObj.h" bodystart="12" bodyend="14"/>
+        <referencedby refid="classal_1_1_scene_obj_holder_1a1a659ce3b25c2bbfae3302a2b02d4ea2" compoundref="al_scene_obj_holder_8cpp" startline="42" endline="47">al::SceneObjHolder::initAfterPlacementSceneObj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_i_scene_obj_1a84c39e258deb3e15a83c61a152669df4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ISceneObj::initSceneObj</definition>
+        <argsstring>()</argsstring>
+        <name>initSceneObj</name>
+        <qualifiedname>al::ISceneObj::initSceneObj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alISceneObj.h" line="16" column="22" bodyfile="lib/al/include/Scene/alISceneObj.h" bodystart="16" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>al::CameraDirector</label>
+        <link refid="classal_1_1_camera_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::ISceneObj</label>
+        <link refid="classal_1_1_i_scene_obj"/>
+      </node>
+      <node id="3">
+        <label>al::SwitchAreaDirector</label>
+        <link refid="classal_1_1_switch_area_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/Scene/alISceneObj.h" line="7" column="1" bodyfile="lib/al/include/Scene/alISceneObj.h" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classal_1_1_i_scene_obj_1a8fba37aa60f1d9fb9558e3409b4a3dd4" prot="public" virt="pure-virtual"><scope>al::ISceneObj</scope><name>getSceneObjName</name></member>
+      <member refid="classal_1_1_i_scene_obj_1a726fffcc3cb0021591e8ecbcc30fa868" prot="public" virt="virtual"><scope>al::ISceneObj</scope><name>initAfterPlacementSceneObj</name></member>
+      <member refid="classal_1_1_i_scene_obj_1a84c39e258deb3e15a83c61a152669df4" prot="public" virt="virtual"><scope>al::ISceneObj</scope><name>initSceneObj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

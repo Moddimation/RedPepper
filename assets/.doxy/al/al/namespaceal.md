@@ -27,134 +27,134 @@
 
 | Type | Name |
 | ---: | :--- |
-| namespace | [**NrvBreakModel**](namespaceal_1_1NrvBreakModel.md) <br> |
-| namespace | [**NrvFallMapParts**](namespaceal_1_1NrvFallMapParts.md) <br> |
-| namespace | [**NrvRailMoveMovement**](namespaceal_1_1NrvRailMoveMovement.md) <br> |
-| namespace | [**NrvWipeSimple**](namespaceal_1_1NrvWipeSimple.md) <br> |
+| namespace | [**NrvBreakModel**](namespaceal_1_1_nrv_break_model.md) <br> |
+| namespace | [**NrvFallMapParts**](namespaceal_1_1_nrv_fall_map_parts.md) <br> |
+| namespace | [**NrvRailMoveMovement**](namespaceal_1_1_nrv_rail_move_movement.md) <br> |
+| namespace | [**NrvWipeSimple**](namespaceal_1_1_nrv_wipe_simple.md) <br> |
 
 
 ## Classes
 
 | Type | Name |
 | ---: | :--- |
-| class | [**ActionAnimCtrl**](classal_1_1ActionAnimCtrl.md) <br> |
-| class | [**ActorActionKeeper**](classal_1_1ActorActionKeeper.md) <br> |
-| class | [**ActorExecuteInfo**](classal_1_1ActorExecuteInfo.md) <br> |
-| class | [**ActorFactory**](classal_1_1ActorFactory.md) <br> |
-| class | [**ActorInitInfo**](classal_1_1ActorInitInfo.md) <br> |
-| class | [**ActorPoseKeeperBase**](classal_1_1ActorPoseKeeperBase.md) <br> |
-| class | [**ActorPoseKeeperTFGSV**](classal_1_1ActorPoseKeeperTFGSV.md) <br> |
-| class | [**ActorPoseKeeperTFSV**](classal_1_1ActorPoseKeeperTFSV.md) <br> |
-| class | [**ActorPoseKeeperTQSV**](classal_1_1ActorPoseKeeperTQSV.md) <br> |
-| class | [**ActorPoseKeeperTRSV**](classal_1_1ActorPoseKeeperTRSV.md) <br> |
-| class | [**ActorStateBase**](classal_1_1ActorStateBase.md) <br> |
-| class | [**AnimInfoTable**](classal_1_1AnimInfoTable.md) <br> |
-| class | [**AnimPlayerSimple**](classal_1_1AnimPlayerSimple.md) <br> |
-| class | [**AnimPlayerSkl**](classal_1_1AnimPlayerSkl.md) <br> |
-| class | [**AreaInitInfo**](classal_1_1AreaInitInfo.md) <br> |
-| class | [**AreaObj**](classal_1_1AreaObj.md) <br> |
-| class | [**AreaShape**](classal_1_1AreaShape.md) <br> |
-| class | [**AreaShapeCube**](classal_1_1AreaShapeCube.md) <br> |
-| class | [**AsyncFunctorThread**](classal_1_1AsyncFunctorThread.md) <br> |
-| class | [**AudioKeeper**](classal_1_1AudioKeeper.md) <br> |
-| class | [**BreakModel**](classal_1_1BreakModel.md) <br> |
-| class | [**ByamlContainerHeader**](classal_1_1ByamlContainerHeader.md) <br> |
-| class | [**ByamlData**](classal_1_1ByamlData.md) <br> |
-| class | [**ByamlHashIter**](classal_1_1ByamlHashIter.md) <br> |
-| class | [**ByamlHashPair**](classal_1_1ByamlHashPair.md) <br> |
-| class | [**ByamlHeader**](classal_1_1ByamlHeader.md) <br> |
-| class | [**ByamlIter**](classal_1_1ByamlIter.md) <br> |
-| class | [**ByamlStringTableIter**](classal_1_1ByamlStringTableIter.md) <br> |
-| class | [**Camera**](classal_1_1Camera.md) <br> |
-| class | [**CameraDashAngleTunerParam**](classal_1_1CameraDashAngleTunerParam.md) <br> |
-| class | [**CameraDirector**](classal_1_1CameraDirector.md) <br> |
-| class | [**CameraParamVision**](classal_1_1CameraParamVision.md) <br> |
-| class | [**CameraRotatorParam**](classal_1_1CameraRotatorParam.md) <br> |
-| class | [**CameraUnknownParam**](classal_1_1CameraUnknownParam.md) <br> |
-| class | [**ClippingActorHolder**](classal_1_1ClippingActorHolder.md) <br> |
-| class | [**ClippingActorInfoList**](classal_1_1ClippingActorInfoList.md) <br> |
-| class | [**ClippingDirector**](classal_1_1ClippingDirector.md) <br> |
-| class | [**ClockMapParts**](classal_1_1ClockMapParts.md) <br> |
-| class | [**Collider**](classal_1_1Collider.md) <br> |
-| class | [**CollisionDirector**](classal_1_1CollisionDirector.md) <br> |
-| class | [**CollisionParts**](classal_1_1CollisionParts.md) <br> |
-| struct | [**CreateFuncPtr**](structal_1_1CreateFuncPtr.md) &lt;[**typename**](structal_1_1NameToCreator.md) [**T**](structal_1_1NameToCreator.md)&gt;<br> |
-| class | [**EffectKeeper**](classal_1_1EffectKeeper.md) <br> |
-| class | [**EffectObj**](classal_1_1EffectObj.md) <br> |
-| class | [**EffectObjFunction**](classal_1_1EffectObjFunction.md) <br> |
-| class | [**EffectSystem**](classal_1_1EffectSystem.md) <br> |
-| class | [**ExecuteDirector**](classal_1_1ExecuteDirector.md) <br> |
-| struct | [**ExecuteOrder**](structal_1_1ExecuteOrder.md) <br> |
-| class | [**ExecuteRequestKeeper**](classal_1_1ExecuteRequestKeeper.md) <br> |
-| class | [**ExecuteTableHolderDraw**](classal_1_1ExecuteTableHolderDraw.md) <br> |
-| class | [**ExecuteTableHolderUpdate**](classal_1_1ExecuteTableHolderUpdate.md) <br> |
-| class | [**FallMapParts**](classal_1_1FallMapParts.md) <br> |
-| class | [**FileLoader**](classal_1_1FileLoader.md) <br> |
-| class | [**FixMapParts**](classal_1_1FixMapParts.md) <br> |
-| class | [**FogDirector**](classal_1_1FogDirector.md) <br> |
-| class | [**FunctorBase**](classal_1_1FunctorBase.md) <br> |
-| class | [**FunctorV0F**](classal_1_1FunctorV0F.md) <br> |
-| class | [**FunctorV0M**](classal_1_1FunctorV0M.md) &lt;[**typename**](structal_1_1NameToCreator.md) [**T**](structal_1_1NameToCreator.md), [**typename**](structal_1_1NameToCreator.md) [**F**](structal_1_1NameToCreator.md)&gt;<br> |
-| class | [**HitSensor**](classal_1_1HitSensor.md) <br> |
-| class | [**HitSensorDirector**](classal_1_1HitSensorDirector.md) <br> |
-| class | [**HitSensorKeeper**](classal_1_1HitSensorKeeper.md) <br> |
-| class | [**HostStateBase**](classal_1_1HostStateBase.md) &lt;[**typename**](structal_1_1NameToCreator.md) [**T**](structal_1_1NameToCreator.md)&gt;<br> |
-| class | [**ISceneObj**](classal_1_1ISceneObj.md) <br> |
-| class | [**IUseAudioKeeper**](classal_1_1IUseAudioKeeper.md) <br> |
-| class | [**IUseEffectKeeper**](classal_1_1IUseEffectKeeper.md) <br> |
-| class | [**IUseExecutor**](classal_1_1IUseExecutor.md) <br> |
-| class | [**IUseNerve**](classal_1_1IUseNerve.md) <br> |
-| class | [**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) <br> |
-| struct | [**KCollisionHeader**](structal_1_1KCollisionHeader.md) <br> |
-| class | [**KCollisionServer**](classal_1_1KCollisionServer.md) <br> |
-| class | [**KeyPose**](classal_1_1KeyPose.md) <br> |
-| class | [**KeyPoseKeeper**](classal_1_1KeyPoseKeeper.md) <br> |
-| class | [**LayoutActor**](classal_1_1LayoutActor.md) <br> |
-| class | [**LayoutInitInfo**](classal_1_1LayoutInitInfo.md) <br> |
-| class | [**LayoutKit**](classal_1_1LayoutKit.md) <br> |
-| class | [**LiveActor**](classal_1_1LiveActor.md) <br> |
-| struct | [**LiveActorFlag**](structal_1_1LiveActorFlag.md) <br> |
-| class | [**LiveActorGroup**](classal_1_1LiveActorGroup.md) <br> |
-| class | [**LiveActorKit**](classal_1_1LiveActorKit.md) <br> |
-| class | [**MapObjActor**](classal_1_1MapObjActor.md) <br> |
-| class | [**MemorySystem**](classal_1_1MemorySystem.md) <br> |
-| class | [**MessageProjectEx**](classal_1_1MessageProjectEx.md) <br> |
-| class | [**MessageSystem**](classal_1_1MessageSystem.md) <br> |
-| class | [**ModelKeeper**](classal_1_1ModelKeeper.md) <br> |
-| struct | [**NameToCreator**](structal_1_1NameToCreator.md) &lt;[**typename**](structal_1_1NameToCreator.md) [**T**](structal_1_1NameToCreator.md)&gt;<br> |
-| struct | [**Nerve**](structal_1_1Nerve.md) <br> |
-| class | [**NerveAction**](classal_1_1NerveAction.md) <br> |
-| class | [**NerveActionCtrl**](classal_1_1NerveActionCtrl.md) <br> |
-| class | [**NerveExecutor**](classal_1_1NerveExecutor.md) <br> |
-| class | [**NerveKeeper**](classal_1_1NerveKeeper.md) <br> |
-| class | [**NerveStateBase**](classal_1_1NerveStateBase.md) <br> |
-| class | [**NerveStateCtrl**](classal_1_1NerveStateCtrl.md) <br> |
-| class | [**Rail**](classal_1_1Rail.md) <br> |
-| class | [**RailKeeper**](classal_1_1RailKeeper.md) <br> |
-| class | [**RailMoveMovement**](classal_1_1RailMoveMovement.md) <br> |
-| class | [**RailRider**](classal_1_1RailRider.md) <br> |
-| class | [**Resource**](classal_1_1Resource.md) <br> |
-| class | [**SaveDataDirector**](classal_1_1SaveDataDirector.md) <br> |
-| class | [**SaveDataSequenceBase**](classal_1_1SaveDataSequenceBase.md) <br> |
-| class | [**SaveDataSequenceInitDir**](classal_1_1SaveDataSequenceInitDir.md) <br> |
-| class | [**Scene**](classal_1_1Scene.md) <br> |
-| class | [**SceneHeapSetter**](classal_1_1SceneHeapSetter.md) <br> |
-| class | [**SceneObjHolder**](classal_1_1SceneObjHolder.md) <br> |
-| class | [**SensorHitGroup**](classal_1_1SensorHitGroup.md) <br> |
-| class | [**Sequence**](classal_1_1Sequence.md) <br> |
-| class | [**ShadowKeeper**](classal_1_1ShadowKeeper.md) <br> |
-| class | [**Sky**](classal_1_1Sky.md) <br> |
-| class | [**StageResourceKeeper**](classal_1_1StageResourceKeeper.md) <br> |
-| class | [**StageSwitchAccesser**](classal_1_1StageSwitchAccesser.md) <br> |
-| class | [**StageSwitchKeeper**](classal_1_1StageSwitchKeeper.md) <br> |
-| class | [**StringTmp**](classal_1_1StringTmp.md) &lt;L&gt;<br> |
-| class | [**SubActorKeeper**](classal_1_1SubActorKeeper.md) <br> |
-| class | [**SwitchAreaDirector**](classal_1_1SwitchAreaDirector.md) <br> |
-| class | [**SwitchKeepOnAreaGroup**](classal_1_1SwitchKeepOnAreaGroup.md) <br> |
-| class | [**SwitchOnAreaGroup**](classal_1_1SwitchOnAreaGroup.md) <br> |
-| class | [**SystemKit**](classal_1_1SystemKit.md) <br> |
-| class | [**WipeSimple**](classal_1_1WipeSimple.md) <br> |
-| class | [**WipeSimpleTopBottom**](classal_1_1WipeSimpleTopBottom.md) <br> |
+| class | [**ActionAnimCtrl**](classal_1_1_action_anim_ctrl.md) <br> |
+| class | [**ActorActionKeeper**](classal_1_1_actor_action_keeper.md) <br> |
+| class | [**ActorExecuteInfo**](classal_1_1_actor_execute_info.md) <br> |
+| class | [**ActorFactory**](classal_1_1_actor_factory.md) <br> |
+| class | [**ActorInitInfo**](classal_1_1_actor_init_info.md) <br> |
+| class | [**ActorPoseKeeperBase**](classal_1_1_actor_pose_keeper_base.md) <br> |
+| class | [**ActorPoseKeeperTFGSV**](classal_1_1_actor_pose_keeper_t_f_g_s_v.md) <br> |
+| class | [**ActorPoseKeeperTFSV**](classal_1_1_actor_pose_keeper_t_f_s_v.md) <br> |
+| class | [**ActorPoseKeeperTQSV**](classal_1_1_actor_pose_keeper_t_q_s_v.md) <br> |
+| class | [**ActorPoseKeeperTRSV**](classal_1_1_actor_pose_keeper_t_r_s_v.md) <br> |
+| class | [**ActorStateBase**](classal_1_1_actor_state_base.md) <br> |
+| class | [**AnimInfoTable**](classal_1_1_anim_info_table.md) <br> |
+| class | [**AnimPlayerSimple**](classal_1_1_anim_player_simple.md) <br> |
+| class | [**AnimPlayerSkl**](classal_1_1_anim_player_skl.md) <br> |
+| class | [**AreaInitInfo**](classal_1_1_area_init_info.md) <br> |
+| class | [**AreaObj**](classal_1_1_area_obj.md) <br> |
+| class | [**AreaShape**](classal_1_1_area_shape.md) <br> |
+| class | [**AreaShapeCube**](classal_1_1_area_shape_cube.md) <br> |
+| class | [**AsyncFunctorThread**](classal_1_1_async_functor_thread.md) <br> |
+| class | [**AudioKeeper**](classal_1_1_audio_keeper.md) <br> |
+| class | [**BreakModel**](classal_1_1_break_model.md) <br> |
+| class | [**ByamlContainerHeader**](classal_1_1_byaml_container_header.md) <br> |
+| class | [**ByamlData**](classal_1_1_byaml_data.md) <br> |
+| class | [**ByamlHashIter**](classal_1_1_byaml_hash_iter.md) <br> |
+| class | [**ByamlHashPair**](classal_1_1_byaml_hash_pair.md) <br> |
+| class | [**ByamlHeader**](classal_1_1_byaml_header.md) <br> |
+| class | [**ByamlIter**](classal_1_1_byaml_iter.md) <br> |
+| class | [**ByamlStringTableIter**](classal_1_1_byaml_string_table_iter.md) <br> |
+| class | [**Camera**](classal_1_1_camera.md) <br> |
+| class | [**CameraDashAngleTunerParam**](classal_1_1_camera_dash_angle_tuner_param.md) <br> |
+| class | [**CameraDirector**](classal_1_1_camera_director.md) <br> |
+| class | [**CameraParamVision**](classal_1_1_camera_param_vision.md) <br> |
+| class | [**CameraRotatorParam**](classal_1_1_camera_rotator_param.md) <br> |
+| class | [**CameraUnknownParam**](classal_1_1_camera_unknown_param.md) <br> |
+| class | [**ClippingActorHolder**](classal_1_1_clipping_actor_holder.md) <br> |
+| class | [**ClippingActorInfoList**](classal_1_1_clipping_actor_info_list.md) <br> |
+| class | [**ClippingDirector**](classal_1_1_clipping_director.md) <br> |
+| class | [**ClockMapParts**](classal_1_1_clock_map_parts.md) <br> |
+| class | [**Collider**](classal_1_1_collider.md) <br> |
+| class | [**CollisionDirector**](classal_1_1_collision_director.md) <br> |
+| class | [**CollisionParts**](classal_1_1_collision_parts.md) <br> |
+| struct | [**CreateFuncPtr**](structal_1_1_create_func_ptr.md) &lt;[**typename**](classal_1_1_functor_v0_m.md) [**T**](classal_1_1_functor_v0_m.md)&gt;<br> |
+| class | [**EffectKeeper**](classal_1_1_effect_keeper.md) <br> |
+| class | [**EffectObj**](classal_1_1_effect_obj.md) <br> |
+| class | [**EffectObjFunction**](classal_1_1_effect_obj_function.md) <br> |
+| class | [**EffectSystem**](classal_1_1_effect_system.md) <br> |
+| class | [**ExecuteDirector**](classal_1_1_execute_director.md) <br> |
+| struct | [**ExecuteOrder**](structal_1_1_execute_order.md) <br> |
+| class | [**ExecuteRequestKeeper**](classal_1_1_execute_request_keeper.md) <br> |
+| class | [**ExecuteTableHolderDraw**](classal_1_1_execute_table_holder_draw.md) <br> |
+| class | [**ExecuteTableHolderUpdate**](classal_1_1_execute_table_holder_update.md) <br> |
+| class | [**FallMapParts**](classal_1_1_fall_map_parts.md) <br> |
+| class | [**FileLoader**](classal_1_1_file_loader.md) <br> |
+| class | [**FixMapParts**](classal_1_1_fix_map_parts.md) <br> |
+| class | [**FogDirector**](classal_1_1_fog_director.md) <br> |
+| class | [**FunctorBase**](classal_1_1_functor_base.md) <br> |
+| class | [**FunctorV0F**](classal_1_1_functor_v0_f.md) <br> |
+| class | [**FunctorV0M**](classal_1_1_functor_v0_m.md) &lt;[**typename**](classal_1_1_functor_v0_m.md) [**T**](classal_1_1_functor_v0_m.md), [**typename**](classal_1_1_functor_v0_m.md) [**F**](classal_1_1_functor_v0_m.md)&gt;<br> |
+| class | [**HitSensor**](classal_1_1_hit_sensor.md) <br> |
+| class | [**HitSensorDirector**](classal_1_1_hit_sensor_director.md) <br> |
+| class | [**HitSensorKeeper**](classal_1_1_hit_sensor_keeper.md) <br> |
+| class | [**HostStateBase**](classal_1_1_host_state_base.md) &lt;[**typename**](classal_1_1_functor_v0_m.md) [**T**](classal_1_1_functor_v0_m.md)&gt;<br> |
+| class | [**ISceneObj**](classal_1_1_i_scene_obj.md) <br> |
+| class | [**IUseAudioKeeper**](classal_1_1_i_use_audio_keeper.md) <br> |
+| class | [**IUseEffectKeeper**](classal_1_1_i_use_effect_keeper.md) <br> |
+| class | [**IUseExecutor**](classal_1_1_i_use_executor.md) <br> |
+| class | [**IUseNerve**](classal_1_1_i_use_nerve.md) <br> |
+| class | [**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) <br> |
+| struct | [**KCollisionHeader**](structal_1_1_k_collision_header.md) <br> |
+| class | [**KCollisionServer**](classal_1_1_k_collision_server.md) <br> |
+| class | [**KeyPose**](classal_1_1_key_pose.md) <br> |
+| class | [**KeyPoseKeeper**](classal_1_1_key_pose_keeper.md) <br> |
+| class | [**LayoutActor**](classal_1_1_layout_actor.md) <br> |
+| class | [**LayoutInitInfo**](classal_1_1_layout_init_info.md) <br> |
+| class | [**LayoutKit**](classal_1_1_layout_kit.md) <br> |
+| class | [**LiveActor**](classal_1_1_live_actor.md) <br> |
+| struct | [**LiveActorFlag**](structal_1_1_live_actor_flag.md) <br> |
+| class | [**LiveActorGroup**](classal_1_1_live_actor_group.md) <br> |
+| class | [**LiveActorKit**](classal_1_1_live_actor_kit.md) <br> |
+| class | [**MapObjActor**](classal_1_1_map_obj_actor.md) <br> |
+| class | [**MemorySystem**](classal_1_1_memory_system.md) <br> |
+| class | [**MessageProjectEx**](classal_1_1_message_project_ex.md) <br> |
+| class | [**MessageSystem**](classal_1_1_message_system.md) <br> |
+| class | [**ModelKeeper**](classal_1_1_model_keeper.md) <br> |
+| struct | [**NameToCreator**](structal_1_1_name_to_creator.md) &lt;[**typename**](classal_1_1_functor_v0_m.md) [**T**](classal_1_1_functor_v0_m.md)&gt;<br> |
+| struct | [**Nerve**](structal_1_1_nerve.md) <br> |
+| class | [**NerveAction**](classal_1_1_nerve_action.md) <br> |
+| class | [**NerveActionCtrl**](classal_1_1_nerve_action_ctrl.md) <br> |
+| class | [**NerveExecutor**](classal_1_1_nerve_executor.md) <br> |
+| class | [**NerveKeeper**](classal_1_1_nerve_keeper.md) <br> |
+| class | [**NerveStateBase**](classal_1_1_nerve_state_base.md) <br> |
+| class | [**NerveStateCtrl**](classal_1_1_nerve_state_ctrl.md) <br> |
+| class | [**Rail**](classal_1_1_rail.md) <br> |
+| class | [**RailKeeper**](classal_1_1_rail_keeper.md) <br> |
+| class | [**RailMoveMovement**](classal_1_1_rail_move_movement.md) <br> |
+| class | [**RailRider**](classal_1_1_rail_rider.md) <br> |
+| class | [**Resource**](classal_1_1_resource.md) <br> |
+| class | [**SaveDataDirector**](classal_1_1_save_data_director.md) <br> |
+| class | [**SaveDataSequenceBase**](classal_1_1_save_data_sequence_base.md) <br> |
+| class | [**SaveDataSequenceInitDir**](classal_1_1_save_data_sequence_init_dir.md) <br> |
+| class | [**Scene**](classal_1_1_scene.md) <br> |
+| class | [**SceneHeapSetter**](classal_1_1_scene_heap_setter.md) <br> |
+| class | [**SceneObjHolder**](classal_1_1_scene_obj_holder.md) <br> |
+| class | [**SensorHitGroup**](classal_1_1_sensor_hit_group.md) <br> |
+| class | [**Sequence**](classal_1_1_sequence.md) <br> |
+| class | [**ShadowKeeper**](classal_1_1_shadow_keeper.md) <br> |
+| class | [**Sky**](classal_1_1_sky.md) <br> |
+| class | [**StageResourceKeeper**](classal_1_1_stage_resource_keeper.md) <br> |
+| class | [**StageSwitchAccesser**](classal_1_1_stage_switch_accesser.md) <br> |
+| class | [**StageSwitchKeeper**](classal_1_1_stage_switch_keeper.md) <br> |
+| class | [**StringTmp**](classal_1_1_string_tmp.md) &lt;L&gt;<br> |
+| class | [**SubActorKeeper**](classal_1_1_sub_actor_keeper.md) <br> |
+| class | [**SwitchAreaDirector**](classal_1_1_switch_area_director.md) <br> |
+| class | [**SwitchKeepOnAreaGroup**](classal_1_1_switch_keep_on_area_group.md) <br> |
+| class | [**SwitchOnAreaGroup**](classal_1_1_switch_on_area_group.md) <br> |
+| class | [**SystemKit**](classal_1_1_system_kit.md) <br> |
+| class | [**WipeSimple**](classal_1_1_wipe_simple.md) <br> |
+| class | [**WipeSimpleTopBottom**](classal_1_1_wipe_simple_top_bottom.md) <br> |
 
 
 ## Public Types
@@ -162,13 +162,13 @@
 | Type | Name |
 | ---: | :--- |
 | enum  | [**ByamlDataType**](#enum-byamldatatype)  <br> |
-| typedef [**CreateFuncPtr**](structal_1_1CreateFuncPtr.md)&lt; [**LiveActor**](classal_1_1LiveActor.md) &gt;::Type | [**CreateActorFuncPtr**](#typedef-createactorfuncptr)  <br> |
-| typedef [**CreateFuncPtr**](structal_1_1CreateFuncPtr.md)&lt; [**AreaObj**](classal_1_1AreaObj.md) &gt;::Type | [**CreateAreaObjFuncPtr**](#typedef-createareaobjfuncptr)  <br> |
-| typedef [**CreateFuncPtr**](structal_1_1CreateFuncPtr.md)&lt; [**Camera**](classal_1_1Camera.md) &gt;::Type | [**CreateCameraFuncPtr**](#typedef-createcamerafuncptr)  <br> |
-| typedef [**NameToCreator**](structal_1_1NameToCreator.md)&lt; CreateActorFuncPtr &gt; | [**NameToActorCreator**](#typedef-nametoactorcreator)  <br> |
-| typedef [**NameToCreator**](structal_1_1NameToCreator.md)&lt; CreateAreaObjFuncPtr &gt; | [**NameToAreaObjCreator**](#typedef-nametoareaobjcreator)  <br> |
-| typedef [**NameToCreator**](structal_1_1NameToCreator.md)&lt; CreateCameraFuncPtr &gt; | [**NameToCameraCreator**](#typedef-nametocameracreator)  <br> |
-| typedef [**ByamlIter**](classal_1_1ByamlIter.md) | [**PlacementInfo**](#typedef-placementinfo)  <br> |
+| typedef [**CreateFuncPtr**](structal_1_1_create_func_ptr.md)&lt; [**LiveActor**](classal_1_1_live_actor.md) &gt;::Type | [**CreateActorFuncPtr**](#typedef-createactorfuncptr)  <br> |
+| typedef [**CreateFuncPtr**](structal_1_1_create_func_ptr.md)&lt; [**AreaObj**](classal_1_1_area_obj.md) &gt;::Type | [**CreateAreaObjFuncPtr**](#typedef-createareaobjfuncptr)  <br> |
+| typedef [**CreateFuncPtr**](structal_1_1_create_func_ptr.md)&lt; [**Camera**](classal_1_1_camera.md) &gt;::Type | [**CreateCameraFuncPtr**](#typedef-createcamerafuncptr)  <br> |
+| typedef [**NameToCreator**](structal_1_1_name_to_creator.md)&lt; [**CreateActorFuncPtr**](namespaceal.md#typedef-createactorfuncptr) &gt; | [**NameToActorCreator**](#typedef-nametoactorcreator)  <br> |
+| typedef [**NameToCreator**](structal_1_1_name_to_creator.md)&lt; [**CreateAreaObjFuncPtr**](namespaceal.md#typedef-createareaobjfuncptr) &gt; | [**NameToAreaObjCreator**](#typedef-nametoareaobjcreator)  <br> |
+| typedef [**NameToCreator**](structal_1_1_name_to_creator.md)&lt; [**CreateCameraFuncPtr**](namespaceal.md#typedef-createcamerafuncptr) &gt; | [**NameToCameraCreator**](#typedef-nametocameracreator)  <br> |
+| typedef [**ByamlIter**](classal_1_1_byaml_iter.md) | [**PlacementInfo**](#typedef-placementinfo)  <br> |
 | enum  | [**SensorMsg**](#enum-sensormsg)  <br> |
 | enum  | [**SensorType**](#enum-sensortype)  <br> |
 | enum  | [**StageSwitchType**](#enum-stageswitchtype)  <br> |
@@ -182,7 +182,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#variable-split)   = `{ "クリッピング", "Execute", 1, "システム" }`<br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#variable-split)   = `{ "クリッピング", "Execute", 1, "システム" }`<br> |
 
 
 
@@ -201,275 +201,277 @@
 
 | Type | Name |
 | ---: | :--- |
-|  [**void**](structal_1_1NameToCreator.md) | [**FUN\_001cc9b0**](#function-fun_001cc9b0) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*, [**const**](structal_1_1NameToCreator.md) [**FunctorV0F**](classal_1_1FunctorV0F.md) &) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**FUN\_001e8a64**](#function-fun_001e8a64) () <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**FUN\_00240350**](#function-fun_00240350) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**u32**](structal_1_1NameToCreator.md) \* | [**FUN\_0024edd8**](#function-fun_0024edd8) () <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**FUN\_00268df8**](#function-fun_00268df8) ([**IUseAudioKeeper**](classal_1_1IUseAudioKeeper.md) \*, [**const**](structal_1_1NameToCreator.md) sead::SafeString & name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**FUN\_002911e8**](#function-fun_002911e8) (sead::FrameHeap \*\* out, [**u32**](structal_1_1NameToCreator.md) heapSize, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name, [**u8**](structal_1_1NameToCreator.md), [**int**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**A**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**B**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**X**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Y**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Home**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Minus**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Start**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Select**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**L**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**R**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Touch**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Up**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Down**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Left**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**Right**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickUp**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickDown**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickLeft**](structal_1_1NameToCreator.md)) <br> |
-|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickRight**](structal_1_1NameToCreator.md)) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**addVelocityToGravity**](#function-addvelocitytogravity) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**float**](structal_1_1NameToCreator.md) amount) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcFrontDir**](#function-calcfrontdir) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**u32**](structal_1_1NameToCreator.md) | [**calcHashCode**](#function-calchashcode) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* str) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcJointPos**](#function-calcjointpos) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* jointName) <br> |
-|  [**int**](structal_1_1NameToCreator.md) | [**calcLinkChildNum**](#function-calclinkchildnum) ([**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcMtxLocalTrans**](#function-calcmtxlocaltrans) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) sead::Matrix34f & mtx, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & trans) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcQuatSide**](#function-calcquatside) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* from) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcQuatSide**](#function-calcquatside) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcSideDir**](#function-calcsidedir) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**calcUpDir**](#function-calcupdir) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**copyPose**](#function-copypose) ([**LiveActor**](classal_1_1LiveActor.md) \* to, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* from) <br> |
-|  [**LiveActor**](classal_1_1LiveActor.md) \* | [**createActorFunction**](#function-createactorfunction) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**createAndStartInitializeThread**](#function-createandstartinitializethread) (sead::Heap \* heap, [**int**](structal_1_1NameToCreator.md) stackSize, [**const**](structal_1_1NameToCreator.md) [**FunctorBase**](classal_1_1FunctorBase.md) & func) <br> |
-|  [**AreaObj**](classal_1_1AreaObj.md) \* | [**createAreaObjFunction**](#function-createareaobjfunction) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**createCourseSelectHeap**](#function-createcourseselectheap) () <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**createSceneHeap**](#function-createsceneheap) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* stageName) <br> |
-|  [**ISceneObj**](classal_1_1ISceneObj.md) \* | [**createSceneObj**](#function-createsceneobj) ([**int**](structal_1_1NameToCreator.md) id) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**createSceneResourceHeap**](#function-createsceneresourceheap) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* stageName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**createSequenceHeap**](#function-createsequenceheap) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* | [**createStringIfInStack**](#function-createstringifinstack) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* str) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**destroySceneHeap**](#function-destroysceneheap) () <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**emitEffect**](#function-emiteffect) ([**IUseEffectKeeper**](classal_1_1IUseEffectKeeper.md) \* p, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name, [**const**](structal_1_1NameToCreator.md) sead::Vector3f \* at=[**nullptr**](structal_1_1NameToCreator.md)) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**executeDraw**](#function-executedraw) ([**const**](structal_1_1NameToCreator.md) [**LiveActorKit**](classal_1_1LiveActorKit.md) \* kit, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**executeDrawList**](#function-executedrawlist) ([**const**](structal_1_1NameToCreator.md) [**LiveActorKit**](classal_1_1LiveActorKit.md) \* kit, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*) <br> |
-|  [**Resource**](classal_1_1Resource.md) \* | [**findOrCreateResource**](#function-findorcreateresource) ([**const**](structal_1_1NameToCreator.md) sead::SafeString & archive) <br> |
-|  [**float**](structal_1_1NameToCreator.md) | [**getActionFrameMax**](#function-getactionframemax) ([**const**](structal_1_1NameToCreator.md) [**LayoutActor**](classal_1_1LayoutActor.md) \* actor) <br> |
-|  [**Application**](classApplication.md) \* | [**getApplication**](#function-getapplication) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* | [**getBaseName**](#function-getbasename) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f \* | [**getCameraPos**](#function-getcamerapos) () <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**FUN\_001cc9b0**](#function-fun_001cc9b0) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*, [**const**](classal_1_1_functor_v0_m.md) [**FunctorV0F**](classal_1_1_functor_v0_f.md) &) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**FUN\_001e8a64**](#function-fun_001e8a64) () <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**FUN\_00240350**](#function-fun_00240350) () <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**u32**](classal_1_1_functor_v0_m.md) \* | [**FUN\_0024edd8**](#function-fun_0024edd8) () <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**FUN\_00268df8**](#function-fun_00268df8) ([**IUseAudioKeeper**](classal_1_1_i_use_audio_keeper.md) \*, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**FUN\_002911e8**](#function-fun_002911e8) (sead::FrameHeap \*\* out, [**u32**](classal_1_1_functor_v0_m.md) heapSize, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name, [**u8**](classal_1_1_functor_v0_m.md), [**int**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**A**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**B**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**X**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Y**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Home**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Minus**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Start**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Select**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**L**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**R**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Touch**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Up**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Down**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Left**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**Right**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickUp**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickDown**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickLeft**](classal_1_1_functor_v0_m.md)) <br> |
+|   | [**\_T\_BUTTON**](#function-_t_button) ([**LeftStickRight**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**addVelocityToGravity**](#function-addvelocitytogravity) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**float**](classal_1_1_functor_v0_m.md) amount) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcFrontDir**](#function-calcfrontdir) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**u32**](classal_1_1_functor_v0_m.md) | [**calcHashCode**](#function-calchashcode) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* str) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcJointPos**](#function-calcjointpos) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* jointName) <br> |
+|  [**int**](classal_1_1_functor_v0_m.md) | [**calcLinkChildNum**](#function-calclinkchildnum) ([**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcMtxLocalTrans**](#function-calcmtxlocaltrans) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Matrix34f & mtx, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & trans) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcQuatSide**](#function-calcquatside) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* from) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcQuatSide**](#function-calcquatside) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcSideDir**](#function-calcsidedir) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**calcUpDir**](#function-calcupdir) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**copyPose**](#function-copypose) ([**LiveActor**](classal_1_1_live_actor.md) \* to, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* from) <br> |
+|  [**LiveActor**](classal_1_1_live_actor.md) \* | [**createActorFunction**](#function-createactorfunction) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**createAndStartInitializeThread**](#function-createandstartinitializethread) (sead::Heap \* heap, [**int**](classal_1_1_functor_v0_m.md) stackSize, [**const**](classal_1_1_functor_v0_m.md) [**FunctorBase**](classal_1_1_functor_base.md) & func) <br> |
+|  [**AreaObj**](classal_1_1_area_obj.md) \* | [**createAreaObjFunction**](#function-createareaobjfunction) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**createCourseSelectHeap**](#function-createcourseselectheap) () <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**createSceneHeap**](#function-createsceneheap) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* stageName) <br> |
+|  [**ISceneObj**](classal_1_1_i_scene_obj.md) \* | [**createSceneObj**](#function-createsceneobj) ([**int**](classal_1_1_functor_v0_m.md) id) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**createSceneResourceHeap**](#function-createsceneresourceheap) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* stageName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**createSequenceHeap**](#function-createsequenceheap) () <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* | [**createStringIfInStack**](#function-createstringifinstack) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* str) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**destroySceneHeap**](#function-destroysceneheap) () <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**emitEffect**](#function-emiteffect) ([**IUseEffectKeeper**](classal_1_1_i_use_effect_keeper.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f \* at=[**nullptr**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**executeDraw**](#function-executedraw) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActorKit**](classal_1_1_live_actor_kit.md) \* kit, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**executeDrawList**](#function-executedrawlist) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActorKit**](classal_1_1_live_actor_kit.md) \* kit, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*) <br> |
+|  [**Resource**](classal_1_1_resource.md) \* | [**findOrCreateResource**](#function-findorcreateresource) ([**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archive) <br> |
+|  [**float**](classal_1_1_functor_v0_m.md) | [**getActionFrameMax**](#function-getactionframemax) ([**const**](classal_1_1_functor_v0_m.md) [**LayoutActor**](classal_1_1_layout_actor.md) \* actor) <br> |
+|  [**Application**](class_application.md) \* | [**getApplication**](#function-getapplication) () <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* | [**getBaseName**](#function-getbasename) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f \* | [**getCameraPos**](#function-getcamerapos) () <br> |
 |  sead::FrameHeap \* | [**getCourseSelectHeap**](#function-getcourseselectheap) () <br> |
 |  sead::FrameHeap \* | [**getCourseSelectResourceHeap**](#function-getcourseselectresourceheap) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getCurrentKeyTrans**](#function-getcurrentkeytrans) ([**const**](structal_1_1NameToCreator.md) [**KeyPoseKeeper**](classal_1_1KeyPoseKeeper.md) \* p) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getFront**](#function-getfront) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Vector3f \* | [**getFrontPtr**](#function-getfrontptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getGravity**](#function-getgravity) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Vector3f \* | [**getGravityPtr**](#function-getgravityptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**HitSensor**](classal_1_1HitSensor.md) \* | [**getHitSensor**](#function-gethitsensor) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Matrix34f \* | [**getJointMtxPtr**](#function-getjointmtxptr) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* jointName) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Matrix34f \* | [**getJointMtxPtr**](#function-getjointmtxptr) ([**ModelKeeper**](classal_1_1ModelKeeper.md) \* keeper, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* jointName) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* | [**getLanguage**](#function-getlanguage) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector2f & | [**getLeftStick**](#function-getleftstick) ([**int**](structal_1_1NameToCreator.md) port=0) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* | [**getLinksActorObjectName**](#function-getlinksactorobjectname) ([**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**int**](structal_1_1NameToCreator.md) index) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**getLinksInfoByIndex**](#function-getlinksinfobyindex) ([**PlacementInfo**](classal_1_1ByamlIter.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**int**](structal_1_1NameToCreator.md) index) <br> |
-|  [**LiveActorKit**](classal_1_1LiveActorKit.md) \* | [**getLiveActorKit**](#function-getliveactorkit) () <br> |
-|  [**int**](structal_1_1NameToCreator.md) | [**getNerveStep**](#function-getnervestep) ([**const**](structal_1_1NameToCreator.md) [**IUseNerve**](classal_1_1IUseNerve.md) \* p) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) \* | [**getNextKeyPlacementInfo**](#function-getnextkeyplacementinfo) ([**const**](structal_1_1NameToCreator.md) [**KeyPoseKeeper**](classal_1_1KeyPoseKeeper.md) \* p) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getNextKeyTrans**](#function-getnextkeytrans) ([**const**](structal_1_1NameToCreator.md) [**KeyPoseKeeper**](classal_1_1KeyPoseKeeper.md) \* p) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & | [**getPlacementInfo**](#function-getplacementinfo) ([**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Quatf & | [**getQuat**](#function-getquat) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Quatf \* | [**getQuatPtr**](#function-getquatptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getRailDir**](#function-getraildir) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getRotate**](#function-getrotate) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Vector3f \* | [**getRotatePtr**](#function-getrotateptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getScale**](#function-getscale) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Vector3f \* | [**getScalePtr**](#function-getscaleptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getCurrentKeyTrans**](#function-getcurrentkeytrans) ([**const**](classal_1_1_functor_v0_m.md) [**KeyPoseKeeper**](classal_1_1_key_pose_keeper.md) \* p) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getFront**](#function-getfront) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Vector3f \* | [**getFrontPtr**](#function-getfrontptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getGravity**](#function-getgravity) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Vector3f \* | [**getGravityPtr**](#function-getgravityptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**HitSensor**](classal_1_1_hit_sensor.md) \* | [**getHitSensor**](#function-gethitsensor) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Matrix34f \* | [**getJointMtxPtr**](#function-getjointmtxptr) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* jointName) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Matrix34f \* | [**getJointMtxPtr**](#function-getjointmtxptr) ([**ModelKeeper**](classal_1_1_model_keeper.md) \* keeper, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* jointName) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* | [**getLanguage**](#function-getlanguage) () <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector2f & | [**getLeftStick**](#function-getleftstick) ([**int**](classal_1_1_functor_v0_m.md) port=0) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* | [**getLinksActorObjectName**](#function-getlinksactorobjectname) ([**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**int**](classal_1_1_functor_v0_m.md) index) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**getLinksInfoByIndex**](#function-getlinksinfobyindex) ([**PlacementInfo**](namespaceal.md#typedef-placementinfo) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**int**](classal_1_1_functor_v0_m.md) index) <br> |
+|  [**LiveActorKit**](classal_1_1_live_actor_kit.md) \* | [**getLiveActorKit**](#function-getliveactorkit) () <br> |
+|  [**int**](classal_1_1_functor_v0_m.md) | [**getNerveStep**](#function-getnervestep) ([**const**](classal_1_1_functor_v0_m.md) [**IUseNerve**](classal_1_1_i_use_nerve.md) \* p) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) \* | [**getNextKeyPlacementInfo**](#function-getnextkeyplacementinfo) ([**const**](classal_1_1_functor_v0_m.md) [**KeyPoseKeeper**](classal_1_1_key_pose_keeper.md) \* p) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getNextKeyTrans**](#function-getnextkeytrans) ([**const**](classal_1_1_functor_v0_m.md) [**KeyPoseKeeper**](classal_1_1_key_pose_keeper.md) \* p) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & | [**getPlacementInfo**](#function-getplacementinfo) ([**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & | [**getQuat**](#function-getquat) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Quatf \* | [**getQuatPtr**](#function-getquatptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getRailDir**](#function-getraildir) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getRotate**](#function-getrotate) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Vector3f \* | [**getRotatePtr**](#function-getrotateptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getScale**](#function-getscale) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Vector3f \* | [**getScalePtr**](#function-getscaleptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
 |  sead::FrameHeap \* | [**getSceneHeap**](#function-getsceneheap) () <br> |
-|  [**ISceneObj**](classal_1_1ISceneObj.md) \* | [**getSceneObj**](#function-getsceneobj) ([**int**](structal_1_1NameToCreator.md) id) <br> |
-|  [**SceneObjHolder**](classal_1_1SceneObjHolder.md) \* | [**getSceneObjHolder**](#function-getsceneobjholder) () <br> |
+|  [**ISceneObj**](classal_1_1_i_scene_obj.md) \* | [**getSceneObj**](#function-getsceneobj) ([**int**](classal_1_1_functor_v0_m.md) id) <br> |
+|  [**SceneObjHolder**](classal_1_1_scene_obj_holder.md) \* | [**getSceneObjHolder**](#function-getsceneobjholder) () <br> |
 |  sead::FrameHeap \* | [**getSceneResourceHeap**](#function-getsceneresourceheap) () <br> |
-|  [**float**](structal_1_1NameToCreator.md) | [**getSensorRadius**](#function-getsensorradius) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* sensorName) <br> |
+|  [**float**](classal_1_1_functor_v0_m.md) | [**getSensorRadius**](#function-getsensorradius) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* sensorName) <br> |
 |  sead::ExpHeap \* | [**getSequenceHeap**](#function-getsequenceheap) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* | [**getStageSwitchName**](#function-getstageswitchname) (StageSwitchType type) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* | [**getStageSwitchName**](#function-getstageswitchname) ([**StageSwitchType**](namespaceal.md#enum-stageswitchtype) type) <br> |
 |  sead::ExpHeap \* | [**getStationedHeap**](#function-getstationedheap) () <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getTrans**](#function-gettrans) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Vector3f \* | [**getTransPtr**](#function-gettransptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**const**](structal_1_1NameToCreator.md) sead::Vector3f & | [**getVelocity**](#function-getvelocity) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  sead::Vector3f \* | [**getVelocityPtr**](#function-getvelocityptr) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**hideModel**](#function-hidemodel) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**hidePane**](#function-hidepane) ([**LayoutActor**](classal_1_1LayoutActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* paneName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**hideShadow**](#function-hideshadow) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActor**](#function-initactor) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorEffectKeeper**](#function-initactoreffectkeeper) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorInitInfo**](#function-initactorinitinfo) ([**ActorInitInfo**](classal_1_1ActorInitInfo.md) \* info, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) \* placement, [**const**](structal_1_1NameToCreator.md) [**LayoutInitInfo**](classal_1_1LayoutInitInfo.md) & layoutInfo, [**LiveActorKit**](classal_1_1LiveActorKit.md) \*) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorPoseTFGSV**](#function-initactorposetfgsv) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorPoseTFSV**](#function-initactorposetfsv) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorPoseTQSV**](#function-initactorposetqsv) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorPoseTRSV**](#function-initactorposetrsv) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorSRTAndPoseTRSV**](#function-initactorsrtandposetrsv) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorWithArchiveName**](#function-initactorwitharchivename) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) sead::SafeString & archiveName, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* suffix=[**nullptr**](structal_1_1NameToCreator.md)) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initActorWithArchiveNameNoPlacementInfo**](#function-initactorwitharchivenamenoplacementinfo) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) sead::SafeString & archiveName, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* suffix=[**nullptr**](structal_1_1NameToCreator.md)) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initCreateActorNoPlacementInfo**](#function-initcreateactornoplacementinfo) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & hostInfo) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initCreateActorWithPlacementInfo**](#function-initcreateactorwithplacementinfo) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & hostInfo) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initLayoutActor**](#function-initlayoutactor) ([**LayoutActor**](classal_1_1LayoutActor.md) \* layoutActor, [**const**](structal_1_1NameToCreator.md) [**LayoutInitInfo**](classal_1_1LayoutInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* archiveName, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*=[**nullptr**](structal_1_1NameToCreator.md)) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initLayoutInitInfo**](#function-initlayoutinitinfo) ([**LayoutInitInfo**](classal_1_1LayoutInitInfo.md) \* info, [**LiveActorKit**](classal_1_1LiveActorKit.md) \*) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initLiveActorKit**](#function-initliveactorkit) ([**LiveActorKit**](classal_1_1LiveActorKit.md) \* kit) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initMapPartsActor**](#function-initmappartsactor) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initNerve**](#function-initnerve) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**Nerve**](structal_1_1Nerve.md) \* nerve, [**int**](structal_1_1NameToCreator.md) maxNerveStates=0) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initNerveAction**](#function-initnerveaction) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name, [**alNerveFunction::NerveActionCollector**](classalNerveFunction_1_1NerveActionCollector.md) \* collector, [**int**](structal_1_1NameToCreator.md) maxNerveStates=0) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initNerveState**](#function-initnervestate) ([**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**NerveStateBase**](classal_1_1NerveStateBase.md) \* state, [**const**](structal_1_1NameToCreator.md) [**Nerve**](structal_1_1Nerve.md) \* stateNrv, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initPlacementMap**](#function-initplacementmap) ([**Scene**](classal_1_1Scene.md) \* scene, [**const**](structal_1_1NameToCreator.md) [**Resource**](classal_1_1Resource.md) \* stageArchive, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & infoTemplate, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* infoIterName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initRandomSeed**](#function-initrandomseed) ([**u32**](structal_1_1NameToCreator.md) seed) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initStageSwitchA**](#function-initstageswitcha) ([**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) \* p, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initStageSwitchAppear**](#function-initstageswitchappear) ([**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) \* p, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initStageSwitchB**](#function-initstageswitchb) ([**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) \* p, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**initStageSwitchKill**](#function-initstageswitchkill) ([**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) \* p, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**invalidateClipping**](#function-invalidateclipping) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**invalidateCollisionPartsBySystem**](#function-invalidatecollisionpartsbysystem) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isActionEnd**](#function-isactionend) ([**const**](structal_1_1NameToCreator.md) [**LayoutActor**](classal_1_1LayoutActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isActionEnd**](#function-isactionend) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isAlive**](#function-isalive) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isClipped**](#function-isclipped) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isCollided**](#function-iscollided) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isCollidedGround**](#function-iscollidedground) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isCollidedWall**](#function-iscollidedwall) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isCreatedSceneResourceHeap**](#function-iscreatedsceneresourceheap) () <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isDead**](#function-isdead) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isEqualString**](#function-isequalstring) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* s1, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* s2) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isEqualString**](#function-isequalstring) ([**const**](structal_1_1NameToCreator.md) sead::SafeString & s1, [**const**](structal_1_1NameToCreator.md) sead::SafeString & s2) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isEqualSubString**](#function-isequalsubstring) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* str, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* substr) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isExistArchive**](#function-isexistarchive) ([**const**](structal_1_1NameToCreator.md) sead::SafeString & archive) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isExistRail**](#function-isexistrail) ([**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isExistRail**](#function-isexistrail) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isExistSceneObj**](#function-isexistsceneobj) ([**int**](structal_1_1NameToCreator.md) id) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isFirstStep**](#function-isfirststep) ([**const**](structal_1_1NameToCreator.md) [**IUseNerve**](classal_1_1IUseNerve.md) \* p) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isGreaterEqualStep**](#function-isgreaterequalstep) ([**const**](structal_1_1NameToCreator.md) [**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**int**](structal_1_1NameToCreator.md) step) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isGreaterStep**](#function-isgreaterstep) ([**const**](structal_1_1NameToCreator.md) [**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**int**](structal_1_1NameToCreator.md) step) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isHitCylinderSensor**](#function-ishitcylindersensor) ([**HitSensor**](classal_1_1HitSensor.md) \*, [**HitSensor**](classal_1_1HitSensor.md) \*, [**const**](structal_1_1NameToCreator.md) sead::Vector3f &, [**float**](structal_1_1NameToCreator.md)) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isInStack**](#function-isinstack) ([**const**](structal_1_1NameToCreator.md) [**void**](structal_1_1NameToCreator.md) \* ptr) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isInvalidClipping**](#function-isinvalidclipping) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isLessStep**](#function-islessstep) ([**const**](structal_1_1NameToCreator.md) [**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**int**](structal_1_1NameToCreator.md) step) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isLoopRail**](#function-islooprail) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isNearZero**](#function-isnearzero) ([**float**](structal_1_1NameToCreator.md) value, [**float**](structal_1_1NameToCreator.md) range=.001) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isNerve**](#function-isnerve) ([**const**](structal_1_1NameToCreator.md) [**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**const**](structal_1_1NameToCreator.md) [**Nerve**](structal_1_1Nerve.md) \* nerve) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isObjectName**](#function-isobjectname) ([**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* objectName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isObjectName**](#function-isobjectname) ([**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* objectName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isOnGround**](#function-isonground) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor, [**u32**](structal_1_1NameToCreator.md)) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isOnSwitchA**](#function-isonswitcha) ([**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) \* p) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isPadHold**](#function-ispadhold) ([**int**](structal_1_1NameToCreator.md) port, [**int**](structal_1_1NameToCreator.md) mask) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isPadRelease**](#function-ispadrelease) ([**int**](structal_1_1NameToCreator.md) port, [**int**](structal_1_1NameToCreator.md) mask) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isPadTrigger**](#function-ispadtrigger) ([**int**](structal_1_1NameToCreator.md) port, [**int**](structal_1_1NameToCreator.md) mask) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isPlaced**](#function-isplaced) ([**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isRailReachedGoal**](#function-israilreachedgoal) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorEnemy**](#function-issensorenemy) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorEnemyAttack**](#function-issensorenemyattack) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorEnemyBody**](#function-issensorenemybody) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorMapObj**](#function-issensormapobj) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorName**](#function-issensorname) ([**HitSensor**](classal_1_1HitSensor.md) \* sensor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorPlayer**](#function-issensorplayer) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorRide**](#function-issensorride) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isSensorSimple**](#function-issensorsimple) ([**const**](structal_1_1NameToCreator.md) [**HitSensor**](classal_1_1HitSensor.md) \* sensor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**isStep**](#function-isstep) ([**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**int**](structal_1_1NameToCreator.md) step) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**lerpVec**](#function-lerpvec) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & from, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & to, [**float**](structal_1_1NameToCreator.md) amount) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**listenStageSwitchOnAppear**](#function-listenstageswitchonappear) ([**IUseStageSwitch**](classal_1_1IUseStageSwitch.md) \* p, [**const**](structal_1_1NameToCreator.md) [**FunctorBase**](classal_1_1FunctorBase.md) & onFunctor, [**const**](structal_1_1NameToCreator.md) [**FunctorBase**](classal_1_1FunctorBase.md) & offFunctor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**loadArchive**](#function-loadarchive) ([**const**](structal_1_1NameToCreator.md) sead::SafeString & archive) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**makeLocalizedArchivePath**](#function-makelocalizedarchivepath) (sead::BufferedSafeString \* out, [**const**](structal_1_1NameToCreator.md) sead::SafeString & archive) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**makeMtxSRT**](#function-makemtxsrt) (sead::Matrix34f \* out, [**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**makeStageDataArchivePath**](#function-makestagedataarchivepath) (sead::BufferedSafeString \* out, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* stageName, [**int**](structal_1_1NameToCreator.md) scenario, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* type) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**moveSyncRail**](#function-movesyncrail) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**float**](structal_1_1NameToCreator.md) speed) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**moveSyncRailLoop**](#function-movesyncrailloop) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**float**](structal_1_1NameToCreator.md) speed) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**moveSyncRailTurn**](#function-movesyncrailturn) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**float**](structal_1_1NameToCreator.md) speed) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**offCollide**](#function-offcollide) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**onCollide**](#function-oncollide) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**onDrawClipping**](#function-ondrawclipping) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**preScaleMtx**](#function-prescalemtx) (sead::Matrix34f \* out, [**const**](structal_1_1NameToCreator.md) sead::Vector3f &) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**registerExecutorFunctor**](#function-registerexecutorfunctor) ([**const**](structal_1_1NameToCreator.md) [**FunctorBase**](classal_1_1FunctorBase.md) & base, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**registerExecutorFunctorDraw**](#function-registerexecutorfunctordraw) ([**const**](structal_1_1NameToCreator.md) [**FunctorBase**](classal_1_1FunctorBase.md) & base, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**registerExecutorUser**](#function-registerexecutoruser) ([**IUseExecutor**](classal_1_1IUseExecutor.md) \* p, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**char**](structal_1_1NameToCreator.md) \* | [**removeExtensionString**](#function-removeextensionstring) ([**char**](structal_1_1NameToCreator.md) \* res, [**size\_t**](structal_1_1NameToCreator.md) size, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* str) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**resetPosition**](#function-resetposition) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**rotateQuatXDirDegree**](#function-rotatequatxdirdegree) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from, [**float**](structal_1_1NameToCreator.md) degrees) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**rotateQuatXDirDegree**](#function-rotatequatxdirdegree) (sead::Quatf \* out, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from, [**float**](structal_1_1NameToCreator.md) degrees) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**rotateQuatYDirDegree**](#function-rotatequatydirdegree) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from, [**float**](structal_1_1NameToCreator.md) degrees) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**rotateQuatYDirDegree**](#function-rotatequatydirdegree) (sead::Quatf \* out, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from, [**float**](structal_1_1NameToCreator.md) degrees) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**rotateQuatZDirDegree**](#function-rotatequatzdirdegree) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from, [**float**](structal_1_1NameToCreator.md) degrees) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**rotateQuatZDirDegree**](#function-rotatequatzdirdegree) (sead::Quatf \* out, [**const**](structal_1_1NameToCreator.md) sead::Quatf & from, [**float**](structal_1_1NameToCreator.md) degrees) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**scaleVelocity**](#function-scalevelocity) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**float**](structal_1_1NameToCreator.md) amount) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setActionFrameRate**](#function-setactionframerate) ([**LayoutActor**](classal_1_1LayoutActor.md) \* actor, [**float**](structal_1_1NameToCreator.md) rate) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setBaseMtxAndCalcAnim**](#function-setbasemtxandcalcanim) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Matrix34f &, [**const**](structal_1_1NameToCreator.md) sead::Vector3f &) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setFront**](#function-setfront) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & front) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setGravity**](#function-setgravity) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & gravity) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setNerve**](#function-setnerve) ([**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**const**](structal_1_1NameToCreator.md) [**Nerve**](structal_1_1Nerve.md) \* nerve) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setPaneString**](#function-setpanestring) ([**LayoutActor**](classal_1_1LayoutActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* paneName, [**const**](structal_1_1NameToCreator.md) [**wchar\_t**](structal_1_1NameToCreator.md) \* text) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setQuat**](#function-setquat) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Quatf & quat) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setRotate**](#function-setrotate) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & rotate) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setScale**](#function-setscale) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & scale) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setSceneObj**](#function-setsceneobj) ([**ISceneObj**](classal_1_1ISceneObj.md) \* obj, [**int**](structal_1_1NameToCreator.md) id) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setSyncRailToStart**](#function-setsyncrailtostart) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setTrans**](#function-settrans) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & trans) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setVelocity**](#function-setvelocity) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & velocity) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**setVelocityZero**](#function-setvelocityzero) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**showModel**](#function-showmodel) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**showShadow**](#function-showshadow) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**NameToActorCreator**](structal_1_1NameToCreator.md) | [**split**](#function-split) ([**sActorFactoryEntries**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**NameToAreaObjCreator**](structal_1_1NameToCreator.md) | [**split**](#function-split) ([**sAreaObjFactoryEntries**](structal_1_1NameToCreator.md)) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**startAction**](#function-startaction) ([**LayoutActor**](classal_1_1LayoutActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::SafeString & actionName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**startAction**](#function-startaction) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* actionName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**startHitReaction**](#function-starthitreaction) ([**const**](structal_1_1NameToCreator.md) [**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**startNerveAction**](#function-startnerveaction) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* actionName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**startSe**](#function-startse) ([**IUseAudioKeeper**](classal_1_1IUseAudioKeeper.md) \* p, [**const**](structal_1_1NameToCreator.md) sead::SafeString & name) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**stopScene**](#function-stopscene) ([**int**](structal_1_1NameToCreator.md) frames) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**syncCollisionMtx**](#function-synccollisionmtx) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Matrix34f \*) <br> |
-|  [**RailKeeper**](classal_1_1RailKeeper.md) \* | [**tryCreateRailKeeper**](#function-trycreaterailkeeper) ([**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryEmitEffect**](#function-tryemiteffect) ([**IUseEffectKeeper**](classal_1_1IUseEffectKeeper.md) \* p, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* name) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg**](#function-trygetarg) ([**bool**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg**](#function-trygetarg) ([**float**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg**](#function-trygetarg) ([**int**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg**](#function-trygetarg) ([**bool**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg**](#function-trygetarg) ([**float**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg**](#function-trygetarg) ([**int**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg0**](#function-trygetarg0) ([**int**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg0**](#function-trygetarg0) ([**float**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg1**](#function-trygetarg1) ([**float**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetArg3**](#function-trygetarg3) ([**int**](structal_1_1NameToCreator.md) \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetObjectName**](#function-trygetobjectname) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*\* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetObjectName**](#function-trygetobjectname) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*\* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetPlacementInfo**](#function-trygetplacementinfo) ([**PlacementInfo**](classal_1_1ByamlIter.md) \* out, [**const**](structal_1_1NameToCreator.md) [**Resource**](classal_1_1Resource.md) \* stageArchive, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* infoIterName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetQuat**](#function-trygetquat) (sead::Quatf \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetRailIter**](#function-trygetrailiter) ([**PlacementInfo**](classal_1_1ByamlIter.md) \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetStringArg**](#function-trygetstringarg) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*\* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetStringArg**](#function-trygetstringarg) ([**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \*\* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* argName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetTrans**](#function-trygettrans) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**ActorInitInfo**](classal_1_1ActorInitInfo.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryGetTrans**](#function-trygettrans) (sead::Vector3f \* out, [**const**](structal_1_1NameToCreator.md) [**PlacementInfo**](classal_1_1ByamlIter.md) & info) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartAction**](#function-trystartaction) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* actionName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartMclAnimIfExist**](#function-trystartmclanimifexist) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* animName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartMtpAnimIfExist**](#function-trystartmtpanimifexist) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* animName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartMtsAnimIfExist**](#function-trystartmtsanimifexist) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* animName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartSe**](#function-trystartse) ([**IUseAudioKeeper**](classal_1_1IUseAudioKeeper.md) \* p, [**const**](structal_1_1NameToCreator.md) sead::SafeString & name, [**int**](structal_1_1NameToCreator.md)) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartSklAnimIfExist**](#function-trystartsklanimifexist) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* animName) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**tryStartVisAnimIfExist**](#function-trystartvisanimifexist) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) [**char**](structal_1_1NameToCreator.md) \* animName) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**trySyncStageSwitchAppear**](#function-trysyncstageswitchappear) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**trySyncStageSwitchKill**](#function-trysyncstageswitchkill) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**updateNerveState**](#function-updatenervestate) ([**IUseNerve**](classal_1_1IUseNerve.md) \* p) <br> |
-|  [**bool**](structal_1_1NameToCreator.md) | [**updateNerveStateAndNextNerve**](#function-updatenervestateandnextnerve) ([**IUseNerve**](classal_1_1IUseNerve.md) \* p, [**const**](structal_1_1NameToCreator.md) [**Nerve**](structal_1_1Nerve.md) \* nerve) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**updatePoseMtx**](#function-updateposemtx) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Matrix34f \* mtx) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**updatePoseQuat**](#function-updateposequat) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Quatf & quat) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**updatePoseRotate**](#function-updateposerotate) ([**LiveActor**](classal_1_1LiveActor.md) \* actor, [**const**](structal_1_1NameToCreator.md) sead::Vector3f & rotate) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**validateClipping**](#function-validateclipping) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
-|  [**void**](structal_1_1NameToCreator.md) | [**validateCollisionPartsBySystem**](#function-validatecollisionpartsbysystem) ([**LiveActor**](classal_1_1LiveActor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getTrans**](#function-gettrans) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Vector3f \* | [**getTransPtr**](#function-gettransptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & | [**getVelocity**](#function-getvelocity) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  sead::Vector3f \* | [**getVelocityPtr**](#function-getvelocityptr) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**hideModel**](#function-hidemodel) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**hidePane**](#function-hidepane) ([**LayoutActor**](classal_1_1_layout_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* paneName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**hideShadow**](#function-hideshadow) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActor**](#function-initactor) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorEffectKeeper**](#function-initactoreffectkeeper) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorInitInfo**](#function-initactorinitinfo) ([**ActorInitInfo**](classal_1_1_actor_init_info.md) \* info, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) \* placement, [**const**](classal_1_1_functor_v0_m.md) [**LayoutInitInfo**](classal_1_1_layout_init_info.md) & layoutInfo, [**LiveActorKit**](classal_1_1_live_actor_kit.md) \*) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorInitInfo**](#function-initactorinitinfo) ([**ActorInitInfo**](classal_1_1_actor_init_info.md) \* info, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) \* placement, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & baseInfo) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorPoseTFGSV**](#function-initactorposetfgsv) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorPoseTFSV**](#function-initactorposetfsv) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorPoseTQSV**](#function-initactorposetqsv) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorPoseTRSV**](#function-initactorposetrsv) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorSRTAndPoseTRSV**](#function-initactorsrtandposetrsv) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorWithArchiveName**](#function-initactorwitharchivename) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archiveName, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* suffix=[**nullptr**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorWithArchiveNameNoPlacementInfo**](#function-initactorwitharchivenamenoplacementinfo) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archiveName, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* suffix=[**nullptr**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initCreateActorNoPlacementInfo**](#function-initcreateactornoplacementinfo) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & hostInfo) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initCreateActorWithPlacementInfo**](#function-initcreateactorwithplacementinfo) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & hostInfo) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initLayoutActor**](#function-initlayoutactor) ([**LayoutActor**](classal_1_1_layout_actor.md) \* layoutActor, [**const**](classal_1_1_functor_v0_m.md) [**LayoutInitInfo**](classal_1_1_layout_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* archiveName, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*=[**nullptr**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initLayoutInitInfo**](#function-initlayoutinitinfo) ([**LayoutInitInfo**](classal_1_1_layout_init_info.md) \* info, [**LiveActorKit**](classal_1_1_live_actor_kit.md) \*) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initLiveActorKit**](#function-initliveactorkit) ([**LiveActorKit**](classal_1_1_live_actor_kit.md) \* kit) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initMapPartsActor**](#function-initmappartsactor) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initNerve**](#function-initnerve) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**Nerve**](structal_1_1_nerve.md) \* nerve, [**int**](classal_1_1_functor_v0_m.md) maxNerveStates=0) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initNerveAction**](#function-initnerveaction) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name, [**alNerveFunction::NerveActionCollector**](classal_nerve_function_1_1_nerve_action_collector.md) \* collector, [**int**](classal_1_1_functor_v0_m.md) maxNerveStates=0) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initNerveState**](#function-initnervestate) ([**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**NerveStateBase**](classal_1_1_nerve_state_base.md) \* state, [**const**](classal_1_1_functor_v0_m.md) [**Nerve**](structal_1_1_nerve.md) \* stateNrv, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initPlacementMap**](#function-initplacementmap) ([**Scene**](classal_1_1_scene.md) \* scene, [**const**](classal_1_1_functor_v0_m.md) [**Resource**](classal_1_1_resource.md) \* stageArchive, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & infoTemplate, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* infoIterName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initRandomSeed**](#function-initrandomseed) ([**u32**](classal_1_1_functor_v0_m.md) seed) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initStageSwitchA**](#function-initstageswitcha) ([**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initStageSwitchAppear**](#function-initstageswitchappear) ([**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initStageSwitchB**](#function-initstageswitchb) ([**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initStageSwitchKill**](#function-initstageswitchkill) ([**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**invalidateClipping**](#function-invalidateclipping) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**invalidateCollisionPartsBySystem**](#function-invalidatecollisionpartsbysystem) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isActionEnd**](#function-isactionend) ([**const**](classal_1_1_functor_v0_m.md) [**LayoutActor**](classal_1_1_layout_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isActionEnd**](#function-isactionend) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isAlive**](#function-isalive) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isClipped**](#function-isclipped) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isCollided**](#function-iscollided) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isCollidedGround**](#function-iscollidedground) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isCollidedWall**](#function-iscollidedwall) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isCreatedSceneResourceHeap**](#function-iscreatedsceneresourceheap) () <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isDead**](#function-isdead) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isEqualString**](#function-isequalstring) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* s1, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* s2) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isEqualString**](#function-isequalstring) ([**const**](classal_1_1_functor_v0_m.md) sead::SafeString & s1, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & s2) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isEqualSubString**](#function-isequalsubstring) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* str, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* substr) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isExistArchive**](#function-isexistarchive) ([**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archive) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isExistRail**](#function-isexistrail) ([**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isExistRail**](#function-isexistrail) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isExistSceneObj**](#function-isexistsceneobj) ([**int**](classal_1_1_functor_v0_m.md) id) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isFirstStep**](#function-isfirststep) ([**const**](classal_1_1_functor_v0_m.md) [**IUseNerve**](classal_1_1_i_use_nerve.md) \* p) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isGreaterEqualStep**](#function-isgreaterequalstep) ([**const**](classal_1_1_functor_v0_m.md) [**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**int**](classal_1_1_functor_v0_m.md) step) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isGreaterStep**](#function-isgreaterstep) ([**const**](classal_1_1_functor_v0_m.md) [**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**int**](classal_1_1_functor_v0_m.md) step) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isHitCylinderSensor**](#function-ishitcylindersensor) ([**HitSensor**](classal_1_1_hit_sensor.md) \*, [**HitSensor**](classal_1_1_hit_sensor.md) \*, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f &, [**float**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isInStack**](#function-isinstack) ([**const**](classal_1_1_functor_v0_m.md) [**void**](classal_1_1_functor_v0_m.md) \* ptr) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isInvalidClipping**](#function-isinvalidclipping) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isLessStep**](#function-islessstep) ([**const**](classal_1_1_functor_v0_m.md) [**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**int**](classal_1_1_functor_v0_m.md) step) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isLoopRail**](#function-islooprail) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isNearZero**](#function-isnearzero) ([**float**](classal_1_1_functor_v0_m.md) value, [**float**](classal_1_1_functor_v0_m.md) range=.001) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isNerve**](#function-isnerve) ([**const**](classal_1_1_functor_v0_m.md) [**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**Nerve**](structal_1_1_nerve.md) \* nerve) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isObjectName**](#function-isobjectname) ([**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* objectName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isObjectName**](#function-isobjectname) ([**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* objectName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isOnGround**](#function-isonground) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor, [**u32**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isOnSwitchA**](#function-isonswitcha) ([**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) \* p) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isPadHold**](#function-ispadhold) ([**int**](classal_1_1_functor_v0_m.md) port, [**int**](classal_1_1_functor_v0_m.md) mask) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isPadRelease**](#function-ispadrelease) ([**int**](classal_1_1_functor_v0_m.md) port, [**int**](classal_1_1_functor_v0_m.md) mask) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isPadTrigger**](#function-ispadtrigger) ([**int**](classal_1_1_functor_v0_m.md) port, [**int**](classal_1_1_functor_v0_m.md) mask) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isPlaced**](#function-isplaced) ([**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isRailReachedGoal**](#function-israilreachedgoal) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorEnemy**](#function-issensorenemy) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorEnemyAttack**](#function-issensorenemyattack) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorEnemyBody**](#function-issensorenemybody) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorMapObj**](#function-issensormapobj) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorName**](#function-issensorname) ([**HitSensor**](classal_1_1_hit_sensor.md) \* sensor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorPlayer**](#function-issensorplayer) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorRide**](#function-issensorride) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isSensorSimple**](#function-issensorsimple) ([**const**](classal_1_1_functor_v0_m.md) [**HitSensor**](classal_1_1_hit_sensor.md) \* sensor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**isStep**](#function-isstep) ([**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**int**](classal_1_1_functor_v0_m.md) step) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**lerpVec**](#function-lerpvec) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & from, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & to, [**float**](classal_1_1_functor_v0_m.md) amount) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**listenStageSwitchOnAppear**](#function-listenstageswitchonappear) ([**IUseStageSwitch**](classal_1_1_i_use_stage_switch.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**FunctorBase**](classal_1_1_functor_base.md) & onFunctor, [**const**](classal_1_1_functor_v0_m.md) [**FunctorBase**](classal_1_1_functor_base.md) & offFunctor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**loadArchive**](#function-loadarchive) ([**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archive) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**makeLocalizedArchivePath**](#function-makelocalizedarchivepath) (sead::BufferedSafeString \* out, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archive) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**makeMtxSRT**](#function-makemtxsrt) (sead::Matrix34f \* out, [**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**makeStageDataArchivePath**](#function-makestagedataarchivepath) (sead::BufferedSafeString \* out, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* stageName, [**int**](classal_1_1_functor_v0_m.md) scenario, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* type) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**moveSyncRail**](#function-movesyncrail) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**float**](classal_1_1_functor_v0_m.md) speed) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**moveSyncRailLoop**](#function-movesyncrailloop) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**float**](classal_1_1_functor_v0_m.md) speed) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**moveSyncRailTurn**](#function-movesyncrailturn) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**float**](classal_1_1_functor_v0_m.md) speed) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**offCollide**](#function-offcollide) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**onCollide**](#function-oncollide) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**onDrawClipping**](#function-ondrawclipping) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**preScaleMtx**](#function-prescalemtx) (sead::Matrix34f \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f &) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**registerExecutorFunctor**](#function-registerexecutorfunctor) ([**const**](classal_1_1_functor_v0_m.md) [**FunctorBase**](classal_1_1_functor_base.md) & base, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**registerExecutorFunctorDraw**](#function-registerexecutorfunctordraw) ([**const**](classal_1_1_functor_v0_m.md) [**FunctorBase**](classal_1_1_functor_base.md) & base, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**registerExecutorUser**](#function-registerexecutoruser) ([**IUseExecutor**](classal_1_1_i_use_executor.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**char**](classal_1_1_functor_v0_m.md) \* | [**removeExtensionString**](#function-removeextensionstring) ([**char**](classal_1_1_functor_v0_m.md) \* res, [**size\_t**](classal_1_1_functor_v0_m.md) size, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* str) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**resetPosition**](#function-resetposition) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**rotateQuatXDirDegree**](#function-rotatequatxdirdegree) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from, [**float**](classal_1_1_functor_v0_m.md) degrees) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**rotateQuatXDirDegree**](#function-rotatequatxdirdegree) (sead::Quatf \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from, [**float**](classal_1_1_functor_v0_m.md) degrees) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**rotateQuatYDirDegree**](#function-rotatequatydirdegree) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from, [**float**](classal_1_1_functor_v0_m.md) degrees) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**rotateQuatYDirDegree**](#function-rotatequatydirdegree) (sead::Quatf \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from, [**float**](classal_1_1_functor_v0_m.md) degrees) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**rotateQuatZDirDegree**](#function-rotatequatzdirdegree) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from, [**float**](classal_1_1_functor_v0_m.md) degrees) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**rotateQuatZDirDegree**](#function-rotatequatzdirdegree) (sead::Quatf \* out, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & from, [**float**](classal_1_1_functor_v0_m.md) degrees) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**scaleVelocity**](#function-scalevelocity) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**float**](classal_1_1_functor_v0_m.md) amount) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setActionFrameRate**](#function-setactionframerate) ([**LayoutActor**](classal_1_1_layout_actor.md) \* actor, [**float**](classal_1_1_functor_v0_m.md) rate) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setBaseMtxAndCalcAnim**](#function-setbasemtxandcalcanim) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Matrix34f &, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f &) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setFront**](#function-setfront) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & front) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setGravity**](#function-setgravity) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & gravity) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setNerve**](#function-setnerve) ([**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**Nerve**](structal_1_1_nerve.md) \* nerve) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setPaneString**](#function-setpanestring) ([**LayoutActor**](classal_1_1_layout_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* paneName, [**const**](classal_1_1_functor_v0_m.md) [**wchar\_t**](classal_1_1_functor_v0_m.md) \* text) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setQuat**](#function-setquat) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & quat) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setRotate**](#function-setrotate) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & rotate) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setScale**](#function-setscale) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & scale) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setSceneObj**](#function-setsceneobj) ([**ISceneObj**](classal_1_1_i_scene_obj.md) \* obj, [**int**](classal_1_1_functor_v0_m.md) id) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setSyncRailToStart**](#function-setsyncrailtostart) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setTrans**](#function-settrans) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & trans) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setVelocity**](#function-setvelocity) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & velocity) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**setVelocityZero**](#function-setvelocityzero) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**showModel**](#function-showmodel) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**showShadow**](#function-showshadow) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**NameToActorCreator**](namespaceal.md#typedef-nametoactorcreator) | [**split**](#function-split) ([**sActorFactoryEntries**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**NameToAreaObjCreator**](namespaceal.md#typedef-nametoareaobjcreator) | [**split**](#function-split) ([**sAreaObjFactoryEntries**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**startAction**](#function-startaction) ([**LayoutActor**](classal_1_1_layout_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & actionName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**startAction**](#function-startaction) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* actionName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**startHitReaction**](#function-starthitreaction) ([**const**](classal_1_1_functor_v0_m.md) [**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**startNerveAction**](#function-startnerveaction) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* actionName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**startSe**](#function-startse) ([**IUseAudioKeeper**](classal_1_1_i_use_audio_keeper.md) \* p, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & name) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**stopScene**](#function-stopscene) ([**int**](classal_1_1_functor_v0_m.md) frames) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**syncCollisionMtx**](#function-synccollisionmtx) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Matrix34f \*) <br> |
+|  [**RailKeeper**](classal_1_1_rail_keeper.md) \* | [**tryCreateRailKeeper**](#function-trycreaterailkeeper) ([**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryEmitEffect**](#function-tryemiteffect) ([**IUseEffectKeeper**](classal_1_1_i_use_effect_keeper.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* name) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg**](#function-trygetarg) ([**bool**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg**](#function-trygetarg) ([**float**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg**](#function-trygetarg) ([**int**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg**](#function-trygetarg) ([**bool**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg**](#function-trygetarg) ([**float**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg**](#function-trygetarg) ([**int**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg0**](#function-trygetarg0) ([**int**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg0**](#function-trygetarg0) ([**float**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg1**](#function-trygetarg1) ([**float**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetArg3**](#function-trygetarg3) ([**int**](classal_1_1_functor_v0_m.md) \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetObjectName**](#function-trygetobjectname) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*\* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetObjectName**](#function-trygetobjectname) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*\* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetPlacementInfo**](#function-trygetplacementinfo) ([**PlacementInfo**](namespaceal.md#typedef-placementinfo) \* out, [**const**](classal_1_1_functor_v0_m.md) [**Resource**](classal_1_1_resource.md) \* stageArchive, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* infoIterName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetQuat**](#function-trygetquat) (sead::Quatf \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetRailIter**](#function-trygetrailiter) ([**PlacementInfo**](namespaceal.md#typedef-placementinfo) \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetStringArg**](#function-trygetstringarg) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*\* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetStringArg**](#function-trygetstringarg) ([**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \*\* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* argName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetTrans**](#function-trygettrans) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryGetTrans**](#function-trygettrans) (sead::Vector3f \* out, [**const**](classal_1_1_functor_v0_m.md) [**PlacementInfo**](namespaceal.md#typedef-placementinfo) & info) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartAction**](#function-trystartaction) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* actionName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartMclAnimIfExist**](#function-trystartmclanimifexist) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* animName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartMtpAnimIfExist**](#function-trystartmtpanimifexist) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* animName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartMtsAnimIfExist**](#function-trystartmtsanimifexist) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* animName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartSe**](#function-trystartse) ([**IUseAudioKeeper**](classal_1_1_i_use_audio_keeper.md) \* p, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & name, [**int**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartSklAnimIfExist**](#function-trystartsklanimifexist) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* animName) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**tryStartVisAnimIfExist**](#function-trystartvisanimifexist) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* animName) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**trySyncStageSwitchAppear**](#function-trysyncstageswitchappear) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**trySyncStageSwitchKill**](#function-trysyncstageswitchkill) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**updateNerveState**](#function-updatenervestate) ([**IUseNerve**](classal_1_1_i_use_nerve.md) \* p) <br> |
+|  [**bool**](classal_1_1_functor_v0_m.md) | [**updateNerveStateAndNextNerve**](#function-updatenervestateandnextnerve) ([**IUseNerve**](classal_1_1_i_use_nerve.md) \* p, [**const**](classal_1_1_functor_v0_m.md) [**Nerve**](structal_1_1_nerve.md) \* nerve) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**updatePoseMtx**](#function-updateposemtx) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Matrix34f \* mtx) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**updatePoseQuat**](#function-updateposequat) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Quatf & quat) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**updatePoseRotate**](#function-updateposerotate) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) sead::Vector3f & rotate) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**validateClipping**](#function-validateclipping) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**validateCollisionPartsBySystem**](#function-validatecollisionpartsbysystem) ([**LiveActor**](classal_1_1_live_actor.md) \* actor) <br> |
 
 
 ## Public Static Functions
 
 | Type | Name |
 | ---: | :--- |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw0ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw1ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw2ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw3ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw4ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw5ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw6ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw7ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw8ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
-|  [**const**](structal_1_1NameToCreator.md) [**ExecuteOrder**](structal_1_1ExecuteOrder.md) | [**split**](#function-split) ([**sDraw9ExecuteOrder**](structal_1_1NameToCreator.md)) <br> |
+|  [**void**](classal_1_1_functor_v0_m.md) | [**initActorImpl**](#function-initactorimpl) ([**LiveActor**](classal_1_1_live_actor.md) \* actor, [**const**](classal_1_1_functor_v0_m.md) [**ActorInitInfo**](classal_1_1_actor_init_info.md) & info, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & objectName, [**const**](classal_1_1_functor_v0_m.md) sead::SafeString & archivePath, [**const**](classal_1_1_functor_v0_m.md) [**char**](classal_1_1_functor_v0_m.md) \* suffix=[**nullptr**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw0ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw1ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw2ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw3ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw4ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw5ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw6ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw7ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw8ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
+|  [**const**](classal_1_1_functor_v0_m.md) [**ExecuteOrder**](structal_1_1_execute_order.md) | [**split**](#function-split) ([**sDraw9ExecuteOrder**](classal_1_1_functor_v0_m.md)) <br> |
 
 
 
@@ -2193,6 +2195,23 @@ void al::initActorInitInfo (
     const  PlacementInfo * placement,
     const  LayoutInitInfo & layoutInfo,
     LiveActorKit *
+) 
+```
+
+
+
+
+<hr>
+
+
+
+### function initActorInitInfo 
+
+```C++
+void al::initActorInitInfo (
+    ActorInitInfo * info,
+    const  PlacementInfo * placement,
+    const  ActorInitInfo & baseInfo
 ) 
 ```
 
@@ -4666,6 +4685,25 @@ void al::validateCollisionPartsBySystem (
 <hr>
 ## Public Static Functions Documentation
 
+
+
+
+### function initActorImpl 
+
+```C++
+static void al::initActorImpl (
+    LiveActor * actor,
+    const  ActorInitInfo & info,
+    const sead::SafeString & objectName,
+    const sead::SafeString & archivePath,
+    const  char * suffix=nullptr
+) 
+```
+
+
+
+
+<hr>
 
 
 

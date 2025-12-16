@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_async_functor_thread" kind="class" language="C++" prot="public">
+    <compoundname>al::AsyncFunctorThread</compoundname>
+    <includes refid="al_async_functor_thread_8h" local="no">alAsyncFunctorThread.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_async_functor_thread_1af4d29eabde866dc15627bbc140c9fb58" prot="private" static="no" mutable="no">
+        <type>sead::DelegateThread *</type>
+        <definition>sead::DelegateThread* al::AsyncFunctorThread::mSeadThread</definition>
+        <argsstring></argsstring>
+        <name>mSeadThread</name>
+        <qualifiedname>al::AsyncFunctorThread::mSeadThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="17" column="30" bodyfile="lib/al/include/System/alAsyncFunctorThread.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_async_functor_thread_1ad09ca720cc09ffc0fe014c1ff500bc7c" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_base" kindref="compound">FunctorBase</ref> *</type>
+        <definition>const FunctorBase* al::AsyncFunctorThread::mFunctor</definition>
+        <argsstring></argsstring>
+        <name>mFunctor</name>
+        <qualifiedname>al::AsyncFunctorThread::mFunctor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="18" column="30" bodyfile="lib/al/include/System/alAsyncFunctorThread.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_async_functor_thread_1a64fa8b92bea3082601f2a92ba1fb4b39" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::AsyncFunctorThread::mIsDone</definition>
+        <argsstring></argsstring>
+        <name>mIsDone</name>
+        <qualifiedname>al::AsyncFunctorThread::mIsDone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="19" column="31" bodyfile="lib/al/include/System/alAsyncFunctorThread.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classal_1_1_async_functor_thread_1a4867a3aadf56c7f5495e31d827723695" compoundref="al_async_functor_thread_8h" startline="24" endline="27">isDone</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_async_functor_thread_1ac2e2be7e916cf82f818f1179f62efe3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::AsyncFunctorThread::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>al::AsyncFunctorThread::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_async_functor_thread_1a4867a3aadf56c7f5495e31d827723695" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::AsyncFunctorThread::isDone</definition>
+        <argsstring>() const</argsstring>
+        <name>isDone</name>
+        <qualifiedname>al::AsyncFunctorThread::isDone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="24" column="14" bodyfile="lib/al/include/System/alAsyncFunctorThread.h" bodystart="24" bodyend="27"/>
+        <references refid="classal_1_1_async_functor_thread_1a64fa8b92bea3082601f2a92ba1fb4b39" compoundref="al_async_functor_thread_8h" startline="19">mIsDone</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_async_functor_thread_1a2c48140970ebe7025926a2e3333095d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual al::AsyncFunctorThread::~AsyncFunctorThread</definition>
+        <argsstring>()</argsstring>
+        <name>~AsyncFunctorThread</name>
+        <qualifiedname>al::AsyncFunctorThread::~AsyncFunctorThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="30" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_async_functor_thread_1af7dd6d70f55771783f02cd0d3ba7b42d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::AsyncFunctorThread::AsyncFunctorThread</definition>
+        <argsstring>(const sead::SafeString &amp;name, const FunctorBase &amp;functor, int)</argsstring>
+        <name>AsyncFunctorThread</name>
+        <qualifiedname>al::AsyncFunctorThread::AsyncFunctorThread</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::SafeString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_base" kindref="compound">FunctorBase</ref> &amp;</type>
+          <declname>functor</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/System/alAsyncFunctorThread.h" line="33" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::AsyncFunctorThread</label>
+        <link refid="classal_1_1_async_functor_thread"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mFunctor</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::FunctorBase</label>
+        <link refid="classal_1_1_functor_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/System/alAsyncFunctorThread.h" line="14" column="1" bodyfile="lib/al/include/System/alAsyncFunctorThread.h" bodystart="15" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classal_1_1_async_functor_thread_1af7dd6d70f55771783f02cd0d3ba7b42d" prot="public" virt="non-virtual"><scope>al::AsyncFunctorThread</scope><name>AsyncFunctorThread</name></member>
+      <member refid="classal_1_1_async_functor_thread_1a4867a3aadf56c7f5495e31d827723695" prot="public" virt="non-virtual"><scope>al::AsyncFunctorThread</scope><name>isDone</name></member>
+      <member refid="classal_1_1_async_functor_thread_1ad09ca720cc09ffc0fe014c1ff500bc7c" prot="private" virt="non-virtual"><scope>al::AsyncFunctorThread</scope><name>mFunctor</name></member>
+      <member refid="classal_1_1_async_functor_thread_1a64fa8b92bea3082601f2a92ba1fb4b39" prot="private" virt="non-virtual"><scope>al::AsyncFunctorThread</scope><name>mIsDone</name></member>
+      <member refid="classal_1_1_async_functor_thread_1af4d29eabde866dc15627bbc140c9fb58" prot="private" virt="non-virtual"><scope>al::AsyncFunctorThread</scope><name>mSeadThread</name></member>
+      <member refid="classal_1_1_async_functor_thread_1ac2e2be7e916cf82f818f1179f62efe3d" prot="public" virt="non-virtual"><scope>al::AsyncFunctorThread</scope><name>start</name></member>
+      <member refid="classal_1_1_async_functor_thread_1a2c48140970ebe7025926a2e3333095d4" prot="public" virt="virtual"><scope>al::AsyncFunctorThread</scope><name>~AsyncFunctorThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

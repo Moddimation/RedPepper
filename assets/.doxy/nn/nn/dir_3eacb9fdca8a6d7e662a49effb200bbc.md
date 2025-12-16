@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/include/nn/fs/ipc
+# Dir ipc
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**fs\_FileSystem.h**](fs__FileSystem_8h.md) <br> |
+| file | [**fs\_FileSystem.h**](fs___file_system_8h.md) <br> |
 
 
 

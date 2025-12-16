@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_save_data_director_8h" kind="file" language="C++">
+    <compoundname>alSaveDataDirector.h</compoundname>
+    <includedby refid="al_system_kit_8cpp" local="no">alSystemKit.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alSaveDataDirector.h</label>
+        <link refid="al_save_data_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alSystemKit.cpp</label>
+        <link refid="al_system_kit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_save_data_director" prot="public">al::SaveDataDirector</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SaveDataSequenceBase;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SaveDataSequenceInitDir;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">AsyncFunctorThread;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classal_1_1_save_data_director" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_save_data_director" kindref="compound">SaveDataDirector</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_save_data_director_1ab47f5f5c3c402929e80882998fa20876" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_director_1ab47f5f5c3c402929e80882998fa20876" kindref="member">_0</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_save_data_director_1ab1e1df402143099136f819e95500339c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_sequence_base" kindref="compound">SaveDataSequenceBase</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_director_1ab1e1df402143099136f819e95500339c" kindref="member">_4</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_save_data_director_1abb616cbf4a204a0254a126a2a2ad3f58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_sequence_base" kindref="compound">SaveDataSequenceBase</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_director_1abb616cbf4a204a0254a126a2a2ad3f58" kindref="member">_8</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_save_data_director_1a1aece47afb7967d62b5fc81140bd754e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_sequence_init_dir" kindref="compound">SaveDataSequenceInitDir</ref>*<sp/><sp/><ref refid="classal_1_1_save_data_director_1a1aece47afb7967d62b5fc81140bd754e" kindref="member">mInitDirSequence</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_save_data_director_1ab536f5c27350d81dda5a1308dbab10ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_director_1ab536f5c27350d81dda5a1308dbab10ad" kindref="member">_10</ref>[<sp/>0x58<sp/>];</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_save_data_director_1a17388b96ffdb2e8d868fab68d632f945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_async_functor_thread" kindref="compound">AsyncFunctorThread</ref>*<sp/><ref refid="classal_1_1_save_data_director_1a17388b96ffdb2e8d868fab68d632f945" kindref="member">mSaveDataThread</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_save_data_director_1ac0f4d50f33a2f16478514aea5f3d894d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_director_1ac0f4d50f33a2f16478514aea5f3d894d" kindref="member">_6C</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_save_data_director_1a2c24508f0e813e14585ffba128a14806" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_save_data_director_1a2c24508f0e813e14585ffba128a14806" kindref="member">SaveDataDirector</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">s32</ref><sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Save/alSaveDataDirector.h"/>
+  </compounddef>
+</doxygen>

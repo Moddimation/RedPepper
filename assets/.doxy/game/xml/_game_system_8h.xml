@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_game_system_8h" kind="file" language="C++">
+    <compoundname>GameSystem.h</compoundname>
+    <includes local="no">Nerve/alNerveExecutor.h</includes>
+    <includedby refid="_course_list_8cpp" local="yes">CourseList.cpp</includedby>
+    <includedby refid="_game_system_8cpp" local="yes">GameSystem.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>GameSystem.h</label>
+        <link refid="_game_system_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Nerve/alNerveExecutor.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>GameSystem.h</label>
+        <link refid="_game_system_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CourseList.cpp</label>
+        <link refid="_course_list_8cpp"/>
+      </node>
+      <node id="3">
+        <label>GameSystem.cpp</label>
+        <link refid="_game_system_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_game_system" prot="public">GameSystem</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerveExecutor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LayoutKit;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MessageSystem;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sequence;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_course_list" kindref="compound">CourseList</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_game_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game_system" kindref="compound">GameSystem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>al::NerveExecutor</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="class_game_system_1ad2a00127bd2c7f75be6f07313274932c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game_system_1ad2a00127bd2c7f75be6f07313274932c" kindref="member">ApplicationFunction</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="class_game_system_1a7289143e2a324e25d5e3ffd26af1903a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::Sequence*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a7289143e2a324e25d5e3ffd26af1903a" kindref="member">mCurrentSequence</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_game_system_1abba24a28dc8c2509fd5aded37164b2a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1abba24a28dc8c2509fd5aded37164b2a6" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_game_system_1afe5de052ba431b07a1e43c118b19a350" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1afe5de052ba431b07a1e43c118b19a350" kindref="member">_10</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_game_system_1a26bd39beec7c6dbcdf776c225fbf2483" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::LayoutKit*<sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a26bd39beec7c6dbcdf776c225fbf2483" kindref="member">mLayoutKit</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_game_system_1aae9a5e006845da25bf9e75c63aa22100" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1aae9a5e006845da25bf9e75c63aa22100" kindref="member">_18</ref>;</highlight></codeline>
+<codeline lineno="23" refid="class_game_system_1a7925de87559e1087506e6f65fa41a672" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::MessageSystem*<sp/><ref refid="class_game_system_1a7925de87559e1087506e6f65fa41a672" kindref="member">mMessageSystem</ref>;</highlight></codeline>
+<codeline lineno="24" refid="class_game_system_1a31559ed7a4e527b19e0f41e6ae42b07b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a31559ed7a4e527b19e0f41e6ae42b07b" kindref="member">_20</ref>;</highlight></codeline>
+<codeline lineno="25" refid="class_game_system_1a707280057bb8c75a853bc0453fa1b6c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a707280057bb8c75a853bc0453fa1b6c5" kindref="member">_24</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_game_system_1a0db6bcf262dbb2dbf8aa359479a98b50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_course_list" kindref="compound">CourseList</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a0db6bcf262dbb2dbf8aa359479a98b50" kindref="member">mCourseList</ref>;</highlight></codeline>
+<codeline lineno="27" refid="class_game_system_1a7ccf1bb4b85231434b778436c80afbdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a7ccf1bb4b85231434b778436c80afbdc" kindref="member">_2C</ref>;</highlight></codeline>
+<codeline lineno="28" refid="class_game_system_1acae795b4c748257128586ba7ebe9d95e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1acae795b4c748257128586ba7ebe9d95e" kindref="member">_30</ref>;</highlight></codeline>
+<codeline lineno="29" refid="class_game_system_1a1b1f7dcb177758f54fb75218a1450dcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a1b1f7dcb177758f54fb75218a1450dcd" kindref="member">_34</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="class_game_system_1a11ea8e11d701d3aaa84bd4fcdd4e0553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_course_list" kindref="compound">CourseList</ref>*<sp/><ref refid="class_game_system_1a11ea8e11d701d3aaa84bd4fcdd4e0553" kindref="member">getCourseList</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="33"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_game_system_1a0db6bcf262dbb2dbf8aa359479a98b50" kindref="member">mCourseList</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="class_game_system_1af3db39317c8000ecbe7ccbe52f534054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_system_1af3db39317c8000ecbe7ccbe52f534054" kindref="member">init</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="39" refid="class_game_system_1ad623f878bb08d07ec953c081be396fd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_system_1ad623f878bb08d07ec953c081be396fd9" kindref="member">movement</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="40" refid="class_game_system_1aebf9d2092a1e14594e83866c2a778b03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_system_1aebf9d2092a1e14594e83866c2a778b03" kindref="member">v6</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="41" refid="class_game_system_1aeff085c4b1e52f6417065700a82a4d57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_system_1aeff085c4b1e52f6417065700a82a4d57" kindref="member">v7</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="42" refid="class_game_system_1a30bcdc2964b354deb9502ade7d346353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_system_1a30bcdc2964b354deb9502ade7d346353" kindref="member">v8</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_system_1a9b2545e9fd2c31ac6ea03b3fcd5a4179" kindref="member">GameSystem</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/System/GameSystem.h"/>
+  </compounddef>
+</doxygen>

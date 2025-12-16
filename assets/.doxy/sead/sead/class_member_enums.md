@@ -5,51 +5,51 @@
 
 ## a
 
-* **AddonId** ([**sead::ControllerDefine**](classsead_1_1ControllerDefine.md))
-* **AllocMode** ([**sead::ExpHeap**](classsead_1_1ExpHeap.md))
+* **AddonId** ([**sead::ControllerDefine**](classsead_1_1_controller_define.md))
+* **AllocMode** ([**sead::ExpHeap**](classsead_1_1_exp_heap.md))
 
 
 ## c
 
-* **ControllerBase** ([**sead::ControllerBase**](classsead_1_1ControllerBase.md))
-* **ControllerId** ([**sead::ControllerDefine**](classsead_1_1ControllerDefine.md))
+* **ControllerBase** ([**sead::ControllerBase**](classsead_1_1_controller_base.md))
+* **ControllerId** ([**sead::ControllerDefine**](classsead_1_1_controller_define.md))
 
 
 ## d
 
-* **DeviceId** ([**sead::ControllerDefine**](classsead_1_1ControllerDefine.md))
+* **DeviceId** ([**sead::ControllerDefine**](classsead_1_1_controller_define.md))
 
 
 ## f
 
-* **FindFreeBlockMode** ([**sead::ExpHeap**](classsead_1_1ExpHeap.md))
-* **FindMode** ([**sead::ExpHeap**](classsead_1_1ExpHeap.md))
-* **FileOpenFlag** ([**sead::FileDevice**](classsead_1_1FileDevice.md))
+* **FindFreeBlockMode** ([**sead::ExpHeap**](classsead_1_1_exp_heap.md))
+* **FindMode** ([**sead::ExpHeap**](classsead_1_1_exp_heap.md))
+* **FileOpenFlag** ([**sead::FileDevice**](classsead_1_1_file_device.md))
 
 
 ## h
 
-* **HeapDirection** ([**sead::Heap**](classsead_1_1Heap.md))
-* **HeapNullOption** ([**sead::IDisposer**](classsead_1_1IDisposer.md))
+* **HeapDirection** ([**sead::Heap**](classsead_1_1_heap.md))
+* **HeapNullOption** ([**sead::IDisposer**](classsead_1_1_i_disposer.md))
 
 
 ## p
 
-* **PadIdx** ([**sead::Controller**](classsead_1_1Controller.md))
-* **PointerFlagMask** ([**sead::ControllerBase**](classsead_1_1ControllerBase.md))
-* **PauseFlag** ([**sead::MethodTreeNode**](classsead_1_1MethodTreeNode.md))
+* **PadIdx** ([**sead::Controller**](classsead_1_1_controller.md))
+* **PointerFlagMask** ([**sead::ControllerBase**](classsead_1_1_controller_base.md))
+* **PauseFlag** ([**sead::MethodTreeNode**](classsead_1_1_method_tree_node.md))
 
 
 ## s
 
-* **SeekOrigin** ([**sead::FileDevice**](classsead_1_1FileDevice.md))
-* **State** ([**sead::TaskBase**](classsead_1_1TaskBase.md))
+* **SeekOrigin** ([**sead::FileDevice**](classsead_1_1_file_device.md))
+* **State** ([**sead::TaskBase**](classsead_1_1_task_base.md))
 
 
 ## t
 
-* **Tag** ([**sead::TaskBase**](classsead_1_1TaskBase.md))
-* **Type** ([**sead::TaskClassID**](classsead_1_1TaskClassID.md))
+* **Tag** ([**sead::TaskBase**](classsead_1_1_task_base.md))
+* **Type** ([**sead::TaskClassID**](classsead_1_1_task_class_i_d.md))
 
 
 

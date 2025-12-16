@@ -27,14 +27,14 @@
 
 | Type | Name |
 | ---: | :--- |
-| namespace | [**ARMv6**](namespacenn_1_1math_1_1ARMv6.md) <br> |
+| namespace | [**ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md) <br> |
 
 
 ## Classes
 
 | Type | Name |
 | ---: | :--- |
-| struct | [**VEC3**](structnn_1_1math_1_1VEC3.md) <br> |
+| struct | [**VEC3**](structnn_1_1math_1_1_v_e_c3.md) <br> |
 
 
 

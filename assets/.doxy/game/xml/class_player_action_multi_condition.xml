@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_player_action_multi_condition" kind="class" language="C++" prot="public">
+    <compoundname>PlayerActionMultiCondition</compoundname>
+    <basecompoundref refid="class_player_action_condition" prot="public" virt="non-virtual">PlayerActionCondition</basecompoundref>
+    <includes refid="_player_action_multi_condition_8h" local="no">PlayerActionMultiCondition.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_action_multi_condition_1a6eece654e48b4dec9eb89044bdb995ba" prot="private" static="no" mutable="no">
+        <type>sead::OffsetList&lt; <ref refid="class_player_action_condition" kindref="compound">PlayerActionCondition</ref> * &gt;</type>
+        <definition>sead::OffsetList&lt;PlayerActionCondition*&gt; PlayerActionMultiCondition::mConditions</definition>
+        <argsstring></argsstring>
+        <name>mConditions</name>
+        <qualifiedname>PlayerActionMultiCondition::mConditions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionMultiCondition.h" line="10" column="26" bodyfile="Game/include/Player/PlayerActionMultiCondition.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_player_action_multi_condition_1ad27afb06b66ae3300e677e0f756e218d" compoundref="_player_action_multi_condition_8cpp" startline="8" endline="11">append</referencedby>
+        <referencedby refid="class_player_action_multi_condition_1a235cdb82acfd97c5e932491628dc33dd" compoundref="_player_action_multi_condition_8cpp" startline="3" endline="6">PlayerActionMultiCondition</referencedby>
+        <referencedby refid="class_player_action_multi_condition_1a4fa90094347e0c244f924ad889a926cd" compoundref="_player_action_multi_condition_8cpp" startline="22" endline="28">setup</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_action_multi_condition_1ad27afb06b66ae3300e677e0f756e218d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerActionMultiCondition::append</definition>
+        <argsstring>(PlayerActionCondition *condition)</argsstring>
+        <name>append</name>
+        <qualifiedname>PlayerActionMultiCondition::append</qualifiedname>
+        <param>
+          <type><ref refid="class_player_action_condition" kindref="compound">PlayerActionCondition</ref> *</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionMultiCondition.h" line="13" column="14" bodyfile="Game/src/Player/PlayerActionMultiCondition.cpp" bodystart="8" bodyend="11"/>
+        <references refid="class_player_action_multi_condition_1a6eece654e48b4dec9eb89044bdb995ba" compoundref="_player_action_multi_condition_8h" startline="10">mConditions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_action_multi_condition_1a1cb003109a85d9b64cbf8f5258bdec95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool PlayerActionMultiCondition::check</definition>
+        <argsstring>()</argsstring>
+        <name>check</name>
+        <qualifiedname>PlayerActionMultiCondition::check</qualifiedname>
+        <reimplements refid="class_player_action_condition_1a19f2c51a0036a0e653b786ba7b49334d">check</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionMultiCondition.h" line="16" column="22" bodyfile="Game/src/Player/PlayerActionMultiCondition.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_action_multi_condition_1a4fa90094347e0c244f924ad889a926cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PlayerActionMultiCondition::setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <qualifiedname>PlayerActionMultiCondition::setup</qualifiedname>
+        <reimplements refid="class_player_action_condition_1a0f4e6e4f9535c5e724cebe260840b28f">setup</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionMultiCondition.h" line="17" column="22" bodyfile="Game/src/Player/PlayerActionMultiCondition.cpp" bodystart="22" bodyend="28"/>
+        <references refid="class_player_action_multi_condition_1a6eece654e48b4dec9eb89044bdb995ba" compoundref="_player_action_multi_condition_8h" startline="10">mConditions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_action_multi_condition_1a235cdb82acfd97c5e932491628dc33dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlayerActionMultiCondition::PlayerActionMultiCondition</definition>
+        <argsstring>()</argsstring>
+        <name>PlayerActionMultiCondition</name>
+        <qualifiedname>PlayerActionMultiCondition::PlayerActionMultiCondition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionMultiCondition.h" line="20" column="9" bodyfile="Game/src/Player/PlayerActionMultiCondition.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_player_action_multi_condition_1a6eece654e48b4dec9eb89044bdb995ba" compoundref="_player_action_multi_condition_8h" startline="10">mConditions</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PlayerActionCondition</label>
+        <link refid="class_player_action_condition"/>
+      </node>
+      <node id="1">
+        <label>PlayerActionMultiCondition</label>
+        <link refid="class_player_action_multi_condition"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PlayerActionCondition</label>
+        <link refid="class_player_action_condition"/>
+      </node>
+      <node id="1">
+        <label>PlayerActionMultiCondition</label>
+        <link refid="class_player_action_multi_condition"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Player/PlayerActionMultiCondition.h" line="7" column="1" bodyfile="Game/include/Player/PlayerActionMultiCondition.h" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_player_action_multi_condition_1ad27afb06b66ae3300e677e0f756e218d" prot="public" virt="non-virtual"><scope>PlayerActionMultiCondition</scope><name>append</name></member>
+      <member refid="class_player_action_multi_condition_1a1cb003109a85d9b64cbf8f5258bdec95" prot="public" virt="virtual"><scope>PlayerActionMultiCondition</scope><name>check</name></member>
+      <member refid="class_player_action_multi_condition_1a6eece654e48b4dec9eb89044bdb995ba" prot="private" virt="non-virtual"><scope>PlayerActionMultiCondition</scope><name>mConditions</name></member>
+      <member refid="class_player_action_multi_condition_1a235cdb82acfd97c5e932491628dc33dd" prot="public" virt="non-virtual"><scope>PlayerActionMultiCondition</scope><name>PlayerActionMultiCondition</name></member>
+      <member refid="class_player_action_multi_condition_1a4fa90094347e0c244f924ad889a926cd" prot="public" virt="virtual"><scope>PlayerActionMultiCondition</scope><name>setup</name></member>
+      <member refid="class_player_action_condition_1a23282e5214a97b3f8714256d9bf78598" prot="public" virt="virtual"><scope>PlayerActionMultiCondition</scope><name>~PlayerActionCondition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

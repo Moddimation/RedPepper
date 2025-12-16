@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_rail_function_8h" kind="file" language="C++">
+    <compoundname>alRailFunction.h</compoundname>
+    <includedby refid="al_rail_function_8cpp" local="no">alRailFunction.cpp</includedby>
+    <includedby refid="al_rail_move_movement_8cpp" local="no">alRailMoveMovement.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alRailFunction.h</label>
+        <link refid="al_rail_function_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alRailFunction.cpp</label>
+        <link refid="al_rail_function_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alRailMoveMovement.cpp</label>
+        <link refid="al_rail_move_movement_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActor;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7a0914108d4e2f7a72ab089314fb170b" kindref="member">setSyncRailToStart</ref>(<sp/>LiveActor*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1a6cded99fabe040e24450c2703f5086e7" kindref="member">getRailDir</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LiveActor*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aa697a2468d7fa5c5dbac6ddd27275785" kindref="member">isRailReachedGoal</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LiveActor*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1ade55c62ca44c4a9a443f42229b7fd5ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ade55c62ca44c4a9a443f42229b7fd5ce" kindref="member">moveSyncRail</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">speed</ref><sp/>);</highlight></codeline>
+<codeline lineno="13" refid="namespaceal_1a2cb1142a3bb504a3d039ea83a2eff65f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a2cb1142a3bb504a3d039ea83a2eff65f" kindref="member">moveSyncRailTurn</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">speed</ref><sp/>);</highlight></codeline>
+<codeline lineno="14" refid="namespaceal_1a36e06528c2335fa78fbb1ddf7918cf99" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a36e06528c2335fa78fbb1ddf7918cf99" kindref="member">moveSyncRailLoop</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">speed</ref><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a17968271fa7a2c88c441b029fb31508c" kindref="member">isLoopRail</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3fd1bb9c5adfdf2fbb33a31f3a570875" kindref="member">isExistRail</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Rail/alRailFunction.h"/>
+  </compounddef>
+</doxygen>

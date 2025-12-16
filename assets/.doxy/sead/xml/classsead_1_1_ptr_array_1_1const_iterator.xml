@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_ptr_array_1_1const_iterator" kind="class" language="C++" prot="public">
+    <compoundname>sead::PtrArray::constIterator</compoundname>
+    <includes refid="sead_ptr_array_8h" local="no">seadPtrArray.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1_ptr_array_1_1const_iterator_1a861e112f8633aca4ac8ce8946ae926b3" prot="private" static="no" mutable="no">
+        <type>const T *const  *</type>
+        <definition>const T* const* sead::PtrArray&lt; T &gt;::constIterator::mPPtr</definition>
+        <argsstring></argsstring>
+        <name>mPPtr</name>
+        <qualifiedname>sead::PtrArray::constIterator::mPPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="294" column="23" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="294" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_ptr_array_1_1const_iterator_1a5a7e0ba08b153ba6968cc89fb2eda548" compoundref="sead_ptr_array_8h" startline="289" endline="289">sead::PtrArray&lt; T &gt;::constIterator::operator*</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1_1const_iterator_1a7ee60e36c3f2771ff7d3b1bb4d2ef35b" compoundref="sead_ptr_array_8h" startline="284" endline="287">sead::PtrArray&lt; T &gt;::constIterator::operator++</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1_1const_iterator_1a4aae6133bce3bf9d0402d48b62364302" compoundref="sead_ptr_array_8h" startline="291" endline="291">sead::PtrArray&lt; T &gt;::constIterator::operator-&gt;</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1_1const_iterator_1a1dc25c246f841e3de63fe35a1c456d5e" compoundref="sead_ptr_array_8h" startline="280" endline="280">sead::PtrArray&lt; T &gt;::constIterator::operator==</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_ptr_array_1_1const_iterator_1ae72a78ffb818db82df1111b50de77aef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::PtrArray&lt; T &gt;::constIterator::constIterator</definition>
+        <argsstring>(const T *const *pptr)</argsstring>
+        <name>constIterator</name>
+        <qualifiedname>sead::PtrArray::constIterator::constIterator</qualifiedname>
+        <param>
+          <type>const T *const *</type>
+          <declname>pptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="278" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_1_1const_iterator_1a1dc25c246f841e3de63fe35a1c456d5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArray&lt; T &gt;::constIterator::operator==</definition>
+        <argsstring>(const constIterator &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>sead::PtrArray::constIterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_ptr_array_1_1const_iterator" kindref="compound">constIterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="280" column="14" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="280" bodyend="280"/>
+        <references refid="classsead_1_1_ptr_array_1_1const_iterator_1a861e112f8633aca4ac8ce8946ae926b3" compoundref="sead_ptr_array_8h" startline="294">sead::PtrArray&lt; T &gt;::constIterator::mPPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_1_1const_iterator_1a9dd891155a7401a7fbcbf031306005a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArray&lt; T &gt;::constIterator::operator!=</definition>
+        <argsstring>(const constIterator &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>sead::PtrArray::constIterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_ptr_array_1_1const_iterator" kindref="compound">constIterator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="282" column="14" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_1_1const_iterator_1a7ee60e36c3f2771ff7d3b1bb4d2ef35b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_ptr_array_1_1const_iterator" kindref="compound">constIterator</ref> &amp;</type>
+        <definition>constIterator &amp; sead::PtrArray&lt; T &gt;::constIterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>sead::PtrArray::constIterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="284" column="23" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="284" bodyend="287"/>
+        <references refid="classsead_1_1_ptr_array_1_1const_iterator_1a861e112f8633aca4ac8ce8946ae926b3" compoundref="sead_ptr_array_8h" startline="294">sead::PtrArray&lt; T &gt;::constIterator::mPPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_1_1const_iterator_1a5a7e0ba08b153ba6968cc89fb2eda548" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; sead::PtrArray&lt; T &gt;::constIterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>sead::PtrArray::constIterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="289" column="17" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="289" bodyend="289"/>
+        <references refid="classsead_1_1_ptr_array_1_1const_iterator_1a861e112f8633aca4ac8ce8946ae926b3" compoundref="sead_ptr_array_8h" startline="294">sead::PtrArray&lt; T &gt;::constIterator::mPPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_1_1const_iterator_1a4aae6133bce3bf9d0402d48b62364302" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * sead::PtrArray&lt; T &gt;::constIterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>sead::PtrArray::constIterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="291" column="17" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="291" bodyend="291"/>
+        <references refid="classsead_1_1_ptr_array_1_1const_iterator_1a861e112f8633aca4ac8ce8946ae926b3" compoundref="sead_ptr_array_8h" startline="294">sead::PtrArray&lt; T &gt;::constIterator::mPPtr</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sead/include/container/seadPtrArray.h" line="276" column="5" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="276" bodyend="295"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1ae72a78ffb818db82df1111b50de77aef" prot="public" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>constIterator</name></member>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1a861e112f8633aca4ac8ce8946ae926b3" prot="private" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>mPPtr</name></member>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1a9dd891155a7401a7fbcbf031306005a2" prot="public" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>operator!=</name></member>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1a5a7e0ba08b153ba6968cc89fb2eda548" prot="public" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>operator*</name></member>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1a7ee60e36c3f2771ff7d3b1bb4d2ef35b" prot="public" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>operator++</name></member>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1a4aae6133bce3bf9d0402d48b62364302" prot="public" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>operator-&gt;</name></member>
+      <member refid="classsead_1_1_ptr_array_1_1const_iterator_1a1dc25c246f841e3de63fe35a1c456d5e" prot="public" virt="non-virtual"><scope>sead::PtrArray::constIterator</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_collision_util_8h" kind="file" language="C++">
+    <compoundname>alCollisionUtil.h</compoundname>
+    <includes local="no">math/seadMatrix.h</includes>
+    <includedby refid="al_collision_util_8cpp" local="no">alCollisionUtil.cpp</includedby>
+    <includedby refid="al_live_actor_function_8cpp" local="no">alLiveActorFunction.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alCollisionUtil.h</label>
+        <link refid="al_collision_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadMatrix.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alCollisionUtil.h</label>
+        <link refid="al_collision_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alCollisionUtil.cpp</label>
+        <link refid="al_collision_util_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadMatrix.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActor;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1a6969ea5fb1c51afbfce486a64e13e0c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a6969ea5fb1c51afbfce486a64e13e0c5" kindref="member">syncCollisionMtx</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f*<sp/>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespaceal_1a75c95c6822f6d66f0d54000b34663733" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a75c95c6822f6d66f0d54000b34663733" kindref="member">isCollided</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1acc203541cd37fbf83f4fc3723a6cfa17" kindref="member">isCollidedGround</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="13" refid="namespaceal_1a1003b2d8ee52a269cce4d409bef0e966" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a1003b2d8ee52a269cce4d409bef0e966" kindref="member">isCollidedWall</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="14" refid="namespaceal_1ae59e694e4721fa20f185bf1073484fe5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae59e694e4721fa20f185bf1073484fe5" kindref="member">isOnGround</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Collision/alCollisionUtil.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_host_state_base" kind="class" language="C++" prot="public">
+    <compoundname>al::HostStateBase</compoundname>
+    <basecompoundref refid="classal_1_1_nerve_state_base" prot="public" virt="non-virtual">al::NerveStateBase</basecompoundref>
+    <includes refid="al_host_state_base_8h" local="no">alHostStateBase.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">typename</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">T</ref></type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classal_1_1_host_state_base_1a663a1dd7636bd2a11065f121162183c4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">T</ref> *<ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref></type>
+        <definition>T* const al::HostStateBase&lt; T &gt;::mHost</definition>
+        <argsstring></argsstring>
+        <name>mHost</name>
+        <qualifiedname>al::HostStateBase::mHost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alHostStateBase.h" line="12" column="17" bodyfile="lib/al/include/Nerve/alHostStateBase.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_host_state_base_1a469ac123bea6c4f4aa242ab6a215c75a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>al::HostStateBase&lt; T &gt;::HostStateBase</definition>
+        <argsstring>(T *host, const char *name)</argsstring>
+        <name>HostStateBase</name>
+        <qualifiedname>al::HostStateBase::HostStateBase</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">T</ref> *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alHostStateBase.h" line="15" column="9" bodyfile="lib/al/include/Nerve/alHostStateBase.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>al::HostStateBase&lt; LiveActor &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; LiveActor &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::HostStateBase&lt; T &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="3">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::RailMoveMovement</label>
+        <link refid="classal_1_1_rail_move_movement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::HostStateBase&lt; T &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="6">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="10">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::NerveActionCtrl</label>
+        <link refid="classal_1_1_nerve_action_ctrl"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mNerveActions</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1_nerve_keeper"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mEndNerve</edgelabel>
+          <edgelabel>mNerve</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mStateCtrl</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mActionCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::NerveStateCtrl</label>
+        <link refid="classal_1_1_nerve_state_ctrl"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mCurrentState</edgelabel>
+          <edgelabel>mStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::NerveStateCtrl::State</label>
+        <link refid="structal_1_1_nerve_state_ctrl_1_1_state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Nerve/alHostStateBase.h" line="9" column="1" bodyfile="lib/al/include/Nerve/alHostStateBase.h" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classal_1_1_nerve_state_base_1ac86e2e3a4edb303b64374308a8c2ac50" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>appear</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a88ab7f05f7ea17fa8795da4fe8b18707" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>control</name></member>
+      <member refid="classal_1_1_nerve_executor_1a690ab4d04c68a234537871a10dc0bd7a" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>getNerveKeeper</name></member>
+      <member refid="classal_1_1_host_state_base_1a469ac123bea6c4f4aa242ab6a215c75a" prot="public" virt="non-virtual"><scope>al::HostStateBase</scope><name>HostStateBase</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a590b05a950296657f7f5d6ecb1487297" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>init</name></member>
+      <member refid="classal_1_1_nerve_executor_1a19465d1ed2537887d53fb843445f6710" prot="public" virt="non-virtual"><scope>al::HostStateBase</scope><name>initNerve</name></member>
+      <member refid="classal_1_1_nerve_state_base_1ae421ab19701e705b91bc4b3027d4b16d" prot="public" virt="non-virtual"><scope>al::HostStateBase</scope><name>isDead</name></member>
+      <member refid="classal_1_1_nerve_state_base_1aeadcaa107f8e66af0f4db9303d079593" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>kill</name></member>
+      <member refid="classal_1_1_host_state_base_1a663a1dd7636bd2a11065f121162183c4" prot="protected" virt="non-virtual"><scope>al::HostStateBase</scope><name>mHost</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a13890e21d49521b00151cfada4ac968c" prot="private" virt="non-virtual"><scope>al::HostStateBase</scope><name>mIsDead</name></member>
+      <member refid="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" prot="private" virt="non-virtual"><scope>al::HostStateBase</scope><name>mNerveKeeper</name></member>
+      <member refid="classal_1_1_nerve_executor_1a83059687727fd903b90fdd321baf0b7b" prot="public" virt="non-virtual"><scope>al::HostStateBase</scope><name>NerveExecutor</name></member>
+      <member refid="classal_1_1_nerve_state_base_1af96feac7e1e08708231038b427424ce8" prot="public" virt="non-virtual"><scope>al::HostStateBase</scope><name>NerveStateBase</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a30a0d8c9839a35a6cdccf807233f791f" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>update</name></member>
+      <member refid="classal_1_1_nerve_executor_1a99c75085308c72cbdee3fdbb6c4e1660" prot="public" virt="non-virtual"><scope>al::HostStateBase</scope><name>updateNerve</name></member>
+      <member refid="classal_1_1_nerve_executor_1afe58c1f379540e3436e4ac0678b61991" prot="public" virt="virtual"><scope>al::HostStateBase</scope><name>~NerveExecutor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

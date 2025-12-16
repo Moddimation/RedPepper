@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/include/Controller
+# Dir Controller
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alControllerUtil.h**](alControllerUtil_8h.md) <br> |
+| file | [**alControllerUtil.h**](al_controller_util_8h.md) <br> |
 
 
 

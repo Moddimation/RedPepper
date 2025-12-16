@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_wipe_simple_8cpp" kind="file" language="C++">
+    <compoundname>alWipeSimple.cpp</compoundname>
+    <includes refid="al_wipe_simple_8h" local="no">Layout/alWipeSimple.h</includes>
+    <includes refid="al_nerve_function_8h" local="no">Nerve/alNerveFunction.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="5">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Layout/alLayoutActor.h</label>
+        <link refid="al_layout_actor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Layout/alWipeSimple.h</label>
+        <link refid="al_wipe_simple_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Nerve/alNerveFunction.h</label>
+        <link refid="al_nerve_function_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="12">
+        <label>Nerve/alNerveStateBase.h</label>
+        <link refid="al_nerve_state_base_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alWipeSimple.cpp</label>
+        <link refid="al_wipe_simple_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="10">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <innernamespace refid="namespaceal_1_1_nrv_wipe_simple">al::NrvWipeSimple</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_wipe_simple_8h" kindref="compound">Layout/alWipeSimple.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_function_8h" kindref="compound">Nerve/alNerveFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceal_1_1_nrv_wipe_simple" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NrvWipeSimple</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="al_nerve_8h_1aa673fd862e01ac28f82a4f9deb64b2fa" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="classal_1_1_wipe_simple" kindref="compound">WipeSimple</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Close</ref><sp/>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="al_nerve_8h_1aa673fd862e01ac28f82a4f9deb64b2fa" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="classal_1_1_wipe_simple" kindref="compound">WipeSimple</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Wait</ref><sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="al_nerve_8h_1aa673fd862e01ac28f82a4f9deb64b2fa" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="classal_1_1_wipe_simple" kindref="compound">WipeSimple</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Open</ref><sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NrvWipeSimple</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_wipe_simple_1a8b36197a3d742e70791a3d0c74d3404d" refkind="member"><highlight class="normal"><ref refid="classal_1_1_wipe_simple_1a8b36197a3d742e70791a3d0c74d3404d" kindref="member">WipeSimple::WipeSimple</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">archive</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_init_info" kindref="compound">LayoutInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">suffix</ref><sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_layout_actor" kindref="compound">LayoutActor</ref>(<sp/>name<sp/>),<sp/>_30(<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae737a10e6aa08572d6de4f3a725d19cc" kindref="member">initLayoutActor</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">archive</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">suffix</ref><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a3f4205f116e5cc15508f7cfe1054433c" kindref="member">initNerve</ref>(<sp/>&amp;NrvWipeSimple::Close<sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_wipe_simple_1a26e6b8c82c96f4221ca2b1fee0a5d9ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_wipe_simple_1a26e6b8c82c96f4221ca2b1fee0a5d9ad" kindref="member">WipeSimple::appear</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a27623acb1aff9a2f53951d3472b091e3" kindref="member">LayoutActor::appear</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_wipe_simple_1a1334e13eadb9f217d30b9e45fa45412a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_wipe_simple_1a1334e13eadb9f217d30b9e45fa45412a" kindref="member">WipeSimple::exeClose</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="namespaceal_1ac853c7514dc45cef297c5f71a47c11b1" kindref="member">isFirstStep</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1ae081c26e01e14b58b22b789b7dc77519" kindref="member">isActionEnd</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a532ade3c60897b2dac244f18cff3a3e7" kindref="member">setNerve</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvWipeSimple::Wait<sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classal_1_1_wipe_simple_1aa7b1aba18bd354e354001093b0bd8be4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_wipe_simple_1aa7b1aba18bd354e354001093b0bd8be4" kindref="member">WipeSimple::exeWait</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1ac853c7514dc45cef297c5f71a47c11b1" kindref="member">isFirstStep</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a5e52f9af7a3182dac16d0af53fc4c35d" kindref="member">startAction</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Wait&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>float<sp/>math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classal_1_1_wipe_simple_1a12a39d50c2620c68e31ec2fc0c722b9e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_wipe_simple_1a12a39d50c2620c68e31ec2fc0c722b9e" kindref="member">WipeSimple::exeOpen</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1ac853c7514dc45cef297c5f71a47c11b1" kindref="member">isFirstStep</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a6e2c47b599a4c7fdb3ce87fcd35e9808" kindref="member">setActionFrameRate</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_wipe_simple_1a1f5c3383fdafa89b41c4b7189167e27f" kindref="member">_30</ref><sp/>&lt;<sp/>1<sp/>?<sp/>1.0<sp/>:<sp/><ref refid="namespaceal_1a101312e0d7d9c69d5e81cbf37f8bfe8d" kindref="member">getActionFrameMax</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>/<sp/><ref refid="classal_1_1_wipe_simple_1a1f5c3383fdafa89b41c4b7189167e27f" kindref="member">_30</ref><sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1ae081c26e01e14b58b22b789b7dc77519" kindref="member">isActionEnd</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a4d0411a6ccb52be6c6ad335e3ae657db" kindref="member">kill</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Layout/alWipeSimple.cpp"/>
+  </compounddef>
+</doxygen>

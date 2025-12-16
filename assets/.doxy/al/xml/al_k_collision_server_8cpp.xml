@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_k_collision_server_8cpp" kind="file" language="C++">
+    <compoundname>alKCollisionServer.cpp</compoundname>
+    <includes refid="al_k_collision_server_8h" local="no">Collision/alKCollisionServer.h</includes>
+    <includes refid="al_j_map_info_8h" local="no">Util/alJMapInfo.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Collision/alKCollisionServer.h</label>
+        <link refid="al_k_collision_server_8h"/>
+      </node>
+      <node id="3">
+        <label>Util/alJMapInfo.h</label>
+        <link refid="al_j_map_info_8h"/>
+      </node>
+      <node id="1">
+        <label>alKCollisionServer.cpp</label>
+        <link refid="al_k_collision_server_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_k_collision_server_8h" kindref="compound">Collision/alKCollisionServer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_j_map_info_8h" kindref="compound">Util/alJMapInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classal_1_1_k_collision_server_1a3b938f80813d5b869a4c2d539e515ea1" refkind="member"><highlight class="normal"><ref refid="classal_1_1_k_collision_server_1a3b938f80813d5b869a4c2d539e515ea1" kindref="member">KCollisionServer::KCollisionServer</ref>()<sp/>:<sp/>mHeader(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mAttributeInfo(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">new</ref><sp/><ref refid="class_j_map_info" kindref="compound">JMapInfo</ref><sp/>),<sp/>_8(<sp/>1.0<sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_k_collision_server_1adbc7db3abbfcb149c8651aba25aaa40a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_k_collision_server_1adbc7db3abbfcb149c8651aba25aaa40a" kindref="member">KCollisionServer::setData</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1afe21a3e7c5e82e8ab4dfc10d00463a44" kindref="member">mHeaderData</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(<sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1aedcb7c818f9794a6e6b182011c1a563d" kindref="member">verticesOffset</ref><sp/>&amp;<sp/>0xffffff00<sp/>)<sp/>==<sp/>0<sp/>)<sp/></highlight><highlight class="comment">//<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1ae7fa7d6ed2a3fc4c7ca3f4d3caf0d559" kindref="member">verticesSection</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_k_collision_server_1a2fee5bc7555494a8e2313831f7287e18" kindref="member">mHeaderDataBytes</ref><sp/>+<sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1aedcb7c818f9794a6e6b182011c1a563d" kindref="member">verticesOffset</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1ab34e2a6861fc635f1d577d395129af24" kindref="member">normalsSection</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_k_collision_server_1a2fee5bc7555494a8e2313831f7287e18" kindref="member">mHeaderDataBytes</ref><sp/>+<sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1a565f9926631500c1c4d6f2d84b489539" kindref="member">normalsOffset</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1a84da85a643a6d007c23f1188c246f3ed" kindref="member">trianglesSection</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_k_collision_server_1a2fee5bc7555494a8e2313831f7287e18" kindref="member">mHeaderDataBytes</ref><sp/>+<sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1ac6356cc92436afc6317a6fda60941ad4" kindref="member">trianglesOffset</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1a2b25164dd5206c25c5ebddbb7dce75bb" kindref="member">spatialIndicesSection</ref><sp/>=<sp/><ref refid="classal_1_1_k_collision_server_1a2fee5bc7555494a8e2313831f7287e18" kindref="member">mHeaderDataBytes</ref><sp/>+<sp/><ref refid="classal_1_1_k_collision_server_1a5927475c5c2e272f5900e8b025345ded" kindref="member">mHeader</ref>-&gt;<ref refid="structal_1_1_k_collision_header_1afafe6e00c2c869f502aa0aa9720de59f" kindref="member">spatialIndicesOffset</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classal_1_1_k_collision_server_1ae6df0a69dc2cc9323c4d9fc36fd98521" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_k_collision_server_1ae6df0a69dc2cc9323c4d9fc36fd98521" kindref="member">KCollisionServer::initKCollisionServer</ref>(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kclData</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">paData</ref><sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1adbc7db3abbfcb149c8651aba25aaa40a" kindref="member">setData</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kclData</ref><sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">paData</ref><sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_k_collision_server_1a09630f4f48536ba82d1731b64b226aeb" kindref="member">mAttributeInfo</ref>-&gt;<ref refid="class_j_map_info_1a017ff323e78552235a34aa13aad25233" kindref="member">attach</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">paData</ref><sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Collision/alKCollisionServer.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_sky_8h" kind="file" language="C++">
+    <compoundname>alSky.h</compoundname>
+    <includes refid="al_map_obj_actor_8h" local="no">MapObj/alMapObjActor.h</includes>
+    <includedby refid="al_actor_factory_8cpp" local="no">alActorFactory.cpp</includedby>
+    <includedby refid="al_sky_8cpp" local="no">alSky.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="5">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="2">
+        <label>MapObj/alMapObjActor.h</label>
+        <link refid="al_map_obj_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alSky.h</label>
+        <link refid="al_sky_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="10">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="6">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="11">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alSky.h</label>
+        <link refid="al_sky_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alActorFactory.cpp</label>
+        <link refid="al_actor_factory_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alSky.cpp</label>
+        <link refid="al_sky_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_sky" prot="public">al::Sky</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_map_obj_actor_8h" kindref="compound">MapObj/alMapObjActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_sky" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_sky" kindref="compound">Sky</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_map_obj_actor" kindref="compound">MapObjActor</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_sky_1a55744820286e0a8c8e85d4c9c4e8dad0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_sky_1a55744820286e0a8c8e85d4c9c4e8dad0" kindref="member">mCameraTransPtr</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sky_1aaa9e24a0a9f86f3fac997a1ae3516033" kindref="member">init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sky_1aad1ba2690aa630099ecfbb620fa195b4" kindref="member">calcAnim</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_sky" kindref="compound">Sky</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Npc/alSky.h"/>
+  </compounddef>
+</doxygen>

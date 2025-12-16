@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alLiveActor.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-alliveactorh">File alLiveActor.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_33e095f68a87f1feebb1083733ab6ad1/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_03d20b26238dd8460cdd3a8c8b982db6/"><strong>LiveActor</strong></a> <strong>&gt;</strong> <a href="../al_live_actor_8h/"><strong>alLiveActor.h</strong></a></p>
+<p><a href="../al_live_actor_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;Audio/alAudioKeeper.h&gt;
+#include &lt;Effect/alEffectKeeper.h&gt;
+#include &lt;LiveActor/alLiveActorFlag.h&gt;
+#include &lt;Nerve/alNerveKeeper.h&gt;
+#include &lt;Stage/alStageSwitchKeeper.h&gt;
+#include &lt;math/seadMatrix.h&gt;
+
+class alActorPoseFunction;
+class alLiveActorFunction;
+
+namespace al
+{
+class ActorPoseKeeperBase;
+class ActorExecuteInfo;
+class ActorActionKeeper;
+class Collider;
+class CollisionParts;
+class ModelKeeper;
+class HitSensorKeeper;
+class RailKeeper;
+class ShadowKeeper;
+class ActorLightCtrl;
+class SubActorKeeper;
+class HitSensor;
+
+class LiveActor : public IUseNerve,
+                  public IUseEffectKeeper,
+                  public IUseAudioKeeper,
+                  public IUseStageSwitch
+{
+        friend class ::alActorPoseFunction;
+        friend class ::alLiveActorFunction;
+
+private:
+        const char* mActorName;
+
+protected:
+        ActorPoseKeeperBase* mActorPoseKeeper;
+        ActorExecuteInfo*    mActorExecuteInfo;
+        ActorActionKeeper*   mActorActionKeeper;
+        Collider*            mCollider;
+        CollisionParts*      mCollisionParts;
+        ModelKeeper*         mModelKeeper;
+        NerveKeeper*         mNerveKeeper;
+        HitSensorKeeper*     mHitSensorKeeper;
+        EffectKeeper*        mEffectKeeper;
+        AudioKeeper*         mAudioKeeper;
+        StageSwitchKeeper*   mStageSwitchKeeper;
+        RailKeeper*          mRailKeeper;
+        ShadowKeeper*        mShadowKeeper;
+        ActorLightCtrl*      mActorLightCtrl;
+        void*                _4C;
+        SubActorKeeper*      mSubActorKeeper;
+
+private:
+        LiveActorFlag mLiveActorFlag;
+
+public:
+        const char* getName() const
+        {
+                return mActorName;
+        }
+
+        ActorPoseKeeperBase* getActorPoseKeeper() const
+        {
+                return mActorPoseKeeper;
+        }
+
+        ActorExecuteInfo* getActorExecuteInfo() const
+        {
+                return mActorExecuteInfo;
+        }
+
+        ActorActionKeeper* getActorActionKeeper() const
+        {
+                return mActorActionKeeper;
+        }
+
+        Collider* getCollider() const
+        {
+                return mCollider;
+        }
+
+        ModelKeeper* getModelKeeper() const
+        {
+                return mModelKeeper;
+        }
+
+        HitSensorKeeper* getHitSensorKeeper() const
+        {
+                return mHitSensorKeeper;
+        }
+
+        RailKeeper* getRailKeeper() const
+        {
+                return mRailKeeper;
+        }
+
+        ShadowKeeper* getShadowKeeper() const
+        {
+                return mShadowKeeper;
+        }
+
+        LiveActorFlag&amp; getLiveActorFlag()
+        {
+                return mLiveActorFlag;
+        }
+
+        const LiveActorFlag&amp; getLiveActorFlag() const
+        {
+                return mLiveActorFlag;
+        }
+
+public:
+        virtual NerveKeeper* getNerveKeeper() const;
+
+        void initPoseKeeper( ActorPoseKeeperBase* pPoseKeeper );
+        void initCollider( float radius, float yOffset, u32 );
+        void initNerveKeeper( NerveKeeper* nk );
+        void initRailKeeper( const ActorInitInfo&amp; info );
+
+        virtual void                   init( const ActorInitInfo&amp; info );
+        virtual void                   initAfterPlacement();
+        virtual void                   appear();
+        virtual void                   makeActorAppeared();
+        virtual void                   kill();
+        virtual void                   makeActorDead();
+        virtual void                   movement();
+        virtual void                   calcAnim();
+        virtual void                   draw();
+        virtual void                   startClipped();
+        virtual void                   endClipped();
+        virtual void                   attackSensor( HitSensor* me, HitSensor* other );
+        virtual bool                   receiveMsg( u32 msg, HitSensor* other, HitSensor* me );
+        virtual const sead::Matrix34f* getBaseMtx() const;
+        virtual EffectKeeper*          getEffectKeeper() const;
+        virtual AudioKeeper*           getAudioKeeper() const;
+        virtual StageSwitchKeeper*     getStageSwitchKeeper() const;
+        virtual void                   initStageSwitchKeeper();
+        virtual void                   control();
+        virtual void                   calcAndSetBaseMtx();
+        virtual void                   updateCollider();
+        virtual void                   v22();
+        virtual void                   v23();
+
+public:
+        LiveActor( const char* name );
+};
+
+static_assert( sizeof( LiveActor ) == 0x60, &quot;&quot; );
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

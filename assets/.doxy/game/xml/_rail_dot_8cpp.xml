@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_rail_dot_8cpp" kind="file" language="C++">
+    <compoundname>RailDot.cpp</compoundname>
+    <includes refid="_rail_dot_8h" local="yes">MapObj/RailDot.h</includes>
+    <includes local="no">LiveActor/alActorInitUtil.h</includes>
+    <includes local="no">LiveActor/alLiveActorFunction.h</includes>
+    <includes local="no">Nerve/alNerve.h</includes>
+    <includes local="no">Nerve/alNerveFunction.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>MapObj/RailDot.h</label>
+        <link refid="_rail_dot_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RailDot.cpp</label>
+        <link refid="_rail_dot_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>LiveActor/alActorInitUtil.h</label>
+      </node>
+      <node id="5">
+        <label>LiveActor/alLiveActorFunction.h</label>
+      </node>
+      <node id="3">
+        <label>MapObj/alMapObjActor.h</label>
+      </node>
+      <node id="6">
+        <label>Nerve/alNerve.h</label>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveFunction.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_nrv_rail_dot">NrvRailDot</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rail_dot_8h" kindref="compound">MapObj/RailDot.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alActorInitUtil.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alLiveActorFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerve.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Nerve/alNerveFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespace_nrv_rail_dot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_nrv_rail_dot" kindref="compound">NrvRailDot</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespace_nrv_rail_dot_1ae3bf12f2a6dfba7b6769d364f5639616" refkind="member"><highlight class="normal"><ref refid="namespace_nrv_rail_dot_1ae3bf12f2a6dfba7b6769d364f5639616" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="class_rail_dot" kindref="compound">RailDot</ref>,<sp/>Wait<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NrvRailDot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_rail_dot_1aceaa15a632060d4c611eb9559aa8d225" refkind="member"><highlight class="normal"><ref refid="class_rail_dot_1aceaa15a632060d4c611eb9559aa8d225" kindref="member">RailDot::RailDot</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>name<sp/>)<sp/>:<sp/>MapObjActor(<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_rail_dot_1afccd9f20b05b1cbbccb5c42090b61410" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rail_dot_1afccd9f20b05b1cbbccb5c42090b61410" kindref="member">RailDot::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::ActorInitInfo&amp;<sp/>info<sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::initActorWithArchiveName(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>info,<sp/></highlight><highlight class="stringliteral">&quot;RailDot&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::initNerve(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;NrvRailDot::Wait<sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeActorAppeared();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_rail_dot_1a7f78e9f592a0c2034a63d632d4a54550" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rail_dot_1a7f78e9f592a0c2034a63d632d4a54550" kindref="member">RailDot::exeWait</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Npc/RailDot.cpp"/>
+  </compounddef>
+</doxygen>

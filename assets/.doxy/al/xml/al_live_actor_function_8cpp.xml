@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_live_actor_function_8cpp" kind="file" language="C++">
+    <compoundname>alLiveActorFunction.cpp</compoundname>
+    <includes refid="al_clipping_actor_holder_8h" local="no">Clipping/alClippingActorHolder.h</includes>
+    <includes refid="al_clipping_director_8h" local="no">Clipping/alClippingDirector.h</includes>
+    <includes refid="al_collider_8h" local="no">Collision/alCollider.h</includes>
+    <includes refid="al_collision_util_8h" local="no">Collision/alCollisionUtil.h</includes>
+    <includes refid="al_execute_table_holder_8h" local="no">Execute/alExecuteTableHolder.h</includes>
+    <includes refid="al_actor_action_keeper_8h" local="no">LiveActor/alActorActionKeeper.h</includes>
+    <includes refid="al_actor_pose_function_8h" local="no">LiveActor/alActorPoseFunction.h</includes>
+    <includes refid="al_hit_sensor_keeper_8h" local="no">LiveActor/alHitSensorKeeper.h</includes>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes refid="al_live_actor_function_8h" local="no">LiveActor/alLiveActorFunction.h</includes>
+    <includes refid="al_live_actor_kit_8h" local="no">LiveActor/alLiveActorKit.h</includes>
+    <includes refid="al_sensor_function_8h" local="no">LiveActor/alSensorFunction.h</includes>
+    <includes refid="al_sub_actor_function_8h" local="no">LiveActor/alSubActorFunction.h</includes>
+    <includes refid="al_mtx_util_8h" local="no">Math/alMtxUtil.h</includes>
+    <includes refid="al_anim_player_simple_8h" local="no">Model/alAnimPlayerSimple.h</includes>
+    <includes refid="al_model_ctr_8h" local="no">Model/alModelCtr.h</includes>
+    <includes refid="al_model_keeper_8h" local="no">Model/alModelKeeper.h</includes>
+    <includes refid="al_nerve_action_ctrl_8h" local="no">Nerve/alNerveActionCtrl.h</includes>
+    <includes refid="al_nerve_function_8h" local="no">Nerve/alNerveFunction.h</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="2">
+        <label>Clipping/alClippingActorHolder.h</label>
+        <link refid="al_clipping_actor_holder_8h"/>
+      </node>
+      <node id="3">
+        <label>Clipping/alClippingDirector.h</label>
+        <link refid="al_clipping_director_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Collision/alCollider.h</label>
+        <link refid="al_collider_8h"/>
+      </node>
+      <node id="7">
+        <label>Collision/alCollisionUtil.h</label>
+        <link refid="al_collision_util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Execute/alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Execute/alExecuteTableHolder.h</label>
+        <link refid="al_execute_table_holder_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+      <node id="22">
+        <label>HitSensor/alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>HitSensor/alSensorType.h</label>
+        <link refid="al_sensor_type_8h"/>
+      </node>
+      <node id="10">
+        <label>LiveActor/alActorActionKeeper.h</label>
+        <link refid="al_actor_action_keeper_8h"/>
+      </node>
+      <node id="11">
+        <label>LiveActor/alActorPoseFunction.h</label>
+        <link refid="al_actor_pose_function_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>LiveActor/alActorPoseKeeper.h</label>
+        <link refid="al_actor_pose_keeper_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>LiveActor/alHitSensorKeeper.h</label>
+        <link refid="al_hit_sensor_keeper_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="25">
+        <label>LiveActor/alLiveActorFunction.h</label>
+        <link refid="al_live_actor_function_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>LiveActor/alLiveActorKit.h</label>
+        <link refid="al_live_actor_kit_8h"/>
+      </node>
+      <node id="28">
+        <label>LiveActor/alSensorFunction.h</label>
+        <link refid="al_sensor_function_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>LiveActor/alSubActorFunction.h</label>
+        <link refid="al_sub_actor_function_8h"/>
+      </node>
+      <node id="30">
+        <label>Math/alMtxUtil.h</label>
+        <link refid="al_mtx_util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Model/alAnimPlayerSimple.h</label>
+        <link refid="al_anim_player_simple_8h"/>
+      </node>
+      <node id="32">
+        <label>Model/alModelCtr.h</label>
+        <link refid="al_model_ctr_8h"/>
+      </node>
+      <node id="33">
+        <label>Model/alModelKeeper.h</label>
+        <link refid="al_model_keeper_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Nerve/alNerveActionCtrl.h</label>
+        <link refid="al_nerve_action_ctrl_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Nerve/alNerveFunction.h</label>
+        <link refid="al_nerve_function_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="38">
+        <label>Nerve/alNerveStateBase.h</label>
+        <link refid="al_nerve_state_base_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="8">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="13">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="14">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="26">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_clipping_actor_holder_8h" kindref="compound">Clipping/alClippingActorHolder.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_clipping_director_8h" kindref="compound">Clipping/alClippingDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_collider_8h" kindref="compound">Collision/alCollider.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_collision_util_8h" kindref="compound">Collision/alCollisionUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_execute_table_holder_8h" kindref="compound">Execute/alExecuteTableHolder.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_action_keeper_8h" kindref="compound">LiveActor/alActorActionKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_pose_function_8h" kindref="compound">LiveActor/alActorPoseFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_hit_sensor_keeper_8h" kindref="compound">LiveActor/alHitSensorKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_function_8h" kindref="compound">LiveActor/alLiveActorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_kit_8h" kindref="compound">LiveActor/alLiveActorKit.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_sensor_function_8h" kindref="compound">LiveActor/alSensorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_sub_actor_function_8h" kindref="compound">LiveActor/alSubActorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_mtx_util_8h" kindref="compound">Math/alMtxUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_anim_player_simple_8h" kindref="compound">Model/alAnimPlayerSimple.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_model_ctr_8h" kindref="compound">Model/alModelCtr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_model_keeper_8h" kindref="compound">Model/alModelKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_action_ctrl_8h" kindref="compound">Nerve/alNerveActionCtrl.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_function_8h" kindref="compound">Nerve/alNerveFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" kindref="member">alLiveActorFunction::calcAnimDirect</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">al::LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Matrix34f<sp/>baseMtx;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" kindref="member">mActorPoseKeeper</ref>-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ad860e90097f1ee6be0f50a6eb44f4dac" kindref="member">calcBaseMtx</ref>(<sp/>&amp;baseMtx<sp/>);<sp/></highlight><highlight class="comment">/*<sp/>alActorPoseFunction::calcBaseMtx<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a916bfd9f744b309bc38ccfb9b0f75a9b" kindref="member">mModelKeeper</ref><sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a19e6361fce4ed0c6c363823e025e6cef" kindref="member">al::setBaseMtxAndCalcAnim</ref>(<sp/>actor,<sp/>baseMtx,<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" kindref="member">mActorPoseKeeper</ref>-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" kindref="member">getScale</ref>()<sp/></highlight><highlight class="comment">/*<sp/>al::getScale<sp/>*/</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a264558d39b987c146f71d1dc34c3ee77" kindref="member">mCollisionParts</ref><sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a71489fba91c7888259bb2dcf58dae61c" kindref="member">al::preScaleMtx</ref>(<sp/>&amp;baseMtx,<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ad2a68b6e241bde20463459953fa8a479" kindref="member">mActorPoseKeeper</ref>-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" kindref="member">getScale</ref>()<sp/></highlight><highlight class="comment">/*<sp/>al::getScale<sp/>*/</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a6969ea5fb1c51afbfce486a64e13e0c5" kindref="member">al::syncCollisionMtx</ref>(<sp/>actor,<sp/>&amp;baseMtx<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a05672f1ab160cc1ae4a27f08e0383beb" kindref="member">getEffectKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a05672f1ab160cc1ae4a27f08e0383beb" kindref="member">getEffectKeeper</ref>()-&gt;update();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a3ca8887d31218e88da0339176904d95e" kindref="member">mSubActorKeeper</ref><sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_sub_actor_function_1a31c2fe252de14a0c157d22012cedcd6a" kindref="member">alSubActorFunction::tryCalcAnim</ref>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a3ca8887d31218e88da0339176904d95e" kindref="member">mSubActorKeeper</ref><sp/>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>??</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">isClipped</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1a990ea6ccc7afb5a19ff7c23b641c5edc" kindref="member">isClipped</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" kindref="member">isInvalidClipping</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1a7579820af2ba9b11c9e5defe6d957f68" kindref="member">isInvalidClipping</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="namespaceal_1a62c2c9d897bed88133376646c4d13651" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a62c2c9d897bed88133376646c4d13651" kindref="member">isDead</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1a45f909530a7292fbf937ba456c21e162" kindref="member">isDead</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" kindref="member">isAlive</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1a45f909530a7292fbf937ba456c21e162" kindref="member">isDead</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="namespaceal_1a0cfa1c01768bd0864c4e1bddebb7f848" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a0cfa1c01768bd0864c4e1bddebb7f848" kindref="member">onCollide</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_collider" kindref="compound">Collider</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">collider</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ae6c7bd5aee8154f6f24070f76e196d0e" kindref="member">getCollider</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1ac1d0816d6c18fbd2f1374e6a5a92adde" kindref="member">isOffCollide</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">collider</ref><sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">collider</ref>-&gt;onInvalidate();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespaceal_1a95326d060e34a176519243f32f5bca18" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a95326d060e34a176519243f32f5bca18" kindref="member">offCollide</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1ac1d0816d6c18fbd2f1374e6a5a92adde" kindref="member">isOffCollide</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="namespaceal_1a29437e120198435450c779a7262bc829" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a29437e120198435450c779a7262bc829" kindref="member">onDrawClipping</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1adf5cc51591f45b9d99eb9f97d143f0d6" kindref="member">isDrawClipping</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">isClipped</ref>(<sp/>actor<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_actor_system_function_1aecd31a65f2e55c3263285e9a90e9aedb" kindref="member">alActorSystemFunction::addToExecutorMovement</ref>(<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a7f3594ced84a6aeef57c6253dde39bf6" kindref="member">getHitSensorKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a7f3594ced84a6aeef57c6253dde39bf6" kindref="member">getHitSensorKeeper</ref>()-&gt;<ref refid="classal_1_1_hit_sensor_keeper_1a3d87234768ff89b632a0ef782f569202" kindref="member">validateBySystem</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_sensor_function_1a4570bd7791091f21b23ecdaf59d8ebad" kindref="member">alSensorFunction::updateHitSensorsAll</ref>(<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="namespaceal_1a515a2b12c390af7bd21efb868109a386" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a515a2b12c390af7bd21efb868109a386" kindref="member">invalidateClipping</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">isClipped</ref>(<sp/>actor<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a488ab648a97ff7a2826b1976b4cd0352" kindref="member">endClipped</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" kindref="member">isInvalidClipping</ref>(<sp/>actor<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a90e3320d3b7aca38201d0227e5842a6d" kindref="member">getLiveActorKit</ref>()-&gt;<ref refid="classal_1_1_live_actor_kit_1a38b1c3c603ddc13fd46765fb440859c1" kindref="member">getClippingDirector</ref>()-&gt;<ref refid="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" kindref="member">getClippingActorHolder</ref>()-&gt;<ref refid="classal_1_1_clipping_actor_holder_1ad0d7d0c810b1be671415a94196cdae6e" kindref="member">invalidateClipping</ref>(</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="namespaceal_1a81c0fadbcc3ef5462d2d614649ffdedd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a81c0fadbcc3ef5462d2d614649ffdedd" kindref="member">validateClipping</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" kindref="member">isInvalidClipping</ref>(<sp/>actor<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a90e3320d3b7aca38201d0227e5842a6d" kindref="member">getLiveActorKit</ref>()-&gt;<ref refid="classal_1_1_live_actor_kit_1a38b1c3c603ddc13fd46765fb440859c1" kindref="member">getClippingDirector</ref>()-&gt;<ref refid="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" kindref="member">getClippingActorHolder</ref>()-&gt;<ref refid="classal_1_1_clipping_actor_holder_1a8ca0371b4306254ac8865e9090d5db94" kindref="member">validateClipping</ref>(<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ModelKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>optimization<sp/>is<sp/>too<sp/>smart</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" kindref="member">hideModel</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" kindref="member">isAlive</ref>(<sp/>actor<sp/>)<sp/>&amp;&amp;<sp/>!<ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">isClipped</ref>(<sp/>actor<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" kindref="member">getModelKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" kindref="member">getModelKeeper</ref>()-&gt;<ref refid="classal_1_1_model_keeper_1aea06d7cd4623a4ca810dc07f35236fa2" kindref="member">hide</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1adc6585ed5cf3fa651b05b546ef365c25" kindref="member">getShadowKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a4dbdc1b7b1960de610d6ab0335d0827f" kindref="member">hideShadow</ref>(<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_actor_system_function_1a9dd22238b3dd38e99b65a8f22ffc7e2e" kindref="member">alActorSystemFunction::removeFromExecutorDraw</ref>(<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1ac8fb08036ea7ddcfff4f028625d15f5e" kindref="member">getLiveActorFlag</ref>().<ref refid="structal_1_1_live_actor_flag_1a17f19d0b85a2b4d69667bb6f2cb9c925" kindref="member">isHideModel</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>register<sp/>swap,<sp/>maybe<sp/>inlined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="namespaceal_1a1c7667b0bfb5ff035d2b7f403db72a7b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a1c7667b0bfb5ff035d2b7f403db72a7b" kindref="member">tryStartMclAnimIfExist</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_anim_player_simple" kindref="compound">AnimPlayerSimple</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animPlayer</ref><sp/>=<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" kindref="member">getModelKeeper</ref>()-&gt;<ref refid="classal_1_1_model_keeper_1a47de070f80dcc01b7a2a8357f42b9375" kindref="member">getModel</ref>()-&gt;<ref refid="classal_model_ctr_1a8d15a7009203ef4fad154b8b9e5e1db4" kindref="member">getMclAnimPlayer</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animPlayer</ref><sp/>&amp;&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animPlayer</ref>-&gt;isAnimExist(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" kindref="member">getModelKeeper</ref>()-&gt;<ref refid="classal_1_1_model_keeper_1a47de070f80dcc01b7a2a8357f42b9375" kindref="member">getModel</ref>()-&gt;<ref refid="classal_model_ctr_1a8d15a7009203ef4fad154b8b9e5e1db4" kindref="member">getMclAnimPlayer</ref>()-&gt;<ref refid="classal_1_1_anim_player_simple_1a966ee4b2ecb316a819afa7e83a3135bb" kindref="member">startAnim</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ldr<sp/>for<sp/>getting<sp/>ModelKeeper<sp/>is<sp/>optimized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="namespaceal_1a602a7ecb60130fbbd51fff90f690134f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a602a7ecb60130fbbd51fff90f690134f" kindref="member">calcJointPos</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointName</ref><sp/>)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointMtx</ref><sp/>=<sp/><ref refid="namespaceal_1adca9e15f3a793df51dcfc4ceefc4c0e3" kindref="member">getJointMtxPtr</ref>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1aff1fdca0b7d7a9b7539232874cb8a671" kindref="member">getModelKeeper</ref>(),<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointName</ref><sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;x<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointMtx</ref>-&gt;m[<sp/>0<sp/>][<sp/>3<sp/>];</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointMtx</ref>-&gt;m[<sp/>1<sp/>][<sp/>3<sp/>];</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;z<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointMtx</ref>-&gt;m[<sp/>2<sp/>][<sp/>3<sp/>];</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HitSensorKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="namespaceal_1ae1a739e92a1781a6a606653fbf7a7527" refkind="member"><highlight class="normal"><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="namespaceal_1ae1a739e92a1781a6a606653fbf7a7527" kindref="member">getHitSensor</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a7f3594ced84a6aeef57c6253dde39bf6" kindref="member">getHitSensorKeeper</ref>()-&gt;<ref refid="classal_1_1_hit_sensor_keeper_1a9c8d61ed59edb627ca871c48ac916782" kindref="member">getSensor</ref>(<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="namespaceal_1ac6ff1aa3b5d0aa487e5e4dfafe091b42" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ac6ff1aa3b5d0aa487e5e4dfafe091b42" kindref="member">getSensorRadius</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensorName</ref><sp/>)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae1a739e92a1781a6a606653fbf7a7527" kindref="member">getHitSensor</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensorName</ref><sp/>)-&gt;<ref refid="classal_1_1_hit_sensor_1acc87f3ccd09851276d3079c2a1ba7112" kindref="member">getRadius</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NerveKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="namespaceal_1ad3dc1c4ef582193a5c8721113c062b44" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ad3dc1c4ef582193a5c8721113c062b44" kindref="member">startNerveAction</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a5bf4ac2feae435913bdf2a06c2b08fcd" kindref="member">getActorActionKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a5bf4ac2feae435913bdf2a06c2b08fcd" kindref="member">getActorActionKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_action_keeper_1aa06458d85c2363e07fd6e01507afbf20" kindref="member">tryStartActionNoAnim</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_nerve_function_1a5ca3ee8a312d5f72b7f13910cd8e2dbb" kindref="member">alNerveFunction::setNerveAction</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="namespaceal_1a765397d5b8fff63737e5237c28f02ebb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a765397d5b8fff63737e5237c28f02ebb" kindref="member">initNerve</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a51ea90ce0396305cd603867dac1b34a0" kindref="member">initNerveKeeper</ref>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//<sp/>registers,<sp/>too<sp/>big<sp/>for<sp/>tail-reorder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="namespaceal_1a8f883cda476a5ff886e6e069fc1a8b0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a8f883cda476a5ff886e6e069fc1a8b0c" kindref="member">initNerveAction</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/><ref refid="classal_nerve_function_1_1_nerve_action_collector" kindref="compound">alNerveFunction::NerveActionCollector</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">collector</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_action_ctrl" kindref="compound">NerveActionCtrl</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerveActionCtrl</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_action_ctrl" kindref="compound">NerveActionCtrl</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">collector</ref><sp/>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_action" kindref="compound">NerveAction</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerveActionCtrl</ref>-&gt;findNerve(<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nk</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a51ea90ce0396305cd603867dac1b34a0" kindref="member">initNerveKeeper</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nk</ref><sp/>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a5486c54d6e327e41c6596c7cd70bcb22" kindref="member">getNerveKeeper</ref>()-&gt;initNerveAction(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerveActionCtrl</ref><sp/>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ad3dc1c4ef582193a5c8721113c062b44" kindref="member">startNerveAction</ref>(<sp/>actor,<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alLiveActorFunction.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/include/Util
+# Dir Util
 
 
 
@@ -21,8 +21,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alJMapInfo.h**](alJMapInfo_8h.md) <br> |
-| file | [**alStringUtil.h**](alStringUtil_8h.md) <br> |
+| file | [**alJMapInfo.h**](al_j_map_info_8h.md) <br> |
+| file | [**alStringUtil.h**](al_string_util_8h.md) <br> |
 
 
 

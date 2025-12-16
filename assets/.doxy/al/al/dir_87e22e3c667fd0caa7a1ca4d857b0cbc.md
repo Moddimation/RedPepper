@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/include/Sequence
+# Dir Sequence
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alSequence.h**](alSequence_8h.md) <br> |
+| file | [**alSequence.h**](al_sequence_8h.md) <br> |
 
 
 

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_layout_actor_8cpp" kind="file" language="C++">
+    <compoundname>alLayoutActor.cpp</compoundname>
+    <includes refid="al_layout_actor_8h" local="no">Layout/alLayoutActor.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Layout/alLayoutActor.h</label>
+        <link refid="al_layout_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alLayoutActor.cpp</label>
+        <link refid="al_layout_actor_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="9">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_layout_actor_8h" kindref="compound">Layout/alLayoutActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classal_1_1_layout_actor_1ac9c5b8c6dec8a48fa5b147230586cb88" refkind="member"><highlight class="normal"><ref refid="classal_1_1_layout_actor_1ac9c5b8c6dec8a48fa5b147230586cb88" kindref="member">LayoutActor::LayoutActor</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mName(<sp/>name<sp/>),<sp/>mNerveKeeper(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mAudioKeeper(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mEffectKeeper(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_20(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_24(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_28(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mIsAlive(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_layout_actor_1ad817acb5e850b2fa1c4c29fc1d4ec143" refkind="member"><highlight class="normal"><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>*<sp/><ref refid="classal_1_1_layout_actor_1ad817acb5e850b2fa1c4c29fc1d4ec143" kindref="member">LayoutActor::getNerveKeeper</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="13"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a0bc10131dec81f027b5d01bad10049e1" kindref="member">mNerveKeeper</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_layout_actor_1a27623acb1aff9a2f53951d3472b091e3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a27623acb1aff9a2f53951d3472b091e3" kindref="member">LayoutActor::appear</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a8585f9bb9e250bbbbcb9ef32b1091182" kindref="member">mIsAlive</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1aec3ecf1cea11ea26f22f0d35c413dd7f" kindref="member">calcAnim</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_layout_actor_1a4d0411a6ccb52be6c6ad335e3ae657db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a4d0411a6ccb52be6c6ad335e3ae657db" kindref="member">LayoutActor::kill</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_layout_actor_1a2cdbe37b30a07776a6728d4cf4b64d95" kindref="member">getEffectKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a2cdbe37b30a07776a6728d4cf4b64d95" kindref="member">getEffectKeeper</ref>()-&gt;deleteAndClearEffectAll();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a8585f9bb9e250bbbbcb9ef32b1091182" kindref="member">mIsAlive</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_layout_actor_1aa502dbf93dde6245a2d111522e3866de" refkind="member"><highlight class="normal"><ref refid="classal_1_1_audio_keeper" kindref="compound">AudioKeeper</ref>*<sp/><ref refid="classal_1_1_layout_actor_1aa502dbf93dde6245a2d111522e3866de" kindref="member">LayoutActor::getAudioKeeper</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="31"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a96760598aea0a9ae3b0ae6f6b6719e2a" kindref="member">mAudioKeeper</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classal_1_1_layout_actor_1a2cdbe37b30a07776a6728d4cf4b64d95" refkind="member"><highlight class="normal"><ref refid="classal_1_1_effect_keeper" kindref="compound">EffectKeeper</ref>*<sp/><ref refid="classal_1_1_layout_actor_1a2cdbe37b30a07776a6728d4cf4b64d95" kindref="member">LayoutActor::getEffectKeeper</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a3c798aab62725f10fda6c441e0b2e769" kindref="member">mEffectKeeper</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classal_1_1_layout_actor_1ae1011acc66f2c5dde49d8888e6afdcd0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1ae1011acc66f2c5dde49d8888e6afdcd0" kindref="member">LayoutActor::control</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classal_1_1_layout_actor_1a3f4205f116e5cc15508f7cfe1054433c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_actor_1a3f4205f116e5cc15508f7cfe1054433c" kindref="member">LayoutActor::initNerve</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">step</ref><sp/>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_actor_1a0bc10131dec81f027b5d01bad10049e1" kindref="member">mNerveKeeper</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">step</ref><sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Layout/alLayoutActor.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_area_obj_factory_8cpp" kind="file" language="C++">
+    <compoundname>alAreaObjFactory.cpp</compoundname>
+    <includes refid="al_area_obj_factory_8h" local="no">Factory/alAreaObjFactory.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>AreaObj/alAreaObj.h</label>
+        <link refid="al_area_obj_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Factory/alAreaObjFactory.h</label>
+        <link refid="al_area_obj_factory_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Factory/alFactory.h</label>
+        <link refid="al_factory_8h"/>
+      </node>
+      <node id="4">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alAreaObjFactory.cpp</label>
+        <link refid="al_area_obj_factory_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="6">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_area_obj_factory_8h" kindref="compound">Factory/alAreaObjFactory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="7" refid="namespaceal_1ad5b5fc72d7e4da5806c345e19d60b397" refkind="member"><highlight class="normal"><ref refid="classal_1_1_area_obj" kindref="compound">AreaObj</ref>*<sp/><ref refid="namespaceal_1ad5b5fc72d7e4da5806c345e19d60b397" kindref="member">createAreaObjFunction</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">T</ref>(<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1a201e96806e7622527702907d524d3bd0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">NameToAreaObjCreator</ref><sp/><ref refid="namespaceal_1a1428c61006a87c2db5da7f94cddcb531" kindref="member">split</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sAreaObjFactoryEntries</ref><sp/>)[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;AudioEffectChangeArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;AudioVolumeSettingArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;BgmChangeArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;CameraArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;CameraOriginArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;CameraWaveArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;ChangeCoverArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;DeathArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;EnablePropellerFallCameraArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;FogArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;FogAreaCameraPos&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;FootPrintFollowPosArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;InvalidatePropellerCameraArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;KinopioHouseExitArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;LightArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;ObjectChildArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;PlayerAlongWallArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;PlayerControlOffArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;PlayerInclinedControlArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;PlayerRestrictedPlane&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;PlayerWidenStickXSnapArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;PresentMessageArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;SoundEmitArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;SpotLightArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;StickFixArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;StickSnapOffArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;SwitchKeepOnArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;SwitchOnArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;ViewCtrlArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;WaterArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;WaterFallArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;WaterFlowArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;GhostPlayerArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;Guide3DArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>},</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;MessageArea&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;BugFixBalanceTruckArea&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">createAreaObjFunction&lt;AreaObj&gt;</ref><sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Factory/alAreaObjFactory.cpp"/>
+  </compounddef>
+</doxygen>

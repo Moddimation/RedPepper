@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_camera_param_vision_8cpp" kind="file" language="C++">
+    <compoundname>alCameraParamVision.cpp</compoundname>
+    <includes refid="al_camera_param_vision_8h" local="no">Camera/alCameraParamVision.h</includes>
+    <includes refid="al_byaml_iter_8h" local="no">Yaml/alByamlIter.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Camera/alCameraParamVision.h</label>
+        <link refid="al_camera_param_vision_8h"/>
+      </node>
+      <node id="3">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alCameraParamVision.cpp</label>
+        <link refid="al_camera_param_vision_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_camera_param_vision_8h" kindref="compound">Camera/alCameraParamVision.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_iter_8h" kindref="compound">Yaml/alByamlIter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classal_1_1_camera_param_vision_1af9291631beff5dd765c99969ba32cb39" refkind="member"><highlight class="normal"><ref refid="classal_1_1_camera_param_vision_1af9291631beff5dd765c99969ba32cb39" kindref="member">CameraParamVision::CameraParamVision</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision_1aa56e6a40d26de1a3e5ebfac9fce13a97" kindref="member">mNearClipDistance</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>-1.0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision_1aad9b3a18124fd8a43903ba43610f013f" kindref="member">mFarClipDistance</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1.0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision_1a393b3e1636d103a85279f30645bf5e6b" kindref="member">mFovyDegree</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>45.0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision_1a94b39991201bf8258537afc31af801fc" kindref="member">mStereovisionDistance</ref><sp/>=<sp/>200.0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision_1a86b64614cb987748018c8c8b64b1bf89" kindref="member">mStereovisionDepth</ref><sp/><sp/><sp/><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_camera_param_vision_1aa960e3d8c4ec1adb5ed95fb0a3274dc6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1aa960e3d8c4ec1adb5ed95fb0a3274dc6" kindref="member">CameraParamVision::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ticket</ref><sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ticket</ref>-&gt;tryGetIterByKey(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>,<sp/></highlight><highlight class="stringliteral">&quot;VisionParam&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_param_vision_1a393b3e1636d103a85279f30645bf5e6b" kindref="member">mFovyDegree</ref>,<sp/></highlight><highlight class="stringliteral">&quot;FovyDegree&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_param_vision_1a94b39991201bf8258537afc31af801fc" kindref="member">mStereovisionDistance</ref>,<sp/></highlight><highlight class="stringliteral">&quot;StereovisionDistance&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_param_vision_1a86b64614cb987748018c8c8b64b1bf89" kindref="member">mStereovisionDepth</ref>,<sp/></highlight><highlight class="stringliteral">&quot;StereovisionDepth&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_param_vision_1aa56e6a40d26de1a3e5ebfac9fce13a97" kindref="member">mNearClipDistance</ref>,<sp/></highlight><highlight class="stringliteral">&quot;NearClipDistacne&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_param_vision_1aad9b3a18124fd8a43903ba43610f013f" kindref="member">mFarClipDistance</ref>,<sp/></highlight><highlight class="stringliteral">&quot;FarClipDistance&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Camera/alCameraParamVision.cpp"/>
+  </compounddef>
+</doxygen>

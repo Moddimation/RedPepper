@@ -1,6 +1,6 @@
 
 
-# Dir lib/NintendoWare
+# Dir NintendoWare
 
 
 

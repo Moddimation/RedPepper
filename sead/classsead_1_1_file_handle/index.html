@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::FileHandle - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-seadfilehandle">Class sead::FileHandle</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>FileHandle</strong></a></p>
+<ul>
+<li><code>#include &lt;seadFileDevice.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classsead_1_1_handle_base/">sead::HandleBase</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-filehandle"><strong>FileHandle</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-close"><strong>close</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-flush"><strong>flush</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-getcurrentseekpos"><strong>getCurrentSeekPos</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-getdivsize"><strong>getDivSize</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-getfilesize"><strong>getFileSize</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-read"><strong>read</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u8"><strong>u8</strong></a> * outBuffer, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> bytesToRead) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-seek"><strong>seek</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> offset, <a href="../classsead_1_1_file_device/#enum-seekorigin"><strong>FileDevice::SeekOrigin</strong></a> origin) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-tryclose"><strong>tryClose</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-tryflush"><strong>tryFlush</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-trygetcurrentseekpos"><strong>tryGetCurrentSeekPos</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> * pos) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-trygetfilesize"><strong>tryGetFileSize</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> * size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-tryread"><strong>tryRead</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> * actual_size, <a href="../_l_m_s___types_8h/#typedef-u8"><strong>u8</strong></a> * data, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-tryseek"><strong>trySeek</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> offset, <a href="../classsead_1_1_file_device/#enum-seekorigin"><strong>FileDevice::SeekOrigin</strong></a> origin) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-trywrite"><strong>tryWrite</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> * actual_size, const <a href="../_l_m_s___types_8h/#typedef-u8"><strong>u8</strong></a> * data, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-write"><strong>write</strong></a> (const <a href="../_l_m_s___types_8h/#typedef-u8"><strong>u8</strong></a> * data, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="#function-filehandle"><strong>~FileHandle</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-seadhandlebase">Public Functions inherited from sead::HandleBase</h2>
+<p>See <a href="../classsead_1_1_handle_base/">sead::HandleBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#function-handlebase"><strong>HandleBase</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1_file_device/"><strong>FileDevice</strong></a> *</td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#function-getdevice"><strong>getDevice</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1_file_device/"><strong>FileDevice</strong></a> *</td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#function-getoriginaldevice"><strong>getOriginalDevice</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#function-isopened"><strong>isOpened</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#function-handlebase"><strong>~HandleBase</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-mdivsize"><strong>mDivSize</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-seadhandlebase">Protected Attributes inherited from sead::HandleBase</h2>
+<p>See <a href="../classsead_1_1_handle_base/">sead::HandleBase</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1_file_device/"><strong>FileDevice</strong></a> *</td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#variable-mdevice"><strong>mDevice</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../namespacesead/#typedef-handlebuffer"><strong>HandleBuffer</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#variable-mhandlebuffer"><strong>mHandleBuffer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1_file_device/"><strong>FileDevice</strong></a> *</td>
+<td style="text-align: left;"><a href="../classsead_1_1_handle_base/#variable-moriginaldevice"><strong>mOriginalDevice</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-filehandle">function FileHandle</h3>
+<pre><code class="language-C++">inline sead::FileHandle::FileHandle () 
+</code></pre>
+<hr>
+
+<h3 id="function-close">function close</h3>
+<pre><code class="language-C++">bool sead::FileHandle::close () 
+</code></pre>
+<hr>
+
+<h3 id="function-flush">function flush</h3>
+<pre><code class="language-C++">bool sead::FileHandle::flush () 
+</code></pre>
+<hr>
+
+<h3 id="function-getcurrentseekpos">function getCurrentSeekPos</h3>
+<pre><code class="language-C++">u32 sead::FileHandle::getCurrentSeekPos () 
+</code></pre>
+<hr>
+
+<h3 id="function-getdivsize">function getDivSize</h3>
+<pre><code class="language-C++">inline u32 sead::FileHandle::getDivSize () const
+</code></pre>
+<hr>
+
+<h3 id="function-getfilesize">function getFileSize</h3>
+<pre><code class="language-C++">u32 sead::FileHandle::getFileSize () 
+</code></pre>
+<hr>
+
+<h3 id="function-read">function read</h3>
+<pre><code class="language-C++">u32 sead::FileHandle::read (
+    u8 * outBuffer,
+    u32 bytesToRead
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-seek">function seek</h3>
+<pre><code class="language-C++">bool sead::FileHandle::seek (
+    s32 offset,
+    FileDevice::SeekOrigin origin
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-tryclose">function tryClose</h3>
+<pre><code class="language-C++">bool sead::FileHandle::tryClose () 
+</code></pre>
+<hr>
+
+<h3 id="function-tryflush">function tryFlush</h3>
+<pre><code class="language-C++">bool sead::FileHandle::tryFlush () 
+</code></pre>
+<hr>
+
+<h3 id="function-trygetcurrentseekpos">function tryGetCurrentSeekPos</h3>
+<pre><code class="language-C++">bool sead::FileHandle::tryGetCurrentSeekPos (
+    u32 * pos
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-trygetfilesize">function tryGetFileSize</h3>
+<pre><code class="language-C++">bool sead::FileHandle::tryGetFileSize (
+    u32 * size
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-tryread">function tryRead</h3>
+<pre><code class="language-C++">bool sead::FileHandle::tryRead (
+    u32 * actual_size,
+    u8 * data,
+    u32 size
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-tryseek">function trySeek</h3>
+<pre><code class="language-C++">bool sead::FileHandle::trySeek (
+    s32 offset,
+    FileDevice::SeekOrigin origin
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-trywrite">function tryWrite</h3>
+<pre><code class="language-C++">bool sead::FileHandle::tryWrite (
+    u32 * actual_size,
+    const u8 * data,
+    u32 size
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-write">function write</h3>
+<pre><code class="language-C++">u32 sead::FileHandle::write (
+    const u8 * data,
+    u32 size
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-filehandle_1">function ~FileHandle</h3>
+<pre><code class="language-C++">inline virtual sead::FileHandle::~FileHandle () 
+</code></pre>
+<hr>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-mdivsize">variable mDivSize</h3>
+<pre><code class="language-C++">s32 sead::FileHandle::mDivSize;
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/filedevice/seadFileDevice.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

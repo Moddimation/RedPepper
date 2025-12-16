@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_quat_util_8h" kind="file" language="C++">
+    <compoundname>alQuatUtil.h</compoundname>
+    <includes local="no">math/seadQuat.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>alQuatUtil.h</label>
+        <link refid="al_quat_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadQuat.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadQuat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceal_1aaed802620d650d314c0768b7b45bcfc5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a046880b623199b268a05ccd26bdc83be" kindref="member">rotateQuatXDirDegree</ref>(<sp/>sead::Quatf*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">degrees</ref><sp/>);</highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1a8ba9332a7092a6f5ccb9119e5ebff08a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7a1971c757b04bf3f4debc5dedfb3f82" kindref="member">rotateQuatYDirDegree</ref>(<sp/>sead::Quatf*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">degrees</ref><sp/>);</highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1abef3658e24bd4b8cba27937a494dd954" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1af5a9b2a572c6b7dd0ef76ba5134e8e08" kindref="member">rotateQuatZDirDegree</ref>(<sp/>sead::Quatf*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">degrees</ref><sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1a216111410cd1da8fdadcf1a7b3b88589" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3dfc51aa96d603a891234c51b76fb848" kindref="member">calcQuatSide</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref><sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Math/alQuatUtil.h"/>
+  </compounddef>
+</doxygen>

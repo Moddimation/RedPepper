@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alLiveActorFunction.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-alliveactorfunctioncpp">File alLiveActorFunction.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_a1d892c08cc8ccf4e69e81fa9f5f26fe/"><strong>LiveActor</strong></a> <strong>&gt;</strong> <a href="../al_live_actor_function_8cpp/"><strong>alLiveActorFunction.cpp</strong></a></p>
+<p><a href="../al_live_actor_function_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;Clipping/alClippingActorHolder.h&gt;
+#include &lt;Clipping/alClippingDirector.h&gt;
+#include &lt;Collision/alCollider.h&gt;
+#include &lt;Collision/alCollisionUtil.h&gt;
+#include &lt;Execute/alExecuteTableHolder.h&gt;
+#include &lt;LiveActor/alActorActionKeeper.h&gt;
+#include &lt;LiveActor/alActorPoseFunction.h&gt;
+#include &lt;LiveActor/alHitSensorKeeper.h&gt;
+#include &lt;LiveActor/alLiveActor.h&gt;
+#include &lt;LiveActor/alLiveActorFunction.h&gt;
+#include &lt;LiveActor/alLiveActorKit.h&gt;
+#include &lt;LiveActor/alSensorFunction.h&gt;
+#include &lt;LiveActor/alSubActorFunction.h&gt;
+#include &lt;Math/alMtxUtil.h&gt;
+#include &lt;Model/alAnimPlayerSimple.h&gt;
+#include &lt;Model/alModelCtr.h&gt;
+#include &lt;Model/alModelKeeper.h&gt;
+#include &lt;Nerve/alNerveActionCtrl.h&gt;
+#include &lt;Nerve/alNerveFunction.h&gt;
+
+void alLiveActorFunction::calcAnimDirect( al::LiveActor* actor )
+{
+        sead::Matrix34f baseMtx;
+        actor-&gt;mActorPoseKeeper-&gt;calcBaseMtx( &amp;baseMtx ); /* alActorPoseFunction::calcBaseMtx */
+        if ( actor-&gt;mModelKeeper )
+                al::setBaseMtxAndCalcAnim( actor, baseMtx, actor-&gt;mActorPoseKeeper-&gt;getScale() /* al::getScale */ );
+        if ( actor-&gt;mCollisionParts )
+        {
+                al::preScaleMtx( &amp;baseMtx, actor-&gt;mActorPoseKeeper-&gt;getScale() /* al::getScale */ );
+                al::syncCollisionMtx( actor, &amp;baseMtx );
+        }
+        if ( actor-&gt;getEffectKeeper() )
+                actor-&gt;getEffectKeeper()-&gt;update();
+        if ( actor-&gt;mSubActorKeeper )
+                alSubActorFunction::tryCalcAnim( actor-&gt;mSubActorKeeper );
+}
+
+namespace al
+{
+
+// ??
+bool isClipped( const LiveActor* actor )
+{
+        return actor-&gt;getLiveActorFlag().isClipped;
+}
+
+bool isInvalidClipping( const LiveActor* actor )
+{
+        return actor-&gt;getLiveActorFlag().isInvalidClipping;
+}
+
+bool isDead( const LiveActor* actor )
+{
+        return actor-&gt;getLiveActorFlag().isDead;
+}
+
+bool isAlive( const LiveActor* actor )
+{
+        return !actor-&gt;getLiveActorFlag().isDead;
+}
+
+void onCollide( LiveActor* actor )
+{
+        Collider* collider                     = actor-&gt;getCollider();
+        actor-&gt;getLiveActorFlag().isOffCollide = false;
+        if ( collider )
+                collider-&gt;onInvalidate();
+}
+
+void offCollide( LiveActor* actor )
+{
+        actor-&gt;getLiveActorFlag().isOffCollide = true;
+}
+
+void onDrawClipping( LiveActor* actor )
+{
+        actor-&gt;getLiveActorFlag().isDrawClipping = true;
+        if ( !isClipped( actor ) )
+        {
+                alActorSystemFunction::addToExecutorMovement( actor );
+                if ( actor-&gt;getHitSensorKeeper() )
+                {
+                        actor-&gt;getHitSensorKeeper()-&gt;validateBySystem();
+                        alSensorFunction::updateHitSensorsAll( actor );
+                }
+        }
+}
+
+void invalidateClipping( LiveActor* actor )
+{
+        if ( isClipped( actor ) )
+                actor-&gt;endClipped();
+
+        if ( !isInvalidClipping( actor ) )
+                getLiveActorKit()-&gt;getClippingDirector()-&gt;getClippingActorHolder()-&gt;invalidateClipping(
+                        actor );
+}
+
+void validateClipping( LiveActor* actor )
+{
+        if ( isInvalidClipping( actor ) )
+                getLiveActorKit()-&gt;getClippingDirector()-&gt;getClippingActorHolder()-&gt;validateClipping( actor );
+}
+
+// ModelKeeper
+
+#ifdef NON_MATCHING
+
+// optimization is too smart
+void hideModel( LiveActor* actor )
+{
+        if ( isAlive( actor ) &amp;&amp; !isClipped( actor ) )
+        {
+                if ( actor-&gt;getModelKeeper() )
+                        actor-&gt;getModelKeeper()-&gt;hide();
+                if ( actor-&gt;getShadowKeeper() )
+                        hideShadow( actor );
+                alActorSystemFunction::removeFromExecutorDraw( actor );
+        }
+        actor-&gt;getLiveActorFlag().isHideModel = true;
+}
+#endif
+
+#ifdef NON_MATCHING
+// register swap, maybe inlined
+bool tryStartMclAnimIfExist( LiveActor* actor, const char* animName )
+{
+        AnimPlayerSimple* animPlayer = actor-&gt;getModelKeeper()-&gt;getModel()-&gt;getMclAnimPlayer();
+        if ( animPlayer &amp;&amp; animPlayer-&gt;isAnimExist( animName ) )
+        {
+                actor-&gt;getModelKeeper()-&gt;getModel()-&gt;getMclAnimPlayer()-&gt;startAnim( animName );
+                return true;
+        }
+        return false;
+}
+#endif
+
+#ifdef NON_MATCHING
+// ldr for getting ModelKeeper is optimized
+void calcJointPos( sead::Vector3f* out, const LiveActor* actor, const char* jointName )
+{
+        const sead::Matrix34f* jointMtx = getJointMtxPtr( actor-&gt;getModelKeeper(), jointName );
+        out-&gt;x                          = jointMtx-&gt;m[ 0 ][ 3 ];
+        out-&gt;y                          = jointMtx-&gt;m[ 1 ][ 3 ];
+        out-&gt;z                          = jointMtx-&gt;m[ 2 ][ 3 ];
+}
+#endif
+
+// HitSensorKeeper
+
+HitSensor* getHitSensor( const LiveActor* actor, const char* name )
+{
+        return actor-&gt;getHitSensorKeeper()-&gt;getSensor( name );
+}
+
+float getSensorRadius( const LiveActor* actor, const char* sensorName )
+{
+        return getHitSensor( actor, sensorName )-&gt;getRadius();
+}
+
+// NerveKeeper
+#pragma no_inline
+
+void startNerveAction( LiveActor* actor, const char* actionName )
+{
+        if ( actor-&gt;getActorActionKeeper() )
+                actor-&gt;getActorActionKeeper()-&gt;tryStartActionNoAnim( actionName );
+        alNerveFunction::setNerveAction( actor, actionName );
+}
+
+#ifdef NON_MATCHING
+// registers
+void initNerve( LiveActor* actor, const Nerve* nerve, int maxNerveStates )
+{
+        actor-&gt;initNerveKeeper( new NerveKeeper( actor, nerve, maxNerveStates ) );
+}
+#endif
+
+#ifdef NON_MATCHING
+// registers, too big for tail-reorder
+void initNerveAction( LiveActor* actor, const char* name, alNerveFunction::NerveActionCollector* collector, int maxNerveStates )
+{
+        NerveActionCtrl* nerveActionCtrl = new NerveActionCtrl( collector );
+        NerveAction*     nerve           = nerveActionCtrl-&gt;findNerve( name );
+        NerveKeeper*     nk              = new NerveKeeper( actor, nerve, maxNerveStates );
+        actor-&gt;initNerveKeeper( nk );
+        actor-&gt;getNerveKeeper()-&gt;initNerveAction( nerveActionCtrl );
+        startNerveAction( actor, name );
+}
+#endif
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

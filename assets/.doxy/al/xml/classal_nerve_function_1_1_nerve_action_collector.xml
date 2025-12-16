@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_nerve_function_1_1_nerve_action_collector" kind="class" language="C++" prot="public">
+    <compoundname>alNerveFunction::NerveActionCollector</compoundname>
+    <includes refid="al_nerve_action_ctrl_8h" local="no">alNerveActionCtrl.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classal_nerve_function_1_1_nerve_action_collector_1ab30edbb777927b25b5c8dc816fd863f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class al::NerveActionCtrl</definition>
+        <argsstring></argsstring>
+        <name>al::NerveActionCtrl</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::NerveActionCtrl</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_nerve_action_ctrl" kindref="compound">al::NerveActionCtrl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="37" column="22" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_nerve_function_1_1_nerve_action_collector_1ad4ce2588a770dc3805d538fa84da233a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int alNerveFunction::NerveActionCollector::mNumNodes</definition>
+        <argsstring></argsstring>
+        <name>mNumNodes</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::mNumNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="40" column="26" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classal_nerve_function_1_1_nerve_action_collector_1a7a3e9fd7c43178f17940848422dd89d2" compoundref="al_nerve_action_ctrl_8cpp" startline="24" endline="37">addNerve</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_nerve_function_1_1_nerve_action_collector_1a0845c7789f47548cca50e839430d4db0" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_nerve_action" kindref="compound">al::NerveAction</ref> *</type>
+        <definition>al::NerveAction* alNerveFunction::NerveActionCollector::mStartNode</definition>
+        <argsstring></argsstring>
+        <name>mStartNode</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::mStartNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="41" column="25" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classal_nerve_function_1_1_nerve_action_collector_1a7a3e9fd7c43178f17940848422dd89d2" compoundref="al_nerve_action_ctrl_8cpp" startline="24" endline="37">addNerve</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_nerve_function_1_1_nerve_action_collector_1a1845e494a874fe13cd7d6110cfe06dcd" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_nerve_action" kindref="compound">al::NerveAction</ref> *</type>
+        <definition>al::NerveAction* alNerveFunction::NerveActionCollector::mEndNode</definition>
+        <argsstring></argsstring>
+        <name>mEndNode</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::mEndNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="42" column="25" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classal_nerve_function_1_1_nerve_action_collector_1a7a3e9fd7c43178f17940848422dd89d2" compoundref="al_nerve_action_ctrl_8cpp" startline="24" endline="37">addNerve</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classal_nerve_function_1_1_nerve_action_collector_1a28c42886e499227c205b63bd180f50a9" prot="private" static="yes" mutable="no">
+        <type><ref refid="classal_nerve_function_1_1_nerve_action_collector" kindref="compound">NerveActionCollector</ref> *</type>
+        <definition>NerveActionCollector* alNerveFunction::NerveActionCollector::sCurrentCollector</definition>
+        <argsstring></argsstring>
+        <name>sCurrentCollector</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::sCurrentCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="44" column="37" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classal_nerve_function_1_1_nerve_action_collector_1a8d82d8663ffaf3c464731c3331414be3" compoundref="al_nerve_action_ctrl_8h" startline="49" endline="52">getCurrentCollector</referencedby>
+        <referencedby refid="classal_nerve_function_1_1_nerve_action_collector_1a142dbf1350e88d9fa3dab8f4820dceb1" compoundref="al_nerve_action_ctrl_8cpp" startline="18" endline="22">NerveActionCollector</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_nerve_function_1_1_nerve_action_collector_1a7a3e9fd7c43178f17940848422dd89d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alNerveFunction::NerveActionCollector::addNerve</definition>
+        <argsstring>(al::NerveAction *nerve)</argsstring>
+        <name>addNerve</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::addNerve</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_nerve_action" kindref="compound">al::NerveAction</ref> *</type>
+          <declname>nerve</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="47" column="14" bodyfile="lib/al/src/Nerve/alNerveActionCtrl.cpp" bodystart="24" bodyend="37"/>
+        <references refid="classal_nerve_function_1_1_nerve_action_collector_1a1845e494a874fe13cd7d6110cfe06dcd" compoundref="al_nerve_action_ctrl_8h" startline="42">mEndNode</references>
+        <references refid="classal_1_1_nerve_action_1a2688492163527cde817df0f0f465fbe4" compoundref="al_nerve_action_ctrl_8h" startline="22">al::NerveAction::mNextNode</references>
+        <references refid="classal_nerve_function_1_1_nerve_action_collector_1ad4ce2588a770dc3805d538fa84da233a" compoundref="al_nerve_action_ctrl_8h" startline="40">mNumNodes</references>
+        <references refid="classal_nerve_function_1_1_nerve_action_collector_1a0845c7789f47548cca50e839430d4db0" compoundref="al_nerve_action_ctrl_8h" startline="41">mStartNode</references>
+        <referencedby refid="classal_1_1_nerve_action_1abf8f9ea49bca71caa92014cf09445632" compoundref="al_nerve_action_ctrl_8cpp" startline="7" endline="10">al::NerveAction::NerveAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_nerve_function_1_1_nerve_action_collector_1a142dbf1350e88d9fa3dab8f4820dceb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>alNerveFunction::NerveActionCollector::NerveActionCollector</definition>
+        <argsstring>()</argsstring>
+        <name>NerveActionCollector</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::NerveActionCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="55" column="9" bodyfile="lib/al/src/Nerve/alNerveActionCtrl.cpp" bodystart="18" bodyend="22"/>
+        <references refid="classal_nerve_function_1_1_nerve_action_collector_1a28c42886e499227c205b63bd180f50a9" compoundref="al_nerve_action_ctrl_8h" startline="44">sCurrentCollector</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classal_nerve_function_1_1_nerve_action_collector_1a8d82d8663ffaf3c464731c3331414be3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_nerve_function_1_1_nerve_action_collector" kindref="compound">NerveActionCollector</ref> *</type>
+        <definition>static NerveActionCollector * alNerveFunction::NerveActionCollector::getCurrentCollector</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentCollector</name>
+        <qualifiedname>alNerveFunction::NerveActionCollector::getCurrentCollector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="49" column="37" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="49" bodyend="52"/>
+        <references refid="classal_nerve_function_1_1_nerve_action_collector_1a28c42886e499227c205b63bd180f50a9" compoundref="al_nerve_action_ctrl_8h" startline="44">sCurrentCollector</references>
+        <referencedby refid="classal_1_1_nerve_action_1abf8f9ea49bca71caa92014cf09445632" compoundref="al_nerve_action_ctrl_8cpp" startline="7" endline="10">al::NerveAction::NerveAction</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="2">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alNerveFunction::NerveActionCollector</label>
+        <link refid="classal_nerve_function_1_1_nerve_action_collector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mEndNode</edgelabel>
+          <edgelabel>mStartNode</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>sCurrentCollector</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Nerve/alNerveActionCtrl.h" line="35" column="1" bodyfile="lib/al/include/Nerve/alNerveActionCtrl.h" bodystart="36" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1a7a3e9fd7c43178f17940848422dd89d2" prot="public" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>addNerve</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1ab30edbb777927b25b5c8dc816fd863f1" prot="public" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>al::NerveActionCtrl</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1a8d82d8663ffaf3c464731c3331414be3" prot="public" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>getCurrentCollector</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1a1845e494a874fe13cd7d6110cfe06dcd" prot="private" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>mEndNode</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1ad4ce2588a770dc3805d538fa84da233a" prot="private" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>mNumNodes</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1a0845c7789f47548cca50e839430d4db0" prot="private" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>mStartNode</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1a142dbf1350e88d9fa3dab8f4820dceb1" prot="public" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>NerveActionCollector</name></member>
+      <member refid="classal_nerve_function_1_1_nerve_action_collector_1a28c42886e499227c205b63bd180f50a9" prot="private" virt="non-virtual"><scope>alNerveFunction::NerveActionCollector</scope><name>sCurrentCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

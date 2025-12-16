@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_sensor_hit_group_8h" kind="file" language="C++">
+    <compoundname>alSensorHitGroup.h</compoundname>
+    <includes refid="al_hit_sensor_8h" local="no">HitSensor/alHitSensor.h</includes>
+    <includes local="no">container/seadPtrArray.h</includes>
+    <includedby refid="al_hit_sensor_8cpp" local="no">alHitSensor.cpp</includedby>
+    <includedby refid="al_hit_sensor_director_8cpp" local="no">alHitSensorDirector.cpp</includedby>
+    <includedby refid="al_sensor_hit_group_8cpp" local="no">alSensorHitGroup.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>HitSensor/alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alSensorHitGroup.h</label>
+        <link refid="al_sensor_hit_group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>HitSensor/alSensorType.h</label>
+        <link refid="al_sensor_type_8h"/>
+      </node>
+      <node id="6">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alSensorHitGroup.h</label>
+        <link refid="al_sensor_hit_group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alHitSensor.cpp</label>
+        <link refid="al_hit_sensor_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alSensorHitGroup.cpp</label>
+        <link refid="al_sensor_hit_group_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alHitSensorDirector.cpp</label>
+        <link refid="al_hit_sensor_director_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_sensor_hit_group" prot="public">al::SensorHitGroup</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_hit_sensor_8h" kindref="compound">HitSensor/alHitSensor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;container/seadPtrArray.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classal_1_1_sensor_hit_group" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_sensor_hit_group_1ac75470de315ad0a1939d37d0138d0c2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::PtrArray&lt;HitSensor&gt;<sp/><ref refid="classal_1_1_sensor_hit_group_1ac75470de315ad0a1939d37d0138d0c2b" kindref="member">mSensors</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group_1a28fd223b7160d94249cb20ec380e8ed8" kindref="member">add</ref>(<sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>);</highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_sensor_hit_group_1a61d1f45e572d8fde8469cbfb31d7ab93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_sensor_hit_group_1a61d1f45e572d8fde8469cbfb31d7ab93" kindref="member">remove</ref>(<sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_sensor_hit_group_1a37cd0cc3cf8359759a81d46d39c134ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_sensor_hit_group_1a37cd0cc3cf8359759a81d46d39c134ff" kindref="member">SensorHitGroup</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/></highlight><highlight class="comment">/*<sp/>unused<sp/>*/</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/HitSensor/alSensorHitGroup.h"/>
+  </compounddef>
+</doxygen>

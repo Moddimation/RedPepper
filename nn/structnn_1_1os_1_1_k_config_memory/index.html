@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Struct nn::os::KConfigMemory - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="struct-nnoskconfigmemory">Struct nn::os::KConfigMemory</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacenn/"><strong>nn</strong></a> <strong>&gt;</strong> <a href="../namespacenn_1_1os/"><strong>os</strong></a> <strong>&gt;</strong> <a href="./"><strong>KConfigMemory</strong></a></p>
+<ul>
+<li><code>#include &lt;os_KConfigMemory.h&gt;</code></li>
+</ul>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-appmemalloc"><strong>appMemAlloc</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-appmemtype"><strong>appMemType</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-basememalloc"><strong>baseMemAlloc</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-envinfo"><strong>envInfo</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmctrsdkver"><strong>firmCtrSdkVer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmlaunchflags"><strong>firmLaunchFlags</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmsyscorever"><strong>firmSysCoreVer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmvermajor"><strong>firmVerMajor</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmverminor"><strong>firmVerMinor</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmverrev"><strong>firmVerRev</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-firmverunk"><strong>firmVerUnk</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-kctrsdkver"><strong>kCtrSdkVer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-kversionmajor"><strong>kVersionMajor</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-kversionminor"><strong>kVersionMinor</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-kversionrev"><strong>kVersionRev</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-kversionunk"><strong>kVersionUnk</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u64"><strong>u64</strong></a></td>
+<td style="text-align: left;"><a href="#variable-nstid"><strong>nsTid</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-pad1"><strong>pad1</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-pad2"><strong>pad2</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-pad3"><strong>pad3</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-pad4"><strong>pad4</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-pad5"><strong>pad5</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-prevfirm"><strong>prevFirm</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-syscorever"><strong>sysCoreVer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-sysmemalloc"><strong>sysMemAlloc</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u8"><strong>u8</strong></a></td>
+<td style="text-align: left;"><a href="#variable-unitinfo"><strong>unitInfo</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-updateflag"><strong>updateFlag</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-appmemalloc">variable appMemAlloc</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::appMemAlloc;
+</code></pre>
+<hr>
+
+<h3 id="variable-appmemtype">variable appMemType</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::appMemType;
+</code></pre>
+<hr>
+
+<h3 id="variable-basememalloc">variable baseMemAlloc</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::baseMemAlloc;
+</code></pre>
+<hr>
+
+<h3 id="variable-envinfo">variable envInfo</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::envInfo;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmctrsdkver">variable firmCtrSdkVer</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::firmCtrSdkVer;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmlaunchflags">variable firmLaunchFlags</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::firmLaunchFlags;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmsyscorever">variable firmSysCoreVer</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::firmSysCoreVer;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmvermajor">variable firmVerMajor</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::firmVerMajor;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmverminor">variable firmVerMinor</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::firmVerMinor;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmverrev">variable firmVerRev</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::firmVerRev;
+</code></pre>
+<hr>
+
+<h3 id="variable-firmverunk">variable firmVerUnk</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::firmVerUnk;
+</code></pre>
+<hr>
+
+<h3 id="variable-kctrsdkver">variable kCtrSdkVer</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::kCtrSdkVer;
+</code></pre>
+<hr>
+
+<h3 id="variable-kversionmajor">variable kVersionMajor</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::kVersionMajor;
+</code></pre>
+<hr>
+
+<h3 id="variable-kversionminor">variable kVersionMinor</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::kVersionMinor;
+</code></pre>
+<hr>
+
+<h3 id="variable-kversionrev">variable kVersionRev</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::kVersionRev;
+</code></pre>
+<hr>
+
+<h3 id="variable-kversionunk">variable kVersionUnk</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::kVersionUnk;
+</code></pre>
+<hr>
+
+<h3 id="variable-nstid">variable nsTid</h3>
+<pre><code class="language-C++">u64 nn::os::KConfigMemory::nsTid;
+</code></pre>
+<hr>
+
+<h3 id="variable-pad1">variable pad1</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::pad1;
+</code></pre>
+<hr>
+
+<h3 id="variable-pad2">variable pad2</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::pad2;
+</code></pre>
+<hr>
+
+<h3 id="variable-pad3">variable pad3</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::pad3[3];
+</code></pre>
+<hr>
+
+<h3 id="variable-pad4">variable pad4</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::pad4[3];
+</code></pre>
+<hr>
+
+<h3 id="variable-pad5">variable pad5</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::pad5[5];
+</code></pre>
+<hr>
+
+<h3 id="variable-prevfirm">variable prevFirm</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::prevFirm;
+</code></pre>
+<hr>
+
+<h3 id="variable-syscorever">variable sysCoreVer</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::sysCoreVer;
+</code></pre>
+<hr>
+
+<h3 id="variable-sysmemalloc">variable sysMemAlloc</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::sysMemAlloc;
+</code></pre>
+<hr>
+
+<h3 id="variable-unitinfo">variable unitInfo</h3>
+<pre><code class="language-C++">u8 nn::os::KConfigMemory::unitInfo;
+</code></pre>
+<hr>
+
+<h3 id="variable-updateflag">variable updateFlag</h3>
+<pre><code class="language-C++">u32 nn::os::KConfigMemory::updateFlag;
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/CTRSDK/include/nn/os/os_KConfigMemory.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

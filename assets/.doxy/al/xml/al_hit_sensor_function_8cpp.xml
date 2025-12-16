@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_hit_sensor_function_8cpp" kind="file" language="C++">
+    <compoundname>alHitSensorFunction.cpp</compoundname>
+    <includes refid="al_hit_sensor_8h" local="no">HitSensor/alHitSensor.h</includes>
+    <includes refid="al_hit_sensor_function_8h" local="no">LiveActor/alHitSensorFunction.h</includes>
+    <includes refid="al_string_util_8h" local="no">Util/alStringUtil.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>HitSensor/alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>HitSensor/alSensorType.h</label>
+        <link refid="al_sensor_type_8h"/>
+      </node>
+      <node id="6">
+        <label>LiveActor/alHitSensorFunction.h</label>
+        <link refid="al_hit_sensor_function_8h"/>
+      </node>
+      <node id="7">
+        <label>Util/alStringUtil.h</label>
+        <link refid="al_string_util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alHitSensorFunction.cpp</label>
+        <link refid="al_hit_sensor_function_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="8">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_hit_sensor_8h" kindref="compound">HitSensor/alHitSensor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_hit_sensor_function_8h" kindref="compound">LiveActor/alHitSensorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_string_util_8h" kindref="compound">Util/alStringUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceal_1ae6ca6960300498d6c3d7f41ed066df30" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae6ca6960300498d6c3d7f41ed066df30" kindref="member">isSensorName</ref>(<sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aba76858d014cb644092632111c255ba0" kindref="member">isEqualString</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getName(),<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespaceal_1ace76f3b1656d61ec997f258f01aa5652" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ace76f3b1656d61ec997f258f01aa5652" kindref="member">isSensorPlayer</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a4c71b3b18a6d10884641cb729df85157" kindref="member">SensorType_Player</ref><sp/>||<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359aa3e9b077fdaa77f0aecf89b150a7fdb0" kindref="member">SensorType_PlayerFireBall</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespaceal_1ae07127d57a36beb924c46d6e16169a34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae07127d57a36beb924c46d6e16169a34" kindref="member">isSensorRide</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a93f1230853a3869c9eaa25c88e50ed87" kindref="member">SensorType_Ride</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespaceal_1a52f06f4d0a1affa9cbc58dcf238680fd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a52f06f4d0a1affa9cbc58dcf238680fd" kindref="member">isSensorEnemy</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a40924894f9c9c0d8d213cfa276b79bc2" kindref="member">SensorType_Enemy</ref><sp/>||<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359ac9bfaa97125b51fbc0f46ae831902866" kindref="member">SensorType_EnemyBody</ref><sp/>||</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a180a254b8483948fbc694d26c620cfd4" kindref="member">SensorType_EnemyAttack</ref><sp/>||</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359acf71030315e76ec61eea5c21bebbdb8c" kindref="member">SensorType_KillerMagnum</ref><sp/>||<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359af7427d45534df1d19040ea1c5b925024" kindref="member">SensorType_Dossun</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespaceal_1a75c8c8d1e0be73128f1ca6d5b3dae688" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a75c8c8d1e0be73128f1ca6d5b3dae688" kindref="member">isSensorEnemyBody</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359ac9bfaa97125b51fbc0f46ae831902866" kindref="member">SensorType_EnemyBody</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespaceal_1aa00c21ac17102c7184bada9ac8de358e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aa00c21ac17102c7184bada9ac8de358e" kindref="member">isSensorEnemyAttack</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a180a254b8483948fbc694d26c620cfd4" kindref="member">SensorType_EnemyAttack</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespaceal_1a86095698daf4081f26089ddd25f866fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a86095698daf4081f26089ddd25f866fb" kindref="member">isSensorSimple</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a51087dbd63c699aaac332676d51abbef" kindref="member">SensorType_EnemySimple</ref><sp/>||</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a03fe8f17270bc0e3c81eb6d0bab0b709" kindref="member">SensorType_MapObjSimple</ref><sp/>||<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a5f2c0b1e05fd80cbabc89d7dd2a808ae" kindref="member">SensorType_Bindable</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="namespaceal_1acbd06b74b459194cee5fb6435680cfea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1acbd06b74b459194cee5fb6435680cfea" kindref="member">isSensorMapObj</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref><sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensor</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359a284ebc1bee5aac63a7e9144361c8efda" kindref="member">SensorType_MapObj</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alHitSensorFunction.cpp"/>
+  </compounddef>
+</doxygen>

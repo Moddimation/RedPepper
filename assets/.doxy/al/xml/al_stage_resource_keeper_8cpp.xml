@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_stage_resource_keeper_8cpp" kind="file" language="C++">
+    <compoundname>alStageResourceKeeper.cpp</compoundname>
+    <includes refid="al_stage_resource_keeper_8h" local="no">Stage/alStageResourceKeeper.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Stage/alStageResourceKeeper.h</label>
+        <link refid="al_stage_resource_keeper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alStageResourceKeeper.cpp</label>
+        <link refid="al_stage_resource_keeper_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>heap/seadHeap.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_stage_resource_keeper_8h" kindref="compound">Stage/alStageResourceKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classal_1_1_stage_resource_keeper_1adce70f507e191d2b222587aa38ce4897" refkind="member"><highlight class="normal"><ref refid="classal_1_1_stage_resource_keeper_1adce70f507e191d2b222587aa38ce4897" kindref="member">StageResourceKeeper::StageResourceKeeper</ref>()<sp/>:<sp/>mResources(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classal_1_1_stage_resource_keeper_1a546d0e41810ef5a754dec5fdd027e71f" refkind="member"><highlight class="normal"><ref refid="classal_1_1_resource" kindref="compound">al::Resource</ref>*<sp/><ref refid="classal_1_1_stage_resource_keeper_1a546d0e41810ef5a754dec5fdd027e71f" kindref="member">StageResourceKeeper::getResourceDesign</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="11"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_resource_keeper_1adc45d043d185e760270e0664d676b394" kindref="member">mResources</ref>[<sp/>1<sp/>];</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_stage_resource_keeper_1a7c00f1dfebb6043423070a2aa83f5c4f" refkind="member"><highlight class="normal"><ref refid="classal_1_1_resource" kindref="compound">al::Resource</ref>*<sp/><ref refid="classal_1_1_stage_resource_keeper_1a7c00f1dfebb6043423070a2aa83f5c4f" kindref="member">StageResourceKeeper::getResourceMap</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="16"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_resource_keeper_1adc45d043d185e760270e0664d676b394" kindref="member">mResources</ref>[<sp/>0<sp/>];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_stage_resource_keeper_1a9d7ff0a8b5b24aabe201b68fca9e21be" refkind="member"><highlight class="normal"><ref refid="classal_1_1_resource" kindref="compound">al::Resource</ref>*<sp/><ref refid="classal_1_1_stage_resource_keeper_1a9d7ff0a8b5b24aabe201b68fca9e21be" kindref="member">StageResourceKeeper::getResourceSound</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="21"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_resource_keeper_1adc45d043d185e760270e0664d676b394" kindref="member">mResources</ref>[<sp/>2<sp/>];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Stage/alStageResourceKeeper.cpp"/>
+  </compounddef>
+</doxygen>

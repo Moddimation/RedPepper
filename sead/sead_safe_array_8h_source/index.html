@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadSafeArray.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-seadsafearrayh">File seadSafeArray.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_510f450138bd9d848bdab2e398852591/"><strong>container</strong></a> <strong>&gt;</strong> <a href="../sead_safe_array_8h/"><strong>seadSafeArray.h</strong></a></p>
+<p><a href="../sead_safe_array_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;basis/seadRawPrint.h&gt;
+#include &lt;basis/seadTypes.h&gt;
+#include &lt;utility&gt;
+
+namespace sead {
+template &lt;typename T, s32 N&gt;
+class SafeArray {
+public:
+    T mBuffer[N];
+
+    T&amp; operator[](s32 idx) {
+        if (u32(idx) &lt; N)
+            return mBuffer[idx];
+#ifdef MATCHING_HACK_NX_CLANG
+        // Force __LINE__ to be an odd number that cannot be encoded as an immediate for ORR.
+        // Otherwise, LLVM's register coalescer can get rid of too many register copies,
+        // which messes up register allocation.
+#line 44
+#endif
+        SEAD_ASSERT_MSG(false, &quot;range over [0, %d) : %d&quot;, N, idx);
+        return mBuffer[0];
+    }
+
+    const T&amp; operator[](s32 idx) const {
+        if (u32(idx) &lt; N)
+            return mBuffer[idx];
+#ifdef MATCHING_HACK_NX_CLANG
+        // Force __LINE__ to be an even number that can be encoded as an immediate for ORR.
+        // Otherwise, LLVM's register coalescer can fail to get rid of some register copies,
+        // which messes up register allocation.
+#line 59
+#endif
+        SEAD_ASSERT_MSG(false, &quot;range over [0, %d) : %d&quot;, N, idx);
+        return mBuffer[0];
+    }
+
+    T&amp; operator()(s32 idx) { return mBuffer[idx]; }
+
+    const T&amp; operator()(s32 idx) const { return mBuffer[idx]; }
+
+    T&amp; front() { return mBuffer[0]; }
+
+    const T&amp; front() const { return mBuffer[0]; }
+
+    T&amp; back() { return mBuffer[N - 1]; }
+
+    const T&amp; back() const { return mBuffer[N - 1]; }
+
+    int size() const { return N; }
+
+    u32 getByteSize() const { return N * sizeof(T); }
+
+    T* getBufferPtr() { return mBuffer; }
+
+    const T* getBufferPtr() const { return mBuffer; }
+
+    void fill(const T&amp; value) {
+        for (s32 i = 0; i &lt; N; ++i)
+            mBuffer[i] = value;
+    }
+
+    class iterator {
+    public:
+        iterator(T* buffer, s32 idx) : mBuffer(buffer), mIdx(idx) {}
+
+        bool operator==(const iterator&amp; rhs) const {
+            return mBuffer == rhs.mBuffer &amp;&amp; mIdx == rhs.mIdx;
+        }
+
+        bool operator!=(const iterator&amp; rhs) const { return !(*this == rhs); }
+
+        iterator&amp; operator++() {
+            ++mIdx;
+            return *this;
+        }
+
+        iterator&amp; operator--() {
+            --mIdx;
+            return *this;
+        }
+
+        T* operator-&gt;() const { return &amp;mBuffer[mIdx]; }
+
+        T&amp; operator*() const { return mBuffer[mIdx]; }
+
+    private:
+        T* mBuffer;
+        s32 mIdx;
+    };
+
+    iterator begin() { return iterator(mBuffer, 0); }
+
+    iterator end() { return iterator(mBuffer, N); }
+
+    class constIterator {
+    public:
+        constIterator(const T* buffer, s32 idx) : mBuffer(buffer), mIdx(idx) {}
+
+        bool operator==(const constIterator&amp; rhs) const {
+            return mBuffer == rhs.mBuffer &amp;&amp; mIdx == rhs.mIdx;
+        }
+
+        bool operator!=(const constIterator&amp; rhs) const { return !(*this == rhs); }
+
+        constIterator&amp; operator++() {
+            ++mIdx;
+            return *this;
+        }
+
+        constIterator&amp; operator--() {
+            --mIdx;
+            return *this;
+        }
+
+        const T* operator-&gt;() const { return &amp;mBuffer[mIdx]; }
+
+        const T&amp; operator*() const { return mBuffer[mIdx]; }
+
+    private:
+        const T* mBuffer;
+        s32 mIdx;
+    };
+
+    constIterator constBegin() const { return constIterator(mBuffer, 0); }
+
+    constIterator constEnd() const { return constIterator(mBuffer, N); }
+
+    constIterator begin() const { return constIterator(mBuffer, 0); }
+
+    constIterator end() const { return constIterator(mBuffer, N); }
+};
+
+template &lt;typename T, s32 N&gt;
+class UnsafeArray {
+public:
+    T mBuffer[N];
+
+    T&amp; operator[](s32 idx) { return mBuffer[idx]; }
+
+    const T&amp; operator[](s32 idx) const { return mBuffer[idx]; }
+
+    T&amp; operator()(s32 idx) { return mBuffer[idx]; }
+
+    const T&amp; operator()(s32 idx) const { return mBuffer[idx]; }
+
+    T&amp; front() { return mBuffer[0]; }
+
+    const T&amp; front() const { return mBuffer[0]; }
+
+    T&amp; back() { return mBuffer[N - 1]; }
+
+    const T&amp; back() const { return mBuffer[N - 1]; }
+
+    int size() const { return N; }
+
+    u32 getByteSize() const { return N * sizeof(T); }
+
+    T* getBufferPtr() { return mBuffer; }
+
+    const T* getBufferPtr() const { return mBuffer; }
+
+    void fill(const T&amp; value) {
+        for (s32 i = 0; i &lt; N; ++i)
+            mBuffer[i] = value;
+    }
+
+    class iterator {
+    public:
+        iterator(T* buffer, s32 idx) : mBuffer(buffer), mIdx(idx) {}
+
+        bool operator==(const iterator&amp; rhs) const {
+            return mBuffer == rhs.mBuffer &amp;&amp; mIdx == rhs.mIdx;
+        }
+
+        bool operator!=(const iterator&amp; rhs) const { return !(*this == rhs); }
+
+        iterator&amp; operator++() {
+            ++mIdx;
+            return *this;
+        }
+
+        iterator&amp; operator--() {
+            --mIdx;
+            return *this;
+        }
+
+        T* operator-&gt;() const { return &amp;mBuffer[mIdx]; }
+
+        T&amp; operator*() const { return mBuffer[mIdx]; }
+
+    private:
+        T* mBuffer;
+        s32 mIdx;
+    };
+
+    iterator begin() { return iterator(mBuffer, 0); }
+
+    iterator end() { return iterator(mBuffer, N); }
+
+    class constIterator {
+    public:
+        constIterator(const T* buffer, s32 idx) : mBuffer(buffer), mIdx(idx) {}
+
+        bool operator==(const constIterator&amp; rhs) const {
+            return mBuffer == rhs.mBuffer &amp;&amp; mIdx == rhs.mIdx;
+        }
+
+        bool operator!=(const constIterator&amp; rhs) const { return !(*this == rhs); }
+
+        constIterator&amp; operator++() {
+            ++mIdx;
+            return *this;
+        }
+
+        constIterator&amp; operator--() {
+            --mIdx;
+            return *this;
+        }
+
+        const T* operator-&gt;() const { return &amp;mBuffer[mIdx]; }
+
+        const T&amp; operator*() const { return mBuffer[mIdx]; }
+
+    private:
+        const T* mBuffer;
+        s32 mIdx;
+    };
+
+    constIterator constBegin() const { return constIterator(mBuffer, 0); }
+
+    constIterator constEnd() const { return constIterator(mBuffer, N); }
+
+    constIterator begin() const { return constIterator(mBuffer, 0); }
+
+    constIterator end() const { return constIterator(mBuffer, N); }
+};
+
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

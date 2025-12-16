@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_live_actor_kit_8cpp" kind="file" language="C++">
+    <compoundname>alLiveActorKit.cpp</compoundname>
+    <includes refid="al_clipping_director_8h" local="no">Clipping/alClippingDirector.h</includes>
+    <includes refid="al_collision_director_8h" local="no">Collision/alCollisionDirector.h</includes>
+    <includes refid="al_effect_system_8h" local="no">Effect/alEffectSystem.h</includes>
+    <includes refid="al_execute_director_8h" local="no">Execute/alExecuteDirector.h</includes>
+    <includes refid="al_fog_director_8h" local="no">Fog/alFogDirector.h</includes>
+    <includes refid="al_functor_v0_f_8h" local="no">Functor/alFunctorV0F.h</includes>
+    <includes refid="al_live_actor_group_8h" local="no">LiveActor/alLiveActorGroup.h</includes>
+    <includes refid="al_live_actor_kit_8h" local="no">LiveActor/alLiveActorKit.h</includes>
+    <includes refid="_application_8h" local="no">System/Application.h</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="2">
+        <label>Clipping/alClippingDirector.h</label>
+        <link refid="al_clipping_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Collision/alCollisionDirector.h</label>
+        <link refid="al_collision_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Effect/alEffectSystem.h</label>
+        <link refid="al_effect_system_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Execute/alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Fog/alFogDirector.h</label>
+        <link refid="al_fog_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+      <node id="10">
+        <label>Functor/alFunctorV0F.h</label>
+        <link refid="al_functor_v0_f_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="11">
+        <label>LiveActor/alLiveActorGroup.h</label>
+        <link refid="al_live_actor_group_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>LiveActor/alLiveActorKit.h</label>
+        <link refid="al_live_actor_kit_8h"/>
+      </node>
+      <node id="17">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="18">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="22">
+        <label>System/Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="23">
+        <label>heap/seadDisposer.h</label>
+      </node>
+      <node id="7">
+        <label>heap/seadHeap.h</label>
+      </node>
+      <node id="19">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="15">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_clipping_director_8h" kindref="compound">Clipping/alClippingDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_collision_director_8h" kindref="compound">Collision/alCollisionDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_effect_system_8h" kindref="compound">Effect/alEffectSystem.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_execute_director_8h" kindref="compound">Execute/alExecuteDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_fog_director_8h" kindref="compound">Fog/alFogDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_functor_v0_f_8h" kindref="compound">Functor/alFunctorV0F.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_group_8h" kindref="compound">LiveActor/alLiveActorGroup.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_kit_8h" kindref="compound">LiveActor/alLiveActorKit.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_application_8h" kindref="compound">System/Application.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_live_actor_kit_1a515c3ecff852c59d5ea05dfcf6f6046e" refkind="member"><highlight class="normal"><ref refid="classal_1_1_live_actor_kit_1a515c3ecff852c59d5ea05dfcf6f6046e" kindref="member">LiveActorKit::LiveActorKit</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">groupBufSize</ref><sp/>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mAllActorsBufferSize(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">groupBufSize</ref><sp/>),<sp/>mExecuteDirector(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mEffectSystem(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_C(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_10(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mFogDirector(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_18(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_1C(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_20(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mClippingDirector(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mCollisionDirector(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mHitSensorDirector(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_30(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_34(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_38(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mAllActors(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_40(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a4ef9e4fb99a83ca2d6eaa4c11f180161" kindref="member">mAllActors</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_group" kindref="compound">LiveActorGroup</ref>(<sp/></highlight><highlight class="stringliteral">&quot;全てのアクター&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_live_actor_kit_1a543269742d86312bf3944dd5730ce224" kindref="member">mAllActorsBufferSize</ref><sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespaceal_1afe8533f14458bfc6d4abd38afee72f0c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1afe8533f14458bfc6d4abd38afee72f0c" kindref="member">FUN_00240350</ref>();</highlight></codeline>
+<codeline lineno="24" refid="namespaceal_1a04df3f22d3fee24911a2711e493d85a8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a04df3f22d3fee24911a2711e493d85a8" kindref="member">FUN_001e8a64</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceal_1ace2641a06626acb0eccddf6175278f83" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ace2641a06626acb0eccddf6175278f83" kindref="member">FUN_001cc9b0</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_f" kindref="compound">FunctorV0F</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>loop<sp/>is<sp/>weird</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classal_1_1_live_actor_kit_1a9ba2e1999a725f28bd4ed8b4351e8046" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor_kit_1a9ba2e1999a725f28bd4ed8b4351e8046" kindref="member">LiveActorKit::endInit</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ace2641a06626acb0eccddf6175278f83" kindref="member">FUN_001cc9b0</ref>(<sp/></highlight><highlight class="stringliteral">&quot;プレイヤー影ボリュームのフィル&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_f" kindref="compound">FunctorV0F</ref>(<sp/><ref refid="namespaceal_1afe8533f14458bfc6d4abd38afee72f0c" kindref="member">FUN_00240350</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ace2641a06626acb0eccddf6175278f83" kindref="member">FUN_001cc9b0</ref>(<sp/></highlight><highlight class="stringliteral">&quot;影ボリュームのフィル&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_f" kindref="compound">FunctorV0F</ref>(<sp/><ref refid="namespaceal_1a04df3f22d3fee24911a2711e493d85a8" kindref="member">FUN_001e8a64</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1af7d3f9c8d87f52a1942d3bb5ec20e295" kindref="member">mEffectSystem</ref>-&gt;<ref refid="classal_1_1_effect_system_1ac4e16bcdff0bdc891ca4fc8e2ee09281" kindref="member">startScene</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a74934e155429477da4959d80544e4817" kindref="member">mExecuteDirector</ref>-&gt;<ref refid="classal_1_1_execute_director_1abf8cf17cf8bb487865bca933c57085a8" kindref="member">createExecutorListTable</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1afbcad93383420f14f7b15ecc8d82e9b5" kindref="member">mCollisionDirector</ref>-&gt;<ref refid="classal_1_1_collision_director_1aa0f99bd7104cf7740c884c530d49a18b" kindref="member">endInit</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a65f8cca42cd82e7a02097aa3d8e34b56" kindref="member">mFogDirector</ref>-&gt;<ref refid="classal_1_1_fog_director_1aa4a905dfae440ac662c14ebeb55eb99c" kindref="member">endInit</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_kit_1a4315c7b4bba2f37a1781284b1a0c3db9" kindref="member">mClippingDirector</ref>-&gt;<ref refid="classal_1_1_clipping_director_1a9662dedfc0c10421c4c60a18dd6c3240" kindref="member">endInit</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::PtrArray&lt;LiveActor&gt;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actors</ref><sp/>=<sp/><ref refid="classal_1_1_live_actor_kit_1a4ef9e4fb99a83ca2d6eaa4c11f180161" kindref="member">mAllActors</ref>-&gt;<ref refid="classal_1_1_live_actor_group_1afc1418ffcb6bf1317b37ee4c01c9af16" kindref="member">getArray</ref>&lt;<ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>&gt;();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>=<sp/>0;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>&lt;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actors</ref>.size();<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref>++<sp/>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actors</ref>[<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>]-&gt;initAfterPlacement();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="namespaceal_1ac7135439652f37f8f62629b498e9c892" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ac7135439652f37f8f62629b498e9c892" kindref="member">initLiveActorKit</ref>(<sp/><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kit</ref><sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a93457bd24ef80ce68834c27a4dd02aa3" kindref="member">al::getApplication</ref>()-&gt;<ref refid="class_application_1a2b16370daf2f90052ed5fa9d7911e4ad" kindref="member">setLiveActorKit</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">kit</ref><sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="namespaceal_1a90e3320d3b7aca38201d0227e5842a6d" refkind="member"><highlight class="normal"><ref refid="classal_1_1_live_actor_kit" kindref="compound">LiveActorKit</ref>*<sp/><ref refid="namespaceal_1a90e3320d3b7aca38201d0227e5842a6d" kindref="member">getLiveActorKit</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a93457bd24ef80ce68834c27a4dd02aa3" kindref="member">al::getApplication</ref>()-&gt;<ref refid="class_application_1a3cb2bfd819e1418550d31223fe521eb2" kindref="member">getLiveActorKit</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alLiveActorKit.cpp"/>
+  </compounddef>
+</doxygen>

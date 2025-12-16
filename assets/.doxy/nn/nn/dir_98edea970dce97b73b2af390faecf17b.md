@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/include/nn
+# Dir nn
 
 
 
@@ -21,8 +21,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**Handle.h**](Handle_8h.md) <br> |
-| file | [**Result.h**](Result_8h.md) <br> |
+| file | [**Handle.h**](_handle_8h.md) <br> |
+| file | [**Result.h**](_result_8h.md) <br> |
 | file | [**types.h**](types_8h.md) <br> |
 
 

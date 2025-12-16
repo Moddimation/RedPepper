@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structal_1_1_nerve_state_ctrl_1_1_state" kind="struct" language="C++" prot="private">
+    <compoundname>al::NerveStateCtrl::State</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structal_1_1_nerve_state_ctrl_1_1_state_1a3e674b87c4a9a6729a70b5993bec2127" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_nerve_state_base" kindref="compound">NerveStateBase</ref> *</type>
+        <definition>NerveStateBase* al::NerveStateCtrl::State::mState</definition>
+        <argsstring></argsstring>
+        <name>mState</name>
+        <qualifiedname>al::NerveStateCtrl::State::mState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="14" column="32" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classal_1_1_nerve_state_ctrl_1aaa24137e739a4af222c5e0b325e7be1d" compoundref="al_nerve_state_ctrl_8cpp" startline="57" endline="62">al::NerveStateCtrl::isCurrentStateEnd</referencedby>
+        <referencedby refid="classal_1_1_nerve_state_ctrl_1abaeb3c5da31345111ae1152cf1e58a63" compoundref="al_nerve_state_ctrl_8cpp" startline="33" endline="39">al::NerveStateCtrl::startState</referencedby>
+        <referencedby refid="classal_1_1_nerve_state_ctrl_1a06c982f87081447c91a00bf48e8ccd74" compoundref="al_nerve_state_ctrl_8cpp" startline="48" endline="55">al::NerveStateCtrl::tryEndCurrentState</referencedby>
+        <referencedby refid="classal_1_1_nerve_state_ctrl_1a6da9a7ed8600607ff28d7bf09cdc34a1" compoundref="al_nerve_state_ctrl_8cpp" startline="41" endline="46">al::NerveStateCtrl::updateCurrentState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structal_1_1_nerve_state_ctrl_1_1_state_1a83f8cc5efd8763dd38c094079e5e937a" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref> *</type>
+        <definition>const Nerve* al::NerveStateCtrl::State::mHostStateNerve</definition>
+        <argsstring></argsstring>
+        <name>mHostStateNerve</name>
+        <qualifiedname>al::NerveStateCtrl::State::mHostStateNerve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="15" column="32" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structal_1_1_nerve_state_ctrl_1_1_state_1a27ad85a871d6737aa577321d9c1c3438" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+        <definition>const char* al::NerveStateCtrl::State::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>al::NerveStateCtrl::State::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="16" column="32" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="6">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="9">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::NerveActionCtrl</label>
+        <link refid="classal_1_1_nerve_action_ctrl"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mNerveActions</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1_nerve_keeper"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mEndNerve</edgelabel>
+          <edgelabel>mNerve</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mStateCtrl</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mActionCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::NerveStateCtrl</label>
+        <link refid="classal_1_1_nerve_state_ctrl"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mCurrentState</edgelabel>
+          <edgelabel>mStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::NerveStateCtrl::State</label>
+        <link refid="structal_1_1_nerve_state_ctrl_1_1_state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Nerve/alNerveStateCtrl.h" line="12" column="9" bodyfile="lib/al/include/Nerve/alNerveStateCtrl.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structal_1_1_nerve_state_ctrl_1_1_state_1a83f8cc5efd8763dd38c094079e5e937a" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl::State</scope><name>mHostStateNerve</name></member>
+      <member refid="structal_1_1_nerve_state_ctrl_1_1_state_1a27ad85a871d6737aa577321d9c1c3438" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl::State</scope><name>mName</name></member>
+      <member refid="structal_1_1_nerve_state_ctrl_1_1_state_1a3e674b87c4a9a6729a70b5993bec2127" prot="public" virt="non-virtual"><scope>al::NerveStateCtrl::State</scope><name>mState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

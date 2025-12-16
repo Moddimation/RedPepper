@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_actor_init_info_8cpp" kind="file" language="C++">
+    <compoundname>alActorInitInfo.cpp</compoundname>
+    <includes refid="al_actor_init_info_8h" local="no">LiveActor/alActorInitInfo.h</includes>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes refid="al_placement_function_8h" local="no">Placement/alPlacementFunction.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="8">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alActorInitInfo.h</label>
+        <link refid="al_actor_init_info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="11">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="14">
+        <label>Placement/alPlacementFunction.h</label>
+        <link refid="al_placement_function_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alActorInitInfo.cpp</label>
+        <link refid="al_actor_init_info_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="15">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="9">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="5">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_init_info_8h" kindref="compound">LiveActor/alActorInitInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_placement_function_8h" kindref="compound">Placement/alPlacementFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_actor_init_info_1a9093c1f933ffd64ac8ef7119d8c05ddd" refkind="member"><highlight class="normal"><ref refid="classal_1_1_actor_init_info_1a9093c1f933ffd64ac8ef7119d8c05ddd" kindref="member">ActorInitInfo::ActorInitInfo</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mPlacementInfo(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_4(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_8(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_C(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_10(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mViewId(<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_actor_init_info_1aa311f1d885debe7f8c78415a002a3eaa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info_1aa311f1d885debe7f8c78415a002a3eaa" kindref="member">ActorInitInfo::initViewIdHost</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref><sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a6ca0d90e943b52ebd2cb5151580b540b" kindref="member">mPlacementInfo</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a952425b35b206b98491fcf88397ea4ce" kindref="member">_4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>._4;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a4a9f6a798b9fc8c38a395d23c43c4b28" kindref="member">_8</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>._8;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a2f46c416ae01b6612443cf74eb84bfdf" kindref="member">_10</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>._10;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a6db0d6d32872a0ac99dc6c3946fe4930" kindref="member">mViewId</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>.mViewId;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_actor_init_info_1a8409da36d0ef9d0ab4443bd044811bec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info_1a8409da36d0ef9d0ab4443bd044811bec" kindref="member">ActorInitInfo::initViewIdSelf</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref><sp/>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a6ca0d90e943b52ebd2cb5151580b540b" kindref="member">mPlacementInfo</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a952425b35b206b98491fcf88397ea4ce" kindref="member">_4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>._4;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a4a9f6a798b9fc8c38a395d23c43c4b28" kindref="member">_8</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>._8;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a2f46c416ae01b6612443cf74eb84bfdf" kindref="member">_10</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">hostInfo</ref>._10;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_init_info_1a6db0d6d32872a0ac99dc6c3946fe4930" kindref="member">mViewId</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="namespaceal_placement_function_1ab97fee244d7fa769b772c7e532f85199" kindref="member">alPlacementFunction::getClippingViewId</ref>(<sp/>*<ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref><sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>registers<sp/>used<sp/>when<sp/>copying<sp/>from<sp/>base<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceal_1a3f876b9292ecc5ae48e8745df66acd53" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a1f52417c5332b8ad9b62868e29497cc8" kindref="member">initActorInitInfo</ref>(<sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseInfo</ref><sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>-&gt;initViewIdSelf(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">placement</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseInfo</ref><sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alActorInitInfo.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alMemorySystem.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-almemorysystemcpp">File alMemorySystem.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_efbb2da3221fe95d5cd9a5d2d5dabe34/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_b8e6d1e681e7dfc39c95492a0336f33b/"><strong>Memory</strong></a> <strong>&gt;</strong> <a href="../al_memory_system_8cpp/"><strong>alMemorySystem.cpp</strong></a></p>
+<p><a href="../al_memory_system_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &lt;Memory/alMemorySystem.h&gt;
+#include &lt;Resource/alResource.h&gt;
+#include &lt;System/alSystemKit.h&gt;
+#include &lt;Util/alStringUtil.h&gt;
+#include &lt;Yaml/alByamlIter.h&gt;
+
+namespace al
+{
+
+void MemorySystem::createSequenceHeap()
+{
+        mSequenceHeap = sead::ExpHeap::create( 0, &quot;SequenceHeap&quot;, nullptr, sead::ExpHeap::cHeapDirection_Forward, false );
+}
+
+extern &quot;C&quot; void FUN_002911e8( sead::FrameHeap** out, u32 heapSize, const char* name, u8,
+        int ); // creates FrameHeap(?)
+
+#ifdef NON_MATCHING
+// WIP
+void MemorySystem::createSceneResourceHeap( const char* stageName )
+{
+        int heapSize;
+        if ( stageName )
+        {
+                al::Resource* gameSystemDataTable =
+                        al::findOrCreateResource( &quot;ObjectData/GameSystemDataTable&quot; );
+                const u8*     tableData = gameSystemDataTable-&gt;getByml( &quot;HeapSizeDefine&quot; );
+                al::ByamlIter table( tableData );
+                for ( int i = 0; i &lt; table.getSize(); i++ )
+                {
+                        al::ByamlIter entry;
+                        table.tryGetIterByIndex( &amp;entry, i );
+                        const char* stage = nullptr;
+                        entry.tryGetStringByKey( &amp;stage, &quot;Stage&quot; );
+                        if ( al::isEqualString( stage, stageName ) )
+                        {
+                                float resourceMb = 0;
+                                entry.tryGetFloatByKey( &amp;resourceMb, &quot;SceneResource&quot; );
+                                heapSize = resourceMb * 1024 * 1024;
+                                break;
+                        }
+                }
+        }
+        else
+                heapSize = 8 * 1024 * 1024; // 8 MB
+        FUN_002911e8( &amp;mSceneResourceHeap, heapSize, &quot;SceneHeapResource&quot;, 0, 1 );
+}
+#endif
+
+void MemorySystem::freeAllSequenceHeap()
+{
+        mSequenceHeap-&gt;freeAll();
+}
+
+sead::ExpHeap* getStationedHeap()
+{
+        return alProjectInterface::getSystemKit()-&gt;getMemorySystem()-&gt;getStationedHeap();
+}
+
+sead::ExpHeap* getSequenceHeap()
+{
+        return alProjectInterface::getSystemKit()-&gt;getMemorySystem()-&gt;getSequenceHeap();
+}
+
+sead::FrameHeap* getSceneResourceHeap()
+{
+        return alProjectInterface::getSystemKit()-&gt;getMemorySystem()-&gt;getSceneResourceHeap();
+}
+
+sead::FrameHeap* getCourseSelectHeap()
+{
+        return alProjectInterface::getSystemKit()-&gt;getMemorySystem()-&gt;getCourseSelectHeap();
+}
+
+bool isCreatedSceneResourceHeap()
+{
+        return getSceneResourceHeap() != nullptr;
+}
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_quat_8h" kind="file" language="C++">
+    <compoundname>seadQuat.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="sead_math_policies_8h" local="no">math/seadMathPolicies.h</includes>
+    <includes refid="sead_vector_8h" local="no">math/seadVector.h</includes>
+    <includes refid="sead_quat_8hpp" local="no">math/seadQuat.hpp</includes>
+    <includedby refid="sead_matrix_8h" local="no">seadMatrix.h</includedby>
+    <includedby refid="sead_quat_8cpp" local="no">seadQuat.cpp</includedby>
+    <includedby refid="sead_quat_8hpp" local="no">seadQuat.hpp</includedby>
+    <includedby refid="sead_quat_calc_common_8hpp" local="no">seadQuatCalcCommon.hpp</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>math/seadMathBase.h</label>
+        <link refid="sead_math_base_8h"/>
+      </node>
+      <node id="11">
+        <label>math/seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="sead_math_numbers_8h"/>
+      </node>
+      <node id="5">
+        <label>math/seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadQuat.h</label>
+        <link refid="sead_quat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>math/seadQuat.hpp</label>
+        <link refid="sead_quat_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>math/seadQuatCalcCommon.h</label>
+        <link refid="sead_quat_calc_common_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>math/seadQuatCalcCommon.hpp</label>
+        <link refid="sead_quat_calc_common_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math/seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>math/seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>math/seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>math/seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+      <node id="4">
+        <label>nn/types.h</label>
+      </node>
+      <node id="15">
+        <label>stdarg.h</label>
+      </node>
+      <node id="17">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>seadMatrix.h</label>
+        <link refid="sead_matrix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadMatrix.hpp</label>
+        <link refid="sead_matrix_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadQuat.h</label>
+        <link refid="sead_quat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadQuat.hpp</label>
+        <link refid="sead_quat_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>seadQuatCalcCommon.h</label>
+        <link refid="sead_quat_calc_common_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>seadQuatCalcCommon.hpp</label>
+        <link refid="sead_quat_calc_common_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadMatrix.cpp</label>
+        <link refid="sead_matrix_8cpp"/>
+      </node>
+      <node id="5">
+        <label>seadQuat.cpp</label>
+        <link refid="sead_quat_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsead_1_1_quat" prot="public">sead::Quat</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="sead_quat_8h_1aa46b44ae7115057783ae7bbffaacb449" prot="public" static="no">
+        <name>SEAD_MATH_QUAT_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadQuat.h" line="65" column="9" bodyfile="lib/sead/include/math/seadQuat.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_math_policies_8h" kindref="compound">math/seadMathPolicies.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_vector_8h" kindref="compound">math/seadVector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="10" refid="structsead_1_1_quat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref>&lt;T&gt;::QuatBase<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="structsead_1_1_quat_1ab4ab46790516b4c4465ac34824846c22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;T&gt;</ref><sp/><ref refid="structsead_1_1_quat_1ab4ab46790516b4c4465ac34824846c22" kindref="member">Self</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structsead_1_1_quat_1a5666d0d79af735d6ff2f4e332b2979d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;T&gt;</ref><sp/><ref refid="structsead_1_1_quat_1a5666d0d79af735d6ff2f4e332b2979d8" kindref="member">Vec3</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="structsead_1_1_quat_1ac1e094fef4fd3a3447030a541844624c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_quat_1ac1e094fef4fd3a3447030a541844624c" kindref="member">Quat</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_quat_1ac1e094fef4fd3a3447030a541844624c" kindref="member">Quat</ref>(T<sp/><ref refid="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" kindref="member">w</ref>,<sp/>T<sp/><ref refid="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" kindref="member">x</ref>,<sp/>T<sp/><ref refid="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" kindref="member">y</ref>,<sp/>T<sp/><ref refid="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structsead_1_1_quat_1ae8bc701f0841424520914180633d96c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref><sp/><ref refid="structsead_1_1_quat_1ae8bc701f0841424520914180633d96c8" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/>a,<sp/>T<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_quat" kindref="compound">Self</ref><sp/>result<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>*=<sp/>t;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structsead_1_1_quat_1a029d96d3fef4bba87c9c7d9881f32cd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref><sp/><ref refid="structsead_1_1_quat_1a029d96d3fef4bba87c9c7d9881f32cd7" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_quat" kindref="compound">Self</ref><sp/>result<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>*=<sp/>b;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structsead_1_1_quat_1a2dcb87fe9b7f28659f5ac347a7ef6af9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref><sp/><ref refid="structsead_1_1_quat_1a2dcb87fe9b7f28659f5ac347a7ef6af9" kindref="member">operator*</ref>(T<sp/>t,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/>a)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1a2dcb87fe9b7f28659f5ac347a7ef6af9" kindref="member">operator*</ref>(a,<sp/>t);<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/><ref refid="structsead_1_1_quat_1acb218e7fe457ba06886aaf357dad494b" kindref="member">operator*=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structsead_1_1_quat_1a2a9eecc449cd594f895273b68bbb5857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref>&amp;<sp/><ref refid="structsead_1_1_quat_1a2a9eecc449cd594f895273b68bbb5857" kindref="member">operator*=</ref>(T<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" kindref="member">w</ref><sp/>*=<sp/>t;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" kindref="member">x</ref><sp/>*=<sp/>t;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" kindref="member">y</ref><sp/>*=<sp/>t;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" kindref="member">z</ref><sp/>*=<sp/>t;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_quat_1aed5b5aa354e8437f268e1c9b73142404" kindref="member">length</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_quat_1a096e738b8fcfb70291cb986f6606b1b0" kindref="member">normalize</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_quat_1a2be6fe05dc89c16c1e1f5e97ff2e77ce" kindref="member">dot</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1ab4ab46790516b4c4465ac34824846c22" kindref="member">Self</ref>&amp;<sp/>q);</highlight></codeline>
+<codeline lineno="47" refid="structsead_1_1_quat_1abdcce3df02933b63b443ea28b0528ce5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1abdcce3df02933b63b443ea28b0528ce5" kindref="member">inverse</ref>(<ref refid="structsead_1_1_quat" kindref="compound">Self</ref>*<sp/>q);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1a1f59ecf18fb4265b91ef7ef2e5ac18e5" kindref="member">makeUnit</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1af602f64311cebc1f609f8636bc90ce6c" kindref="member">makeVectorRotation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>to);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1a967b0251c1880d16a58528f4727bbca0" kindref="member">set</ref>(T<sp/><ref refid="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" kindref="member">w</ref>,<sp/>T<sp/><ref refid="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" kindref="member">x</ref>,<sp/>T<sp/><ref refid="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" kindref="member">y</ref>,<sp/>T<sp/><ref refid="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1adc088a76e026f3b472df9b13b18eceab" kindref="member">setRPY</ref>(T<sp/>roll,<sp/>T<sp/>pitch,<sp/>T<sp/>yaw);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat_1a0e5c50fb41d5977fe20394af4b5e1b82" kindref="member">calcRPY</ref>(<ref refid="structsead_1_1_vector3" kindref="compound">Vec3</ref>&amp;<sp/>rpy)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structsead_1_1_quat_1a89fbe69ccdad7f7006cfc89ae9161e6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat</ref><sp/><ref refid="structsead_1_1_quat_1a89fbe69ccdad7f7006cfc89ae9161e6a" kindref="member">unit</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="namespacesead_1a660d34f114e13c21ece9672ee3c64f42" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quat&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1a660d34f114e13c21ece9672ee3c64f42" kindref="member">Quatf</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_quat" kindref="compound">Quatf</ref><sp/><ref refid="structsead_1_1_quat_1a89fbe69ccdad7f7006cfc89ae9161e6a" kindref="member">Quatf::unit</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="sead_quat_8h_1aa46b44ae7115057783ae7bbffaacb449" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_MATH_QUAT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_quat_8hpp" kindref="compound">math/seadQuat.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SEAD_MATH_QUAT_H_</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/math/seadQuat.h"/>
+  </compounddef>
+</doxygen>

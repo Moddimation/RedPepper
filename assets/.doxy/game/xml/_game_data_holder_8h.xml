@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_game_data_holder_8h" kind="file" language="C++">
+    <compoundname>GameDataHolder.h</compoundname>
+    <innerclass refid="class_game_data_holder" prot="public">GameDataHolder</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LayoutInitInfo;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_course_list" kindref="compound">CourseList</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game_data_file" kindref="compound">GameDataFile</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_save_data_file" kindref="compound">SaveDataFile</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_game_data_holder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_save_data_access_sequence" kindref="compound">SaveDataAccessSequence</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>class<sp/><ref refid="class_game_data_holder" kindref="compound">GameDataHolder</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="class_game_data_holder_1a9e28a1463768eaefe93e8b073ca593ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_data_file" kindref="compound">GameDataFile</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_data_holder_1a9e28a1463768eaefe93e8b073ca593ff" kindref="member">mGameFile</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_game_data_holder_1ac225c12a952040a80cba952448b67531" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_save_data_file" kindref="compound">SaveDataFile</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_data_holder_1ac225c12a952040a80cba952448b67531" kindref="member">mSaveFiles</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_game_data_holder_1a48a7f8b5c579cf0e8054544ea4e0a913" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_data_holder_1a48a7f8b5c579cf0e8054544ea4e0a913" kindref="member">mCurSaveFileIdx</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_game_data_holder_1aaad29df71c4f50455bc0d0b78812e59f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_save_data_access_sequence" kindref="compound">SaveDataAccessSequence</ref>*<sp/><ref refid="class_game_data_holder_1aaad29df71c4f50455bc0d0b78812e59f" kindref="member">mSaveAccess</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="class_game_data_holder_1a001678680d3de202d38eec35de0f9a64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_data_holder_1a001678680d3de202d38eec35de0f9a64" kindref="member">createSaveDataAccessSequence</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::LayoutInitInfo&amp;<sp/>info<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="class_game_data_holder_1a2dd317ee560fef53282adfc51a4afc5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_data_holder_1a2dd317ee560fef53282adfc51a4afc5d" kindref="member">GameDataHolder</ref>(<sp/><ref refid="class_course_list" kindref="compound">CourseList</ref>*<sp/>courseList<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/System/GameDataHolder.h"/>
+  </compounddef>
+</doxygen>

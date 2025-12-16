@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_execute_director_8h" kind="file" language="C++">
+    <compoundname>alExecuteDirector.h</compoundname>
+    <includes refid="al_functor_base_8h" local="no">Functor/alFunctorBase.h</includes>
+    <includedby refid="al_clipping_director_8h" local="no">alClippingDirector.h</includedby>
+    <includedby refid="al_collision_director_8h" local="no">alCollisionDirector.h</includedby>
+    <includedby refid="al_execute_director_8cpp" local="no">alExecuteDirector.cpp</includedby>
+    <includedby refid="al_execute_table_holder_8h" local="no">alExecuteTableHolder.h</includedby>
+    <includedby refid="al_fog_director_8h" local="no">alFogDirector.h</includedby>
+    <includedby refid="al_hit_sensor_director_8h" local="no">alHitSensorDirector.h</includedby>
+    <includedby refid="al_layout_kit_8cpp" local="no">alLayoutKit.cpp</includedby>
+    <includedby refid="al_live_actor_kit_8cpp" local="no">alLiveActorKit.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>alClippingDirector.h</label>
+        <link refid="al_clipping_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>alCollisionDirector.h</label>
+        <link refid="al_collision_director_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>alExecuteTableHolder.h</label>
+        <link refid="al_execute_table_holder_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>alFogDirector.h</label>
+        <link refid="al_fog_director_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>alHitSensorDirector.h</label>
+        <link refid="al_hit_sensor_director_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>alExecuteDirector.cpp</label>
+        <link refid="al_execute_director_8cpp"/>
+      </node>
+      <node id="8">
+        <label>alExecuteTableHolder.cpp</label>
+        <link refid="al_execute_table_holder_8cpp"/>
+      </node>
+      <node id="12">
+        <label>alLayoutKit.cpp</label>
+        <link refid="al_layout_kit_8cpp"/>
+      </node>
+      <node id="9">
+        <label>alHitSensorDirector.cpp</label>
+        <link refid="al_hit_sensor_director_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_i_use_executor" prot="public">al::IUseExecutor</innerclass>
+    <innerclass refid="classal_1_1_execute_director" prot="public">al::ExecuteDirector</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_functor_base_8h" kindref="compound">Functor/alFunctorBase.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExecuteRequestKeeper;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExecuteTableHolderDraw;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ExecuteTableHolderUpdate;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_i_use_executor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_i_use_executor" kindref="compound">IUseExecutor</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_i_use_executor_1a7dfb7a8f75823e159a78f557cc92c5fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_executor_1a7dfb7a8f75823e159a78f557cc92c5fa" kindref="member">execute</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_i_use_executor_1af19b8ae80aa93e8f60fbcedede4f2828" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_executor_1af19b8ae80aa93e8f60fbcedede4f2828" kindref="member">draw</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classal_1_1_execute_director" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_execute_director" kindref="compound">ExecuteDirector</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_execute_director_1a8cce9427299d12cd275a14138045eaa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_layout_kit" kindref="compound">LayoutKit</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="classal_1_1_execute_director_1a0efe2eb13068550e6ca3c97ba87e72b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director_1a0efe2eb13068550e6ca3c97ba87e72b4" kindref="member">_0</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_execute_director_1a320e74b94deb1074cff24500460c3506" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_table_holder_update" kindref="compound">ExecuteTableHolderUpdate</ref>*<sp/><ref refid="classal_1_1_execute_director_1a320e74b94deb1074cff24500460c3506" kindref="member">mUpdateTable</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classal_1_1_execute_director_1a7ddec06a05433319cf1ea19706abceb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director_1a7ddec06a05433319cf1ea19706abceb8" kindref="member">mDrawTableAmount</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classal_1_1_execute_director_1ab19fa23321a6538ea97df9bc77665dc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_table_holder_draw" kindref="compound">ExecuteTableHolderDraw</ref>**<sp/><sp/><ref refid="classal_1_1_execute_director_1ab19fa23321a6538ea97df9bc77665dc6" kindref="member">mDrawTables</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_execute_director_1a7f72371632117113023f51a7be547cd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_request_keeper" kindref="compound">ExecuteRequestKeeper</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director_1a7f72371632117113023f51a7be547cd5" kindref="member">mRequestKeeper</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classal_1_1_execute_director_1a29e3e6b131fc82c1d1776179fcf7c99e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director_1a29e3e6b131fc82c1d1776179fcf7c99e" kindref="member">_14</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classal_1_1_execute_director_1ac6394b543f1233670fb6a7d171a7ea63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director_1ac6394b543f1233670fb6a7d171a7ea63" kindref="member">_18</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_execute_director_1a57bd4e76e9f4dee03f7721ba03dd795d" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_execute_director_1abf8cf17cf8bb487865bca933c57085a8" kindref="member">createExecutorListTable</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_execute_director_1a66a0f2d15adcc2af58968c297f30a390" kindref="member">registerUser</ref>(<sp/><ref refid="classal_1_1_i_use_executor" kindref="compound">al::IUseExecutor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">str</ref><sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_execute_director_1acf40d135032c7fdd8c091bbc6c90aa72" kindref="member">registerFunctor</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_base" kindref="compound">al::FunctorBase</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">base</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">str</ref><sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_execute_director_1a70567f68ac75dacddff39c6975d29807" kindref="member">registerFunctorDraw</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_base" kindref="compound">al::FunctorBase</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">base</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">str</ref><sp/>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_execute_director" kindref="compound">ExecuteDirector</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Execute/alExecuteDirector.h"/>
+  </compounddef>
+</doxygen>

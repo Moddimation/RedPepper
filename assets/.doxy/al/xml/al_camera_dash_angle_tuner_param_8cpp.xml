@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_camera_dash_angle_tuner_param_8cpp" kind="file" language="C++">
+    <compoundname>alCameraDashAngleTunerParam.cpp</compoundname>
+    <includes refid="al_camera_dash_angle_tuner_param_8h" local="no">Camera/alCameraDashAngleTunerParam.h</includes>
+    <includes refid="al_byaml_iter_8h" local="no">Yaml/alByamlIter.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Camera/alCameraDashAngleTunerParam.h</label>
+        <link refid="al_camera_dash_angle_tuner_param_8h"/>
+      </node>
+      <node id="3">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alCameraDashAngleTunerParam.cpp</label>
+        <link refid="al_camera_dash_angle_tuner_param_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_camera_dash_angle_tuner_param_8h" kindref="compound">Camera/alCameraDashAngleTunerParam.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_iter_8h" kindref="compound">Yaml/alByamlIter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classal_1_1_camera_dash_angle_tuner_param_1a338ce93e74069ba5fe805eac7dd07b8c" refkind="member"><highlight class="normal"><ref refid="classal_1_1_camera_dash_angle_tuner_param_1a338ce93e74069ba5fe805eac7dd07b8c" kindref="member">CameraDashAngleTunerParam::CameraDashAngleTunerParam</ref>()<sp/>:<sp/>mAddAngleMax(<sp/>15<sp/>),<sp/>mZoomOutOffsetMax(<sp/>200<sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_camera_dash_angle_tuner_param_1a3cda7a63a87c3842b1db61a993da1e9a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_dash_angle_tuner_param_1a3cda7a63a87c3842b1db61a993da1e9a" kindref="member">CameraDashAngleTunerParam::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ticket</ref><sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ticket</ref>-&gt;tryGetIterByKey(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>,<sp/></highlight><highlight class="stringliteral">&quot;DashAngleTuner&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_dash_angle_tuner_param_1a9d9684b62dd6d9bb8cd9bbc4c73fa85f" kindref="member">mAddAngleMax</ref>,<sp/></highlight><highlight class="stringliteral">&quot;AddAngleMax&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">h</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_camera_dash_angle_tuner_param_1ac22aa861b78896c614569e3a4f4f78b5" kindref="member">mZoomOutOffsetMax</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ZoomOutOffsetMax&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Camera/alCameraDashAngleTunerParam.cpp"/>
+  </compounddef>
+</doxygen>

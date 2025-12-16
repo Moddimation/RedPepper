@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_live_actor_group" kind="class" language="C++" prot="public">
+    <compoundname>al::LiveActorGroup</compoundname>
+    <includes refid="al_live_actor_group_8h" local="no">alLiveActorGroup.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_live_actor_group_1a5dcdc6cf5f9676cfefeda4b35e1ae657" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *<ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref></type>
+        <definition>const char* const al::LiveActorGroup::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>al::LiveActorGroup::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="12" column="34" bodyfile="lib/al/include/LiveActor/alLiveActorGroup.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" prot="private" static="no" mutable="no">
+        <type>sead::PtrArray&lt; <ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref> &gt;</type>
+        <definition>sead::PtrArray&lt;LiveActor&gt; al::LiveActorGroup::mActors</definition>
+        <argsstring></argsstring>
+        <name>mActors</name>
+        <qualifiedname>al::LiveActorGroup::mActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="13" column="24" bodyfile="lib/al/include/LiveActor/alLiveActorGroup.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classal_1_1_live_actor_group_1afc1418ffcb6bf1317b37ee4c01c9af16" compoundref="al_live_actor_group_8h" startline="20" endline="23">getArray</referencedby>
+        <referencedby refid="classal_1_1_live_actor_group_1ac17422942de352ee090a5621207e8a72" compoundref="al_live_actor_group_8cpp" startline="19" endline="23">killAll</referencedby>
+        <referencedby refid="classal_1_1_live_actor_group_1ab06760ab7c4b143409759e1966af6141" compoundref="al_live_actor_group_8cpp" startline="7" endline="11">LiveActorGroup</referencedby>
+        <referencedby refid="classal_1_1_live_actor_group_1af1490dcc730b3558086f98c996dd5893" compoundref="al_live_actor_group_8cpp" startline="25" endline="29">makeActorDeadAll</referencedby>
+        <referencedby refid="classal_1_1_live_actor_group_1a4eaceaecd4e53a8299db75fd2ea5dd8c" compoundref="al_live_actor_group_8cpp" startline="14" endline="17">registerActor</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_live_actor_group_1ac17422942de352ee090a5621207e8a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActorGroup::killAll</definition>
+        <argsstring>()</argsstring>
+        <name>killAll</name>
+        <qualifiedname>al::LiveActorGroup::killAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="16" column="14" bodyfile="lib/al/src/LiveActor/alLiveActorGroup.cpp" bodystart="19" bodyend="23"/>
+        <references refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" compoundref="al_live_actor_group_8h" startline="13">mActors</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_group_1af1490dcc730b3558086f98c996dd5893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActorGroup::makeActorDeadAll</definition>
+        <argsstring>()</argsstring>
+        <name>makeActorDeadAll</name>
+        <qualifiedname>al::LiveActorGroup::makeActorDeadAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="17" column="14" bodyfile="lib/al/src/LiveActor/alLiveActorGroup.cpp" bodystart="25" bodyend="29"/>
+        <references refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" compoundref="al_live_actor_group_8h" startline="13">mActors</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_group_1afc1418ffcb6bf1317b37ee4c01c9af16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">typename</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">T</ref></type>
+          </param>
+        </templateparamlist>
+        <type>sead::PtrArray&lt; <ref refid="classal_1_1_functor_v0_m" kindref="compound">T</ref> &gt; &amp;</type>
+        <definition>sead::PtrArray&lt; T &gt; &amp; al::LiveActorGroup::getArray</definition>
+        <argsstring>()</argsstring>
+        <name>getArray</name>
+        <qualifiedname>al::LiveActorGroup::getArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="20" column="24" bodyfile="lib/al/include/LiveActor/alLiveActorGroup.h" bodystart="20" bodyend="23"/>
+        <references refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" compoundref="al_live_actor_group_8h" startline="13">mActors</references>
+        <referencedby refid="classal_1_1_live_actor_kit_1a9ba2e1999a725f28bd4ed8b4351e8046" compoundref="al_live_actor_kit_8cpp" startline="31" endline="43">al::LiveActorKit::endInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_group_1a4eaceaecd4e53a8299db75fd2ea5dd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::LiveActorGroup::registerActor</definition>
+        <argsstring>(LiveActor *actor)</argsstring>
+        <name>registerActor</name>
+        <qualifiedname>al::LiveActorGroup::registerActor</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="26" column="22" bodyfile="lib/al/src/LiveActor/alLiveActorGroup.cpp" bodystart="14" bodyend="17"/>
+        <references refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" compoundref="al_live_actor_group_8h" startline="13">mActors</references>
+        <referencedby refid="classal_1_1_live_actor_1a0844b9e2818b9c8da6ee2e4f80b11bb9" compoundref="al_live_actor_8cpp" startline="11" endline="20">al::LiveActor::LiveActor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_live_actor_group_1ab06760ab7c4b143409759e1966af6141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::LiveActorGroup::LiveActorGroup</definition>
+        <argsstring>(const char *name, int bufSize)</argsstring>
+        <name>LiveActorGroup</name>
+        <qualifiedname>al::LiveActorGroup::LiveActorGroup</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>bufSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="29" column="9" bodyfile="lib/al/src/LiveActor/alLiveActorGroup.cpp" bodystart="7" bodyend="11"/>
+        <references refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" compoundref="al_live_actor_group_8h" startline="13">mActors</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/LiveActor/alLiveActorGroup.h" line="9" column="1" bodyfile="lib/al/include/LiveActor/alLiveActorGroup.h" bodystart="10" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classal_1_1_live_actor_group_1afc1418ffcb6bf1317b37ee4c01c9af16" prot="public" virt="non-virtual"><scope>al::LiveActorGroup</scope><name>getArray</name></member>
+      <member refid="classal_1_1_live_actor_group_1ac17422942de352ee090a5621207e8a72" prot="public" virt="non-virtual"><scope>al::LiveActorGroup</scope><name>killAll</name></member>
+      <member refid="classal_1_1_live_actor_group_1ab06760ab7c4b143409759e1966af6141" prot="public" virt="non-virtual"><scope>al::LiveActorGroup</scope><name>LiveActorGroup</name></member>
+      <member refid="classal_1_1_live_actor_group_1a7612503b582f4919e32ac411b2480548" prot="private" virt="non-virtual"><scope>al::LiveActorGroup</scope><name>mActors</name></member>
+      <member refid="classal_1_1_live_actor_group_1af1490dcc730b3558086f98c996dd5893" prot="public" virt="non-virtual"><scope>al::LiveActorGroup</scope><name>makeActorDeadAll</name></member>
+      <member refid="classal_1_1_live_actor_group_1a5dcdc6cf5f9676cfefeda4b35e1ae657" prot="private" virt="non-virtual"><scope>al::LiveActorGroup</scope><name>mName</name></member>
+      <member refid="classal_1_1_live_actor_group_1a4eaceaecd4e53a8299db75fd2ea5dd8c" prot="public" virt="virtual"><scope>al::LiveActorGroup</scope><name>registerActor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_note_obj_8cpp" kind="file" language="C++">
+    <compoundname>NoteObj.cpp</compoundname>
+    <includes refid="_note_obj_8h" local="yes">MapObj/NoteObj.h</includes>
+    <includes local="no">LiveActor/alActorInitUtil.h</includes>
+    <includes local="no">LiveActor/alActorPoseKeeper.h</includes>
+    <includes local="no">LiveActor/alLiveActorFunction.h</includes>
+    <includes local="no">Placement/alPlacementFunction.h</includes>
+    <includes local="no">Scene/alSceneObjHolder.h</includes>
+    <includes refid="_coin_rotater_8h" local="yes">MapObj/CoinRotater.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>MapObj/CoinRotater.h</label>
+        <link refid="_coin_rotater_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MapObj/NoteObj.h</label>
+        <link refid="_note_obj_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MapObj/NoteObjGenerator.h</label>
+        <link refid="_note_obj_generator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NoteObj.cpp</label>
+        <link refid="_note_obj_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LiveActor/alActorInitUtil.h</label>
+      </node>
+      <node id="6">
+        <label>LiveActor/alActorPoseKeeper.h</label>
+      </node>
+      <node id="11">
+        <label>LiveActor/alLiveActor.h</label>
+      </node>
+      <node id="7">
+        <label>LiveActor/alLiveActorFunction.h</label>
+      </node>
+      <node id="4">
+        <label>MapObj/alMapObjActor.h</label>
+      </node>
+      <node id="8">
+        <label>Placement/alPlacementFunction.h</label>
+      </node>
+      <node id="12">
+        <label>Scene/alISceneObj.h</label>
+      </node>
+      <node id="9">
+        <label>Scene/alSceneObjHolder.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_note_obj_8cpp_1a81cc4567fd8adb497b3afd6bf432c94f" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* sNoteObjArchive</definition>
+        <argsstring></argsstring>
+        <name>sNoteObjArchive</name>
+        <initializer>= &quot;NoteObj&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/src/MapObj/NoteObj.cpp" line="30" column="19" bodyfile="Game/src/MapObj/NoteObj.cpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_note_obj_1a29883c8c20e11292ae912fd405928394" compoundref="_note_obj_8cpp" startline="33" endline="45">NoteObj::init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_note_obj_8cpp_1a0c764d033389ca23d19f85ec94265941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FUN_00270fc4</definition>
+        <argsstring>(al::LiveActor *, float, int)</argsstring>
+        <name>FUN_00270fc4</name>
+        <param>
+          <type>al::LiveActor *</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/src/MapObj/NoteObj.cpp" line="28" column="17" declfile="Game/src/MapObj/NoteObj.cpp" declline="28" declcolumn="17"/>
+        <referencedby refid="class_note_obj_generator_1abd60f977eca4616bc2e0be2d46ce095a" compoundref="_note_obj_generator_8cpp" startline="32" endline="43">NoteObjGenerator::exeWait</referencedby>
+        <referencedby refid="class_note_obj_1a29883c8c20e11292ae912fd405928394" compoundref="_note_obj_8cpp" startline="33" endline="45">NoteObj::init</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_note_obj_8h" kindref="compound">MapObj/NoteObj.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alActorInitUtil.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alActorPoseKeeper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;LiveActor/alLiveActorFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Placement/alPlacementFunction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Scene/alSceneObjHolder.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_coin_rotater_8h" kindref="compound">MapObj/CoinRotater.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sead<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_note_obj_1a4b1a1a3079df8576f897c968550926d7" refkind="member"><highlight class="normal"><ref refid="class_note_obj_1a4b1a1a3079df8576f897c968550926d7" kindref="member">NoteObj::NoteObj</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>MapObjActor(<sp/>name<sp/>),<sp/>mStartQuat(<sp/>sead::Quatf::unit<sp/>),<sp/>_70(<sp/>false<sp/>),<sp/>_71(<sp/>true<sp/>),<sp/>_74(<sp/>-1<sp/>),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_78(<sp/>sead::Vector3f::zero<sp/>),<sp/>mGenerator(<sp/>nullptr<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacerp_1a25e3e3a7ce26bcfb37889f38280f64c6" kindref="member">rp::createCoinRotater</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_note_obj_1ab59f13359f9fa07507592f315a1a9987" refkind="member"><highlight class="normal"><ref refid="class_note_obj_1a4b1a1a3079df8576f897c968550926d7" kindref="member">NoteObj::NoteObj</ref>(<sp/><ref refid="class_note_obj_generator" kindref="compound">NoteObjGenerator</ref>*<sp/>generator<sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>MapObjActor(<sp/></highlight><highlight class="stringliteral">&quot;音符オブジェ&quot;</highlight><highlight class="normal"><sp/>),<sp/>mStartQuat(<sp/>sead::Quatf::unit<sp/>),<sp/>_70(<sp/>false<sp/>),<sp/>_71(<sp/>true<sp/>),<sp/>_74(<sp/>-1<sp/>),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_78(<sp/>sead::Vector3f::zero<sp/>),<sp/>mGenerator(<sp/>generator<sp/>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacerp_1a25e3e3a7ce26bcfb37889f38280f64c6" kindref="member">rp::createCoinRotater</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_note_obj_8cpp_1a0c764d033389ca23d19f85ec94265941" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_note_obj_8cpp_1a0c764d033389ca23d19f85ec94265941" kindref="member">FUN_00270fc4</ref>(<sp/>al::LiveActor*,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);<sp/></highlight><highlight class="comment">//<sp/>MtxConnector<sp/>(?)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_note_obj_8cpp_1a81cc4567fd8adb497b3afd6bf432c94f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_note_obj_8cpp_1a81cc4567fd8adb497b3afd6bf432c94f" kindref="member">sNoteObjArchive</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NoteObj&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_note_obj_1a29883c8c20e11292ae912fd405928394" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_1a29883c8c20e11292ae912fd405928394" kindref="member">NoteObj::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::ActorInitInfo&amp;<sp/>info<sp/>)<sp/></highlight><highlight class="comment">//<sp/>STUPID<sp/>sead<sp/>inlines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>al::isPlaced(<sp/>info<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::initActorWithArchiveName(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>info,<sp/><ref refid="_note_obj_8cpp_1a81cc4567fd8adb497b3afd6bf432c94f" kindref="member">sNoteObjArchive</ref><sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_1a10ba9147792b190c95d9e52d93faa266" kindref="member">mStartQuat</ref><sp/>=<sp/>al::getQuat(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_note_obj_8cpp_1a0c764d033389ca23d19f85ec94265941" kindref="member">FUN_00270fc4</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>70.0,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_note_obj_1a7c63e546dd9fa34aef7a0733ade250dd" kindref="member">_78</ref><sp/>=<sp/>al::getTrans(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::invalidateClipping(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::initActorWithArchiveNameNoPlacementInfo(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>info,<sp/><ref refid="_note_obj_8cpp_1a81cc4567fd8adb497b3afd6bf432c94f" kindref="member">sNoteObjArchive</ref><sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeActorDead();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_note_obj_1ab03cd9168e29355299a149e9c3fb9eb9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_1ab03cd9168e29355299a149e9c3fb9eb9" kindref="member">NoteObj::initAfterPlacement</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>creates<sp/>new<sp/>path<sp/>instead<sp/>of<sp/>conditional<sp/>instructions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_note_obj_1ab3d633c430be823e3d51495a228b95a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_note_obj_1ab3d633c430be823e3d51495a228b95a9" kindref="member">NoteObj::control</ref>()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="class_note_obj_1a82e0ca39845c03b9abfd00f909f1af61" kindref="member">_71</ref><sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::addVelocityToGravity(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>0.5<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::rotateQuatYDirDegree(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="class_note_obj_1a10ba9147792b190c95d9e52d93faa266" kindref="member">mStartQuat</ref>,<sp/><ref refid="namespacerp_1a4f58ad73f89ce46fb895c8269092a7da" kindref="member">rp::getCoinRotateY</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/MapObj/NoteObj.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadOffsetList.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-seadoffsetlisth">File seadOffsetList.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_510f450138bd9d848bdab2e398852591/"><strong>container</strong></a> <strong>&gt;</strong> <a href="../sead_offset_list_8h/"><strong>seadOffsetList.h</strong></a></p>
+<p><a href="../sead_offset_list_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#ifndef SEAD_OFFSET_LIST_H_
+#define SEAD_OFFSET_LIST_H_
+
+#include &lt;basis/seadRawPrint.h&gt;
+#include &lt;basis/seadTypes.h&gt;
+#include &lt;container/seadListImpl.h&gt;
+#include &lt;prim/seadPtrUtil.h&gt;
+
+namespace sead {
+template &lt;typename T&gt;
+class OffsetList : public ListImpl {
+public:
+    OffsetList() : mOffset(-1) {};
+
+    void initOffset(s32 offset) { mOffset = offset; }
+
+    void clear() { ListImpl::clear(); }
+
+    void pushBack(T* item) {
+        SEAD_ASSERT(mOffset &gt;= 0);
+        ListImpl::pushBack(objToListNode(item));
+    }
+
+    void pushFront(T* item) {
+        SEAD_ASSERT(mOffset &gt;= 0);
+        ListImpl::pushFront(objToListNode(item));
+    }
+
+    T* popBack() { return listNodeToObjWithNullCheck(ListImpl::popBack()); }
+
+    T* popFront() { return listNodeToObjWithNullCheck(ListImpl::popFront()); }
+
+    void insertBefore(const T* obj, T* obj_to_insert) {
+        ListImpl::insertBefore(const_cast&lt;ListNode*&gt;(objToListNode(obj)),
+                               objToListNode(obj_to_insert));
+    }
+
+    void insertAfter(const T* obj, T* obj_to_insert) {
+        ListImpl::insertAfter(const_cast&lt;ListNode*&gt;(objToListNode(obj)),
+                              objToListNode(obj_to_insert));
+    }
+
+    void erase(T* item) { ListImpl::erase(objToListNode(item)); }
+
+    T* front() const { return listNodeToObjWithNullCheck(ListImpl::front()); }
+
+    T* back() const { return listNodeToObjWithNullCheck(ListImpl::back()); }
+
+    T* prev(const T* obj) const {
+        ListNode* prev_node = objToListNode(obj)-&gt;prev();
+        if (prev_node == &amp;mStartEnd)
+            return nullptr;
+        return listNodeToObj(prev_node);
+    }
+
+    T* next(const T* obj) const {
+        ListNode* next_node = objToListNode(obj)-&gt;next();
+        if (next_node == &amp;mStartEnd)
+            return nullptr;
+        return listNodeToObj(next_node);
+    }
+
+    T* nth(s32 n) const { return listNodeToObjWithNullCheck(ListImpl::nth(n)); }
+
+    s32 indexOf(const T* obj) const { return ListImpl::indexOf(objToListNode(obj)); }
+
+    bool isNodeLinked(const T* obj) const { return objToListNode(obj)-&gt;isLinked(); }
+
+    void swap(T* obj1, T* obj2) { ListImpl::swap(objToListNode(obj1), objToListNode(obj2)); }
+
+    void moveAfter(T* basis, T* obj) {
+        ListImpl::moveAfter(objToListNode(basis), objToListNode(obj));
+    }
+
+    void moveBefore(T* basis, T* obj) {
+        ListImpl::moveBefore(objToListNode(basis), objToListNode(obj));
+    }
+
+    typedef int (*CompareCallback)(const T*, const T*);
+
+    void sort() { sort(compareT); }
+
+    void sort(CompareCallback cmp) { ListImpl::sort&lt;T&gt;(mOffset, cmp); }
+
+    void mergeSort() { mergeSort(compareT); }
+
+    void mergeSort(CompareCallback cmp) { ListImpl::mergeSort&lt;T&gt;(mOffset, cmp); }
+
+    T* find(const T* obj) const { return find(obj, compareT); }
+
+    T* find(const T* obj, CompareCallback cmp) const {
+        return listNodeToObj(ListImpl::find(obj, mOffset, cmp));
+    }
+
+    void uniq() { uniq(compareT); }
+
+    void uniq(CompareCallback cmp) { ListImpl::uniq(mOffset, cmp); }
+
+    class iterator {
+    public:
+        iterator(T* ptr, s32 offset) : mPtr(ptr), mOffset(offset) {}
+
+        bool operator==(const iterator&amp; other) const { return mPtr == other.mPtr; }
+
+        bool operator!=(const iterator&amp; other) const { return !(*this == other); }
+
+        iterator&amp; operator++() {
+            ListNode* node = static_cast&lt;ListNode*&gt;(PtrUtil::addOffset(mPtr, mOffset))-&gt;next();
+            mPtr = static_cast&lt;T*&gt;(PtrUtil::addOffset(node, -mOffset));
+            return *this;
+        }
+
+        T&amp; operator*() const { return *mPtr; }
+
+        T* operator-&gt;() const { return mPtr; }
+
+    private:
+        T* mPtr;
+        s32 mOffset;
+    };
+
+    iterator begin() const { return iterator(listNodeToObj(mStartEnd.next()), mOffset); }
+
+    iterator end() const {
+        return iterator(listNodeToObj(const_cast&lt;ListNode*&gt;(&amp;mStartEnd)), mOffset);
+    }
+
+    iterator begin(T* ptr) const { return iterator(ptr, mOffset); }
+
+    class robustIterator {
+    public:
+        robustIterator(T* ptr, s32 offset)
+            : mPtr(ptr), mNextNode(static_cast&lt;ListNode*&gt;(PtrUtil::addOffset(ptr, offset))-&gt;next()),
+              mOffset(offset) {}
+
+        bool operator==(const robustIterator&amp; other) const { return mPtr == other.mPtr; }
+
+        bool operator!=(const robustIterator&amp; other) const { return !operator==(other); }
+
+        robustIterator&amp; operator++() {
+            mPtr = static_cast&lt;T*&gt;(PtrUtil::addOffset(mNextNode, -mOffset));
+            mNextNode = mNextNode-&gt;next();
+            return *this;
+        }
+
+        T&amp; operator*() const { return *mPtr; }
+
+        T* operator-&gt;() const { return mPtr; }
+
+    private:
+        T* mPtr;
+        ListNode* mNextNode;
+        s32 mOffset;
+    };
+
+    robustIterator robustBegin() const {
+        return robustIterator(listNodeToObj(mStartEnd.next()), mOffset);
+    }
+
+    robustIterator robustEnd() const {
+        return robustIterator(listNodeToObj(const_cast&lt;ListNode*&gt;(&amp;mStartEnd)), mOffset);
+    }
+
+    robustIterator robustBegin(T* ptr) const { return robustIterator(ptr, mOffset); }
+
+    struct RobustRange {
+        robustIterator begin() const { return mList.robustBegin(); }
+
+        robustIterator end() const { return mList.robustEnd(); }
+
+        const OffsetList&amp; mList;
+
+        RobustRange(const OffsetList&amp; list) : mList(list) {}
+    };
+
+    RobustRange robustRange() const { return RobustRange(*this); }
+
+protected:
+    static int compareT(const T* lhs, const T* rhs) {
+        if (lhs &lt; rhs)
+            return -1;
+        if (lhs &gt; rhs)
+            return 1;
+        return 0;
+    }
+
+    ListNode* objToListNode(T* obj) const {
+        return static_cast&lt;ListNode*&gt;(PtrUtil::addOffset(obj, mOffset));
+    }
+
+    const ListNode* objToListNode(const T* obj) const {
+        return static_cast&lt;const ListNode*&gt;(PtrUtil::addOffset(obj, mOffset));
+    }
+
+    T* listNodeToObj(ListNode* node) const {
+        return static_cast&lt;T*&gt;(PtrUtil::addOffset(node, -mOffset));
+    }
+
+    const T* listNodeToObj(const ListNode* node) const {
+        return static_cast&lt;const T*&gt;(PtrUtil::addOffset(node, -mOffset));
+    }
+
+    T* listNodeToObjWithNullCheck(ListNode* node) const {
+        return node ? listNodeToObj(node) : nullptr;
+    }
+
+    const T* listNodeToObjWithNullCheck(const ListNode* node) const {
+        return node ? listNodeToObj(node) : nullptr;
+    }
+
+    s32 mOffset;
+};
+
+template &lt;typename T&gt;
+class OffsetListNode {
+    T mValue;
+    ListNode mNode;
+
+public:
+    OffsetListNode(T value) : mValue(value) {}
+
+    static size_t getListNodeOffset() { return offsetof(OffsetListNode, mNode); }
+
+    operator T*() { return &amp;mValue; }
+};
+
+}  // namespace sead
+
+#endif  // SEAD_OFFSET_LIST_H_
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

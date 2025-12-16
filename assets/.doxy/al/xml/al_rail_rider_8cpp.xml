@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_rail_rider_8cpp" kind="file" language="C++">
+    <compoundname>alRailRider.cpp</compoundname>
+    <includes refid="al_math_util_8h" local="no">Math/alMathUtil.h</includes>
+    <includes refid="al_rail_8h" local="no">Rail/alRail.h</includes>
+    <includes refid="al_rail_rider_8h" local="no">Rail/alRailRider.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Math/alMathUtil.h</label>
+        <link refid="al_math_util_8h"/>
+      </node>
+      <node id="4">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Rail/alRail.h</label>
+        <link refid="al_rail_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Rail/alRailRider.h</label>
+        <link refid="al_rail_rider_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alRailRider.cpp</label>
+        <link refid="al_rail_rider_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_math_util_8h" kindref="compound">Math/alMathUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_8h" kindref="compound">Rail/alRail.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_rider_8h" kindref="compound">Rail/alRailRider.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>compiler<sp/>completely<sp/>skips<sp/>_4<sp/>_10<sp/>(????????)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classal_1_1_rail_rider_1a3a6f68027b28dde1d39da28605f5583f" refkind="member"><highlight class="normal"><ref refid="classal_1_1_rail_rider_1a3a6f68027b28dde1d39da28605f5583f" kindref="member">RailRider::RailRider</ref>(<sp/><ref refid="classal_1_1_rail" kindref="compound">Rail</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rail</ref><sp/>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mRail(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rail</ref><sp/>),<sp/>mCurrentPos(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">zero</ref><sp/>),<sp/>mCurrentDir(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">zero</ref><sp/>),<sp/>_1C(<sp/>0.0<sp/>),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mSpeed(<sp/>0.0<sp/>),<sp/>mIsLoop(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">true</ref><sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>=<sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1a5821b1cf759740c6703f02e631c27ab2" kindref="member">normalizeLength</ref>(<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1ac39e66b82a63f190ef55b0dec292e3a8" kindref="member">calcPosDir</ref>(<sp/>&amp;<ref refid="classal_1_1_rail_rider_1ab9a89fd1d0315efa64abf7e3823dac5b" kindref="member">mCurrentPos</ref>,<sp/>&amp;<ref refid="classal_1_1_rail_rider_1a0ca40253c123106b133ff3a55524534d" kindref="member">mCurrentDir</ref>,<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_rail_rider_1af1b07682a488442d822dfa79034dc73e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_rider_1af1b07682a488442d822dfa79034dc73e" kindref="member">RailRider::moveToRailStart</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>=<sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1a5821b1cf759740c6703f02e631c27ab2" kindref="member">normalizeLength</ref>(<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1ac39e66b82a63f190ef55b0dec292e3a8" kindref="member">calcPosDir</ref>(<sp/>&amp;<ref refid="classal_1_1_rail_rider_1ab9a89fd1d0315efa64abf7e3823dac5b" kindref="member">mCurrentPos</ref>,<sp/>&amp;<ref refid="classal_1_1_rail_rider_1a0ca40253c123106b133ff3a55524534d" kindref="member">mCurrentDir</ref>,<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_rail_rider_1a39e09ffa9891cd2fdf3c0b58776de389" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_rider_1a39e09ffa9891cd2fdf3c0b58776de389" kindref="member">RailRider::moveToNearestRail</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r1</ref><sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>=<sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1aa76848a2f97ae0bc0c6cd62e17142ee7" kindref="member">calcNearestRailPosCoord</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r1</ref>,<sp/>20.0f<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>=<sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1a5821b1cf759740c6703f02e631c27ab2" kindref="member">normalizeLength</ref>(<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1ac39e66b82a63f190ef55b0dec292e3a8" kindref="member">calcPosDir</ref>(<sp/>&amp;<ref refid="classal_1_1_rail_rider_1ab9a89fd1d0315efa64abf7e3823dac5b" kindref="member">mCurrentPos</ref>,<sp/>&amp;<ref refid="classal_1_1_rail_rider_1a0ca40253c123106b133ff3a55524534d" kindref="member">mCurrentDir</ref>,<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_rail_rider_1a8f9024fc0b9e9c7a597ca4ae13b52623" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_rider_1a8f9024fc0b9e9c7a597ca4ae13b52623" kindref="member">RailRider::isReachedGoal</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1ad101605cb225079c2b8250c60a941c36" kindref="member">isClosed</ref>()<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1ac9d98545ce918d2db0bff0ef28f9ca49" kindref="member">al::isNearZero</ref>(<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1ad101605cb225079c2b8250c60a941c36" kindref="member">isClosed</ref>()<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1ac9d98545ce918d2db0bff0ef28f9ca49" kindref="member">isNearZero</ref>(<sp/><ref refid="classal_1_1_rail_rider_1adeab7a6a46ad8692f4abdc8769d41437" kindref="member">_1C</ref><sp/>-<sp/><ref refid="classal_1_1_rail_rider_1ae7456c2075db065837b7824058c7440a" kindref="member">mRail</ref>-&gt;<ref refid="classal_1_1_rail_1ab331085507f1d9a89269a156a0f4406b" kindref="member">getTotalLength</ref>()<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Rail/alRailRider.cpp"/>
+  </compounddef>
+</doxygen>

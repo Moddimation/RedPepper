@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alNerveActionCtrl.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-alnerveactionctrlh">File alNerveActionCtrl.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_33e095f68a87f1feebb1083733ab6ad1/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_ce5a5d5b959d6ee5ba2a9f5882112a88/"><strong>Nerve</strong></a> <strong>&gt;</strong> <a href="../al_nerve_action_ctrl_8h/"><strong>alNerveActionCtrl.h</strong></a></p>
+<p><a href="../al_nerve_action_ctrl_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;Nerve/alNerve.h&gt;
+
+namespace alNerveFunction
+{
+class NerveActionCollector;
+} // namespace alNerveFunction
+
+namespace al
+{
+
+class LiveActor;
+class NerveActionCtrl;
+
+class NerveAction : public Nerve
+{
+        friend class alNerveFunction::NerveActionCollector;
+        friend class NerveActionCtrl;
+
+private:
+        NerveAction* mNextNode;
+
+public:
+        virtual const char* getName() const = 0;
+
+public:
+        NerveAction();
+};
+} // namespace al
+
+namespace alNerveFunction
+{
+
+class NerveActionCollector
+{
+        friend class al::NerveActionCtrl;
+
+private:
+        int              mNumNodes;
+        al::NerveAction* mStartNode;
+        al::NerveAction* mEndNode;
+
+        static NerveActionCollector* sCurrentCollector;
+
+public:
+        void addNerve( al::NerveAction* nerve );
+
+        static NerveActionCollector* getCurrentCollector()
+        {
+                return sCurrentCollector;
+        }
+
+public:
+        NerveActionCollector();
+};
+
+} // namespace alNerveFunction
+
+namespace al
+{
+
+class NerveActionCtrl
+{
+private:
+        int           mNumNerveActions;
+        NerveAction** mNerveActions;
+
+public:
+        NerveAction* findNerve( const char* pName ) const;
+
+public:
+        NerveActionCtrl( alNerveFunction::NerveActionCollector* collector );
+};
+
+} // namespace al
+
+#define NERVEACTION_DEF( CLASS, ACTION )                                         \
+        struct CLASS##Nrv##ACTION : public ::al::NerveAction                     \
+        {                                                                        \
+                virtual void execute( ::al::NerveKeeper* keeper ) const          \
+                {                                                                \
+                        static_cast&lt;CLASS*&gt;( keeper-&gt;getHost() )-&gt;exe##ACTION(); \
+                }                                                                \
+                virtual const char* getName() const                              \
+                {                                                                \
+                        return #ACTION;                                          \
+                }                                                                \
+        };                                                                       \
+        const split( CLASS##Nrv##ACTION ) ACTION = CLASS##Nrv##ACTION();
+
+#define NERVEACTION_DEF_END( CLASS, ACTION, ENDACTION )                             \
+        struct CLASS##Nrv##ACTION : public ::al::NerveAction                        \
+        {                                                                           \
+                virtual void execute( ::al::NerveKeeper* keeper ) const             \
+                {                                                                   \
+                        static_cast&lt;CLASS*&gt;( keeper-&gt;getHost() )-&gt;exe##ACTION();    \
+                }                                                                   \
+                virtual void executeOnEnd( ::al::NerveKeeper* keeper ) const        \
+                {                                                                   \
+                        static_cast&lt;CLASS*&gt;( keeper-&gt;getHost() )-&gt;exe##ENDACTION(); \
+                }                                                                   \
+                virtual const char* getName() const                                 \
+                {                                                                   \
+                        return #ACTION;                                             \
+                }                                                                   \
+        };                                                                          \
+        const split( CLASS##Nrv##ACTION ) ACTION = CLASS##Nrv##ACTION();
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,818 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_calculate_task" kind="class" language="C++" prot="public">
+    <compoundname>sead::CalculateTask</compoundname>
+    <basecompoundref refid="classsead_1_1_task_base" prot="public" virt="non-virtual">sead::TaskBase</basecompoundref>
+    <derivedcompoundref refid="classsead_1_1_controller_mgr" prot="public" virt="non-virtual">sead::ControllerMgr</derivedcompoundref>
+    <includes refid="sead_calculate_task_8h" local="no">seadCalculateTask.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1_calculate_task_1a3f4a24ac444d851114cacef16a2e3c05" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_method_tree_node" kindref="compound">MethodTreeNode</ref></type>
+        <definition>MethodTreeNode sead::CalculateTask::mCalcNode</definition>
+        <argsstring></argsstring>
+        <name>mCalcNode</name>
+        <qualifiedname>sead::CalculateTask::mCalcNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="31" column="20" bodyfile="lib/sead/include/framework/seadCalculateTask.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a122c3ffd061ddaba9643b7814c1424b4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::CalculateTask::CalculateTask</definition>
+        <argsstring>(const TaskConstructArg &amp;arg)</argsstring>
+        <name>CalculateTask</name>
+        <qualifiedname>sead::CalculateTask::CalculateTask</qualifiedname>
+        <param>
+          <type>const <ref refid="structsead_1_1_task_construct_arg" kindref="compound">TaskConstructArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a79b97e630e041e86d7851f0431ee3952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::CalculateTask::CalculateTask</definition>
+        <argsstring>(const TaskConstructArg &amp;arg, const char *name)</argsstring>
+        <name>CalculateTask</name>
+        <qualifiedname>sead::CalculateTask::CalculateTask</qualifiedname>
+        <param>
+          <type>const <ref refid="structsead_1_1_task_construct_arg" kindref="compound">TaskConstructArg</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="13" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a7e0580a3fa1b7b19423be3c0e94f27dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sead::CalculateTask::~CalculateTask</definition>
+        <argsstring>()</argsstring>
+        <name>~CalculateTask</name>
+        <qualifiedname>sead::CalculateTask::~CalculateTask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="14" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a22f6ae963737b8867da5e2f68b7f0320" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::pauseCalc</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>pauseCalc</name>
+        <qualifiedname>sead::CalculateTask::pauseCalc</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1ae0a8f686010dbc227343174d07ce7c71">pauseCalc</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="15" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1af1e5858999663bf447791de164c07f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::pauseDraw</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>pauseDraw</name>
+        <qualifiedname>sead::CalculateTask::pauseDraw</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a242de4ea014681b28176b11d0af717b0">pauseDraw</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="16" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1af5119c8d89257023918c4c9d3c38745d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::pauseCalcRec</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>pauseCalcRec</name>
+        <qualifiedname>sead::CalculateTask::pauseCalcRec</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a3dc3468d1129e6ac3c9b1984dbe97406">pauseCalcRec</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="17" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a381f982f0951584d1bff00c347be3f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::pauseDrawRec</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>pauseDrawRec</name>
+        <qualifiedname>sead::CalculateTask::pauseDrawRec</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1acea9985c7c418c44133700038162dc85">pauseDrawRec</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="18" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a5726063e310a3b4a801bec6987fb07ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::pauseCalcChild</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>pauseCalcChild</name>
+        <qualifiedname>sead::CalculateTask::pauseCalcChild</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a8b6534e2c5c5aca706cfd3d3f2075409">pauseCalcChild</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="19" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a510bb6ec7e256b33bd30a77f8b842272" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::pauseDrawChild</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>pauseDrawChild</name>
+        <qualifiedname>sead::CalculateTask::pauseDrawChild</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a9d75262bd499decc30c5f9c5ca382090">pauseDrawChild</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="20" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a6da8a7cec5775643e0f5269d1c010db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::attachCalcImpl</definition>
+        <argsstring>()</argsstring>
+        <name>attachCalcImpl</name>
+        <qualifiedname>sead::CalculateTask::attachCalcImpl</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a9e999bfb45593addfe76c56525bbc07a">attachCalcImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="21" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1ae52976211b569e213d2e3c97d8c8f464" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::attachDrawImpl</definition>
+        <argsstring>()</argsstring>
+        <name>attachDrawImpl</name>
+        <qualifiedname>sead::CalculateTask::attachDrawImpl</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a6cd9b4ce70e2f27af29ed393aea10a59">attachDrawImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1aeb0c8e78af84fa53f787c6908324ecfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::detachCalcImpl</definition>
+        <argsstring>()</argsstring>
+        <name>detachCalcImpl</name>
+        <qualifiedname>sead::CalculateTask::detachCalcImpl</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1aa355ff654abf6c6f5c29fdee0860cfbb">detachCalcImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="23" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1acabf865771cd9b2a663dcf908f20df1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::detachDrawImpl</definition>
+        <argsstring>()</argsstring>
+        <name>detachDrawImpl</name>
+        <qualifiedname>sead::CalculateTask::detachDrawImpl</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1aab74c84b4aab2d85da8ff60d086ad9d1">detachDrawImpl</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="24" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a05917b948e517cdfb112f32106896a10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classsead_1_1_runtime_type_info_1_1_interface" kindref="compound">RuntimeTypeInfo::Interface</ref> *</type>
+        <definition>virtual const RuntimeTypeInfo::Interface * sead::CalculateTask::getCorrespondingMethodTreeMgrTypeInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>getCorrespondingMethodTreeMgrTypeInfo</name>
+        <qualifiedname>sead::CalculateTask::getCorrespondingMethodTreeMgrTypeInfo</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1a747872251302e3ff29287902e49108de">getCorrespondingMethodTreeMgrTypeInfo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="25" column="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1abd5571d39c50467dbef2b762d7cd1809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsead_1_1_method_tree_node" kindref="compound">MethodTreeNode</ref> *</type>
+        <definition>virtual MethodTreeNode * sead::CalculateTask::getMethodTreeNode</definition>
+        <argsstring>(s32 method_type)</argsstring>
+        <name>getMethodTreeNode</name>
+        <qualifiedname>sead::CalculateTask::getMethodTreeNode</qualifiedname>
+        <reimplements refid="classsead_1_1_task_base_1acf1baba97544604e44f53ceda674e2de">getMethodTreeNode</reimplements>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>method_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="26" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_calculate_task_1a4623accaf230a57dbc1b16df37165548" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::CalculateTask::calc</definition>
+        <argsstring>()</argsstring>
+        <name>calc</name>
+        <qualifiedname>sead::CalculateTask::calc</qualifiedname>
+        <reimplementedby refid="classsead_1_1_controller_mgr_1abda013d6fb790060299d24780a48a3a3">calc</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadCalculateTask.h" line="28" column="18" bodyfile="lib/sead/include/framework/seadCalculateTask.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sead::TTreeNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::CalculateTask</label>
+        <link refid="classsead_1_1_calculate_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::ControllerMgr</label>
+        <link refid="classsead_1_1_controller_mgr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+      </node>
+      <node id="7">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+      </node>
+      <node id="5">
+        <label>sead::TTreeNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::TaskBase</label>
+        <link refid="classsead_1_1_task_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::TreeNode</label>
+        <link refid="classsead_1_1_tree_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="18" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sead::BitFlag&lt; u32 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="18" relation="template-instance">
+          <edgelabel>&lt; u32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; Heap &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; IDisposer &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::SafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>sead::TList&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>sead::TListNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mList</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>sead::TTreeNode&lt; MethodTreeNode * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; MethodTreeNode * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::TTreeNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+      <node id="1">
+        <label>sead::CalculateTask</label>
+        <link refid="classsead_1_1_calculate_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mCalcNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1_critical_section"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sead::HeapArray</label>
+        <link refid="classsead_1_1_heap_array"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mHeaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>sead::HeapPolicies</label>
+        <link refid="structsead_1_1_heap_policies"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mPolicies</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>sead::HeapPolicy</label>
+        <link refid="structsead_1_1_heap_policy"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>sead::IDelegate2&lt; T, U &gt;</label>
+        <link refid="classsead_1_1_i_delegate2"/>
+      </node>
+      <node id="6">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mDisposerHeap</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mINamableName</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1_list_impl"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>sead::MethodTreeNode</label>
+        <link refid="classsead_1_1_method_tree_node"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mPauseFlag</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mPauseEventDelegate</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>sead::TList&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>sead::TListNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::TTreeNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::TaskBase</label>
+        <link refid="classsead_1_1_task_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mParameter</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mInternalFlag</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mTaskListNode</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mHeapArray</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mTaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mClassID</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>sead::TaskBase::CreateArg</label>
+        <link refid="structsead_1_1_task_base_1_1_create_arg"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>factory</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>heap_policies</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>created_task</edgelabel>
+          <edgelabel>instance_cb</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>src_task</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>sead::TaskClassID</label>
+        <link refid="classsead_1_1_task_class_i_d"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>sead::TaskMgr</label>
+        <link refid="classsead_1_1_task_mgr"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mActiveList</edgelabel>
+          <edgelabel>mDestroyableList</edgelabel>
+          <edgelabel>mDyingList</edgelabel>
+          <edgelabel>mPrepareDoneList</edgelabel>
+          <edgelabel>mPrepareList</edgelabel>
+          <edgelabel>mStaticList</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mHeapArray</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mRootTask</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mRootTaskCreateArg</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mInitializeArg</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mCalcDestructionTreeNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>sead::TaskMgr::InitializeArg</label>
+        <link refid="structsead_1_1_task_mgr_1_1_initialize_arg"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>roottask_create_arg</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>heap</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>sead::TaskParameter</label>
+        <link refid="classsead_1_1_task_parameter"/>
+      </node>
+      <node id="31">
+        <label>sead::TaskUserID</label>
+        <link refid="classsead_1_1_task_user_i_d"/>
+      </node>
+      <node id="4">
+        <label>sead::TreeNode</label>
+        <link refid="classsead_1_1_tree_node"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mChild</edgelabel>
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mParent</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/framework/seadCalculateTask.h" line="8" column="1" bodyfile="lib/sead/include/framework/seadCalculateTask.h" bodystart="8" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_calculate_task_1a6da8a7cec5775643e0f5269d1c010db8" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>attachCalcImpl</name></member>
+      <member refid="classsead_1_1_calculate_task_1ae52976211b569e213d2e3c97d8c8f464" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>attachDrawImpl</name></member>
+      <member refid="classsead_1_1_calculate_task_1a4623accaf230a57dbc1b16df37165548" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>calc</name></member>
+      <member refid="classsead_1_1_calculate_task_1a122c3ffd061ddaba9643b7814c1424b4" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>CalculateTask</name></member>
+      <member refid="classsead_1_1_calculate_task_1a79b97e630e041e86d7851f0431ee3952" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>CalculateTask</name></member>
+      <member refid="classsead_1_1_task_base_1addf03b6ff4ae1e5dc836575af1556bd9ad5fa6be13b11ca2e025b5e3e91cb26fb" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cApp</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9a4023674ac82864b928764622b3c1056c" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cCreated</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9ad66b5cb80b6e1e75a2d2ab47e6bec92b" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cDead</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9a09e9c9e09b59ef9a22378c824334fedb" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cDestroyable</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9a0f7572d7d5adced6b55e94bcf297d5d8" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cDying</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a61ab330a11d20ba618e8fba059eb4a86" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>child</name></member>
+      <member refid="classsead_1_1_tree_node_1a090c955de5fb5822fead1c03584c64a9" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>clearChildLinksRecursively_</name></member>
+      <member refid="classsead_1_1_tree_node_1aec816a942c1d2ba7cba0d125cac29d11" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>clearLinks</name></member>
+      <member refid="classsead_1_1_tree_node_1aab0d65612e31951fedf9aabdb71a3299" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>countChildren</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9a32ec8843c0afe41fa952f991ef14fe8f" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cPrepare</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9a1d8812227ffd6394ea81d93da47602dd" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cPrepareDone</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9a3804f5c46fa8f28217df3bc0dedbbd51" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cRunning</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9ad4643903f6ebc72b37ecedc10412ed06" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cSleep</name></member>
+      <member refid="classsead_1_1_task_base_1addf03b6ff4ae1e5dc836575af1556bd9a25d872d349afc271e4295eb387b287c9" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>cSystem</name></member>
+      <member refid="classsead_1_1_tree_node_1aeb897bf2da2bfe79ca9702e3cfa502be" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>detachAll</name></member>
+      <member refid="classsead_1_1_calculate_task_1aeb0c8e78af84fa53f787c6908324ecfe" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>detachCalcImpl</name></member>
+      <member refid="classsead_1_1_calculate_task_1acabf865771cd9b2a663dcf908f20df1d" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>detachDrawImpl</name></member>
+      <member refid="classsead_1_1_tree_node_1a749f1c3f42b145dd3514ae5b07d6d8eb" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>detachSubTree</name></member>
+      <member refid="classsead_1_1_task_base_1ad67d7c615997b9c7c690500bc99b52f4" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>enter</name></member>
+      <member refid="classsead_1_1_task_base_1a22f5a33a8b9c75ed1f8de2f6d05febe6" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>enterCommon</name></member>
+      <member refid="classsead_1_1_task_base_1a40be78ecc38ddfff020e05e47afd9e0c" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>exit</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a0dfe9db179b06b4fe631ed431944322f" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>findRoot</name></member>
+      <member refid="classsead_1_1_t_tree_node_1af12010b51ae04ddeb20823947dc2ccdf" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>findRoot</name></member>
+      <member refid="classsead_1_1_calculate_task_1a05917b948e517cdfb112f32106896a10" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>getCorrespondingMethodTreeMgrTypeInfo</name></member>
+      <member refid="classsead_1_1_i_disposer_1a4787eac6c96ec41a402a87785ca1c1e5" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>getDisposerHeap_</name></member>
+      <member refid="classsead_1_1_task_base_1aeda87f743020f91f6f02251a0e1f68b0" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>getFramework</name></member>
+      <member refid="classsead_1_1_i_disposer_1ad80f0bcae4db9dc8d86b972cf79242ff" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>getListNodeOffset</name></member>
+      <member refid="classsead_1_1_calculate_task_1abd5571d39c50467dbef2b762d7cd1809" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>getMethodTreeNode</name></member>
+      <member refid="classsead_1_1_i_namable_1afbca7ad5cea53df4afb3cf6a2f59f83c" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>getName</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>HeapNullOption</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a7924dc86bb92083cfe17af344f18efdb" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>HeapNullOption_AlwaysUseSpecifiedHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1ae6e1545ced87f4418a3a522abd0134b7" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>HeapNullOption_DoNotAppendDisposerIfNoHeapSpecified</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a9c3b6e23a61f6b9e12b642cd907a8a49" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>HeapNullOption_UseSpecifiedOrContainHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a6fd315b4de876d836ebb7a643d6db3b0" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>HeapNullOption_UseSpecifiedOrCurrentHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a2dce641e279c1e5cd489227548dadf78" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1_i_disposer_1a674d1dfb9528774610a5e90fe3d8f394" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1_i_namable_1a429adcb44a16a9c029fcb39d868c4d7f" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>INamable</name></member>
+      <member refid="classsead_1_1_i_namable_1ae752fa1a117c354f04f96d99248fe605" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>INamable</name></member>
+      <member refid="classsead_1_1_t_tree_node_1ab85ef907fdad971086902e776c9a5fec" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>insertAfterSelf</name></member>
+      <member refid="classsead_1_1_tree_node_1a3c677ecc5117d2c8d417c39cd0ca4cbf" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::CalculateTask</scope><name>insertAfterSelf</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a6465ef19dacaf7f069a53be32089cf7a" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>insertBeforeSelf</name></member>
+      <member refid="classsead_1_1_tree_node_1a2db64cd9ca5744af9442e9734a8d553f" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::CalculateTask</scope><name>insertBeforeSelf</name></member>
+      <member refid="classsead_1_1_task_base_1af550fb53b301d11d10317832a9e33534" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>List</name></member>
+      <member refid="classsead_1_1_task_base_1ad50a4e3a04ee09e4678c3a71ba90ea2b" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>ListNode</name></member>
+      <member refid="classsead_1_1_calculate_task_1a3f4a24ac444d851114cacef16a2e3c05" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mCalcNode</name></member>
+      <member refid="classsead_1_1_tree_node_1a93a0fc9b18eac55ba41f065fdca8b60a" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mChild</name></member>
+      <member refid="classsead_1_1_task_base_1ac33a72bac0cbd017901538ad597fb0f5" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mClassID</name></member>
+      <member refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mData</name></member>
+      <member refid="classsead_1_1_i_disposer_1a8fba43a568227601ee03c0e021115682" prot="private" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mDisposerHeap</name></member>
+      <member refid="classsead_1_1_task_base_1a226b68c097f609aa628fe06ae6ec2d39" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mHeapArray</name></member>
+      <member refid="classsead_1_1_i_namable_1a27d3d45caadcb0abcf88747db7bbc20b" prot="private" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mINamableName</name></member>
+      <member refid="classsead_1_1_task_base_1a1202f6f74c5e4ee62d8c83ad5a91bd2e" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mInternalFlag</name></member>
+      <member refid="classsead_1_1_i_disposer_1a3a161656c0dc9f124d29d24550151d00" prot="private" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mListNode</name></member>
+      <member refid="classsead_1_1_tree_node_1ae7732ae6d9202afa7511f74cae7c7a17" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mNext</name></member>
+      <member refid="classsead_1_1_task_base_1a32b785953f0d478dd6bacb3e9d0cd6ce" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mParameter</name></member>
+      <member refid="classsead_1_1_tree_node_1a19c8279ee858edfe503a44640771132f" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mParent</name></member>
+      <member refid="classsead_1_1_tree_node_1af6d7a2e562b9de922d14e49122ccff60" prot="protected" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mPrev</name></member>
+      <member refid="classsead_1_1_task_base_1ad778b5b40206f70d9762d2b12194d73c" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mState</name></member>
+      <member refid="classsead_1_1_task_base_1a7f346d123a8cd19a863d8fd4346c4e89" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mTag</name></member>
+      <member refid="classsead_1_1_task_base_1ab359bc4104eeea4dd58df4e364b89923" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mTaskListNode</name></member>
+      <member refid="classsead_1_1_task_base_1a1ac2af8de9f3139bb4479193c56e4e0f" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>mTaskMgr</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a78b0080a6ba72c2518d66aeae6ddeeb3" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>next</name></member>
+      <member refid="classsead_1_1_task_base_1a1fed3832c8a20837122f6aeae2384105" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>onDestroy</name></member>
+      <member refid="classsead_1_1_task_base_1a31e0258899a153e712194bf0fba2c6f0" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>onEvent</name></member>
+      <member refid="classsead_1_1_t_tree_node_1af93b9188533d45f2a0f49e0d6082dbf3" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>parent</name></member>
+      <member refid="classsead_1_1_calculate_task_1a22f6ae963737b8867da5e2f68b7f0320" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>pauseCalc</name></member>
+      <member refid="classsead_1_1_calculate_task_1a5726063e310a3b4a801bec6987fb07ac" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>pauseCalcChild</name></member>
+      <member refid="classsead_1_1_calculate_task_1af5119c8d89257023918c4c9d3c38745d" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>pauseCalcRec</name></member>
+      <member refid="classsead_1_1_calculate_task_1af1e5858999663bf447791de164c07f07" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>pauseDraw</name></member>
+      <member refid="classsead_1_1_calculate_task_1a510bb6ec7e256b33bd30a77f8b842272" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>pauseDrawChild</name></member>
+      <member refid="classsead_1_1_calculate_task_1a381f982f0951584d1bff00c347be3f6c" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>pauseDrawRec</name></member>
+      <member refid="classsead_1_1_task_base_1ac0d886576effd334d9946f1923afb12c" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>prepare</name></member>
+      <member refid="classsead_1_1_t_tree_node_1ab81ae31c8f56b5a5033361b465ae6cda" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>prev</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a5f62ef7352d06fb7b34e14a9d7c3ee25" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>pushBackChild</name></member>
+      <member refid="classsead_1_1_tree_node_1abb408c3466e722cf8bb68c727e173358" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::CalculateTask</scope><name>pushBackChild</name></member>
+      <member refid="classsead_1_1_t_tree_node_1aa1f6ad8b816883e60a820d048ca5af4b" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>pushBackSibling</name></member>
+      <member refid="classsead_1_1_tree_node_1a513f48a11d3f15b7f62d707850ee7b5f" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::CalculateTask</scope><name>pushBackSibling</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a21a95c035fb197e00ee012be916ec156" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>pushFrontChild</name></member>
+      <member refid="classsead_1_1_tree_node_1a098db96c6bc0734908902ecd31011023" prot="public" virt="non-virtual" ambiguityscope="sead::TreeNode::"><scope>sead::CalculateTask</scope><name>pushFrontChild</name></member>
+      <member refid="classsead_1_1_i_namable_1acd4b503966fa742e89f2507e909b5468" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>setName</name></member>
+      <member refid="classsead_1_1_task_base_1a277f52a66a4765d552a3f83e062c13c9" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>State</name></member>
+      <member refid="classsead_1_1_task_base_1addf03b6ff4ae1e5dc836575af1556bd9" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>Tag</name></member>
+      <member refid="classsead_1_1_task_base_1a242b2dce4679d2e0f147993dc5e28dea" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>TaskBase</name></member>
+      <member refid="classsead_1_1_task_base_1a5f848bdb86c76fa82a8288d6eb0cf760" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>TaskBase</name></member>
+      <member refid="classsead_1_1_tree_node_1a7c2aebe458b714419300deda28c64417" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>TreeNode</name></member>
+      <member refid="classsead_1_1_t_tree_node_1a5c17783cd87334698a4f24a5386cf7bc" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>TTreeNode</name></member>
+      <member refid="classsead_1_1_t_tree_node_1abe420cd6c45b269839f28ded345e17f1" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>TTreeNode</name></member>
+      <member refid="classsead_1_1_t_tree_node_1abdf524d3aa27940029db880ed4d15d22" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>value</name></member>
+      <member refid="classsead_1_1_t_tree_node_1abaa5ead9c29923c58296e638df24097e" prot="public" virt="non-virtual"><scope>sead::CalculateTask</scope><name>value</name></member>
+      <member refid="classsead_1_1_calculate_task_1a7e0580a3fa1b7b19423be3c0e94f27dd" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>~CalculateTask</name></member>
+      <member refid="classsead_1_1_i_disposer_1a36e2b9b062febed0893f3530bc427f0a" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>~IDisposer</name></member>
+      <member refid="classsead_1_1_task_base_1a353a2e8ecf456c15835e90ce2403b767" prot="public" virt="virtual"><scope>sead::CalculateTask</scope><name>~TaskBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

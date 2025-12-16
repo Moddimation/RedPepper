@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_critical_section_8h" kind="file" language="C++">
+    <compoundname>seadCriticalSection.h</compoundname>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="sead_disposer_8h" local="no">heap/seadDisposer.h</includes>
+    <includedby refid="sead_heap_8h" local="no">seadHeap.h</includedby>
+    <includedby refid="sead_heap_mgr_8h" local="no">seadHeapMgr.h</includedby>
+    <includedby refid="sead_task_mgr_8h" local="no">seadTaskMgr.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>basis/seadNew.h</label>
+        <link refid="sead_new_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>container/seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>heap/seadDisposer.h</label>
+        <link refid="sead_disposer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadCriticalSection.h</label>
+        <link refid="sead_critical_section_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>new</label>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+      <node id="9">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="4">
+        <label>seadFileDevice.h</label>
+        <link refid="sead_file_device_8h"/>
+      </node>
+      <node id="10">
+        <label>seadCalculateTask.h</label>
+        <link refid="sead_calculate_task_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>seadHeapPolicies.h</label>
+        <link refid="sead_heap_policies_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>seadTaskBase.h</label>
+        <link refid="sead_task_base_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>seadTaskMgr.h</label>
+        <link refid="sead_task_mgr_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadExpHeap.h</label>
+        <link refid="sead_exp_heap_8h"/>
+      </node>
+      <node id="5">
+        <label>seadFrameHeap.h</label>
+        <link refid="sead_frame_heap_8h"/>
+      </node>
+      <node id="2">
+        <label>seadHeap.h</label>
+        <link refid="sead_heap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadHeapMgr.h</label>
+        <link refid="sead_heap_mgr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadCriticalSection.h</label>
+        <link refid="sead_critical_section_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>seadHeapMgr.cpp</label>
+        <link refid="sead_heap_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_critical_section" prot="public">sead::CriticalSection</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SEAD_CRITICAL_SECTION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_CRITICAL_SECTION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_disposer_8h" kindref="compound">heap/seadDisposer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Heap;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classsead_1_1_critical_section" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_critical_section" kindref="compound">CriticalSection</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_i_disposer" kindref="compound">IDisposer</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="classsead_1_1_critical_section_1ac6c12862ee86d9952e2080f42cdea347" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_critical_section_1ac6c12862ee86d9952e2080f42cdea347" kindref="member">CriticalSection</ref>();</highlight></codeline>
+<codeline lineno="13" refid="classsead_1_1_critical_section_1a520c1c58650a515166e084a634d84544" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1a520c1c58650a515166e084a634d84544" kindref="member">CriticalSection</ref>(<ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>disposer_heap);</highlight></codeline>
+<codeline lineno="14" refid="classsead_1_1_critical_section_1a0a1555de44addd637ab479d980d51747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_critical_section_1a0a1555de44addd637ab479d980d51747" kindref="member">CriticalSection</ref>(<ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>disposer_heap,<sp/><ref refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1" kindref="member">HeapNullOption</ref><sp/>heap_null_option);</highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_critical_section_1ac91bab972c7f312341aa93264acbfb82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1ac91bab972c7f312341aa93264acbfb82" kindref="member">~CriticalSection</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_critical_section_1ad567533467cc73e11985df2d27de15ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1ad567533467cc73e11985df2d27de15ab" kindref="member">lock</ref>();</highlight></codeline>
+<codeline lineno="18" refid="classsead_1_1_critical_section_1a94099daccd4cb5a28053584d48bbbba1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1a94099daccd4cb5a28053584d48bbbba1" kindref="member">tryLock</ref>();</highlight></codeline>
+<codeline lineno="19" refid="classsead_1_1_critical_section_1aa7d0a418e818c611f548f5198c73122e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1aa7d0a418e818c611f548f5198c73122e" kindref="member">unlock</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>compatibility<sp/>with<sp/>the<sp/>standard<sp/>Lockable<sp/>concept.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_critical_section_1a08d2b876ed5cb13cea39562f8f267654" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1a08d2b876ed5cb13cea39562f8f267654" kindref="member">try_lock</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section_1a94099daccd4cb5a28053584d48bbbba1" kindref="member">tryLock</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mutex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>SEAD_CRITICAL_SECTION_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/thread/seadCriticalSection.h"/>
+  </compounddef>
+</doxygen>

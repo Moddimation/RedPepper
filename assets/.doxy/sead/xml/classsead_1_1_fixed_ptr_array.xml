@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_fixed_ptr_array" kind="class" language="C++" prot="public">
+    <compoundname>sead::FixedPtrArray</compoundname>
+    <basecompoundref refid="classsead_1_1_ptr_array" prot="public" virt="non-virtual">sead::PtrArray&lt; T &gt;</basecompoundref>
+    <includes refid="sead_ptr_array_8h" local="no">seadPtrArray.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1_fixed_ptr_array_1a0052f4d5678a95e6a9b81050f2e679f7" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* sead::FixedPtrArray&lt; T, N &gt;::mWork[N]</definition>
+        <argsstring>[N]</argsstring>
+        <name>mWork</name>
+        <qualifiedname>sead::FixedPtrArray::mWork</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="327" column="7" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_fixed_ptr_array_1ae6313f5e9185cf53eca700e2a5d0d5c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::FixedPtrArray&lt; T, N &gt;::FixedPtrArray</definition>
+        <argsstring>()</argsstring>
+        <name>FixedPtrArray</name>
+        <qualifiedname>sead::FixedPtrArray::FixedPtrArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="322" column="5" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="322" bodyend="322"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::FixedPtrArray&lt; T, N &gt;</label>
+        <link refid="classsead_1_1_fixed_ptr_array"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::PtrArray&lt; T &gt;</label>
+        <link refid="classsead_1_1_ptr_array"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::PtrArrayImpl</label>
+        <link refid="classsead_1_1_ptr_array_impl"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sead::FixedPtrArray&lt; T, N &gt;</label>
+        <link refid="classsead_1_1_fixed_ptr_array"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::PtrArray&lt; T &gt;</label>
+        <link refid="classsead_1_1_ptr_array"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::PtrArrayImpl</label>
+        <link refid="classsead_1_1_ptr_array_impl"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/container/seadPtrArray.h" line="320" column="1" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="320" bodyend="328"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_ptr_array_impl_1a8550983441cf6d60f918aeeb98b67a16" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>allocBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aa706d55f09b15e2430cb7911c7617ce1" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>allocBufferInline</name></member>
+      <member refid="classsead_1_1_ptr_array_1a943ad3c082a1aa69064e8515998deea4" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>at</name></member>
+      <member refid="classsead_1_1_ptr_array_1ac61d0c6175fe2d71476ad5f350de0674" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>back</name></member>
+      <member refid="classsead_1_1_ptr_array_1ae624973e3d41afcbf5fe1dbfd591c2b1" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>begin</name></member>
+      <member refid="classsead_1_1_ptr_array_1a44e9811b3c557767b99808e56ffeca06" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>binarySearch</name></member>
+      <member refid="classsead_1_1_ptr_array_1a8e30b7ead005e0be93314e468f77938d" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>binarySearch</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a5ddb73d1bede6e9d1c91818881df5fde" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>binarySearch</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a228d2791198b45e145d32471c92f4eec" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>capacity</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a1c628fc01720fef9b92035f2817f8411" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>checkInsert</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a1756a5119c2225774d9ef1c1c0b869b6" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>clear</name></member>
+      <member refid="classsead_1_1_ptr_array_1a02dfb63c58132b181a6cd8f7d08be347" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>compare</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a4173bad173ac7ad165104245118af0e3" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>compare</name></member>
+      <member refid="classsead_1_1_ptr_array_1acbe8237ef6e80aa7d066db10f5b52a58" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>CompareCallback</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>CompareCallbackImpl</name></member>
+      <member refid="classsead_1_1_ptr_array_1a36ce8c671a64f4ddbee2ebaac9bc6453" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>compareT</name></member>
+      <member refid="classsead_1_1_ptr_array_1a7876f16e5e6988cdb4c8db25072edf53" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>constBegin</name></member>
+      <member refid="classsead_1_1_ptr_array_1a19de244948fe6b0b6ba9bc402949d8bf" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>constEnd</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a529efab785fe4388309a2d07d136617f" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>createVacancy</name></member>
+      <member refid="classsead_1_1_ptr_array_1ae9026f16059dd546f1e593b0a9aa85bf" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>data</name></member>
+      <member refid="classsead_1_1_ptr_array_1a3378a82b495e879d42b81658229a63a3" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>dataBegin</name></member>
+      <member refid="classsead_1_1_ptr_array_1adb7e395427700004c5f03470bdf36f17" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>dataEnd</name></member>
+      <member refid="classsead_1_1_ptr_array_1a753ea14b587f223f381dc346a0e41e0f" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>end</name></member>
+      <member refid="classsead_1_1_ptr_array_1a5e3aa7208b33f04e441ffa55227c80ec" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>equal</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a8c182adad8ec81f9d359d71882bea3db" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>equal</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1acc257bb54cf3dd2add450cc2ee6af85d" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>erase</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a8b5809504bb1a1890e8ec1062cc7f661" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>erase</name></member>
+      <member refid="classsead_1_1_ptr_array_1a2614011ee13791ec2a5fe85e00b5c41a" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>find</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aeb9dbd18aa71fbcd36cab8f1a79d0904" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>find</name></member>
+      <member refid="classsead_1_1_fixed_ptr_array_1ae6313f5e9185cf53eca700e2a5d0d5c8" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>FixedPtrArray</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aeca042ab3210a6d9e6a4858bcedbd15c" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>freeBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_1af94fcd82ab8d62df24c63b946408f155" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>front</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a6658a05e1f8631c43a473d97f0f38233" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>heapSort</name></member>
+      <member refid="classsead_1_1_ptr_array_1a0c07b8573cbbd61fb51d81e4019b6dd6" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>indexOf</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a35cfe33603ab6b5f0833beeed01602a7" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>indexOf</name></member>
+      <member refid="classsead_1_1_ptr_array_1a9db9ac0a815a3301e2359e0f0148e87a" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>insert</name></member>
+      <member refid="classsead_1_1_ptr_array_1a002be797b60775e060c58a06ff0dbf61" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>insert</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a7bf0ad1c82b72e9e7ff2895df7efaa3c" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>insert</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a2bce0bdcacc31cc4c00101a484d1f046" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>insertArray</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a375b8a9603dd543c0cc7f6ccc74e4a21" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>isBufferReady</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a7c7ebef61efcf7bb4a97405041aa6939" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>isEmpty</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ac76c471ddeb39838d70661e780e3c307" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>isFull</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>mPtrNum</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>mPtrNumMax</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" prot="protected" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>mPtrs</name></member>
+      <member refid="classsead_1_1_fixed_ptr_array_1a0052f4d5678a95e6a9b81050f2e679f7" prot="private" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>mWork</name></member>
+      <member refid="classsead_1_1_ptr_array_1a85a210584b669f5611e8869baf23d1ad" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>operator!=</name></member>
+      <member refid="classsead_1_1_ptr_array_1ac16096bc3f5ceb8267fab1bb6c7e731c" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>operator()</name></member>
+      <member refid="classsead_1_1_ptr_array_1aa4b52a80c7c7f01f0120683348de0a91" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>operator==</name></member>
+      <member refid="classsead_1_1_ptr_array_1a7362c0049cbac721d729748aa075e7f8" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>operator[]</name></member>
+      <member refid="classsead_1_1_ptr_array_1a873aca429ebbce8a75e28c551b58cd26" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>popBack</name></member>
+      <member refid="classsead_1_1_ptr_array_1a21ca8f3872c64638f3b661305b3df7ce" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>popFront</name></member>
+      <member refid="classsead_1_1_ptr_array_1a0a294b6b8b712197426cf7ee9f3c07e8" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>PtrArray</name></member>
+      <member refid="classsead_1_1_ptr_array_1ad8ee6d55d7356ba71b79ab28b455fc41" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>PtrArray</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a9b62501833e48bfd107cd2e20d1fdd43" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>PtrArrayImpl</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a328eba791d66a7958c7770a79fb0e01b" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>PtrArrayImpl</name></member>
+      <member refid="classsead_1_1_ptr_array_1a93b9a457eb6002aa46fdac25d8a5c923" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>pushBack</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a872b40a431bb9ffdfc8ff70b06595fca" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>pushBack</name></member>
+      <member refid="classsead_1_1_ptr_array_1a5252c5c79b315da2fc43532c9f190b82" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>pushFront</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1af3834ee8a0e59bdeaf85d7969951d947" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>pushFront</name></member>
+      <member refid="classsead_1_1_ptr_array_1afbf9e320576bf856a5cd8d226a3cdec3" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>replace</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ad0c9f77c900b04d30112263ad44ef04b" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>replace</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a12e58dbee778e13ead38a1a2a20cd27f" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>resize</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ae5c402b62ea9306efc1c819dfe76594f" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>reverse</name></member>
+      <member refid="classsead_1_1_ptr_array_1aac694460fb85f5aeada82b972530972b" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>search</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a82f3e8f5f7a2b50b74e0b814840e6df3" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>search</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>setBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1afa0d8de42400997e43ecc274c3c01c6f" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>shuffle</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aff2f63d19a0ca151e1ea7d1a7304091a" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>shuffle</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a5b080fabfc99ffe1a7ba95419b0b14cd" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>size</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a012c0c73c537878aa3dd9831c2f236f1" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>swap</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ac8a302cb53cacb1b6500d637b50ae176" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>tryAllocBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_1adc6e288b5453ccec6d4d71a3ed7abc3e" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>uniq</name></member>
+      <member refid="classsead_1_1_ptr_array_1a34cbe2e2aafc98b71c306929a1dcd435" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>uniq</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a02758a18cf30738b7933a03a9ac5ed17" prot="protected" virt="non-virtual" ambiguityscope="sead::PtrArrayImpl::"><scope>sead::FixedPtrArray</scope><name>uniq</name></member>
+      <member refid="classsead_1_1_ptr_array_1af94255d2dcbfe14659cc041bd7c55cc3" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>unsafeAt</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a91a2f723135cf12ac377025c3b74e00d" prot="public" virt="non-virtual"><scope>sead::FixedPtrArray</scope><name>unsafeResize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

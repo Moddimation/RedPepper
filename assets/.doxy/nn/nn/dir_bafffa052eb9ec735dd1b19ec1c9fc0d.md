@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/include/nn/fs/CTR/MPCore/detail
+# Dir detail
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**fs\_UserFileSystem.h**](fs__UserFileSystem_8h.md) <br> |
+| file | [**fs\_UserFileSystem.h**](fs___user_file_system_8h.md) <br> |
 
 
 

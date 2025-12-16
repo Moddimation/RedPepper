@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_i_use_effect_keeper" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>al::IUseEffectKeeper</compoundname>
+    <derivedcompoundref refid="classal_1_1_layout_actor" prot="public" virt="non-virtual">al::LayoutActor</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_live_actor" prot="public" virt="non-virtual">al::LiveActor</derivedcompoundref>
+    <includes refid="al_effect_keeper_8h" local="no">alEffectKeeper.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_i_use_effect_keeper_1a987095cf653d73e75789d1df65f3c4f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_effect_keeper" kindref="compound">EffectKeeper</ref> *</type>
+        <definition>virtual EffectKeeper * al::IUseEffectKeeper::getEffectKeeper</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getEffectKeeper</name>
+        <qualifiedname>al::IUseEffectKeeper::getEffectKeeper</qualifiedname>
+        <reimplementedby refid="classal_1_1_layout_actor_1a2cdbe37b30a07776a6728d4cf4b64d95">getEffectKeeper</reimplementedby>
+        <reimplementedby refid="classal_1_1_live_actor_1a05672f1ab160cc1ae4a27f08e0383beb">getEffectKeeper</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Effect/alEffectKeeper.h" line="18" column="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>al::BreakModel</label>
+        <link refid="classal_1_1_break_model"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::ClockMapParts</label>
+        <link refid="classal_1_1_clock_map_parts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::EffectObj</label>
+        <link refid="classal_1_1_effect_obj"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::FallMapParts</label>
+        <link refid="classal_1_1_fall_map_parts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>al::FixMapParts</label>
+        <link refid="classal_1_1_fix_map_parts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1_i_use_effect_keeper"/>
+      </node>
+      <node id="2">
+        <label>al::LayoutActor</label>
+        <link refid="classal_1_1_layout_actor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1_live_actor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::MapObjActor</label>
+        <link refid="classal_1_1_map_obj_actor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>al::Sky</label>
+        <link refid="classal_1_1_sky"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>al::SwitchAreaDirector</label>
+        <link refid="classal_1_1_switch_area_director"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::WipeSimple</label>
+        <link refid="classal_1_1_wipe_simple"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/Effect/alEffectKeeper.h" line="15" column="1" bodyfile="lib/al/include/Effect/alEffectKeeper.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classal_1_1_i_use_effect_keeper_1a987095cf653d73e75789d1df65f3c4f7" prot="public" virt="pure-virtual"><scope>al::IUseEffectKeeper</scope><name>getEffectKeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_sensor_msg_8h" kind="file" language="C++">
+    <compoundname>alSensorMsg.h</compoundname>
+    <includedby refid="al_fall_map_parts_8cpp" local="no">alFallMapParts.cpp</includedby>
+    <includedby refid="al_sensor_msg_8cpp" local="no">alSensorMsg.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alSensorMsg.h</label>
+        <link refid="al_sensor_msg_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alSensorMsg.cpp</label>
+        <link refid="al_sensor_msg_8cpp"/>
+      </node>
+      <node id="2">
+        <label>alFallMapParts.cpp</label>
+        <link refid="al_fall_map_parts_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" prot="public" static="no">
+        <name>AL_LIVEACTOR_SENSORMSG</name>
+        <param><defname>TYPE</defname></param>
+        <initializer>        bool sendMsg##TYPE( HitSensor* to, HitSensor* from ); \
+        bool isMsg##TYPE( u32 msg );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alSensorMsg.h" line="41" column="9" bodyfile="lib/al/include/LiveActor/alSensorMsg.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HitSensor;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6" kindref="member">SensorMsg</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a30a5b3e2d1bc4986fffe401eff2f329f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a30a5b3e2d1bc4986fffe401eff2f329f" kindref="member">SensorMsg_UpperPunch</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a42fa301261203c58d61199581ea819c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a42fa301261203c58d61199581ea819c3" kindref="member">SensorMsg_9</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="11" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a7981e56f1ab96e5c4f83c85b72549c8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a7981e56f1ab96e5c4f83c85b72549c8d" kindref="member">SensorMsg_PlayerStatueTouch</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6af2e74e187fa1ce3fe1419de2e50045ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6af2e74e187fa1ce3fe1419de2e50045ce" kindref="member">SensorMsg_PlayerRollingAttack</ref><sp/><sp/><sp/><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="13" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6af670e02b9712d8f52c24183ba3ee1201" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6af670e02b9712d8f52c24183ba3ee1201" kindref="member">SensorMsg_14</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="14" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a2bb3bcabd02bfad28d588d4900fde823" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a2bb3bcabd02bfad28d588d4900fde823" kindref="member">SensorMsg_PlayerInvincibleAttack</ref><sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="15" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a5ae58c33a38920e31f2ea05aa3d6c6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a5ae58c33a38920e31f2ea05aa3d6c6e2" kindref="member">SensorMsg_PlayerFireBallAttack</ref><sp/><sp/><sp/>=<sp/>17,</highlight></codeline>
+<codeline lineno="16" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6afc6a1c65daa9cd449a7b866dfd8de469" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6afc6a1c65daa9cd449a7b866dfd8de469" kindref="member">SensorMsg_PlayerTailAttack</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>18,</highlight></codeline>
+<codeline lineno="17" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6adcd53d8f0d9d6595c6fb122c4e2e018e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6adcd53d8f0d9d6595c6fb122c4e2e018e" kindref="member">SensorMsg_PlayerKick</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>19,</highlight></codeline>
+<codeline lineno="18" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a28d9d0989d8efebf69d02ee268757206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a28d9d0989d8efebf69d02ee268757206" kindref="member">SensorMsg_PlayerBoomerangAttack</ref><sp/><sp/>=<sp/>20,</highlight></codeline>
+<codeline lineno="19" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6ad7bcb4ba7ab0bf84d0541d6a643aadb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6ad7bcb4ba7ab0bf84d0541d6a643aadb8" kindref="member">SensorMsg_PlayerBoomerangReflect</ref><sp/>=<sp/>22,</highlight></codeline>
+<codeline lineno="20" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a6880767431b43fd74dd38f61004edd24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a6880767431b43fd74dd38f61004edd24" kindref="member">SensorMsg_PlayerBoomerangBreak</ref><sp/><sp/><sp/>=<sp/>23,</highlight></codeline>
+<codeline lineno="21" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a53535642e6d77a92f4b99e15cf440414" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a53535642e6d77a92f4b99e15cf440414" kindref="member">SensorMsg_ItemGet</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>26,</highlight></codeline>
+<codeline lineno="22" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a701d0e7a88759357c5735f29cba1a4e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a701d0e7a88759357c5735f29cba1a4e2" kindref="member">SensorMsg_PlayerFloorTouch</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>27,</highlight></codeline>
+<codeline lineno="23" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a2ddd7f78ea16bdae3a367a9821702621" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a2ddd7f78ea16bdae3a367a9821702621" kindref="member">SensorMsg_PlayerInvincibleTouch</ref><sp/><sp/>=<sp/>30,</highlight></codeline>
+<codeline lineno="24" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6abde08211632a182d6f0f545c90396f9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6abde08211632a182d6f0f545c90396f9f" kindref="member">SensorMsg_34</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>34,</highlight></codeline>
+<codeline lineno="25" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a3794a7467325a0703a48919af1be4195" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a3794a7467325a0703a48919af1be4195" kindref="member">SensorMsg_KickKouraReflect</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>36,</highlight></codeline>
+<codeline lineno="26" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6aa9823048ab95abff536f6dacdd9d68e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6aa9823048ab95abff536f6dacdd9d68e7" kindref="member">SensorMsg_KickKouraBreak</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>37,</highlight></codeline>
+<codeline lineno="27" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a63b885a3a3669ce39974dfd23e25efe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a63b885a3a3669ce39974dfd23e25efe1" kindref="member">SensorMsg_KickStoneAttack</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>40,</highlight></codeline>
+<codeline lineno="28" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6aaa7855e6f80473cf55673934aed66086" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6aaa7855e6f80473cf55673934aed66086" kindref="member">SensorMsg_41</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>41,</highlight></codeline>
+<codeline lineno="29" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a04c2242fa4249d59f58b93db1cadc437" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a04c2242fa4249d59f58b93db1cadc437" kindref="member">SensorMsg_EnemyAttack</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>45,</highlight></codeline>
+<codeline lineno="30" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a89a3ded67abda721fcbb5b985c5e61b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a89a3ded67abda721fcbb5b985c5e61b0" kindref="member">SensorMsg_GororiAttack</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>46,</highlight></codeline>
+<codeline lineno="31" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a91e0796af166d7c5e907c16bc01ace86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a91e0796af166d7c5e907c16bc01ace86" kindref="member">SensorMsg_GororiBigAttack</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>47,</highlight></codeline>
+<codeline lineno="32" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6ab3e6d79cc608d662c871d101c611d504" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6ab3e6d79cc608d662c871d101c611d504" kindref="member">SensorMsg_49</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>49,</highlight></codeline>
+<codeline lineno="33" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6abb6322239270a2f1f545575086a1be85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6abb6322239270a2f1f545575086a1be85" kindref="member">SensorMsg_50</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>50,</highlight></codeline>
+<codeline lineno="34" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6af3486dbd159d8263d6c019413d2cc9e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6af3486dbd159d8263d6c019413d2cc9e0" kindref="member">SensorMsg_51</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>51,</highlight></codeline>
+<codeline lineno="35" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a56e471312e59b62d4c1be00ebd33d323" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a56e471312e59b62d4c1be00ebd33d323" kindref="member">SensorMsg_52</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>52,</highlight></codeline>
+<codeline lineno="36" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a12ac4d3a87cd6eb8882dd9839671f507" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a12ac4d3a87cd6eb8882dd9839671f507" kindref="member">SensorMsg_53</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>53,</highlight></codeline>
+<codeline lineno="37" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a27509bcd4c82345f10dc7b7cc083750c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6a27509bcd4c82345f10dc7b7cc083750c" kindref="member">SensorMsg_55</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>55,<sp/></highlight><highlight class="comment">//<sp/>something<sp/>with<sp/>the<sp/>KoopaLast<sp/>door</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6ad35fdf4c3e26c721ab7099b03f708032" kindref="member">SensorMsg_58</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>58<sp/><sp/></highlight><highlight class="comment">//<sp/>something<sp/>with<sp/>the<sp/>KoopaLast<sp/>door</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespaceal_1a9ddc8bf38d8932a8fa17134b599a61e6ad35fdf4c3e26c721ab7099b03f708032" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AL_LIVEACTOR_SENSORMSG(<sp/>TYPE<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>sendMsg##TYPE(<sp/>HitSensor*<sp/>to,<sp/>HitSensor*<sp/>from<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>isMsg##TYPE(<sp/>u32<sp/>msg<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>UpperPunch<sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>9<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerStatueTouch<sp/>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerRollingAttack<sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>14<sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerInvincibleAttack<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerFireBallAttack<sp/>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerTailAttack<sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerKick<sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerBoomerangAttack<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerBoomerangReflect<sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerBoomerangBreak<sp/>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerFloorTouch<sp/>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>PlayerInvincibleTouch<sp/>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>34<sp/>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>KickKouraReflect<sp/>)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>KickKouraBreak<sp/>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>KickStoneAttack<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>41<sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>EnemyAttack<sp/>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>GororiAttack<sp/>)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>GororiBigAttack<sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>49<sp/>)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>50<sp/>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>51<sp/>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>52<sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>53<sp/>)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>55<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><ref refid="al_sensor_msg_8h_1ae9193a98737d88d066061b1d9e20f658" kindref="member">AL_LIVEACTOR_SENSORMSG</ref>(<sp/>58<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>AL_LIVEACTOR_SENSORMSG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alSensorMsg.h"/>
+  </compounddef>
+</doxygen>

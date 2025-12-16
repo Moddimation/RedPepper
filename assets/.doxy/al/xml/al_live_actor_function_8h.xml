@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_live_actor_function_8h" kind="file" language="C++">
+    <compoundname>alLiveActorFunction.h</compoundname>
+    <includes local="no">math/seadMatrix.h</includes>
+    <includes local="no">math/seadVector.h</includes>
+    <includes local="no">prim/seadSafeString.h</includes>
+    <includedby refid="al_break_model_8cpp" local="no">alBreakModel.cpp</includedby>
+    <includedby refid="al_effect_obj_8cpp" local="no">alEffectObj.cpp</includedby>
+    <includedby refid="al_fall_map_parts_8cpp" local="no">alFallMapParts.cpp</includedby>
+    <includedby refid="al_hit_sensor_keeper_8cpp" local="no">alHitSensorKeeper.cpp</includedby>
+    <includedby refid="al_live_actor_8cpp" local="no">alLiveActor.cpp</includedby>
+    <includedby refid="al_live_actor_function_8cpp" local="no">alLiveActorFunction.cpp</includedby>
+    <includedby refid="al_sky_8cpp" local="no">alSky.cpp</includedby>
+    <includedby refid="al_sub_actor_function_8cpp" local="no">alSubActorFunction.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alLiveActorFunction.h</label>
+        <link refid="al_live_actor_function_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="3">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="4">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alLiveActorFunction.h</label>
+        <link refid="al_live_actor_function_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>alHitSensorKeeper.cpp</label>
+        <link refid="al_hit_sensor_keeper_8cpp"/>
+      </node>
+      <node id="6">
+        <label>alLiveActor.cpp</label>
+        <link refid="al_live_actor_8cpp"/>
+      </node>
+      <node id="7">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="9">
+        <label>alSubActorFunction.cpp</label>
+        <link refid="al_sub_actor_function_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alFallMapParts.cpp</label>
+        <link refid="al_fall_map_parts_8cpp"/>
+      </node>
+      <node id="2">
+        <label>alBreakModel.cpp</label>
+        <link refid="al_break_model_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alEffectObj.cpp</label>
+        <link refid="al_effect_obj_8cpp"/>
+      </node>
+      <node id="8">
+        <label>alSky.cpp</label>
+        <link refid="al_sky_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_live_actor_function" prot="public">alLiveActorFunction</innerclass>
+    <innernamespace refid="namespaceal_nerve_function">alNerveFunction</innernamespace>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadMatrix.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;prim/seadSafeString.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespaceal_nerve_function" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal_nerve_function" kindref="compound">alNerveFunction</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_nerve_function_1_1_nerve_action_collector" kindref="compound">NerveActionCollector</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ActorInitInfo;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActor;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Nerve;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">HitSensor;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classal_live_actor_function" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_live_actor_function" kindref="compound">alLiveActorFunction</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" kindref="member">calcAnimDirect</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">al::LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ActorPoseKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespaceal_1a2ce4eacfecd4c2ee34cf1a4049d30e1f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a2ce4eacfecd4c2ee34cf1a4049d30e1f" kindref="member">initActorSRTAndPoseTRSV</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ActorActionKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespaceal_1af7af351f7df4cf4d850e824a24fe71da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a5e52f9af7a3182dac16d0af53fc4c35d" kindref="member">startAction</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="34" refid="namespaceal_1a315e23fcdbc1927e92091116569124e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a315e23fcdbc1927e92091116569124e9" kindref="member">tryStartAction</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="35" refid="namespaceal_1aac3cb73a93290ec9b8a15d94ec447c00" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae081c26e01e14b58b22b789b7dc77519" kindref="member">isActionEnd</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ad3dc1c4ef582193a5c8721113c062b44" kindref="member">startNerveAction</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">actionName</ref><sp/>);</highlight></codeline>
+<codeline lineno="37" refid="namespaceal_1a8fc83fb75b9c4aae981d2571afe9a6ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a8fc83fb75b9c4aae981d2571afe9a6ce" kindref="member">tryStartSklAnimIfExist</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>);</highlight></codeline>
+<codeline lineno="38" refid="namespaceal_1a3881fe0c6d9a1a166e06c3cb524d2816" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3881fe0c6d9a1a166e06c3cb524d2816" kindref="member">tryStartMtsAnimIfExist</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>);</highlight></codeline>
+<codeline lineno="39" refid="namespaceal_1a7bd6687225e334d4c672424e185d89b0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7bd6687225e334d4c672424e185d89b0" kindref="member">tryStartMtpAnimIfExist</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a1c7667b0bfb5ff035d2b7f403db72a7b" kindref="member">tryStartMclAnimIfExist</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>);</highlight></codeline>
+<codeline lineno="41" refid="namespaceal_1aaf78b2d10917d4b0691c5d26ce089683" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aaf78b2d10917d4b0691c5d26ce089683" kindref="member">tryStartVisAnimIfExist</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">animName</ref><sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespaceal_1a19e6361fce4ed0c6c363823e025e6cef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a19e6361fce4ed0c6c363823e025e6cef" kindref="member">setBaseMtxAndCalcAnim</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>??</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">isClipped</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" kindref="member">isInvalidClipping</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a62c2c9d897bed88133376646c4d13651" kindref="member">isDead</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" kindref="member">isAlive</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a0cfa1c01768bd0864c4e1bddebb7f848" kindref="member">onCollide</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a95326d060e34a176519243f32f5bca18" kindref="member">offCollide</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a29437e120198435450c779a7262bc829" kindref="member">onDrawClipping</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a515a2b12c390af7bd21efb868109a386" kindref="member">invalidateClipping</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a81c0fadbcc3ef5462d2d614649ffdedd" kindref="member">validateClipping</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CollisionParts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="namespaceal_1a54b89ac48fe304b78d92712fa30c3bec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a54b89ac48fe304b78d92712fa30c3bec" kindref="member">invalidateCollisionPartsBySystem</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="61" refid="namespaceal_1a4f734efa5f3870c3f342859b7a572299" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a4f734efa5f3870c3f342859b7a572299" kindref="member">validateCollisionPartsBySystem</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ModelKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="namespaceal_1a5d92420344226a0dd57cef7e06b0abf6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a5d92420344226a0dd57cef7e06b0abf6" kindref="member">showModel</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" kindref="member">hideModel</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="66" refid="namespaceal_1aa4d06496e267b40fe09f971afaa6a989" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aa4d06496e267b40fe09f971afaa6a989" kindref="member">showShadow</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="67" refid="namespaceal_1a4dbdc1b7b1960de610d6ab0335d0827f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a4dbdc1b7b1960de610d6ab0335d0827f" kindref="member">hideShadow</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="namespaceal_1adca9e15f3a793df51dcfc4ceefc4c0e3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f*<sp/><ref refid="namespaceal_1adca9e15f3a793df51dcfc4ceefc4c0e3" kindref="member">getJointMtxPtr</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointName</ref><sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a602a7ecb60130fbbd51fff90f690134f" kindref="member">calcJointPos</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">jointName</ref><sp/>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NerveKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a765397d5b8fff63737e5237c28f02ebb" kindref="member">initNerve</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>=<sp/>0<sp/>);<sp/></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>al::LiveActor::initNerve</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a8f883cda476a5ff886e6e069fc1a8b0c" kindref="member">initNerveAction</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/><ref refid="classal_nerve_function_1_1_nerve_action_collector" kindref="compound">alNerveFunction::NerveActionCollector</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">collector</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">maxNerveStates</ref><sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>HitSensorKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*<sp/><ref refid="namespaceal_1ae1a739e92a1781a6a606653fbf7a7527" kindref="member">getHitSensor</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ac6ff1aa3b5d0aa487e5e4dfafe091b42" kindref="member">getSensorRadius</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">sensorName</ref><sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EffectKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="namespaceal_1ac79e84746185192e4d9aa115246c2dca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ac79e84746185192e4d9aa115246c2dca" kindref="member">initActorEffectKeeper</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>StageSwitchKeeper</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="namespaceal_1a68a98e7eb3fc4e4c5fd7bd0ae7102ab4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a68a98e7eb3fc4e4c5fd7bd0ae7102ab4" kindref="member">trySyncStageSwitchAppear</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="86" refid="namespaceal_1aade8a068151d9d3dab78d5fcdb84487d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aade8a068151d9d3dab78d5fcdb84487d" kindref="member">trySyncStageSwitchKill</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="namespaceal_1a046880b623199b268a05ccd26bdc83be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a046880b623199b268a05ccd26bdc83be" kindref="member">rotateQuatXDirDegree</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">degrees</ref><sp/>);</highlight></codeline>
+<codeline lineno="90" refid="namespaceal_1a7a1971c757b04bf3f4debc5dedfb3f82" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7a1971c757b04bf3f4debc5dedfb3f82" kindref="member">rotateQuatYDirDegree</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">degrees</ref><sp/>);</highlight></codeline>
+<codeline lineno="91" refid="namespaceal_1af5a9b2a572c6b7dd0ef76ba5134e8e08" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1af5a9b2a572c6b7dd0ef76ba5134e8e08" kindref="member">rotateQuatZDirDegree</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">degrees</ref><sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="namespaceal_1a3dfc51aa96d603a891234c51b76fb848" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3dfc51aa96d603a891234c51b76fb848" kindref="member">calcQuatSide</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref><sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/LiveActor/alLiveActorFunction.h"/>
+  </compounddef>
+</doxygen>

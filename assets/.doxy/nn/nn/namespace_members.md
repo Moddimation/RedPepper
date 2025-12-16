@@ -57,7 +57,7 @@
 
 ## i
 
-* **Initialize** ([**nn::cfg::CTR**](namespacenn_1_1cfg_1_1CTR.md), [**nn::fs**](namespacenn_1_1fs.md), [**nn::ndm**](namespacenn_1_1ndm.md), [**nn::srv**](namespacenn_1_1srv.md))
+* **Initialize** ([**nn::cfg::CTR**](namespacenn_1_1cfg_1_1_c_t_r.md), [**nn::fs**](namespacenn_1_1fs.md), [**nn::ndm**](namespacenn_1_1ndm.md), [**nn::srv**](namespacenn_1_1srv.md))
 
 
 ## o
@@ -73,8 +73,8 @@
 
 ## s
 
-* **s\_IsLatencyEmulationEnable** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1CTR_1_1MPCore_1_1detail.md))
-* **s\_Something** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1CTR_1_1MPCore_1_1detail.md))
+* **s\_IsLatencyEmulationEnable** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1_c_t_r_1_1_m_p_core_1_1detail.md))
+* **s\_Something** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1_c_t_r_1_1_m_p_core_1_1detail.md))
 * **SuspendScheduler** ([**nn::ndm**](namespacenn_1_1ndm.md))
 * **SleepThread** ([**nn::svc**](namespacenn_1_1svc.md))
 * **size** ([**nn::svc**](namespacenn_1_1svc.md))
@@ -82,16 +82,16 @@
 
 ## t
 
-* **ThrowFatalErr** ([**nn::err::CTR**](namespacenn_1_1err_1_1CTR.md))
+* **ThrowFatalErr** ([**nn::err::CTR**](namespacenn_1_1err_1_1_c_t_r.md))
 
 
 ## v
 
-* **VEC3AddAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **VEC3DivAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **VEC3MulAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **VEC3SubAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **v1** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
+* **VEC3AddAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **VEC3DivAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **VEC3MulAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **VEC3SubAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **v1** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
 
 
 ## w
@@ -101,7 +101,7 @@
 
 ## _
 
-* **\_\_attribute\_\_** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md), [**nn::svc**](namespacenn_1_1svc.md))
+* **\_\_attribute\_\_** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md), [**nn::svc**](namespacenn_1_1svc.md))
 
 
 

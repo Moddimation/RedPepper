@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/include/Effect
+# Dir Effect
 
 
 
@@ -21,8 +21,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alEffectKeeper.h**](alEffectKeeper_8h.md) <br> |
-| file | [**alEffectSystem.h**](alEffectSystem_8h.md) <br> |
+| file | [**alEffectKeeper.h**](al_effect_keeper_8h.md) <br> |
+| file | [**alEffectSystem.h**](al_effect_system_8h.md) <br> |
 
 
 

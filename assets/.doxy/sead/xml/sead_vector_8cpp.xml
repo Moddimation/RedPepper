@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_vector_8cpp" kind="file" language="C++">
+    <compoundname>seadVector.cpp</compoundname>
+    <includes refid="sead_vector_8h" local="no">math/seadVector.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math/seadMathBase.h</label>
+        <link refid="sead_math_base_8h"/>
+      </node>
+      <node id="11">
+        <label>math/seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="sead_math_numbers_8h"/>
+      </node>
+      <node id="6">
+        <label>math/seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>math/seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>math/seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>math/seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadVector.cpp</label>
+        <link refid="sead_vector_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+      <node id="5">
+        <label>nn/types.h</label>
+      </node>
+      <node id="15">
+        <label>stdarg.h</label>
+      </node>
+      <node id="17">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_vector_8h" kindref="compound">math/seadVector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="5" refid="structsead_1_1_vector2_1a6f109a157e6855b35f32915ae1a66f50" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector2_1aadb08cc866abf0dde21246367307aef9" kindref="member">Vector2&lt;f32&gt;::zero</ref>(0.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="8" refid="structsead_1_1_vector2_1ad13ebd2385218fdf3ef242605b51fd43" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector2_1ab7c676a400da7f16d2de1dd788389967" kindref="member">Vector2&lt;f32&gt;::ex</ref>(1.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="11" refid="structsead_1_1_vector2_1adac5708f276274b7899f6647c9b2fa92" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector2_1a056004d7544b22d5c947716d4d585ba7" kindref="member">Vector2&lt;f32&gt;::ey</ref>(0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="14" refid="structsead_1_1_vector2_1a02d4aecab31332e9bd0ea9d525a9ecda" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector2_1a6d96012c59e638a0a56bed02d6bf924e" kindref="member">Vector2&lt;f32&gt;::ones</ref>(1.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="17" refid="structsead_1_1_vector3_1ab0d3763ce36af454f756321d61b0d7a6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector3_1a61d8ebd73ea92791ee76426f991d4dc6" kindref="member">Vector3&lt;f32&gt;::zero</ref>(0.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="20" refid="structsead_1_1_vector3_1ad7ae6c7a7a5c12474dfa7a7c9b15af83" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector3_1aa7246a74cf3931e6b9d07252bf3e5b76" kindref="member">Vector3&lt;f32&gt;::ex</ref>(1.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="23" refid="structsead_1_1_vector3_1a19686a128a6ade1bdcbfd35383219dbf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector3_1a88409c278c1d765f1958ec2d1083da2b" kindref="member">Vector3&lt;f32&gt;::ey</ref>(0.0f,<sp/>1.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="26" refid="structsead_1_1_vector3_1a186805bacbb88c70cf9fae651866eac5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector3_1a085e7585589cd4fe2133d6fbe4827402" kindref="member">Vector3&lt;f32&gt;::ez</ref>(0.0f,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="29" refid="structsead_1_1_vector3_1a4be00e7753508fdd06d24319400131ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector3_1ae0da1bd2c82dfa8a12f7ef5e7f086491" kindref="member">Vector3&lt;f32&gt;::ones</ref>(1.0f,<sp/>1.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="32" refid="structsead_1_1_vector4_1a88a02a457bd527eae7aeaf078d07955c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector4_1ae24042e800558c887f05125040d8f64b" kindref="member">Vector4&lt;f32&gt;::zero</ref>(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="35" refid="structsead_1_1_vector4_1a64c399192bdfe6786c72573436859f7a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector4_1a63408c16329944eac5c3433537fced8a" kindref="member">Vector4&lt;f32&gt;::ex</ref>(1.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="38" refid="structsead_1_1_vector4_1af54937b84cf941e44b9612fd83843b7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector4_1acad090f4c59dbcbec970847be9ae6b12" kindref="member">Vector4&lt;f32&gt;::ey</ref>(0.0f,<sp/>1.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="41" refid="structsead_1_1_vector4_1acd8673cf2123bb4286e62fc62b66bc0e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector4_1a30466d2e82a50c0bf2113f065477c06c" kindref="member">Vector4&lt;f32&gt;::ez</ref>(0.0f,<sp/>0.0f,<sp/>1.0f,<sp/>0.0f);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="44" refid="structsead_1_1_vector4_1a65863543a0b59aa19e547d573a8326aa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector4_1ae8805170dc7aa60af934784632f46bba" kindref="member">Vector4&lt;f32&gt;::ew</ref>(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="47" refid="structsead_1_1_vector4_1a75c4e0f60fefc8c967d0551709cf84cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector4" kindref="compound">Vector4&lt;f32&gt;</ref><sp/><ref refid="structsead_1_1_vector4_1a068f75810543d4b8cfcf41e171f4b0ee" kindref="member">Vector4&lt;f32&gt;::ones</ref>(1.0f,<sp/>1.0f,<sp/>1.0f,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/modules/src/math/seadVector.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fs___file_system_base_8h" kind="file" language="C++">
+    <compoundname>fs_FileSystemBase.h</compoundname>
+    <includedby refid="fs___api_8cpp" local="no">fs_Api.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>fs_FileSystemBase.h</label>
+        <link refid="fs___file_system_base_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fs_Api.cpp</label>
+        <link refid="fs___api_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnn_1_1fs_1_1detail_1_1_file_system_base" prot="public">nn::fs::detail::FileSystemBase</innerclass>
+    <innernamespace refid="namespacenn">nn</innernamespace>
+    <innernamespace refid="namespacenn_1_1fs">nn::fs</innernamespace>
+    <innernamespace refid="namespacenn_1_1fs_1_1detail">nn::fs::detail</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenn" kindref="compound">nn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">fs<sp/>{</highlight></codeline>
+<codeline lineno="5" refid="namespacenn_1_1fs_1_1detail" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">detail<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classnn_1_1fs_1_1detail_1_1_file_system_base" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnn_1_1fs_1_1detail_1_1_file_system_base" kindref="compound">FileSystemBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1ac5a4b91bee3f6a941bbdea53b0d9f60c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1ac5a4b91bee3f6a941bbdea53b0d9f60c" kindref="member">_0</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1ac3f99050402d9162c3ca0701f42c0f6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1ac3f99050402d9162c3ca0701f42c0f6d" kindref="member">FileSystemBase</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="12" refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1a06e0d341cb6d5524ced3ad99de8f0aa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1a06e0d341cb6d5524ced3ad99de8f0aa5" kindref="member">FileSystemBase</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>a)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classnn_1_1fs_1_1detail_1_1_file_system_base_1ac5a4b91bee3f6a941bbdea53b0d9f60c" kindref="member">_0</ref>(a)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacenn_1_1fs_1_1detail_1ac23eba05325ac16817698f6038d82d8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenn_1_1fs_1_1detail_1ac23eba05325ac16817698f6038d82d8e" kindref="member">RegisterGlobalFileSystemBase</ref>(<ref refid="classnn_1_1fs_1_1detail_1_1_file_system_base" kindref="compound">FileSystemBase</ref>&amp;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>detail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>fs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nn</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/include/nn/fs/detail/fs_FileSystemBase.h"/>
+  </compounddef>
+</doxygen>

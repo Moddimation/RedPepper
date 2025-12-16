@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_i_use_executor" kind="class" language="C++" prot="public">
+    <compoundname>al::IUseExecutor</compoundname>
+    <derivedcompoundref refid="classal_1_1_clipping_director" prot="public" virt="non-virtual">al::ClippingDirector</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_collision_director" prot="public" virt="non-virtual">al::CollisionDirector</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_fog_director" prot="public" virt="non-virtual">al::FogDirector</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_hit_sensor_director" prot="public" virt="non-virtual">al::HitSensorDirector</derivedcompoundref>
+    <includes refid="al_execute_director_8h" local="no">alExecuteDirector.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_i_use_executor_1a7dfb7a8f75823e159a78f557cc92c5fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::IUseExecutor::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>al::IUseExecutor::execute</qualifiedname>
+        <reimplementedby refid="classal_1_1_clipping_director_1ac32279e53a8e01953fb3a07c96218c5c">execute</reimplementedby>
+        <reimplementedby refid="classal_1_1_collision_director_1a23449b2df44356619352b0df405de25a">execute</reimplementedby>
+        <reimplementedby refid="classal_1_1_fog_director_1ac84e4e52f99783f371f70f54f9ee4d21">execute</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Execute/alExecuteDirector.h" line="15" column="22" bodyfile="lib/al/include/Execute/alExecuteDirector.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_i_use_executor_1af19b8ae80aa93e8f60fbcedede4f2828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::IUseExecutor::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>al::IUseExecutor::draw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Execute/alExecuteDirector.h" line="19" column="22" bodyfile="lib/al/include/Execute/alExecuteDirector.h" bodystart="19" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>al::ClippingDirector</label>
+        <link refid="classal_1_1_clipping_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::CollisionDirector</label>
+        <link refid="classal_1_1_collision_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::FogDirector</label>
+        <link refid="classal_1_1_fog_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::HitSensorDirector</label>
+        <link refid="classal_1_1_hit_sensor_director"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::IUseExecutor</label>
+        <link refid="classal_1_1_i_use_executor"/>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/Execute/alExecuteDirector.h" line="12" column="1" bodyfile="lib/al/include/Execute/alExecuteDirector.h" bodystart="13" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classal_1_1_i_use_executor_1af19b8ae80aa93e8f60fbcedede4f2828" prot="public" virt="virtual"><scope>al::IUseExecutor</scope><name>draw</name></member>
+      <member refid="classal_1_1_i_use_executor_1a7dfb7a8f75823e159a78f557cc92c5fa" prot="public" virt="virtual"><scope>al::IUseExecutor</scope><name>execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

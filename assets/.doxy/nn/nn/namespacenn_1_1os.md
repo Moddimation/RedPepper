@@ -29,11 +29,11 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**EventBase**](classnn_1_1os_1_1EventBase.md) <br> |
-| struct | [**HandleObject**](structnn_1_1os_1_1HandleObject.md) <br> |
-| class | [**InterruptEvent**](classnn_1_1os_1_1InterruptEvent.md) <br> |
-| struct | [**KConfigMemory**](structnn_1_1os_1_1KConfigMemory.md) <br> |
-| class | [**WaitObject**](classnn_1_1os_1_1WaitObject.md) <br> |
+| class | [**EventBase**](classnn_1_1os_1_1_event_base.md) <br> |
+| struct | [**HandleObject**](structnn_1_1os_1_1_handle_object.md) <br> |
+| class | [**InterruptEvent**](classnn_1_1os_1_1_interrupt_event.md) <br> |
+| struct | [**KConfigMemory**](structnn_1_1os_1_1_k_config_memory.md) <br> |
+| class | [**WaitObject**](classnn_1_1os_1_1_wait_object.md) <br> |
 
 
 ## Public Types
@@ -66,8 +66,8 @@
 
 | Type | Name |
 | ---: | :--- |
-|  u32 | [**GetAppMemorySize**](#function-getappmemorysize) () <br> |
-|  const [**KConfigMemory**](structnn_1_1os_1_1KConfigMemory.md) \* | [**GetKConfigMemory**](#function-getkconfigmemory) () <br> |
+|  [**u32**](types_8h.md#typedef-u32) | [**GetAppMemorySize**](#function-getappmemorysize) () <br> |
+|  const [**KConfigMemory**](structnn_1_1os_1_1_k_config_memory.md) \* | [**GetKConfigMemory**](#function-getkconfigmemory) () <br> |
 
 
 

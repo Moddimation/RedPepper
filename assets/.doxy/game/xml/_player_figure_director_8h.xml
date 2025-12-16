@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_figure_director_8h" kind="file" language="C++">
+    <compoundname>PlayerFigureDirector.h</compoundname>
+    <includes refid="_player_audio_8h" local="yes">Player/PlayerAudio.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Player/PlayerAudio.h</label>
+        <link refid="_player_audio_8h"/>
+      </node>
+      <node id="1">
+        <label>PlayerFigureDirector.h</label>
+        <link refid="_player_figure_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_player_figure_loss" prot="public">PlayerFigureLoss</innerclass>
+    <innerclass refid="class_player_figure_transformer" prot="public">PlayerFigureTransformer</innerclass>
+    <innerclass refid="class_player_figure_director" prot="public">PlayerFigureDirector</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>EPlayerFigure</name>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da22b8d10212e452b72c9e95d713086549" prot="public">
+          <name>EPlayerFigure_Normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da970ac8b004326966f72244656e9c8d16" prot="public">
+          <name>EPlayerFigure_Mini</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da94dab00d7f1132cde9122ca518e5cd1a" prot="public">
+          <name>EPlayerFigure_Fire</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181dabf8f14e80f82bcc2f4cda57c2e8ba0ed" prot="public">
+          <name>EPlayerFigure_RaccoonDog</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181dace57f322df326548f1e101c1827b778b" prot="public">
+          <name>EPlayerFigure_Boomerang</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da24884e3478df2a211f70da02b958f176" prot="public">
+          <name>EPlayerFigure_RaccoonDogSpecial</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da1241109e0c1578ee6ed10841a36cb9af" prot="public">
+          <name>EPlayerFigure_RaccoonDogWhite</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerFigureDirector.h" line="5" column="1" bodyfile="Game/include/Player/PlayerFigureDirector.h" bodystart="6" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_audio_8h" kindref="compound">Player/PlayerAudio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da22b8d10212e452b72c9e95d713086549" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da22b8d10212e452b72c9e95d713086549" kindref="member">EPlayerFigure_Normal</ref>,</highlight></codeline>
+<codeline lineno="8" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da970ac8b004326966f72244656e9c8d16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da970ac8b004326966f72244656e9c8d16" kindref="member">EPlayerFigure_Mini</ref>,</highlight></codeline>
+<codeline lineno="9" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da94dab00d7f1132cde9122ca518e5cd1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da94dab00d7f1132cde9122ca518e5cd1a" kindref="member">EPlayerFigure_Fire</ref>,</highlight></codeline>
+<codeline lineno="10" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181dabf8f14e80f82bcc2f4cda57c2e8ba0ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181dabf8f14e80f82bcc2f4cda57c2e8ba0ed" kindref="member">EPlayerFigure_RaccoonDog</ref>,</highlight></codeline>
+<codeline lineno="11" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181dace57f322df326548f1e101c1827b778b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181dace57f322df326548f1e101c1827b778b" kindref="member">EPlayerFigure_Boomerang</ref>,</highlight></codeline>
+<codeline lineno="12" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da24884e3478df2a211f70da02b958f176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da24884e3478df2a211f70da02b958f176" kindref="member">EPlayerFigure_RaccoonDogSpecial</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da1241109e0c1578ee6ed10841a36cb9af" kindref="member">EPlayerFigure_RaccoonDogWhite</ref></highlight></codeline>
+<codeline lineno="14" refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181da1241109e0c1578ee6ed10841a36cb9af" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>has<sp/>table<sp/>of<sp/>which<sp/>Figure<sp/>to<sp/>switch<sp/>to<sp/>when<sp/>damagaed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_player_figure_loss" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_figure_loss" kindref="compound">PlayerFigureLoss</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_player_figure_loss_1a58b005e9ed5c073684205ab1935f5b6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_figure_loss_1a58b005e9ed5c073684205ab1935f5b6a" kindref="member">update</ref>(<sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_player_figure_transformer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_figure_transformer" kindref="compound">PlayerFigureTransformer</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_player_figure_director" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_figure_director" kindref="compound">PlayerFigureDirector</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30" refid="class_player_figure_director_1ae2a6de89342c0831de205ce1dbc02379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref><sp/><sp/><sp/><sp/><ref refid="class_player_figure_director_1ae2a6de89342c0831de205ce1dbc02379" kindref="member">mLastFigure</ref>;</highlight></codeline>
+<codeline lineno="31" refid="class_player_figure_director_1a7fc0a7712a78d6be4137988a18e46753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref><sp/><sp/><sp/><sp/><ref refid="class_player_figure_director_1a7fc0a7712a78d6be4137988a18e46753" kindref="member">mFigure</ref>;</highlight></codeline>
+<codeline lineno="32" refid="class_player_figure_director_1a07effd3f49015d585b71f1dd65877c69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_figure_director_1a07effd3f49015d585b71f1dd65877c69" kindref="member">_8</ref>;</highlight></codeline>
+<codeline lineno="33" refid="class_player_figure_director_1ab45cc8d352d3330ae35fb5e0f8769e2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_figure_director_1ab45cc8d352d3330ae35fb5e0f8769e2f" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="34" refid="class_player_figure_director_1ab8b76508b61c7646874ce2e3b74324a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_figure_director_1ab8b76508b61c7646874ce2e3b74324a3" kindref="member">mHasFigureChanged</ref>;</highlight></codeline>
+<codeline lineno="35" refid="class_player_figure_director_1a27bcbb2bf117cded34a1d4175b9dd70a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_figure_director_1a27bcbb2bf117cded34a1d4175b9dd70a" kindref="member">_11</ref>;</highlight></codeline>
+<codeline lineno="36" refid="class_player_figure_director_1ace8cf3505cf074925a1ac498be3f79de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_use_player_audio" kindref="compound">IUsePlayerAudio</ref>*<sp/><ref refid="class_player_figure_director_1ace8cf3505cf074925a1ac498be3f79de" kindref="member">mAudioUser</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39" refid="class_player_figure_director_1a992ced33633a7752ed7dd59ed80c0e6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_figure_director_1a992ced33633a7752ed7dd59ed80c0e6b" kindref="member">change</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="40" refid="class_player_figure_director_1a3dd8a30b0f4afd66b61c2054612d0f44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_figure_director_1a3dd8a30b0f4afd66b61c2054612d0f44" kindref="member">lose</ref>();</highlight></codeline>
+<codeline lineno="41" refid="class_player_figure_director_1a5f0dafb2ce655a4fba4e28266bcb377c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_figure_director_1a5f0dafb2ce655a4fba4e28266bcb377c" kindref="member">set</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref>&amp;<sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_player_figure_director_1adbc5461a6f4d0791803aa3cb2f0dbeb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_player_figure_director_8h_1a34c1d4359e0989dda6a6dabc8542181d" kindref="member">EPlayerFigure</ref><sp/><ref refid="class_player_figure_director_1adbc5461a6f4d0791803aa3cb2f0dbeb5" kindref="member">getFigure</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="44"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_player_figure_director_1a7fc0a7712a78d6be4137988a18e46753" kindref="member">mFigure</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/Player/PlayerFigureDirector.h"/>
+  </compounddef>
+</doxygen>

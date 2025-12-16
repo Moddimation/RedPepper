@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_controller_util_8h" kind="file" language="C++">
+    <compoundname>alControllerUtil.h</compoundname>
+    <includes local="no">math/seadVector.h</includes>
+    <includedby refid="al_controller_util_8cpp" local="no">alControllerUtil.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alControllerUtil.h</label>
+        <link refid="al_controller_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alControllerUtil.h</label>
+        <link refid="al_controller_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alControllerUtil.cpp</label>
+        <link refid="al_controller_util_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" prot="public" static="no">
+        <name>_T_BUTTON</name>
+        <param><defname>BUTTON</defname></param>
+        <initializer>        bool isPadTrigger##BUTTON( int port = 0 ); \
+        bool isPadHold##BUTTON( int port = 0 );    \
+        bool isPadRelease##BUTTON( int port = 0 );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Controller/alControllerUtil.h" line="12" column="9" bodyfile="lib/al/include/Controller/alControllerUtil.h" bodystart="12" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1af6765a3ada8e124635011362d0b00a52" kindref="member">isPadTrigger</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask<sp/>);</highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1ad3adf2c515ceb48f8711389a63b99c7b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ad3adf2c515ceb48f8711389a63b99c7b" kindref="member">isPadHold</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">port</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">mask</ref><sp/>);</highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1a2f33a404724a95607630f122e6791e57" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a2f33a404724a95607630f122e6791e57" kindref="member">isPadRelease</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">port</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">mask</ref><sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_T_BUTTON(<sp/>BUTTON<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>isPadTrigger##BUTTON(<sp/>int<sp/>port<sp/>=<sp/>0<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>isPadHold##BUTTON(<sp/>int<sp/>port<sp/>=<sp/>0<sp/>);<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>isPadRelease##BUTTON(<sp/>int<sp/>port<sp/>=<sp/>0<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespaceal_1a7feef9b0fee83967758921e927050dd0" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">A</ref><sp/>);</highlight></codeline>
+<codeline lineno="18" refid="namespaceal_1a42bd7324ea68ee7419da11f72b8631fe" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">B</ref><sp/>);</highlight></codeline>
+<codeline lineno="19" refid="namespaceal_1a44f35130175f2c04c6819de0b06c29b3" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">X</ref><sp/>);</highlight></codeline>
+<codeline lineno="20" refid="namespaceal_1a3cc774d248aa23377524163116cde6ef" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Y</ref><sp/>);</highlight></codeline>
+<codeline lineno="21" refid="namespaceal_1afff3aa5bb1f0f987b7fddcb3e4be6207" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Home</ref><sp/>);</highlight></codeline>
+<codeline lineno="22" refid="namespaceal_1a45f333dc2fde3057b4aa1b6fd1a81f5b" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Minus</ref><sp/>);</highlight></codeline>
+<codeline lineno="23" refid="namespaceal_1afc2cc22ad7f00ed2f8489b5543bada77" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Start</ref><sp/>);</highlight></codeline>
+<codeline lineno="24" refid="namespaceal_1a59d185e383e75763683f2e24cf6b1ba4" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Select</ref><sp/>);</highlight></codeline>
+<codeline lineno="25" refid="namespaceal_1a6f4fc4d495296644db1fbdce739842aa" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">L</ref><sp/>);</highlight></codeline>
+<codeline lineno="26" refid="namespaceal_1a738017f2e05ff13f83a6ff9687c9d6ac" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">R</ref><sp/>);</highlight></codeline>
+<codeline lineno="27" refid="namespaceal_1ac2cc4f697e5b3ceba0c0a78ad09a3245" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Touch</ref><sp/>);</highlight></codeline>
+<codeline lineno="28" refid="namespaceal_1a02fcabdd8b3d9706dc12e9d3202055c2" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Up</ref><sp/>);</highlight></codeline>
+<codeline lineno="29" refid="namespaceal_1a6fb9af863618cbdd6d9f3010d0eeff54" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Down</ref><sp/>);</highlight></codeline>
+<codeline lineno="30" refid="namespaceal_1a85a5b78545b4cafabb78938de62266a9" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Left</ref><sp/>);</highlight></codeline>
+<codeline lineno="31" refid="namespaceal_1aca5bb971719ebce72be7df81949e03f0" refkind="member"><highlight class="normal"><ref refid="al_controller_util_8h_1a859de27e38a21e10797ce48e3a7fc11e" kindref="member">_T_BUTTON</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Right</ref><sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>_T_BUTTON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__CC_ARM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespaceal_1a5692e96bc43a1ac28caf84d892c26e60" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector2f&amp;<sp/><ref refid="namespaceal_1a5692e96bc43a1ac28caf84d892c26e60" kindref="member">getLeftStick</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">port</ref><sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Controller/alControllerUtil.h"/>
+  </compounddef>
+</doxygen>

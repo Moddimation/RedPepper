@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_effect_obj_8cpp" kind="file" language="C++">
+    <compoundname>alEffectObj.cpp</compoundname>
+    <includes refid="al_file_function_8h" local="no">File/alFileFunction.h</includes>
+    <includes refid="al_actor_init_util_8h" local="no">LiveActor/alActorInitUtil.h</includes>
+    <includes refid="al_actor_pose_keeper_8h" local="no">LiveActor/alActorPoseKeeper.h</includes>
+    <includes refid="al_live_actor_function_8h" local="no">LiveActor/alLiveActorFunction.h</includes>
+    <includes refid="al_effect_obj_8h" local="no">Npc/alEffectObj.h</includes>
+    <includes refid="al_placement_function_8h" local="no">Placement/alPlacementFunction.h</includes>
+    <includes refid="al_se_function_8h" local="no">Se/alSeFunction.h</includes>
+    <includes refid="al_string_util_8h" local="no">Util/alStringUtil.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="16">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>File/alFileFunction.h</label>
+        <link refid="al_file_function_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>LiveActor/alActorInitUtil.h</label>
+        <link refid="al_actor_init_util_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>LiveActor/alActorPoseKeeper.h</label>
+        <link refid="al_actor_pose_keeper_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="11">
+        <label>LiveActor/alLiveActorFunction.h</label>
+        <link refid="al_live_actor_function_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>MapObj/alMapObjActor.h</label>
+        <link refid="al_map_obj_actor_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="12">
+        <label>Npc/alEffectObj.h</label>
+        <link refid="al_effect_obj_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Placement/alPlacementFunction.h</label>
+        <link refid="al_placement_function_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Se/alSeFunction.h</label>
+        <link refid="al_se_function_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="22">
+        <label>Util/alStringUtil.h</label>
+        <link refid="al_string_util_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alEffectObj.cpp</label>
+        <link refid="al_effect_obj_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="9">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="10">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="3">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_file_function_8h" kindref="compound">File/alFileFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_init_util_8h" kindref="compound">LiveActor/alActorInitUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_pose_keeper_8h" kindref="compound">LiveActor/alActorPoseKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_function_8h" kindref="compound">LiveActor/alLiveActorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_effect_obj_8h" kindref="compound">Npc/alEffectObj.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_placement_function_8h" kindref="compound">Placement/alPlacementFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_se_function_8h" kindref="compound">Se/alSeFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_string_util_8h" kindref="compound">Util/alStringUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>something<sp/>with<sp/>mBaseMtx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_effect_obj_1ad05358dc8b81b003405bdfc570f2546b" refkind="member"><highlight class="normal"><ref refid="classal_1_1_effect_obj_1ad05358dc8b81b003405bdfc570f2546b" kindref="member">EffectObj::EffectObj</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>name<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_map_obj_actor" kindref="compound">MapObjActor</ref>(<sp/>name<sp/>),<sp/>mBaseMtx(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Matrix34f</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">ident</ref><sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_effect_obj_1ac04f3f4e547a696b6ceba94df45d3758" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_effect_obj_1ac04f3f4e547a696b6ceba94df45d3758" kindref="member">EffectObj::init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a765852b463b8d8081657dddc9a508922" kindref="member">tryGetObjectName</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_effect_obj_function_1a748992e675b397dac30839e53535c44c" kindref="member">EffectObjFunction::initActorEffectObj</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_effect_obj_1a8c4142940a6bb28eb69e3ed082b05718" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_effect_obj_1a8c4142940a6bb28eb69e3ed082b05718" kindref="member">EffectObj::makeActorAppeared</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_1a21647e167d28b0db31785628cbded72c" kindref="member">LiveActor::makeActorAppeared</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aac246e885ba7c8f16d592fe056daeee3" kindref="member">makeMtxSRT</ref>(<sp/>&amp;<ref refid="classal_1_1_effect_obj_1ad1a1ab9f190173558855d1868ec925cd" kindref="member">mBaseMtx</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ac492a8687d8b1bc906aa490bef0171de" kindref="member">emitEffect</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Wait&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classal_1_1_effect_obj_1a1f090a87e9f0a9282f5fc281a6d801f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_effect_obj_1a1f090a87e9f0a9282f5fc281a6d801f0" kindref="member">EffectObj::kill</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a36cf38203a59099af5c9a671d2b7b464" kindref="member">tryEmitEffect</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Wait&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor_1ac17a125c51d1a66778be4aa8f7c04556" kindref="member">LiveActor::kill</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classal_1_1_effect_obj_1a67437d3e3da27d8b0c61d7228a556eec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f*<sp/><ref refid="classal_1_1_effect_obj_1a67437d3e3da27d8b0c61d7228a556eec" kindref="member">EffectObj::getBaseMtx</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_effect_obj_1ad1a1ab9f190173558855d1868ec925cd" kindref="member">mBaseMtx</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classal_1_1_effect_obj_1a56622840751d06b8bc8cefe027c2a5cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_effect_obj_1a56622840751d06b8bc8cefe027c2a5cf" kindref="member">EffectObj::control</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aac246e885ba7c8f16d592fe056daeee3" kindref="member">makeMtxSRT</ref>(<sp/>&amp;<ref refid="classal_1_1_effect_obj_1ad1a1ab9f190173558855d1868ec925cd" kindref="member">mBaseMtx</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aef1e7f9ea891bcbac5585e9e5c6e1a72" kindref="member">tryStartSe</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Wait&quot;</highlight><highlight class="normal">,<sp/>2<sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classal_1_1_effect_obj_function_1a748992e675b397dac30839e53535c44c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_effect_obj_function_1a748992e675b397dac30839e53535c44c" kindref="member">EffectObjFunction::initActorEffectObj</ref>(<sp/><ref refid="classal_1_1_effect_obj" kindref="compound">EffectObj</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1ac93162f83b9842d2fe8d0a439a2c5594" kindref="member">isExistArchive</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">StringTmp&lt;128&gt;</ref>(<sp/></highlight><highlight class="stringliteral">&quot;ObjectData/%s.szs&quot;</highlight><highlight class="normal">,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>)<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a02e2cad94750340ba74c233546820a8e" kindref="member">initActor</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a006520e6dfa0fec01702fc626e92dc7b" kindref="member">initActorWithArchiveName</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="stringliteral">&quot;EffectObj&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ac79e84746185192e4d9aa115246c2dca" kindref="member">initActorEffectKeeper</ref>(<sp/>actor,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aac246e885ba7c8f16d592fe056daeee3" kindref="member">makeMtxSRT</ref>(<sp/>&amp;actor-&gt;<ref refid="classal_1_1_effect_obj_1ad1a1ab9f190173558855d1868ec925cd" kindref="member">mBaseMtx</ref>,<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a68a98e7eb3fc4e4c5fd7bd0ae7102ab4" kindref="member">trySyncStageSwitchAppear</ref>(<sp/>actor<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Npc/alEffectObj.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_model_keeper" kind="class" language="C++" prot="public">
+    <compoundname>al::ModelKeeper</compoundname>
+    <includes refid="al_model_keeper_8h" local="no">alModelKeeper.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_model_keeper_1aebc29831bdd2a9f304662b401a55043e" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_model_ctr" kindref="compound">alModelCtr</ref> *</type>
+        <definition>alModelCtr* al::ModelKeeper::mModel</definition>
+        <argsstring></argsstring>
+        <name>mModel</name>
+        <qualifiedname>al::ModelKeeper::mModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Model/alModelKeeper.h" line="13" column="20" bodyfile="lib/al/include/Model/alModelKeeper.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classal_1_1_model_keeper_1a47de070f80dcc01b7a2a8357f42b9375" compoundref="al_model_keeper_8h" startline="16" endline="19">getModel</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_model_keeper_1a47de070f80dcc01b7a2a8357f42b9375" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_model_ctr" kindref="compound">alModelCtr</ref> *</type>
+        <definition>alModelCtr * al::ModelKeeper::getModel</definition>
+        <argsstring>() const</argsstring>
+        <name>getModel</name>
+        <qualifiedname>al::ModelKeeper::getModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Model/alModelKeeper.h" line="16" column="20" bodyfile="lib/al/include/Model/alModelKeeper.h" bodystart="16" bodyend="19"/>
+        <references refid="classal_1_1_model_keeper_1aebc29831bdd2a9f304662b401a55043e" compoundref="al_model_keeper_8h" startline="13">mModel</references>
+        <referencedby refid="namespaceal_1a1c7667b0bfb5ff035d2b7f403db72a7b" compoundref="al_live_actor_function_8cpp" startline="126" endline="135">al::tryStartMclAnimIfExist</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_model_keeper_1aea06d7cd4623a4ca810dc07f35236fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::ModelKeeper::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <qualifiedname>al::ModelKeeper::hide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Model/alModelKeeper.h" line="21" column="14"/>
+        <referencedby refid="namespaceal_1ad6344b90ec09ee7f7cbd56fe795c36fb" compoundref="al_live_actor_function_8cpp" startline="110" endline="121">al::hideModel</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>al::AnimInfoTable</label>
+        <link refid="classal_1_1_anim_info_table"/>
+      </node>
+      <node id="4">
+        <label>al::AnimPlayerSimple</label>
+        <link refid="classal_1_1_anim_player_simple"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mAnimInfoTable</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::AnimPlayerSkl</label>
+        <link refid="classal_1_1_anim_player_skl"/>
+      </node>
+      <node id="1">
+        <label>al::ModelKeeper</label>
+        <link refid="classal_1_1_model_keeper"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alModelCtr</label>
+        <link refid="classal_model_ctr"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mSklAnimPlayer</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mMclAnimPlayer</edgelabel>
+          <edgelabel>mMtpAnimPlayer</edgelabel>
+          <edgelabel>mMtsAnimPlayer</edgelabel>
+          <edgelabel>mVisAnimPlayer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Model/alModelKeeper.h" line="10" column="1" bodyfile="lib/al/include/Model/alModelKeeper.h" bodystart="11" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classal_1_1_model_keeper_1a47de070f80dcc01b7a2a8357f42b9375" prot="public" virt="non-virtual"><scope>al::ModelKeeper</scope><name>getModel</name></member>
+      <member refid="classal_1_1_model_keeper_1aea06d7cd4623a4ca810dc07f35236fa2" prot="public" virt="non-virtual"><scope>al::ModelKeeper</scope><name>hide</name></member>
+      <member refid="classal_1_1_model_keeper_1aebc29831bdd2a9f304662b401a55043e" prot="private" virt="non-virtual"><scope>al::ModelKeeper</scope><name>mModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -124,6 +124,10 @@
 <td style="text-align: left;"><a href="#typedef-f64"><strong>f64</strong></a>  <br></td>
 </tr>
 <tr>
+<td style="text-align: right;">typedef <a href="./#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#typedef-intptr_t"><strong>intptr_t</strong></a>  <br></td>
+</tr>
+<tr>
 <td style="text-align: right;">typedef signed short</td>
 <td style="text-align: left;"><a href="#typedef-s16"><strong>s16</strong></a>  <br></td>
 </tr>
@@ -155,6 +159,10 @@
 <td style="text-align: right;">typedef unsigned char</td>
 <td style="text-align: left;"><a href="#typedef-u8"><strong>u8</strong></a>  <br></td>
 </tr>
+<tr>
+<td style="text-align: right;">typedef <a href="./#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#typedef-uintptr_t"><strong>uintptr_t</strong></a>  <br></td>
+</tr>
 </tbody>
 </table>
 <h2 id="macros">Macros</h2>
@@ -172,11 +180,11 @@
 </tr>
 <tr>
 <td style="text-align: right;">define</td>
-<td style="text-align: left;"><a href="./#define-split"><strong>split</strong></a> (S) <code>\_\_attribute\_\_( ( section( "i." #S ) ) ) S</code><br></td>
+<td style="text-align: left;"><a href="./#define-nullptr"><strong>nullptr</strong></a>  <code>[**NULL**](types_8h.md#define-null)</code><br></td>
 </tr>
 <tr>
 <td style="text-align: right;">define</td>
-<td style="text-align: left;"><a href="./#define-static_assert"><strong>static_assert</strong></a> (COND, MSG) <code>typedef int \_\_static\_assert\_balls[ ( COND ) ? 1 : -1 ]</code><br></td>
+<td style="text-align: left;"><a href="./#define-split"><strong>split</strong></a> (S) <code>\_\_attribute\_\_( ( section( "i." #S ) ) ) S</code><br></td>
 </tr>
 </tbody>
 </table>
@@ -188,6 +196,11 @@
 
 <h3 id="typedef-f64">typedef f64</h3>
 <pre><code class="language-C++">typedef double f64;
+</code></pre>
+<hr>
+
+<h3 id="typedef-intptr_t">typedef intptr_t</h3>
+<pre><code class="language-C++">typedef s32 intptr_t;
 </code></pre>
 <hr>
 
@@ -230,9 +243,19 @@
 <pre><code class="language-C++">typedef unsigned char u8;
 </code></pre>
 <hr>
+
+<h3 id="typedef-uintptr_t">typedef uintptr_t</h3>
+<pre><code class="language-C++">typedef u32 uintptr_t;
+</code></pre>
+<hr>
 <h2 id="macro-definition-documentation">Macro Definition Documentation</h2>
 <h3 id="define-null">define NULL</h3>
 <pre><code class="language-C++">#define NULL `(void*)0`
+</code></pre>
+<hr>
+
+<h3 id="define-nullptr">define nullptr</h3>
+<pre><code class="language-C++">#define nullptr `NULL`
 </code></pre>
 <hr>
 
@@ -240,14 +263,6 @@
 <pre><code class="language-C++">#define split (
     S
 ) `__attribute__( ( section( &quot;i.&quot; #S ) ) ) S`
-</code></pre>
-<hr>
-
-<h3 id="define-static_assert">define static_assert</h3>
-<pre><code class="language-C++">#define static_assert (
-    COND,
-    MSG
-) `typedef int __static_assert_balls[ ( COND ) ? 1 : -1 ]`
 </code></pre>
 <hr>
 

@@ -1,6 +1,6 @@
 
 
-# Dir lib/sead/addins/libms/include/LMS
+# Dir LMS
 
 
 
@@ -21,9 +21,9 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**LMS\_Impl.h**](LMS__Impl_8h.md) <br> |
-| file | [**LMS\_Message.h**](LMS__Message_8h.md) <br> |
-| file | [**LMS\_Types.h**](LMS__Types_8h.md) <br> |
+| file | [**LMS\_Impl.h**](_l_m_s___impl_8h.md) <br> |
+| file | [**LMS\_Message.h**](_l_m_s___message_8h.md) <br> |
+| file | [**LMS\_Types.h**](_l_m_s___types_8h.md) <br> |
 
 
 

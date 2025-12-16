@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_stage_switch_accesser_8cpp" kind="file" language="C++">
+    <compoundname>alStageSwitchAccesser.cpp</compoundname>
+    <includes refid="al_stage_switch_accesser_8h" local="no">Stage/alStageSwitchAccesser.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stage/alStageSwitchAccesser.h</label>
+        <link refid="al_stage_switch_accesser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Stage/alStageSwitchType.h</label>
+        <link refid="al_stage_switch_type_8h"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alStageSwitchAccesser.cpp</label>
+        <link refid="al_stage_switch_accesser_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_stage_switch_accesser_8h" kindref="compound">Stage/alStageSwitchAccesser.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classal_1_1_stage_switch_accesser_1a7425a0b0b09ed7fb661a8ba7555ee86c" refkind="member"><highlight class="normal"><ref refid="classal_1_1_stage_switch_accesser_1a7425a0b0b09ed7fb661a8ba7555ee86c" kindref="member">StageSwitchAccesser::StageSwitchAccesser</ref>()<sp/>:<sp/>mId(<sp/>-1<sp/>),<sp/>mType(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classal_1_1_stage_switch_accesser_1a1d4409b8dd411a57bc0753dc3594e4f4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_accesser_1a1d4409b8dd411a57bc0753dc3594e4f4" kindref="member">StageSwitchAccesser::initWithPlacementInfo</ref>(<sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228" kindref="member">StageSwitchType</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type1</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228" kindref="member">StageSwitchType</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type2</ref><sp/>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type1Name</ref><sp/>=<sp/><ref refid="namespaceal_1a9f141d419013afb8d733451947fe7046" kindref="member">getStageSwitchName</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type1</ref><sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_stage_switch_accesser_1a7e65cbf19ad96770a69f3034d20af0b2" kindref="member">mType</ref><sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<ref refid="classal_1_1_functor_v0_m" kindref="compound">type2</ref><sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type2</ref><sp/>=<sp/>(<ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228" kindref="member">StageSwitchType</ref>)<ref refid="classal_1_1_stage_switch_accesser_1a7e65cbf19ad96770a69f3034d20af0b2" kindref="member">mType</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_accesser_1a247647d19a73aae98d553b831a57bdd7" kindref="member">mId</ref><sp/><sp/><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_accesser_1a7e65cbf19ad96770a69f3034d20af0b2" kindref="member">mType</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type2</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>.tryGetIntByKey(<sp/>&amp;<ref refid="classal_1_1_stage_switch_accesser_1a247647d19a73aae98d553b831a57bdd7" kindref="member">mId</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">type1Name</ref><sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_accesser_1aa6af18e179fdf05628c2175681851fd8" kindref="member">FUN_0024e734</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_stage_switch_accesser_1a3a79faa833b682a07941b0c2527ba347" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_accesser_1a3a79faa833b682a07941b0c2527ba347" kindref="member">StageSwitchAccesser::isTypeKillDeadOn</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="22"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_accesser_1a7e65cbf19ad96770a69f3034d20af0b2" kindref="member">mType</ref><sp/>==<sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228ab77c9f0292b0016067380edfd3227885" kindref="member">StageSwitchType_Kill</ref><sp/>||<sp/><ref refid="classal_1_1_stage_switch_accesser_1a7e65cbf19ad96770a69f3034d20af0b2" kindref="member">mType</ref><sp/>==<sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a1314fb5c5fc01a8ce5476cc8861d41a3" kindref="member">StageSwitchType_DeadOn</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_stage_switch_accesser_1aa6af18e179fdf05628c2175681851fd8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_accesser_1aa6af18e179fdf05628c2175681851fd8" kindref="member">StageSwitchAccesser::FUN_0024e734</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="27"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_stage_switch_accesser_1a247647d19a73aae98d553b831a57bdd7" kindref="member">mId</ref><sp/>&gt;&gt;<sp/>0x1f<sp/>)<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Stage/alStageSwitchAccesser.cpp"/>
+  </compounddef>
+</doxygen>

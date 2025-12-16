@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_mem_block_8h" kind="file" language="C++">
+    <compoundname>seadMemBlock.h</compoundname>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="sead_list_impl_8h" local="no">container/seadListImpl.h</includes>
+    <includes refid="sead_offset_list_8h" local="no">container/seadOffsetList.h</includes>
+    <includedby refid="sead_exp_heap_8h" local="no">seadExpHeap.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>container/seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>container/seadOffsetList.h</label>
+        <link refid="sead_offset_list_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadMemBlock.h</label>
+        <link refid="sead_mem_block_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>prim/seadPtrUtil.h</label>
+        <link refid="sead_ptr_util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+      <node id="7">
+        <label>stdarg.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>seadExpHeap.h</label>
+        <link refid="sead_exp_heap_8h"/>
+      </node>
+      <node id="1">
+        <label>seadMemBlock.h</label>
+        <link refid="sead_mem_block_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_mem_block" prot="public">sead::MemBlock</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_list_impl_8h" kindref="compound">container/seadListImpl.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_offset_list_8h" kindref="compound">container/seadOffsetList.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="classsead_1_1_mem_block" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="classsead_1_1_mem_block_1a19908a23e020fdf548dc5762a32975ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>*<sp/><ref refid="classsead_1_1_mem_block_1a19908a23e020fdf548dc5762a32975ee" kindref="member">FindManageArea</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classsead_1_1_mem_block_1a02660bce87412903917324c8be6afa7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_mem_block_1a02660bce87412903917324c8be6afa7d" kindref="member">getOffset</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>offsetof(<ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref>,<sp/><ref refid="classsead_1_1_mem_block_1a4f14756528de89c8d8e89a139ed30f85" kindref="member">mListNode</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_mem_block_1a4f14756528de89c8d8e89a139ed30f85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref><sp/><ref refid="classsead_1_1_mem_block_1a4f14756528de89c8d8e89a139ed30f85" kindref="member">mListNode</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_mem_block_1afbae3dd50401e974c76c830ae4a98976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/><ref refid="classsead_1_1_mem_block_1afbae3dd50401e974c76c830ae4a98976" kindref="member">mHeapCheckTag</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_mem_block_1a231e92dbe31894280fd00f6dd127eb27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/><ref refid="classsead_1_1_mem_block_1a231e92dbe31894280fd00f6dd127eb27" kindref="member">mOffset</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classsead_1_1_mem_block_1adc025394466a7a6b01d16bb7ad3c1778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_mem_block_1adc025394466a7a6b01d16bb7ad3c1778" kindref="member">mSize</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacesead_1af1d523761c8f1fdbac2b6e5d46dd1d4f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_offset_list" kindref="compound">OffsetList&lt;MemBlock&gt;</ref><sp/><ref refid="namespacesead_1af1d523761c8f1fdbac2b6e5d46dd1d4f" kindref="member">MemBlockList</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/heap/seadMemBlock.h"/>
+  </compounddef>
+</doxygen>

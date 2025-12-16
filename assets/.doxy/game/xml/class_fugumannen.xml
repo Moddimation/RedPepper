@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_fugumannen" kind="class" language="C++" prot="public">
+    <compoundname>Fugumannen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">al::MapObjActor</basecompoundref>
+    <includes refid="_fugumannen_8h" local="no">Fugumannen.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fugumannen_1a724bf736bf47e2276618e2fdd0fc746f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Fugumannen::mRailMoveSpeed</definition>
+        <argsstring></argsstring>
+        <name>mRailMoveSpeed</name>
+        <qualifiedname>Fugumannen::mRailMoveSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="10" column="29" bodyfile="Game/include/Enemy/Fugumannen.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_fugumannen_1ad73ca1712fa55f6616e84b47a31d32c7" compoundref="_fugumannen_8cpp" startline="83" endline="92">exeMove</referencedby>
+        <referencedby refid="class_fugumannen_1a53873753fbd9ff13dfb66e3e54f8fb1f" compoundref="_fugumannen_8cpp" startline="31" endline="48">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_fugumannen_1a02d06d60f3bcb3127148d25a08bb0cac" prot="private" static="no" mutable="no">
+        <type><ref refid="class_enemy_state_blow_down" kindref="compound">EnemyStateBlowDown</ref> *</type>
+        <definition>EnemyStateBlowDown* Fugumannen::mStateBlowDown</definition>
+        <argsstring></argsstring>
+        <name>mStateBlowDown</name>
+        <qualifiedname>Fugumannen::mStateBlowDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="11" column="28" bodyfile="Game/include/Enemy/Fugumannen.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_fugumannen_1ab6da62947ed16e92d6042e6477d70e04" compoundref="_fugumannen_8cpp" startline="106" endline="113">exeBlowDown</referencedby>
+        <referencedby refid="class_fugumannen_1a53873753fbd9ff13dfb66e3e54f8fb1f" compoundref="_fugumannen_8cpp" startline="31" endline="48">init</referencedby>
+        <referencedby refid="class_fugumannen_1aa41b2cb78868d12d2d2c1624b0bcf9b7" compoundref="_fugumannen_8cpp" startline="62" endline="79">receiveMsg</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fugumannen_1ad73ca1712fa55f6616e84b47a31d32c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fugumannen::exeMove</definition>
+        <argsstring>()</argsstring>
+        <name>exeMove</name>
+        <qualifiedname>Fugumannen::exeMove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="14" column="14" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="83" bodyend="92"/>
+        <references refid="_fugumannen_8cpp_1a669131636ac32e04df2878d555e2ab73">FUN_00240e08</references>
+        <references refid="class_fugumannen_1a724bf736bf47e2276618e2fdd0fc746f" compoundref="_fugumannen_8h" startline="10">mRailMoveSpeed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fugumannen_1adaa1cfe5b8592801b3869faf31870730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fugumannen::exeMove2</definition>
+        <argsstring>()</argsstring>
+        <name>exeMove2</name>
+        <qualifiedname>Fugumannen::exeMove2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="15" column="14" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="94" bodyend="102"/>
+        <references refid="_fugumannen_8cpp_1a669131636ac32e04df2878d555e2ab73">FUN_00240e08</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fugumannen_1ab6da62947ed16e92d6042e6477d70e04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fugumannen::exeBlowDown</definition>
+        <argsstring>()</argsstring>
+        <name>exeBlowDown</name>
+        <qualifiedname>Fugumannen::exeBlowDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="16" column="14" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="106" bodyend="113"/>
+        <references refid="_fugumannen_8cpp_1abf63fe6309e3bf94d24784d80998423c">FUN_002cd428</references>
+        <references refid="class_fugumannen_1a02d06d60f3bcb3127148d25a08bb0cac" compoundref="_fugumannen_8h" startline="11">mStateBlowDown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fugumannen_1a53873753fbd9ff13dfb66e3e54f8fb1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Fugumannen::init</definition>
+        <argsstring>(const al::ActorInitInfo &amp;info)</argsstring>
+        <name>init</name>
+        <qualifiedname>Fugumannen::init</qualifiedname>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="19" column="22" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="31" bodyend="48"/>
+        <references refid="_fugumannen_8cpp_1acdef4d7e311ac0644fcf1a74ee4a2cbb">FUN_0027b51c</references>
+        <references refid="_fugumannen_8cpp_1ae3b99263d19f2fdd0cca01988da744f6">FUN_0027ee34</references>
+        <references refid="class_fugumannen_1a724bf736bf47e2276618e2fdd0fc746f" compoundref="_fugumannen_8h" startline="10">mRailMoveSpeed</references>
+        <references refid="class_fugumannen_1a02d06d60f3bcb3127148d25a08bb0cac" compoundref="_fugumannen_8h" startline="11">mStateBlowDown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fugumannen_1ae5aac23af58984ae0e6c08290e739987" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Fugumannen::attackSensor</definition>
+        <argsstring>(al::HitSensor *me, al::HitSensor *other)</argsstring>
+        <name>attackSensor</name>
+        <qualifiedname>Fugumannen::attackSensor</qualifiedname>
+        <param>
+          <type>al::HitSensor *</type>
+          <declname>me</declname>
+        </param>
+        <param>
+          <type>al::HitSensor *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="20" column="22" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="50" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fugumannen_1aa41b2cb78868d12d2d2c1624b0bcf9b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Fugumannen::receiveMsg</definition>
+        <argsstring>(u32 msg, al::HitSensor *other, al::HitSensor *me)</argsstring>
+        <name>receiveMsg</name>
+        <qualifiedname>Fugumannen::receiveMsg</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>al::HitSensor *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>al::HitSensor *</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="21" column="22" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="62" bodyend="79"/>
+        <references refid="_fugumannen_8cpp_1add98d348bfb3b152acc1ed3448093565">FUN_0027b704</references>
+        <references refid="_fugumannen_8cpp_1aea4150c7bc67b649bbc40b747b026341">FUN_0027b768</references>
+        <references refid="class_fugumannen_1a02d06d60f3bcb3127148d25a08bb0cac" compoundref="_fugumannen_8h" startline="11">mStateBlowDown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fugumannen_1a7a34aabd1d6aac171e201204fc707be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Fugumannen::Fugumannen</definition>
+        <argsstring>(const sead::SafeString &amp;name)</argsstring>
+        <name>Fugumannen</name>
+        <qualifiedname>Fugumannen::Fugumannen</qualifiedname>
+        <param>
+          <type>const sead::SafeString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/Fugumannen.h" line="24" column="9" bodyfile="Game/src/Enemy/Fugumannen.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Fugumannen</label>
+        <link refid="class_fugumannen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::MapObjActor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>EnemyStateBlowDown</label>
+        <link refid="class_enemy_state_blow_down"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mParam</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>EnemyStateBlowDownParam</label>
+        <link refid="class_enemy_state_blow_down_param"/>
+      </node>
+      <node id="1">
+        <label>Fugumannen</label>
+        <link refid="class_fugumannen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mStateBlowDown</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::ActorStateBase</label>
+      </node>
+      <node id="2">
+        <label>al::MapObjActor</label>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Enemy/Fugumannen.h" line="7" column="1" bodyfile="Game/include/Enemy/Fugumannen.h" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_fugumannen_1ae5aac23af58984ae0e6c08290e739987" prot="public" virt="virtual"><scope>Fugumannen</scope><name>attackSensor</name></member>
+      <member refid="class_fugumannen_1ab6da62947ed16e92d6042e6477d70e04" prot="public" virt="non-virtual"><scope>Fugumannen</scope><name>exeBlowDown</name></member>
+      <member refid="class_fugumannen_1ad73ca1712fa55f6616e84b47a31d32c7" prot="public" virt="non-virtual"><scope>Fugumannen</scope><name>exeMove</name></member>
+      <member refid="class_fugumannen_1adaa1cfe5b8592801b3869faf31870730" prot="public" virt="non-virtual"><scope>Fugumannen</scope><name>exeMove2</name></member>
+      <member refid="class_fugumannen_1a7a34aabd1d6aac171e201204fc707be7" prot="public" virt="non-virtual"><scope>Fugumannen</scope><name>Fugumannen</name></member>
+      <member refid="class_fugumannen_1a53873753fbd9ff13dfb66e3e54f8fb1f" prot="public" virt="virtual"><scope>Fugumannen</scope><name>init</name></member>
+      <member refid="class_fugumannen_1a724bf736bf47e2276618e2fdd0fc746f" prot="private" virt="non-virtual"><scope>Fugumannen</scope><name>mRailMoveSpeed</name></member>
+      <member refid="class_fugumannen_1a02d06d60f3bcb3127148d25a08bb0cac" prot="private" virt="non-virtual"><scope>Fugumannen</scope><name>mStateBlowDown</name></member>
+      <member refid="class_fugumannen_1aa41b2cb78868d12d2d2c1624b0bcf9b7" prot="public" virt="virtual"><scope>Fugumannen</scope><name>receiveMsg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

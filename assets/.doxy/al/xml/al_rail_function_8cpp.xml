@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_rail_function_8cpp" kind="file" language="C++">
+    <compoundname>alRailFunction.cpp</compoundname>
+    <includes refid="al_actor_pose_keeper_8h" local="no">LiveActor/alActorPoseKeeper.h</includes>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes refid="al_rail_function_8h" local="no">Rail/alRailFunction.h</includes>
+    <includes refid="al_rail_keeper_8h" local="no">Rail/alRailKeeper.h</includes>
+    <includes refid="al_rail_rider_8h" local="no">Rail/alRailRider.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="8">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alActorPoseKeeper.h</label>
+        <link refid="al_actor_pose_keeper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="10">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="14">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Rail/alRailFunction.h</label>
+        <link refid="al_rail_function_8h"/>
+      </node>
+      <node id="13">
+        <label>Rail/alRailKeeper.h</label>
+        <link refid="al_rail_keeper_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Rail/alRailRider.h</label>
+        <link refid="al_rail_rider_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="15">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alRailFunction.cpp</label>
+        <link refid="al_rail_function_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_pose_keeper_8h" kindref="compound">LiveActor/alActorPoseKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_function_8h" kindref="compound">Rail/alRailFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_keeper_8h" kindref="compound">Rail/alRailKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_rider_8h" kindref="compound">Rail/alRailRider.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4<sp/>instructions<sp/>scrambled<sp/>at<sp/>the<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1a7a0914108d4e2f7a72ab089314fb170b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7a0914108d4e2f7a72ab089314fb170b" kindref="member">setSyncRailToStart</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()-&gt;<ref refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" kindref="member">getRailRider</ref>()-&gt;<ref refid="classal_1_1_rail_rider_1af1b07682a488442d822dfa79034dc73e" kindref="member">moveToRailStart</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a3893d7e6385ef62457746d2409ba745e" kindref="member">setTrans</ref>(<sp/>actor,<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()-&gt;<ref refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" kindref="member">getRailRider</ref>()-&gt;<ref refid="classal_1_1_rail_rider_1a81934aa8c1bd9c6a4777ed87dde2b933" kindref="member">getCurrentPos</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespaceal_1a6cded99fabe040e24450c2703f5086e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1a6cded99fabe040e24450c2703f5086e7" kindref="member">getRailDir</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()-&gt;<ref refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" kindref="member">getRailRider</ref>()-&gt;<ref refid="classal_1_1_rail_rider_1ab691f93a7782644aee6cb5902d8efe38" kindref="member">getCurrentDir</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceal_1aa697a2468d7fa5c5dbac6ddd27275785" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aa697a2468d7fa5c5dbac6ddd27275785" kindref="member">isRailReachedGoal</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()-&gt;<ref refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" kindref="member">getRailRider</ref>()-&gt;<ref refid="classal_1_1_rail_rider_1a8f9024fc0b9e9c7a597ca4ae13b52623" kindref="member">isReachedGoal</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespaceal_1a17968271fa7a2c88c441b029fb31508c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a17968271fa7a2c88c441b029fb31508c" kindref="member">isLoopRail</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()-&gt;<ref refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" kindref="member">getRailRider</ref>()-&gt;<ref refid="classal_1_1_rail_rider_1aecc596ce24b331f1bafaa0a0923fa32f" kindref="member">isLoop</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceal_1aa712d41b8805e9cee4c2d8ae018d07da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3fd1bb9c5adfdf2fbb33a31f3a570875" kindref="member">isExistRail</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a76bd9374e0dae5473f33f64763f0521f" kindref="member">getRailKeeper</ref>()-&gt;<ref refid="classal_1_1_rail_keeper_1aba7900642e111892d3096cd441b6de5f" kindref="member">isExistRail</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Rail/alRailFunction.cpp"/>
+  </compounddef>
+</doxygen>

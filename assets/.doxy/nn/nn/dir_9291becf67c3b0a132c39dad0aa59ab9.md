@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/include/nn/os
+# Dir os
 
 
 
@@ -21,12 +21,12 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**os\_EventBase.h**](os__EventBase_8h.md) <br> |
-| file | [**os\_HandleObject.h**](os__HandleObject_8h.md) <br> |
-| file | [**os\_InterruptEvent.h**](os__InterruptEvent_8h.md) <br> |
-| file | [**os\_KConfigMemory.h**](os__KConfigMemory_8h.md) <br> |
-| file | [**os\_Types.h**](os__Types_8h.md) <br> |
-| file | [**os\_WaitObject.h**](os__WaitObject_8h.md) <br> |
+| file | [**os\_EventBase.h**](os___event_base_8h.md) <br> |
+| file | [**os\_HandleObject.h**](os___handle_object_8h.md) <br> |
+| file | [**os\_InterruptEvent.h**](os___interrupt_event_8h.md) <br> |
+| file | [**os\_KConfigMemory.h**](os___k_config_memory_8h.md) <br> |
+| file | [**os\_Types.h**](os___types_8h.md) <br> |
+| file | [**os\_WaitObject.h**](os___wait_object_8h.md) <br> |
 
 
 

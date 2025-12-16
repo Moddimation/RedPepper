@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_stage_switch_keeper_8cpp" kind="file" language="C++">
+    <compoundname>alStageSwitchKeeper.cpp</compoundname>
+    <includes refid="al_stage_switch_accesser_8h" local="no">Stage/alStageSwitchAccesser.h</includes>
+    <includes refid="al_stage_switch_keeper_8h" local="no">Stage/alStageSwitchKeeper.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Stage/alStageSwitchAccesser.h</label>
+        <link refid="al_stage_switch_accesser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="5">
+        <label>Stage/alStageSwitchType.h</label>
+        <link refid="al_stage_switch_type_8h"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alStageSwitchKeeper.cpp</label>
+        <link refid="al_stage_switch_keeper_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_stage_switch_accesser_8h" kindref="compound">Stage/alStageSwitchAccesser.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_stage_switch_keeper_8h" kindref="compound">Stage/alStageSwitchKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_stage_switch_keeper_1aae57a9be6baec18d8d39b2374c0fe062" refkind="member"><highlight class="normal"><ref refid="classal_1_1_stage_switch_keeper_1aae57a9be6baec18d8d39b2374c0fe062" kindref="member">StageSwitchKeeper::StageSwitchKeeper</ref>()<sp/>:<sp/>mSwitches(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mSwitchCount(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_keeper_1a82bc89544427a9591a37c167cc85ce1e" kindref="member">mSwitchCount</ref><sp/>=<sp/>5;<sp/></highlight><highlight class="comment">//<sp/>optimized<sp/>away</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_keeper_1a8228758f6328f8dea2fabb5894c451b1" kindref="member">mSwitches</ref><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_accesser" kindref="compound">StageSwitchAccesser</ref>[<sp/>5<sp/>];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_stage_switch_keeper_1a0269142a2855bf8972c22a6adbd98a9d" refkind="member"><highlight class="normal"><ref refid="classal_1_1_stage_switch_accesser" kindref="compound">StageSwitchAccesser</ref>*<sp/><ref refid="classal_1_1_stage_switch_keeper_1a0269142a2855bf8972c22a6adbd98a9d" kindref="member">StageSwitchKeeper::getStageSwitchAccesser</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_stage_switch_keeper_1a8228758f6328f8dea2fabb5894c451b1" kindref="member">mSwitches</ref>[<sp/>type<sp/>];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Stage/alStageSwitchKeeper.cpp"/>
+  </compounddef>
+</doxygen>

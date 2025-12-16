@@ -5,7 +5,7 @@
 
 ## a
 
-* **addOffset** ([**sead::BitUtil**](namespacesead_1_1BitUtil.md))
+* **addOffset** ([**sead::BitUtil**](namespacesead_1_1_bit_util.md))
 
 
 ## b
@@ -16,9 +16,9 @@
 * **BoundBox2f** ([**sead**](namespacesead.md))
 * **BoundBox3f** ([**sead**](namespacesead.md))
 * **BufferedSafeString** ([**sead**](namespacesead.md))
-* **bitCast** ([**sead::BitUtil**](namespacesead_1_1BitUtil.md))
-* **bitCastPtr** ([**sead::BitUtil**](namespacesead_1_1BitUtil.md))
-* **bitCastWrite** ([**sead::BitUtil**](namespacesead_1_1BitUtil.md))
+* **bitCast** ([**sead::BitUtil**](namespacesead_1_1_bit_util.md))
+* **bitCastPtr** ([**sead::BitUtil**](namespacesead_1_1_bit_util.md))
+* **bitCastWrite** ([**sead::BitUtil**](namespacesead_1_1_bit_util.md))
 
 
 ## c

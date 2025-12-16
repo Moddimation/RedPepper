@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File ProductSequence.cpp - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-productsequencecpp">File ProductSequence.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_c33286056d2acf479cd8641ef845fec1/"><strong>Game</strong></a> <strong>&gt;</strong> <a href="../dir_d858f423bf5825f9a3db826b6a54a3cc/"><strong>src</strong></a> <strong>&gt;</strong> <a href="../dir_adde3a84bdb9ef9ce29831a9adedd06e/"><strong>Sequence</strong></a> <strong>&gt;</strong> <a href="../_product_sequence_8cpp/"><strong>ProductSequence.cpp</strong></a></p>
+<p><a href="../_product_sequence_8cpp/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#include &quot;Sequence/ProductSequence.h&quot;
+
+#include &lt;Nerve/alNerve.h&gt;
+#include &lt;Nerve/alNerveFunction.h&gt;
+
+#include &quot;Sequence/ProductStateCourseSelect.h&quot;
+#include &quot;Sequence/ProductStateStage.h&quot;
+
+namespace NrvProductSequence
+{
+
+NERVE_DEF( ProductSequence, Title )
+NERVE_DEF( ProductSequence, Opening )
+NERVE_DEF( ProductSequence, CourseSelect )
+NERVE_DEF( ProductSequence, Stage )
+NERVE_DEF( ProductSequence, KinopioHouse )
+NERVE_DEF( ProductSequence, MysteryBox )
+NERVE_DEF( ProductSequence, Ending )
+NERVE_DEF( ProductSequence, GameOverRoom )
+NERVE_DEF( ProductSequence, Unk1 )
+
+} // namespace NrvProductSequence
+
+ProductSequence::ProductSequence( const char* name )
+    : Sequence( name ), mStageStartParam( nullptr ), _14C( nullptr ), _150( nullptr ), mWipeKeeper( nullptr ),
+      _158( nullptr ), _15C( nullptr ), mStateTitle( nullptr ), mStateOpening( nullptr ),
+      mStateCourseSelect( nullptr ), mStateStage( nullptr ), mStateKinopioHouse( nullptr ),
+      mStateMysteryBox( nullptr ), mStateEnding( nullptr ), mStateGameOverRoom( nullptr ), _180( nullptr ),
+      _184( nullptr ), _188( nullptr ), _18C( nullptr ), _190( nullptr )
+{
+}
+
+#ifdef NON_MATCHING
+void ProductSequence::init()
+{
+} // needed for vtable
+
+#endif
+
+extern &quot;C&quot; bool FUN_0025ba7c( const char* );
+
+void ProductSequence::exeTitle()
+{
+        if ( al::updateNerveState( this ) )
+        {
+                if ( FUN_0025ba7c( &quot;オープニング実行&quot; ) )
+                        al::setNerve( this, &amp;NrvProductSequence::CourseSelect );
+                else
+                        al::setNerve( this, &amp;NrvProductSequence::Opening );
+        }
+}
+
+void ProductSequence::exeOpening()
+{
+        if ( al::updateNerveState( this ) )
+                al::setNerve( this, &amp;NrvProductSequence::CourseSelect );
+}
+
+void ProductSequence::exeKinopioHouse()
+{
+        if ( al::updateNerveState( this ) )
+        {
+                mStateCourseSelect-&gt;set_10( 4 );
+                al::setNerve( this, &amp;NrvProductSequence::CourseSelect );
+        }
+}
+
+extern &quot;C&quot; bool FUN_0025ddd0();
+
+void ProductSequence::exeEnding()
+{
+        if ( al::updateNerveState( this ) )
+        {
+                if ( FUN_0025ddd0() )
+                        al::setNerve( this, &amp;NrvProductSequence::Unk1 );
+                else
+                        al::setNerve( this, &amp;NrvProductSequence::Title );
+        }
+}
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

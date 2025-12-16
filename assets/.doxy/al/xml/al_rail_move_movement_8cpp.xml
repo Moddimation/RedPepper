@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_rail_move_movement_8cpp" kind="file" language="C++">
+    <compoundname>alRailMoveMovement.cpp</compoundname>
+    <includes refid="al_actor_init_info_8h" local="no">LiveActor/alActorInitInfo.h</includes>
+    <includes refid="al_nerve_8h" local="no">Nerve/alNerve.h</includes>
+    <includes refid="al_placement_function_8h" local="no">Placement/alPlacementFunction.h</includes>
+    <includes refid="al_rail_function_8h" local="no">Rail/alRailFunction.h</includes>
+    <includes refid="al_rail_move_movement_8h" local="no">Rail/alRailMoveMovement.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="16">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alActorInitInfo.h</label>
+        <link refid="al_actor_init_info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="20">
+        <label>Nerve/alHostStateBase.h</label>
+        <link refid="al_host_state_base_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="21">
+        <label>Nerve/alNerveStateBase.h</label>
+        <link refid="al_nerve_state_base_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Placement/alPlacementFunction.h</label>
+        <link refid="al_placement_function_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Rail/alRailFunction.h</label>
+        <link refid="al_rail_function_8h"/>
+      </node>
+      <node id="13">
+        <label>Rail/alRailMoveMovement.h</label>
+        <link refid="al_rail_move_movement_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alRailMoveMovement.cpp</label>
+        <link refid="al_rail_move_movement_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="10">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="11">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="5">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <innernamespace refid="namespaceal_1_1_nrv_rail_move_movement">al::NrvRailMoveMovement</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_init_info_8h" kindref="compound">LiveActor/alActorInitInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_8h" kindref="compound">Nerve/alNerve.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_placement_function_8h" kindref="compound">Placement/alPlacementFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_function_8h" kindref="compound">Rail/alRailFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_rail_move_movement_8h" kindref="compound">Rail/alRailMoveMovement.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1_1_nrv_rail_move_movement" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">NrvRailMoveMovement</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="al_nerve_8h_1aa673fd862e01ac28f82a4f9deb64b2fa" kindref="member">NERVE_DEF</ref>(<sp/><ref refid="classal_1_1_rail_move_movement" kindref="compound">RailMoveMovement</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">Move</ref><sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>NrvRailMoveMovement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_rail_move_movement_1aabb63a9ffa2a927fa7859bf40fa4ea02" refkind="member"><highlight class="normal"><ref refid="classal_1_1_rail_move_movement_1aabb63a9ffa2a927fa7859bf40fa4ea02" kindref="member">RailMoveMovement::RailMoveMovement</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">host</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">speedParamName</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">moveTypeParamName</ref><sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="namespaceal" kindref="compound">al</ref>::<ref refid="classal_1_1_host_state_base" kindref="compound">HostStateBase</ref>&lt;<ref refid="namespaceal" kindref="compound">al</ref>::<ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>&gt;(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">host</ref>,<sp/></highlight><highlight class="stringliteral">&quot;レール移動挙動&quot;</highlight><highlight class="normal"><sp/>),<sp/>mSpeed(<sp/>10<sp/>),<sp/>mMoveType(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a1ccf1eca046d32b544a61d9d5c7f1ab5" kindref="member">tryGetArg</ref>(<sp/>&amp;<ref refid="classal_1_1_rail_move_movement_1af6b5d644354300d98cfa0cd6064199bb" kindref="member">mSpeed</ref>,<sp/><ref refid="namespaceal_1abd3d9183db47277f998d723e177b3119" kindref="member">getPlacementInfo</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>),<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">speedParamName</ref><sp/>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a1ccf1eca046d32b544a61d9d5c7f1ab5" kindref="member">tryGetArg</ref>(<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)&amp;<ref refid="classal_1_1_rail_move_movement_1a3eef4df9c28af3efb01bb44eb952b2d8" kindref="member">mMoveType</ref>,<sp/><ref refid="namespaceal_1abd3d9183db47277f998d723e177b3119" kindref="member">getPlacementInfo</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>),<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">moveTypeParamName</ref><sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_rail_move_movement_1a3eef4df9c28af3efb01bb44eb952b2d8" kindref="member">mMoveType</ref><sp/>&gt;=<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_move_movement_1a3eef4df9c28af3efb01bb44eb952b2d8" kindref="member">mMoveType</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a765397d5b8fff63737e5237c28f02ebb" kindref="member">initNerve</ref>(<sp/>&amp;NrvRailMoveMovement::Move<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_rail_move_movement_1a8daa25fe4d65058bb1a79743e0cd1106" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_move_movement_1a8daa25fe4d65058bb1a79743e0cd1106" kindref="member">RailMoveMovement::exeMove</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1a3fd1bb9c5adfdf2fbb33a31f3a570875" kindref="member">isExistRail</ref>(<sp/><ref refid="classal_1_1_host_state_base_1a663a1dd7636bd2a11065f121162183c4" kindref="member">mHost</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_rail_move_movement_1a3eef4df9c28af3efb01bb44eb952b2d8" kindref="member">mMoveType</ref><sp/>==<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ade55c62ca44c4a9a443f42229b7fd5ce" kindref="member">moveSyncRail</ref>(<sp/><ref refid="classal_1_1_host_state_base_1a663a1dd7636bd2a11065f121162183c4" kindref="member">mHost</ref>,<sp/><ref refid="classal_1_1_rail_move_movement_1af6b5d644354300d98cfa0cd6064199bb" kindref="member">mSpeed</ref><sp/>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_rail_move_movement_1a3eef4df9c28af3efb01bb44eb952b2d8" kindref="member">mMoveType</ref><sp/>==<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a2cb1142a3bb504a3d039ea83a2eff65f" kindref="member">moveSyncRailTurn</ref>(<sp/><ref refid="classal_1_1_host_state_base_1a663a1dd7636bd2a11065f121162183c4" kindref="member">mHost</ref>,<sp/><ref refid="classal_1_1_rail_move_movement_1af6b5d644354300d98cfa0cd6064199bb" kindref="member">mSpeed</ref><sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_rail_move_movement_1a3eef4df9c28af3efb01bb44eb952b2d8" kindref="member">mMoveType</ref><sp/>==<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a36e06528c2335fa78fbb1ddf7918cf99" kindref="member">moveSyncRailLoop</ref>(<sp/><ref refid="classal_1_1_host_state_base_1a663a1dd7636bd2a11065f121162183c4" kindref="member">mHost</ref>,<sp/><ref refid="classal_1_1_rail_move_movement_1af6b5d644354300d98cfa0cd6064199bb" kindref="member">mSpeed</ref><sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Rail/alRailMoveMovement.cpp"/>
+  </compounddef>
+</doxygen>

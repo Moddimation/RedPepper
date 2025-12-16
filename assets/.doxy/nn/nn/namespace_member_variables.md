@@ -21,14 +21,14 @@
 
 ## s
 
-* **s\_IsLatencyEmulationEnable** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1CTR_1_1MPCore_1_1detail.md))
-* **s\_Something** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1CTR_1_1MPCore_1_1detail.md))
+* **s\_IsLatencyEmulationEnable** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1_c_t_r_1_1_m_p_core_1_1detail.md))
+* **s\_Something** ([**nn::fs::CTR::MPCore::detail**](namespacenn_1_1fs_1_1_c_t_r_1_1_m_p_core_1_1detail.md))
 * **size** ([**nn::svc**](namespacenn_1_1svc.md))
 
 
 ## v
 
-* **v1** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
+* **v1** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
 
 
 

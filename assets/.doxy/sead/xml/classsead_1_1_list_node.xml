@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_list_node" kind="class" language="C++" prot="public">
+    <compoundname>sead::ListNode</compoundname>
+    <derivedcompoundref refid="classsead_1_1_t_list_node" prot="public" virt="non-virtual">sead::TListNode&lt; FileDevice * &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1_t_list_node" prot="public" virt="non-virtual">sead::TListNode&lt; TaskBase * &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1_t_list_node" prot="public" virt="non-virtual">sead::TListNode&lt; T &gt;</derivedcompoundref>
+    <includes refid="sead_list_impl_8h" local="no">seadListImpl.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsead_1_1_list_node_1a5a83b4dfbe14d4a3034419350b6ed82c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ListImpl</definition>
+        <argsstring></argsstring>
+        <name>ListImpl</name>
+        <qualifiedname>sead::ListNode::ListImpl</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_list_impl" kindref="compound">ListImpl</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="20" column="18" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode* sead::ListNode::mPrev</definition>
+        <argsstring></argsstring>
+        <name>mPrev</name>
+        <qualifiedname>sead::ListNode::mPrev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="28" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_list_impl_1a4b267247bd5040cd8dd5cacd0118e32e" compoundref="sead_list_impl_8h" startline="92" endline="92">sead::ListImpl::back</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a20674598c0afdd2358be9107b2b15a0d" compoundref="sead_list_impl_8cpp" startline="83" endline="94">sead::ListImpl::clear</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a76fd0d35b8adb81b1ea97e4f8820b763" compoundref="sead_list_impl_8cpp" startline="28" endline="37">erase_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" compoundref="sead_list_impl_8cpp" startline="6" endline="15">insertBack_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" compoundref="sead_list_impl_8cpp" startline="17" endline="26">insertFront_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" compoundref="sead_list_impl_8h" startline="15" endline="15">isLinked</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a733c329c91ffa5ee168a84b29088ef30" compoundref="sead_list_impl_8h" startline="34" endline="37">sead::ListImpl::ListImpl</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" compoundref="sead_list_impl_8h" startline="57" endline="60">sead::ListImpl::mergeSort</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a6c77a0620e8c64c2b1c31ea4cb1ed7ea" compoundref="sead_list_impl_8cpp" startline="39" endline="47">sead::ListImpl::popBack</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a3eee1d6ab52279578f0195d100313e20" compoundref="sead_list_impl_8h" startline="13" endline="13">prev</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a085cc7b977147fe371007d001fcc7d35" compoundref="sead_list_impl_8cpp" startline="96" endline="113">sead::ListImpl::swap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode* sead::ListNode::mNext</definition>
+        <argsstring></argsstring>
+        <name>mNext</name>
+        <qualifiedname>sead::ListNode::mNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="29" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_list_impl_1a20674598c0afdd2358be9107b2b15a0d" compoundref="sead_list_impl_8cpp" startline="83" endline="94">sead::ListImpl::clear</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a76fd0d35b8adb81b1ea97e4f8820b763" compoundref="sead_list_impl_8cpp" startline="28" endline="37">erase_</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1af94e0db9f99e3993d2ba8c3c197f354e" compoundref="sead_list_impl_8h" startline="90" endline="90">sead::ListImpl::front</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a2a37cb4662be4fe9a5120fc221f0d772" compoundref="sead_list_impl_8cpp" startline="71" endline="81">sead::ListImpl::indexOf</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" compoundref="sead_list_impl_8cpp" startline="6" endline="15">insertBack_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" compoundref="sead_list_impl_8cpp" startline="17" endline="26">insertFront_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" compoundref="sead_list_impl_8h" startline="15" endline="15">isLinked</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a733c329c91ffa5ee168a84b29088ef30" compoundref="sead_list_impl_8h" startline="34" endline="37">sead::ListImpl::ListImpl</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a1a1e5b44d702600661362e300efd2906" compoundref="sead_list_impl_8h" startline="57" endline="60">sead::ListImpl::mergeSort</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1aa816d259659b5b386579dc9a723f113b" compoundref="sead_list_impl_8h" startline="11" endline="11">next</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a41e7499f20d437132a58c5b0c260eadb" compoundref="sead_list_impl_8cpp" startline="59" endline="69">sead::ListImpl::nth</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a39610e1022a3fa66da47d6f7a0265c04" compoundref="sead_list_impl_8cpp" startline="49" endline="57">sead::ListImpl::popFront</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_list_node_1aa816d259659b5b386579dc9a723f113b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode * sead::ListNode::next</definition>
+        <argsstring>() const</argsstring>
+        <name>next</name>
+        <qualifiedname>sead::ListNode::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="11" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="11" bodyend="11"/>
+        <references refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" compoundref="sead_list_impl_8h" startline="29">mNext</references>
+        <referencedby refid="classsead_1_1_offset_list_1a8bedff8f7307954d41b05b5d06e7a5ae" compoundref="sead_offset_list_8h" startline="122" endline="122">sead::OffsetList&lt; T &gt;::begin</referencedby>
+        <referencedby refid="classsead_1_1_t_list_1a172712f1222d297197441674b926ed58" compoundref="sead_t_list_8h" startline="114" endline="114">sead::TList&lt; T &gt;::begin</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" compoundref="sead_list_impl_8cpp" startline="6" endline="15">insertBack_</referencedby>
+        <referencedby refid="classsead_1_1_offset_list_1a9399a4237871125bed73add023f2d762" compoundref="sead_offset_list_8h" startline="56" endline="61">sead::OffsetList&lt; T &gt;::next</referencedby>
+        <referencedby refid="classsead_1_1_offset_list_1_1robust_iterator_1a95325d42d380c5e76f10a8816aabaf61" compoundref="sead_offset_list_8h" startline="140" endline="144">sead::OffsetList&lt; T &gt;::robustIterator::operator++</referencedby>
+        <referencedby refid="classsead_1_1_offset_list_1a9d43606ad70ab443dda4f5dbaa788b94" compoundref="sead_offset_list_8h" startline="156" endline="158">sead::OffsetList&lt; T &gt;::robustBegin</referencedby>
+        <referencedby refid="classsead_1_1_t_list_1a48dd3134160ed826373da31f8eef217b" compoundref="sead_t_list_8h" startline="157" endline="159">sead::TList&lt; T &gt;::robustBegin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_list_node_1a3eee1d6ab52279578f0195d100313e20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref> *</type>
+        <definition>ListNode * sead::ListNode::prev</definition>
+        <argsstring>() const</argsstring>
+        <name>prev</name>
+        <qualifiedname>sead::ListNode::prev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="13" column="14" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="13" bodyend="13"/>
+        <references refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" compoundref="sead_list_impl_8h" startline="28">mPrev</references>
+        <referencedby refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" compoundref="sead_list_impl_8cpp" startline="17" endline="26">insertFront_</referencedby>
+        <referencedby refid="classsead_1_1_offset_list_1a387c90f88d3e022d7372fa6a8e75c283" compoundref="sead_offset_list_8h" startline="49" endline="54">sead::OffsetList&lt; T &gt;::prev</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ListNode::isLinked</definition>
+        <argsstring>() const</argsstring>
+        <name>isLinked</name>
+        <qualifiedname>sead::ListNode::isLinked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="15" column="10" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="15" bodyend="15"/>
+        <references refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" compoundref="sead_list_impl_8h" startline="29">mNext</references>
+        <references refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" compoundref="sead_list_impl_8h" startline="28">mPrev</references>
+        <referencedby refid="classsead_1_1_list_node_1a76fd0d35b8adb81b1ea97e4f8820b763" compoundref="sead_list_impl_8cpp" startline="28" endline="37">erase_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" compoundref="sead_list_impl_8cpp" startline="6" endline="15">insertBack_</referencedby>
+        <referencedby refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" compoundref="sead_list_impl_8cpp" startline="17" endline="26">insertFront_</referencedby>
+        <referencedby refid="classsead_1_1_offset_list_1a3224d5af8302b4a776f2b53b40444f0b" compoundref="sead_offset_list_8h" startline="67" endline="67">sead::OffsetList&lt; T &gt;::isNodeLinked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_list_node_1ae56294b649bfb25ab2b336bb9746b9f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::ListNode::ListNode</definition>
+        <argsstring>()</argsstring>
+        <name>ListNode</name>
+        <qualifiedname>sead::ListNode::ListNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="17" column="5" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsead_1_1_list_node_1a2a7497d723467c627bb2ee69b143b8a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::init_</definition>
+        <argsstring>()</argsstring>
+        <name>init_</name>
+        <qualifiedname>sead::ListNode::init_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="22" column="10" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="22" bodyend="22"/>
+        <referencedby refid="classsead_1_1_list_impl_1a20674598c0afdd2358be9107b2b15a0d" compoundref="sead_list_impl_8cpp" startline="83" endline="94">sead::ListImpl::clear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::insertBack_</definition>
+        <argsstring>(ListNode *node)</argsstring>
+        <name>insertBack_</name>
+        <qualifiedname>sead::ListNode::insertBack_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="24" column="10" bodyfile="lib/sead/modules/src/container/seadListImpl.cpp" bodystart="6" bodyend="15"/>
+        <references refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" compoundref="sead_list_impl_8h" startline="15" endline="15">isLinked</references>
+        <references refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" compoundref="sead_list_impl_8h" startline="29">mNext</references>
+        <references refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" compoundref="sead_list_impl_8h" startline="28">mPrev</references>
+        <references refid="classsead_1_1_list_node_1aa816d259659b5b386579dc9a723f113b" compoundref="sead_list_impl_8h" startline="11" endline="11">next</references>
+        <references refid="sead_raw_print_8h_1ace1f1618a37f1eebc988163c443dae7e" compoundref="sead_raw_print_8h" startline="27" endline="33">SEAD_ASSERT_MSG</references>
+        <referencedby refid="classsead_1_1_list_impl_1a4a481951b09a431e7fd10fd7f12d8fb8" compoundref="sead_list_impl_8h" startline="67" endline="70">sead::ListImpl::pushFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::insertFront_</definition>
+        <argsstring>(ListNode *node)</argsstring>
+        <name>insertFront_</name>
+        <qualifiedname>sead::ListNode::insertFront_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="25" column="10" bodyfile="lib/sead/modules/src/container/seadListImpl.cpp" bodystart="17" bodyend="26"/>
+        <references refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" compoundref="sead_list_impl_8h" startline="15" endline="15">isLinked</references>
+        <references refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" compoundref="sead_list_impl_8h" startline="29">mNext</references>
+        <references refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" compoundref="sead_list_impl_8h" startline="28">mPrev</references>
+        <references refid="classsead_1_1_list_node_1a3eee1d6ab52279578f0195d100313e20" compoundref="sead_list_impl_8h" startline="13" endline="13">prev</references>
+        <references refid="sead_raw_print_8h_1ace1f1618a37f1eebc988163c443dae7e" compoundref="sead_raw_print_8h" startline="27" endline="33">SEAD_ASSERT_MSG</references>
+        <referencedby refid="classsead_1_1_list_impl_1a14fe79ee1bb35b33eb8a2907e01f8898" compoundref="sead_list_impl_8h" startline="62" endline="65">sead::ListImpl::pushBack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_list_node_1a76fd0d35b8adb81b1ea97e4f8820b763" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ListNode::erase_</definition>
+        <argsstring>()</argsstring>
+        <name>erase_</name>
+        <qualifiedname>sead::ListNode::erase_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadListImpl.h" line="26" column="10" bodyfile="lib/sead/modules/src/container/seadListImpl.cpp" bodystart="28" bodyend="37"/>
+        <references refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" compoundref="sead_list_impl_8h" startline="15" endline="15">isLinked</references>
+        <references refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" compoundref="sead_list_impl_8h" startline="29">mNext</references>
+        <references refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" compoundref="sead_list_impl_8h" startline="28">mPrev</references>
+        <references refid="_l_m_s___types_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_l_m_s___types_8h" startline="3">NULL</references>
+        <references refid="sead_raw_print_8h_1ace1f1618a37f1eebc988163c443dae7e" compoundref="sead_raw_print_8h" startline="27" endline="33">SEAD_ASSERT_MSG</references>
+        <referencedby refid="classsead_1_1_list_impl_1a6c77a0620e8c64c2b1c31ea4cb1ed7ea" compoundref="sead_list_impl_8cpp" startline="39" endline="47">sead::ListImpl::popBack</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a39610e1022a3fa66da47d6f7a0265c04" compoundref="sead_list_impl_8cpp" startline="49" endline="57">sead::ListImpl::popFront</referencedby>
+        <referencedby refid="classsead_1_1_list_impl_1a085cc7b977147fe371007d001fcc7d35" compoundref="sead_list_impl_8cpp" startline="96" endline="113">sead::ListImpl::swap</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::TListNode&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; FileDevice * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::TListNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::FileDevice</label>
+        <link refid="classsead_1_1_file_device"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+      </node>
+      <node id="5">
+        <label>sead::TListNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/container/seadListImpl.h" line="9" column="1" bodyfile="lib/sead/include/container/seadListImpl.h" bodystart="9" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_list_node_1a76fd0d35b8adb81b1ea97e4f8820b763" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>erase_</name></member>
+      <member refid="classsead_1_1_list_node_1a2a7497d723467c627bb2ee69b143b8a4" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>init_</name></member>
+      <member refid="classsead_1_1_list_node_1a38ed265f38758b92b496c15622508c5f" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>insertBack_</name></member>
+      <member refid="classsead_1_1_list_node_1ad6b2b0baaca80792a573d32121ab7434" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>insertFront_</name></member>
+      <member refid="classsead_1_1_list_node_1a2f15587150961a7c67358d8141039f8b" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>isLinked</name></member>
+      <member refid="classsead_1_1_list_node_1a5a83b4dfbe14d4a3034419350b6ed82c" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>ListImpl</name></member>
+      <member refid="classsead_1_1_list_node_1ae56294b649bfb25ab2b336bb9746b9f2" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>ListNode</name></member>
+      <member refid="classsead_1_1_list_node_1ad76f64b1566f62fc971280c992eb54bc" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>mNext</name></member>
+      <member refid="classsead_1_1_list_node_1a1c656b331b830b04707484ef7cc080fe" prot="private" virt="non-virtual"><scope>sead::ListNode</scope><name>mPrev</name></member>
+      <member refid="classsead_1_1_list_node_1aa816d259659b5b386579dc9a723f113b" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>next</name></member>
+      <member refid="classsead_1_1_list_node_1a3eee1d6ab52279578f0195d100313e20" prot="public" virt="non-virtual"><scope>sead::ListNode</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

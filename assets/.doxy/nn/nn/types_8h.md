@@ -36,6 +36,7 @@
 | ---: | :--- |
 | typedef float | [**f32**](#typedef-f32)  <br> |
 | typedef double | [**f64**](#typedef-f64)  <br> |
+| typedef [**s32**](types_8h.md#typedef-s32) | [**intptr\_t**](#typedef-intptr_t)  <br> |
 | typedef signed short | [**s16**](#typedef-s16)  <br> |
 | typedef signed int | [**s32**](#typedef-s32)  <br> |
 | typedef signed long long | [**s64**](#typedef-s64)  <br> |
@@ -44,6 +45,7 @@
 | typedef unsigned int | [**u32**](#typedef-u32)  <br> |
 | typedef unsigned long long | [**u64**](#typedef-u64)  <br> |
 | typedef unsigned char | [**u8**](#typedef-u8)  <br> |
+| typedef [**u32**](types_8h.md#typedef-u32) | [**uintptr\_t**](#typedef-uintptr_t)  <br> |
 
 
 
@@ -96,8 +98,8 @@
 | Type | Name |
 | ---: | :--- |
 | define  | [**NULL**](types_8h.md#define-null)  `(void\*)0`<br> |
+| define  | [**nullptr**](types_8h.md#define-nullptr)  `[**NULL**](types_8h.md#define-null)`<br> |
 | define  | [**split**](types_8h.md#define-split) (S) `\_\_attribute\_\_( ( section( "i." #S ) ) ) S`<br> |
-| define  | [**static\_assert**](types_8h.md#define-static_assert) (COND, MSG) `typedef int \_\_static\_assert\_balls[ ( COND ) ? 1 : -1 ]`<br> |
 
 ## Public Types Documentation
 
@@ -121,6 +123,19 @@ typedef float f32;
 
 ```C++
 typedef double f64;
+```
+
+
+
+
+<hr>
+
+
+
+### typedef intptr\_t 
+
+```C++
+typedef s32 intptr_t;
 ```
 
 
@@ -231,6 +246,19 @@ typedef unsigned char u8;
 
 
 <hr>
+
+
+
+### typedef uintptr\_t 
+
+```C++
+typedef u32 uintptr_t;
+```
+
+
+
+
+<hr>
 ## Macro Definition Documentation
 
 
@@ -250,12 +278,10 @@ typedef unsigned char u8;
 
 
 
-### define split 
+### define nullptr 
 
 ```C++
-#define split (
-    S
-) `__attribute__( ( section( "i." #S ) ) ) S`
+#define nullptr `NULL`
 ```
 
 
@@ -265,13 +291,12 @@ typedef unsigned char u8;
 
 
 
-### define static\_assert 
+### define split 
 
 ```C++
-#define static_assert (
-    COND,
-    MSG
-) `typedef int __static_assert_balls[ ( COND ) ? 1 : -1 ]`
+#define split (
+    S
+) `__attribute__( ( section( "i." #S ) ) ) S`
 ```
 
 

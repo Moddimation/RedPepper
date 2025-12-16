@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_sensor_hit_group" kind="class" language="C++" prot="public">
+    <compoundname>al::SensorHitGroup</compoundname>
+    <includes refid="al_sensor_hit_group_8h" local="no">alSensorHitGroup.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_sensor_hit_group_1ac75470de315ad0a1939d37d0138d0c2b" prot="private" static="no" mutable="no">
+        <type>sead::PtrArray&lt; <ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> &gt;</type>
+        <definition>sead::PtrArray&lt;HitSensor&gt; al::SensorHitGroup::mSensors</definition>
+        <argsstring></argsstring>
+        <name>mSensors</name>
+        <qualifiedname>al::SensorHitGroup::mSensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alSensorHitGroup.h" line="12" column="24" bodyfile="lib/al/include/HitSensor/alSensorHitGroup.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classal_1_1_sensor_hit_group_1a28fd223b7160d94249cb20ec380e8ed8" compoundref="al_sensor_hit_group_8cpp" startline="6" endline="9">add</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_sensor_hit_group_1a28fd223b7160d94249cb20ec380e8ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::SensorHitGroup::add</definition>
+        <argsstring>(HitSensor *sensor)</argsstring>
+        <name>add</name>
+        <qualifiedname>al::SensorHitGroup::add</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alSensorHitGroup.h" line="15" column="14" bodyfile="lib/al/src/HitSensor/alSensorHitGroup.cpp" bodystart="6" bodyend="9"/>
+        <references refid="classal_1_1_sensor_hit_group_1ac75470de315ad0a1939d37d0138d0c2b" compoundref="al_sensor_hit_group_8h" startline="12">mSensors</references>
+        <referencedby refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" compoundref="al_hit_sensor_8cpp" startline="7" endline="16">al::HitSensor::validate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" compoundref="al_hit_sensor_8cpp" startline="29" endline="37">al::HitSensor::validateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_sensor_hit_group_1a61d1f45e572d8fde8469cbfb31d7ab93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::SensorHitGroup::remove</definition>
+        <argsstring>(HitSensor *sensor)</argsstring>
+        <name>remove</name>
+        <qualifiedname>al::SensorHitGroup::remove</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref> *</type>
+          <declname>sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alSensorHitGroup.h" line="16" column="14"/>
+        <referencedby refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" compoundref="al_hit_sensor_8cpp" startline="18" endline="27">al::HitSensor::invalidate</referencedby>
+        <referencedby refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" compoundref="al_hit_sensor_8cpp" startline="39" endline="47">al::HitSensor::invalidateBySystem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_sensor_hit_group_1a37cd0cc3cf8359759a81d46d39c134ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::SensorHitGroup::SensorHitGroup</definition>
+        <argsstring>(int, const char *name)</argsstring>
+        <name>SensorHitGroup</name>
+        <qualifiedname>al::SensorHitGroup::SensorHitGroup</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/HitSensor/alSensorHitGroup.h" line="19" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/al/include/HitSensor/alSensorHitGroup.h" line="9" column="1" bodyfile="lib/al/include/HitSensor/alSensorHitGroup.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classal_1_1_sensor_hit_group_1a28fd223b7160d94249cb20ec380e8ed8" prot="public" virt="non-virtual"><scope>al::SensorHitGroup</scope><name>add</name></member>
+      <member refid="classal_1_1_sensor_hit_group_1ac75470de315ad0a1939d37d0138d0c2b" prot="private" virt="non-virtual"><scope>al::SensorHitGroup</scope><name>mSensors</name></member>
+      <member refid="classal_1_1_sensor_hit_group_1a61d1f45e572d8fde8469cbfb31d7ab93" prot="public" virt="non-virtual"><scope>al::SensorHitGroup</scope><name>remove</name></member>
+      <member refid="classal_1_1_sensor_hit_group_1a37cd0cc3cf8359759a81d46d39c134ff" prot="public" virt="non-virtual"><scope>al::SensorHitGroup</scope><name>SensorHitGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

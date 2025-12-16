@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_camera_param_vision_8h" kind="file" language="C++">
+    <compoundname>alCameraParamVision.h</compoundname>
+    <includedby refid="al_camera_8cpp" local="no">alCamera.cpp</includedby>
+    <includedby refid="al_camera_param_vision_8cpp" local="no">alCameraParamVision.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alCameraParamVision.h</label>
+        <link refid="al_camera_param_vision_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alCamera.cpp</label>
+        <link refid="al_camera_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alCameraParamVision.cpp</label>
+        <link refid="al_camera_param_vision_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_camera_param_vision" prot="public">al::CameraParamVision</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ByamlIter;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_camera_param_vision" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_camera_param_vision" kindref="compound">CameraParamVision</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_camera_param_vision_1a393b3e1636d103a85279f30645bf5e6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1a393b3e1636d103a85279f30645bf5e6b" kindref="member">mFovyDegree</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_camera_param_vision_1a94b39991201bf8258537afc31af801fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1a94b39991201bf8258537afc31af801fc" kindref="member">mStereovisionDistance</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_camera_param_vision_1a86b64614cb987748018c8c8b64b1bf89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1a86b64614cb987748018c8c8b64b1bf89" kindref="member">mStereovisionDepth</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_camera_param_vision_1aa56e6a40d26de1a3e5ebfac9fce13a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1aa56e6a40d26de1a3e5ebfac9fce13a97" kindref="member">mNearClipDistance</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_camera_param_vision_1aad9b3a18124fd8a43903ba43610f013f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1aad9b3a18124fd8a43903ba43610f013f" kindref="member">mFarClipDistance</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_param_vision_1aa960e3d8c4ec1adb5ed95fb0a3274dc6" kindref="member">init</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ticket</ref><sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision_1af9291631beff5dd765c99969ba32cb39" kindref="member">CameraParamVision</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Camera/alCameraParamVision.h"/>
+  </compounddef>
+</doxygen>

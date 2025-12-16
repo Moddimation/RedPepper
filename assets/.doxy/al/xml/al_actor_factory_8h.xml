@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_actor_factory_8h" kind="file" language="C++">
+    <compoundname>alActorFactory.h</compoundname>
+    <includes refid="al_factory_8h" local="no">Factory/alFactory.h</includes>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includedby refid="al_actor_factory_8cpp" local="no">alActorFactory.cpp</includedby>
+    <includedby refid="al_scene_8cpp" local="no">alScene.cpp</includedby>
+    <includedby refid="al_scene_function_8cpp" local="no">alSceneFunction.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="5">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alActorFactory.h</label>
+        <link refid="al_actor_factory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Factory/alFactory.h</label>
+        <link refid="al_factory_8h"/>
+      </node>
+      <node id="3">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="8">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="9">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="10">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="6">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alActorFactory.h</label>
+        <link refid="al_actor_factory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alActorFactory.cpp</label>
+        <link refid="al_actor_factory_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alScene.cpp</label>
+        <link refid="al_scene_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alSceneFunction.cpp</label>
+        <link refid="al_scene_function_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_actor_factory" prot="public">al::ActorFactory</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_factory_8h" kindref="compound">Factory/alFactory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Resource;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ByamlIter;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespaceal_1acf6426e378c1d5c3f8cda65911a533b2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_create_func_ptr" kindref="compound">CreateFuncPtr&lt;LiveActor&gt;::Type</ref><sp/><sp/><sp/><sp/><ref refid="namespaceal_1acf6426e378c1d5c3f8cda65911a533b2" kindref="member">CreateActorFuncPtr</ref>;</highlight></codeline>
+<codeline lineno="12" refid="namespaceal_1a0ce5448487e1976f9c170fa3fc93307a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">NameToCreator&lt;CreateActorFuncPtr&gt;</ref><sp/><ref refid="namespaceal_1a0ce5448487e1976f9c170fa3fc93307a" kindref="member">NameToActorCreator</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_actor_factory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_actor_factory" kindref="compound">ActorFactory</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_actor_factory_1a8e28e55a31e3c777824e17ec517cac35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_resource" kindref="compound">Resource</ref>*<sp/><sp/><ref refid="classal_1_1_actor_factory_1a8e28e55a31e3c777824e17ec517cac35" kindref="member">mArchive</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_actor_factory_1ac5fdaadd6a1df5cde37e2a383777e461" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref>*<sp/><ref refid="classal_1_1_actor_factory_1ac5fdaadd6a1df5cde37e2a383777e461" kindref="member">mConvertNameData</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_actor_factory_1a29aa5219d0a16ffcaddbb4a75accfaf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_factory_1a29aa5219d0a16ffcaddbb4a75accfaf6" kindref="member">convertName</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_actor_factory_1a4bec8c32fcea507cf3dc899809853ece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1acf6426e378c1d5c3f8cda65911a533b2" kindref="member">CreateActorFuncPtr</ref><sp/><ref refid="classal_1_1_actor_factory_1a4bec8c32fcea507cf3dc899809853ece" kindref="member">getCreator</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">objectName</ref><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_actor_factory_1abbdd76f6680e36b4bc61f5ffc7dec655" kindref="member">ActorFactory</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Factory/alActorFactory.h"/>
+  </compounddef>
+</doxygen>

@@ -29,7 +29,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**FileSystemBase**](classnn_1_1fs_1_1detail_1_1FileSystemBase.md) <br> |
+| class | [**FileSystemBase**](classnn_1_1fs_1_1detail_1_1_file_system_base.md) <br> |
 
 
 
@@ -61,7 +61,7 @@
 
 | Type | Name |
 | ---: | :--- |
-|  void | [**RegisterGlobalFileSystemBase**](#function-registerglobalfilesystembase) ([**FileSystemBase**](classnn_1_1fs_1_1detail_1_1FileSystemBase.md) &) <br> |
+|  void | [**RegisterGlobalFileSystemBase**](#function-registerglobalfilesystembase) ([**FileSystemBase**](classnn_1_1fs_1_1detail_1_1_file_system_base.md) &) <br> |
 
 
 

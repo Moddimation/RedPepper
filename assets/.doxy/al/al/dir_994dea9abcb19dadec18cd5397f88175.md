@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/src/Npc
+# Dir Npc
 
 
 
@@ -21,9 +21,9 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alBreakModel.cpp**](alBreakModel_8cpp.md) <br> |
-| file | [**alEffectObj.cpp**](alEffectObj_8cpp.md) <br> |
-| file | [**alSky.cpp**](alSky_8cpp.md) <br> |
+| file | [**alBreakModel.cpp**](al_break_model_8cpp.md) <br> |
+| file | [**alEffectObj.cpp**](al_effect_obj_8cpp.md) <br> |
+| file | [**alSky.cpp**](al_sky_8cpp.md) <br> |
 
 
 

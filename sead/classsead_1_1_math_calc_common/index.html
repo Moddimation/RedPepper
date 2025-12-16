@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::MathCalcCommon - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-seadmathcalccommon">Class sead::MathCalcCommon</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>MathCalcCommon</strong></a></p>
+<ul>
+<li><code>#include &lt;seadMathCalcCommon.h&gt;</code></li>
+</ul>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structsead_1_1_math_calc_common_1_1_atan_sample/"><strong>AtanSample</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structsead_1_1_math_calc_common_1_1_exp_sample/"><strong>ExpSample</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structsead_1_1_math_calc_common_1_1_log_sample/"><strong>LogSample</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structsead_1_1_math_calc_common_1_1_sin_cos_sample/"><strong>SinCosSample</strong></a> <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes">Public Static Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1_math_calc_common_1_1_atan_sample/"><strong>AtanSample</strong></a></td>
+<td style="text-align: left;"><a href="#variable-catantbl-12"><strong>cAtanTbl</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1_math_calc_common_1_1_exp_sample/"><strong>ExpSample</strong></a></td>
+<td style="text-align: left;"><a href="#variable-cexptbl-12"><strong>cExpTbl</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-chalfroundidx"><strong>cHalfRoundIdx</strong></a>   = <code>0x80000000</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1_math_calc_common_1_1_log_sample/"><strong>LogSample</strong></a></td>
+<td style="text-align: left;"><a href="#variable-clogtbl-12"><strong>cLogTbl</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#variable-cquarterroundidx"><strong>cQuarterRoundIdx</strong></a>   = <code>0x40000000</code><br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="../structsead_1_1_math_calc_common_1_1_sin_cos_sample/"><strong>SinCosSample</strong></a></td>
+<td style="text-align: left;"><a href="#variable-csincostbl-12"><strong>cSinCosTbl</strong></a>  <br><em>Note: this is only defined for T = float at the moment.</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-abs-23"><strong>abs</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-abs-33"><strong>abs</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-acosidx-22"><strong>acosIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> c) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-asinidx-22"><strong>asinIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> s) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-atan2idx-22"><strong>atan2Idx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> y, <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-atanidx-22"><strong>atanIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>MathCalcCommon</strong></a>&lt; float &gt;::AtanSample</td>
+<td style="text-align: left;"><a href="#function-catantbl-22"><strong>cAtanTbl</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>MathCalcCommon</strong></a>&lt; float &gt;::ExpSample</td>
+<td style="text-align: left;"><a href="#function-cexptbl-22"><strong>cExpTbl</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>MathCalcCommon</strong></a>&lt; float &gt;::LogSample</td>
+<td style="text-align: left;"><a href="#function-clogtbl-22"><strong>cLogTbl</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>MathCalcCommon</strong></a>&lt; float &gt;::SinCosSample</td>
+<td style="text-align: left;"><a href="#function-csincostbl-22"><strong>cSinCosTbl</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-ceil-22"><strong>ceil</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a></td>
+<td style="text-align: left;"><a href="#function-cosidx-22"><strong>cosIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-floor-22"><strong>floor</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a></td>
+<td style="text-align: left;"><a href="#function-nan-23"><strong>nan</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-f64"><strong>f64</strong></a></td>
+<td style="text-align: left;"><a href="#function-nan-33"><strong>nan</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-roundoff-22"><strong>roundOff</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-rounduppow2-23"><strong>roundUpPow2</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> val, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> base) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-rounduppow2-33"><strong>roundUpPow2</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> val, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> base) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-sincosidx-22"><strong>sinCosIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> * pSin, <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> * pCos, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a></td>
+<td style="text-align: left;"><a href="#function-sinidx-22"><strong>sinIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a></td>
+<td style="text-align: left;"><a href="#function-tanidx-22"><strong>tanIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions">Public Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-abs-13"><strong>abs</strong></a> (T x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-acos"><strong>acos</strong></a> (T c) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-acosidx-12"><strong>acosIdx</strong></a> (T c) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-angledist"><strong>angleDist</strong></a> (T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-asin"><strong>asin</strong></a> (T s) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-asinidx-12"><strong>asinIdx</strong></a> (T s) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-atan"><strong>atan</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-atan2"><strong>atan2</strong></a> (T y, T x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-atan2idx-12"><strong>atan2Idx</strong></a> (T y, T x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-atanidx-12"><strong>atanIdx</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-ceil-12"><strong>ceil</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-chase"><strong>chase</strong></a> (T * value, T target, T step) <br><em>Adds or subtracts</em> <code>step</code> <em>from</em><code>value</code> <em>towards</em><code>target</code> <em>.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-chaseangle"><strong>chaseAngle</strong></a> (T *, T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-chaseangleidx"><strong>chaseAngleIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> *, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a>, <a href="../_l_m_s___types_8h/#typedef-s64"><strong>s64</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-clamp"><strong>clamp</strong></a> (T value, T low, T high) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-clamp2"><strong>clamp2</strong></a> (T min_, T val, T max_) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-clampmax"><strong>clampMax</strong></a> (T val, T max_) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-clampmin"><strong>clampMin</strong></a> (T val, T min_) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-cos"><strong>cos</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-cosidx-12"><strong>cosIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-deg2idx"><strong>deg2idx</strong></a> (T a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-deg2rad"><strong>deg2rad</strong></a> (T deg) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-exp"><strong>exp</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-exptable"><strong>expTable</strong></a> (T x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-fitsign"><strong>fitSign</strong></a> (T value, T sign_value) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-floor-12"><strong>floor</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-gcd"><strong>gcd</strong></a> (T x, T y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getrand"><strong>getRand</strong></a> (T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getrandrange"><strong>getRandRange</strong></a> (T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getrandsign"><strong>getRandSign</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-idx2deg"><strong>idx2deg</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-idx2rad"><strong>idx2rad</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-infinity"><strong>infinity</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-inv"><strong>inv</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isinfinity"><strong>isInfinity</strong></a> (T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isintersect1d"><strong>isIntersect1d</strong></a> (T, T, T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-ismultiplepow2"><strong>isMultiplePow2</strong></a> (T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isnan"><strong>isNan</strong></a> (T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-ispow2"><strong>isPow2</strong></a> (T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-iszero"><strong>isZero</strong></a> (T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-lcm"><strong>lcm</strong></a> (T x, T y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-lerp"><strong>lerp</strong></a> (T a, T b, <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> ratio) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-ln2"><strong>ln2</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-ln2inv"><strong>ln2Inv</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-log"><strong>log</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-log10"><strong>log10</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-log2"><strong>log2</strong></a> (T n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-logtable"><strong>logTable</strong></a> (T x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-max"><strong>max</strong></a> (T a, T b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-max3"><strong>max3</strong></a> (T a, T b, T c) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-maxnumber"><strong>maxNumber</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-min"><strong>min</strong></a> (T a, T b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-min3"><strong>min3</strong></a> (T a, T b, T c) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-minnumber"><strong>minNumber</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-nan-13"><strong>nan</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-neg"><strong>neg</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-one"><strong>one</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-pi"><strong>pi</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-pi2"><strong>pi2</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-pihalf"><strong>piHalf</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-pow"><strong>pow</strong></a> (T x, T y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-powtable"><strong>powTable</strong></a> (T, T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-rad2deg"><strong>rad2deg</strong></a> (T rad) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-rad2idx"><strong>rad2idx</strong></a> (T a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-random"><strong>random</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-roundangle"><strong>roundAngle</strong></a> (T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-rounddownn"><strong>roundDownN</strong></a> (T val, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> multNumber) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-rounddownpow2"><strong>roundDownPow2</strong></a> (T x, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-roundoff-12"><strong>roundOff</strong></a> (T val) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-roundup"><strong>roundUp</strong></a> (T x, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> multNumber) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a></td>
+<td style="text-align: left;"><a href="#function-rounduppow2-13"><strong>roundUpPow2</strong></a> (T x, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> y) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-rsqrt"><strong>rsqrt</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-sign"><strong>sign</strong></a> (T value) <br><em>Returns -1 for strictly negative values and 1 otherwise.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-sin"><strong>sin</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-sincosidx-12"><strong>sinCosIdx</strong></a> (T * p_sin, T * p_cos, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-sinidx-12"><strong>sinIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-sqrt"><strong>sqrt</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-square"><strong>square</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-tan"><strong>tan</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-tanidx-12"><strong>tanIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> idx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-zero"><strong>zero</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions">Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-atanidx_-22"><strong>atanIdx_</strong></a> (<a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> t) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-static-functions">Protected Static Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-assertgreaterthanorequaltozero_"><strong>assertGreaterThanOrEqualToZero_</strong></a> (T) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="#function-atanidx_-12"><strong>atanIdx_</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-expln2_"><strong>expLn2_</strong></a> (T x) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-log1_2_"><strong>log1_2_</strong></a> (T x) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes-documentation">Public Static Attributes Documentation</h2>
+<h3 id="variable-catantbl-12">variable cAtanTbl [1/2]</h3>
+<pre><code class="language-C++">const AtanSample sead::MathCalcCommon&lt; T &gt;::cAtanTbl[128+1];
+</code></pre>
+<hr>
+
+<h3 id="variable-cexptbl-12">variable cExpTbl [1/2]</h3>
+<pre><code class="language-C++">const ExpSample sead::MathCalcCommon&lt; T &gt;::cExpTbl[32+1];
+</code></pre>
+<hr>
+
+<h3 id="variable-chalfroundidx">variable cHalfRoundIdx</h3>
+<pre><code class="language-C++">const u32 sead::MathCalcCommon&lt; T &gt;::cHalfRoundIdx;
+</code></pre>
+<hr>
+
+<h3 id="variable-clogtbl-12">variable cLogTbl [1/2]</h3>
+<pre><code class="language-C++">const LogSample sead::MathCalcCommon&lt; T &gt;::cLogTbl[256+1];
+</code></pre>
+<hr>
+
+<h3 id="variable-cquarterroundidx">variable cQuarterRoundIdx</h3>
+<pre><code class="language-C++">const u32 sead::MathCalcCommon&lt; T &gt;::cQuarterRoundIdx;
+</code></pre>
+<hr>
+
+<h3 id="variable-csincostbl-12">variable cSinCosTbl [1/2]</h3>
+<p><em>Note: this is only defined for T = float at the moment.</em> </p>
+<pre><code class="language-C++">const SinCosSample sead::MathCalcCommon&lt; T &gt;::cSinCosTbl[256+1];
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-abs-23">function abs [2/3]</h3>
+<pre><code class="language-C++">inline s32 sead::MathCalcCommon::abs (
+    s32 x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-abs-33">function abs [3/3]</h3>
+<pre><code class="language-C++">inline u32 sead::MathCalcCommon::abs (
+    u32 x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-acosidx-22">function acosIdx [2/2]</h3>
+<pre><code class="language-C++">inline u32 sead::MathCalcCommon::acosIdx (
+    f32 c
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-asinidx-22">function asinIdx [2/2]</h3>
+<pre><code class="language-C++">inline u32 sead::MathCalcCommon::asinIdx (
+    f32 s
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atan2idx-22">function atan2Idx [2/2]</h3>
+<pre><code class="language-C++">inline u32 sead::MathCalcCommon::atan2Idx (
+    f32 y,
+    f32 x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atanidx-22">function atanIdx [2/2]</h3>
+<pre><code class="language-C++">inline u32 sead::MathCalcCommon::atanIdx (
+    f32 t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-catantbl-22">function cAtanTbl [2/2]</h3>
+<pre><code class="language-C++">const MathCalcCommon &lt; float &gt;::AtanSample sead::MathCalcCommon::cAtanTbl () 
+</code></pre>
+<hr>
+
+<h3 id="function-cexptbl-22">function cExpTbl [2/2]</h3>
+<pre><code class="language-C++">const MathCalcCommon &lt; float &gt;::ExpSample sead::MathCalcCommon::cExpTbl () 
+</code></pre>
+<hr>
+
+<h3 id="function-clogtbl-22">function cLogTbl [2/2]</h3>
+<pre><code class="language-C++">const MathCalcCommon &lt; float &gt;::LogSample sead::MathCalcCommon::cLogTbl () 
+</code></pre>
+<hr>
+
+<h3 id="function-csincostbl-22">function cSinCosTbl [2/2]</h3>
+<pre><code class="language-C++">const MathCalcCommon &lt; float &gt;::SinCosSample sead::MathCalcCommon::cSinCosTbl () 
+</code></pre>
+<hr>
+
+<h3 id="function-ceil-22">function ceil [2/2]</h3>
+<pre><code class="language-C++">inline s32 sead::MathCalcCommon::ceil (
+    s32 val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-cosidx-22">function cosIdx [2/2]</h3>
+<pre><code class="language-C++">inline f32 sead::MathCalcCommon::cosIdx (
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-floor-22">function floor [2/2]</h3>
+<pre><code class="language-C++">inline s32 sead::MathCalcCommon::floor (
+    s32 val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-nan-23">function nan [2/3]</h3>
+<pre><code class="language-C++">inline f32 sead::MathCalcCommon::nan () 
+</code></pre>
+<hr>
+
+<h3 id="function-nan-33">function nan [3/3]</h3>
+<pre><code class="language-C++">inline f64 sead::MathCalcCommon::nan () 
+</code></pre>
+<hr>
+
+<h3 id="function-roundoff-22">function roundOff [2/2]</h3>
+<pre><code class="language-C++">inline s32 sead::MathCalcCommon::roundOff (
+    s32 val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rounduppow2-23">function roundUpPow2 [2/3]</h3>
+<pre><code class="language-C++">inline s32 sead::MathCalcCommon::roundUpPow2 (
+    u32 val,
+    s32 base
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rounduppow2-33">function roundUpPow2 [3/3]</h3>
+<pre><code class="language-C++">inline s32 sead::MathCalcCommon::roundUpPow2 (
+    s32 val,
+    s32 base
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sincosidx-22">function sinCosIdx [2/2]</h3>
+<pre><code class="language-C++">inline void sead::MathCalcCommon::sinCosIdx (
+    f32 * pSin,
+    f32 * pCos,
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sinidx-22">function sinIdx [2/2]</h3>
+<pre><code class="language-C++">inline f32 sead::MathCalcCommon::sinIdx (
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-tanidx-22">function tanIdx [2/2]</h3>
+<pre><code class="language-C++">inline f32 sead::MathCalcCommon::tanIdx (
+    u32 idx
+) 
+</code></pre>
+<hr>
+<h2 id="public-static-functions-documentation">Public Static Functions Documentation</h2>
+<h3 id="function-abs-13">function abs [1/3]</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::abs (
+    T x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-acos">function acos</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::acos (
+    T c
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-acosidx-12">function acosIdx [1/2]</h3>
+<pre><code class="language-C++">static u32 sead::MathCalcCommon::acosIdx (
+    T c
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-angledist">function angleDist</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::angleDist (
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-asin">function asin</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::asin (
+    T s
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-asinidx-12">function asinIdx [1/2]</h3>
+<pre><code class="language-C++">static u32 sead::MathCalcCommon::asinIdx (
+    T s
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atan">function atan</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::atan (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atan2">function atan2</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::atan2 (
+    T y,
+    T x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atan2idx-12">function atan2Idx [1/2]</h3>
+<pre><code class="language-C++">static u32 sead::MathCalcCommon::atan2Idx (
+    T y,
+    T x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atanidx-12">function atanIdx [1/2]</h3>
+<pre><code class="language-C++">static u32 sead::MathCalcCommon::atanIdx (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ceil-12">function ceil [1/2]</h3>
+<pre><code class="language-C++">static inline s32 sead::MathCalcCommon::ceil (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-chase">function chase</h3>
+<p><em>Adds or subtracts</em> <code>step</code> <em>from</em><code>value</code> <em>towards</em><code>target</code> <em>.</em></p>
+<pre><code class="language-C++">static inline bool sead::MathCalcCommon::chase (
+    T * value,
+    T target,
+    T step
+) 
+</code></pre>
+<p>Returns whether the new value is equal to the target. </p>
+<hr>
+
+<h3 id="function-chaseangle">function chaseAngle</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::chaseAngle (
+    T *,
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-chaseangleidx">function chaseAngleIdx</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::chaseAngleIdx (
+    u32 *,
+    u32,
+    s64
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-clamp">function clamp</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::clamp (
+    T value,
+    T low,
+    T high
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-clamp2">function clamp2</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::clamp2 (
+    T min_,
+    T val,
+    T max_
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-clampmax">function clampMax</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::clampMax (
+    T val,
+    T max_
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-clampmin">function clampMin</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::clampMin (
+    T val,
+    T min_
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-cos">function cos</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::cos (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-cosidx-12">function cosIdx [1/2]</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::cosIdx (
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-deg2idx">function deg2idx</h3>
+<pre><code class="language-C++">static inline u32 sead::MathCalcCommon::deg2idx (
+    T a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-deg2rad">function deg2rad</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::deg2rad (
+    T deg
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-exp">function exp</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::exp (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-exptable">function expTable</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::expTable (
+    T x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-fitsign">function fitSign</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::fitSign (
+    T value,
+    T sign_value
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-floor-12">function floor [1/2]</h3>
+<pre><code class="language-C++">static inline s32 sead::MathCalcCommon::floor (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-gcd">function gcd</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::gcd (
+    T x,
+    T y
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getrand">function getRand</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::getRand (
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getrandrange">function getRandRange</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::getRandRange (
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getrandsign">function getRandSign</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::getRandSign () 
+</code></pre>
+<hr>
+
+<h3 id="function-idx2deg">function idx2deg</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::idx2deg (
+    u32 a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-idx2rad">function idx2rad</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::idx2rad (
+    u32 a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-infinity">function infinity</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::infinity () 
+</code></pre>
+<hr>
+
+<h3 id="function-inv">function inv</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::inv (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-isinfinity">function isInfinity</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::isInfinity (
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-isintersect1d">function isIntersect1d</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::isIntersect1d (
+    T,
+    T,
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ismultiplepow2">function isMultiplePow2</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::isMultiplePow2 (
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-isnan">function isNan</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::isNan (
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ispow2">function isPow2</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::isPow2 (
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-iszero">function isZero</h3>
+<pre><code class="language-C++">static bool sead::MathCalcCommon::isZero (
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-lcm">function lcm</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::lcm (
+    T x,
+    T y
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-lerp">function lerp</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::lerp (
+    T a,
+    T b,
+    f32 ratio
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ln2">function ln2</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::ln2 () 
+</code></pre>
+<hr>
+
+<h3 id="function-ln2inv">function ln2Inv</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::ln2Inv () 
+</code></pre>
+<hr>
+
+<h3 id="function-log">function log</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::log (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-log10">function log10</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::log10 (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-log2">function log2</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::log2 (
+    T n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-logtable">function logTable</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::logTable (
+    T x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-max">function max</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::max (
+    T a,
+    T b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-max3">function max3</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::max3 (
+    T a,
+    T b,
+    T c
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-maxnumber">function maxNumber</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::maxNumber () 
+</code></pre>
+<hr>
+
+<h3 id="function-min">function min</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::min (
+    T a,
+    T b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-min3">function min3</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::min3 (
+    T a,
+    T b,
+    T c
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-minnumber">function minNumber</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::minNumber () 
+</code></pre>
+<hr>
+
+<h3 id="function-nan-13">function nan [1/3]</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::nan () 
+</code></pre>
+<hr>
+
+<h3 id="function-neg">function neg</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::neg (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-one">function one</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::one () 
+</code></pre>
+<hr>
+
+<h3 id="function-pi">function pi</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::pi () 
+</code></pre>
+<hr>
+
+<h3 id="function-pi2">function pi2</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::pi2 () 
+</code></pre>
+<hr>
+
+<h3 id="function-pihalf">function piHalf</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::piHalf () 
+</code></pre>
+<hr>
+
+<h3 id="function-pow">function pow</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::pow (
+    T x,
+    T y
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-powtable">function powTable</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::powTable (
+    T,
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rad2deg">function rad2deg</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::rad2deg (
+    T rad
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rad2idx">function rad2idx</h3>
+<pre><code class="language-C++">static inline u32 sead::MathCalcCommon::rad2idx (
+    T a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-random">function random</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::random () 
+</code></pre>
+<hr>
+
+<h3 id="function-roundangle">function roundAngle</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::roundAngle (
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rounddownn">function roundDownN</h3>
+<pre><code class="language-C++">static s32 sead::MathCalcCommon::roundDownN (
+    T val,
+    s32 multNumber
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rounddownpow2">function roundDownPow2</h3>
+<pre><code class="language-C++">static s32 sead::MathCalcCommon::roundDownPow2 (
+    T x,
+    s32 y
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-roundoff-12">function roundOff [1/2]</h3>
+<pre><code class="language-C++">static inline s32 sead::MathCalcCommon::roundOff (
+    T val
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-roundup">function roundUp</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::roundUp (
+    T x,
+    s32 multNumber
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rounduppow2-13">function roundUpPow2 [1/3]</h3>
+<pre><code class="language-C++">static s32 sead::MathCalcCommon::roundUpPow2 (
+    T x,
+    s32 y
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-rsqrt">function rsqrt</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::rsqrt (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sign">function sign</h3>
+<p><em>Returns -1 for strictly negative values and 1 otherwise.</em> </p>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::sign (
+    T value
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sin">function sin</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::sin (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sincosidx-12">function sinCosIdx [1/2]</h3>
+<pre><code class="language-C++">static void sead::MathCalcCommon::sinCosIdx (
+    T * p_sin,
+    T * p_cos,
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sinidx-12">function sinIdx [1/2]</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::sinIdx (
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-sqrt">function sqrt</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::sqrt (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-square">function square</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::square (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-tan">function tan</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::tan (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-tanidx-12">function tanIdx [1/2]</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::tanIdx (
+    u32 idx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-zero">function zero</h3>
+<pre><code class="language-C++">static inline T sead::MathCalcCommon::zero () 
+</code></pre>
+<hr>
+<h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
+<h3 id="function-atanidx_-22">function atanIdx_ [2/2]</h3>
+<pre><code class="language-C++">u32 sead::MathCalcCommon::atanIdx_ (
+    f32 t
+) 
+</code></pre>
+<hr>
+<h2 id="protected-static-functions-documentation">Protected Static Functions Documentation</h2>
+<h3 id="function-assertgreaterthanorequaltozero_">function assertGreaterThanOrEqualToZero_</h3>
+<pre><code class="language-C++">static void sead::MathCalcCommon::assertGreaterThanOrEqualToZero_ (
+    T
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-atanidx_-12">function atanIdx_ [1/2]</h3>
+<pre><code class="language-C++">static u32 sead::MathCalcCommon::atanIdx_ (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-expln2_">function expLn2_</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::expLn2_ (
+    T x
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-log1_2_">function log1_2_</h3>
+<pre><code class="language-C++">static T sead::MathCalcCommon::log1_2_ (
+    T x
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/math/seadMathCalcCommon.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

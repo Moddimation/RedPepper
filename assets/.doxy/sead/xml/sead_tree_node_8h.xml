@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_tree_node_8h" kind="file" language="C++">
+    <compoundname>seadTreeNode.h</compoundname>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includedby refid="sead_method_tree_8h" local="no">seadMethodTree.h</includedby>
+    <includedby refid="sead_task_base_8h" local="no">seadTaskBase.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadTreeNode.h</label>
+        <link refid="sead_tree_node_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>nn/types.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>seadTreeNode.h</label>
+        <link refid="sead_tree_node_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="3">
+        <label>seadCalculateTask.h</label>
+        <link refid="sead_calculate_task_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadMethodTree.h</label>
+        <link refid="sead_method_tree_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadTaskBase.h</label>
+        <link refid="sead_task_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>seadTaskMgr.h</label>
+        <link refid="sead_task_mgr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_tree_node" prot="public">sead::TreeNode</innerclass>
+    <innerclass refid="classsead_1_1_t_tree_node" prot="public">sead::TTreeNode</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SEAD_TREENODE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_TREENODE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="classsead_1_1_tree_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classsead_1_1_tree_node_1a7c2aebe458b714419300deda28c64417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_tree_node_1a7c2aebe458b714419300deda28c64417" kindref="member">TreeNode</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_tree_node_1aec816a942c1d2ba7cba0d125cac29d11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1aec816a942c1d2ba7cba0d125cac29d11" kindref="member">clearLinks</ref>();</highlight></codeline>
+<codeline lineno="12" refid="classsead_1_1_tree_node_1aab0d65612e31951fedf9aabdb71a3299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_tree_node_1aab0d65612e31951fedf9aabdb71a3299" kindref="member">countChildren</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="classsead_1_1_tree_node_1aeb897bf2da2bfe79ca9702e3cfa502be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1aeb897bf2da2bfe79ca9702e3cfa502be" kindref="member">detachAll</ref>();</highlight></codeline>
+<codeline lineno="14" refid="classsead_1_1_tree_node_1a749f1c3f42b145dd3514ae5b07d6d8eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1a749f1c3f42b145dd3514ae5b07d6d8eb" kindref="member">detachSubTree</ref>();</highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_tree_node_1a0a3317f2e49c4e1eff2ae328d5d76cf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/><ref refid="classsead_1_1_tree_node_1a0a3317f2e49c4e1eff2ae328d5d76cf5" kindref="member">findRoot</ref>();</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_tree_node_1a07e5b6359d9c14f3e28648982ef25e90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/><ref refid="classsead_1_1_tree_node_1a07e5b6359d9c14f3e28648982ef25e90" kindref="member">findRoot</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_tree_node_1a3c677ecc5117d2c8d417c39cd0ca4cbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1a3c677ecc5117d2c8d417c39cd0ca4cbf" kindref="member">insertAfterSelf</ref>(<ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="18" refid="classsead_1_1_tree_node_1a2db64cd9ca5744af9442e9734a8d553f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1a2db64cd9ca5744af9442e9734a8d553f" kindref="member">insertBeforeSelf</ref>(<ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="19" refid="classsead_1_1_tree_node_1abb408c3466e722cf8bb68c727e173358" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1abb408c3466e722cf8bb68c727e173358" kindref="member">pushBackChild</ref>(<ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="20" refid="classsead_1_1_tree_node_1a513f48a11d3f15b7f62d707850ee7b5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1a513f48a11d3f15b7f62d707850ee7b5f" kindref="member">pushBackSibling</ref>(<ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="21" refid="classsead_1_1_tree_node_1a098db96c6bc0734908902ecd31011023" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1a098db96c6bc0734908902ecd31011023" kindref="member">pushFrontChild</ref>(<ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classsead_1_1_tree_node_1a090c955de5fb5822fead1c03584c64a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node_1a090c955de5fb5822fead1c03584c64a9" kindref="member">clearChildLinksRecursively_</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classsead_1_1_tree_node_1a19c8279ee858edfe503a44640771132f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/><ref refid="classsead_1_1_tree_node_1a19c8279ee858edfe503a44640771132f" kindref="member">mParent</ref>;</highlight></codeline>
+<codeline lineno="27" refid="classsead_1_1_tree_node_1a93a0fc9b18eac55ba41f065fdca8b60a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/><ref refid="classsead_1_1_tree_node_1a93a0fc9b18eac55ba41f065fdca8b60a" kindref="member">mChild</ref>;</highlight></codeline>
+<codeline lineno="28" refid="classsead_1_1_tree_node_1ae7732ae6d9202afa7511f74cae7c7a17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/><ref refid="classsead_1_1_tree_node_1ae7732ae6d9202afa7511f74cae7c7a17" kindref="member">mNext</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classsead_1_1_tree_node_1af6d7a2e562b9de922d14e49122ccff60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref>*<sp/><ref refid="classsead_1_1_tree_node_1af6d7a2e562b9de922d14e49122ccff60" kindref="member">mPrev</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="33" refid="classsead_1_1_t_tree_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_tree_node" kindref="compound">TreeNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classsead_1_1_t_tree_node_1a5c17783cd87334698a4f24a5386cf7bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_t_tree_node_1a5c17783cd87334698a4f24a5386cf7bc" kindref="member">TTreeNode</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classsead_1_1_t_tree_node_1abe420cd6c45b269839f28ded345e17f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1abe420cd6c45b269839f28ded345e17f1" kindref="member">TTreeNode</ref>(T<sp/>data)<sp/>:<sp/><ref refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" kindref="member">mData</ref>(data)<sp/>{}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classsead_1_1_t_tree_node_1abdf524d3aa27940029db880ed4d15d22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="classsead_1_1_t_tree_node_1abdf524d3aa27940029db880ed4d15d22" kindref="member">value</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" kindref="member">mData</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classsead_1_1_t_tree_node_1abaa5ead9c29923c58296e638df24097e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="classsead_1_1_t_tree_node_1abaa5ead9c29923c58296e638df24097e" kindref="member">value</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" kindref="member">mData</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classsead_1_1_t_tree_node_1af93b9188533d45f2a0f49e0d6082dbf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/><ref refid="classsead_1_1_t_tree_node_1af93b9188533d45f2a0f49e0d6082dbf3" kindref="member">parent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_tree_node_1a19c8279ee858edfe503a44640771132f" kindref="member">mParent</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classsead_1_1_t_tree_node_1a61ab330a11d20ba618e8fba059eb4a86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/><ref refid="classsead_1_1_t_tree_node_1a61ab330a11d20ba618e8fba059eb4a86" kindref="member">child</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_tree_node_1a93a0fc9b18eac55ba41f065fdca8b60a" kindref="member">mChild</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classsead_1_1_t_tree_node_1a78b0080a6ba72c2518d66aeae6ddeeb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/><ref refid="classsead_1_1_t_tree_node_1a78b0080a6ba72c2518d66aeae6ddeeb3" kindref="member">next</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_tree_node_1ae7732ae6d9202afa7511f74cae7c7a17" kindref="member">mNext</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classsead_1_1_t_tree_node_1ab81ae31c8f56b5a5033361b465ae6cda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/><ref refid="classsead_1_1_t_tree_node_1ab81ae31c8f56b5a5033361b465ae6cda" kindref="member">prev</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_tree_node_1af6d7a2e562b9de922d14e49122ccff60" kindref="member">mPrev</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classsead_1_1_t_tree_node_1a0dfe9db179b06b4fe631ed431944322f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/><ref refid="classsead_1_1_t_tree_node_1a0dfe9db179b06b4fe631ed431944322f" kindref="member">findRoot</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_tree_node_1a0a3317f2e49c4e1eff2ae328d5d76cf5" kindref="member">TreeNode::findRoot</ref>());<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classsead_1_1_t_tree_node_1af12010b51ae04ddeb20823947dc2ccdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/><ref refid="classsead_1_1_t_tree_node_1af12010b51ae04ddeb20823947dc2ccdf" kindref="member">findRoot</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_tree_node_1a0a3317f2e49c4e1eff2ae328d5d76cf5" kindref="member">TreeNode::findRoot</ref>());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classsead_1_1_t_tree_node_1ab85ef907fdad971086902e776c9a5fec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1ab85ef907fdad971086902e776c9a5fec" kindref="member">insertAfterSelf</ref>(<ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/>node)<sp/>{<sp/><ref refid="classsead_1_1_tree_node_1a3c677ecc5117d2c8d417c39cd0ca4cbf" kindref="member">TreeNode::insertAfterSelf</ref>(node);<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classsead_1_1_t_tree_node_1a6465ef19dacaf7f069a53be32089cf7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1a6465ef19dacaf7f069a53be32089cf7a" kindref="member">insertBeforeSelf</ref>(<ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/>node)<sp/>{<sp/><ref refid="classsead_1_1_tree_node_1a2db64cd9ca5744af9442e9734a8d553f" kindref="member">TreeNode::insertBeforeSelf</ref>(node);<sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classsead_1_1_t_tree_node_1a5f62ef7352d06fb7b34e14a9d7c3ee25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1a5f62ef7352d06fb7b34e14a9d7c3ee25" kindref="member">pushBackChild</ref>(<ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/>node)<sp/>{<sp/><ref refid="classsead_1_1_tree_node_1abb408c3466e722cf8bb68c727e173358" kindref="member">TreeNode::pushBackChild</ref>(node);<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classsead_1_1_t_tree_node_1aa1f6ad8b816883e60a820d048ca5af4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1aa1f6ad8b816883e60a820d048ca5af4b" kindref="member">pushBackSibling</ref>(<ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/>node)<sp/>{<sp/><ref refid="classsead_1_1_tree_node_1a513f48a11d3f15b7f62d707850ee7b5f" kindref="member">TreeNode::pushBackSibling</ref>(node);<sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classsead_1_1_t_tree_node_1a21a95c035fb197e00ee012be916ec156" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_t_tree_node_1a21a95c035fb197e00ee012be916ec156" kindref="member">pushFrontChild</ref>(<ref refid="classsead_1_1_t_tree_node" kindref="compound">TTreeNode</ref>*<sp/>node)<sp/>{<sp/><ref refid="classsead_1_1_tree_node_1a098db96c6bc0734908902ecd31011023" kindref="member">TreeNode::pushFrontChild</ref>(node);<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>probably<sp/>iterators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70" refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_t_tree_node_1ac0154b6c4c63e8a711e3692ff971f442" kindref="member">mData</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>SEAD_TREENODE_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/container/seadTreeNode.h"/>
+  </compounddef>
+</doxygen>

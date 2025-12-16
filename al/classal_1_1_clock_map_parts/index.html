@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::ClockMapParts - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-alclockmapparts">Class al::ClockMapParts</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>ClockMapParts</strong></a></p>
+<ul>
+<li><code>#include &lt;alClockMapParts.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classal_1_1_map_obj_actor/">al::MapObjActor</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-clockmapparts"><strong>ClockMapParts</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> sead::SafeString &amp; name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exerotate"><strong>exeRotate</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exerotatesign"><strong>exeRotateSign</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exestandby"><strong>exeStandBy</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-exewait"><strong>exeWait</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-init"><strong>init</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_actor_init_info/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-almapobjactor">Public Functions inherited from al::MapObjActor</h2>
+<p>See <a href="../classal_1_1_map_obj_actor/">al::MapObjActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1_map_obj_actor/#function-mapobjactor"><strong>MapObjActor</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> sead::SafeString &amp; name) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alliveactor">Public Functions inherited from al::LiveActor</h2>
+<p>See <a href="../classal_1_1_live_actor/">al::LiveActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-liveactor"><strong>LiveActor</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-attacksensor"><strong>attackSensor</strong></a> (<a href="../classal_1_1_hit_sensor/"><strong>HitSensor</strong></a> * me, <a href="../classal_1_1_hit_sensor/"><strong>HitSensor</strong></a> * other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-calcandsetbasemtx"><strong>calcAndSetBaseMtx</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-calcanim"><strong>calcAnim</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-draw"><strong>draw</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-endclipped"><strong>endClipped</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_action_keeper/"><strong>ActorActionKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getactoractionkeeper"><strong>getActorActionKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_execute_info/"><strong>ActorExecuteInfo</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getactorexecuteinfo"><strong>getActorExecuteInfo</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_pose_keeper_base/"><strong>ActorPoseKeeperBase</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getactorposekeeper"><strong>getActorPoseKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> sead::Matrix34f *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getbasemtx"><strong>getBaseMtx</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_collider/"><strong>Collider</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getcollider"><strong>getCollider</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_effect_keeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_hit_sensor_keeper/"><strong>HitSensorKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-gethitsensorkeeper"><strong>getHitSensorKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structal_1_1_live_actor_flag/"><strong>LiveActorFlag</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getliveactorflag-12"><strong>getLiveActorFlag</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../structal_1_1_live_actor_flag/"><strong>LiveActorFlag</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getliveactorflag-22"><strong>getLiveActorFlag</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_model_keeper/"><strong>ModelKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getmodelkeeper"><strong>getModelKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getname"><strong>getName</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_rail_keeper/"><strong>RailKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getrailkeeper"><strong>getRailKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_shadow_keeper/"><strong>ShadowKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getshadowkeeper"><strong>getShadowKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_stage_switch_keeper/"><strong>StageSwitchKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-getstageswitchkeeper"><strong>getStageSwitchKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-init"><strong>init</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_actor_init_info/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-initafterplacement"><strong>initAfterPlacement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-initcollider"><strong>initCollider</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>float</strong></a> radius, <a href="../classal_1_1_functor_v0_m/"><strong>float</strong></a> yOffset, <a href="../classal_1_1_functor_v0_m/"><strong>u32</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-initnervekeeper"><strong>initNerveKeeper</strong></a> (<a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> * nk) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-initposekeeper"><strong>initPoseKeeper</strong></a> (<a href="../classal_1_1_actor_pose_keeper_base/"><strong>ActorPoseKeeperBase</strong></a> * pPoseKeeper) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-initrailkeeper"><strong>initRailKeeper</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_actor_init_info/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-initstageswitchkeeper"><strong>initStageSwitchKeeper</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-makeactorappeared"><strong>makeActorAppeared</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-makeactordead"><strong>makeActorDead</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-movement"><strong>movement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-receivemsg"><strong>receiveMsg</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>u32</strong></a> msg, <a href="../classal_1_1_hit_sensor/"><strong>HitSensor</strong></a> * other, <a href="../classal_1_1_hit_sensor/"><strong>HitSensor</strong></a> * me) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-startclipped"><strong>startClipped</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-updatecollider"><strong>updateCollider</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-v22"><strong>v22</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#function-v23"><strong>v23</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1_i_use_nerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_nerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseeffectkeeper">Public Functions inherited from al::IUseEffectKeeper</h2>
+<p>See <a href="../classal_1_1_i_use_effect_keeper/">al::IUseEffectKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_effect_keeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_effect_keeper/#function-geteffectkeeper"><strong>getEffectKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseaudiokeeper">Public Functions inherited from al::IUseAudioKeeper</h2>
+<p>See <a href="../classal_1_1_i_use_audio_keeper/">al::IUseAudioKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-v1"><strong>v1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-v2"><strong>v2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusestageswitch">Public Functions inherited from al::IUseStageSwitch</h2>
+<p>See <a href="../classal_1_1_i_use_stage_switch/">al::IUseStageSwitch</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_stage_switch_keeper/"><strong>StageSwitchKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_stage_switch/#function-getstageswitchkeeper"><strong>getStageSwitchKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_stage_switch/#function-initstageswitchkeeper"><strong>initStageSwitchKeeper</strong></a> () = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes-inherited-from-alliveactor">Protected Attributes inherited from al::LiveActor</h2>
+<p>See <a href="../classal_1_1_live_actor/">al::LiveActor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-_4c"><strong>_4C</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_action_keeper/"><strong>ActorActionKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mactoractionkeeper"><strong>mActorActionKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_execute_info/"><strong>ActorExecuteInfo</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mactorexecuteinfo"><strong>mActorExecuteInfo</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>ActorLightCtrl</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mactorlightctrl"><strong>mActorLightCtrl</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_pose_keeper_base/"><strong>ActorPoseKeeperBase</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mactorposekeeper"><strong>mActorPoseKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-maudiokeeper"><strong>mAudioKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_collider/"><strong>Collider</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mcollider"><strong>mCollider</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_collision_parts/"><strong>CollisionParts</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mcollisionparts"><strong>mCollisionParts</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_effect_keeper/"><strong>EffectKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-meffectkeeper"><strong>mEffectKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_hit_sensor_keeper/"><strong>HitSensorKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mhitsensorkeeper"><strong>mHitSensorKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_model_keeper/"><strong>ModelKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mmodelkeeper"><strong>mModelKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mnervekeeper"><strong>mNerveKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_rail_keeper/"><strong>RailKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mrailkeeper"><strong>mRailKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_shadow_keeper/"><strong>ShadowKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mshadowkeeper"><strong>mShadowKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_stage_switch_keeper/"><strong>StageSwitchKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-mstageswitchkeeper"><strong>mStageSwitchKeeper</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_sub_actor_keeper/"><strong>SubActorKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_live_actor/#variable-msubactorkeeper"><strong>mSubActorKeeper</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-clockmapparts">function ClockMapParts</h3>
+<pre><code class="language-C++">al::ClockMapParts::ClockMapParts (
+    const sead::SafeString &amp; name
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-exerotate">function exeRotate</h3>
+<pre><code class="language-C++">void al::ClockMapParts::exeRotate () 
+</code></pre>
+<hr>
+
+<h3 id="function-exerotatesign">function exeRotateSign</h3>
+<pre><code class="language-C++">void al::ClockMapParts::exeRotateSign () 
+</code></pre>
+<hr>
+
+<h3 id="function-exestandby">function exeStandBy</h3>
+<pre><code class="language-C++">void al::ClockMapParts::exeStandBy () 
+</code></pre>
+<hr>
+
+<h3 id="function-exewait">function exeWait</h3>
+<pre><code class="language-C++">void al::ClockMapParts::exeWait () 
+</code></pre>
+<hr>
+
+<h3 id="function-init">function init</h3>
+<pre><code class="language-C++">virtual void al::ClockMapParts::init (
+    const  ActorInitInfo &amp; info
+) 
+</code></pre>
+<p>Implements <a href="../classal_1_1_live_actor/#function-init"><em>al::LiveActor::init</em></a></p>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/MapObj/alClockMapParts.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

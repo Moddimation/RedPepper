@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_bit_flag" kind="class" language="C++" prot="public">
+    <compoundname>sead::BitFlag</compoundname>
+    <includes refid="sead_bit_flag_8h" local="no">seadBitFlag.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" prot="protected" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BitFlag&lt; T &gt;::mBits</definition>
+        <argsstring></argsstring>
+        <name>mBits</name>
+        <qualifiedname>sead::BitFlag::mBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="105" column="7" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_bit_flag_1ac2d9e2e7899779b49956d4aab7b210bc" compoundref="sead_bit_flag_8h" startline="96" endline="98">sead::BitFlag&lt; T &gt;::countContinuousOffBitFromRight</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1af3018197c7b043138c3e19c47e830948" compoundref="sead_bit_flag_8h" startline="93" endline="93">sead::BitFlag&lt; T &gt;::countOnBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a1772a2e9a96f504140f22e5ca7a4bca0" compoundref="sead_bit_flag_8h" startline="100" endline="100">sead::BitFlag&lt; T &gt;::countRightOnBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a77aa971da3d2b092586eadf2cf0e4f39" compoundref="sead_bit_flag_8h" startline="102" endline="102">sead::BitFlag&lt; T &gt;::findOnBitFromRight</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1aaa1590cde88d71dbea602b77efedef2d" compoundref="sead_bit_flag_8h" startline="34" endline="34">sead::BitFlag&lt; T &gt;::getDirect</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a12b035f39d8dc6f1a45efed19afc2a7f" compoundref="sead_bit_flag_8h" startline="36" endline="36">sead::BitFlag&lt; T &gt;::getPtr</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1aa2de290237af1d42f85de463782bf6bd" compoundref="sead_bit_flag_8h" startline="38" endline="38">sead::BitFlag&lt; T &gt;::getPtr</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" compoundref="sead_bit_flag_8h" startline="58" endline="58">sead::BitFlag&lt; T &gt;::isOn</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1ae6f5f4f5862de73dabaf0f3187785694" compoundref="sead_bit_flag_8h" startline="61" endline="61">sead::BitFlag&lt; T &gt;::isOnAll</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1ac55185db7e5c8b26b8472bd8651aa5e4" compoundref="sead_bit_flag_8h" startline="55" endline="55">sead::BitFlag&lt; T &gt;::isZero</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1ae77363a0c384c173d314f7aa9243534c" compoundref="sead_bit_flag_8h" startline="30" endline="30">sead::BitFlag&lt; T &gt;::makeAllOne</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a1d5b354333b8891d5b86ed48f80e50c3" compoundref="sead_bit_flag_8h" startline="28" endline="28">sead::BitFlag&lt; T &gt;::makeAllZero</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a22a36bcde66ecbb02fb26ec758bedbe9" compoundref="sead_bit_flag_8h" startline="26" endline="26">sead::BitFlag&lt; T &gt;::operator T</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" compoundref="sead_bit_flag_8h" startline="44" endline="44">sead::BitFlag&lt; T &gt;::reset</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" compoundref="sead_bit_flag_8h" startline="42" endline="42">sead::BitFlag&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a9d61c9607771352dcfef381eed2dbc94" compoundref="sead_bit_flag_8h" startline="32" endline="32">sead::BitFlag&lt; T &gt;::setDirect</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" compoundref="sead_bit_flag_8h" startline="46" endline="46">sead::BitFlag&lt; T &gt;::toggle</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a38aef7249d6722716e9f93f9bb4ffaab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::BitFlag&lt; T &gt;::BitFlag</definition>
+        <argsstring>()</argsstring>
+        <name>BitFlag</name>
+        <qualifiedname>sead::BitFlag::BitFlag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="22" column="5" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1aa01dee4ada01f73f0380a6a78f60f5bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::BitFlag&lt; T &gt;::BitFlag</definition>
+        <argsstring>(T bits)</argsstring>
+        <name>BitFlag</name>
+        <qualifiedname>sead::BitFlag::BitFlag</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="24" column="5" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a22a36bcde66ecbb02fb26ec758bedbe9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::BitFlag&lt; T &gt;::operator T</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T</name>
+        <qualifiedname>sead::BitFlag::operator T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="26" column="5" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="26" bodyend="26"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a1d5b354333b8891d5b86ed48f80e50c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::makeAllZero</definition>
+        <argsstring>()</argsstring>
+        <name>makeAllZero</name>
+        <qualifiedname>sead::BitFlag::makeAllZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="28" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="28" bodyend="28"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1ae77363a0c384c173d314f7aa9243534c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::makeAllOne</definition>
+        <argsstring>()</argsstring>
+        <name>makeAllOne</name>
+        <qualifiedname>sead::BitFlag::makeAllOne</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="30" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="30" bodyend="30"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a9d61c9607771352dcfef381eed2dbc94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::setDirect</definition>
+        <argsstring>(T bits)</argsstring>
+        <name>setDirect</name>
+        <qualifiedname>sead::BitFlag::setDirect</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="32" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="32" bodyend="32"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1aaa1590cde88d71dbea602b77efedef2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::BitFlag&lt; T &gt;::getDirect</definition>
+        <argsstring>() const</argsstring>
+        <name>getDirect</name>
+        <qualifiedname>sead::BitFlag::getDirect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="34" column="7" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="34" bodyend="34"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+        <referencedby refid="classsead_1_1_controller_base_1af7df087c72b98c751df0ebd9d93c0aea" compoundref="sead_controller_base_8h" startline="20" endline="20">sead::ControllerBase::getHoldMask</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a202ac21b096115aa4098082a091cc344" compoundref="sead_controller_base_8h" startline="24" endline="24">sead::ControllerBase::getReleaseMask</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1af793d8caa305e22feae4cc97b02a2b5c" compoundref="sead_controller_base_8h" startline="26" endline="26">sead::ControllerBase::getRepeatMask</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a90e6ad74d203361c848eb34897b30e14" compoundref="sead_controller_base_8h" startline="22" endline="22">sead::ControllerBase::getTrigMask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a12b035f39d8dc6f1a45efed19afc2a7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * sead::BitFlag&lt; T &gt;::getPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getPtr</name>
+        <qualifiedname>sead::BitFlag::getPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="36" column="7" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="36" bodyend="36"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+        <referencedby refid="classsead_1_1_controller_base_1a94c67fc458aa6063e210c08addd77ce2" compoundref="sead_controller_base_8h" startline="28" endline="28">sead::ControllerBase::getHoldMaskPtr</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a7ed75210082cd0f65e3f7f646c5c07ab" compoundref="sead_controller_base_8h" startline="32" endline="32">sead::ControllerBase::getReleaseMaskPtr</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a801cee19077a8ee7178c336fa3130990" compoundref="sead_controller_base_8h" startline="34" endline="34">sead::ControllerBase::getRepeatMaskPtr</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a8eb35b9eb011587e57c6f6c4aa986076" compoundref="sead_controller_base_8h" startline="30" endline="30">sead::ControllerBase::getTrigMaskPtr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1aa2de290237af1d42f85de463782bf6bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * sead::BitFlag&lt; T &gt;::getPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>getPtr</name>
+        <qualifiedname>sead::BitFlag::getPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="38" column="13" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="38" bodyend="38"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1aa2e8e89afa8ffcc530fe890ea969a1c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sead::BitFlag&lt; T &gt;::getByteSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getByteSize</name>
+        <qualifiedname>sead::BitFlag::getByteSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="40" column="12" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::set</definition>
+        <argsstring>(T val)</argsstring>
+        <name>set</name>
+        <qualifiedname>sead::BitFlag::set</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="42" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="42" bodyend="42"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+        <referencedby refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" compoundref="sead_bit_flag_8h" startline="48" endline="53">sead::BitFlag&lt; T &gt;::change</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1aa3a792c6d91ae4473a41e119d0e00c56" compoundref="sead_bit_flag_8h" startline="78" endline="78">sead::BitFlag&lt; T &gt;::setBit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::reset</definition>
+        <argsstring>(T val)</argsstring>
+        <name>reset</name>
+        <qualifiedname>sead::BitFlag::reset</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="44" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="44" bodyend="44"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+        <referencedby refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" compoundref="sead_bit_flag_8h" startline="48" endline="53">sead::BitFlag&lt; T &gt;::change</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1acab23e379103f5e25c594d7a7f6dfaea" compoundref="sead_bit_flag_8h" startline="80" endline="80">sead::BitFlag&lt; T &gt;::resetBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" compoundref="sead_bit_flag_8h" startline="65" endline="70">sead::BitFlag&lt; T &gt;::testAndClear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::toggle</definition>
+        <argsstring>(T val)</argsstring>
+        <name>toggle</name>
+        <qualifiedname>sead::BitFlag::toggle</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="46" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="46" bodyend="46"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+        <referencedby refid="classsead_1_1_bit_flag_1a88c6903f815b590f37ed063646e8401c" compoundref="sead_bit_flag_8h" startline="84" endline="84">sead::BitFlag&lt; T &gt;::toggleBit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::change</definition>
+        <argsstring>(T val, bool on)</argsstring>
+        <name>change</name>
+        <qualifiedname>sead::BitFlag::change</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="48" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="48" bodyend="53"/>
+        <references refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" compoundref="sead_bit_flag_8h" startline="44" endline="44">sead::BitFlag&lt; T &gt;::reset</references>
+        <references refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" compoundref="sead_bit_flag_8h" startline="42" endline="42">sead::BitFlag&lt; T &gt;::set</references>
+        <referencedby refid="classsead_1_1_bit_flag_1a448fe91daa6da9796abdfc376259ab65" compoundref="sead_bit_flag_8h" startline="82" endline="82">sead::BitFlag&lt; T &gt;::changeBit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1ac55185db7e5c8b26b8472bd8651aa5e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::isZero</definition>
+        <argsstring>() const</argsstring>
+        <name>isZero</name>
+        <qualifiedname>sead::BitFlag::isZero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="55" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="55" bodyend="55"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::isOn</definition>
+        <argsstring>(T val) const</argsstring>
+        <name>isOn</name>
+        <qualifiedname>sead::BitFlag::isOn</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Checks if (at least) one of the bits are set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="58" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="58" bodyend="58"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+        <referencedby refid="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" compoundref="sead_bit_flag_8h" startline="63" endline="63">sead::BitFlag&lt; T &gt;::isOff</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a916bf4c07d8cb958cd4f7e8594992297" compoundref="sead_bit_flag_8h" startline="86" endline="86">sead::BitFlag&lt; T &gt;::isOnBit</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a715b66c50d69e357623dc62e786d722c" compoundref="sead_controller_base_8h" startline="54" endline="54">sead::ControllerBase::isPointerOffNow</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1ae12e763c47c4e3d9c6529d61b49ded11" compoundref="sead_controller_base_8h" startline="50" endline="50">sead::ControllerBase::isPointerOn</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1a7137ca6612ad9909b675d7e1a1717f66" compoundref="sead_controller_base_8h" startline="52" endline="52">sead::ControllerBase::isPointerOnNow</referencedby>
+        <referencedby refid="classsead_1_1_controller_base_1ab6ff381694356b5e16a6d181ec7ab935" compoundref="sead_controller_base_8h" startline="56" endline="56">sead::ControllerBase::isPointerUnkFlag3</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" compoundref="sead_bit_flag_8h" startline="65" endline="70">sead::BitFlag&lt; T &gt;::testAndClear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1ae6f5f4f5862de73dabaf0f3187785694" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::isOnAll</definition>
+        <argsstring>(T val) const</argsstring>
+        <name>isOnAll</name>
+        <qualifiedname>sead::BitFlag::isOnAll</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Checks if all of the bits are set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="61" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="61" bodyend="61"/>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::isOff</definition>
+        <argsstring>(T val) const</argsstring>
+        <name>isOff</name>
+        <qualifiedname>sead::BitFlag::isOff</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="63" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="63" bodyend="63"/>
+        <references refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" compoundref="sead_bit_flag_8h" startline="58" endline="58">sead::BitFlag&lt; T &gt;::isOn</references>
+        <referencedby refid="classsead_1_1_bit_flag_1abcaa04d80851c7e1624f3aa9fd4888b1" compoundref="sead_bit_flag_8h" startline="88" endline="88">sead::BitFlag&lt; T &gt;::isOffBit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::testAndClear</definition>
+        <argsstring>(T val)</argsstring>
+        <name>testAndClear</name>
+        <qualifiedname>sead::BitFlag::testAndClear</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="65" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="65" bodyend="70"/>
+        <references refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" compoundref="sead_bit_flag_8h" startline="58" endline="58">sead::BitFlag&lt; T &gt;::isOn</references>
+        <references refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" compoundref="sead_bit_flag_8h" startline="44" endline="44">sead::BitFlag&lt; T &gt;::reset</references>
+        <referencedby refid="classsead_1_1_bit_flag_1ac0482fc6cad9b341811279d828932410" compoundref="sead_bit_flag_8h" startline="90" endline="90">sead::BitFlag&lt; T &gt;::testAndClearBit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a16e03730dd924824e3b26a8456a39841" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T sead::BitFlag&lt; T &gt;::getMask</definition>
+        <argsstring>(T v) const</argsstring>
+        <name>getMask</name>
+        <qualifiedname>sead::BitFlag::getMask</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="74" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1aa3a792c6d91ae4473a41e119d0e00c56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::setBit</definition>
+        <argsstring>(int bit)</argsstring>
+        <name>setBit</name>
+        <qualifiedname>sead::BitFlag::setBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="78" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="78" bodyend="78"/>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+        <references refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" compoundref="sead_bit_flag_8h" startline="42" endline="42">sead::BitFlag&lt; T &gt;::set</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1acab23e379103f5e25c594d7a7f6dfaea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::resetBit</definition>
+        <argsstring>(int bit)</argsstring>
+        <name>resetBit</name>
+        <qualifiedname>sead::BitFlag::resetBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="80" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="80" bodyend="80"/>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+        <references refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" compoundref="sead_bit_flag_8h" startline="44" endline="44">sead::BitFlag&lt; T &gt;::reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a448fe91daa6da9796abdfc376259ab65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::changeBit</definition>
+        <argsstring>(int bit, bool on)</argsstring>
+        <name>changeBit</name>
+        <qualifiedname>sead::BitFlag::changeBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>on</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="82" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="82" bodyend="82"/>
+        <references refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" compoundref="sead_bit_flag_8h" startline="48" endline="53">sead::BitFlag&lt; T &gt;::change</references>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a88c6903f815b590f37ed063646e8401c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::BitFlag&lt; T &gt;::toggleBit</definition>
+        <argsstring>(int bit)</argsstring>
+        <name>toggleBit</name>
+        <qualifiedname>sead::BitFlag::toggleBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="84" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="84" bodyend="84"/>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+        <references refid="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" compoundref="sead_bit_flag_8h" startline="46" endline="46">sead::BitFlag&lt; T &gt;::toggle</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a916bf4c07d8cb958cd4f7e8594992297" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::isOnBit</definition>
+        <argsstring>(int bit) const</argsstring>
+        <name>isOnBit</name>
+        <qualifiedname>sead::BitFlag::isOnBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="86" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="86" bodyend="86"/>
+        <references refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" compoundref="sead_bit_flag_8h" startline="58" endline="58">sead::BitFlag&lt; T &gt;::isOn</references>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1abcaa04d80851c7e1624f3aa9fd4888b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::isOffBit</definition>
+        <argsstring>(int bit) const</argsstring>
+        <name>isOffBit</name>
+        <qualifiedname>sead::BitFlag::isOffBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="88" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="88" bodyend="88"/>
+        <references refid="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" compoundref="sead_bit_flag_8h" startline="63" endline="63">sead::BitFlag&lt; T &gt;::isOff</references>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1ac0482fc6cad9b341811279d828932410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::BitFlag&lt; T &gt;::testAndClearBit</definition>
+        <argsstring>(int bit)</argsstring>
+        <name>testAndClearBit</name>
+        <qualifiedname>sead::BitFlag::testAndClearBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="90" column="10" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="90" bodyend="90"/>
+        <references refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" compoundref="sead_bit_flag_8h" startline="76" endline="76">sead::BitFlag&lt; T &gt;::makeMask</references>
+        <references refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" compoundref="sead_bit_flag_8h" startline="65" endline="70">sead::BitFlag&lt; T &gt;::testAndClear</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1af3018197c7b043138c3e19c47e830948" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int sead::BitFlag&lt; T &gt;::countOnBit</definition>
+        <argsstring>() const</argsstring>
+        <name>countOnBit</name>
+        <qualifiedname>sead::BitFlag::countOnBit</qualifiedname>
+        <briefdescription>
+<para>Popcount. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="93" column="9" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="93" bodyend="93"/>
+        <references refid="classsead_1_1_bit_flag_util_1a1b6c3aa0d96f33fb43536344d92498a8">sead::BitFlagUtil::countOnBit</references>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1ac2d9e2e7899779b49956d4aab7b210bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int sead::BitFlag&lt; T &gt;::countContinuousOffBitFromRight</definition>
+        <argsstring>() const</argsstring>
+        <name>countContinuousOffBitFromRight</name>
+        <qualifiedname>sead::BitFlag::countContinuousOffBitFromRight</qualifiedname>
+        <briefdescription>
+<para>Count trailing zeroes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="96" column="9" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="96" bodyend="98"/>
+        <references refid="classsead_1_1_bit_flag_util_1a87f28077c0f61582d47cb82ead199791" compoundref="sead_bit_flag_8h" startline="13" endline="13">sead::BitFlagUtil::countContinuousOffBitFromRight</references>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a1772a2e9a96f504140f22e5ca7a4bca0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int sead::BitFlag&lt; T &gt;::countRightOnBit</definition>
+        <argsstring>(int bit) const</argsstring>
+        <name>countRightOnBit</name>
+        <qualifiedname>sead::BitFlag::countRightOnBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="100" column="9" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="100" bodyend="100"/>
+        <references refid="classsead_1_1_bit_flag_util_1aa37a64fb567f0ec95e109d037d5e2e4a">sead::BitFlagUtil::countRightOnBit</references>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a77aa971da3d2b092586eadf2cf0e4f39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int sead::BitFlag&lt; T &gt;::findOnBitFromRight</definition>
+        <argsstring>(int num) const</argsstring>
+        <name>findOnBitFromRight</name>
+        <qualifiedname>sead::BitFlag::findOnBitFromRight</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="102" column="9" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="102" bodyend="102"/>
+        <references refid="classsead_1_1_bit_flag_util_1adc50cd69ab0e11919df625ffcccf12c3">sead::BitFlagUtil::findOnBitFromRight</references>
+        <references refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" compoundref="sead_bit_flag_8h" startline="105">sead::BitFlag&lt; T &gt;::mBits</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T sead::BitFlag&lt; T &gt;::makeMask</definition>
+        <argsstring>(int bit)</argsstring>
+        <name>makeMask</name>
+        <qualifiedname>sead::BitFlag::makeMask</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadBitFlag.h" line="76" column="14" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="76" bodyend="76"/>
+        <referencedby refid="classsead_1_1_bit_flag_1a448fe91daa6da9796abdfc376259ab65" compoundref="sead_bit_flag_8h" startline="82" endline="82">sead::BitFlag&lt; T &gt;::changeBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1abcaa04d80851c7e1624f3aa9fd4888b1" compoundref="sead_bit_flag_8h" startline="88" endline="88">sead::BitFlag&lt; T &gt;::isOffBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a916bf4c07d8cb958cd4f7e8594992297" compoundref="sead_bit_flag_8h" startline="86" endline="86">sead::BitFlag&lt; T &gt;::isOnBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1acab23e379103f5e25c594d7a7f6dfaea" compoundref="sead_bit_flag_8h" startline="80" endline="80">sead::BitFlag&lt; T &gt;::resetBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1aa3a792c6d91ae4473a41e119d0e00c56" compoundref="sead_bit_flag_8h" startline="78" endline="78">sead::BitFlag&lt; T &gt;::setBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1ac0482fc6cad9b341811279d828932410" compoundref="sead_bit_flag_8h" startline="90" endline="90">sead::BitFlag&lt; T &gt;::testAndClearBit</referencedby>
+        <referencedby refid="classsead_1_1_bit_flag_1a88c6903f815b590f37ed063646e8401c" compoundref="sead_bit_flag_8h" startline="84" endline="84">sead::BitFlag&lt; T &gt;::toggleBit</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::BitFlag&lt; u32 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; u32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+    </inheritancegraph>
+    <location file="lib/sead/include/prim/seadBitFlag.h" line="20" column="1" bodyfile="lib/sead/include/prim/seadBitFlag.h" bodystart="20" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_bit_flag_1a38aef7249d6722716e9f93f9bb4ffaab" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>BitFlag</name></member>
+      <member refid="classsead_1_1_bit_flag_1aa01dee4ada01f73f0380a6a78f60f5bc" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>BitFlag</name></member>
+      <member refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>change</name></member>
+      <member refid="classsead_1_1_bit_flag_1a448fe91daa6da9796abdfc376259ab65" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>changeBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1ac2d9e2e7899779b49956d4aab7b210bc" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>countContinuousOffBitFromRight</name></member>
+      <member refid="classsead_1_1_bit_flag_1af3018197c7b043138c3e19c47e830948" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>countOnBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1a1772a2e9a96f504140f22e5ca7a4bca0" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>countRightOnBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1a77aa971da3d2b092586eadf2cf0e4f39" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>findOnBitFromRight</name></member>
+      <member refid="classsead_1_1_bit_flag_1aa2e8e89afa8ffcc530fe890ea969a1c4" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>getByteSize</name></member>
+      <member refid="classsead_1_1_bit_flag_1aaa1590cde88d71dbea602b77efedef2d" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>getDirect</name></member>
+      <member refid="classsead_1_1_bit_flag_1a16e03730dd924824e3b26a8456a39841" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>getMask</name></member>
+      <member refid="classsead_1_1_bit_flag_1a12b035f39d8dc6f1a45efed19afc2a7f" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>getPtr</name></member>
+      <member refid="classsead_1_1_bit_flag_1aa2de290237af1d42f85de463782bf6bd" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>getPtr</name></member>
+      <member refid="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>isOff</name></member>
+      <member refid="classsead_1_1_bit_flag_1abcaa04d80851c7e1624f3aa9fd4888b1" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>isOffBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>isOn</name></member>
+      <member refid="classsead_1_1_bit_flag_1ae6f5f4f5862de73dabaf0f3187785694" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>isOnAll</name></member>
+      <member refid="classsead_1_1_bit_flag_1a916bf4c07d8cb958cd4f7e8594992297" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>isOnBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1ac55185db7e5c8b26b8472bd8651aa5e4" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>isZero</name></member>
+      <member refid="classsead_1_1_bit_flag_1ae77363a0c384c173d314f7aa9243534c" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>makeAllOne</name></member>
+      <member refid="classsead_1_1_bit_flag_1a1d5b354333b8891d5b86ed48f80e50c3" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>makeAllZero</name></member>
+      <member refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>makeMask</name></member>
+      <member refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" prot="protected" virt="non-virtual"><scope>sead::BitFlag</scope><name>mBits</name></member>
+      <member refid="classsead_1_1_bit_flag_1a22a36bcde66ecbb02fb26ec758bedbe9" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>operator T</name></member>
+      <member refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>reset</name></member>
+      <member refid="classsead_1_1_bit_flag_1acab23e379103f5e25c594d7a7f6dfaea" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>resetBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>set</name></member>
+      <member refid="classsead_1_1_bit_flag_1aa3a792c6d91ae4473a41e119d0e00c56" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>setBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1a9d61c9607771352dcfef381eed2dbc94" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>setDirect</name></member>
+      <member refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>testAndClear</name></member>
+      <member refid="classsead_1_1_bit_flag_1ac0482fc6cad9b341811279d828932410" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>testAndClearBit</name></member>
+      <member refid="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>toggle</name></member>
+      <member refid="classsead_1_1_bit_flag_1a88c6903f815b590f37ed063646e8401c" prot="public" virt="non-virtual"><scope>sead::BitFlag</scope><name>toggleBit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

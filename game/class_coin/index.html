@@ -103,7 +103,7 @@
 <ul>
 <li><code>#include &lt;Coin.h&gt;</code></li>
 </ul>
-<p>Inherits the following classes: al::MapObjActor</p>
+<p>Inherits the following classes: al::MapObjActor,  al::MapObjActor</p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -115,15 +115,27 @@
 <tbody>
 <tr>
 <td style="text-align: right;"></td>
-<td style="text-align: left;"><a href="#function-coin"><strong>Coin</strong></a> (const sead::SafeString &amp; name) <br></td>
+<td style="text-align: left;"><a href="#function-coin-12"><strong>Coin</strong></a> (const sead::SafeString &amp; name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-coin-12"><strong>Coin</strong></a> (const sead::SafeString &amp; name) <br></td>
 </tr>
 <tr>
 <td style="text-align: right;">virtual void</td>
-<td style="text-align: left;"><a href="#function-init"><strong>init</strong></a> (const al::ActorInitInfo &amp; info) <br></td>
+<td style="text-align: left;"><a href="#function-init-12"><strong>init</strong></a> (const al::ActorInitInfo &amp; info) <br></td>
 </tr>
 <tr>
 <td style="text-align: right;">virtual void</td>
-<td style="text-align: left;"><a href="#function-initafterplacement"><strong>initAfterPlacement</strong></a> () <br></td>
+<td style="text-align: left;"><a href="#function-init-12"><strong>init</strong></a> (const al::ActorInitInfo &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="#function-initafterplacement-12"><strong>initAfterPlacement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="#function-initafterplacement-12"><strong>initAfterPlacement</strong></a> () <br></td>
 </tr>
 <tr>
 <td style="text-align: right;">virtual void</td>
@@ -131,11 +143,19 @@
 </tr>
 <tr>
 <td style="text-align: right;">virtual void</td>
-<td style="text-align: left;"><a href="#function-makeactorappeared"><strong>makeActorAppeared</strong></a> () <br></td>
+<td style="text-align: left;"><a href="#function-makeactorappeared-12"><strong>makeActorAppeared</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual void</td>
+<td style="text-align: left;"><a href="#function-makeactorappeared-12"><strong>makeActorAppeared</strong></a> () <br></td>
 </tr>
 <tr>
 <td style="text-align: right;">virtual bool</td>
-<td style="text-align: left;"><a href="#function-receivemsg"><strong>receiveMsg</strong></a> (u32 msg, al::HitSensor * other, al::HitSensor * me) <br></td>
+<td style="text-align: left;"><a href="#function-receivemsg-12"><strong>receiveMsg</strong></a> (u32 msg, al::HitSensor * other, al::HitSensor * me) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual bool</td>
+<td style="text-align: left;"><a href="#function-receivemsg-12"><strong>receiveMsg</strong></a> (u32 msg, al::HitSensor * other, al::HitSensor * me) <br></td>
 </tr>
 <tr>
 <td style="text-align: right;">virtual void</td>
@@ -152,21 +172,40 @@
 </tbody>
 </table>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
-<h3 id="function-coin">function Coin</h3>
+<h3 id="function-coin-12">function Coin [1/2]</h3>
 <pre><code class="language-C++">Coin::Coin (
     const sead::SafeString &amp; name
 ) 
 </code></pre>
 <hr>
 
-<h3 id="function-init">function init</h3>
+<h3 id="function-coin-12_1">function Coin [1/2]</h3>
+<pre><code class="language-C++">Coin::Coin (
+    const sead::SafeString &amp; name
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-init-12">function init [1/2]</h3>
 <pre><code class="language-C++">virtual void Coin::init (
     const al::ActorInitInfo &amp; info
 ) 
 </code></pre>
 <hr>
 
-<h3 id="function-initafterplacement">function initAfterPlacement</h3>
+<h3 id="function-init-12_1">function init [1/2]</h3>
+<pre><code class="language-C++">virtual void Coin::init (
+    const al::ActorInitInfo &amp; info
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-initafterplacement-12">function initAfterPlacement [1/2]</h3>
+<pre><code class="language-C++">virtual void Coin::initAfterPlacement () 
+</code></pre>
+<hr>
+
+<h3 id="function-initafterplacement-12_1">function initAfterPlacement [1/2]</h3>
 <pre><code class="language-C++">virtual void Coin::initAfterPlacement () 
 </code></pre>
 <hr>
@@ -176,12 +215,26 @@
 </code></pre>
 <hr>
 
-<h3 id="function-makeactorappeared">function makeActorAppeared</h3>
+<h3 id="function-makeactorappeared-12">function makeActorAppeared [1/2]</h3>
 <pre><code class="language-C++">virtual void Coin::makeActorAppeared () 
 </code></pre>
 <hr>
 
-<h3 id="function-receivemsg">function receiveMsg</h3>
+<h3 id="function-makeactorappeared-12_1">function makeActorAppeared [1/2]</h3>
+<pre><code class="language-C++">virtual void Coin::makeActorAppeared () 
+</code></pre>
+<hr>
+
+<h3 id="function-receivemsg-12">function receiveMsg [1/2]</h3>
+<pre><code class="language-C++">virtual bool Coin::receiveMsg (
+    u32 msg,
+    al::HitSensor * other,
+    al::HitSensor * me
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-receivemsg-12_1">function receiveMsg [1/2]</h3>
 <pre><code class="language-C++">virtual bool Coin::receiveMsg (
     u32 msg,
     al::HitSensor * other,

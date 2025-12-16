@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_hit_sensor_8h" kind="file" language="C++">
+    <compoundname>alHitSensor.h</compoundname>
+    <includes refid="al_sensor_type_8h" local="no">HitSensor/alSensorType.h</includes>
+    <includes local="no">math/seadMatrix.h</includes>
+    <includes local="no">math/seadVector.h</includes>
+    <includedby refid="al_hit_sensor_8cpp" local="no">alHitSensor.cpp</includedby>
+    <includedby refid="al_hit_sensor_function_8cpp" local="no">alHitSensorFunction.cpp</includedby>
+    <includedby refid="al_hit_sensor_keeper_8h" local="no">alHitSensorKeeper.h</includedby>
+    <includedby refid="al_sensor_function_8cpp" local="no">alSensorFunction.cpp</includedby>
+    <includedby refid="al_sensor_hit_group_8h" local="no">alSensorHitGroup.h</includedby>
+    <includedby refid="al_sensor_msg_8cpp" local="no">alSensorMsg.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HitSensor/alSensorType.h</label>
+        <link refid="al_sensor_type_8h"/>
+      </node>
+      <node id="3">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alHitSensor.h</label>
+        <link refid="al_hit_sensor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>alSensorHitGroup.h</label>
+        <link refid="al_sensor_hit_group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>alHitSensorKeeper.h</label>
+        <link refid="al_hit_sensor_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alHitSensor.cpp</label>
+        <link refid="al_hit_sensor_8cpp"/>
+      </node>
+      <node id="10">
+        <label>alSensorHitGroup.cpp</label>
+        <link refid="al_sensor_hit_group_8cpp"/>
+      </node>
+      <node id="9">
+        <label>alHitSensorDirector.cpp</label>
+        <link refid="al_hit_sensor_director_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alHitSensorFunction.cpp</label>
+        <link refid="al_hit_sensor_function_8cpp"/>
+      </node>
+      <node id="5">
+        <label>alHitSensorKeeper.cpp</label>
+        <link refid="al_hit_sensor_keeper_8cpp"/>
+      </node>
+      <node id="6">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="7">
+        <label>alSensorFunction.cpp</label>
+        <link refid="al_sensor_function_8cpp"/>
+      </node>
+      <node id="11">
+        <label>alSensorMsg.cpp</label>
+        <link refid="al_sensor_msg_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_hit_sensor" prot="public">al::HitSensor</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_sensor_type_8h" kindref="compound">HitSensor/alSensorType.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadMatrix.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">LiveActor;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SensorHitGroup;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_hit_sensor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_hit_sensor_1a3292b55ba0d5de844644506a69f57075" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_hit_sensor_keeper" kindref="compound">HitSensorKeeper</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_hit_sensor_1af4976d33add85b98598b91e2ad195d38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1af4976d33add85b98598b91e2ad195d38" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_hit_sensor_1af9088316f338febfdc5975d4b33f5aa4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ae7916cff523aa4e5e53a883d24479359" kindref="member">SensorType</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1af9088316f338febfdc5975d4b33f5aa4" kindref="member">mSensorType</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_hit_sensor_1a433f5295cf888f11d0019ac675fdf81c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1a433f5295cf888f11d0019ac675fdf81c" kindref="member">_8</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classal_1_1_hit_sensor_1a2d559187fa1dcb827524c05627d0b882" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1a2d559187fa1dcb827524c05627d0b882" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_hit_sensor_1ac738bc36b93413bf13bf35430eaa1e9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1ac738bc36b93413bf13bf35430eaa1e9d" kindref="member">_10</ref>;</highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_hit_sensor_1ad37a91c923b78ef0ec1f507c887305fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1ad37a91c923b78ef0ec1f507c887305fa" kindref="member">mSensorRadius</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u16</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1a94db6bb94307065e13b645ea0f1c5f80" kindref="member">mMaxSensorCount</ref>;</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u16</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1ac07e1c6f98df89ee105e553f231f144b" kindref="member">mSensorCount</ref>;</highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_hit_sensor_1a9e8ed023282f0610949d081cce8ce0ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>**<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1a9e8ed023282f0610949d081cce8ce0ad" kindref="member">mSensors</ref>;</highlight></codeline>
+<codeline lineno="27" refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_sensor_hit_group" kindref="compound">SensorHitGroup</ref>*<sp/><sp/><ref refid="classal_1_1_hit_sensor_1a141855cb3bc72e50b813fc5caf1bd307" kindref="member">mSensorHitGroup</ref>;</highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1a65e54726dbc3807d9c3fee20a13238dc" kindref="member">mIsValidBySystem</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1ad9b2a6feec4906bee42d97a8f4410ab3" kindref="member">mIsValid</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_hit_sensor_1a466c402a236227ed64cdd02c0e226f92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1a466c402a236227ed64cdd02c0e226f92" kindref="member">mHostActor</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classal_1_1_hit_sensor_1a56c51ba9b62fa68e24527bd5003195a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f*<sp/><sp/><ref refid="classal_1_1_hit_sensor_1a56c51ba9b62fa68e24527bd5003195a5" kindref="member">mFollowPos</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classal_1_1_hit_sensor_1ab55278291848f4caa769736ac748efb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Matrix34f*<sp/><ref refid="classal_1_1_hit_sensor_1ab55278291848f4caa769736ac748efb5" kindref="member">mFollowMtx</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_hit_sensor_1aa483c24a1c1e8e0df8b15a6ae370fd3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f<sp/><sp/><sp/><ref refid="classal_1_1_hit_sensor_1aa483c24a1c1e8e0df8b15a6ae370fd3f" kindref="member">_34</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="classal_1_1_hit_sensor_1af69b6ef21094b36d1ba1573edf1ffbcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_hit_sensor_1af69b6ef21094b36d1ba1573edf1ffbcb" kindref="member">getName</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1af4976d33add85b98598b91e2ad195d38" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classal_1_1_hit_sensor_1ae2e9059d8aee55d423cc900e8468cca8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><ref refid="classal_1_1_hit_sensor_1ae2e9059d8aee55d423cc900e8468cca8" kindref="member">getHost</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1a466c402a236227ed64cdd02c0e226f92" kindref="member">mHostActor</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classal_1_1_hit_sensor_1a1d245e1bd602b69f7e66308310123772" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref><sp/><ref refid="classal_1_1_hit_sensor_1a1d245e1bd602b69f7e66308310123772" kindref="member">getType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="47"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1af9088316f338febfdc5975d4b33f5aa4" kindref="member">mSensorType</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classal_1_1_hit_sensor_1acc87f3ccd09851276d3079c2a1ba7112" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1acc87f3ccd09851276d3079c2a1ba7112" kindref="member">getRadius</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="52"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1ad37a91c923b78ef0ec1f507c887305fa" kindref="member">mSensorRadius</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1aa478c47c9435081073ddd02cafd79b0c" kindref="member">validate</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1aabdc01ad8a812e189143207e7ed80ad9" kindref="member">invalidate</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1a2e9deda22a0e574a967eb5fc273acff0" kindref="member">validateBySystem</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1a248c0605b8324a9fa8cf2544c8f59a27" kindref="member">invalidateBySystem</ref>();</highlight></codeline>
+<codeline lineno="60" refid="classal_1_1_hit_sensor_1ab64eb75fc020938a040a3575c297efa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_hit_sensor_1ab64eb75fc020938a040a3575c297efa3" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref><sp/>)<sp/>==<sp/>0x40,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="namespaceal_1af2e7cf8a108f0aec96ec7f9048d1dbc7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1af2e7cf8a108f0aec96ec7f9048d1dbc7" kindref="member">isHitCylinderSensor</ref>(<sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*,<sp/><ref refid="classal_1_1_hit_sensor" kindref="compound">HitSensor</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/HitSensor/alHitSensor.h"/>
+  </compounddef>
+</doxygen>

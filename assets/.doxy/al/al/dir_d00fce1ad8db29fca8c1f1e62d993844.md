@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/include/Math
+# Dir Math
 
 
 
@@ -21,12 +21,12 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alHashUtil.h**](alHashUtil_8h.md) <br> |
-| file | [**alMathUtil.h**](alMathUtil_8h.md) <br> |
-| file | [**alMtxUtil.h**](alMtxUtil_8h.md) <br> |
-| file | [**alQuatUtil.h**](alQuatUtil_8h.md) <br> |
-| file | [**alRandomUtil.h**](alRandomUtil_8h.md) <br> |
-| file | [**alVectorUtil.h**](alVectorUtil_8h.md) <br> |
+| file | [**alHashUtil.h**](al_hash_util_8h.md) <br> |
+| file | [**alMathUtil.h**](al_math_util_8h.md) <br> |
+| file | [**alMtxUtil.h**](al_mtx_util_8h.md) <br> |
+| file | [**alQuatUtil.h**](al_quat_util_8h.md) <br> |
+| file | [**alRandomUtil.h**](al_random_util_8h.md) <br> |
+| file | [**alVectorUtil.h**](al_vector_util_8h.md) <br> |
 
 
 

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File LMS_Message.c - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-lms_messagec">File LMS_Message.c</h1>
+<p><a href="../files/"><strong>FileList</strong></a> <strong>&gt;</strong> <a href="../dir_bd2ac9a3d2735b7139b8654d97389ba0/"><strong>addins</strong></a> <strong>&gt;</strong> <a href="../dir_1dee988f62a020defef87bef9fc0dca6/"><strong>libms</strong></a> <strong>&gt;</strong> <a href="../dir_dfc4bbba1eff969fd6af80bc2d747dc5/"><strong>src</strong></a> <strong>&gt;</strong> <a href="./"><strong>LMS_Message.c</strong></a></p>
+<p><a href="../_l_m_s___message_8c_source/">Go to the source code of this file</a></p>
+<ul>
+<li><code>#include "LMS/LMS_Message.h"</code></li>
+</ul>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../struct_text_header/"><strong>TextHeader</strong></a> <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef struct <a href="../struct_text_header/"><strong>TextHeader</strong></a></td>
+<td style="text-align: left;"><a href="#typedef-textheader"><strong>TextHeader</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-lms_closemessage"><strong>LMS_CloseMessage</strong></a> (<a href="../struct_l_m_s___message_binary/"><strong>LMS_MessageBinary</strong></a> * binary) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-lms_gettextnum"><strong>LMS_GetTextNum</strong></a> (<a href="../struct_l_m_s___message_binary/"><strong>LMS_MessageBinary</strong></a> * binary) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../struct_l_m_s___message_binary/"><strong>LMS_MessageBinary</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-lms_initmessage"><strong>LMS_InitMessage</strong></a> (const void * data) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="typedef-textheader">typedef TextHeader</h3>
+<pre><code class="language-C++">typedef struct TextHeader TextHeader;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-lms_closemessage">function LMS_CloseMessage</h3>
+<pre><code class="language-C++">void LMS_CloseMessage (
+    LMS_MessageBinary * binary
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-lms_gettextnum">function LMS_GetTextNum</h3>
+<pre><code class="language-C++">int LMS_GetTextNum (
+    LMS_MessageBinary * binary
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-lms_initmessage">function LMS_InitMessage</h3>
+<pre><code class="language-C++">LMS_MessageBinary * LMS_InitMessage (
+    const void * data
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/addins/libms/src/LMS_Message.c</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

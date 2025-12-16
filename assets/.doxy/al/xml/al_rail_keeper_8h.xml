@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_rail_keeper_8h" kind="file" language="C++">
+    <compoundname>alRailKeeper.h</compoundname>
+    <includes refid="al_placement_info_8h" local="no">Placement/alPlacementInfo.h</includes>
+    <includedby refid="al_live_actor_8cpp" local="no">alLiveActor.cpp</includedby>
+    <includedby refid="al_rail_function_8cpp" local="no">alRailFunction.cpp</includedby>
+    <includedby refid="al_rail_keeper_8cpp" local="no">alRailKeeper.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Placement/alPlacementInfo.h</label>
+        <link refid="al_placement_info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alRailKeeper.h</label>
+        <link refid="al_rail_keeper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alRailKeeper.h</label>
+        <link refid="al_rail_keeper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alLiveActor.cpp</label>
+        <link refid="al_live_actor_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alRailFunction.cpp</label>
+        <link refid="al_rail_function_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alRailKeeper.cpp</label>
+        <link refid="al_rail_keeper_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_rail_keeper" prot="public">al::RailKeeper</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_placement_info_8h" kindref="compound">Placement/alPlacementInfo.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Rail;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RailRider;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classal_1_1_rail_keeper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_rail_keeper" kindref="compound">RailKeeper</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail" kindref="compound">Rail</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" kindref="member">mRail</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider" kindref="compound">RailRider</ref>*<sp/><ref refid="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" kindref="member">mRailRider</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_rail_keeper_1aaee0149128467158e30ff53f0d0ad1eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail" kindref="compound">Rail</ref>*<sp/><ref refid="classal_1_1_rail_keeper_1aaee0149128467158e30ff53f0d0ad1eb" kindref="member">getRail</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" kindref="member">mRail</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_rider" kindref="compound">RailRider</ref>*<sp/><ref refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" kindref="member">getRailRider</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" kindref="member">mRailRider</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_keeper_1aba7900642e111892d3096cd441b6de5f" kindref="member">isExistRail</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_rail_keeper" kindref="compound">RailKeeper</ref>*<sp/><ref refid="classal_1_1_rail_keeper_1ae4583cb4c01934512ee9c3f0fc036fa5" kindref="member">tryCreateRailKeeper</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_rail_keeper" kindref="compound">RailKeeper</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">PlacementInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">RailKeeper*<sp/><ref refid="namespaceal_1a5c4c69c1e31b930a50243811e32da93c" kindref="member">tryCreateRailKeeper</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a41c6acd1e8ea2a3fb205bd494602769d" kindref="member">PlacementInfo</ref>&amp;<sp/>info<sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Rail/alRailKeeper.h"/>
+  </compounddef>
+</doxygen>

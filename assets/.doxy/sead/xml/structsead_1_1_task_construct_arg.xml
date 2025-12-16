@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsead_1_1_task_construct_arg" kind="struct" language="C++" prot="public">
+    <compoundname>sead::TaskConstructArg</compoundname>
+    <derivedcompoundref refid="classsead_1_1_controller_mgr_1_1_construct_arg" prot="public" virt="non-virtual">sead::ControllerMgr::ConstructArg</derivedcompoundref>
+    <includes refid="sead_task_i_d_8h" local="no">seadTaskID.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsead_1_1_task_construct_arg_1abb0f0d3bba470be199814aee2576ea4c" prot="public" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_heap_array" kindref="compound">HeapArray</ref> *</type>
+        <definition>HeapArray* sead::TaskConstructArg::heap_array</definition>
+        <argsstring></argsstring>
+        <name>heap_array</name>
+        <qualifiedname>sead::TaskConstructArg::heap_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadTaskID.h" line="15" column="15" bodyfile="lib/sead/include/framework/seadTaskID.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_controller_mgr_1_1_construct_arg_1ab40162f8dfe7403a39e8e5884c891393" compoundref="sead_controller_mgr_8h" startline="24" endline="24">sead::ControllerMgr::ConstructArg::ConstructArg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsead_1_1_task_construct_arg_1ab5dcb2eb14d4b803c4a3432bd10b20a5" prot="public" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_task_mgr" kindref="compound">TaskMgr</ref> *</type>
+        <definition>TaskMgr* sead::TaskConstructArg::mgr</definition>
+        <argsstring></argsstring>
+        <name>mgr</name>
+        <qualifiedname>sead::TaskConstructArg::mgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadTaskID.h" line="16" column="13" bodyfile="lib/sead/include/framework/seadTaskID.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsead_1_1_task_construct_arg_1a0a61171b076957975725566ee59b4e8e" prot="public" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_task_parameter" kindref="compound">TaskParameter</ref> *</type>
+        <definition>TaskParameter* sead::TaskConstructArg::param</definition>
+        <argsstring></argsstring>
+        <name>param</name>
+        <qualifiedname>sead::TaskConstructArg::param</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadTaskID.h" line="17" column="19" bodyfile="lib/sead/include/framework/seadTaskID.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsead_1_1_task_construct_arg_1a972c2cfe3fb75fb700a0fd7fd312efc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::TaskConstructArg::TaskConstructArg</definition>
+        <argsstring>()</argsstring>
+        <name>TaskConstructArg</name>
+        <qualifiedname>sead::TaskConstructArg::TaskConstructArg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/framework/seadTaskID.h" line="13" column="5" bodyfile="lib/sead/include/framework/seadTaskID.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::ControllerMgr::ConstructArg</label>
+        <link refid="classsead_1_1_controller_mgr_1_1_construct_arg"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::TaskConstructArg</label>
+        <link refid="structsead_1_1_task_construct_arg"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="15" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>sead::BitFlag&lt; u32 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="15" relation="template-instance">
+          <edgelabel>&lt; u32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="template-instance">
+          <edgelabel>&lt; Heap &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="template-instance">
+          <edgelabel>&lt; IDisposer &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::SafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>sead::TList&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sead::TListNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mList</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>sead::TTreeNode&lt; MethodTreeNode * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="template-instance">
+          <edgelabel>&lt; MethodTreeNode * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sead::TTreeNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+      <node id="13">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1_critical_section"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::HeapArray</label>
+        <link refid="classsead_1_1_heap_array"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mHeaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>sead::HeapPolicies</label>
+        <link refid="structsead_1_1_heap_policies"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mPolicies</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>sead::HeapPolicy</label>
+        <link refid="structsead_1_1_heap_policy"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>sead::IDelegate2&lt; T, U &gt;</label>
+        <link refid="classsead_1_1_i_delegate2"/>
+      </node>
+      <node id="4">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mDisposerHeap</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mINamableName</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1_list_impl"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>sead::MethodTreeNode</label>
+        <link refid="classsead_1_1_method_tree_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mPauseFlag</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mPauseEventDelegate</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sead::TList&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>sead::TListNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>sead::TTreeNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>sead::TaskBase</label>
+        <link refid="classsead_1_1_task_base"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mParameter</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mInternalFlag</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mTaskListNode</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mHeapArray</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mTaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mClassID</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>sead::TaskBase::CreateArg</label>
+        <link refid="structsead_1_1_task_base_1_1_create_arg"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>factory</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>heap_policies</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>created_task</edgelabel>
+          <edgelabel>instance_cb</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>src_task</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>sead::TaskClassID</label>
+        <link refid="classsead_1_1_task_class_i_d"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::TaskConstructArg</label>
+        <link refid="structsead_1_1_task_construct_arg"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>heap_array</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mgr</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>param</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sead::TaskMgr</label>
+        <link refid="classsead_1_1_task_mgr"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mActiveList</edgelabel>
+          <edgelabel>mDestroyableList</edgelabel>
+          <edgelabel>mDyingList</edgelabel>
+          <edgelabel>mPrepareDoneList</edgelabel>
+          <edgelabel>mPrepareList</edgelabel>
+          <edgelabel>mStaticList</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mHeapArray</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mRootTask</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mRootTaskCreateArg</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mInitializeArg</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mCalcDestructionTreeNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>sead::TaskMgr::InitializeArg</label>
+        <link refid="structsead_1_1_task_mgr_1_1_initialize_arg"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>roottask_create_arg</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>heap</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>sead::TaskParameter</label>
+        <link refid="classsead_1_1_task_parameter"/>
+      </node>
+      <node id="31">
+        <label>sead::TaskUserID</label>
+        <link refid="classsead_1_1_task_user_i_d"/>
+      </node>
+      <node id="21">
+        <label>sead::TreeNode</label>
+        <link refid="classsead_1_1_tree_node"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mChild</edgelabel>
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mParent</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/framework/seadTaskID.h" line="12" column="1" bodyfile="lib/sead/include/framework/seadTaskID.h" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structsead_1_1_task_construct_arg_1abb0f0d3bba470be199814aee2576ea4c" prot="public" virt="non-virtual"><scope>sead::TaskConstructArg</scope><name>heap_array</name></member>
+      <member refid="structsead_1_1_task_construct_arg_1ab5dcb2eb14d4b803c4a3432bd10b20a5" prot="public" virt="non-virtual"><scope>sead::TaskConstructArg</scope><name>mgr</name></member>
+      <member refid="structsead_1_1_task_construct_arg_1a0a61171b076957975725566ee59b4e8e" prot="public" virt="non-virtual"><scope>sead::TaskConstructArg</scope><name>param</name></member>
+      <member refid="structsead_1_1_task_construct_arg_1a972c2cfe3fb75fb700a0fd7fd312efc8" prot="public" virt="non-virtual"><scope>sead::TaskConstructArg</scope><name>TaskConstructArg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

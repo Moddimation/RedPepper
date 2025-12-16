@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_rail_keeper" kind="class" language="C++" prot="public">
+    <compoundname>al::RailKeeper</compoundname>
+    <includes refid="al_rail_keeper_8h" local="no">alRailKeeper.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_rail" kindref="compound">Rail</ref> *</type>
+        <definition>Rail* al::RailKeeper::mRail</definition>
+        <argsstring></argsstring>
+        <name>mRail</name>
+        <qualifiedname>al::RailKeeper::mRail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="13" column="19" bodyfile="lib/al/include/Rail/alRailKeeper.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classal_1_1_rail_keeper_1aaee0149128467158e30ff53f0d0ad1eb" compoundref="al_rail_keeper_8h" startline="17" endline="20">getRail</referencedby>
+        <referencedby refid="classal_1_1_rail_keeper_1aba7900642e111892d3096cd441b6de5f" compoundref="al_rail_keeper_8cpp" startline="24" endline="27">isExistRail</referencedby>
+        <referencedby refid="classal_1_1_rail_keeper_1a5679a48ab687924db8d90f5d6aa6f5b8" compoundref="al_rail_keeper_8cpp" startline="9" endline="14">RailKeeper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_rail_rider" kindref="compound">RailRider</ref> *</type>
+        <definition>RailRider* al::RailKeeper::mRailRider</definition>
+        <argsstring></argsstring>
+        <name>mRailRider</name>
+        <qualifiedname>al::RailKeeper::mRailRider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="14" column="19" bodyfile="lib/al/include/Rail/alRailKeeper.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" compoundref="al_rail_keeper_8h" startline="22" endline="25">getRailRider</referencedby>
+        <referencedby refid="classal_1_1_rail_keeper_1a5679a48ab687924db8d90f5d6aa6f5b8" compoundref="al_rail_keeper_8cpp" startline="9" endline="14">RailKeeper</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_rail_keeper_1aaee0149128467158e30ff53f0d0ad1eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_rail" kindref="compound">Rail</ref> *</type>
+        <definition>Rail * al::RailKeeper::getRail</definition>
+        <argsstring>()</argsstring>
+        <name>getRail</name>
+        <qualifiedname>al::RailKeeper::getRail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="17" column="14" bodyfile="lib/al/include/Rail/alRailKeeper.h" bodystart="17" bodyend="20"/>
+        <references refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" compoundref="al_rail_keeper_8h" startline="13">mRail</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_rail_rider" kindref="compound">RailRider</ref> *</type>
+        <definition>RailRider * al::RailKeeper::getRailRider</definition>
+        <argsstring>()</argsstring>
+        <name>getRailRider</name>
+        <qualifiedname>al::RailKeeper::getRailRider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="22" column="19" bodyfile="lib/al/include/Rail/alRailKeeper.h" bodystart="22" bodyend="25"/>
+        <references refid="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" compoundref="al_rail_keeper_8h" startline="14">mRailRider</references>
+        <referencedby refid="namespaceal_1a6cded99fabe040e24450c2703f5086e7" compoundref="al_rail_function_8cpp" startline="19" endline="22">al::getRailDir</referencedby>
+        <referencedby refid="namespaceal_1a17968271fa7a2c88c441b029fb31508c" compoundref="al_rail_function_8cpp" startline="29" endline="32">al::isLoopRail</referencedby>
+        <referencedby refid="namespaceal_1aa697a2468d7fa5c5dbac6ddd27275785" compoundref="al_rail_function_8cpp" startline="24" endline="27">al::isRailReachedGoal</referencedby>
+        <referencedby refid="namespaceal_1a7a0914108d4e2f7a72ab089314fb170b" compoundref="al_rail_function_8cpp" startline="12" endline="16">al::setSyncRailToStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_rail_keeper_1aba7900642e111892d3096cd441b6de5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::RailKeeper::isExistRail</definition>
+        <argsstring>() const</argsstring>
+        <name>isExistRail</name>
+        <qualifiedname>al::RailKeeper::isExistRail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="27" column="14" bodyfile="lib/al/src/Rail/alRailKeeper.cpp" bodystart="24" bodyend="27"/>
+        <references refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" compoundref="al_rail_keeper_8h" startline="13">mRail</references>
+        <referencedby refid="namespaceal_1aa712d41b8805e9cee4c2d8ae018d07da" compoundref="al_rail_function_8cpp" startline="34" endline="39">al::isExistRail</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classal_1_1_rail_keeper_1ae4583cb4c01934512ee9c3f0fc036fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_rail_keeper" kindref="compound">RailKeeper</ref> *</type>
+        <definition>RailKeeper * tryCreateRailKeeper</definition>
+        <argsstring>(const PlacementInfo &amp;info)</argsstring>
+        <name>tryCreateRailKeeper</name>
+        <qualifiedname>al::RailKeeper::tryCreateRailKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="namespaceal_1a41c6acd1e8ea2a3fb205bd494602769d" kindref="member">PlacementInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="30" column="27" bodyfile="lib/al/src/Rail/alRailKeeper.cpp" bodystart="16" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classal_1_1_rail_keeper_1a5679a48ab687924db8d90f5d6aa6f5b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::RailKeeper::RailKeeper</definition>
+        <argsstring>(const PlacementInfo &amp;info)</argsstring>
+        <name>RailKeeper</name>
+        <qualifiedname>al::RailKeeper::RailKeeper</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="namespaceal_1a41c6acd1e8ea2a3fb205bd494602769d" kindref="member">PlacementInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Rail/alRailKeeper.h" line="33" column="9" bodyfile="lib/al/src/Rail/alRailKeeper.cpp" bodystart="9" bodyend="14"/>
+        <references refid="classal_1_1_rail_1a3daaf4ac5f6ead74d5c03e58748d7f9b">al::Rail::init</references>
+        <references refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" compoundref="al_rail_keeper_8h" startline="13">mRail</references>
+        <references refid="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" compoundref="al_rail_keeper_8h" startline="14">mRailRider</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>al::Rail</label>
+        <link refid="classal_1_1_rail"/>
+      </node>
+      <node id="1">
+        <label>al::RailKeeper</label>
+        <link refid="classal_1_1_rail_keeper"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mRailRider</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::RailRider</label>
+        <link refid="classal_1_1_rail_rider"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Rail/alRailKeeper.h" line="10" column="1" bodyfile="lib/al/include/Rail/alRailKeeper.h" bodystart="11" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classal_1_1_rail_keeper_1aaee0149128467158e30ff53f0d0ad1eb" prot="public" virt="non-virtual"><scope>al::RailKeeper</scope><name>getRail</name></member>
+      <member refid="classal_1_1_rail_keeper_1a676c3a576711239e9bee507a5aa10ff9" prot="public" virt="non-virtual"><scope>al::RailKeeper</scope><name>getRailRider</name></member>
+      <member refid="classal_1_1_rail_keeper_1aba7900642e111892d3096cd441b6de5f" prot="public" virt="non-virtual"><scope>al::RailKeeper</scope><name>isExistRail</name></member>
+      <member refid="classal_1_1_rail_keeper_1a282f2c73bf996cb481b994a58ec76da4" prot="private" virt="non-virtual"><scope>al::RailKeeper</scope><name>mRail</name></member>
+      <member refid="classal_1_1_rail_keeper_1a3bb5da2c488d70b55c4e356309082cd2" prot="private" virt="non-virtual"><scope>al::RailKeeper</scope><name>mRailRider</name></member>
+      <member refid="classal_1_1_rail_keeper_1a5679a48ab687924db8d90f5d6aa6f5b8" prot="private" virt="non-virtual"><scope>al::RailKeeper</scope><name>RailKeeper</name></member>
+      <member refid="classal_1_1_rail_keeper_1ae4583cb4c01934512ee9c3f0fc036fa5" prot="public" virt="non-virtual"><scope>al::RailKeeper</scope><name>tryCreateRailKeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

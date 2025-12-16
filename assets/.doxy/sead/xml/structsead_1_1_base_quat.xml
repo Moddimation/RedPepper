@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsead_1_1_base_quat" kind="struct" language="C++" prot="public">
+    <compoundname>sead::BaseQuat</compoundname>
+    <derivedcompoundref refid="structsead_1_1_quat" prot="public" virt="non-virtual">sead::Quat&lt; T &gt;</derivedcompoundref>
+    <includes refid="sead_math_base_8h" local="no">seadMathBase.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BaseQuat&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>sead::BaseQuat::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathBase.h" line="27" column="7" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6896ab61dbdf4cd7bf36145a87ce38ce" compoundref="sead_quat_calc_common_8hpp" startline="31" endline="33">sead::QuatCalcCommon&lt; T &gt;::dot</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a989bacd529a86b40832be5a8209c5462" compoundref="sead_matrix_calc_common_8hpp" startline="416" endline="440">sead::Matrix33CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1a9444650cd259d1e6e053445f8c1df0d3" compoundref="sead_matrix_calc_common_8hpp" startline="1125" endline="1153">sead::Matrix34CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a708489575c5dd486c44936151c1ad199" compoundref="sead_matrix_calc_common_8hpp" startline="2285" endline="2318">sead::Matrix44CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aff8106a7fb0a215b07ef89205f68655e" compoundref="sead_matrix_calc_common_8hpp" startline="1156" endline="1184">sead::Matrix34CalcCommon&lt; T &gt;::makeQT</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1ab6a035a8a6fd6553cdbb0c7be3df57ca" compoundref="sead_quat_calc_common_8hpp" startline="88" endline="103">sead::QuatCalcCommon&lt; T &gt;::makeVectorRotation</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a92d2db671f3076916fa4a0d58ac3586d" compoundref="sead_quat_calc_common_8hpp" startline="17" endline="28">sead::QuatCalcCommon&lt; T &gt;::normalize</referencedby>
+        <referencedby refid="structsead_1_1_quat_1a2a9eecc449cd594f895273b68bbb5857" compoundref="sead_quat_8h" startline="36" endline="42">sead::Quat&lt; T &gt;::operator*=</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6404581aff1f64a050c8188f2e47d783" compoundref="sead_quat_calc_common_8hpp" startline="106" endline="111">sead::QuatCalcCommon&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a44f3bb332e0500c280fa1f299b34df79" compoundref="sead_quat_calc_common_8hpp" startline="36" endline="45">sead::QuatCalcCommon&lt; T &gt;::setMul</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a418ee7b6f22849076c0aaf6b2fea1644" compoundref="sead_matrix_calc_common_8hpp" startline="588" endline="654">sead::Matrix33CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aa70f611791e8f8fbd69295cc59373089" compoundref="sead_matrix_calc_common_8hpp" startline="1565" endline="1631">sead::Matrix34CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a15534e06879fcaee835ccb3f487a3589" compoundref="sead_matrix_calc_common_8hpp" startline="2413" endline="2479">sead::Matrix44CalcCommon&lt; T &gt;::toQuat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BaseQuat&lt; T &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>sead::BaseQuat::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathBase.h" line="28" column="7" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6896ab61dbdf4cd7bf36145a87ce38ce" compoundref="sead_quat_calc_common_8hpp" startline="31" endline="33">sead::QuatCalcCommon&lt; T &gt;::dot</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a989bacd529a86b40832be5a8209c5462" compoundref="sead_matrix_calc_common_8hpp" startline="416" endline="440">sead::Matrix33CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1a9444650cd259d1e6e053445f8c1df0d3" compoundref="sead_matrix_calc_common_8hpp" startline="1125" endline="1153">sead::Matrix34CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a708489575c5dd486c44936151c1ad199" compoundref="sead_matrix_calc_common_8hpp" startline="2285" endline="2318">sead::Matrix44CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aff8106a7fb0a215b07ef89205f68655e" compoundref="sead_matrix_calc_common_8hpp" startline="1156" endline="1184">sead::Matrix34CalcCommon&lt; T &gt;::makeQT</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a92d2db671f3076916fa4a0d58ac3586d" compoundref="sead_quat_calc_common_8hpp" startline="17" endline="28">sead::QuatCalcCommon&lt; T &gt;::normalize</referencedby>
+        <referencedby refid="structsead_1_1_quat_1a2a9eecc449cd594f895273b68bbb5857" compoundref="sead_quat_8h" startline="36" endline="42">sead::Quat&lt; T &gt;::operator*=</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6404581aff1f64a050c8188f2e47d783" compoundref="sead_quat_calc_common_8hpp" startline="106" endline="111">sead::QuatCalcCommon&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a44f3bb332e0500c280fa1f299b34df79" compoundref="sead_quat_calc_common_8hpp" startline="36" endline="45">sead::QuatCalcCommon&lt; T &gt;::setMul</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a418ee7b6f22849076c0aaf6b2fea1644" compoundref="sead_matrix_calc_common_8hpp" startline="588" endline="654">sead::Matrix33CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aa70f611791e8f8fbd69295cc59373089" compoundref="sead_matrix_calc_common_8hpp" startline="1565" endline="1631">sead::Matrix34CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a15534e06879fcaee835ccb3f487a3589" compoundref="sead_matrix_calc_common_8hpp" startline="2413" endline="2479">sead::Matrix44CalcCommon&lt; T &gt;::toQuat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BaseQuat&lt; T &gt;::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>sead::BaseQuat::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathBase.h" line="29" column="7" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6896ab61dbdf4cd7bf36145a87ce38ce" compoundref="sead_quat_calc_common_8hpp" startline="31" endline="33">sead::QuatCalcCommon&lt; T &gt;::dot</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a989bacd529a86b40832be5a8209c5462" compoundref="sead_matrix_calc_common_8hpp" startline="416" endline="440">sead::Matrix33CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1a9444650cd259d1e6e053445f8c1df0d3" compoundref="sead_matrix_calc_common_8hpp" startline="1125" endline="1153">sead::Matrix34CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a708489575c5dd486c44936151c1ad199" compoundref="sead_matrix_calc_common_8hpp" startline="2285" endline="2318">sead::Matrix44CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aff8106a7fb0a215b07ef89205f68655e" compoundref="sead_matrix_calc_common_8hpp" startline="1156" endline="1184">sead::Matrix34CalcCommon&lt; T &gt;::makeQT</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a92d2db671f3076916fa4a0d58ac3586d" compoundref="sead_quat_calc_common_8hpp" startline="17" endline="28">sead::QuatCalcCommon&lt; T &gt;::normalize</referencedby>
+        <referencedby refid="structsead_1_1_quat_1a2a9eecc449cd594f895273b68bbb5857" compoundref="sead_quat_8h" startline="36" endline="42">sead::Quat&lt; T &gt;::operator*=</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6404581aff1f64a050c8188f2e47d783" compoundref="sead_quat_calc_common_8hpp" startline="106" endline="111">sead::QuatCalcCommon&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a44f3bb332e0500c280fa1f299b34df79" compoundref="sead_quat_calc_common_8hpp" startline="36" endline="45">sead::QuatCalcCommon&lt; T &gt;::setMul</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a418ee7b6f22849076c0aaf6b2fea1644" compoundref="sead_matrix_calc_common_8hpp" startline="588" endline="654">sead::Matrix33CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aa70f611791e8f8fbd69295cc59373089" compoundref="sead_matrix_calc_common_8hpp" startline="1565" endline="1631">sead::Matrix34CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a15534e06879fcaee835ccb3f487a3589" compoundref="sead_matrix_calc_common_8hpp" startline="2413" endline="2479">sead::Matrix44CalcCommon&lt; T &gt;::toQuat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T sead::BaseQuat&lt; T &gt;::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>sead::BaseQuat::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathBase.h" line="30" column="7" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6896ab61dbdf4cd7bf36145a87ce38ce" compoundref="sead_quat_calc_common_8hpp" startline="31" endline="33">sead::QuatCalcCommon&lt; T &gt;::dot</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a989bacd529a86b40832be5a8209c5462" compoundref="sead_matrix_calc_common_8hpp" startline="416" endline="440">sead::Matrix33CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1a9444650cd259d1e6e053445f8c1df0d3" compoundref="sead_matrix_calc_common_8hpp" startline="1125" endline="1153">sead::Matrix34CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a708489575c5dd486c44936151c1ad199" compoundref="sead_matrix_calc_common_8hpp" startline="2285" endline="2318">sead::Matrix44CalcCommon&lt; T &gt;::makeQ</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aff8106a7fb0a215b07ef89205f68655e" compoundref="sead_matrix_calc_common_8hpp" startline="1156" endline="1184">sead::Matrix34CalcCommon&lt; T &gt;::makeQT</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a92d2db671f3076916fa4a0d58ac3586d" compoundref="sead_quat_calc_common_8hpp" startline="17" endline="28">sead::QuatCalcCommon&lt; T &gt;::normalize</referencedby>
+        <referencedby refid="structsead_1_1_quat_1a2a9eecc449cd594f895273b68bbb5857" compoundref="sead_quat_8h" startline="36" endline="42">sead::Quat&lt; T &gt;::operator*=</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a6404581aff1f64a050c8188f2e47d783" compoundref="sead_quat_calc_common_8hpp" startline="106" endline="111">sead::QuatCalcCommon&lt; T &gt;::set</referencedby>
+        <referencedby refid="classsead_1_1_quat_calc_common_1a44f3bb332e0500c280fa1f299b34df79" compoundref="sead_quat_calc_common_8hpp" startline="36" endline="45">sead::QuatCalcCommon&lt; T &gt;::setMul</referencedby>
+        <referencedby refid="classsead_1_1_matrix33_calc_common_1a418ee7b6f22849076c0aaf6b2fea1644" compoundref="sead_matrix_calc_common_8hpp" startline="588" endline="654">sead::Matrix33CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix34_calc_common_1aa70f611791e8f8fbd69295cc59373089" compoundref="sead_matrix_calc_common_8hpp" startline="1565" endline="1631">sead::Matrix34CalcCommon&lt; T &gt;::toQuat</referencedby>
+        <referencedby refid="classsead_1_1_matrix44_calc_common_1a15534e06879fcaee835ccb3f487a3589" compoundref="sead_matrix_calc_common_8hpp" startline="2413" endline="2479">sead::Matrix44CalcCommon&lt; T &gt;::toQuat</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::BaseQuat&lt; T &gt;</label>
+        <link refid="structsead_1_1_base_quat"/>
+      </node>
+      <node id="2">
+        <label>sead::Quat&lt; T &gt;</label>
+        <link refid="structsead_1_1_quat"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/sead/include/math/seadMathBase.h" line="26" column="1" bodyfile="lib/sead/include/math/seadMathBase.h" bodystart="26" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structsead_1_1_base_quat_1aa2984246376c010f7bce071c563c2dbd" prot="public" virt="non-virtual"><scope>sead::BaseQuat</scope><name>w</name></member>
+      <member refid="structsead_1_1_base_quat_1a2278e9d06710ffd4960eb918e38e197a" prot="public" virt="non-virtual"><scope>sead::BaseQuat</scope><name>x</name></member>
+      <member refid="structsead_1_1_base_quat_1a51c1ac07160cd49d5a743deb14a4124f" prot="public" virt="non-virtual"><scope>sead::BaseQuat</scope><name>y</name></member>
+      <member refid="structsead_1_1_base_quat_1a6219665988839b226f19205f0dc9e545" prot="public" virt="non-virtual"><scope>sead::BaseQuat</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

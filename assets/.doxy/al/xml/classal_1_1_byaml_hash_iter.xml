@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_byaml_hash_iter" kind="class" language="C++" prot="public">
+    <compoundname>al::ByamlHashIter</compoundname>
+    <includes refid="al_byaml_hash_iter_8h" local="no">alByamlHashIter.h</includes>
+    <innerclass refid="structal_1_1_byaml_hash_iter_1_1_header" prot="private">al::ByamlHashIter::Header</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classal_1_1_byaml_hash_iter_1aa9d91c070c9654a14960bd175cd112c6" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref> *</type>
+        <definition>const u8* al::ByamlHashIter::mData</definition>
+        <argsstring></argsstring>
+        <name>mData</name>
+        <qualifiedname>al::ByamlHashIter::mData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="47" column="30" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_hash_iter_1abe6e1d3a3227ba6fe9831af0eddaa127" compoundref="al_byaml_hash_iter_8cpp" startline="6" endline="36">findPair</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_byaml_hash_iter_1a1c3707eeeb908b022cabe86f3886d954" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">uintptr_t</ref></type>
+        <definition>uintptr_t al::ByamlHashIter::mDataPtr</definition>
+        <argsstring></argsstring>
+        <name>mDataPtr</name>
+        <qualifiedname>al::ByamlHashIter::mDataPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="48" column="31" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_hash_iter_1a4d1c9e3820cb681093a21c3a02874bc6" compoundref="al_byaml_hash_iter_8h" startline="52" endline="55">getPairTable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_byaml_hash_iter_1ad15cee0171d12b24f2eb900fe493a61b" prot="public" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="structal_1_1_byaml_hash_iter_1_1_header" kindref="compound">Header</ref> *</type>
+        <definition>const Header* al::ByamlHashIter::mHeader</definition>
+        <argsstring></argsstring>
+        <name>mHeader</name>
+        <qualifiedname>al::ByamlHashIter::mHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="49" column="30" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classal_1_1_byaml_hash_iter_1aedc21f3eee05773fa00d144cdaa3e2dd" compoundref="al_byaml_hash_iter_8h" startline="57" endline="60">getSize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_byaml_hash_iter_1a189d3f07bea953c4da3b03a4dd3cf9a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">union</ref> <ref refid="classal_1_1_byaml_hash_iter" kindref="compound">al::ByamlHashIter</ref></type>
+        <definition>union al::ByamlHashIter al::ByamlHashIter</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>al::ByamlHashIter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="50" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classal_1_1_byaml_hash_iter_1a4d1c9e3820cb681093a21c3a02874bc6" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_byaml_hash_pair" kindref="compound">ByamlHashPair</ref> *</type>
+        <definition>const ByamlHashPair * al::ByamlHashIter::getPairTable</definition>
+        <argsstring>() const</argsstring>
+        <name>getPairTable</name>
+        <qualifiedname>al::ByamlHashIter::getPairTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="52" column="29" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="52" bodyend="55"/>
+        <references refid="classal_1_1_byaml_hash_iter_1a1c3707eeeb908b022cabe86f3886d954" compoundref="al_byaml_hash_iter_8h" startline="48">mDataPtr</references>
+        <referencedby refid="classal_1_1_byaml_hash_iter_1abe6e1d3a3227ba6fe9831af0eddaa127" compoundref="al_byaml_hash_iter_8cpp" startline="6" endline="36">findPair</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_hash_iter_1aedc21f3eee05773fa00d144cdaa3e2dd" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref></type>
+        <definition>u32 al::ByamlHashIter::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>al::ByamlHashIter::getSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="57" column="13" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="57" bodyend="60"/>
+        <references refid="classal_1_1_byaml_hash_iter_1ad15cee0171d12b24f2eb900fe493a61b" compoundref="al_byaml_hash_iter_8h" startline="49">mHeader</references>
+        <referencedby refid="classal_1_1_byaml_hash_iter_1abe6e1d3a3227ba6fe9831af0eddaa127" compoundref="al_byaml_hash_iter_8cpp" startline="6" endline="36">findPair</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_byaml_hash_iter_1a73708f0e0b2971b60a968e37198ac5c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>al::ByamlHashIter::ByamlHashIter</definition>
+        <argsstring>(const u8 *data)</argsstring>
+        <name>ByamlHashIter</name>
+        <qualifiedname>al::ByamlHashIter::ByamlHashIter</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="63" column="9" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_hash_iter_1abe6e1d3a3227ba6fe9831af0eddaa127" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_byaml_hash_pair" kindref="compound">ByamlHashPair</ref> *</type>
+        <definition>const ByamlHashPair * al::ByamlHashIter::findPair</definition>
+        <argsstring>(int keyIdx) const</argsstring>
+        <name>findPair</name>
+        <qualifiedname>al::ByamlHashIter::findPair</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>keyIdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="67" column="29" bodyfile="lib/al/src/Yaml/alByamlHashIter.cpp" bodystart="6" bodyend="36"/>
+        <references refid="classal_1_1_byaml_hash_iter_1a4d1c9e3820cb681093a21c3a02874bc6" compoundref="al_byaml_hash_iter_8h" startline="52" endline="55">getPairTable</references>
+        <references refid="classal_1_1_byaml_hash_iter_1aedc21f3eee05773fa00d144cdaa3e2dd" compoundref="al_byaml_hash_iter_8h" startline="57" endline="60">getSize</references>
+        <references refid="classal_1_1_byaml_hash_iter_1aa9d91c070c9654a14960bd175cd112c6" compoundref="al_byaml_hash_iter_8h" startline="47">mData</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_byaml_hash_iter_1a23ff1052147dd873eba3f53ce0ef995a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::ByamlHashIter::getDataByKey</definition>
+        <argsstring>(ByamlData *out, int index) const</argsstring>
+        <name>getDataByKey</name>
+        <qualifiedname>al::ByamlHashIter::getDataByKey</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Yaml/alByamlHashIter.h" line="68" column="30"/>
+        <referencedby refid="classal_1_1_byaml_iter_1abf2fa8e0ba0a813e91501f8cdf3f8cee" compoundref="al_byaml_iter_8cpp" startline="72" endline="81">al::ByamlIter::getByamlDataByKey</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::ByamlHashIter</label>
+        <link refid="classal_1_1_byaml_hash_iter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ByamlHashIter::Header</label>
+        <link refid="structal_1_1_byaml_hash_iter_1_1_header"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Yaml/alByamlHashIter.h" line="36" column="1" bodyfile="lib/al/include/Yaml/alByamlHashIter.h" bodystart="37" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classal_1_1_byaml_hash_iter_1a73708f0e0b2971b60a968e37198ac5c1" prot="public" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>ByamlHashIter</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1abe6e1d3a3227ba6fe9831af0eddaa127" prot="public" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>findPair</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1a23ff1052147dd873eba3f53ce0ef995a" prot="public" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>getDataByKey</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1a4d1c9e3820cb681093a21c3a02874bc6" prot="private" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>getPairTable</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1aedc21f3eee05773fa00d144cdaa3e2dd" prot="private" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>getSize</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1aa9d91c070c9654a14960bd175cd112c6" prot="public" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>mData</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1a1c3707eeeb908b022cabe86f3886d954" prot="public" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>mDataPtr</name></member>
+      <member refid="classal_1_1_byaml_hash_iter_1ad15cee0171d12b24f2eb900fe493a61b" prot="public" virt="non-virtual"><scope>al::ByamlHashIter</scope><name>mHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

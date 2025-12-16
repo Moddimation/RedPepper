@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_sub_actor_function_8cpp" kind="file" language="C++">
+    <compoundname>alSubActorFunction.cpp</compoundname>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes refid="al_live_actor_function_8h" local="no">LiveActor/alLiveActorFunction.h</includes>
+    <includes refid="al_sub_actor_function_8h" local="no">LiveActor/alSubActorFunction.h</includes>
+    <includes refid="al_sub_actor_keeper_8h" local="no">LiveActor/alSubActorKeeper.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="10">
+        <label>LiveActor/alLiveActorFunction.h</label>
+        <link refid="al_live_actor_function_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>LiveActor/alSubActorFunction.h</label>
+        <link refid="al_sub_actor_function_8h"/>
+      </node>
+      <node id="13">
+        <label>LiveActor/alSubActorKeeper.h</label>
+        <link refid="al_sub_actor_keeper_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="8">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alSubActorFunction.cpp</label>
+        <link refid="al_sub_actor_function_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>container/seadPtrArray.h</label>
+      </node>
+      <node id="9">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+      <node id="11">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_function_8h" kindref="compound">LiveActor/alLiveActorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_sub_actor_function_8h" kindref="compound">LiveActor/alSubActorFunction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_sub_actor_keeper_8h" kindref="compound">LiveActor/alSubActorKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classal_sub_actor_function_1afb4d28ced26171df5cf5dd12868e5062" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_sub_actor_function_1afb4d28ced26171df5cf5dd12868e5062" kindref="member">alSubActorFunction::trySyncAlive</ref>(<sp/><ref refid="classal_1_1_sub_actor_keeper" kindref="compound">al::SubActorKeeper</ref>*<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.size();<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_sub_actor_keeper_1_1_entry" kindref="compound">al::SubActorKeeper::Entry</ref>*<sp/>subActor<sp/>=<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.unsafeAt(<sp/>i<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a3a81b56c9a039d7ebe854f65dc0f201f" kindref="member">_8</ref><sp/>&amp;<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref>-&gt;<ref refid="classal_1_1_live_actor_1a21647e167d28b0db31785628cbded72c" kindref="member">makeActorAppeared</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classal_sub_actor_function_1a4f5832b48f286e3b4016e854650c5a51" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_sub_actor_function_1a4f5832b48f286e3b4016e854650c5a51" kindref="member">alSubActorFunction::trySyncDead</ref>(<sp/><ref refid="classal_1_1_sub_actor_keeper" kindref="compound">al::SubActorKeeper</ref>*<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.size();<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_sub_actor_keeper_1_1_entry" kindref="compound">al::SubActorKeeper::Entry</ref>*<sp/>subActor<sp/>=<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.unsafeAt(<sp/>i<sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a3a81b56c9a039d7ebe854f65dc0f201f" kindref="member">_8</ref><sp/>&amp;<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref>-&gt;<ref refid="classal_1_1_live_actor_1a68a239913d3029dfa7d18d580a1b8cf5" kindref="member">makeActorDead</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classal_sub_actor_function_1a9e6db02ef89b793fea07d07bc72beed2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_sub_actor_function_1a9e6db02ef89b793fea07d07bc72beed2" kindref="member">alSubActorFunction::trySyncClippingStart</ref>(<sp/><ref refid="classal_1_1_sub_actor_keeper" kindref="compound">al::SubActorKeeper</ref>*<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.size();<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_sub_actor_keeper_1_1_entry" kindref="compound">al::SubActorKeeper::Entry</ref>*<sp/>subActor<sp/>=<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.unsafeAt(<sp/>i<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a3a81b56c9a039d7ebe854f65dc0f201f" kindref="member">_8</ref><sp/>&amp;<sp/>2<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" kindref="member">al::isAlive</ref>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref><sp/>)<sp/>&amp;&amp;<sp/>!<ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">al::isClipped</ref>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref>-&gt;<ref refid="classal_1_1_live_actor_1ac4c0cd084ef4601fbfe71ea4b83e475a" kindref="member">startClipped</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classal_sub_actor_function_1a55ca58b2cbf0f687f6f675a8b64f3d88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_sub_actor_function_1a55ca58b2cbf0f687f6f675a8b64f3d88" kindref="member">alSubActorFunction::trySyncClippingEnd</ref>(<sp/><ref refid="classal_1_1_sub_actor_keeper" kindref="compound">al::SubActorKeeper</ref>*<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.size();<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_sub_actor_keeper_1_1_entry" kindref="compound">al::SubActorKeeper::Entry</ref>*<sp/>subActor<sp/>=<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.unsafeAt(<sp/>i<sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a3a81b56c9a039d7ebe854f65dc0f201f" kindref="member">_8</ref><sp/>&amp;<sp/>2<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" kindref="member">al::isAlive</ref>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref><sp/>)<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">al::isClipped</ref>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref>-&gt;<ref refid="classal_1_1_live_actor_1a488ab648a97ff7a2826b1976b4cd0352" kindref="member">endClipped</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classal_sub_actor_function_1a31c2fe252de14a0c157d22012cedcd6a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_sub_actor_function_1a31c2fe252de14a0c157d22012cedcd6a" kindref="member">alSubActorFunction::tryCalcAnim</ref>(<sp/><ref refid="classal_1_1_sub_actor_keeper" kindref="compound">al::SubActorKeeper</ref>*<sp/>p<sp/>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.size();<sp/>i++<sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_sub_actor_keeper_1_1_entry" kindref="compound">al::SubActorKeeper::Entry</ref>*<sp/>subActor<sp/>=<sp/>p-&gt;<ref refid="classal_1_1_sub_actor_keeper_1aee15c31ad3f11850e5a03d3043699ff0" kindref="member">mSubActors</ref>.unsafeAt(<sp/>i<sp/>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a3a81b56c9a039d7ebe854f65dc0f201f" kindref="member">_8</ref><sp/>&amp;<sp/>8<sp/>&amp;&amp;<sp/><ref refid="namespaceal_1a32b68f296f7dfaee844da576cfdb9b31" kindref="member">al::isAlive</ref>(<sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subActor-&gt;<ref refid="structal_1_1_sub_actor_keeper_1_1_entry_1a37c5c8698053fab5b5af53856b590c14" kindref="member">actor</ref>-&gt;<ref refid="classal_1_1_live_actor_1a302e89a156c4c82e0839e1b12cd6ee2a" kindref="member">calcAnim</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alSubActorFunction.cpp"/>
+  </compounddef>
+</doxygen>

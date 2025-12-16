@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/sources/dbg
+# Dir dbg
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**dbg\_Api.cpp**](dbg__Api_8cpp.md) <br> |
+| file | [**dbg\_Api.cpp**](dbg___api_8cpp.md) <br> |
 
 
 

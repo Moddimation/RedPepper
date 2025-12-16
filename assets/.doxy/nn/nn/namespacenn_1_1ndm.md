@@ -51,8 +51,8 @@
 
 | Type | Name |
 | ---: | :--- |
-|  [**Result**](classnn_1_1Result.md) | [**Initialize**](#function-initialize) () <br> |
-|  [**Result**](classnn_1_1Result.md) | [**SuspendScheduler**](#function-suspendscheduler) (bool) <br> |
+|  [**Result**](classnn_1_1_result.md) | [**Initialize**](#function-initialize) () <br> |
+|  [**Result**](classnn_1_1_result.md) | [**SuspendScheduler**](#function-suspendscheduler) (bool) <br> |
 
 
 

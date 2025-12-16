@@ -27,7 +27,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| namespace | [**CTR**](namespacenn_1_1fs_1_1CTR.md) <br> |
+| namespace | [**CTR**](namespacenn_1_1fs_1_1_c_t_r.md) <br> |
 | namespace | [**detail**](namespacenn_1_1fs_1_1detail.md) <br> |
 | namespace | [**ipc**](namespacenn_1_1fs_1_1ipc.md) <br> |
 

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_action_condition_anim_end_8h" kind="file" language="C++">
+    <compoundname>PlayerActionConditionAnimEnd.h</compoundname>
+    <includes refid="_player_action_multi_condition_8h" local="yes">Player/PlayerActionMultiCondition.h</includes>
+    <includedby refid="_player_action_condition_anim_end_8cpp" local="yes">PlayerActionConditionAnimEnd.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Player/PlayerActionCondition.h</label>
+        <link refid="_player_action_condition_8h"/>
+      </node>
+      <node id="1">
+        <label>PlayerActionConditionAnimEnd.h</label>
+        <link refid="_player_action_condition_anim_end_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Player/PlayerActionMultiCondition.h</label>
+        <link refid="_player_action_multi_condition_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>container/seadOffsetList.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>PlayerActionConditionAnimEnd.h</label>
+        <link refid="_player_action_condition_anim_end_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PlayerActionConditionAnimEnd.cpp</label>
+        <link refid="_player_action_condition_anim_end_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_player_action_condition_anim_end" prot="public">PlayerActionConditionAnimEnd</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_action_multi_condition_8h" kindref="compound">Player/PlayerActionMultiCondition.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_i_use_player_animator" kindref="compound">IUsePlayerAnimator</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_player_action_condition_anim_end" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_action_condition_anim_end" kindref="compound">PlayerActionConditionAnimEnd</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_player_action_condition" kindref="compound">PlayerActionCondition</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="class_player_action_condition_anim_end_1ad81dc65db88d0b21d49794d13a4f06e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_action_condition_anim_end_1ad81dc65db88d0b21d49794d13a4f06e2" kindref="member">mAnimName</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_player_action_condition_anim_end_1a6a6ec7bb99e0e6b9f83bcea9d8599336" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_use_player_animator" kindref="compound">IUsePlayerAnimator</ref>*<sp/><ref refid="class_player_action_condition_anim_end_1a6a6ec7bb99e0e6b9f83bcea9d8599336" kindref="member">mUsePlayerAnimator</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">mAnimEndFrame</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_action_condition_anim_end_1a084c8634c90cfb549b00164ad336d5fb" kindref="member">check</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_player_action_condition_anim_end" kindref="compound">PlayerActionConditionAnimEnd</ref>(<sp/><ref refid="class_i_use_player_animator" kindref="compound">IUsePlayerAnimator</ref>*<sp/><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">animator</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">animName</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">animEndFrame</ref><sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Game/include/Player/PlayerActionConditionAnimEnd.h"/>
+  </compounddef>
+</doxygen>

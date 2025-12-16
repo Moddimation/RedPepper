@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadRandom.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-seadrandomh">File seadRandom.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_f6d5c8d1d4c60cd689fcf859a6687fb0/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_aca00b2b66bba231d7d2f92006188148/"><strong>random</strong></a> <strong>&gt;</strong> <a href="../sead_random_8h/"><strong>seadRandom.h</strong></a></p>
+<p><a href="../sead_random_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+#include &lt;basis/seadRawPrint.h&gt;
+#include &lt;basis/seadTypes.h&gt;
+#include &lt;prim/seadBitUtil.h&gt;
+
+namespace sead {
+class Random {
+public:
+    Random() { init(); }
+
+    Random(u32 seed) { init(seed); }
+
+    Random(u32 seed_x, u32 seed_y, u32 seed_z, u32 seed_w) { init(seed_x, seed_y, seed_z, seed_w); }
+
+    void init();
+    void init(u32 seed);
+    void init(u32 seed_x, u32 seed_y, u32 seed_z, u32 seed_w);
+
+    u32 getU32();
+    u64 getU64();
+    u32 getU32(u32 max);
+    s32 getS32Range(s32 a, s32 b);
+    s64 getS64Range(s64 a, s64 b);
+    f32 getF32();
+    f32 getF32Range(f32 a, f32 b);
+    f64 getF64();
+    f64 getF64Range(f64 a, f64 b);
+    bool getBool();
+
+    void getContext(u32* x, u32* y, u32* z, u32* w) const;
+
+private:
+    u32 mX;
+    u32 mY;
+    u32 mZ;
+    u32 mW;
+};
+
+inline u32 Random::getU32(u32 max) {
+    return getU32() * u64(max) &gt;&gt; 32u;
+}
+
+inline s32 Random::getS32Range(s32 a, s32 b) {
+    SEAD_ASSERT_MSG(a &lt;= b, &quot;b[%d] &gt;= a[%d]&quot;, a, b);
+    return getU32(b - a) + static_cast&lt;u32&gt;(a);
+}
+
+// UNCHECKED
+inline s64 Random::getS64Range(s64 a, s64 b) {
+    SEAD_ASSERT_MSG(a &lt;= b, &quot;b[%ld] &gt;= a[%ld]&quot;, a, b);
+    return (getU32() * u64(b - a) &gt;&gt; 32u) + a;
+}
+
+inline f32 Random::getF32() {
+    return BitUtil::bitCast&lt;f32&gt;((getU32() &gt;&gt; 9u) | 0x3F800000u) - 1.0f;
+}
+
+inline f32 Random::getF32Range(f32 a, f32 b) {
+    SEAD_ASSERT_MSG(a &lt;= b, &quot;b[%f] &gt;= a[%f]&quot;, a, b);
+    return a + (b - a) * getF32();
+}
+
+}  // namespace sead
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_live_actor_flag_8cpp" kind="file" language="C++">
+    <compoundname>alLiveActorFlag.cpp</compoundname>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <includes refid="al_live_actor_flag_8h" local="no">LiveActor/alLiveActorFlag.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="4">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="7">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="8">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alLiveActorFlag.cpp</label>
+        <link refid="al_live_actor_flag_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_flag_8h" kindref="compound">LiveActor/alLiveActorFlag.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="structal_1_1_live_actor_flag_1acc54e61e0d99637ebd33e83c71b86371" refkind="member"><highlight class="normal"><ref refid="structal_1_1_live_actor_flag_1acc54e61e0d99637ebd33e83c71b86371" kindref="member">LiveActorFlag::LiveActorFlag</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="namespaceal_1a62c2c9d897bed88133376646c4d13651" kindref="member">isDead</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">true</ref><sp/>),<sp/><ref refid="namespaceal_1abd3a4cfa8871ab68ee14b98f292535ce" kindref="member">isClipped</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>),<sp/><ref refid="namespaceal_1a14ff881ab8f431fb4477dc0b0d7b299e" kindref="member">isInvalidClipping</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">true</ref><sp/>),<sp/>isDrawClipping(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>),<sp/>flag5(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>isHideModel(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>),<sp/>isOffCollide(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">true</ref><sp/>),<sp/>flag8(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>),<sp/>isValidMaterialCode(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">false</ref><sp/>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alLiveActorFlag.cpp"/>
+  </compounddef>
+</doxygen>

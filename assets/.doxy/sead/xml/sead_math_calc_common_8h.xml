@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_math_calc_common_8h" kind="file" language="C++">
+    <compoundname>seadMathCalcCommon.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includes refid="sead_math_numbers_8h" local="no">math/seadMathNumbers.h</includes>
+    <includes refid="sead_math_calc_common_8hpp" local="no">math/seadMathCalcCommon.hpp</includes>
+    <includedby refid="sead_bound_box_8hpp" local="no">seadBoundBox.hpp</includedby>
+    <includedby refid="sead_math_calc_common_8hpp" local="no">seadMathCalcCommon.hpp</includedby>
+    <includedby refid="sead_matrix_calc_common_8hpp" local="no">seadMatrixCalcCommon.hpp</includedby>
+    <includedby refid="sead_quat_calc_common_8hpp" local="no">seadQuatCalcCommon.hpp</includedby>
+    <includedby refid="sead_vector_calc_ctr_8hpp" local="no">seadVectorCalcCtr.hpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="sead_math_numbers_8h"/>
+      </node>
+      <node id="9">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="4">
+        <label>nn/types.h</label>
+      </node>
+      <node id="8">
+        <label>stdarg.h</label>
+      </node>
+      <node id="10">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadControllerBase.h</label>
+        <link refid="sead_controller_base_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="3">
+        <label>seadBoundBox.h</label>
+        <link refid="sead_bound_box_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadBoundBox.hpp</label>
+        <link refid="sead_bound_box_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>seadMatrix.h</label>
+        <link refid="sead_matrix_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>seadMatrix.hpp</label>
+        <link refid="sead_matrix_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>seadMatrixCalcCommon.h</label>
+        <link refid="sead_matrix_calc_common_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>seadMatrixCalcCommon.hpp</label>
+        <link refid="sead_matrix_calc_common_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>seadQuat.h</label>
+        <link refid="sead_quat_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>seadQuat.hpp</label>
+        <link refid="sead_quat_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>seadQuatCalcCommon.h</label>
+        <link refid="sead_quat_calc_common_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>seadQuatCalcCommon.hpp</label>
+        <link refid="sead_quat_calc_common_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>seadMatrix.cpp</label>
+        <link refid="sead_matrix_8cpp"/>
+      </node>
+      <node id="17">
+        <label>seadQuat.cpp</label>
+        <link refid="sead_quat_8cpp"/>
+      </node>
+      <node id="21">
+        <label>seadVector.cpp</label>
+        <link refid="sead_vector_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_math_calc_common" prot="public">sead::MathCalcCommon</innerclass>
+    <innerclass refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample" prot="public">sead::MathCalcCommon::SinCosSample</innerclass>
+    <innerclass refid="structsead_1_1_math_calc_common_1_1_atan_sample" prot="public">sead::MathCalcCommon::AtanSample</innerclass>
+    <innerclass refid="structsead_1_1_math_calc_common_1_1_exp_sample" prot="public">sead::MathCalcCommon::ExpSample</innerclass>
+    <innerclass refid="structsead_1_1_math_calc_common_1_1_log_sample" prot="public">sead::MathCalcCommon::LogSample</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="sead_math_calc_common_8h_1a218a1b59c8c7acca11a92cb4e8dfcfdb" prot="public" static="no">
+        <name>SEAD_MATH_MATH_CALC_COMMON_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadMathCalcCommon.h" line="187" column="9" bodyfile="lib/sead/include/math/seadMathCalcCommon.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_math_numbers_8h" kindref="compound">math/seadMathNumbers.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="9" refid="classsead_1_1_math_calc_common" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_math_calc_common" kindref="compound">MathCalcCommon</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_math_calc_common_1a8b74fdce3f56d0590446c0155ad96740" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a8b74fdce3f56d0590446c0155ad96740" kindref="member">cQuarterRoundIdx</ref><sp/>=<sp/>0x40000000;<sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>90<sp/>degrees,<sp/>PI/2<sp/>radians</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classsead_1_1_math_calc_common_1a3756a2014d36c2a1a0a70a3cf5bf5318" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a3756a2014d36c2a1a0a70a3cf5bf5318" kindref="member">cHalfRoundIdx</ref><sp/>=<sp/>0x80000000;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>180<sp/>degrees,<sp/>PI<sp/><sp/><sp/>radians</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample" kindref="compound">SinCosSample</ref><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1a8021fc9f95c57f886bf3f6fcb72d80d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1a8021fc9f95c57f886bf3f6fcb72d80d2" kindref="member">sin_val</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1a325eb05e22f6f86108b68197c0b0908f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1a325eb05e22f6f86108b68197c0b0908f" kindref="member">sin_delta</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1af29e353597a7f19b7f21acd7dd3f3a66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1af29e353597a7f19b7f21acd7dd3f3a66" kindref="member">cos_val</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1a774419ce676c5b8d3325a4a8c1cb92ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample_1a774419ce676c5b8d3325a4a8c1cb92ed" kindref="member">cos_delta</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structsead_1_1_math_calc_common_1_1_atan_sample" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_math_calc_common_1_1_atan_sample" kindref="compound">AtanSample</ref><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="structsead_1_1_math_calc_common_1_1_atan_sample_1a5a4c125e74bed313cce07a5be1d8a82b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="structsead_1_1_math_calc_common_1_1_atan_sample_1a5a4c125e74bed313cce07a5be1d8a82b" kindref="member">atan_val</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structsead_1_1_math_calc_common_1_1_atan_sample_1a3ca29776abbe1e599249ea362349e10a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_atan_sample_1a3ca29776abbe1e599249ea362349e10a" kindref="member">atan_delta</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structsead_1_1_math_calc_common_1_1_exp_sample" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_math_calc_common_1_1_exp_sample" kindref="compound">ExpSample</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="structsead_1_1_math_calc_common_1_1_exp_sample_1a0985758ff98e4557ce0a532fc18de9ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_exp_sample_1a0985758ff98e4557ce0a532fc18de9ae" kindref="member">exp_val</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structsead_1_1_math_calc_common_1_1_exp_sample_1a1ac8b97798ba5f3fc09f4bd39b510dc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_exp_sample_1a1ac8b97798ba5f3fc09f4bd39b510dc6" kindref="member">exp_delta</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structsead_1_1_math_calc_common_1_1_log_sample" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_math_calc_common_1_1_log_sample" kindref="compound">LogSample</ref><sp/>{</highlight></codeline>
+<codeline lineno="32" refid="structsead_1_1_math_calc_common_1_1_log_sample_1a40c32b1b3240d44a35cd8a86749e0291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_log_sample_1a40c32b1b3240d44a35cd8a86749e0291" kindref="member">log_val</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structsead_1_1_math_calc_common_1_1_log_sample_1ab7e62696fe272b96dcd71c6e3e668567" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_math_calc_common_1_1_log_sample_1ab7e62696fe272b96dcd71c6e3e668567" kindref="member">log_delta</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classsead_1_1_math_calc_common_1ac2b3a68e9102f2163509a5b276e98184" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ac2b3a68e9102f2163509a5b276e98184" kindref="member">piHalf</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacesead_1_1numbers_1a95e8277bfe07653c34d4f814c915bdb7" kindref="member">numbers::pi_v</ref><sp/>/<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(2);<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classsead_1_1_math_calc_common_1a21b89f97243b3dfde157e966cac3d2b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a21b89f97243b3dfde157e966cac3d2b5" kindref="member">pi</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacesead_1_1numbers_1a95e8277bfe07653c34d4f814c915bdb7" kindref="member">numbers::pi_v</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classsead_1_1_math_calc_common_1ae3914e6910e8017ed60c00fe6c005bd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ae3914e6910e8017ed60c00fe6c005bd7" kindref="member">pi2</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacesead_1_1numbers_1a95e8277bfe07653c34d4f814c915bdb7" kindref="member">numbers::pi_v</ref><sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(2);<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classsead_1_1_math_calc_common_1a3984e9b53d7ee7b73be02740e5445dd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a3984e9b53d7ee7b73be02740e5445dd9" kindref="member">zero</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0);<sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classsead_1_1_math_calc_common_1abf257d39d58652ebb08c3b66394b6c4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1abf257d39d58652ebb08c3b66394b6c4e" kindref="member">one</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(1);<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1_math_calc_common_1a71abee429167103bb0c8544c302fa051" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a71abee429167103bb0c8544c302fa051" kindref="member">ln2</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacesead_1_1numbers_1a2fe2366f41f3abce5d058380ed4d826e" kindref="member">numbers::ln2_v</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classsead_1_1_math_calc_common_1a8252adfd5f9c60cecbdcb9df340ef792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a8252adfd5f9c60cecbdcb9df340ef792" kindref="member">ln2Inv</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacesead_1_1numbers_1a391b41914bf822d4a27ce03c6b2ab6da" kindref="member">numbers::log2e_v</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classsead_1_1_math_calc_common_1ac626f5e962d281f01776da1d2acea8b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ac626f5e962d281f01776da1d2acea8b9" kindref="member">neg</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="51" refid="classsead_1_1_math_calc_common_1ad9a9ec47d6f4174442a6c2f8f3a3ce4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ad9a9ec47d6f4174442a6c2f8f3a3ce4e" kindref="member">inv</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a738f78407747ee74b0dd9441382a6076" kindref="member">sign</ref>(T<sp/>value);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classsead_1_1_math_calc_common_1a2e9cb8b63721efa1f7686bda405c803e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a2e9cb8b63721efa1f7686bda405c803e" kindref="member">fitSign</ref>(T<sp/>value,<sp/>T<sp/>sign_value)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a22a18a9a0ff240a2fea9af613645748a" kindref="member">abs</ref>(value)<sp/>*<sp/><ref refid="classsead_1_1_math_calc_common_1a738f78407747ee74b0dd9441382a6076" kindref="member">sign</ref>(sign_value);<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classsead_1_1_math_calc_common_1a420be3673047b2f0c3f91c1be89e9d2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a420be3673047b2f0c3f91c1be89e9d2b" kindref="member">square</ref>(T<sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t<sp/>*<sp/>t;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a15d6a007ea75975af6effcf829c89f35" kindref="member">sqrt</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a763e0cbce59d29930015a9370fb7af56" kindref="member">rsqrt</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a3c35e3571f742f39a596fcdd3dd5c962" kindref="member">pow</ref>(T<sp/>x,<sp/>T<sp/>y);</highlight></codeline>
+<codeline lineno="64" refid="classsead_1_1_math_calc_common_1a7ee61ce4cb8d11e51254eca226396d36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a7ee61ce4cb8d11e51254eca226396d36" kindref="member">powTable</ref>(T,<sp/>T);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classsead_1_1_math_calc_common_1a21e47aa0537794af9227c4358169d78b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a21e47aa0537794af9227c4358169d78b" kindref="member">sin</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="67" refid="classsead_1_1_math_calc_common_1a3501211febadf471b4eac7b27331c3b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a3501211febadf471b4eac7b27331c3b5" kindref="member">cos</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="68" refid="classsead_1_1_math_calc_common_1a4dd715fc8f26531efad65fb547d6696b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a4dd715fc8f26531efad65fb547d6696b" kindref="member">tan</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classsead_1_1_math_calc_common_1afa7f10a93ac5a8bc57de4f126a4dc458" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1afa7f10a93ac5a8bc57de4f126a4dc458" kindref="member">asin</ref>(T<sp/>s);</highlight></codeline>
+<codeline lineno="71" refid="classsead_1_1_math_calc_common_1a23518ad0916a8abe56e613608e7d0fc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a23518ad0916a8abe56e613608e7d0fc9" kindref="member">acos</ref>(T<sp/>c);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a082417a47e622c30a8ec7f1b910a8008" kindref="member">atan</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1adb4ffee964b415f8ea8ac97c5c73f7fa" kindref="member">atan2</ref>(T<sp/>y,<sp/>T<sp/>x);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classsead_1_1_math_calc_common_1ad8ebae4f35b1a86655c131c338f6c215" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ad8ebae4f35b1a86655c131c338f6c215" kindref="member">sinIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>idx);</highlight></codeline>
+<codeline lineno="76" refid="classsead_1_1_math_calc_common_1a0fd014d7ebd870641c5244a1102a5b39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a0fd014d7ebd870641c5244a1102a5b39" kindref="member">cosIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>idx);</highlight></codeline>
+<codeline lineno="77" refid="classsead_1_1_math_calc_common_1ad12446131052dc71e4a8605eb208d8c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ad12446131052dc71e4a8605eb208d8c2" kindref="member">tanIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>idx);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classsead_1_1_math_calc_common_1af499a0ac491b5fefea038780b47da28b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1af499a0ac491b5fefea038780b47da28b" kindref="member">asinIdx</ref>(T<sp/>s);</highlight></codeline>
+<codeline lineno="80" refid="classsead_1_1_math_calc_common_1a0905d0ec47a04a915f73d1a35894c447" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a0905d0ec47a04a915f73d1a35894c447" kindref="member">acosIdx</ref>(T<sp/>c);</highlight></codeline>
+<codeline lineno="81" refid="classsead_1_1_math_calc_common_1a77f3a1cc49a6c4096865dac03e878570" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a77f3a1cc49a6c4096865dac03e878570" kindref="member">atanIdx</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="82" refid="classsead_1_1_math_calc_common_1a3e0fd9ddd12e9fb721b546924e4c8625" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a3e0fd9ddd12e9fb721b546924e4c8625" kindref="member">atan2Idx</ref>(T<sp/>y,<sp/>T<sp/>x);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classsead_1_1_math_calc_common_1a75faca754080303849c69e6d7324b41b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a75faca754080303849c69e6d7324b41b" kindref="member">sinCosIdx</ref>(T*<sp/>p_sin,<sp/>T*<sp/>p_cos,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>idx);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1abeddd515e4d56f2e292ef65fd3a3634a" kindref="member">exp</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a7c7c7b91225f7bdc276a7960c0de59ab" kindref="member">log</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1aea04971da611d0cd23dc895ffd471044" kindref="member">log2</ref>(T<sp/>n);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a3526c7d827e80653aff909d1b6785531" kindref="member">log10</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classsead_1_1_math_calc_common_1a8221329eadc73d05668a9cce91bf74fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a8221329eadc73d05668a9cce91bf74fe" kindref="member">expTable</ref>(T<sp/>x);</highlight></codeline>
+<codeline lineno="92" refid="classsead_1_1_math_calc_common_1a72a2fe795413c03774f0430ccdb0b40a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a72a2fe795413c03774f0430ccdb0b40a" kindref="member">logTable</ref>(T<sp/>x);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classsead_1_1_math_calc_common_1a64f9411999a19efff7af32f0bd50b671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a64f9411999a19efff7af32f0bd50b671" kindref="member">minNumber</ref>();</highlight></codeline>
+<codeline lineno="95" refid="classsead_1_1_math_calc_common_1a69d848cdb3e694c2f2d52f5459a2040d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a69d848cdb3e694c2f2d52f5459a2040d" kindref="member">maxNumber</ref>();</highlight></codeline>
+<codeline lineno="96" refid="classsead_1_1_math_calc_common_1a8d1f98ba1359f3fc3248303307248597" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a8d1f98ba1359f3fc3248303307248597" kindref="member">infinity</ref>();</highlight></codeline>
+<codeline lineno="97" refid="classsead_1_1_math_calc_common_1afe8803f44c388ef925dbb7af499f3d10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1afe8803f44c388ef925dbb7af499f3d10" kindref="member">nan</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*static<sp/>T<sp/>epsilon()<sp/>{<sp/>return<sp/>std::numeric_limits&lt;T&gt;::epsilon();<sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"></highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/>static<sp/>bool<sp/>equalsEpsilon(T<sp/>lhs,<sp/>T<sp/>rhs,<sp/>T<sp/>eps<sp/>=<sp/>epsilon())</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>T<sp/>diff<sp/>=<sp/>lhs<sp/>-<sp/>rhs;</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>-eps<sp/>&lt;=<sp/>diff<sp/>&amp;&amp;<sp/>diff<sp/>&lt;=<sp/>eps;</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classsead_1_1_math_calc_common_1a22a18a9a0ff240a2fea9af613645748a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a22a18a9a0ff240a2fea9af613645748a" kindref="member">abs</ref>(T<sp/>x)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>&gt;<sp/>0<sp/>?<sp/>x<sp/>:<sp/>-x;<sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ac12a324e60545d79861ed4764c7c7272" kindref="member">max</ref>(T<sp/>a,<sp/>T<sp/>b);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ad6949112f95f6556a90d334d5e1e166d" kindref="member">min</ref>(T<sp/>a,<sp/>T<sp/>b);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a2198adaad9bd5ab4b5df5f6f52598778" kindref="member">max3</ref>(T<sp/>a,<sp/>T<sp/>b,<sp/>T<sp/>c);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a092ef03584c4f74719822d36f04fab0e" kindref="member">min3</ref>(T<sp/>a,<sp/>T<sp/>b,<sp/>T<sp/>c);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a697da1070de69d667b635e76ddaf0b02" kindref="member">deg2rad</ref>(T<sp/>deg);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ac6c1c195e517b740722767adfa199061" kindref="member">rad2deg</ref>(T<sp/>rad);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ab805ead0513f4c85ed35fc8dc9be4603" kindref="member">deg2idx</ref>(T<sp/>a);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ab5a14157a26148005156eb5208f8257c" kindref="member">rad2idx</ref>(T<sp/>a);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1adb574440699f5905a5f6e37d396d4bd8" kindref="member">idx2deg</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>a);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a0da5ac53935a8d67e36699fa0472a096" kindref="member">idx2rad</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>a);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classsead_1_1_math_calc_common_1a4533e5c4954f1046e2bef285ed3df367" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a4533e5c4954f1046e2bef285ed3df367" kindref="member">roundAngle</ref>(T);</highlight></codeline>
+<codeline lineno="123" refid="classsead_1_1_math_calc_common_1ab148a2e2d4ef2ece8dd69dd3283afea9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ab148a2e2d4ef2ece8dd69dd3283afea9" kindref="member">angleDist</ref>(T,<sp/>T);</highlight></codeline>
+<codeline lineno="124" refid="classsead_1_1_math_calc_common_1a9596696f507afdf86961529322e7d73c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a9596696f507afdf86961529322e7d73c" kindref="member">random</ref>();</highlight></codeline>
+<codeline lineno="125" refid="classsead_1_1_math_calc_common_1a6d12c0615e4a42bb928545e99b680dd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a6d12c0615e4a42bb928545e99b680dd8" kindref="member">getRand</ref>(T);</highlight></codeline>
+<codeline lineno="126" refid="classsead_1_1_math_calc_common_1a46f79f0033500733c118b42d860980ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a46f79f0033500733c118b42d860980ff" kindref="member">getRandRange</ref>(T,<sp/>T);</highlight></codeline>
+<codeline lineno="127" refid="classsead_1_1_math_calc_common_1adc2a7a529136a051d08aafefafce95aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1adc2a7a529136a051d08aafefafce95aa" kindref="member">getRandSign</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a3b8e8da4f35bb1f3afe803dcc39d8d54" kindref="member">roundOff</ref>(T);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ad7491a76e70c689942afa984fb997564" kindref="member">floor</ref>(T);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ae3eac483f40242525fbe94560a6ebcf4" kindref="member">ceil</ref>(T);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a3fcf6b3244ea93efecf350e4ae988671" kindref="member">roundUp</ref>(T<sp/>x,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>multNumber);</highlight></codeline>
+<codeline lineno="132" refid="classsead_1_1_math_calc_common_1ad846324d604dbabcaffad4317543cc4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ad846324d604dbabcaffad4317543cc4c" kindref="member">roundUpPow2</ref>(T<sp/>x,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>y);</highlight></codeline>
+<codeline lineno="133" refid="classsead_1_1_math_calc_common_1a01428f40ba9fb538e352f81a6f2ac69c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a01428f40ba9fb538e352f81a6f2ac69c" kindref="member">roundDownN</ref>(T<sp/>val,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>multNumber);</highlight></codeline>
+<codeline lineno="134" refid="classsead_1_1_math_calc_common_1ac0d7160e1b23625a3813b99de8b9b963" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ac0d7160e1b23625a3813b99de8b9b963" kindref="member">roundDownPow2</ref>(T<sp/>x,<sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/>y);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1adaeeff5c86edd4f2e766912da20978b8" kindref="member">clampMax</ref>(T<sp/>val,<sp/>T<sp/>max_);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a586559907d1570e272329f6b1f492716" kindref="member">clampMin</ref>(T<sp/>val,<sp/>T<sp/>min_);</highlight></codeline>
+<codeline lineno="137" refid="classsead_1_1_math_calc_common_1ab41d162f25e2c27dae264d285f3702be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1ab41d162f25e2c27dae264d285f3702be" kindref="member">clamp2</ref>(T<sp/>min_,<sp/>T<sp/>val,<sp/>T<sp/>max_);<sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>this<sp/>the<sp/>same<sp/>function?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a434fc96bfd843f2b3d5245113e6ce627" kindref="member">clamp</ref>(T<sp/>value,<sp/>T<sp/>low,<sp/>T<sp/>high);</highlight></codeline>
+<codeline lineno="139" refid="classsead_1_1_math_calc_common_1a295db1f6590f3f66b3bce0b4d7af8a02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a295db1f6590f3f66b3bce0b4d7af8a02" kindref="member">gcd</ref>(T<sp/>x,<sp/>T<sp/>y);</highlight></codeline>
+<codeline lineno="140" refid="classsead_1_1_math_calc_common_1adbefce649d0c6c2a5f9f25b2f6e03ead" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1adbefce649d0c6c2a5f9f25b2f6e03ead" kindref="member">lcm</ref>(T<sp/>x,<sp/>T<sp/>y);</highlight></codeline>
+<codeline lineno="141" refid="classsead_1_1_math_calc_common_1ad57588377883aba2c66b66617420ac47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1ad57588377883aba2c66b66617420ac47" kindref="member">isZero</ref>(T,<sp/>T);</highlight></codeline>
+<codeline lineno="142" refid="classsead_1_1_math_calc_common_1ade1e64770c3a2d0cad0a8b8b7857d56c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1ade1e64770c3a2d0cad0a8b8b7857d56c" kindref="member">isNan</ref>(T);</highlight></codeline>
+<codeline lineno="143" refid="classsead_1_1_math_calc_common_1aff8e2dfcdfc9b09843771a385bb93580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1aff8e2dfcdfc9b09843771a385bb93580" kindref="member">isPow2</ref>(T);</highlight></codeline>
+<codeline lineno="144" refid="classsead_1_1_math_calc_common_1ab2eb1470ab081fbfff483cfeb8602a14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1ab2eb1470ab081fbfff483cfeb8602a14" kindref="member">isMultiplePow2</ref>(T,<sp/>T);</highlight></codeline>
+<codeline lineno="145" refid="classsead_1_1_math_calc_common_1a421cee25cd1ea4b38c6b385a41452255" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a421cee25cd1ea4b38c6b385a41452255" kindref="member">isInfinity</ref>(T);</highlight></codeline>
+<codeline lineno="146" refid="classsead_1_1_math_calc_common_1a536c1c9b4cc83093256ef8f8510f4df4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a536c1c9b4cc83093256ef8f8510f4df4" kindref="member">isIntersect1d</ref>(T,<sp/>T,<sp/>T,<sp/>T);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a7030d1581f07158a315dc929a818f189" kindref="member">chase</ref>(T*<sp/>value,<sp/>T<sp/>target,<sp/>T<sp/>step);</highlight></codeline>
+<codeline lineno="151" refid="classsead_1_1_math_calc_common_1a6f05a31ee7c8e32a154061dc9d598a73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a6f05a31ee7c8e32a154061dc9d598a73" kindref="member">chaseAngle</ref>(T*,<sp/>T,<sp/>T);</highlight></codeline>
+<codeline lineno="152" refid="classsead_1_1_math_calc_common_1aec80785f1b18516cb6ab367bc85ea5cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1aec80785f1b18516cb6ab367bc85ea5cb" kindref="member">chaseAngleIdx</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref>*,<sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref>,<sp/><ref refid="_l_m_s___types_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" kindref="member">s64</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classsead_1_1_math_calc_common_1a3194fecfaad701decb88370014573965" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a3194fecfaad701decb88370014573965" kindref="member">lerp</ref>(T<sp/>a,<sp/>T<sp/>b,<sp/><ref refid="_l_m_s___types_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>ratio);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="157" refid="classsead_1_1_math_calc_common_1ac4317672a1628983e91aaea094d4c0ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ac4317672a1628983e91aaea094d4c0ef" kindref="member">atanIdx_</ref>(T<sp/>t);</highlight></codeline>
+<codeline lineno="158" refid="classsead_1_1_math_calc_common_1a9d0087eb1606a54b2923533661286544" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a9d0087eb1606a54b2923533661286544" kindref="member">expLn2_</ref>(T<sp/>x);</highlight></codeline>
+<codeline lineno="159" refid="classsead_1_1_math_calc_common_1a5c5a69abe17c5693c6b93e48c42f56ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_math_calc_common_1a5c5a69abe17c5693c6b93e48c42f56ff" kindref="member">log1_2_</ref>(T<sp/>x);</highlight></codeline>
+<codeline lineno="160" refid="classsead_1_1_math_calc_common_1a4c00f07b5112236f3b702d4e84baa0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common_1a4c00f07b5112236f3b702d4e84baa0d4" kindref="member">assertGreaterThanOrEqualToZero_</ref>(T);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="164" refid="classsead_1_1_math_calc_common_1acce552125e7fadd2a06b45adcf6fc914" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_math_calc_common_1_1_sin_cos_sample" kindref="compound">SinCosSample</ref><sp/><ref refid="classsead_1_1_math_calc_common_1acce552125e7fadd2a06b45adcf6fc914" kindref="member">cSinCosTbl</ref>[256<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="165" refid="classsead_1_1_math_calc_common_1aad2221951dfba7870fe7f55d2050864d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_math_calc_common_1_1_atan_sample" kindref="compound">AtanSample</ref><sp/><ref refid="classsead_1_1_math_calc_common_1aad2221951dfba7870fe7f55d2050864d" kindref="member">cAtanTbl</ref>[128<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="166" refid="classsead_1_1_math_calc_common_1a478fb07536554731598f4ae6235d1fab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_math_calc_common_1_1_exp_sample" kindref="compound">ExpSample</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a478fb07536554731598f4ae6235d1fab" kindref="member">cExpTbl</ref>[32<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="167" refid="classsead_1_1_math_calc_common_1a6f31e0c34bed4511aeccd41f96b91389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_math_calc_common_1_1_log_sample" kindref="compound">LogSample</ref><sp/><ref refid="classsead_1_1_math_calc_common_1a6f31e0c34bed4511aeccd41f96b91389" kindref="member">cLogTbl</ref>[256<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="namespacesead_1a6ec534b722d120d3a2376c65ac2ea677" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common" kindref="compound">MathCalcCommon&lt;s32&gt;</ref><sp/><ref refid="namespacesead_1a6ec534b722d120d3a2376c65ac2ea677" kindref="member">Mathi</ref>;</highlight></codeline>
+<codeline lineno="171" refid="namespacesead_1a6e7f046c18c89653e0eb0d9217229e71" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common" kindref="compound">MathCalcCommon&lt;u32&gt;</ref><sp/><ref refid="namespacesead_1a6e7f046c18c89653e0eb0d9217229e71" kindref="member">Mathu</ref>;</highlight></codeline>
+<codeline lineno="172" refid="namespacesead_1ad07debe485cf29cd6880aa3dfb89bb4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common" kindref="compound">MathCalcCommon&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1ad07debe485cf29cd6880aa3dfb89bb4a" kindref="member">Mathf</ref>;</highlight></codeline>
+<codeline lineno="173" refid="namespacesead_1a7ec519c2633e3cb5dcfd511f1d32b8fd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_math_calc_common" kindref="compound">MathCalcCommon&lt;size_t&gt;</ref><sp/><ref refid="namespacesead_1a7ec519c2633e3cb5dcfd511f1d32b8fd" kindref="member">MathSizeT</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="176" refid="classsead_1_1_math_calc_common_1ab2400750e881f10a42545688fc9121a1" refkind="member"><highlight class="normal"><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="classsead_1_1_math_calc_common_1ac4317672a1628983e91aaea094d4c0ef" kindref="member">MathCalcCommon&lt;f32&gt;::atanIdx_</ref>(<ref refid="_l_m_s___types_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>t);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">/*template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="179"><highlight class="comment">constexpr<sp/>T<sp/>log2(T<sp/>n)</highlight></codeline>
+<codeline lineno="180"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/>static_assert(std::is_integral&lt;T&gt;(),<sp/>&quot;T<sp/>must<sp/>be<sp/>an<sp/>integral<sp/>type&quot;);</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/>return<sp/>n<sp/>&lt;=<sp/>1<sp/>?<sp/>0<sp/>:<sp/>1<sp/>+<sp/>log2(n<sp/>&gt;&gt;<sp/>1);</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="sead_math_calc_common_8h_1a218a1b59c8c7acca11a92cb4e8dfcfdb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_MATH_MATH_CALC_COMMON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_math_calc_common_8hpp" kindref="compound">math/seadMathCalcCommon.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SEAD_MATH_MATH_CALC_COMMON_H_</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/math/seadMathCalcCommon.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_scene_obj_holder_8h" kind="file" language="C++">
+    <compoundname>alSceneObjHolder.h</compoundname>
+    <includedby refid="al_scene_8cpp" local="no">alScene.cpp</includedby>
+    <includedby refid="al_scene_obj_holder_8cpp" local="no">alSceneObjHolder.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alSceneObjHolder.h</label>
+        <link refid="al_scene_obj_holder_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alScene.cpp</label>
+        <link refid="al_scene_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alSceneObjHolder.cpp</label>
+        <link refid="al_scene_obj_holder_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_scene_obj_holder" prot="public">al::SceneObjHolder</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ActorInitInfo;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ISceneObj;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_scene_obj_holder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_scene_obj_holder" kindref="compound">SceneObjHolder</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/>(<sp/>*CreateFunc<sp/>)(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">id</ref><sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_scene_obj_holder_1a767bcfd11941ba76187c88b1892cd194" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" kindref="member">CreateFunc</ref><sp/><sp/><ref refid="classal_1_1_scene_obj_holder_1a767bcfd11941ba76187c88b1892cd194" kindref="member">mCreateFunc</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>**<sp/><ref refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" kindref="member">mObjs</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_scene_obj_holder_1a03c4106a223efe8d744b8f4408cdf7dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_scene_obj_holder_1a03c4106a223efe8d744b8f4408cdf7dd" kindref="member">mSize</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/><ref refid="classal_1_1_scene_obj_holder_1ad7978de92e263998ba29542cb7975c6c" kindref="member">create</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/><ref refid="classal_1_1_scene_obj_holder_1a91fe22dac05d0926107acfe3655ef669" kindref="member">getObj</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_scene_obj_holder_1a461399f4ac0318a910b393595ba729eb" kindref="member">isExist</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_scene_obj_holder_1a75a79a42751dd597bfebe31935f043be" kindref="member">setObj</ref>(<sp/><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">obj</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_scene_obj_holder_1a1a659ce3b25c2bbfae3302a2b02d4ea2" kindref="member">initAfterPlacementSceneObj</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_scene_obj_holder_1a4bd68a2c337ecb187dcad37c6cc94b67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_scene_obj_holder_1a4bd68a2c337ecb187dcad37c6cc94b67" kindref="member">SceneObjHolder</ref>(<sp/><ref refid="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" kindref="member">CreateFunc</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">func</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">size</ref><sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="classal_1_1_scene_obj_holder" kindref="compound">SceneObjHolder</ref>*<sp/><ref refid="namespaceal_1afd0e2b14504835289a663dbf608735ac" kindref="member">getSceneObjHolder</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a26ec7eba67d31f7cd6be3a3bda3900f1" kindref="member">createSceneObj</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aba56487b9243fa6f316cd6fc331729f6" kindref="member">getSceneObj</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1ad0b2f6f5be4d2ccf627a23635fca7fdd" kindref="member">isExistSceneObj</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a2e0c7bd6e57882cdd2296edc87fc5564" kindref="member">setSceneObj</ref>(<sp/><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">obj</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Scene/alSceneObjHolder.h"/>
+  </compounddef>
+</doxygen>

@@ -1,6 +1,6 @@
 
 
-# Dir lib/sead/include/heap
+# Dir heap
 
 
 
@@ -21,13 +21,13 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**seadArena.h**](seadArena_8h.md) <br> |
-| file | [**seadDisposer.h**](seadDisposer_8h.md) <br> |
-| file | [**seadExpHeap.h**](seadExpHeap_8h.md) <br> |
-| file | [**seadFrameHeap.h**](seadFrameHeap_8h.md) <br> |
-| file | [**seadHeap.h**](seadHeap_8h.md) <br> |
-| file | [**seadHeapMgr.h**](seadHeapMgr_8h.md) <br> |
-| file | [**seadMemBlock.h**](seadMemBlock_8h.md) <br> |
+| file | [**seadArena.h**](sead_arena_8h.md) <br> |
+| file | [**seadDisposer.h**](sead_disposer_8h.md) <br> |
+| file | [**seadExpHeap.h**](sead_exp_heap_8h.md) <br> |
+| file | [**seadFrameHeap.h**](sead_frame_heap_8h.md) <br> |
+| file | [**seadHeap.h**](sead_heap_8h.md) <br> |
+| file | [**seadHeapMgr.h**](sead_heap_mgr_8h.md) <br> |
+| file | [**seadMemBlock.h**](sead_mem_block_8h.md) <br> |
 
 
 

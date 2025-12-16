@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_storage_for" kind="class" language="C++" prot="public">
+    <compoundname>sead::StorageFor</compoundname>
+    <includes refid="sead_storage_for_8h" local="no">seadStorageFor.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>AutoDestruct</declname>
+        <defname>AutoDestruct</defname>
+        <defval>false</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_storage_for_1ac8f1fd72a70f17eaa9d7e4cfb15ef20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::StorageFor&lt; T, AutoDestruct &gt;::StorageFor</definition>
+        <argsstring>()</argsstring>
+        <name>StorageFor</name>
+        <qualifiedname>sead::StorageFor::StorageFor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/prim/seadStorageFor.h" line="17" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Provides suitably aligned uninitialized storage for a type T. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Use this as a std::aligned_storage replacement that is easier to use and less error prone for common cases (std::aligned_storage_t&lt;sizeof(T), alignof(T)&gt;). </para>
+    </detaileddescription>
+    <location file="lib/sead/include/prim/seadStorageFor.h" line="15" column="1" bodyfile="lib/sead/include/prim/seadStorageFor.h" bodystart="15" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_storage_for_1ac8f1fd72a70f17eaa9d7e4cfb15ef20e" prot="public" virt="non-virtual"><scope>sead::StorageFor</scope><name>StorageFor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

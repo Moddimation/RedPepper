@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_scene_obj_holder" kind="class" language="C++" prot="public">
+    <compoundname>al::SceneObjHolder</compoundname>
+    <includes refid="al_scene_obj_holder_8h" local="no">alSceneObjHolder.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" prot="private" static="no">
+        <type><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref> *(*</type>
+        <definition>typedef ISceneObj *(* al::SceneObjHolder::CreateFunc) (int id)</definition>
+        <argsstring>)(int id)</argsstring>
+        <name>CreateFunc</name>
+        <qualifiedname>al::SceneObjHolder::CreateFunc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="11" column="17" bodyfile="lib/al/include/Scene/alSceneObjHolder.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_scene_obj_holder_1a767bcfd11941ba76187c88b1892cd194" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" kindref="member">CreateFunc</ref></type>
+        <definition>CreateFunc al::SceneObjHolder::mCreateFunc</definition>
+        <argsstring></argsstring>
+        <name>mCreateFunc</name>
+        <qualifiedname>al::SceneObjHolder::mCreateFunc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="13" column="21" bodyfile="lib/al/include/Scene/alSceneObjHolder.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classal_1_1_scene_obj_holder_1ad7978de92e263998ba29542cb7975c6c" compoundref="al_scene_obj_holder_8cpp" startline="31" endline="40">create</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref> **</type>
+        <definition>ISceneObj** al::SceneObjHolder::mObjs</definition>
+        <argsstring></argsstring>
+        <name>mObjs</name>
+        <qualifiedname>al::SceneObjHolder::mObjs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="14" column="19" bodyfile="lib/al/include/Scene/alSceneObjHolder.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classal_1_1_scene_obj_holder_1ad7978de92e263998ba29542cb7975c6c" compoundref="al_scene_obj_holder_8cpp" startline="31" endline="40">create</referencedby>
+        <referencedby refid="classal_1_1_scene_obj_holder_1a91fe22dac05d0926107acfe3655ef669" compoundref="al_scene_obj_holder_8cpp" startline="16" endline="19">getObj</referencedby>
+        <referencedby refid="classal_1_1_scene_obj_holder_1a1a659ce3b25c2bbfae3302a2b02d4ea2" compoundref="al_scene_obj_holder_8cpp" startline="42" endline="47">initAfterPlacementSceneObj</referencedby>
+        <referencedby refid="classal_1_1_scene_obj_holder_1a461399f4ac0318a910b393595ba729eb" compoundref="al_scene_obj_holder_8cpp" startline="21" endline="24">isExist</referencedby>
+        <referencedby refid="classal_1_1_scene_obj_holder_1a75a79a42751dd597bfebe31935f043be" compoundref="al_scene_obj_holder_8cpp" startline="26" endline="29">setObj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_scene_obj_holder_1a03c4106a223efe8d744b8f4408cdf7dd" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        <definition>int al::SceneObjHolder::mSize</definition>
+        <argsstring></argsstring>
+        <name>mSize</name>
+        <qualifiedname>al::SceneObjHolder::mSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="15" column="21" bodyfile="lib/al/include/Scene/alSceneObjHolder.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classal_1_1_scene_obj_holder_1a1a659ce3b25c2bbfae3302a2b02d4ea2" compoundref="al_scene_obj_holder_8cpp" startline="42" endline="47">initAfterPlacementSceneObj</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_scene_obj_holder_1ad7978de92e263998ba29542cb7975c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref> *</type>
+        <definition>ISceneObj * al::SceneObjHolder::create</definition>
+        <argsstring>(int id)</argsstring>
+        <name>create</name>
+        <qualifiedname>al::SceneObjHolder::create</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="18" column="19" bodyfile="lib/al/src/Scene/alSceneObjHolder.cpp" bodystart="31" bodyend="40"/>
+        <references refid="classal_1_1_scene_obj_holder_1a767bcfd11941ba76187c88b1892cd194" compoundref="al_scene_obj_holder_8h" startline="13">mCreateFunc</references>
+        <references refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" compoundref="al_scene_obj_holder_8h" startline="14">mObjs</references>
+        <referencedby refid="namespaceal_1a26ec7eba67d31f7cd6be3a3bda3900f1" compoundref="al_scene_obj_holder_8cpp" startline="49" endline="52">al::createSceneObj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_scene_obj_holder_1a91fe22dac05d0926107acfe3655ef669" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref> *</type>
+        <definition>ISceneObj * al::SceneObjHolder::getObj</definition>
+        <argsstring>(int id) const</argsstring>
+        <name>getObj</name>
+        <qualifiedname>al::SceneObjHolder::getObj</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="19" column="19" bodyfile="lib/al/src/Scene/alSceneObjHolder.cpp" bodystart="16" bodyend="19"/>
+        <references refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" compoundref="al_scene_obj_holder_8h" startline="14">mObjs</references>
+        <referencedby refid="namespaceal_1aba56487b9243fa6f316cd6fc331729f6" compoundref="al_scene_obj_holder_8cpp" startline="54" endline="57">al::getSceneObj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_scene_obj_holder_1a461399f4ac0318a910b393595ba729eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">bool</ref></type>
+        <definition>bool al::SceneObjHolder::isExist</definition>
+        <argsstring>(int id) const</argsstring>
+        <name>isExist</name>
+        <qualifiedname>al::SceneObjHolder::isExist</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="20" column="20" bodyfile="lib/al/src/Scene/alSceneObjHolder.cpp" bodystart="21" bodyend="24"/>
+        <references refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" compoundref="al_scene_obj_holder_8h" startline="14">mObjs</references>
+        <referencedby refid="namespaceal_1ad0b2f6f5be4d2ccf627a23635fca7fdd" compoundref="al_scene_obj_holder_8cpp" startline="59" endline="62">al::isExistSceneObj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_scene_obj_holder_1a75a79a42751dd597bfebe31935f043be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::SceneObjHolder::setObj</definition>
+        <argsstring>(ISceneObj *obj, int id)</argsstring>
+        <name>setObj</name>
+        <qualifiedname>al::SceneObjHolder::setObj</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_i_scene_obj" kindref="compound">ISceneObj</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="21" column="20" bodyfile="lib/al/src/Scene/alSceneObjHolder.cpp" bodystart="26" bodyend="29"/>
+        <references refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" compoundref="al_scene_obj_holder_8h" startline="14">mObjs</references>
+        <referencedby refid="namespaceal_1a2e0c7bd6e57882cdd2296edc87fc5564" compoundref="al_scene_obj_holder_8cpp" startline="64" endline="67">al::setSceneObj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_scene_obj_holder_1a1a659ce3b25c2bbfae3302a2b02d4ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::SceneObjHolder::initAfterPlacementSceneObj</definition>
+        <argsstring>(const ActorInitInfo &amp;info)</argsstring>
+        <name>initAfterPlacementSceneObj</name>
+        <qualifiedname>al::SceneObjHolder::initAfterPlacementSceneObj</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="23" column="14" bodyfile="lib/al/src/Scene/alSceneObjHolder.cpp" bodystart="42" bodyend="47"/>
+        <references refid="classal_1_1_i_scene_obj_1a726fffcc3cb0021591e8ecbcc30fa868" compoundref="al_i_scene_obj_8h" startline="12" endline="14">al::ISceneObj::initAfterPlacementSceneObj</references>
+        <references refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" compoundref="al_scene_obj_holder_8h" startline="14">mObjs</references>
+        <references refid="classal_1_1_scene_obj_holder_1a03c4106a223efe8d744b8f4408cdf7dd" compoundref="al_scene_obj_holder_8h" startline="15">mSize</references>
+        <referencedby refid="classal_1_1_scene_1a33e9d6b457c2d2d296b70d1b49422a38" compoundref="al_scene_8cpp" startline="72" endline="76">al::Scene::endInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_scene_obj_holder_1a4bd68a2c337ecb187dcad37c6cc94b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::SceneObjHolder::SceneObjHolder</definition>
+        <argsstring>(CreateFunc func, int size)</argsstring>
+        <name>SceneObjHolder</name>
+        <qualifiedname>al::SceneObjHolder::SceneObjHolder</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" kindref="member">CreateFunc</ref></type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Scene/alSceneObjHolder.h" line="26" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>al::ISceneObj</label>
+        <link refid="classal_1_1_i_scene_obj"/>
+      </node>
+      <node id="1">
+        <label>al::SceneObjHolder</label>
+        <link refid="classal_1_1_scene_obj_holder"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mCreateFunc</edgelabel>
+          <edgelabel>mObjs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Scene/alSceneObjHolder.h" line="8" column="1" bodyfile="lib/al/include/Scene/alSceneObjHolder.h" bodystart="9" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classal_1_1_scene_obj_holder_1ad7978de92e263998ba29542cb7975c6c" prot="public" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>create</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1abeeeac833721575a809a4f7ffc290045" prot="private" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>CreateFunc</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a91fe22dac05d0926107acfe3655ef669" prot="public" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>getObj</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a1a659ce3b25c2bbfae3302a2b02d4ea2" prot="public" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>initAfterPlacementSceneObj</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a461399f4ac0318a910b393595ba729eb" prot="public" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>isExist</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a767bcfd11941ba76187c88b1892cd194" prot="private" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>mCreateFunc</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a910a2db2e7b5bcf0c2641b4d6d645e40" prot="private" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>mObjs</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a03c4106a223efe8d744b8f4408cdf7dd" prot="private" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>mSize</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a4bd68a2c337ecb187dcad37c6cc94b67" prot="public" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>SceneObjHolder</name></member>
+      <member refid="classal_1_1_scene_obj_holder_1a75a79a42751dd597bfebe31935f043be" prot="public" virt="non-virtual"><scope>al::SceneObjHolder</scope><name>setObj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

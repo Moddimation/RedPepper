@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_player_actor_init_info_8cpp" kind="file" language="C++">
+    <compoundname>PlayerActorInitInfo.cpp</compoundname>
+    <includes refid="_player_actor_init_info_8h" local="yes">Player/PlayerActorInitInfo.h</includes>
+    <includes refid="_player_init_func_8h" local="yes">Player/PlayerInitFunc.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Player/PlayerActorInitInfo.h</label>
+        <link refid="_player_actor_init_info_8h"/>
+      </node>
+      <node id="3">
+        <label>Player/PlayerInitFunc.h</label>
+        <link refid="_player_init_func_8h"/>
+      </node>
+      <node id="1">
+        <label>PlayerActorInitInfo.cpp</label>
+        <link refid="_player_actor_init_info_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_actor_init_info_8h" kindref="compound">Player/PlayerActorInitInfo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_init_func_8h" kindref="compound">Player/PlayerInitFunc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_player_actor_init_info_1a759944dbaf85020144a7137b1ea98be7" refkind="member"><highlight class="normal"><ref refid="class_player_actor_init_info_1a759944dbaf85020144a7137b1ea98be7" kindref="member">PlayerActorInitInfo::PlayerActorInitInfo</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mModelInfo(<sp/><ref refid="namespace_player_init_func" kindref="compound">PlayerInitFunc</ref>::getModelInfo()<sp/>),<sp/>mAnimInfo(<sp/><ref refid="namespace_player_init_func" kindref="compound">PlayerInitFunc</ref>::getAnimInfo()<sp/>),</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_8(<sp/><ref refid="namespace_player_init_func" kindref="compound">PlayerInitFunc</ref>::FUN_00260620()<sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Game/src/Player/PlayerActorInitInfo.cpp"/>
+  </compounddef>
+</doxygen>

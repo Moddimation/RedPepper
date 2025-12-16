@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_safe_array_1_1iterator" kind="class" language="C++" prot="public">
+    <compoundname>sead::SafeArray::iterator</compoundname>
+    <includes refid="sead_safe_array_8h" local="no">seadSafeArray.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1_safe_array_1_1iterator_1a7b37dee023f87e6c19db2db153eafec8" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* sead::SafeArray&lt; T, N &gt;::iterator::mBuffer</definition>
+        <argsstring></argsstring>
+        <name>mBuffer</name>
+        <qualifiedname>sead::SafeArray::iterator::mBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="90" column="11" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1a8896005e956830f0c6949038cb2a966a" compoundref="sead_safe_array_8h" startline="87" endline="87">sead::SafeArray&lt; T, N &gt;::iterator::operator*</referencedby>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1a3eeaade706998a5f1141255354dfb140" compoundref="sead_safe_array_8h" startline="85" endline="85">sead::SafeArray&lt; T, N &gt;::iterator::operator-&gt;</referencedby>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1af227252358779e20d232542172098ca1" compoundref="sead_safe_array_8h" startline="69" endline="71">sead::SafeArray&lt; T, N &gt;::iterator::operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" prot="private" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::SafeArray&lt; T, N &gt;::iterator::mIdx</definition>
+        <argsstring></argsstring>
+        <name>mIdx</name>
+        <qualifiedname>sead::SafeArray::iterator::mIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="91" column="13" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1a8896005e956830f0c6949038cb2a966a" compoundref="sead_safe_array_8h" startline="87" endline="87">sead::SafeArray&lt; T, N &gt;::iterator::operator*</referencedby>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1a357142e1a9fd3b4a1bcb3bb545754724" compoundref="sead_safe_array_8h" startline="75" endline="78">sead::SafeArray&lt; T, N &gt;::iterator::operator++</referencedby>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1a6c15388d3a4e0150e15d9047606e0454" compoundref="sead_safe_array_8h" startline="80" endline="83">sead::SafeArray&lt; T, N &gt;::iterator::operator--</referencedby>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1a3eeaade706998a5f1141255354dfb140" compoundref="sead_safe_array_8h" startline="85" endline="85">sead::SafeArray&lt; T, N &gt;::iterator::operator-&gt;</referencedby>
+        <referencedby refid="classsead_1_1_safe_array_1_1iterator_1af227252358779e20d232542172098ca1" compoundref="sead_safe_array_8h" startline="69" endline="71">sead::SafeArray&lt; T, N &gt;::iterator::operator==</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1a2886d0d87168ef4a274d5bd2c6d3e425" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::SafeArray&lt; T, N &gt;::iterator::iterator</definition>
+        <argsstring>(T *buffer, s32 idx)</argsstring>
+        <name>iterator</name>
+        <qualifiedname>sead::SafeArray::iterator::iterator</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="67" column="9" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1af227252358779e20d232542172098ca1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::SafeArray&lt; T, N &gt;::iterator::operator==</definition>
+        <argsstring>(const iterator &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>sead::SafeArray::iterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_safe_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="69" column="14" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="69" bodyend="71"/>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1a7b37dee023f87e6c19db2db153eafec8" compoundref="sead_safe_array_8h" startline="90">sead::SafeArray&lt; T, N &gt;::iterator::mBuffer</references>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" compoundref="sead_safe_array_8h" startline="91">sead::SafeArray&lt; T, N &gt;::iterator::mIdx</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1a27209502265b00b8b55babe503f5792e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::SafeArray&lt; T, N &gt;::iterator::operator!=</definition>
+        <argsstring>(const iterator &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>sead::SafeArray::iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_safe_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="73" column="14" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1a357142e1a9fd3b4a1bcb3bb545754724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_safe_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator &amp; sead::SafeArray&lt; T, N &gt;::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>sead::SafeArray::iterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="75" column="18" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="75" bodyend="78"/>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" compoundref="sead_safe_array_8h" startline="91">sead::SafeArray&lt; T, N &gt;::iterator::mIdx</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1a6c15388d3a4e0150e15d9047606e0454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_safe_array_1_1iterator" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator &amp; sead::SafeArray&lt; T, N &gt;::iterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>sead::SafeArray::iterator::operator--</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="80" column="18" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="80" bodyend="83"/>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" compoundref="sead_safe_array_8h" startline="91">sead::SafeArray&lt; T, N &gt;::iterator::mIdx</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1a3eeaade706998a5f1141255354dfb140" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * sead::SafeArray&lt; T, N &gt;::iterator::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>sead::SafeArray::iterator::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="85" column="11" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="85" bodyend="85"/>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1a7b37dee023f87e6c19db2db153eafec8" compoundref="sead_safe_array_8h" startline="90">sead::SafeArray&lt; T, N &gt;::iterator::mBuffer</references>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" compoundref="sead_safe_array_8h" startline="91">sead::SafeArray&lt; T, N &gt;::iterator::mIdx</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_safe_array_1_1iterator_1a8896005e956830f0c6949038cb2a966a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; sead::SafeArray&lt; T, N &gt;::iterator::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>sead::SafeArray::iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadSafeArray.h" line="87" column="11" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="87" bodyend="87"/>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1a7b37dee023f87e6c19db2db153eafec8" compoundref="sead_safe_array_8h" startline="90">sead::SafeArray&lt; T, N &gt;::iterator::mBuffer</references>
+        <references refid="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" compoundref="sead_safe_array_8h" startline="91">sead::SafeArray&lt; T, N &gt;::iterator::mIdx</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sead/include/container/seadSafeArray.h" line="65" column="5" bodyfile="lib/sead/include/container/seadSafeArray.h" bodystart="65" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a2886d0d87168ef4a274d5bd2c6d3e425" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>iterator</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a7b37dee023f87e6c19db2db153eafec8" prot="private" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>mBuffer</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1ac6ca35e374e609789c78e8f534ec7e57" prot="private" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>mIdx</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a27209502265b00b8b55babe503f5792e" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>operator!=</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a8896005e956830f0c6949038cb2a966a" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>operator*</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a357142e1a9fd3b4a1bcb3bb545754724" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>operator++</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a6c15388d3a4e0150e15d9047606e0454" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>operator--</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1a3eeaade706998a5f1141255354dfb140" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>operator-&gt;</name></member>
+      <member refid="classsead_1_1_safe_array_1_1iterator_1af227252358779e20d232542172098ca1" prot="public" virt="non-virtual"><scope>sead::SafeArray::iterator</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_heap_mgr_8h" kind="file" language="C++">
+    <compoundname>seadHeapMgr.h</compoundname>
+    <includes refid="sead_ptr_array_8h" local="no">container/seadPtrArray.h</includes>
+    <includes refid="sead_arena_8h" local="no">heap/seadArena.h</includes>
+    <includes refid="sead_heap_8h" local="no">heap/seadHeap.h</includes>
+    <includes refid="sead_atomic_8h" local="no">thread/seadAtomic.h</includes>
+    <includes refid="sead_critical_section_8h" local="no">thread/seadCriticalSection.h</includes>
+    <includedby refid="sead_heap_mgr_8cpp" local="no">seadHeapMgr.cpp</includedby>
+    <includedby refid="sead_heap_policies_8h" local="no">seadHeapPolicies.h</includedby>
+    <includedby refid="sead_task_mgr_8h" local="no">seadTaskMgr.h</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>basis/seadNew.h</label>
+        <link refid="sead_new_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>container/seadListImpl.h</label>
+        <link refid="sead_list_impl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>container/seadOffsetList.h</label>
+        <link refid="sead_offset_list_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>container/seadPtrArray.h</label>
+        <link refid="sead_ptr_array_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>heap/seadArena.h</label>
+        <link refid="sead_arena_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>heap/seadDisposer.h</label>
+        <link refid="sead_disposer_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>heap/seadHeap.h</label>
+        <link refid="sead_heap_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadHeapMgr.h</label>
+        <link refid="sead_heap_mgr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>prim/ctr/seadMemUtilCtr.hpp</label>
+        <link refid="sead_mem_util_ctr_8hpp"/>
+      </node>
+      <node id="22">
+        <label>prim/seadBitFlag.h</label>
+        <link refid="sead_bit_flag_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>prim/seadMemUtil.h</label>
+        <link refid="sead_mem_util_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>prim/seadNamable.h</label>
+        <link refid="sead_namable_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>prim/seadPtrUtil.h</label>
+        <link refid="sead_ptr_util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>prim/seadRuntimeTypeInfo.h</label>
+        <link refid="sead_runtime_type_info_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>prim/seadSafeString.h</label>
+        <link refid="sead_safe_string_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>random/seadRandom.h</label>
+        <link refid="sead_random_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>thread/seadAtomic.h</label>
+        <link refid="sead_atomic_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>thread/seadCriticalSection.h</label>
+        <link refid="sead_critical_section_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>algorithm</label>
+      </node>
+      <node id="21">
+        <label>new</label>
+      </node>
+      <node id="7">
+        <label>nn/types.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="15">
+        <label>stddef.h</label>
+      </node>
+      <node id="12">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="5">
+        <label>seadCalculateTask.h</label>
+        <link refid="sead_calculate_task_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadHeapPolicies.h</label>
+        <link refid="sead_heap_policies_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadTaskBase.h</label>
+        <link refid="sead_task_base_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>seadTaskMgr.h</label>
+        <link refid="sead_task_mgr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadHeapMgr.h</label>
+        <link refid="sead_heap_mgr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadHeapMgr.cpp</label>
+        <link refid="sead_heap_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_heap_mgr" prot="public">sead::HeapMgr</innerclass>
+    <innerclass refid="classsead_1_1_scoped_current_heap_setter" prot="public">sead::ScopedCurrentHeapSetter</innerclass>
+    <innerclass refid="classsead_1_1_find_contain_heap_cache" prot="public">sead::FindContainHeapCache</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SEAD_HEAPMGR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_HEAPMGR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_ptr_array_8h" kindref="compound">container/seadPtrArray.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_arena_8h" kindref="compound">heap/seadArena.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_heap_8h" kindref="compound">heap/seadHeap.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_atomic_8h" kindref="compound">thread/seadAtomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_critical_section_8h" kindref="compound">thread/seadCriticalSection.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_heap_mgr" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_heap_mgr" kindref="compound">HeapMgr</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_mgr_1adff1e7a13681d6fc3e8d27aff4f5fd9f" kindref="member">HeapMgr</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_heap_mgr_1a46efee493fc721a23ded63979ff4514f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/><ref refid="classsead_1_1_heap_mgr_1a46efee493fc721a23ded63979ff4514f" kindref="member">getCurrentHeap</ref>();</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_heap_mgr_1a8706a53f01d98c8cf9e86c8663f0029d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/><ref refid="classsead_1_1_heap_mgr_1a8706a53f01d98c8cf9e86c8663f0029d" kindref="member">findContainHeap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_heap_mgr_1af03082158e8a4efc4272d7afad8b51be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr_1af03082158e8a4efc4272d7afad8b51be" kindref="member">isContainedInAnyHeap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classsead_1_1_heap_mgr_1a0a15008e656d2b621fac90af6eb2f37c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr" kindref="compound">HeapMgr</ref>*<sp/><ref refid="classsead_1_1_heap_mgr_1a0a15008e656d2b621fac90af6eb2f37c" kindref="member">instance</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr_1a41f164e72ca9a8e1d87f4cca030e247b" kindref="member">sInstancePtr</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classsead_1_1_heap_mgr_1af81e7965f8c2f22c8a984d77f5ec8e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref><sp/><ref refid="classsead_1_1_heap_mgr_1af81e7965f8c2f22c8a984d77f5ec8e2c" kindref="member">getRootHeapNum</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr_1a4e747097a0a8d2bc309c5116fab5ed4d" kindref="member">sRootHeaps</ref>.<ref refid="classsead_1_1_ptr_array_impl_1a228d2791198b45e145d32471c92f4eec" kindref="member">capacity</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classsead_1_1_heap_mgr_1ae2e23fef8188bbdad993f37d2495375e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/><ref refid="classsead_1_1_heap_mgr_1ae2e23fef8188bbdad993f37d2495375e" kindref="member">getRootHeap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr_1a4e747097a0a8d2bc309c5116fab5ed4d" kindref="member">sRootHeaps</ref>[index];<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>these<sp/>should<sp/>be<sp/>private</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classsead_1_1_heap_mgr_1aa768f75418c70cf680a6a00088adc787" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr" kindref="compound">HeapMgr</ref><sp/><ref refid="classsead_1_1_heap_mgr_1aa768f75418c70cf680a6a00088adc787" kindref="member">sInstance</ref>;</highlight></codeline>
+<codeline lineno="27" refid="classsead_1_1_heap_mgr_1a41f164e72ca9a8e1d87f4cca030e247b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_heap_mgr" kindref="compound">HeapMgr</ref>*<sp/><ref refid="classsead_1_1_heap_mgr_1a41f164e72ca9a8e1d87f4cca030e247b" kindref="member">sInstancePtr</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classsead_1_1_heap_mgr_1a2f9dec1d780f1464613a5db675365a35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_fixed_ptr_array" kindref="compound">FixedPtrArray&lt;Heap, 4&gt;</ref><sp/><ref refid="classsead_1_1_heap_mgr_1a2f9dec1d780f1464613a5db675365a35" kindref="member">RootHeaps</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classsead_1_1_heap_mgr_1a935a41a7883857c117bfc6bc8eeb9f79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_fixed_ptr_array" kindref="compound">FixedPtrArray&lt;Heap, 4&gt;</ref><sp/><ref refid="classsead_1_1_heap_mgr_1a935a41a7883857c117bfc6bc8eeb9f79" kindref="member">IndependentHeaps</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="classsead_1_1_heap_mgr_1ab1c514bb2e3226e97be2971a4d1aca67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_scoped_current_heap_setter" kindref="compound">ScopedCurrentHeapSetter</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classsead_1_1_heap_mgr_1a2436da2eb284554a02655953b1f234b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap" kindref="compound">sead::Heap</ref>*<sp/><ref refid="classsead_1_1_heap_mgr_1a2436da2eb284554a02655953b1f234b6" kindref="member">setCurrentHeap_</ref>(<ref refid="classsead_1_1_heap" kindref="compound">sead::Heap</ref>*<sp/>heap);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classsead_1_1_heap_mgr_1a6453f98fb2dd3494a8b223c6e1ad1a72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_arena" kindref="compound">Arena</ref><sp/><ref refid="classsead_1_1_heap_mgr_1a6453f98fb2dd3494a8b223c6e1ad1a72" kindref="member">sDefaultArena</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classsead_1_1_heap_mgr_1a4e747097a0a8d2bc309c5116fab5ed4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_fixed_ptr_array" kindref="compound">RootHeaps</ref><sp/><ref refid="classsead_1_1_heap_mgr_1a4e747097a0a8d2bc309c5116fab5ed4d" kindref="member">sRootHeaps</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classsead_1_1_heap_mgr_1a1ae469741da1e68f339f25519b783e62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_fixed_ptr_array" kindref="compound">IndependentHeaps</ref><sp/><ref refid="classsead_1_1_heap_mgr_1a1ae469741da1e68f339f25519b783e62" kindref="member">sIndependentHeaps</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classsead_1_1_heap_mgr_1aea0adcb57c54252f99738409a60f04fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_critical_section" kindref="compound">CriticalSection</ref><sp/><ref refid="classsead_1_1_heap_mgr_1aea0adcb57c54252f99738409a60f04fd" kindref="member">sHeapTreeLockCS</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classsead_1_1_heap_mgr_1ac6cebb9774dc8a704807fba1861c9241" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classsead_1_1_heap_mgr_1ac6cebb9774dc8a704807fba1861c9241" kindref="member">unk</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight></codeline>
+<codeline lineno="45" refid="classsead_1_1_heap_mgr_1a392f4f38d23be46fe87749a87948dbef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_mgr_1a392f4f38d23be46fe87749a87948dbef" kindref="member">mAllocFailedCallback</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>IAllocFailedCallback*<sp/>=<sp/>IDelegate1&lt;const<sp/>AllocFailedCallbackArg*&gt;*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1_heap_mgr_1a638cec4a2e87ddfa61cb024fc543c190" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="classsead_1_1_heap_mgr_1a638cec4a2e87ddfa61cb024fc543c190" kindref="member">unk1</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classsead_1_1_scoped_current_heap_setter" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_scoped_current_heap_setter" kindref="compound">ScopedCurrentHeapSetter</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="classsead_1_1_scoped_current_heap_setter_1a811192f91f5ccabc51481382f125735a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1a811192f91f5ccabc51481382f125735a" kindref="member">ScopedCurrentHeapSetter</ref>(<ref refid="classsead_1_1_heap" kindref="compound">sead::Heap</ref>*<sp/>heap)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1ab3268076f495f2b744961e572f9e7bcc" kindref="member">setPreviousHeap_</ref>(<ref refid="classsead_1_1_heap_mgr_1a0a15008e656d2b621fac90af6eb2f37c" kindref="member">HeapMgr::instance</ref>()-&gt;setCurrentHeap_(heap));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1a52212d9f79c0e3b4fcb28b25da0868d7" kindref="member">setPreviousHeapToNone_</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classsead_1_1_scoped_current_heap_setter_1afb0257af3d8b636ef77491b6d33020f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1afb0257af3d8b636ef77491b6d33020f5" kindref="member">~ScopedCurrentHeapSetter</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsead_1_1_scoped_current_heap_setter_1abf5e9e2108e366eec27b309703bb30a7" kindref="member">hasPreviousHeap_</ref>())</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap_mgr_1a0a15008e656d2b621fac90af6eb2f37c" kindref="member">HeapMgr::instance</ref>()-&gt;<ref refid="classsead_1_1_heap_mgr_1a2436da2eb284554a02655953b1f234b6" kindref="member">setCurrentHeap_</ref>(<ref refid="classsead_1_1_scoped_current_heap_setter_1a77fdbe4608053692e5c7b898e573faa5" kindref="member">getPreviousHeap_</ref>());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67" refid="classsead_1_1_scoped_current_heap_setter_1a77fdbe4608053692e5c7b898e573faa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1a77fdbe4608053692e5c7b898e573faa5" kindref="member">getPreviousHeap_</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_scoped_current_heap_setter_1acad8127e201b0c78bc9bf712514fbea0" kindref="member">mPreviousHeap</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classsead_1_1_scoped_current_heap_setter_1ab3268076f495f2b744961e572f9e7bcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1ab3268076f495f2b744961e572f9e7bcc" kindref="member">setPreviousHeap_</ref>(<ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>heap)<sp/>{<sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1acad8127e201b0c78bc9bf712514fbea0" kindref="member">mPreviousHeap</ref><sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">uintptr_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(heap);<sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classsead_1_1_scoped_current_heap_setter_1a52212d9f79c0e3b4fcb28b25da0868d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1a52212d9f79c0e3b4fcb28b25da0868d7" kindref="member">setPreviousHeapToNone_</ref>()<sp/>{<sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1acad8127e201b0c78bc9bf712514fbea0" kindref="member">mPreviousHeap</ref><sp/>=<sp/>1;<sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classsead_1_1_scoped_current_heap_setter_1abf5e9e2108e366eec27b309703bb30a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1abf5e9e2108e366eec27b309703bb30a7" kindref="member">hasPreviousHeap_</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>XXX:<sp/>We<sp/>cannot<sp/>just<sp/>do<sp/>`mPreviousHeap<sp/>!=<sp/>1`<sp/>because<sp/>that<sp/>results<sp/>in<sp/>different<sp/>codegen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>cast<sp/>smells<sp/>like<sp/>implementation<sp/>defined<sp/>behavior,<sp/>but<sp/>1<sp/>should<sp/>not<sp/>be<sp/>a<sp/>valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pointer<sp/>on<sp/>any<sp/>platform<sp/>that<sp/>we<sp/>support.<sp/>In<sp/>practice,<sp/>this<sp/>will<sp/>work<sp/>correctly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classsead_1_1_scoped_current_heap_setter_1acad8127e201b0c78bc9bf712514fbea0" kindref="member">mPreviousHeap</ref>)<sp/>!=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classsead_1_1_scoped_current_heap_setter_1acad8127e201b0c78bc9bf712514fbea0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uintptr_t<sp/><ref refid="classsead_1_1_scoped_current_heap_setter_1acad8127e201b0c78bc9bf712514fbea0" kindref="member">mPreviousHeap</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classsead_1_1_find_contain_heap_cache" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_find_contain_heap_cache" kindref="compound">FindContainHeapCache</ref><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85" refid="classsead_1_1_find_contain_heap_cache_1a8e77b4bbf1ef77f72cb57a28558f47f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_find_contain_heap_cache_1a8e77b4bbf1ef77f72cb57a28558f47f1" kindref="member">FindContainHeapCache</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classsead_1_1_find_contain_heap_cache_1a903538998625caf107cad11ef36d7d58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_find_contain_heap_cache_1a903538998625caf107cad11ef36d7d58" kindref="member">tryRemoveHeap</ref>(<ref refid="classsead_1_1_heap" kindref="compound">Heap</ref>*<sp/>heap);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>getHeap<sp/>and<sp/>setHeap<sp/>probably<sp/>exist<sp/>too</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classsead_1_1_find_contain_heap_cache_1a40713d1e8bc260415e208976d672ce33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_atomic" kindref="compound">Atomic&lt;uintptr_t&gt;</ref><sp/><ref refid="classsead_1_1_find_contain_heap_cache_1a40713d1e8bc260415e208976d672ce33" kindref="member">mHeap</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>SEAD_HEAPMGR_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/heap/seadHeapMgr.h"/>
+  </compounddef>
+</doxygen>

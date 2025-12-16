@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="math___v_e_c3_8cpp" kind="file" language="C++">
+    <compoundname>math_VEC3.cpp</compoundname>
+    <includes refid="math___v_e_c3_8h" local="no">nn/math/math_VEC3.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>nn/math/math_VEC3.h</label>
+        <link refid="math___v_e_c3_8h"/>
+      </node>
+      <node id="1">
+        <label>math_VEC3.cpp</label>
+        <link refid="math___v_e_c3_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacenn">nn</innernamespace>
+    <innernamespace refid="namespacenn_1_1math">nn::math</innernamespace>
+    <innernamespace refid="namespacenn_1_1math_1_1_a_r_mv6">nn::math::ARMv6</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="math___v_e_c3_8h" kindref="compound">nn/math/math_VEC3.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenn" kindref="compound">nn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ARMv6<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacenn_1_1math_1_1_a_r_mv6_1a3993b5d9a63bc250623cc9e5f32129e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__asm<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenn_1_1math_1_1_a_r_mv6_1a3993b5d9a63bc250623cc9e5f32129e8" kindref="member">__attribute__</ref>((section(</highlight><highlight class="stringliteral">&quot;i._ZN2nn4math5ARMv610VEC3SubAsmEPNS0_4VEC3EPKS2_S5_&quot;</highlight><highlight class="normal">)))<sp/><ref refid="namespacenn_1_1math_1_1_a_r_mv6_1a9d82b83262107f56610e7b4ea545ef28" kindref="member">VEC3SubAsm</ref>(<ref refid="structnn_1_1math_1_1_v_e_c3" kindref="compound">VEC3</ref>*<sp/>out,<sp/>const<sp/><ref refid="structnn_1_1math_1_1_v_e_c3" kindref="compound">VEC3</ref>*<sp/><ref refid="namespacenn_1_1math_1_1_a_r_mv6_1ac5994af35cd42bf84b7c61da4a91e8ce" kindref="member">v1</ref>,<sp/>const<sp/><ref refid="structnn_1_1math_1_1_v_e_c3" kindref="compound">VEC3</ref>*<sp/>v2)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vldmia<sp/>r1,<sp/>{s0,<sp/>s1,<sp/>s2}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vldmia<sp/>r2,<sp/>{s3,<sp/>s4,<sp/>s5}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsub.f32<sp/>s6,<sp/>s0,<sp/>s3</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsub.f32<sp/>s7,<sp/>s1,<sp/>s4</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsub.f32<sp/><ref refid="types_8h_1a151f780fb455885061d3b77ec1c90c03" kindref="member">s8</ref>,<sp/>s2,<sp/>s5</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vstmia<sp/>r0,<sp/>{s6,<sp/>s7,<sp/><ref refid="types_8h_1a151f780fb455885061d3b77ec1c90c03" kindref="member">s8</ref>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bx<sp/>lr</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>__asm<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacenn_1_1math_1_1_a_r_mv6_1a3993b5d9a63bc250623cc9e5f32129e8" kindref="member">__attribute__</ref>((section(</highlight><highlight class="stringliteral">&quot;i._ZN2nn4math5ARMv610VEC3MulAsmEPNS0_4VEC3EPKS2_f&quot;</highlight><highlight class="normal">)))<sp/><ref refid="namespacenn_1_1math_1_1_a_r_mv6_1a9660a4c5ac32beae63ff23c48cc14922" kindref="member">VEC3MulAsm</ref>(<ref refid="structnn_1_1math_1_1_v_e_c3" kindref="compound">VEC3</ref>*<sp/>out,<sp/>const<sp/><ref refid="structnn_1_1math_1_1_v_e_c3" kindref="compound">VEC3</ref>*<sp/><ref refid="namespacenn_1_1math_1_1_a_r_mv6_1ac5994af35cd42bf84b7c61da4a91e8ce" kindref="member">v1</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vldmia<sp/>r1,<sp/>{s1,<sp/>s2,<sp/>s3}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vmul.f32<sp/>s4,<sp/>s1,<sp/>s0</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vmul.f32<sp/>s5,<sp/>s2,<sp/>s0</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vmul.f32<sp/>s6,<sp/>s3,<sp/>s0</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vstmia<sp/>r0,<sp/>{s4,<sp/>s5,<sp/>s6}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bx<sp/>lr</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ARMv6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nn</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/sources/math/math_VEC3.cpp"/>
+  </compounddef>
+</doxygen>

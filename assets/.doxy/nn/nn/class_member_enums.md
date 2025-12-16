@@ -5,22 +5,22 @@
 
 ## d
 
-* **Description** ([**nn::Result**](classnn_1_1Result.md))
+* **Description** ([**nn::Result**](classnn_1_1_result.md))
 
 
 ## l
 
-* **Level** ([**nn::Result**](classnn_1_1Result.md))
+* **Level** ([**nn::Result**](classnn_1_1_result.md))
 
 
 ## m
 
-* **ModuleType** ([**nn::Result**](classnn_1_1Result.md))
+* **ModuleType** ([**nn::Result**](classnn_1_1_result.md))
 
 
 ## s
 
-* **Summary** ([**nn::Result**](classnn_1_1Result.md))
+* **Summary** ([**nn::Result**](classnn_1_1_result.md))
 
 
 

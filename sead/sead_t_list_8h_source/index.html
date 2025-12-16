@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadTList.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-seadtlisth">File seadTList.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_510f450138bd9d848bdab2e398852591/"><strong>container</strong></a> <strong>&gt;</strong> <a href="../sead_t_list_8h/"><strong>seadTList.h</strong></a></p>
+<p><a href="../sead_t_list_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#ifndef SEAD_TLIST_H_
+#define SEAD_TLIST_H_
+
+#include &lt;container/seadListImpl.h&gt;
+
+namespace sead {
+template &lt;typename T&gt;
+class TListNode;
+
+template &lt;typename T&gt;
+class TList : public ListImpl {
+public:
+    typedef int (*CompareCallback)(const T*, const T*);
+
+    TList() : ListImpl() {}
+
+    void pushBack(TListNode&lt;T&gt;* item) {
+        item-&gt;erase();
+        item-&gt;mList = this;
+        ListImpl::pushBack(item);
+    }
+
+    void pushFront(TListNode&lt;T&gt;* item) {
+        item-&gt;erase();
+        item-&gt;mList = this;
+        ListImpl::pushFront(item);
+    }
+
+    TListNode&lt;T&gt;* popBack() { return static_cast&lt;TListNode&lt;T&gt;*&gt;(ListImpl::popBack()); }
+
+    TListNode&lt;T&gt;* popFront() { return static_cast&lt;TListNode&lt;T&gt;*&gt;(ListImpl::popFront()); }
+
+    void insertBefore(TListNode&lt;T&gt;* node, TListNode&lt;T&gt;* node_to_insert) {
+        ListImpl::insertBefore(node, node_to_insert);
+    }
+
+    void insertAfter(TListNode&lt;T&gt;* node, TListNode&lt;T&gt;* node_to_insert) {
+        ListImpl::insertAfter(node, node_to_insert);
+    }
+
+    void erase(TListNode&lt;T&gt;* item) {
+        if (!item-&gt;mList)
+            return;
+        item-&gt;mList = nullptr;
+        ListImpl::erase(item);
+    }
+
+    TListNode&lt;T&gt;* front() const { return static_cast&lt;TListNode&lt;T&gt;*&gt;(ListImpl::front()); }
+
+    TListNode&lt;T&gt;* back() const { return static_cast&lt;TListNode&lt;T&gt;*&gt;(ListImpl::back()); }
+
+    TListNode&lt;T&gt;* nth(int n) const { return static_cast&lt;TListNode&lt;T&gt;*&gt;(ListImpl::nth(n)); }
+
+    s32 indexOf(const TListNode&lt;T&gt;* node) const { return ListImpl::indexOf(node); }
+
+    void swap(TListNode&lt;T&gt;* n1, TListNode&lt;T&gt;* n2) { ListImpl::swap(n1, n2); }
+
+    void moveAfter(TListNode&lt;T&gt;* basis, TListNode&lt;T&gt;* n) { ListImpl::moveAfter(basis, n); }
+
+    void moveBefore(TListNode&lt;T&gt;* basis, TListNode&lt;T&gt;* n) { ListImpl::moveBefore(basis, n); }
+
+    void sort(s32 offset, CompareCallback cmp) { ListImpl::sort&lt;T&gt;(offset, cmp); }
+
+    void mergeSort(s32 offset, CompareCallback cmp) { ListImpl::mergeSort&lt;T&gt;(offset, cmp); }
+
+    TListNode&lt;T&gt;* find(const void* ptr, s32 offset, CompareCallback cmp) const {
+        return static_cast&lt;TListNode&lt;T&gt;*&gt;(ListImpl::find(ptr, offset, cmp));
+    }
+
+    void uniq(s32 offset, CompareCallback cmp) { ListImpl::uniq(offset, cmp); }
+
+    void clear() { ListImpl::clear(); }
+
+    TListNode&lt;T&gt;* prev(const TListNode&lt;T&gt;* node) const {
+        TListNode&lt;T&gt;* prev_node = static_cast&lt;TListNode&lt;T&gt;*&gt;(node-&gt;prev());
+        if (prev_node == &amp;mStartEnd)
+            return nullptr;
+        return prev_node;
+    }
+
+    TListNode&lt;T&gt;* next(const TListNode&lt;T&gt;* node) const {
+        TListNode&lt;T&gt;* next_node = static_cast&lt;TListNode&lt;T&gt;*&gt;(node-&gt;next());
+        if (next_node == &amp;mStartEnd)
+            return nullptr;
+        return next_node;
+    }
+
+    class iterator {
+    public:
+        iterator(TListNode&lt;T&gt;* ptr) : mPtr(ptr) {}
+
+        iterator&amp; operator++() {
+            mPtr = static_cast&lt;TListNode&lt;T&gt;*&gt;(mPtr-&gt;next());
+            return *this;
+        }
+
+        iterator&amp; operator--() {
+            mPtr = static_cast&lt;TListNode&lt;T&gt;*&gt;(mPtr-&gt;prev());
+            return *this;
+        }
+
+        T&amp; operator*() const { return mPtr-&gt;mData; }
+
+        T* operator-&gt;() const { return &amp;mPtr-&gt;mData; }
+
+        friend bool operator==(iterator it1, iterator it2) { return it1.mPtr == it2.mPtr; }
+
+        friend bool operator!=(iterator it1, iterator it2) { return !(it1 == it2); }
+
+    private:
+        TListNode&lt;T&gt;* mPtr;
+    };
+
+    iterator begin() const { return iterator(static_cast&lt;TListNode&lt;T&gt;*&gt;(mStartEnd.next())); }
+
+    iterator end() const {
+        return iterator(static_cast&lt;TListNode&lt;T&gt;*&gt;(const_cast&lt;ListNode*&gt;(&amp;mStartEnd)));
+    }
+
+    class robustIterator {
+    public:
+        explicit robustIterator(TListNode&lt;T&gt;* ptr) : mPtr(ptr) {
+            mPtrNext = static_cast&lt;TListNode&lt;T&gt;*&gt;(mPtr-&gt;next());
+        }
+
+        robustIterator&amp; operator++() {
+            mPtr = mPtrNext;
+            mPtrNext = static_cast&lt;TListNode&lt;T&gt;*&gt;(mPtrNext-&gt;next());
+            return *this;
+        }
+
+        robustIterator operator++(int) {
+            robustIterator copy = *this;
+            mPtr = mPtrNext;
+            mPtrNext = static_cast&lt;TListNode&lt;T&gt;*&gt;(mPtr-&gt;next());
+            return copy;
+        }
+
+        TListNode&lt;T&gt;&amp; operator*() const { return *mPtr; }
+
+        TListNode&lt;T&gt;* operator-&gt;() const { return mPtr; }
+
+        friend bool operator==(robustIterator it1, robustIterator it2) {
+            return it1.mPtr == it2.mPtr;
+        }
+
+        friend bool operator!=(robustIterator it1, robustIterator it2) { return !(it1 == it2); }
+
+    private:
+        TListNode&lt;T&gt;* mPtr;
+        TListNode&lt;T&gt;* mPtrNext;
+    };
+
+    robustIterator robustBegin() const {
+        return robustIterator(static_cast&lt;TListNode&lt;T&gt;*&gt;(mStartEnd.next()));
+    }
+
+    robustIterator robustEnd() const {
+        return robustIterator(static_cast&lt;TListNode&lt;T&gt;*&gt;(const_cast&lt;ListNode*&gt;(&amp;mStartEnd)));
+    }
+
+    struct RobustRange {
+        robustIterator begin() const { return mList.robustBegin(); }
+
+        robustIterator end() const { return mList.robustEnd(); }
+
+        const TList&amp; mList;
+
+        RobustRange(const TList&amp; list) : mList(list) {}
+    };
+
+    RobustRange robustRange() const { return RobustRange(*this); }
+
+private:
+    static int compareT(const T* a, const T* b) {
+        if (*a &lt; *b)
+            return -1;
+        if (*a &gt; *b)
+            return 1;
+        return 0;
+    }
+};
+
+template &lt;typename T&gt;
+class TListNode : public ListNode {
+public:
+    TListNode() : ListNode() {
+        mData = nullptr;
+        mList = NULL;
+    }
+
+    TListNode(T data) : ListNode(), mData(data), mList(nullptr) {}
+
+    void erase() {
+        TList&lt;T&gt;* list = mList;
+        if (list != NULL)
+            list-&gt;erase(this);
+    }
+
+    T mData;
+    TList&lt;T&gt;* mList;
+};
+
+}  // namespace sead
+
+#endif  // SEAD_TLIST_H_
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

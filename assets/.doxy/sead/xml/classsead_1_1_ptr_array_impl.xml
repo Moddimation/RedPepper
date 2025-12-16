@@ -1,0 +1,1059 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_ptr_array_impl" kind="class" language="C++" prot="public">
+    <compoundname>sead::PtrArrayImpl</compoundname>
+    <derivedcompoundref refid="classsead_1_1_ptr_array" prot="public" virt="non-virtual">sead::PtrArray&lt; sead::Controller &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1_ptr_array" prot="public" virt="non-virtual">sead::PtrArray&lt; T &gt;</derivedcompoundref>
+    <includes refid="sead_ptr_array_8h" local="no">seadPtrArray.h</includes>
+    <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" prot="protected" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* sead::PtrArrayImpl::CompareCallbackImpl) (const void *a, const void *b)</definition>
+        <argsstring>)(const void *a, const void *b)</argsstring>
+        <name>CompareCallbackImpl</name>
+        <qualifiedname>sead::PtrArrayImpl::CompareCallbackImpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="70" column="13" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" prot="protected" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::mPtrNumMax</definition>
+        <argsstring></argsstring>
+        <name>mPtrNumMax</name>
+        <qualifiedname>sead::PtrArrayImpl::mPtrNumMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="179" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="179" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a5d10163e06b68c80a40d86492701e62b" compoundref="sead_ptr_array_8h" startline="72" endline="78">at</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a228d2791198b45e145d32471c92f4eec" compoundref="sead_ptr_array_8h" startline="41" endline="41">capacity</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a8b5809504bb1a1890e8ec1062cc7f661" compoundref="sead_ptr_array_8cpp" startline="25" endline="46">erase</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ac76c471ddeb39838d70661e780e3c307" compoundref="sead_ptr_array_8h" startline="37" endline="37">isFull</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" compoundref="sead_ptr_array_8cpp" startline="6" endline="20">setBuffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" prot="protected" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::mPtrNum</definition>
+        <argsstring></argsstring>
+        <name>mPtrNum</name>
+        <qualifiedname>sead::PtrArrayImpl::mPtrNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="180" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="180" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1aa706d55f09b15e2430cb7911c7617ce1" compoundref="sead_ptr_array_8h" startline="26" endline="29">allocBufferInline</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a5d10163e06b68c80a40d86492701e62b" compoundref="sead_ptr_array_8h" startline="72" endline="78">at</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ae196e25e9999dfa15d1433a51687aa08" compoundref="sead_ptr_array_8h" startline="85" endline="85">back</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1ac61d0c6175fe2d71476ad5f350de0674" compoundref="sead_ptr_array_8h" startline="202" endline="202">sead::PtrArray&lt; T &gt;::back</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a5ddb73d1bede6e9d1c91818881df5fde" compoundref="sead_ptr_array_8h" startline="156" endline="177">binarySearch</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a1756a5119c2225774d9ef1c1c0b869b6" compoundref="sead_ptr_array_8h" startline="47" endline="47">clear</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1a19de244948fe6b0b6ba9bc402949d8bf" compoundref="sead_ptr_array_8h" startline="299" endline="299">sead::PtrArray&lt; T &gt;::constEnd</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a529efab785fe4388309a2d07d136617f" compoundref="sead_ptr_array_8h" startline="139" endline="145">createVacancy</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1adb7e395427700004c5f03470bdf36f17" compoundref="sead_ptr_array_8h" startline="305" endline="305">sead::PtrArray&lt; T &gt;::dataEnd</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1a753ea14b587f223f381dc346a0e41e0f" compoundref="sead_ptr_array_8h" startline="274" endline="274">sead::PtrArray&lt; T &gt;::end</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a8c182adad8ec81f9d359d71882bea3db" compoundref="sead_ptr_array_8h" startline="122" endline="130">equal</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1aeb9dbd18aa71fbcd36cab8f1a79d0904" compoundref="sead_ptr_array_8h" startline="108" endline="113">find</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a35cfe33603ab6b5f0833beeed01602a7" compoundref="sead_ptr_array_8h" startline="132" endline="137">indexOf</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a7c7ebef61efcf7bb4a97405041aa6939" compoundref="sead_ptr_array_8h" startline="35" endline="35">isEmpty</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ac76c471ddeb39838d70661e780e3c307" compoundref="sead_ptr_array_8h" startline="37" endline="37">isFull</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a00193ddb87787026f2cdc7b73d3db4da" compoundref="sead_ptr_array_8h" startline="95" endline="95">popBack</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a872b40a431bb9ffdfc8ff70b06595fca" compoundref="sead_ptr_array_8h" startline="87" endline="91">pushBack</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a82f3e8f5f7a2b50b74e0b814840e6df3" compoundref="sead_ptr_array_8h" startline="115" endline="120">search</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" compoundref="sead_ptr_array_8cpp" startline="6" endline="20">setBuffer</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a5b080fabfc99ffe1a7ba95419b0b14cd" compoundref="sead_ptr_array_8h" startline="39" endline="39">size</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" prot="protected" static="no" mutable="no">
+        <type>void **</type>
+        <definition>void** sead::PtrArrayImpl::mPtrs</definition>
+        <argsstring></argsstring>
+        <name>mPtrs</name>
+        <qualifiedname>sead::PtrArrayImpl::mPtrs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="181" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="181" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1aa706d55f09b15e2430cb7911c7617ce1" compoundref="sead_ptr_array_8h" startline="26" endline="29">allocBufferInline</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a5d10163e06b68c80a40d86492701e62b" compoundref="sead_ptr_array_8h" startline="72" endline="78">at</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ae196e25e9999dfa15d1433a51687aa08" compoundref="sead_ptr_array_8h" startline="85" endline="85">back</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a5ddb73d1bede6e9d1c91818881df5fde" compoundref="sead_ptr_array_8h" startline="156" endline="177">binarySearch</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a529efab785fe4388309a2d07d136617f" compoundref="sead_ptr_array_8h" startline="139" endline="145">createVacancy</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1ae9026f16059dd546f1e593b0a9aa85bf" compoundref="sead_ptr_array_8h" startline="301" endline="301">sead::PtrArray&lt; T &gt;::data</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a8c182adad8ec81f9d359d71882bea3db" compoundref="sead_ptr_array_8h" startline="122" endline="130">equal</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a8b5809504bb1a1890e8ec1062cc7f661" compoundref="sead_ptr_array_8cpp" startline="25" endline="46">erase</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1aeb9dbd18aa71fbcd36cab8f1a79d0904" compoundref="sead_ptr_array_8h" startline="108" endline="113">find</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1af08547b06e6b608c30470659d0549f3c" compoundref="sead_ptr_array_8h" startline="83" endline="83">front</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a35cfe33603ab6b5f0833beeed01602a7" compoundref="sead_ptr_array_8h" startline="132" endline="137">indexOf</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a375b8a9603dd543c0cc7f6ccc74e4a21" compoundref="sead_ptr_array_8h" startline="33" endline="33">isBufferReady</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a00193ddb87787026f2cdc7b73d3db4da" compoundref="sead_ptr_array_8h" startline="95" endline="95">popBack</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ab1794428ace0fd9e957f76d2dda6fdc9" compoundref="sead_ptr_array_8h" startline="97" endline="104">popFront</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a872b40a431bb9ffdfc8ff70b06595fca" compoundref="sead_ptr_array_8h" startline="87" endline="91">pushBack</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ad0c9f77c900b04d30112263ad44ef04b" compoundref="sead_ptr_array_8h" startline="106" endline="106">replace</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a82f3e8f5f7a2b50b74e0b814840e6df3" compoundref="sead_ptr_array_8h" startline="115" endline="120">search</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" compoundref="sead_ptr_array_8cpp" startline="6" endline="20">setBuffer</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a012c0c73c537878aa3dd9831c2f236f1" compoundref="sead_ptr_array_8h" startline="54" endline="58">swap</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a00b9dc020b44b6b3673990fccb8ea47f" compoundref="sead_ptr_array_8h" startline="80" endline="80">unsafeAt</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a9b62501833e48bfd107cd2e20d1fdd43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::PtrArrayImpl::PtrArrayImpl</definition>
+        <argsstring>()</argsstring>
+        <name>PtrArrayImpl</name>
+        <qualifiedname>sead::PtrArrayImpl::PtrArrayImpl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="16" column="5" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a328eba791d66a7958c7770a79fb0e01b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::PtrArrayImpl::PtrArrayImpl</definition>
+        <argsstring>(s32 ptrNumMax, void *buf)</argsstring>
+        <name>PtrArrayImpl</name>
+        <qualifiedname>sead::PtrArrayImpl::PtrArrayImpl</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>ptrNumMax</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="18" column="5" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="18" bodyend="20"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" compoundref="sead_ptr_array_8cpp" startline="6" endline="20">setBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::setBuffer</definition>
+        <argsstring>(s32 ptrNumMax, void *buf)</argsstring>
+        <name>setBuffer</name>
+        <qualifiedname>sead::PtrArrayImpl::setBuffer</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>ptrNumMax</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="22" column="10" bodyfile="lib/sead/modules/src/container/seadPtrArray.cpp" bodystart="6" bodyend="20"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" compoundref="sead_ptr_array_8h" startline="179">mPtrNumMax</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <references refid="_l_m_s___types_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" compoundref="_l_m_s___types_8h" startline="3">NULL</references>
+        <references refid="sead_raw_print_8h_1ace1f1618a37f1eebc988163c443dae7e" compoundref="sead_raw_print_8h" startline="27" endline="33">SEAD_ASSERT_MSG</references>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a328eba791d66a7958c7770a79fb0e01b" compoundref="sead_ptr_array_8h" startline="18" endline="20">PtrArrayImpl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a8550983441cf6d60f918aeeb98b67a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::allocBuffer</definition>
+        <argsstring>(s32 ptrNumMax, Heap *heap, s32 alignment=sizeof(void *))</argsstring>
+        <name>allocBuffer</name>
+        <qualifiedname>sead::PtrArrayImpl::allocBuffer</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>ptrNumMax</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>alignment</declname>
+          <defval>sizeof(void *)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="23" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1ac8a302cb53cacb1b6500d637b50ae176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArrayImpl::tryAllocBuffer</definition>
+        <argsstring>(s32 ptrNumMax, Heap *heap, s32 alignment=sizeof(void *))</argsstring>
+        <name>tryAllocBuffer</name>
+        <qualifiedname>sead::PtrArrayImpl::tryAllocBuffer</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>ptrNumMax</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>alignment</declname>
+          <defval>sizeof(void *)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="24" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1aa706d55f09b15e2430cb7911c7617ce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::allocBufferInline</definition>
+        <argsstring>(s32 ptrNumMax)</argsstring>
+        <name>allocBufferInline</name>
+        <qualifiedname>sead::PtrArrayImpl::allocBufferInline</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>ptrNumMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="26" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="26" bodyend="29"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1aeca042ab3210a6d9e6a4858bcedbd15c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::freeBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>freeBuffer</name>
+        <qualifiedname>sead::PtrArrayImpl::freeBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="31" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a375b8a9603dd543c0cc7f6ccc74e4a21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArrayImpl::isBufferReady</definition>
+        <argsstring>() const</argsstring>
+        <name>isBufferReady</name>
+        <qualifiedname>sead::PtrArrayImpl::isBufferReady</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="33" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="33" bodyend="33"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a7c7ebef61efcf7bb4a97405041aa6939" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArrayImpl::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>sead::PtrArrayImpl::isEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="35" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="35" bodyend="35"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1a00193ddb87787026f2cdc7b73d3db4da" compoundref="sead_ptr_array_8h" startline="95" endline="95">popBack</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ab1794428ace0fd9e957f76d2dda6fdc9" compoundref="sead_ptr_array_8h" startline="97" endline="104">popFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1ac76c471ddeb39838d70661e780e3c307" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArrayImpl::isFull</definition>
+        <argsstring>() const</argsstring>
+        <name>isFull</name>
+        <qualifiedname>sead::PtrArrayImpl::isFull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="37" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="37" bodyend="37"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" compoundref="sead_ptr_array_8h" startline="179">mPtrNumMax</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a5b080fabfc99ffe1a7ba95419b0b14cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>sead::PtrArrayImpl::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="39" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="39" bodyend="39"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a228d2791198b45e145d32471c92f4eec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>capacity</name>
+        <qualifiedname>sead::PtrArrayImpl::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="41" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="41" bodyend="41"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" compoundref="sead_ptr_array_8h" startline="179">mPtrNumMax</references>
+        <referencedby refid="classsead_1_1_heap_mgr_1af81e7965f8c2f22c8a984d77f5ec8e2c" compoundref="sead_heap_mgr_8h" startline="21" endline="21">sead::HeapMgr::getRootHeapNum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1acc257bb54cf3dd2add450cc2ee6af85d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::erase</definition>
+        <argsstring>(s32 position)</argsstring>
+        <name>erase</name>
+        <qualifiedname>sead::PtrArrayImpl::erase</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="43" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="43" bodyend="43"/>
+        <references refid="classsead_1_1_ptr_array_impl_1acc257bb54cf3dd2add450cc2ee6af85d" compoundref="sead_ptr_array_8h" startline="43" endline="43">erase</references>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1acc257bb54cf3dd2add450cc2ee6af85d" compoundref="sead_ptr_array_8h" startline="43" endline="43">erase</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1ab1794428ace0fd9e957f76d2dda6fdc9" compoundref="sead_ptr_array_8h" startline="97" endline="104">popFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a8b5809504bb1a1890e8ec1062cc7f661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::erase</definition>
+        <argsstring>(s32 position, s32 count)</argsstring>
+        <name>erase</name>
+        <qualifiedname>sead::PtrArrayImpl::erase</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="45" column="10" bodyfile="lib/sead/modules/src/container/seadPtrArray.cpp" bodystart="25" bodyend="46"/>
+        <references refid="classsead_1_1_mem_util_1aaabe516983f77c8b96939e11cacc0b40">sead::MemUtil::copyOverlap</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" compoundref="sead_ptr_array_8h" startline="179">mPtrNumMax</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <references refid="sead_raw_print_8h_1ace1f1618a37f1eebc988163c443dae7e" compoundref="sead_raw_print_8h" startline="27" endline="33">SEAD_ASSERT_MSG</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a1756a5119c2225774d9ef1c1c0b869b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>sead::PtrArrayImpl::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="47" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="47" bodyend="47"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a12e58dbee778e13ead38a1a2a20cd27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::resize</definition>
+        <argsstring>(s32 size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>sead::PtrArrayImpl::resize</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a91a2f723135cf12ac377025c3b74e00d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::unsafeResize</definition>
+        <argsstring>(s32 size)</argsstring>
+        <name>unsafeResize</name>
+        <qualifiedname>sead::PtrArrayImpl::unsafeResize</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a012c0c73c537878aa3dd9831c2f236f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::swap</definition>
+        <argsstring>(s32 pos1, s32 pos2)</argsstring>
+        <name>swap</name>
+        <qualifiedname>sead::PtrArrayImpl::swap</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>pos1</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>pos2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="54" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="54" bodyend="58"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1ae5c402b62ea9306efc1c819dfe76594f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::reverse</definition>
+        <argsstring>()</argsstring>
+        <name>reverse</name>
+        <qualifiedname>sead::PtrArrayImpl::reverse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1afa0d8de42400997e43ecc274c3c01c6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::shuffle</definition>
+        <argsstring>()</argsstring>
+        <name>shuffle</name>
+        <qualifiedname>sead::PtrArrayImpl::shuffle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="62" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="62" bodyend="65"/>
+        <references refid="classsead_1_1_ptr_array_impl_1afa0d8de42400997e43ecc274c3c01c6f" compoundref="sead_ptr_array_8h" startline="62" endline="65">shuffle</references>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1afa0d8de42400997e43ecc274c3c01c6f" compoundref="sead_ptr_array_8h" startline="62" endline="65">shuffle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1aff2f63d19a0ca151e1ea7d1a7304091a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::shuffle</definition>
+        <argsstring>(Random *random)</argsstring>
+        <name>shuffle</name>
+        <qualifiedname>sead::PtrArrayImpl::shuffle</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_random" kindref="compound">Random</ref> *</type>
+          <declname>random</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="67" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a5d10163e06b68c80a40d86492701e62b" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::at</definition>
+        <argsstring>(s32 idx) const</argsstring>
+        <name>at</name>
+        <qualifiedname>sead::PtrArrayImpl::at</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="72" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="72" bodyend="78"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" compoundref="sead_ptr_array_8h" startline="179">mPtrNumMax</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <references refid="sead_raw_print_8h_1ace1f1618a37f1eebc988163c443dae7e" compoundref="sead_raw_print_8h" startline="27" endline="33">SEAD_ASSERT_MSG</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a943ad3c082a1aa69064e8515998deea4" compoundref="sead_ptr_array_8h" startline="191" endline="191">sead::PtrArray&lt; T &gt;::at</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a00b9dc020b44b6b3673990fccb8ea47f" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::unsafeAt</definition>
+        <argsstring>(s32 idx) const</argsstring>
+        <name>unsafeAt</name>
+        <qualifiedname>sead::PtrArrayImpl::unsafeAt</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="80" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="80" bodyend="80"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1af94255d2dcbfe14659cc041bd7c55cc3" compoundref="sead_ptr_array_8h" startline="193" endline="193">sead::PtrArray&lt; T &gt;::unsafeAt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1af08547b06e6b608c30470659d0549f3c" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::front</definition>
+        <argsstring>() const</argsstring>
+        <name>front</name>
+        <qualifiedname>sead::PtrArrayImpl::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="83" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="83" bodyend="83"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1ae196e25e9999dfa15d1433a51687aa08" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::back</definition>
+        <argsstring>() const</argsstring>
+        <name>back</name>
+        <qualifiedname>sead::PtrArrayImpl::back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="85" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="85" bodyend="85"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a872b40a431bb9ffdfc8ff70b06595fca" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::pushBack</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>pushBack</name>
+        <qualifiedname>sead::PtrArrayImpl::pushBack</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="87" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="87" bodyend="91"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a93b9a457eb6002aa46fdac25d8a5c923" compoundref="sead_ptr_array_8h" startline="204" endline="204">sead::PtrArray&lt; T &gt;::pushBack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1af3834ee8a0e59bdeaf85d7969951d947" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::pushFront</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>pushFront</name>
+        <qualifiedname>sead::PtrArrayImpl::pushFront</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="93" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="93" bodyend="93"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bf0ad1c82b72e9e7ff2895df7efaa3c">insert</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a5252c5c79b315da2fc43532c9f190b82" compoundref="sead_ptr_array_8h" startline="206" endline="206">sead::PtrArray&lt; T &gt;::pushFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a00193ddb87787026f2cdc7b73d3db4da" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::popBack</definition>
+        <argsstring>()</argsstring>
+        <name>popBack</name>
+        <qualifiedname>sead::PtrArrayImpl::popBack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="95" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="95" bodyend="95"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7c7ebef61efcf7bb4a97405041aa6939" compoundref="sead_ptr_array_8h" startline="35" endline="35">isEmpty</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a873aca429ebbce8a75e28c551b58cd26" compoundref="sead_ptr_array_8h" startline="208" endline="208">sead::PtrArray&lt; T &gt;::popBack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1ab1794428ace0fd9e957f76d2dda6fdc9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::popFront</definition>
+        <argsstring>()</argsstring>
+        <name>popFront</name>
+        <qualifiedname>sead::PtrArrayImpl::popFront</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="97" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="97" bodyend="104"/>
+        <references refid="classsead_1_1_ptr_array_impl_1acc257bb54cf3dd2add450cc2ee6af85d" compoundref="sead_ptr_array_8h" startline="43" endline="43">erase</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7c7ebef61efcf7bb4a97405041aa6939" compoundref="sead_ptr_array_8h" startline="35" endline="35">isEmpty</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a21ca8f3872c64638f3b661305b3df7ce" compoundref="sead_ptr_array_8h" startline="210" endline="210">sead::PtrArray&lt; T &gt;::popFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1ad0c9f77c900b04d30112263ad44ef04b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::replace</definition>
+        <argsstring>(s32 idx, void *ptr)</argsstring>
+        <name>replace</name>
+        <qualifiedname>sead::PtrArrayImpl::replace</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="106" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="106" bodyend="106"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1afbf9e320576bf856a5cd8d226a3cdec3" compoundref="sead_ptr_array_8h" startline="219" endline="219">sead::PtrArray&lt; T &gt;::replace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1aeb9dbd18aa71fbcd36cab8f1a79d0904" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * sead::PtrArrayImpl::find</definition>
+        <argsstring>(const void *ptr, CompareCallbackImpl cmp) const</argsstring>
+        <name>find</name>
+        <qualifiedname>sead::PtrArrayImpl::find</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="108" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="108" bodyend="113"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a2614011ee13791ec2a5fe85e00b5c41a" compoundref="sead_ptr_array_8h" startline="233" endline="233">sead::PtrArray&lt; T &gt;::find</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a82f3e8f5f7a2b50b74e0b814840e6df3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::search</definition>
+        <argsstring>(const void *ptr, CompareCallbackImpl cmp) const</argsstring>
+        <name>search</name>
+        <qualifiedname>sead::PtrArrayImpl::search</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="115" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="115" bodyend="120"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1aac694460fb85f5aeada82b972530972b" compoundref="sead_ptr_array_8h" startline="235" endline="235">sead::PtrArray&lt; T &gt;::search</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a8c182adad8ec81f9d359d71882bea3db" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArrayImpl::equal</definition>
+        <argsstring>(const PtrArrayImpl &amp;other, CompareCallbackImpl cmp) const</argsstring>
+        <name>equal</name>
+        <qualifiedname>sead::PtrArrayImpl::equal</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_ptr_array_impl" kindref="compound">PtrArrayImpl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="122" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="122" bodyend="130"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a5e3aa7208b33f04e441ffa55227c80ec" compoundref="sead_ptr_array_8h" startline="225" endline="227">sead::PtrArray&lt; T &gt;::equal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a35cfe33603ab6b5f0833beeed01602a7" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::indexOf</definition>
+        <argsstring>(const void *ptr) const</argsstring>
+        <name>indexOf</name>
+        <qualifiedname>sead::PtrArrayImpl::indexOf</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="132" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="132" bodyend="137"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a0c07b8573cbbd61fb51d81e4019b6dd6" compoundref="sead_ptr_array_8h" startline="221" endline="221">sead::PtrArray&lt; T &gt;::indexOf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a529efab785fe4388309a2d07d136617f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::createVacancy</definition>
+        <argsstring>(s32 pos, s32 count)</argsstring>
+        <name>createVacancy</name>
+        <qualifiedname>sead::PtrArrayImpl::createVacancy</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="139" column="10" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="139" bodyend="145"/>
+        <references refid="classsead_1_1_mem_util_1aaabe516983f77c8b96939e11cacc0b40">sead::MemUtil::copyOverlap</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a7bf0ad1c82b72e9e7ff2895df7efaa3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::insert</definition>
+        <argsstring>(s32 idx, void *ptr)</argsstring>
+        <name>insert</name>
+        <qualifiedname>sead::PtrArrayImpl::insert</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="147" column="10"/>
+        <referencedby refid="classsead_1_1_ptr_array_1a9db9ac0a815a3301e2359e0f0148e87a" compoundref="sead_ptr_array_8h" startline="212" endline="212">sead::PtrArray&lt; T &gt;::insert</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_impl_1af3834ee8a0e59bdeaf85d7969951d947" compoundref="sead_ptr_array_8h" startline="93" endline="93">pushFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a2bce0bdcacc31cc4c00101a484d1f046" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::insertArray</definition>
+        <argsstring>(s32 idx, void *array, s32 array_length, s32 elem_size)</argsstring>
+        <name>insertArray</name>
+        <qualifiedname>sead::PtrArrayImpl::insertArray</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>array_length</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>elem_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="148" column="10"/>
+        <referencedby refid="classsead_1_1_ptr_array_1a002be797b60775e060c58a06ff0dbf61" compoundref="sead_ptr_array_8h" startline="214" endline="217">sead::PtrArray&lt; T &gt;::insert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a1c628fc01720fef9b92035f2817f8411" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::PtrArrayImpl::checkInsert</definition>
+        <argsstring>(s32 idx, s32 num)</argsstring>
+        <name>checkInsert</name>
+        <qualifiedname>sead::PtrArrayImpl::checkInsert</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a6658a05e1f8631c43a473d97f0f38233" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::heapSort</definition>
+        <argsstring>(CompareCallbackImpl cmp)</argsstring>
+        <name>heapSort</name>
+        <qualifiedname>sead::PtrArrayImpl::heapSort</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="151" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a4173bad173ac7ad165104245118af0e3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::compare</definition>
+        <argsstring>(const PtrArrayImpl &amp;other, CompareCallbackImpl cmp) const</argsstring>
+        <name>compare</name>
+        <qualifiedname>sead::PtrArrayImpl::compare</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_ptr_array_impl" kindref="compound">PtrArrayImpl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="153" column="9"/>
+        <referencedby refid="classsead_1_1_ptr_array_1a02dfb63c58132b181a6cd8f7d08be347" compoundref="sead_ptr_array_8h" startline="229" endline="231">sead::PtrArray&lt; T &gt;::compare</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a02758a18cf30738b7933a03a9ac5ed17" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::PtrArrayImpl::uniq</definition>
+        <argsstring>(CompareCallbackImpl cmp)</argsstring>
+        <name>uniq</name>
+        <qualifiedname>sead::PtrArrayImpl::uniq</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="154" column="10"/>
+        <referencedby refid="classsead_1_1_ptr_array_1adc6e288b5453ccec6d4d71a3ed7abc3e" compoundref="sead_ptr_array_8h" startline="247" endline="247">sead::PtrArray&lt; T &gt;::uniq</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1a34cbe2e2aafc98b71c306929a1dcd435" compoundref="sead_ptr_array_8h" startline="249" endline="249">sead::PtrArray&lt; T &gt;::uniq</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_ptr_array_impl_1a5ddb73d1bede6e9d1c91818881df5fde" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>s32 sead::PtrArrayImpl::binarySearch</definition>
+        <argsstring>(const void *ptr, CompareCallbackImpl cmp) const</argsstring>
+        <name>binarySearch</name>
+        <qualifiedname>sead::PtrArrayImpl::binarySearch</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" kindref="member">CompareCallbackImpl</ref></type>
+          <declname>cmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/container/seadPtrArray.h" line="156" column="9" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="156" bodyend="177"/>
+        <references refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" compoundref="sead_ptr_array_8h" startline="180">mPtrNum</references>
+        <references refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" compoundref="sead_ptr_array_8h" startline="181">mPtrs</references>
+        <referencedby refid="classsead_1_1_ptr_array_1a44e9811b3c557767b99808e56ffeca06" compoundref="sead_ptr_array_8h" startline="237" endline="237">sead::PtrArray&lt; T &gt;::binarySearch</referencedby>
+        <referencedby refid="classsead_1_1_ptr_array_1a8e30b7ead005e0be93314e468f77938d" compoundref="sead_ptr_array_8h" startline="239" endline="241">sead::PtrArray&lt; T &gt;::binarySearch</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::PtrArray&lt; sead::Controller &gt;</label>
+        <link refid="classsead_1_1_ptr_array"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; sead::Controller &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::FixedPtrArray&lt; T, N &gt;</label>
+        <link refid="classsead_1_1_fixed_ptr_array"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::PtrArray&lt; T &gt;</label>
+        <link refid="classsead_1_1_ptr_array"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::PtrArrayImpl</label>
+        <link refid="classsead_1_1_ptr_array_impl"/>
+      </node>
+    </inheritancegraph>
+    <location file="lib/sead/include/container/seadPtrArray.h" line="14" column="1" bodyfile="lib/sead/include/container/seadPtrArray.h" bodystart="14" bodyend="182"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_ptr_array_impl_1a8550983441cf6d60f918aeeb98b67a16" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>allocBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aa706d55f09b15e2430cb7911c7617ce1" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>allocBufferInline</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a5d10163e06b68c80a40d86492701e62b" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>at</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ae196e25e9999dfa15d1433a51687aa08" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>back</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a5ddb73d1bede6e9d1c91818881df5fde" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>binarySearch</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a228d2791198b45e145d32471c92f4eec" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>capacity</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a1c628fc01720fef9b92035f2817f8411" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>checkInsert</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a1756a5119c2225774d9ef1c1c0b869b6" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>clear</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a4173bad173ac7ad165104245118af0e3" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>compare</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ab6fd87b97467148b68d5d74b87f2d857" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>CompareCallbackImpl</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a529efab785fe4388309a2d07d136617f" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>createVacancy</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a8c182adad8ec81f9d359d71882bea3db" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>equal</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1acc257bb54cf3dd2add450cc2ee6af85d" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>erase</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a8b5809504bb1a1890e8ec1062cc7f661" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>erase</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aeb9dbd18aa71fbcd36cab8f1a79d0904" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>find</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aeca042ab3210a6d9e6a4858bcedbd15c" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>freeBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1af08547b06e6b608c30470659d0549f3c" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>front</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a6658a05e1f8631c43a473d97f0f38233" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>heapSort</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a35cfe33603ab6b5f0833beeed01602a7" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>indexOf</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a7bf0ad1c82b72e9e7ff2895df7efaa3c" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>insert</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a2bce0bdcacc31cc4c00101a484d1f046" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>insertArray</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a375b8a9603dd543c0cc7f6ccc74e4a21" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>isBufferReady</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a7c7ebef61efcf7bb4a97405041aa6939" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>isEmpty</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ac76c471ddeb39838d70661e780e3c307" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>isFull</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a49a83017b7dc0c7df60b2be94d61c79c" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>mPtrNum</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a3fdfa89bddba08c8c45cc40912347cc0" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>mPtrNumMax</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a7bba5fee02868dfa7b268dbc7f9d5c8e" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>mPtrs</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a00193ddb87787026f2cdc7b73d3db4da" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>popBack</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ab1794428ace0fd9e957f76d2dda6fdc9" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>popFront</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a9b62501833e48bfd107cd2e20d1fdd43" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>PtrArrayImpl</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a328eba791d66a7958c7770a79fb0e01b" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>PtrArrayImpl</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a872b40a431bb9ffdfc8ff70b06595fca" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>pushBack</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1af3834ee8a0e59bdeaf85d7969951d947" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>pushFront</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ad0c9f77c900b04d30112263ad44ef04b" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>replace</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a12e58dbee778e13ead38a1a2a20cd27f" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>resize</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ae5c402b62ea9306efc1c819dfe76594f" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>reverse</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a82f3e8f5f7a2b50b74e0b814840e6df3" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>search</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a4f2bb4a2868eeeb758752bd6a51b5364" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>setBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1afa0d8de42400997e43ecc274c3c01c6f" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>shuffle</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1aff2f63d19a0ca151e1ea7d1a7304091a" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>shuffle</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a5b080fabfc99ffe1a7ba95419b0b14cd" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>size</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a012c0c73c537878aa3dd9831c2f236f1" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>swap</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1ac8a302cb53cacb1b6500d637b50ae176" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>tryAllocBuffer</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a02758a18cf30738b7933a03a9ac5ed17" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>uniq</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a00b9dc020b44b6b3673990fccb8ea47f" prot="protected" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>unsafeAt</name></member>
+      <member refid="classsead_1_1_ptr_array_impl_1a91a2f723135cf12ac377025c3b74e00d" prot="public" virt="non-virtual"><scope>sead::PtrArrayImpl</scope><name>unsafeResize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

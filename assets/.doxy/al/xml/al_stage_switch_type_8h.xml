@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_stage_switch_type_8h" kind="file" language="C++">
+    <compoundname>alStageSwitchType.h</compoundname>
+    <includedby refid="al_stage_switch_accesser_8h" local="no">alStageSwitchAccesser.h</includedby>
+    <includedby refid="al_stage_switch_type_8cpp" local="no">alStageSwitchType.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>alStageSwitchAccesser.h</label>
+        <link refid="al_stage_switch_accesser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alStageSwitchType.h</label>
+        <link refid="al_stage_switch_type_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alStageSwitchAccesser.cpp</label>
+        <link refid="al_stage_switch_accesser_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alStageSwitchKeeper.cpp</label>
+        <link refid="al_stage_switch_keeper_8cpp"/>
+      </node>
+      <node id="5">
+        <label>alStageSwitchType.cpp</label>
+        <link refid="al_stage_switch_type_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespaceal_1adc6a89c39d6699836040f2f73419c228" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228" kindref="member">StageSwitchType</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a89a236e5e48672e0b2def8bce9523214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a89a236e5e48672e0b2def8bce9523214" kindref="member">StageSwitchType_Appear</ref>,</highlight></codeline>
+<codeline lineno="9" refid="namespaceal_1adc6a89c39d6699836040f2f73419c228ab77c9f0292b0016067380edfd3227885" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228ab77c9f0292b0016067380edfd3227885" kindref="member">StageSwitchType_Kill</ref>,</highlight></codeline>
+<codeline lineno="10" refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a1314fb5c5fc01a8ce5476cc8861d41a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a1314fb5c5fc01a8ce5476cc8861d41a3" kindref="member">StageSwitchType_DeadOn</ref>,</highlight></codeline>
+<codeline lineno="11" refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a4852136a34228ac2a4d534886cc75fec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228a4852136a34228ac2a4d534886cc75fec" kindref="member">StageSwitchType_A</ref>,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228aaea3333122fdb3a1f972777294f25681" kindref="member">StageSwitchType_B</ref></highlight></codeline>
+<codeline lineno="13" refid="namespaceal_1adc6a89c39d6699836040f2f73419c228aaea3333122fdb3a1f972777294f25681" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespaceal_1a9f141d419013afb8d733451947fe7046" kindref="member">getStageSwitchName</ref>(<sp/><ref refid="namespaceal_1adc6a89c39d6699836040f2f73419c228" kindref="member">StageSwitchType</ref><sp/>type<sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Stage/alStageSwitchType.h"/>
+  </compounddef>
+</doxygen>

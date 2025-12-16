@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_collision_director_8h" kind="file" language="C++">
+    <compoundname>alCollisionDirector.h</compoundname>
+    <includes refid="al_execute_director_8h" local="no">Execute/alExecuteDirector.h</includes>
+    <includedby refid="al_live_actor_kit_8cpp" local="no">alLiveActorKit.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alCollisionDirector.h</label>
+        <link refid="al_collision_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Execute/alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alCollisionDirector.h</label>
+        <link refid="al_collision_director_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_collision_director" prot="public">al::CollisionDirector</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_execute_director_8h" kindref="compound">Execute/alExecuteDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classal_1_1_collision_director" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_collision_director" kindref="compound">CollisionDirector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_i_use_executor" kindref="compound">IUseExecutor</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_collision_director_1ae6a65973a2db3090b06362b79bd60f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_collision_director_1ae6a65973a2db3090b06362b79bd60f36" kindref="member">_4</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_collision_director_1aaa8d57e9402462a6a2f61a0b25381835" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classal_1_1_collision_director_1aaa8d57e9402462a6a2f61a0b25381835" kindref="member">_8</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_collision_director_1ab61d3fa8d46ce274c863154bb40576c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classal_1_1_collision_director_1ab61d3fa8d46ce274c863154bb40576c8" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_collision_director_1a3909c853f18c31d2b41b94793dcb8011" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_collision_director_1a3909c853f18c31d2b41b94793dcb8011" kindref="member">_10</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_collision_director_1a0fddbbd7ccc85eaf960085a26bba26af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_collision_director_1a0fddbbd7ccc85eaf960085a26bba26af" kindref="member">_14</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classal_1_1_collision_director_1a1e21cbb90e3b92e3c91e0a03cc632896" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_collision_director_1a1e21cbb90e3b92e3c91e0a03cc632896" kindref="member">_18</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_collision_director_1aa0f99bd7104cf7740c884c530d49a18b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_collision_director_1aa0f99bd7104cf7740c884c530d49a18b" kindref="member">endInit</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_collision_director_1a23449b2df44356619352b0df405de25a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_collision_director_1a23449b2df44356619352b0df405de25a" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_collision_director_1ae74ddd06bfedf64bde75a5e2dc828351" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_collision_director_1ae74ddd06bfedf64bde75a5e2dc828351" kindref="member">CollisionDirector</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Collision/alCollisionDirector.h"/>
+  </compounddef>
+</doxygen>

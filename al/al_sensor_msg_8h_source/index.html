@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File alSensorMsg.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-alsensormsgh">File alSensorMsg.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9602f8714fac85fdd7f7ceb00b335c03/"><strong>al</strong></a> <strong>&gt;</strong> <a href="../dir_33e095f68a87f1feebb1083733ab6ad1/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_03d20b26238dd8460cdd3a8c8b982db6/"><strong>LiveActor</strong></a> <strong>&gt;</strong> <a href="../al_sensor_msg_8h/"><strong>alSensorMsg.h</strong></a></p>
+<p><a href="../al_sensor_msg_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#pragma once
+
+namespace al
+{
+class HitSensor;
+
+enum SensorMsg
+{
+        SensorMsg_UpperPunch             = 2,
+        SensorMsg_9                      = 9,
+        SensorMsg_PlayerStatueTouch      = 12,
+        SensorMsg_PlayerRollingAttack    = 13,
+        SensorMsg_14                     = 14,
+        SensorMsg_PlayerInvincibleAttack = 16,
+        SensorMsg_PlayerFireBallAttack   = 17,
+        SensorMsg_PlayerTailAttack       = 18,
+        SensorMsg_PlayerKick             = 19,
+        SensorMsg_PlayerBoomerangAttack  = 20,
+        SensorMsg_PlayerBoomerangReflect = 22,
+        SensorMsg_PlayerBoomerangBreak   = 23,
+        SensorMsg_ItemGet                = 26,
+        SensorMsg_PlayerFloorTouch       = 27,
+        SensorMsg_PlayerInvincibleTouch  = 30,
+        SensorMsg_34                     = 34,
+        SensorMsg_KickKouraReflect       = 36,
+        SensorMsg_KickKouraBreak         = 37,
+        SensorMsg_KickStoneAttack        = 40,
+        SensorMsg_41                     = 41,
+        SensorMsg_EnemyAttack            = 45,
+        SensorMsg_GororiAttack           = 46,
+        SensorMsg_GororiBigAttack        = 47,
+        SensorMsg_49                     = 49,
+        SensorMsg_50                     = 50,
+        SensorMsg_51                     = 51,
+        SensorMsg_52                     = 52,
+        SensorMsg_53                     = 53,
+        SensorMsg_55                     = 55, // something with the KoopaLast door
+        SensorMsg_58                     = 58  // something with the KoopaLast door
+};
+
+#define AL_LIVEACTOR_SENSORMSG( TYPE )                        \
+        bool sendMsg##TYPE( HitSensor* to, HitSensor* from ); \
+        bool isMsg##TYPE( u32 msg );
+
+AL_LIVEACTOR_SENSORMSG( UpperPunch )
+AL_LIVEACTOR_SENSORMSG( 9 )
+AL_LIVEACTOR_SENSORMSG( PlayerStatueTouch )
+AL_LIVEACTOR_SENSORMSG( PlayerRollingAttack )
+AL_LIVEACTOR_SENSORMSG( 14 )
+AL_LIVEACTOR_SENSORMSG( PlayerInvincibleAttack )
+AL_LIVEACTOR_SENSORMSG( PlayerFireBallAttack )
+AL_LIVEACTOR_SENSORMSG( PlayerTailAttack )
+AL_LIVEACTOR_SENSORMSG( PlayerKick )
+AL_LIVEACTOR_SENSORMSG( PlayerBoomerangAttack )
+AL_LIVEACTOR_SENSORMSG( PlayerBoomerangReflect )
+AL_LIVEACTOR_SENSORMSG( PlayerBoomerangBreak )
+AL_LIVEACTOR_SENSORMSG( PlayerFloorTouch )
+AL_LIVEACTOR_SENSORMSG( PlayerInvincibleTouch )
+AL_LIVEACTOR_SENSORMSG( 34 )
+AL_LIVEACTOR_SENSORMSG( KickKouraReflect )
+AL_LIVEACTOR_SENSORMSG( KickKouraBreak )
+AL_LIVEACTOR_SENSORMSG( KickStoneAttack )
+AL_LIVEACTOR_SENSORMSG( 41 )
+AL_LIVEACTOR_SENSORMSG( EnemyAttack )
+AL_LIVEACTOR_SENSORMSG( GororiAttack )
+AL_LIVEACTOR_SENSORMSG( GororiBigAttack )
+AL_LIVEACTOR_SENSORMSG( 49 )
+AL_LIVEACTOR_SENSORMSG( 50 )
+AL_LIVEACTOR_SENSORMSG( 51 )
+AL_LIVEACTOR_SENSORMSG( 52 )
+AL_LIVEACTOR_SENSORMSG( 53 )
+AL_LIVEACTOR_SENSORMSG( 55 )
+AL_LIVEACTOR_SENSORMSG( 58 )
+
+#undef AL_LIVEACTOR_SENSORMSG
+
+} // namespace al
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

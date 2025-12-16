@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_clipping_director" kind="class" language="C++" prot="public">
+    <compoundname>al::ClippingDirector</compoundname>
+    <basecompoundref refid="classal_1_1_i_use_executor" prot="public" virt="non-virtual">al::IUseExecutor</basecompoundref>
+    <includes refid="al_clipping_director_8h" local="no">alClippingDirector.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_clipping_director_1a7fec450e92d930f4598c38d2ed062378" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        <definition>int al::ClippingDirector::_4</definition>
+        <argsstring></argsstring>
+        <name>_4</name>
+        <qualifiedname>al::ClippingDirector::_4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="11" column="30" bodyfile="lib/al/include/Clipping/alClippingDirector.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_clipping_director_1a474685511dda384a2f748ba71767b22e" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_clipping_actor_holder" kindref="compound">ClippingActorHolder</ref> *</type>
+        <definition>ClippingActorHolder* al::ClippingDirector::mClippingActorHolder</definition>
+        <argsstring></argsstring>
+        <name>mClippingActorHolder</name>
+        <qualifiedname>al::ClippingDirector::mClippingActorHolder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="12" column="29" bodyfile="lib/al/include/Clipping/alClippingDirector.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" compoundref="al_clipping_director_8h" startline="19" endline="22">getClippingActorHolder</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_clipping_director_1a79d348f10a477744cfdedeb8a90edcd5" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref> *</type>
+        <definition>void* al::ClippingDirector::_C</definition>
+        <argsstring></argsstring>
+        <name>_C</name>
+        <qualifiedname>al::ClippingDirector::_C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="13" column="29" bodyfile="lib/al/include/Clipping/alClippingDirector.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classal_1_1_clipping_director_1a73b3f8371c26ec3b5420b342e9740cee" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref> *</type>
+        <definition>void* al::ClippingDirector::_10</definition>
+        <argsstring></argsstring>
+        <name>_10</name>
+        <qualifiedname>al::ClippingDirector::_10</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="14" column="29" bodyfile="lib/al/include/Clipping/alClippingDirector.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_clipping_director_1a9662dedfc0c10421c4c60a18dd6c3240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::ClippingDirector::endInit</definition>
+        <argsstring>()</argsstring>
+        <name>endInit</name>
+        <qualifiedname>al::ClippingDirector::endInit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="17" column="14"/>
+        <referencedby refid="classal_1_1_live_actor_kit_1a9ba2e1999a725f28bd4ed8b4351e8046" compoundref="al_live_actor_kit_8cpp" startline="31" endline="43">al::LiveActorKit::endInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_clipping_actor_holder" kindref="compound">ClippingActorHolder</ref> *</type>
+        <definition>ClippingActorHolder * al::ClippingDirector::getClippingActorHolder</definition>
+        <argsstring>()</argsstring>
+        <name>getClippingActorHolder</name>
+        <qualifiedname>al::ClippingDirector::getClippingActorHolder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="19" column="29" bodyfile="lib/al/include/Clipping/alClippingDirector.h" bodystart="19" bodyend="22"/>
+        <references refid="classal_1_1_clipping_director_1a474685511dda384a2f748ba71767b22e" compoundref="al_clipping_director_8h" startline="12">mClippingActorHolder</references>
+        <referencedby refid="namespaceal_1a515a2b12c390af7bd21efb868109a386" compoundref="al_live_actor_function_8cpp" startline="89" endline="97">al::invalidateClipping</referencedby>
+        <referencedby refid="namespaceal_1a81c0fadbcc3ef5462d2d614649ffdedd" compoundref="al_live_actor_function_8cpp" startline="99" endline="103">al::validateClipping</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_clipping_director_1ac32279e53a8e01953fb3a07c96218c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ClippingDirector::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>al::ClippingDirector::execute</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_executor_1a7dfb7a8f75823e159a78f557cc92c5fa">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="25" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_clipping_director_1a706c86e98afc4a6bca66954732e7f183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::ClippingDirector::ClippingDirector</definition>
+        <argsstring>(int)</argsstring>
+        <name>ClippingDirector</name>
+        <qualifiedname>al::ClippingDirector::ClippingDirector</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Clipping/alClippingDirector.h" line="28" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>al::ClippingDirector</label>
+        <link refid="classal_1_1_clipping_director"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::IUseExecutor</label>
+        <link refid="classal_1_1_i_use_executor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>al::ClippingActorHolder</label>
+        <link refid="classal_1_1_clipping_actor_holder"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_10</edgelabel>
+          <edgelabel>_14</edgelabel>
+          <edgelabel>_8</edgelabel>
+          <edgelabel>_C</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::ClippingActorInfoList</label>
+        <link refid="classal_1_1_clipping_actor_info_list"/>
+      </node>
+      <node id="1">
+        <label>al::ClippingDirector</label>
+        <link refid="classal_1_1_clipping_director"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mClippingActorHolder</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::IUseExecutor</label>
+        <link refid="classal_1_1_i_use_executor"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Clipping/alClippingDirector.h" line="8" column="1" bodyfile="lib/al/include/Clipping/alClippingDirector.h" bodystart="9" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classal_1_1_clipping_director_1a73b3f8371c26ec3b5420b342e9740cee" prot="private" virt="non-virtual"><scope>al::ClippingDirector</scope><name>_10</name></member>
+      <member refid="classal_1_1_clipping_director_1a7fec450e92d930f4598c38d2ed062378" prot="private" virt="non-virtual"><scope>al::ClippingDirector</scope><name>_4</name></member>
+      <member refid="classal_1_1_clipping_director_1a79d348f10a477744cfdedeb8a90edcd5" prot="private" virt="non-virtual"><scope>al::ClippingDirector</scope><name>_C</name></member>
+      <member refid="classal_1_1_clipping_director_1a706c86e98afc4a6bca66954732e7f183" prot="public" virt="non-virtual"><scope>al::ClippingDirector</scope><name>ClippingDirector</name></member>
+      <member refid="classal_1_1_i_use_executor_1af19b8ae80aa93e8f60fbcedede4f2828" prot="public" virt="virtual"><scope>al::ClippingDirector</scope><name>draw</name></member>
+      <member refid="classal_1_1_clipping_director_1a9662dedfc0c10421c4c60a18dd6c3240" prot="public" virt="non-virtual"><scope>al::ClippingDirector</scope><name>endInit</name></member>
+      <member refid="classal_1_1_clipping_director_1ac32279e53a8e01953fb3a07c96218c5c" prot="public" virt="virtual"><scope>al::ClippingDirector</scope><name>execute</name></member>
+      <member refid="classal_1_1_clipping_director_1a014957f6ad54679c40f7183b57ba1745" prot="public" virt="non-virtual"><scope>al::ClippingDirector</scope><name>getClippingActorHolder</name></member>
+      <member refid="classal_1_1_clipping_director_1a474685511dda384a2f748ba71767b22e" prot="private" virt="non-virtual"><scope>al::ClippingDirector</scope><name>mClippingActorHolder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_byaml_iter_8cpp" kind="file" language="C++">
+    <compoundname>alByamlIter.cpp</compoundname>
+    <includes refid="al_byaml_container_header_8h" local="no">Yaml/alByamlContainerHeader.h</includes>
+    <includes refid="al_byaml_data_8h" local="no">Yaml/alByamlData.h</includes>
+    <includes refid="al_byaml_hash_iter_8h" local="no">Yaml/alByamlHashIter.h</includes>
+    <includes refid="al_byaml_header_8h" local="no">Yaml/alByamlHeader.h</includes>
+    <includes refid="al_byaml_iter_8h" local="no">Yaml/alByamlIter.h</includes>
+    <includes refid="al_byaml_string_table_iter_8h" local="no">Yaml/alByamlStringTableIter.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Yaml/alByamlContainerHeader.h</label>
+        <link refid="al_byaml_container_header_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Yaml/alByamlData.h</label>
+        <link refid="al_byaml_data_8h"/>
+      </node>
+      <node id="4">
+        <label>Yaml/alByamlHashIter.h</label>
+        <link refid="al_byaml_hash_iter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Yaml/alByamlHeader.h</label>
+        <link refid="al_byaml_header_8h"/>
+      </node>
+      <node id="6">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="7">
+        <label>Yaml/alByamlStringTableIter.h</label>
+        <link refid="al_byaml_string_table_iter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alByamlIter.cpp</label>
+        <link refid="al_byaml_iter_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_container_header_8h" kindref="compound">Yaml/alByamlContainerHeader.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_data_8h" kindref="compound">Yaml/alByamlData.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_hash_iter_8h" kindref="compound">Yaml/alByamlHashIter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_header_8h" kindref="compound">Yaml/alByamlHeader.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_iter_8h" kindref="compound">Yaml/alByamlIter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_string_table_iter_8h" kindref="compound">Yaml/alByamlStringTableIter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classal_1_1_byaml_iter_1afc232e09e80250e3104ac1c6caf7737c" refkind="member"><highlight class="normal"><ref refid="classal_1_1_byaml_iter_1afc232e09e80250e3104ac1c6caf7737c" kindref="member">ByamlIter::ByamlIter</ref>()<sp/>:<sp/>mData(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mRootNode(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_byaml_iter_1ac3f988fc67b572579a753829371c97f1" refkind="member"><highlight class="normal"><ref refid="classal_1_1_byaml_iter_1afc232e09e80250e3104ac1c6caf7737c" kindref="member">ByamlIter::ByamlIter</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">other</ref><sp/>)<sp/>:<sp/>mData(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">other</ref>.mData<sp/>),<sp/>mRootNode(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">other</ref>.mRootNode<sp/>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classal_1_1_byaml_iter_1ac2cce3e98a258dce44abc6616b15116a" refkind="member"><highlight class="normal"><ref refid="classal_1_1_byaml_iter_1afc232e09e80250e3104ac1c6caf7737c" kindref="member">ByamlIter::ByamlIter</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>)<sp/>:<sp/>mData(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>),<sp/>mRootNode(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1afefa946138b3b85ab840e4841de498d2" kindref="member">mData</ref><sp/>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="namespaceal_byaml_local_util_1a968ddd0b147c6eee76f6fe7affd956ad" kindref="member">alByamlLocalUtil::verifiByaml</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter_1afefa946138b3b85ab840e4841de498d2" kindref="member">mData</ref><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter_1a073c770e511079a2e689a7a9429a4c23" kindref="member">mRootNode</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">offset</ref><sp/>=<sp/><ref refid="classal_1_1_byaml_iter_1a8cf0e4ca628598cd29ef5dcd8f098fae" kindref="member">mHeader</ref>-&gt;getDataOffset();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">offset</ref><sp/>!=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter_1a073c770e511079a2e689a7a9429a4c23" kindref="member">mRootNode</ref><sp/>=<sp/><ref refid="classal_1_1_byaml_iter_1afefa946138b3b85ab840e4841de498d2" kindref="member">mData</ref><sp/>+<sp/>this-&gt;<ref refid="classal_1_1_byaml_iter_1a8cf0e4ca628598cd29ef5dcd8f098fae" kindref="member">mHeader</ref>-&gt;getDataOffset();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classal_1_1_byaml_iter_1a151baeca55d7b44b5f2dbc984da7cc7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a151baeca55d7b44b5f2dbc984da7cc7f" kindref="member">ByamlIter::isValid</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1afefa946138b3b85ab840e4841de498d2" kindref="member">mData</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classal_1_1_byaml_iter_1a7e384e30f50d089f23a2b078b8c80e13" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a7e384e30f50d089f23a2b078b8c80e13" kindref="member">ByamlIter::getSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="41"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1a5155e34a1db0c8863c3505a01b791fd5" kindref="member">isTypeContainer</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref>-&gt;getCount();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classal_1_1_byaml_iter_1a4e2815eda924597e46ee0b691a991bc7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a4e2815eda924597e46ee0b691a991bc7" kindref="member">ByamlIter::isTypeArray</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="48"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43a6cd3cf065b24a30280940d6c807184a5" kindref="member">ByamlDataType_Array</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classal_1_1_byaml_iter_1a18b763ed1cd53219c155a74e9b65922c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a18b763ed1cd53219c155a74e9b65922c" kindref="member">ByamlIter::isTypeHash</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43a79e20d853dad814b4da5bc5a7f5b073f" kindref="member">ByamlDataType_Hash</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classal_1_1_byaml_iter_1a5155e34a1db0c8863c3505a01b791fd5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a5155e34a1db0c8863c3505a01b791fd5" kindref="member">ByamlIter::isTypeContainer</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43a6cd3cf065b24a30280940d6c807184a5" kindref="member">ByamlDataType_Array</ref><sp/>||</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter_1a9e9c9025b73607922fc8ee8424911a87" kindref="member">mContainerHeader</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43a79e20d853dad814b4da5bc5a7f5b073f" kindref="member">ByamlDataType_Hash</ref><sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classal_1_1_byaml_iter_1a29d906706ca0a5afa1ccdd58d760a774" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a29d906706ca0a5afa1ccdd58d760a774" kindref="member">ByamlIter::getKeyIndex</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="64"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_string_table_iter" kindref="compound">ByamlStringTableIter</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">iter</ref>(<sp/><ref refid="classal_1_1_byaml_iter_1afefa946138b3b85ab840e4841de498d2" kindref="member">mData</ref><sp/>+<sp/><ref refid="classal_1_1_byaml_iter_1a8cf0e4ca628598cd29ef5dcd8f098fae" kindref="member">mHeader</ref>-&gt;getHashKeyTableOffset()<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">iter</ref>.findStringIndex(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classal_1_1_byaml_iter_1abf2fa8e0ba0a813e91501f8cdf3f8cee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1abf2fa8e0ba0a813e91501f8cdf3f8cee" kindref="member">ByamlIter::getByamlDataByKey</ref>(<sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="73"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1a18b763ed1cd53219c155a74e9b65922c" kindref="member">isTypeHash</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">keyIndex</ref><sp/>=<sp/><ref refid="classal_1_1_byaml_iter_1a29d906706ca0a5afa1ccdd58d760a774" kindref="member">getKeyIndex</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">keyIndex</ref><sp/>&gt;<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_hash_iter" kindref="compound">ByamlHashIter</ref>(<sp/><ref refid="classal_1_1_byaml_iter_1a073c770e511079a2e689a7a9429a4c23" kindref="member">mRootNode</ref><sp/>).<ref refid="classal_1_1_byaml_hash_iter_1a23ff1052147dd873eba3f53ce0ef995a" kindref="member">getDataByKey</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">keyIndex</ref><sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classal_1_1_byaml_iter_1a0d09bfc4bef0b6bb30e4b82f440ff666" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a0d09bfc4bef0b6bb30e4b82f440ff666" kindref="member">ByamlIter::tryGetBoolByKey</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="85"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1abf2fa8e0ba0a813e91501f8cdf3f8cee" kindref="member">getByamlDataByKey</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a51a85e25005955dbaa6d9b129dba93f9" kindref="member">tryConvertBool</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classal_1_1_byaml_iter_1aac6751d32ee113f9663f7307e6732450" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1aac6751d32ee113f9663f7307e6732450" kindref="member">ByamlIter::tryGetIntByKey</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="94"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1abf2fa8e0ba0a813e91501f8cdf3f8cee" kindref="member">getByamlDataByKey</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1ac0d1b0c75dc289bffaf55b1f73b354d8" kindref="member">tryConvertInt</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classal_1_1_byaml_iter_1a0ac4aae13471b10764d1aec88744e058" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a0ac4aae13471b10764d1aec88744e058" kindref="member">ByamlIter::tryGetFloatByKey</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_byaml_iter_1abf2fa8e0ba0a813e91501f8cdf3f8cee" kindref="member">getByamlDataByKey</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">key</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a63755048e967610265abae06e063754c" kindref="member">tryConvertFloat</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classal_1_1_byaml_iter_1a51a85e25005955dbaa6d9b129dba93f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a51a85e25005955dbaa6d9b129dba93f9" kindref="member">ByamlIter::tryConvertBool</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="114"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43ac78a70d93aaa64bdfa3badd208a28449" kindref="member">ByamlDataType_Int</ref><sp/>||<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43af0df2a99587d58f9cc944b285ae6ee54" kindref="member">ByamlDataType_Bool</ref><sp/>)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getIntValue();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classal_1_1_byaml_iter_1ac0d1b0c75dc289bffaf55b1f73b354d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1ac0d1b0c75dc289bffaf55b1f73b354d8" kindref="member">ByamlIter::tryConvertInt</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="126"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43ac78a70d93aaa64bdfa3badd208a28449" kindref="member">ByamlDataType_Int</ref><sp/>)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getIntValue();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classal_1_1_byaml_iter_1a63755048e967610265abae06e063754c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter_1a63755048e967610265abae06e063754c" kindref="member">ByamlIter::tryConvertFloat</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_data" kindref="compound">ByamlData</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref><sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="138"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getType()<sp/>==<sp/><ref refid="namespaceal_1a9889f07b92ab0b391a87df72ef451a43aafcb7d4f345fe62d637b1336a82f9dd1" kindref="member">ByamlDataType_Float</ref><sp/>)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">data</ref>-&gt;getFloatValue();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Yaml/alByamlIter.cpp"/>
+  </compounddef>
+</doxygen>

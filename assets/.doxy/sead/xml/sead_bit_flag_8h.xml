@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_bit_flag_8h" kind="file" language="C++">
+    <compoundname>seadBitFlag.h</compoundname>
+    <includes refid="sead_raw_print_8h" local="no">basis/seadRawPrint.h</includes>
+    <includes refid="sead_types_8h" local="no">basis/seadTypes.h</includes>
+    <includedby refid="sead_controller_base_8h" local="no">seadControllerBase.h</includedby>
+    <includedby refid="sead_heap_8h" local="no">seadHeap.h</includedby>
+    <includedby refid="sead_method_tree_8h" local="no">seadMethodTree.h</includedby>
+    <includedby refid="sead_task_base_8h" local="no">seadTaskBase.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadBitFlag.h</label>
+        <link refid="sead_bit_flag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>nn/types.h</label>
+      </node>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadControllerBase.h</label>
+        <link refid="sead_controller_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="7">
+        <label>seadFileDevice.h</label>
+        <link refid="sead_file_device_8h"/>
+      </node>
+      <node id="13">
+        <label>seadCalculateTask.h</label>
+        <link refid="sead_calculate_task_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>seadHeapPolicies.h</label>
+        <link refid="sead_heap_policies_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>seadMethodTree.h</label>
+        <link refid="sead_method_tree_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>seadTaskBase.h</label>
+        <link refid="sead_task_base_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>seadTaskMgr.h</label>
+        <link refid="sead_task_mgr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadExpHeap.h</label>
+        <link refid="sead_exp_heap_8h"/>
+      </node>
+      <node id="8">
+        <label>seadFrameHeap.h</label>
+        <link refid="sead_frame_heap_8h"/>
+      </node>
+      <node id="5">
+        <label>seadHeap.h</label>
+        <link refid="sead_heap_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>seadHeapMgr.h</label>
+        <link refid="sead_heap_mgr_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadBitFlag.h</label>
+        <link refid="sead_bit_flag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>seadHeapMgr.cpp</label>
+        <link refid="sead_heap_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_bit_flag_util" prot="public">sead::BitFlagUtil</innerclass>
+    <innerclass refid="classsead_1_1_bit_flag" prot="public">sead::BitFlag</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_raw_print_8h" kindref="compound">basis/seadRawPrint.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_types_8h" kindref="compound">basis/seadTypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="classsead_1_1_bit_flag_util" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_bit_flag_util" kindref="compound">BitFlagUtil</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="classsead_1_1_bit_flag_util_1a1b6c3aa0d96f33fb43536344d92498a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1a1b6c3aa0d96f33fb43536344d92498a8" kindref="member">countOnBit</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>x);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classsead_1_1_bit_flag_util_1a87f28077c0f61582d47cb82ead199791" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1a87f28077c0f61582d47cb82ead199791" kindref="member">countContinuousOffBitFromRight</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>x)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1a1b6c3aa0d96f33fb43536344d92498a8" kindref="member">countOnBit</ref>((x<sp/>&amp;<sp/>-x)<sp/>-<sp/>1);<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_bit_flag_util_1aa37a64fb567f0ec95e109d037d5e2e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1aa37a64fb567f0ec95e109d037d5e2e4a" kindref="member">countRightOnBit</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit);</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_bit_flag_util_1adc50cd69ab0e11919df625ffcccf12c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1adc50cd69ab0e11919df625ffcccf12c3" kindref="member">findOnBitFromRight</ref>(<ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="20" refid="classsead_1_1_bit_flag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_bit_flag" kindref="compound">BitFlag</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classsead_1_1_bit_flag_1a38aef7249d6722716e9f93f9bb4ffaab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_bit_flag_1a38aef7249d6722716e9f93f9bb4ffaab" kindref="member">BitFlag</ref>()<sp/>:<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>(0)<sp/>{}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classsead_1_1_bit_flag_1aa01dee4ada01f73f0380a6a78f60f5bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_bit_flag_1aa01dee4ada01f73f0380a6a78f60f5bc" kindref="member">BitFlag</ref>(T<sp/>bits)<sp/>:<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>(bits)<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classsead_1_1_bit_flag_1a22a36bcde66ecbb02fb26ec758bedbe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>T()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classsead_1_1_bit_flag_1a1d5b354333b8891d5b86ed48f80e50c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a1d5b354333b8891d5b86ed48f80e50c3" kindref="member">makeAllZero</ref>()<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classsead_1_1_bit_flag_1ae77363a0c384c173d314f7aa9243534c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1ae77363a0c384c173d314f7aa9243534c" kindref="member">makeAllOne</ref>()<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>=<sp/>~T(0);<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classsead_1_1_bit_flag_1a9d61c9607771352dcfef381eed2dbc94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a9d61c9607771352dcfef381eed2dbc94" kindref="member">setDirect</ref>(T<sp/>bits)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>=<sp/>bits;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classsead_1_1_bit_flag_1aaa1590cde88d71dbea602b77efedef2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_bit_flag_1aaa1590cde88d71dbea602b77efedef2d" kindref="member">getDirect</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classsead_1_1_bit_flag_1a12b035f39d8dc6f1a45efed19afc2a7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="classsead_1_1_bit_flag_1a12b035f39d8dc6f1a45efed19afc2a7f" kindref="member">getPtr</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classsead_1_1_bit_flag_1aa2de290237af1d42f85de463782bf6bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T*<sp/><ref refid="classsead_1_1_bit_flag_1aa2de290237af1d42f85de463782bf6bd" kindref="member">getPtr</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classsead_1_1_bit_flag_1aa2e8e89afa8ffcc530fe890ea969a1c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1aa2e8e89afa8ffcc530fe890ea969a1c4" kindref="member">getByteSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T);<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" kindref="member">set</ref>(T<sp/>val)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>|=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" kindref="member">reset</ref>(T<sp/>val)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>&amp;=<sp/>~val;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" kindref="member">toggle</ref>(T<sp/>val)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>^=<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" kindref="member">change</ref>(T<sp/>val,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(on)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" kindref="member">set</ref>(val);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" kindref="member">reset</ref>(val);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classsead_1_1_bit_flag_1ac55185db7e5c8b26b8472bd8651aa5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1ac55185db7e5c8b26b8472bd8651aa5e4" kindref="member">isZero</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>==<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" kindref="member">isOn</ref>(T<sp/>val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>&amp;<sp/>val)<sp/>!=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classsead_1_1_bit_flag_1ae6f5f4f5862de73dabaf0f3187785694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1ae6f5f4f5862de73dabaf0f3187785694" kindref="member">isOnAll</ref>(T<sp/>val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref><sp/>&amp;<sp/>val)<sp/>==<sp/>val;<sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" kindref="member">isOff</ref>(T<sp/>val)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" kindref="member">isOn</ref>(val);<sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" kindref="member">testAndClear</ref>(T<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" kindref="member">isOn</ref>(val))</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" kindref="member">reset</ref>(val);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>what<sp/>is<sp/>this<sp/>even<sp/>supposed<sp/>to<sp/>do?<sp/>(This<sp/>function<sp/>is<sp/>known<sp/>to<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>because<sp/>it<sp/>is<sp/>present<sp/>in<sp/>debug<sp/>info<sp/>for<sp/>pead<sp/>in<sp/>Super<sp/>Mario<sp/>Run.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classsead_1_1_bit_flag_1a16e03730dd924824e3b26a8456a39841" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_bit_flag_1a16e03730dd924824e3b26a8456a39841" kindref="member">getMask</ref>(T<sp/>v)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/><ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>T(1)<sp/>&lt;&lt;<sp/>bit;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classsead_1_1_bit_flag_1aa3a792c6d91ae4473a41e119d0e00c56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1aa3a792c6d91ae4473a41e119d0e00c56" kindref="member">setBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a07ed4f1c454948dd82b9b2abf313fa51" kindref="member">set</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit));<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classsead_1_1_bit_flag_1acab23e379103f5e25c594d7a7f6dfaea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1acab23e379103f5e25c594d7a7f6dfaea" kindref="member">resetBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a28cdbead68340217837812bbe1414818" kindref="member">reset</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit));<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classsead_1_1_bit_flag_1a448fe91daa6da9796abdfc376259ab65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a448fe91daa6da9796abdfc376259ab65" kindref="member">changeBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>on)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1ab4b119d546407b0f6c106986c7dadc02" kindref="member">change</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit),<sp/>on);<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classsead_1_1_bit_flag_1a88c6903f815b590f37ed063646e8401c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a88c6903f815b590f37ed063646e8401c" kindref="member">toggleBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)<sp/>{<sp/><ref refid="classsead_1_1_bit_flag_1a72dc6b7328413237763adb2ab16ad95f" kindref="member">toggle</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit));<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classsead_1_1_bit_flag_1a916bf4c07d8cb958cd4f7e8594992297" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a916bf4c07d8cb958cd4f7e8594992297" kindref="member">isOnBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a3085ed3688161d78d577d5e4106c5a20" kindref="member">isOn</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit));<sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classsead_1_1_bit_flag_1abcaa04d80851c7e1624f3aa9fd4888b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1abcaa04d80851c7e1624f3aa9fd4888b1" kindref="member">isOffBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1aa27646b1f52f86c134a24775064279fb" kindref="member">isOff</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit));<sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classsead_1_1_bit_flag_1ac0482fc6cad9b341811279d828932410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1ac0482fc6cad9b341811279d828932410" kindref="member">testAndClearBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1acb9af3e48c9aa498d1413d0eb13fed3f" kindref="member">testAndClear</ref>(<ref refid="classsead_1_1_bit_flag_1a2957b15343fd87be4b7e29ac5fc41a33" kindref="member">makeMask</ref>(bit));<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classsead_1_1_bit_flag_1af3018197c7b043138c3e19c47e830948" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1af3018197c7b043138c3e19c47e830948" kindref="member">countOnBit</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1a1b6c3aa0d96f33fb43536344d92498a8" kindref="member">BitFlagUtil::countOnBit</ref>(<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classsead_1_1_bit_flag_1ac2d9e2e7899779b49956d4aab7b210bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1ac2d9e2e7899779b49956d4aab7b210bc" kindref="member">countContinuousOffBitFromRight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1a87f28077c0f61582d47cb82ead199791" kindref="member">BitFlagUtil::countContinuousOffBitFromRight</ref>(<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classsead_1_1_bit_flag_1a1772a2e9a96f504140f22e5ca7a4bca0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a1772a2e9a96f504140f22e5ca7a4bca0" kindref="member">countRightOnBit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bit)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1aa37a64fb567f0ec95e109d037d5e2e4a" kindref="member">BitFlagUtil::countRightOnBit</ref>(<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>,<sp/>bit);<sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classsead_1_1_bit_flag_1a77aa971da3d2b092586eadf2cf0e4f39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_1a77aa971da3d2b092586eadf2cf0e4f39" kindref="member">findOnBitFromRight</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag_util_1adc50cd69ab0e11919df625ffcccf12c3" kindref="member">BitFlagUtil::findOnBitFromRight</ref>(<ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>,<sp/>num);<sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105" refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="classsead_1_1_bit_flag_1a3581271183d83757e0d069372e2d19d4" kindref="member">mBits</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="namespacesead_1ae4e4e2b9da5a35095090d45c87ce22ee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag" kindref="compound">BitFlag&lt;u8&gt;</ref><sp/><ref refid="namespacesead_1ae4e4e2b9da5a35095090d45c87ce22ee" kindref="member">BitFlag8</ref>;</highlight></codeline>
+<codeline lineno="109" refid="namespacesead_1a5100b128252aece64307e35083c8f56b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag" kindref="compound">BitFlag&lt;u16&gt;</ref><sp/><ref refid="namespacesead_1a5100b128252aece64307e35083c8f56b" kindref="member">BitFlag16</ref>;</highlight></codeline>
+<codeline lineno="110" refid="namespacesead_1a55d96beed0ac0184c69a3e02812e5fc8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsead_1_1_bit_flag" kindref="compound">BitFlag&lt;u32&gt;</ref><sp/><ref refid="namespacesead_1a55d96beed0ac0184c69a3e02812e5fc8" kindref="member">BitFlag32</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/prim/seadBitFlag.h"/>
+  </compounddef>
+</doxygen>

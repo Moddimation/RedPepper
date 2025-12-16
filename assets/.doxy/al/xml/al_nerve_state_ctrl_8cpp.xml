@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_nerve_state_ctrl_8cpp" kind="file" language="C++">
+    <compoundname>alNerveStateCtrl.cpp</compoundname>
+    <includes refid="al_nerve_state_base_8h" local="no">Nerve/alNerveStateBase.h</includes>
+    <includes refid="al_nerve_state_ctrl_8h" local="no">Nerve/alNerveStateCtrl.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>Nerve/alNerve.h</label>
+        <link refid="al_nerve_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Nerve/alNerveExecutor.h</label>
+        <link refid="al_nerve_executor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="2">
+        <label>Nerve/alNerveStateBase.h</label>
+        <link refid="al_nerve_state_base_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Nerve/alNerveStateCtrl.h</label>
+        <link refid="al_nerve_state_ctrl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alNerveStateCtrl.cpp</label>
+        <link refid="al_nerve_state_ctrl_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_state_base_8h" kindref="compound">Nerve/alNerveStateBase.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_nerve_state_ctrl_8h" kindref="compound">Nerve/alNerveStateCtrl.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classal_1_1_nerve_state_ctrl_1a7fdb46e5283660985d8f92f1af41c18b" refkind="member"><highlight class="normal"><ref refid="classal_1_1_nerve_state_ctrl_1a7fdb46e5283660985d8f92f1af41c18b" kindref="member">NerveStateCtrl::NerveStateCtrl</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">capacity</ref><sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>mCapacity(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">capacity</ref><sp/>),<sp/>mStateCount(<sp/>0<sp/>),<sp/>mStates(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mCurrentState(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a92498b2cf0da425921603638ee33d840" kindref="member">mStates</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve_state_ctrl_1_1_state" kindref="compound">State</ref>[<sp/><ref refid="classal_1_1_nerve_state_ctrl_1ac74dba3995676c1975c1dda48a0653b6" kindref="member">mCapacity</ref><sp/>];</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>=<sp/>0;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>&lt;<sp/><ref refid="classal_1_1_nerve_state_ctrl_1ac74dba3995676c1975c1dda48a0653b6" kindref="member">mCapacity</ref>;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref>++<sp/>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_nerve_state_ctrl_1_1_state" kindref="compound">State</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;<ref refid="classal_1_1_nerve_state_ctrl_1a92498b2cf0da425921603638ee33d840" kindref="member">mStates</ref>[<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref>-&gt;mState<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref>-&gt;mHostStateNerve<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref>-&gt;mName<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_nerve_state_ctrl_1ad51df69ee36a587616213a2d8d008db5" refkind="member"><highlight class="normal"><ref refid="structal_1_1_nerve_state_ctrl_1_1_state" kindref="compound">NerveStateCtrl::State</ref>*<sp/><ref refid="classal_1_1_nerve_state_ctrl_1ad51df69ee36a587616213a2d8d008db5" kindref="member">NerveStateCtrl::findStateInfo</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref><sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>=<sp/>0;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>&lt;<sp/><ref refid="classal_1_1_nerve_state_ctrl_1a362d0bb7acfdc6bfd89a41f0d8c716b7" kindref="member">mStateCount</ref>;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref>++<sp/>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structal_1_1_nerve_state_ctrl_1_1_state" kindref="compound">State</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref><sp/>=<sp/>&amp;<ref refid="classal_1_1_nerve_state_ctrl_1a92498b2cf0da425921603638ee33d840" kindref="member">mStates</ref>[<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref>-&gt;mHostStateNerve<sp/>==<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref><sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">state</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_nerve_state_ctrl_1abaeb3c5da31345111ae1152cf1e58a63" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_state_ctrl_1abaeb3c5da31345111ae1152cf1e58a63" kindref="member">NerveStateCtrl::startState</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref><sp/>)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref><sp/>=<sp/><ref refid="classal_1_1_nerve_state_ctrl_1ad51df69ee36a587616213a2d8d008db5" kindref="member">findStateInfo</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nerve</ref><sp/>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref><sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref>-&gt;<ref refid="structal_1_1_nerve_state_ctrl_1_1_state_1a3e674b87c4a9a6729a70b5993bec2127" kindref="member">mState</ref>-&gt;<ref refid="classal_1_1_nerve_state_base_1ac86e2e3a4edb303b64374308a8c2ac50" kindref="member">appear</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classal_1_1_nerve_state_ctrl_1a6da9a7ed8600607ff28d7bf09cdc34a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a6da9a7ed8600607ff28d7bf09cdc34a1" kindref="member">NerveStateCtrl::updateCurrentState</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref><sp/>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref>-&gt;<ref refid="structal_1_1_nerve_state_ctrl_1_1_state_1a3e674b87c4a9a6729a70b5993bec2127" kindref="member">mState</ref>-&gt;<ref refid="classal_1_1_nerve_state_base_1a30a0d8c9839a35a6cdccf807233f791f" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classal_1_1_nerve_state_ctrl_1a06c982f87081447c91a00bf48e8ccd74" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a06c982f87081447c91a00bf48e8ccd74" kindref="member">NerveStateCtrl::tryEndCurrentState</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!<ref refid="classal_1_1_nerve_state_ctrl_1aaa24137e739a4af222c5e0b325e7be1d" kindref="member">isCurrentStateEnd</ref>()<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref>-&gt;<ref refid="structal_1_1_nerve_state_ctrl_1_1_state_1a3e674b87c4a9a6729a70b5993bec2127" kindref="member">mState</ref>-&gt;<ref refid="classal_1_1_nerve_state_base_1aeadcaa107f8e66af0f4db9303d079593" kindref="member">kill</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classal_1_1_nerve_state_ctrl_1aaa24137e739a4af222c5e0b325e7be1d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_state_ctrl_1aaa24137e739a4af222c5e0b325e7be1d" kindref="member">NerveStateCtrl::isCurrentStateEnd</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref><sp/>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_nerve_state_ctrl_1a5e74b80947f4491598fca74d3e77ab71" kindref="member">mCurrentState</ref>-&gt;<ref refid="structal_1_1_nerve_state_ctrl_1_1_state_1a3e674b87c4a9a6729a70b5993bec2127" kindref="member">mState</ref>-&gt;<ref refid="classal_1_1_nerve_state_base_1ae421ab19701e705b91bc4b3027d4b16d" kindref="member">isDead</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Nerve/alNerveStateCtrl.cpp"/>
+  </compounddef>
+</doxygen>

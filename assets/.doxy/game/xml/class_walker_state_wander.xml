@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_walker_state_wander" kind="class" language="C++" prot="public">
+    <compoundname>WalkerStateWander</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">al::ActorStateBase</basecompoundref>
+    <includes refid="_walker_state_wander_8h" local="no">WalkerStateWander.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_walker_state_wander_1a13bcb3d662b284801687aab3cb47ecfa" prot="private" static="no" mutable="no">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f* WalkerStateWander::mFrontPtr</definition>
+        <argsstring></argsstring>
+        <name>mFrontPtr</name>
+        <qualifiedname>WalkerStateWander::mFrontPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/WalkerStateWander.h" line="11" column="38" bodyfile="Game/include/Enemy/WalkerStateWander.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_walker_state_wander_1ad03b198d907c56504cf275794d34cef1" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* WalkerStateWander::_14</definition>
+        <argsstring></argsstring>
+        <name>_14</name>
+        <qualifiedname>WalkerStateWander::_14</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/WalkerStateWander.h" line="12" column="38" bodyfile="Game/include/Enemy/WalkerStateWander.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_walker_state_wander_1a5333f9a3a7bb60165f504874441ee922" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_walker_state_param" kindref="compound">WalkerStateParam</ref> *</type>
+        <definition>const WalkerStateParam* WalkerStateWander::mWalkerParam</definition>
+        <argsstring></argsstring>
+        <name>mWalkerParam</name>
+        <qualifiedname>WalkerStateWander::mWalkerParam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/WalkerStateWander.h" line="13" column="38" bodyfile="Game/include/Enemy/WalkerStateWander.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_walker_state_wander_1a53fe4b36232728cd7ab51624f1a70fb6" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_walker_state_wander_param" kindref="compound">WalkerStateWanderParam</ref> *</type>
+        <definition>const WalkerStateWanderParam* WalkerStateWander::mWanderParam</definition>
+        <argsstring></argsstring>
+        <name>mWanderParam</name>
+        <qualifiedname>WalkerStateWander::mWanderParam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/WalkerStateWander.h" line="14" column="38" bodyfile="Game/include/Enemy/WalkerStateWander.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_walker_state_wander_1a95c1d1caa02a9560d78d2f725f7487e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WalkerStateWander::WalkerStateWander</definition>
+        <argsstring>(al::LiveActor *host, sead::Vector3f *frontPtr, const WalkerStateParam *walkerParam, const WalkerStateWanderParam *wanderParam)</argsstring>
+        <name>WalkerStateWander</name>
+        <qualifiedname>WalkerStateWander::WalkerStateWander</qualifiedname>
+        <param>
+          <type>al::LiveActor *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>sead::Vector3f *</type>
+          <declname>frontPtr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_walker_state_param" kindref="compound">WalkerStateParam</ref> *</type>
+          <declname>walkerParam</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_walker_state_wander_param" kindref="compound">WalkerStateWanderParam</ref> *</type>
+          <declname>wanderParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Enemy/WalkerStateWander.h" line="17" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>WalkerStateWander</label>
+        <link refid="class_walker_state_wander"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ActorStateBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>WalkerStateParam</label>
+        <link refid="class_walker_state_param"/>
+      </node>
+      <node id="1">
+        <label>WalkerStateWander</label>
+        <link refid="class_walker_state_wander"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mWalkerParam</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mWanderParam</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>WalkerStateWanderParam</label>
+        <link refid="class_walker_state_wander_param"/>
+      </node>
+      <node id="2">
+        <label>al::ActorStateBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Enemy/WalkerStateWander.h" line="8" column="1" bodyfile="Game/include/Enemy/WalkerStateWander.h" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_walker_state_wander_1ad03b198d907c56504cf275794d34cef1" prot="private" virt="non-virtual"><scope>WalkerStateWander</scope><name>_14</name></member>
+      <member refid="class_walker_state_wander_1a13bcb3d662b284801687aab3cb47ecfa" prot="private" virt="non-virtual"><scope>WalkerStateWander</scope><name>mFrontPtr</name></member>
+      <member refid="class_walker_state_wander_1a5333f9a3a7bb60165f504874441ee922" prot="private" virt="non-virtual"><scope>WalkerStateWander</scope><name>mWalkerParam</name></member>
+      <member refid="class_walker_state_wander_1a53fe4b36232728cd7ab51624f1a70fb6" prot="private" virt="non-virtual"><scope>WalkerStateWander</scope><name>mWanderParam</name></member>
+      <member refid="class_walker_state_wander_1a95c1d1caa02a9560d78d2f725f7487e9" prot="public" virt="non-virtual"><scope>WalkerStateWander</scope><name>WalkerStateWander</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_actor_state_base" kind="class" language="C++" prot="public">
+    <compoundname>al::ActorStateBase</compoundname>
+    <basecompoundref refid="classal_1_1_nerve_state_base" prot="public" virt="non-virtual">al::NerveStateBase</basecompoundref>
+    <includes refid="al_actor_state_base_8h" local="no">alActorStateBase.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classal_1_1_actor_state_base_1a528701b3019190cfdacbd90d5b1eb1ea" prot="protected" static="no" mutable="no">
+        <type><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref> *<ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref></type>
+        <definition>LiveActor* const al::ActorStateBase::mHost</definition>
+        <argsstring></argsstring>
+        <name>mHost</name>
+        <qualifiedname>al::ActorStateBase::mHost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alActorStateBase.h" line="12" column="25" bodyfile="lib/al/include/Nerve/alActorStateBase.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_actor_state_base_1a9c0c134f2e7ea6c0a8c5a66d6a1692b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>al::ActorStateBase::ActorStateBase</definition>
+        <argsstring>(const char *name, LiveActor *host)</argsstring>
+        <name>ActorStateBase</name>
+        <qualifiedname>al::ActorStateBase::ActorStateBase</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref> *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alActorStateBase.h" line="15" column="9" bodyfile="lib/al/include/Nerve/alActorStateBase.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>al::ActorStateBase</label>
+        <link refid="classal_1_1_actor_state_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="3">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>JMapData</label>
+        <link refid="struct_j_map_data"/>
+      </node>
+      <node id="24">
+        <label>JMapInfo</label>
+        <link refid="class_j_map_info"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>al::ActionAnimCtrl</label>
+        <link refid="classal_1_1_action_anim_ctrl"/>
+      </node>
+      <node id="18">
+        <label>al::ActorActionKeeper</label>
+        <link refid="classal_1_1_actor_action_keeper"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mActionAnimCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>al::ActorExecuteInfo</label>
+        <link refid="classal_1_1_actor_execute_info"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mRequestKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>al::ActorPoseKeeperBase</label>
+        <link refid="classal_1_1_actor_pose_keeper_base"/>
+      </node>
+      <node id="1">
+        <label>al::ActorStateBase</label>
+        <link refid="classal_1_1_actor_state_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>al::AnimInfoTable</label>
+        <link refid="classal_1_1_anim_info_table"/>
+      </node>
+      <node id="29">
+        <label>al::AnimPlayerSimple</label>
+        <link refid="classal_1_1_anim_player_simple"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mAnimInfoTable</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>al::AnimPlayerSkl</label>
+        <link refid="classal_1_1_anim_player_skl"/>
+      </node>
+      <node id="33">
+        <label>al::AudioKeeper</label>
+        <link refid="classal_1_1_audio_keeper"/>
+      </node>
+      <node id="20">
+        <label>al::Collider</label>
+        <link refid="classal_1_1_collider"/>
+      </node>
+      <node id="21">
+        <label>al::CollisionParts</label>
+        <link refid="classal_1_1_collision_parts"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>_8</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mCollisionServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>al::EffectKeeper</label>
+        <link refid="classal_1_1_effect_keeper"/>
+      </node>
+      <node id="17">
+        <label>al::ExecuteRequestKeeper</label>
+        <link refid="classal_1_1_execute_request_keeper"/>
+      </node>
+      <node id="31">
+        <label>al::HitSensorKeeper</label>
+        <link refid="classal_1_1_hit_sensor_keeper"/>
+      </node>
+      <node id="13">
+        <label>al::IUseAudioKeeper</label>
+        <link refid="classal_1_1_i_use_audio_keeper"/>
+      </node>
+      <node id="12">
+        <label>al::IUseEffectKeeper</label>
+        <link refid="classal_1_1_i_use_effect_keeper"/>
+      </node>
+      <node id="4">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="14">
+        <label>al::IUseStageSwitch</label>
+        <link refid="classal_1_1_i_use_stage_switch"/>
+      </node>
+      <node id="23">
+        <label>al::KCollisionHeader</label>
+        <link refid="structal_1_1_k_collision_header"/>
+      </node>
+      <node id="22">
+        <label>al::KCollisionServer</label>
+        <link refid="classal_1_1_k_collision_server"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mAttributeInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1_live_actor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mActorPoseKeeper</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mActorExecuteInfo</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mActorActionKeeper</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mCollider</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mCollisionParts</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mModelKeeper</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mHitSensorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mEffectKeeper</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mAudioKeeper</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>mStageSwitchKeeper</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>mRailKeeper</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>mShadowKeeper</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>mSubActorKeeper</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>mLiveActorFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>al::LiveActorFlag</label>
+        <link refid="structal_1_1_live_actor_flag"/>
+      </node>
+      <node id="26">
+        <label>al::ModelKeeper</label>
+        <link refid="classal_1_1_model_keeper"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="10">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::NerveActionCtrl</label>
+        <link refid="classal_1_1_nerve_action_ctrl"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mNerveActions</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1_nerve_keeper"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mEndNerve</edgelabel>
+          <edgelabel>mNerve</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mStateCtrl</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mActionCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::NerveStateCtrl</label>
+        <link refid="classal_1_1_nerve_state_ctrl"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mCurrentState</edgelabel>
+          <edgelabel>mStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::NerveStateCtrl::State</label>
+        <link refid="structal_1_1_nerve_state_ctrl_1_1_state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>al::Rail</label>
+        <link refid="classal_1_1_rail"/>
+      </node>
+      <node id="36">
+        <label>al::RailKeeper</label>
+        <link refid="classal_1_1_rail_keeper"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>mRailRider</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>al::RailRider</label>
+        <link refid="classal_1_1_rail_rider"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>mRail</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>al::ShadowKeeper</label>
+        <link refid="classal_1_1_shadow_keeper"/>
+      </node>
+      <node id="35">
+        <label>al::StageSwitchAccesser</label>
+        <link refid="classal_1_1_stage_switch_accesser"/>
+      </node>
+      <node id="34">
+        <label>al::StageSwitchKeeper</label>
+        <link refid="classal_1_1_stage_switch_keeper"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>mSwitches</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>al::SubActorKeeper</label>
+        <link refid="classal_1_1_sub_actor_keeper"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>alModelCtr</label>
+        <link refid="classal_model_ctr"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mSklAnimPlayer</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mMclAnimPlayer</edgelabel>
+          <edgelabel>mMtpAnimPlayer</edgelabel>
+          <edgelabel>mMtsAnimPlayer</edgelabel>
+          <edgelabel>mVisAnimPlayer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Nerve/alActorStateBase.h" line="9" column="1" bodyfile="lib/al/include/Nerve/alActorStateBase.h" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classal_1_1_actor_state_base_1a9c0c134f2e7ea6c0a8c5a66d6a1692b5" prot="public" virt="non-virtual"><scope>al::ActorStateBase</scope><name>ActorStateBase</name></member>
+      <member refid="classal_1_1_nerve_state_base_1ac86e2e3a4edb303b64374308a8c2ac50" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>appear</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a88ab7f05f7ea17fa8795da4fe8b18707" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>control</name></member>
+      <member refid="classal_1_1_nerve_executor_1a690ab4d04c68a234537871a10dc0bd7a" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>getNerveKeeper</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a590b05a950296657f7f5d6ecb1487297" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>init</name></member>
+      <member refid="classal_1_1_nerve_executor_1a19465d1ed2537887d53fb843445f6710" prot="public" virt="non-virtual"><scope>al::ActorStateBase</scope><name>initNerve</name></member>
+      <member refid="classal_1_1_nerve_state_base_1ae421ab19701e705b91bc4b3027d4b16d" prot="public" virt="non-virtual"><scope>al::ActorStateBase</scope><name>isDead</name></member>
+      <member refid="classal_1_1_nerve_state_base_1aeadcaa107f8e66af0f4db9303d079593" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>kill</name></member>
+      <member refid="classal_1_1_actor_state_base_1a528701b3019190cfdacbd90d5b1eb1ea" prot="protected" virt="non-virtual"><scope>al::ActorStateBase</scope><name>mHost</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a13890e21d49521b00151cfada4ac968c" prot="private" virt="non-virtual"><scope>al::ActorStateBase</scope><name>mIsDead</name></member>
+      <member refid="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" prot="private" virt="non-virtual"><scope>al::ActorStateBase</scope><name>mNerveKeeper</name></member>
+      <member refid="classal_1_1_nerve_executor_1a83059687727fd903b90fdd321baf0b7b" prot="public" virt="non-virtual"><scope>al::ActorStateBase</scope><name>NerveExecutor</name></member>
+      <member refid="classal_1_1_nerve_state_base_1af96feac7e1e08708231038b427424ce8" prot="public" virt="non-virtual"><scope>al::ActorStateBase</scope><name>NerveStateBase</name></member>
+      <member refid="classal_1_1_nerve_state_base_1a30a0d8c9839a35a6cdccf807233f791f" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>update</name></member>
+      <member refid="classal_1_1_nerve_executor_1a99c75085308c72cbdee3fdbb6c4e1660" prot="public" virt="non-virtual"><scope>al::ActorStateBase</scope><name>updateNerve</name></member>
+      <member refid="classal_1_1_nerve_executor_1afe58c1f379540e3436e4ac0678b61991" prot="public" virt="virtual"><scope>al::ActorStateBase</scope><name>~NerveExecutor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

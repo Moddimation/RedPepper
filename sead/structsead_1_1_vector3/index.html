@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Struct sead::Vector3 - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="struct-seadvector3">Struct sead::Vector3</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>Vector3</strong></a></p>
+<ul>
+<li><code>#include &lt;seadVector.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: Policies::Vec3Base</p>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef <a href="../classsead_1_1_policies/"><strong>Policies</strong></a>&lt; T &gt;::Mtx33Base</td>
+<td style="text-align: left;"><a href="#typedef-mtx33"><strong>Mtx33</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">typedef <a href="../classsead_1_1_policies/"><strong>Policies</strong></a>&lt; T &gt;::Mtx34Base</td>
+<td style="text-align: left;"><a href="#typedef-mtx34"><strong>Mtx34</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes">Public Static Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a></td>
+<td style="text-align: left;"><a href="#variable-ex-13"><strong>ex</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a></td>
+<td style="text-align: left;"><a href="#variable-ey-13"><strong>ey</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a></td>
+<td style="text-align: left;"><a href="#variable-ez-13"><strong>ez</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a></td>
+<td style="text-align: left;"><a href="#variable-ones-13"><strong>ones</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a></td>
+<td style="text-align: left;"><a href="#variable-zero-13"><strong>zero</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-vector3-12"><strong>Vector3</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-vector3-22"><strong>Vector3</strong></a> (T x, T y, T z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-add"><strong>add</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-dot"><strong>dot</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; t) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-equals"><strong>equals</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; rhs, T epsilon=0) const<br><em>Checks if the differences of all components of lhs and rhs are within</em> <code>epsilon</code> <em>.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ex-23"><strong>ex</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ex-33"><strong>ex</strong></a> (1. 0f, 0. 0f, 0. 0f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ey-23"><strong>ey</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ey-33"><strong>ey</strong></a> (0. 0f, 1. 0f, 0. 0f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ez-23"><strong>ez</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ez-33"><strong>ez</strong></a> (0. 0f, 0. 0f, 1. 0f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-length"><strong>length</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-mul-12"><strong>mul</strong></a> (const <a href="./#typedef-mtx33"><strong>Mtx33</strong></a> &amp; m) <br><em>Multiply m by this vector (self = m * self).</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-mul-22"><strong>mul</strong></a> (const <a href="./#typedef-mtx34"><strong>Mtx34</strong></a> &amp; m) <br><em>Apply a transformation</em> <code>m</code> <em>(rotation + translation) to this vector.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-multscalar"><strong>multScalar</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-normalize"><strong>normalize</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ones-23"><strong>ones</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ones-33"><strong>ones</strong></a> (1. 0f, 1. 0f, 1. 0f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-operator"><strong>operator!=</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; rhs) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_1"><strong>operator*=</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_2"><strong>operator*=</strong></a> (const <a href="./#typedef-mtx33"><strong>Mtx33</strong></a> &amp; m) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_3"><strong>operator*=</strong></a> (const <a href="./#typedef-mtx34"><strong>Mtx34</strong></a> &amp; m) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_4"><strong>operator+=</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a></td>
+<td style="text-align: left;"><a href="#function-operator-"><strong>operator-</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator-_1"><strong>operator-=</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_5"><strong>operator/=</strong></a> (T t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./"><strong>Vector3</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_6"><strong>operator=</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-operator_7"><strong>operator==</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; rhs) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set-12"><strong>set</strong></a> (const <a href="./"><strong>Vector3</strong></a> &amp; other) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set-22"><strong>set</strong></a> (T x, T y, T z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setcross"><strong>setCross</strong></a> (const <a href="./"><strong>Vector3</strong></a>&lt; T &gt; &amp; a, const <a href="./"><strong>Vector3</strong></a>&lt; T &gt; &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setmul-12"><strong>setMul</strong></a> (const <a href="./#typedef-mtx33"><strong>Mtx33</strong></a> &amp; m, const <a href="./"><strong>Vector3</strong></a> &amp; a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setmul-22"><strong>setMul</strong></a> (const <a href="./#typedef-mtx34"><strong>Mtx34</strong></a> &amp; m, const <a href="./"><strong>Vector3</strong></a> &amp; a) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setscaleadd"><strong>setScaleAdd</strong></a> (T t, const <a href="./"><strong>Vector3</strong></a>&lt; T &gt; &amp; a, const <a href="./"><strong>Vector3</strong></a>&lt; T &gt; &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-squaredlength"><strong>squaredLength</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-zero-23"><strong>zero</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-zero-33"><strong>zero</strong></a> (0. 0f, 0. 0f, 0. 0f) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="typedef-mtx33">typedef Mtx33</h3>
+<pre><code class="language-C++">typedef Policies&lt;T&gt;::Mtx33Base sead::Vector3&lt; T &gt;::Mtx33;
+</code></pre>
+<hr>
+
+<h3 id="typedef-mtx34">typedef Mtx34</h3>
+<pre><code class="language-C++">typedef Policies&lt;T&gt;::Mtx34Base sead::Vector3&lt; T &gt;::Mtx34;
+</code></pre>
+<hr>
+<h2 id="public-static-attributes-documentation">Public Static Attributes Documentation</h2>
+<h3 id="variable-ex-13">variable ex [1/3]</h3>
+<pre><code class="language-C++">const Vector3 sead::Vector3&lt; T &gt;::ex;
+</code></pre>
+<hr>
+
+<h3 id="variable-ey-13">variable ey [1/3]</h3>
+<pre><code class="language-C++">const Vector3 sead::Vector3&lt; T &gt;::ey;
+</code></pre>
+<hr>
+
+<h3 id="variable-ez-13">variable ez [1/3]</h3>
+<pre><code class="language-C++">const Vector3 sead::Vector3&lt; T &gt;::ez;
+</code></pre>
+<hr>
+
+<h3 id="variable-ones-13">variable ones [1/3]</h3>
+<pre><code class="language-C++">const Vector3 sead::Vector3&lt; T &gt;::ones;
+</code></pre>
+<hr>
+
+<h3 id="variable-zero-13">variable zero [1/3]</h3>
+<pre><code class="language-C++">const Vector3 sead::Vector3&lt; T &gt;::zero;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-vector3-12">function Vector3 [1/2]</h3>
+<pre><code class="language-C++">inline sead::Vector3::Vector3 () 
+</code></pre>
+<p><strong>Warning:</strong></p>
+<p>This constructor leaves member variables uninitialized. </p>
+<hr>
+
+<h3 id="function-vector3-22">function Vector3 [2/2]</h3>
+<pre><code class="language-C++">inline sead::Vector3::Vector3 (
+    T x,
+    T y,
+    T z
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-add">function add</h3>
+<pre><code class="language-C++">inline void sead::Vector3::add (
+    const Vector3 &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-dot">function dot</h3>
+<pre><code class="language-C++">inline T sead::Vector3::dot (
+    const Vector3 &amp; t
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-equals">function equals</h3>
+<p><em>Checks if the differences of all components of lhs and rhs are within</em> <code>epsilon</code> <em>.</em></p>
+<pre><code class="language-C++">inline bool sead::Vector3::equals (
+    const Vector3 &amp; rhs,
+    T epsilon=0
+) const
+</code></pre>
+<p>(i.e. -epsilon &lt;= lhs.x - rhs.x &lt;= epsilon, and so on). </p>
+<hr>
+
+<h3 id="function-ex-23">function ex [2/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ex () 
+</code></pre>
+<hr>
+
+<h3 id="function-ex-33">function ex [3/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ex (
+    1. 0f,
+    0. 0f,
+    0. 0f
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ey-23">function ey [2/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ey () 
+</code></pre>
+<hr>
+
+<h3 id="function-ey-33">function ey [3/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ey (
+    0. 0f,
+    1. 0f,
+    0. 0f
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ez-23">function ez [2/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ez () 
+</code></pre>
+<hr>
+
+<h3 id="function-ez-33">function ez [3/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ez (
+    0. 0f,
+    0. 0f,
+    1. 0f
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-length">function length</h3>
+<pre><code class="language-C++">inline T sead::Vector3::length () const
+</code></pre>
+<hr>
+
+<h3 id="function-mul-12">function mul [1/2]</h3>
+<p><em>Multiply m by this vector (self = m * self).</em> </p>
+<pre><code class="language-C++">inline void sead::Vector3::mul (
+    const Mtx33 &amp; m
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-mul-22">function mul [2/2]</h3>
+<p><em>Apply a transformation</em> <code>m</code> <em>(rotation + translation) to this vector.</em></p>
+<pre><code class="language-C++">inline void sead::Vector3::mul (
+    const Mtx34 &amp; m
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-multscalar">function multScalar</h3>
+<pre><code class="language-C++">inline void sead::Vector3::multScalar (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-normalize">function normalize</h3>
+<pre><code class="language-C++">inline T sead::Vector3::normalize () 
+</code></pre>
+<hr>
+
+<h3 id="function-ones-23">function ones [2/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ones () 
+</code></pre>
+<hr>
+
+<h3 id="function-ones-33">function ones [3/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::ones (
+    1. 0f,
+    1. 0f,
+    1. 0f
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator">function operator!=</h3>
+<pre><code class="language-C++">inline bool sead::Vector3::operator!= (
+    const Vector3 &amp; rhs
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-operator_1">function operator*=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator*= (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_2">function operator*=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator*= (
+    const Mtx33 &amp; m
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_3">function operator*=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator*= (
+    const Mtx34 &amp; m
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_4">function operator+=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator+= (
+    const Vector3 &amp; other
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator-">function operator-</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator- () const
+</code></pre>
+<hr>
+
+<h3 id="function-operator-_1">function operator-=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator-= (
+    const Vector3 &amp; other
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_5">function operator/=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator/= (
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_6">function operator=</h3>
+<pre><code class="language-C++">inline Vector3 &amp; sead::Vector3::operator= (
+    const Vector3 &amp; other
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_7">function operator==</h3>
+<pre><code class="language-C++">inline bool sead::Vector3::operator== (
+    const Vector3 &amp; rhs
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-set-12">function set [1/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3::set (
+    const Vector3 &amp; other
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-set-22">function set [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3::set (
+    T x,
+    T y,
+    T z
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setcross">function setCross</h3>
+<pre><code class="language-C++">inline void sead::Vector3::setCross (
+    const Vector3 &lt; T &gt; &amp; a,
+    const Vector3 &lt; T &gt; &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setmul-12">function setMul [1/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3::setMul (
+    const Mtx33 &amp; m,
+    const Vector3 &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setmul-22">function setMul [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Vector3::setMul (
+    const Mtx34 &amp; m,
+    const Vector3 &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setscaleadd">function setScaleAdd</h3>
+<pre><code class="language-C++">inline void sead::Vector3::setScaleAdd (
+    T t,
+    const Vector3 &lt; T &gt; &amp; a,
+    const Vector3 &lt; T &gt; &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-squaredlength">function squaredLength</h3>
+<pre><code class="language-C++">inline T sead::Vector3::squaredLength () const
+</code></pre>
+<hr>
+
+<h3 id="function-zero-23">function zero [2/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::zero () 
+</code></pre>
+<hr>
+
+<h3 id="function-zero-33">function zero [3/3]</h3>
+<pre><code class="language-C++">const Vector3 &lt; f32 &gt; sead::Vector3::zero (
+    0. 0f,
+    0. 0f,
+    0. 0f
+) 
+</code></pre>
+<hr>
+<h2 id="friends-documentation">Friends Documentation</h2>
+<h3 id="friend-operator">friend operator*</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator* (
+    const Vector3 &amp; a,
+    T t
+) 
+</code></pre>
+<hr>
+
+<h3 id="friend-operator_1">friend operator*</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator* (
+    T t,
+    const Vector3 &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="friend-operator_2">friend operator*</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator* (
+    const Mtx33 &amp; m,
+    const Vector3 &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="friend-operator_3">friend operator*</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator* (
+    const Mtx34 &amp; m,
+    const Vector3 &amp; a
+) 
+</code></pre>
+<hr>
+
+<h3 id="friend-operator_4">friend operator+</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator+ (
+    const Vector3 &amp; a,
+    const Vector3 &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="friend-operator-">friend operator-</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator- (
+    const Vector3 &amp; a,
+    const Vector3 &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="friend-operator_5">friend operator/</h3>
+<pre><code class="language-C++">inline Vector3 sead::Vector3::operator/ (
+    const Vector3 &amp; a,
+    T t
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/math/seadVector.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

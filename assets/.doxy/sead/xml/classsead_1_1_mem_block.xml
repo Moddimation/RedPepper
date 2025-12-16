@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_mem_block" kind="class" language="C++" prot="public">
+    <compoundname>sead::MemBlock</compoundname>
+    <includes refid="sead_mem_block_8h" local="no">seadMemBlock.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1_mem_block_1a4f14756528de89c8d8e89a139ed30f85" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_list_node" kindref="compound">ListNode</ref></type>
+        <definition>ListNode sead::MemBlock::mListNode</definition>
+        <argsstring></argsstring>
+        <name>mListNode</name>
+        <qualifiedname>sead::MemBlock::mListNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadMemBlock.h" line="15" column="14" bodyfile="lib/sead/include/heap/seadMemBlock.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_mem_block_1a02660bce87412903917324c8be6afa7d" compoundref="sead_mem_block_8h" startline="12" endline="12">getOffset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_mem_block_1afbae3dd50401e974c76c830ae4a98976" prot="protected" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 sead::MemBlock::mHeapCheckTag</definition>
+        <argsstring></argsstring>
+        <name>mHeapCheckTag</name>
+        <qualifiedname>sead::MemBlock::mHeapCheckTag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadMemBlock.h" line="16" column="9" bodyfile="lib/sead/include/heap/seadMemBlock.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_mem_block_1a231e92dbe31894280fd00f6dd127eb27" prot="protected" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 sead::MemBlock::mOffset</definition>
+        <argsstring></argsstring>
+        <name>mOffset</name>
+        <qualifiedname>sead::MemBlock::mOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadMemBlock.h" line="17" column="9" bodyfile="lib/sead/include/heap/seadMemBlock.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_mem_block_1adc025394466a7a6b01d16bb7ad3c1778" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t sead::MemBlock::mSize</definition>
+        <argsstring></argsstring>
+        <name>mSize</name>
+        <qualifiedname>sead::MemBlock::mSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadMemBlock.h" line="18" column="12" bodyfile="lib/sead/include/heap/seadMemBlock.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1_mem_block_1a19908a23e020fdf548dc5762a32975ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>static MemBlock * sead::MemBlock::FindManageArea</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>FindManageArea</name>
+        <qualifiedname>sead::MemBlock::FindManageArea</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadMemBlock.h" line="10" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_mem_block_1a02660bce87412903917324c8be6afa7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 sead::MemBlock::getOffset</definition>
+        <argsstring>()</argsstring>
+        <name>getOffset</name>
+        <qualifiedname>sead::MemBlock::getOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadMemBlock.h" line="12" column="16" bodyfile="lib/sead/include/heap/seadMemBlock.h" bodystart="12" bodyend="12"/>
+        <references refid="classsead_1_1_mem_block_1a4f14756528de89c8d8e89a139ed30f85" compoundref="sead_mem_block_8h" startline="15">mListNode</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::MemBlock</label>
+        <link refid="classsead_1_1_mem_block"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/heap/seadMemBlock.h" line="8" column="1" bodyfile="lib/sead/include/heap/seadMemBlock.h" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_mem_block_1a19908a23e020fdf548dc5762a32975ee" prot="public" virt="non-virtual"><scope>sead::MemBlock</scope><name>FindManageArea</name></member>
+      <member refid="classsead_1_1_mem_block_1a02660bce87412903917324c8be6afa7d" prot="public" virt="non-virtual"><scope>sead::MemBlock</scope><name>getOffset</name></member>
+      <member refid="classsead_1_1_mem_block_1afbae3dd50401e974c76c830ae4a98976" prot="protected" virt="non-virtual"><scope>sead::MemBlock</scope><name>mHeapCheckTag</name></member>
+      <member refid="classsead_1_1_mem_block_1a4f14756528de89c8d8e89a139ed30f85" prot="protected" virt="non-virtual"><scope>sead::MemBlock</scope><name>mListNode</name></member>
+      <member refid="classsead_1_1_mem_block_1a231e92dbe31894280fd00f6dd127eb27" prot="protected" virt="non-virtual"><scope>sead::MemBlock</scope><name>mOffset</name></member>
+      <member refid="classsead_1_1_mem_block_1adc025394466a7a6b01d16bb7ad3c1778" prot="protected" virt="non-virtual"><scope>sead::MemBlock</scope><name>mSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

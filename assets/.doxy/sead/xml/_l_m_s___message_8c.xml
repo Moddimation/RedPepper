@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_l_m_s___message_8c" kind="file" language="C++">
+    <compoundname>LMS_Message.c</compoundname>
+    <includes refid="_l_m_s___message_8h" local="yes">LMS/LMS_Message.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>LMS/LMS_Impl.h</label>
+        <link refid="_l_m_s___impl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LMS/LMS_Message.h</label>
+        <link refid="_l_m_s___message_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>LMS/LMS_Types.h</label>
+        <link refid="_l_m_s___types_8h"/>
+      </node>
+      <node id="1">
+        <label>LMS_Message.c</label>
+        <link refid="_l_m_s___message_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_text_header" prot="public">TextHeader</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_l_m_s___message_8c_1a12e569797e2f85b4efad89e8492e256c" prot="public" static="no">
+        <type>struct <ref refid="struct_text_header" kindref="compound">TextHeader</ref></type>
+        <definition>typedef struct TextHeader TextHeader</definition>
+        <argsstring></argsstring>
+        <name>TextHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Message.c" line="5" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_l_m_s___message_8c_1ae0f55cbd70b4593b9ae4f3952daddfa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref> *</type>
+        <definition>LMS_MessageBinary * LMS_InitMessage</definition>
+        <argsstring>(const void *data)</argsstring>
+        <name>LMS_InitMessage</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Message.c" line="7" column="19" bodyfile="lib/sead/addins/libms/src/LMS_Message.c" bodystart="7" bodyend="17"/>
+        <references refid="struct_l_m_s___message_binary_1a55751165f294b11ea684aceb9f7f3ce3" compoundref="_l_m_s___message_8h" startline="14">LMS_MessageBinary::attributesIndex</references>
+        <references refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" compoundref="_l_m_s___message_8h" startline="11">LMS_MessageBinary::common</references>
+        <references refid="struct_l_m_s___binary_1ac3ee903648603c5a0468d1fcc01b93f5" compoundref="_l_m_s___impl_8h" startline="33">LMS_Binary::data</references>
+        <references refid="struct_l_m_s___message_binary_1a9fffa6110788f0dea7a04ddc83cda30c" compoundref="_l_m_s___message_8h" startline="12">LMS_MessageBinary::labelsIndex</references>
+        <references refid="_l_m_s___impl_8h_1a892d9a6fbf2d0f6e8c18f90f6c16b529">LMSi_AnalyzeMessageBinary</references>
+        <references refid="_l_m_s___impl_8h_1add7fd62cdc2777d17ccbb9a842d149b0" compoundref="_l_m_s___impl_8c" startline="6" endline="9">LMSi_Malloc</references>
+        <references refid="_l_m_s___impl_8h_1aa1ca4d024acf669f6dacc9abfe2c1e60" compoundref="_l_m_s___impl_8c" startline="23" endline="36">LMSi_SearchBlockByName</references>
+        <references refid="struct_l_m_s___message_binary_1ad8504f7dba8691202b61f72445b9e745" compoundref="_l_m_s___message_8h" startline="15">LMS_MessageBinary::styleIndex</references>
+        <references refid="struct_l_m_s___message_binary_1a71c02173a44dfa0e321831812c62acf0" compoundref="_l_m_s___message_8h" startline="13">LMS_MessageBinary::textIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="_l_m_s___message_8c_1ac5fd84f546850f2a936ab93405d62f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LMS_GetTextNum</definition>
+        <argsstring>(LMS_MessageBinary *binary)</argsstring>
+        <name>LMS_GetTextNum</name>
+        <param>
+          <type><ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref> *</type>
+          <declname>binary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Message.c" line="19" column="5" bodyfile="lib/sead/addins/libms/src/LMS_Message.c" bodystart="19" bodyend="24"/>
+        <references refid="struct_l_m_s___binary_1a8e826dcd235bbbda090b847e3edae766" compoundref="_l_m_s___impl_8h" startline="37">LMS_Binary::blocks</references>
+        <references refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" compoundref="_l_m_s___message_8h" startline="11">LMS_MessageBinary::common</references>
+        <references refid="struct_l_m_s___binary_block_1abbf1ff4d4d5c690a398ab56e8e031279" compoundref="_l_m_s___impl_8h" startline="20">LMS_BinaryBlock::data</references>
+        <references refid="struct_l_m_s___message_binary_1a71c02173a44dfa0e321831812c62acf0" compoundref="_l_m_s___message_8h" startline="13">LMS_MessageBinary::textIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="_l_m_s___message_8c_1a269d039e72279e7c97f09958b13f0f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LMS_CloseMessage</definition>
+        <argsstring>(LMS_MessageBinary *binary)</argsstring>
+        <name>LMS_CloseMessage</name>
+        <param>
+          <type><ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref> *</type>
+          <declname>binary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/addins/libms/src/LMS_Message.c" line="26" column="6" bodyfile="lib/sead/addins/libms/src/LMS_Message.c" bodystart="26" bodyend="31"/>
+        <references refid="struct_l_m_s___binary_1a8e826dcd235bbbda090b847e3edae766" compoundref="_l_m_s___impl_8h" startline="37">LMS_Binary::blocks</references>
+        <references refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" compoundref="_l_m_s___message_8h" startline="11">LMS_MessageBinary::common</references>
+        <references refid="_l_m_s___impl_8h_1a60007b369204ade1fc34885110a53f8c" compoundref="_l_m_s___impl_8c" startline="11" endline="14">LMSi_Free</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_m_s___message_8h" kindref="compound">LMS/LMS_Message.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="struct_text_header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_text_header" kindref="compound">TextHeader</ref><sp/>{</highlight></codeline>
+<codeline lineno="4" refid="struct_text_header_1ae67c0189b17fc2e2f8c215ddca13dfbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___types_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="struct_text_header_1ae67c0189b17fc2e2f8c215ddca13dfbe" kindref="member">numMessages</ref>;</highlight></codeline>
+<codeline lineno="5" refid="_l_m_s___message_8c_1a12e569797e2f85b4efad89e8492e256c" refkind="member"><highlight class="normal">}<sp/><ref refid="struct_text_header" kindref="compound">TextHeader</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_l_m_s___message_8h_1ae0f55cbd70b4593b9ae4f3952daddfa0" refkind="member"><highlight class="normal"><ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref>*<sp/><ref refid="_l_m_s___message_8c_1ae0f55cbd70b4593b9ae4f3952daddfa0" kindref="member">LMS_InitMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref>*<sp/>msg<sp/>=<sp/><ref refid="_l_m_s___impl_8h_1add7fd62cdc2777d17ccbb9a842d149b0" kindref="member">LMSi_Malloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref>));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>.<ref refid="struct_l_m_s___binary_1ac3ee903648603c5a0468d1fcc01b93f5" kindref="member">data</ref><sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___impl_8h_1a892d9a6fbf2d0f6e8c18f90f6c16b529" kindref="member">LMSi_AnalyzeMessageBinary</ref>(&amp;msg-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>,<sp/></highlight><highlight class="stringliteral">&quot;MsgStdBn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="struct_l_m_s___message_binary_1a9fffa6110788f0dea7a04ddc83cda30c" kindref="member">labelsIndex</ref><sp/>=<sp/><ref refid="_l_m_s___impl_8h_1aa1ca4d024acf669f6dacc9abfe2c1e60" kindref="member">LMSi_SearchBlockByName</ref>(&amp;msg-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>,<sp/></highlight><highlight class="stringliteral">&quot;LBL1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="struct_l_m_s___message_binary_1a71c02173a44dfa0e321831812c62acf0" kindref="member">textIndex</ref><sp/>=<sp/><ref refid="_l_m_s___impl_8h_1aa1ca4d024acf669f6dacc9abfe2c1e60" kindref="member">LMSi_SearchBlockByName</ref>(&amp;msg-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>,<sp/></highlight><highlight class="stringliteral">&quot;TXT2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="struct_l_m_s___message_binary_1a55751165f294b11ea684aceb9f7f3ce3" kindref="member">attributesIndex</ref><sp/>=<sp/><ref refid="_l_m_s___impl_8h_1aa1ca4d024acf669f6dacc9abfe2c1e60" kindref="member">LMSi_SearchBlockByName</ref>(&amp;msg-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ATR1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>msg-&gt;<ref refid="struct_l_m_s___message_binary_1ad8504f7dba8691202b61f72445b9e745" kindref="member">styleIndex</ref><sp/>=<sp/><ref refid="_l_m_s___impl_8h_1aa1ca4d024acf669f6dacc9abfe2c1e60" kindref="member">LMSi_SearchBlockByName</ref>(&amp;msg-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>,<sp/></highlight><highlight class="stringliteral">&quot;TSY1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>msg;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_l_m_s___message_8h_1ac5fd84f546850f2a936ab93405d62f54" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___message_8c_1ac5fd84f546850f2a936ab93405d62f54" kindref="member">LMS_GetTextNum</ref>(<ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref>*<sp/>binary)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binary-&gt;<ref refid="struct_l_m_s___message_binary_1a71c02173a44dfa0e321831812c62acf0" kindref="member">textIndex</ref><sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((<ref refid="struct_text_header" kindref="compound">TextHeader</ref>*)binary-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>.<ref refid="struct_l_m_s___binary_1a8e826dcd235bbbda090b847e3edae766" kindref="member">blocks</ref>[binary-&gt;<ref refid="struct_l_m_s___message_binary_1a71c02173a44dfa0e321831812c62acf0" kindref="member">textIndex</ref>].<ref refid="struct_l_m_s___binary_block_1abbf1ff4d4d5c690a398ab56e8e031279" kindref="member">data</ref>)-&gt;numMessages;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_l_m_s___message_8h_1a269d039e72279e7c97f09958b13f0f6a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_l_m_s___message_8c_1a269d039e72279e7c97f09958b13f0f6a" kindref="member">LMS_CloseMessage</ref>(<ref refid="struct_l_m_s___message_binary" kindref="compound">LMS_MessageBinary</ref>*<sp/>binary)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binary-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>.<ref refid="struct_l_m_s___binary_1a8e826dcd235bbbda090b847e3edae766" kindref="member">blocks</ref>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_l_m_s___impl_8h_1a60007b369204ade1fc34885110a53f8c" kindref="member">LMSi_Free</ref>(binary-&gt;<ref refid="struct_l_m_s___message_binary_1a091254c27432ef0990caf6d49cd5add1" kindref="member">common</ref>.<ref refid="struct_l_m_s___binary_1a8e826dcd235bbbda090b847e3edae766" kindref="member">blocks</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_m_s___impl_8h_1a60007b369204ade1fc34885110a53f8c" kindref="member">LMSi_Free</ref>(binary);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/addins/libms/src/LMS_Message.c"/>
+  </compounddef>
+</doxygen>

@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/sources/fs
+# Dir fs
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**fs\_Api.cpp**](fs__Api_8cpp.md) <br> |
+| file | [**fs\_Api.cpp**](fs___api_8cpp.md) <br> |
 
 
 ## Directories

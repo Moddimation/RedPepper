@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_math_policies_8h" kind="file" language="C++">
+    <compoundname>seadMathPolicies.h</compoundname>
+    <includes local="no">nn/math/math_VEC3.h</includes>
+    <includes refid="sead_math_base_8h" local="no">math/seadMathBase.h</includes>
+    <includedby refid="sead_matrix_8h" local="no">seadMatrix.h</includedby>
+    <includedby refid="sead_matrix_calc_common_8h" local="no">seadMatrixCalcCommon.h</includedby>
+    <includedby refid="sead_quat_8h" local="no">seadQuat.h</includedby>
+    <includedby refid="sead_quat_calc_common_8h" local="no">seadQuatCalcCommon.h</includedby>
+    <includedby refid="sead_vector_8h" local="no">seadVector.h</includedby>
+    <includedby refid="sead_vector_calc_ctr_8h" local="no">seadVectorCalcCtr.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>math/seadMathBase.h</label>
+        <link refid="sead_math_base_8h"/>
+      </node>
+      <node id="1">
+        <label>seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>seadControllerBase.h</label>
+        <link refid="sead_controller_base_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="13">
+        <label>seadBoundBox.h</label>
+        <link refid="sead_bound_box_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>seadBoundBox.hpp</label>
+        <link refid="sead_bound_box_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadMatrix.h</label>
+        <link refid="sead_matrix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>seadMatrix.hpp</label>
+        <link refid="sead_matrix_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>seadMatrixCalcCommon.h</label>
+        <link refid="sead_matrix_calc_common_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>seadMatrixCalcCommon.hpp</label>
+        <link refid="sead_matrix_calc_common_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>seadQuat.h</label>
+        <link refid="sead_quat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>seadQuat.hpp</label>
+        <link refid="sead_quat_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>seadQuatCalcCommon.h</label>
+        <link refid="sead_quat_calc_common_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>seadQuatCalcCommon.hpp</label>
+        <link refid="sead_quat_calc_common_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadMatrix.cpp</label>
+        <link refid="sead_matrix_8cpp"/>
+      </node>
+      <node id="8">
+        <label>seadQuat.cpp</label>
+        <link refid="sead_quat_8cpp"/>
+      </node>
+      <node id="18">
+        <label>seadVector.cpp</label>
+        <link refid="sead_vector_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsead_1_1_policies" prot="public">sead::Policies</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <innernamespace refid="namespacenn_1_1math">nn::math</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nn/math/math_VEC3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_math_base_8h" kindref="compound">math/seadMathBase.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">nn::math;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="11" refid="classsead_1_1_policies" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsead_1_1_policies" kindref="compound">Policies</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="classsead_1_1_policies_1ac8355a82c05b108482057882b811822d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_vec2" kindref="compound">BaseVec2&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1ac8355a82c05b108482057882b811822d" kindref="member">Vec2Base</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classsead_1_1_policies_1af2e25a3bbef853b4ec5ca713e6ae1fb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VEC3<sp/><ref refid="classsead_1_1_policies_1af2e25a3bbef853b4ec5ca713e6ae1fb8" kindref="member">Vec3Base</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classsead_1_1_policies_1aa884cdf3904ca9f8946648541a4b912a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_vec4" kindref="compound">BaseVec4&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1aa884cdf3904ca9f8946648541a4b912a" kindref="member">Vec4Base</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classsead_1_1_policies_1a51389fdf4843e52550c7dd52c9732857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_quat" kindref="compound">BaseQuat&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1a51389fdf4843e52550c7dd52c9732857" kindref="member">QuatBase</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classsead_1_1_policies_1a0fb83512c1868a354aa08e5fa9861d43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_mtx22" kindref="compound">BaseMtx22&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1a0fb83512c1868a354aa08e5fa9861d43" kindref="member">Mtx22Base</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classsead_1_1_policies_1aeabdf0b8f1c406f6d0b110942db3d61b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_mtx33" kindref="compound">BaseMtx33&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1aeabdf0b8f1c406f6d0b110942db3d61b" kindref="member">Mtx33Base</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classsead_1_1_policies_1adddc5a34e8b985ef4be683daf1cc345d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_mtx34" kindref="compound">BaseMtx34&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1adddc5a34e8b985ef4be683daf1cc345d" kindref="member">Mtx34Base</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classsead_1_1_policies_1a3606bd25446c30a2f1dbb13aee75b754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_base_mtx44" kindref="compound">BaseMtx44&lt;T&gt;</ref><sp/><ref refid="classsead_1_1_policies_1a3606bd25446c30a2f1dbb13aee75b754" kindref="member">Mtx44Base</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/math/seadMathPolicies.h"/>
+  </compounddef>
+</doxygen>

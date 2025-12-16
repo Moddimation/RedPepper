@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/src/Sequence
+# Dir Sequence
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alSequence.cpp**](alSequence_8cpp.md) <br> |
+| file | [**alSequence.cpp**](al_sequence_8cpp.md) <br> |
 
 
 

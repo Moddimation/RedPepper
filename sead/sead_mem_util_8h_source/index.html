@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>File seadMemUtil.h - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="file-seadmemutilh">File seadMemUtil.h</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_f6d5c8d1d4c60cd689fcf859a6687fb0/"><strong>include</strong></a> <strong>&gt;</strong> <a href="../dir_1a578c5b4e159d1e927e1144c21e6f5b/"><strong>prim</strong></a> <strong>&gt;</strong> <a href="../sead_mem_util_8h/"><strong>seadMemUtil.h</strong></a></p>
+<p><a href="../sead_mem_util_8h/">Go to the documentation of this file</a></p>
+<pre><code class="language-C++">#ifndef SEAD_MEM_UTIL_H_
+#define SEAD_MEM_UTIL_H_
+
+#include &lt;basis/seadTypes.h&gt;
+
+namespace sead {
+class MemUtil {
+public:
+    static void* fill(void* ptr, u8 c, size_t size);
+    static void* fillZero(void* ptr, size_t size);
+    static void* copyOverlap(void* dest, const void* src, size_t size);
+    static void* copy(void* dest, const void* src, size_t size);
+    static void* copyAlign32(void* dest, const void* src, size_t size);
+    static int compare(const void* ptr1, const void* ptr2, size_t size);
+
+    static bool isStack(const void* addr);
+    static bool isHeap(const void* addr);
+
+    static bool checkFillType(const void* ptr, size_t size);
+
+    static void dumpMemoryBinary(const void* ptr, u32 size_front, u32 size_back, bool is_align);
+};
+}  // namespace sead
+
+#define SEAD_PRIM_MEM_UTIL_H_
+
+#ifdef NN_PLATFORM_CTR
+#include &lt;prim/ctr/seadMemUtilCtr.hpp&gt;
+
+#elif NN_PLATFORM_CAFE
+#include &lt;prim/cafe/seadMemUtilCafe.hpp&gt;
+
+#elif NNSDK
+#include &lt;prim/nin/seadMemUtilNin.hpp&gt;
+
+#else
+// #error &quot;Unknown platform&quot;
+#endif
+
+#undef SEAD_PRIM_MEM_UTIL_H_
+
+#endif  // SEAD_MEM_UTIL_H_
+</code></pre>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

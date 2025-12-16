@@ -1,0 +1,49 @@
+
+
+# File GhostPlayer.h
+
+[**File List**](files.md) **>** [**Game**](dir_c33286056d2acf479cd8641ef845fec1.md) **>** [**include**](dir_a56613a6b795b5624452287469afc550.md) **>** [**Player**](dir_1882120a760237323336d5e7b117deb2.md) **>** [**GhostPlayer.h**](_ghost_player_8h.md)
+
+[Go to the documentation of this file](_ghost_player_8h.md)
+
+
+```C++
+#pragma once
+
+#include <MapObj/alMapObjActor.h>
+
+class GhostPlayer : public al::MapObjActor
+{
+private:
+        void* _60;
+        bool  _64;
+        bool  _65;
+        bool  _66;
+        bool  _67;
+        bool  _68;
+        bool  _69;
+        bool  _6A;
+        bool  _6B;
+        bool  _6C;
+        int   _70;
+        int   _74;
+        int   _78;
+
+public:
+        void exeHide();
+        void exeBegin();
+        void exeNrv5();
+
+public:
+        virtual void init( const al::ActorInitInfo& info );
+        virtual void kill();
+        virtual void attackSensor( al::HitSensor* me, al::HitSensor* other );
+        virtual bool receiveMsg( u32 msg, al::HitSensor* other, al::HitSensor* me );
+        virtual void control();
+
+public:
+        GhostPlayer( const sead::SafeString& name );
+};
+```
+
+

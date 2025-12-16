@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_stage_switch_keeper_8h" kind="file" language="C++">
+    <compoundname>alStageSwitchKeeper.h</compoundname>
+    <includedby refid="al_area_obj_8cpp" local="no">alAreaObj.cpp</includedby>
+    <includedby refid="al_area_obj_8h" local="no">alAreaObj.h</includedby>
+    <includedby refid="al_live_actor_8h" local="no">alLiveActor.h</includedby>
+    <includedby refid="al_sky_8cpp" local="no">alSky.cpp</includedby>
+    <includedby refid="al_stage_switch_keeper_8cpp" local="no">alStageSwitchKeeper.cpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>alAreaObj.h</label>
+        <link refid="al_area_obj_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>alSwitchAreaDirector.h</label>
+        <link refid="al_switch_area_director_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>alActorFactory.h</label>
+        <link refid="al_actor_factory_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>alAreaObjFactory.h</label>
+        <link refid="al_area_obj_factory_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>alActorPoseFunction.h</label>
+        <link refid="al_actor_pose_function_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>alLiveActorGroup.h</label>
+        <link refid="al_live_actor_group_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>alClockMapParts.h</label>
+        <link refid="al_clock_map_parts_8h"/>
+      </node>
+      <node id="30">
+        <label>alFallMapParts.h</label>
+        <link refid="al_fall_map_parts_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>alFixMapParts.h</label>
+        <link refid="al_fix_map_parts_8h"/>
+      </node>
+      <node id="26">
+        <label>alMapObjActor.h</label>
+        <link refid="al_map_obj_actor_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>alBreakModel.h</label>
+        <link refid="al_break_model_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>alEffectObj.h</label>
+        <link refid="al_effect_obj_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>alSky.h</label>
+        <link refid="al_sky_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>alRailMoveMovement.h</label>
+        <link refid="al_rail_move_movement_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>alAreaObj.cpp</label>
+        <link refid="al_area_obj_8cpp"/>
+      </node>
+      <node id="43">
+        <label>alSwitchAreaDirector.cpp</label>
+        <link refid="al_switch_area_director_8cpp"/>
+      </node>
+      <node id="18">
+        <label>alCollisionUtil.cpp</label>
+        <link refid="al_collision_util_8cpp"/>
+      </node>
+      <node id="19">
+        <label>alExecuteTableHolder.cpp</label>
+        <link refid="al_execute_table_holder_8cpp"/>
+      </node>
+      <node id="8">
+        <label>alActorFactory.cpp</label>
+        <link refid="al_actor_factory_8cpp"/>
+      </node>
+      <node id="5">
+        <label>alAreaObjFactory.cpp</label>
+        <link refid="al_area_obj_factory_8cpp"/>
+      </node>
+      <node id="11">
+        <label>alActorInitInfo.cpp</label>
+        <link refid="al_actor_init_info_8cpp"/>
+      </node>
+      <node id="12">
+        <label>alActorInitUtil.cpp</label>
+        <link refid="al_actor_init_util_8cpp"/>
+      </node>
+      <node id="15">
+        <label>alActorPoseKeeper.cpp</label>
+        <link refid="al_actor_pose_keeper_8cpp"/>
+      </node>
+      <node id="20">
+        <label>alHitSensorKeeper.cpp</label>
+        <link refid="al_hit_sensor_keeper_8cpp"/>
+      </node>
+      <node id="21">
+        <label>alLiveActor.cpp</label>
+        <link refid="al_live_actor_8cpp"/>
+      </node>
+      <node id="22">
+        <label>alLiveActorFlag.cpp</label>
+        <link refid="al_live_actor_flag_8cpp"/>
+      </node>
+      <node id="14">
+        <label>alLiveActorFunction.cpp</label>
+        <link refid="al_live_actor_function_8cpp"/>
+      </node>
+      <node id="24">
+        <label>alLiveActorGroup.cpp</label>
+        <link refid="al_live_actor_group_8cpp"/>
+      </node>
+      <node id="25">
+        <label>alLiveActorKit.cpp</label>
+        <link refid="al_live_actor_kit_8cpp"/>
+      </node>
+      <node id="39">
+        <label>alSensorFunction.cpp</label>
+        <link refid="al_sensor_function_8cpp"/>
+      </node>
+      <node id="40">
+        <label>alSensorMsg.cpp</label>
+        <link refid="al_sensor_msg_8cpp"/>
+      </node>
+      <node id="41">
+        <label>alSubActorFunction.cpp</label>
+        <link refid="al_sub_actor_function_8cpp"/>
+      </node>
+      <node id="31">
+        <label>alFallMapParts.cpp</label>
+        <link refid="al_fall_map_parts_8cpp"/>
+      </node>
+      <node id="33">
+        <label>alMapObjActor.cpp</label>
+        <link refid="al_map_obj_actor_8cpp"/>
+      </node>
+      <node id="17">
+        <label>alBreakModel.cpp</label>
+        <link refid="al_break_model_8cpp"/>
+      </node>
+      <node id="29">
+        <label>alEffectObj.cpp</label>
+        <link refid="al_effect_obj_8cpp"/>
+      </node>
+      <node id="35">
+        <label>alSky.cpp</label>
+        <link refid="al_sky_8cpp"/>
+      </node>
+      <node id="36">
+        <label>alRailFunction.cpp</label>
+        <link refid="al_rail_function_8cpp"/>
+      </node>
+      <node id="38">
+        <label>alRailMoveMovement.cpp</label>
+        <link refid="al_rail_move_movement_8cpp"/>
+      </node>
+      <node id="9">
+        <label>alScene.cpp</label>
+        <link refid="al_scene_8cpp"/>
+      </node>
+      <node id="10">
+        <label>alSceneFunction.cpp</label>
+        <link refid="al_scene_function_8cpp"/>
+      </node>
+      <node id="44">
+        <label>alStageSwitchKeeper.cpp</label>
+        <link refid="al_stage_switch_keeper_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_stage_switch_keeper" prot="public">al::StageSwitchKeeper</innerclass>
+    <innerclass refid="classal_1_1_i_use_stage_switch" prot="public">al::IUseStageSwitch</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FunctorBase;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ActorInitInfo;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">StageSwitchAccesser;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classal_1_1_stage_switch_keeper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_stage_switch_keeper" kindref="compound">StageSwitchKeeper</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_stage_switch_keeper_1a8228758f6328f8dea2fabb5894c451b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_accesser" kindref="compound">StageSwitchAccesser</ref>*<sp/><ref refid="classal_1_1_stage_switch_keeper_1a8228758f6328f8dea2fabb5894c451b1" kindref="member">mSwitches</ref>;</highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_stage_switch_keeper_1a82bc89544427a9591a37c167cc85ce1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_keeper_1a82bc89544427a9591a37c167cc85ce1e" kindref="member">mSwitchCount</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_accesser" kindref="compound">StageSwitchAccesser</ref>*<sp/><ref refid="classal_1_1_stage_switch_keeper_1a0269142a2855bf8972c22a6adbd98a9d" kindref="member">getStageSwitchAccesser</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type<sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_stage_switch_keeper_1aae57a9be6baec18d8d39b2374c0fe062" kindref="member">StageSwitchKeeper</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_i_use_stage_switch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_i_use_stage_switch_1a36ec96bf79a932f3d9c1de9359b8b75b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_stage_switch_keeper" kindref="compound">StageSwitchKeeper</ref>*<sp/><ref refid="classal_1_1_i_use_stage_switch_1a36ec96bf79a932f3d9c1de9359b8b75b" kindref="member">getStageSwitchKeeper</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26" refid="classal_1_1_i_use_stage_switch_1a9a8de012f4aa541e208c49b309e8f760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_i_use_stage_switch_1a9a8de012f4aa541e208c49b309e8f760" kindref="member">initStageSwitchKeeper</ref>()<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespaceal_1aaf3fb3e1ddcbe8f55a762c0aa53b66f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aaf3fb3e1ddcbe8f55a762c0aa53b66f6" kindref="member">initStageSwitchAppear</ref>(<sp/><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="30" refid="namespaceal_1afc8c6d236791037a342355737ac89362" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1afc8c6d236791037a342355737ac89362" kindref="member">initStageSwitchKill</ref>(<sp/><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="31" refid="namespaceal_1a7f9617498547c31b2819fa619c0f26dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7f9617498547c31b2819fa619c0f26dd" kindref="member">initStageSwitchA</ref>(<sp/><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="32" refid="namespaceal_1a8a083655f0c41566b47303d2deb5a60e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a8a083655f0c41566b47303d2deb5a60e" kindref="member">initStageSwitchB</ref>(<sp/><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_init_info" kindref="compound">ActorInitInfo</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">info</ref><sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceal_1ad79981614a086b4173c9e4ab863fc1f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ad79981614a086b4173c9e4ab863fc1f9" kindref="member">isOnSwitchA</ref>(<sp/><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespaceal_1aa2e538408cbdff02aa7caf093d9140d3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aa2e538408cbdff02aa7caf093d9140d3" kindref="member">listenStageSwitchOnAppear</ref>(<sp/><ref refid="classal_1_1_i_use_stage_switch" kindref="compound">IUseStageSwitch</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_base" kindref="compound">FunctorBase</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">onFunctor</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_base" kindref="compound">FunctorBase</ref>&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">offFunctor</ref><sp/>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Stage/alStageSwitchKeeper.h"/>
+  </compounddef>
+</doxygen>

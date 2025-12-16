@@ -1,6 +1,6 @@
 
 
-# Dir lib/al/include/Layout
+# Dir Layout
 
 
 
@@ -21,11 +21,11 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**alLayoutActor.h**](alLayoutActor_8h.md) <br> |
-| file | [**alLayoutInitInfo.h**](alLayoutInitInfo_8h.md) <br> |
-| file | [**alLayoutKit.h**](alLayoutKit_8h.md) <br> |
-| file | [**alWipeSimple.h**](alWipeSimple_8h.md) <br> |
-| file | [**alWipeSimpleTopBottom.h**](alWipeSimpleTopBottom_8h.md) <br> |
+| file | [**alLayoutActor.h**](al_layout_actor_8h.md) <br> |
+| file | [**alLayoutInitInfo.h**](al_layout_init_info_8h.md) <br> |
+| file | [**alLayoutKit.h**](al_layout_kit_8h.md) <br> |
+| file | [**alWipeSimple.h**](al_wipe_simple_8h.md) <br> |
+| file | [**alWipeSimpleTopBottom.h**](al_wipe_simple_top_bottom_8h.md) <br> |
 
 
 

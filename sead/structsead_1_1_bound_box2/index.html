@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Struct sead::BoundBox2 - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="struct-seadboundbox2">Struct sead::BoundBox2</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>BoundBox2</strong></a></p>
+<ul>
+<li><code>#include &lt;seadBoundBox.h&gt;</code></li>
+</ul>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">typedef <a href="../structsead_1_1_vector2/"><strong>sead::Vector2</strong></a>&lt; T &gt;</td>
+<td style="text-align: left;"><a href="#typedef-vector2"><strong>Vector2</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-boundbox2-13"><strong>BoundBox2</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-boundbox2-23"><strong>BoundBox2</strong></a> (T x0, T y0, T x1, T y1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-boundbox2-33"><strong>BoundBox2</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; min, const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; max) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#typedef-vector2"><strong>Vector2</strong></a></td>
+<td style="text-align: left;"><a href="#function-getbl"><strong>getBL</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#typedef-vector2"><strong>Vector2</strong></a></td>
+<td style="text-align: left;"><a href="#function-getbr"><strong>getBR</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#typedef-vector2"><strong>Vector2</strong></a></td>
+<td style="text-align: left;"><a href="#function-getcenter-12"><strong>getCenter</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-getcenter-22"><strong>getCenter</strong></a> (<a href="./#typedef-vector2"><strong>Vector2</strong></a> * p) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-gethalfsizex"><strong>getHalfSizeX</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-gethalfsizey"><strong>getHalfSizeY</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-getmax"><strong>getMax</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-getmin"><strong>getMin</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getsizex"><strong>getSizeX</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-getsizey"><strong>getSizeY</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#typedef-vector2"><strong>Vector2</strong></a></td>
+<td style="text-align: left;"><a href="#function-gettl"><strong>getTL</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#typedef-vector2"><strong>Vector2</strong></a></td>
+<td style="text-align: left;"><a href="#function-gettr"><strong>getTR</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isinside"><strong>isInside</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; p) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isundef"><strong>isUndef</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-offset-12"><strong>offset</strong></a> (T dx, T dy) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-offset-22"><strong>offset</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; dv) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-scalex"><strong>scaleX</strong></a> (T sx) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-scaley"><strong>scaleY</strong></a> (T sy) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set-12"><strong>set</strong></a> (T x0, T y0, T x1, T y1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-set-22"><strong>set</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; min, const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; max) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setfromcenterandxy-12"><strong>setFromCenterAndXY</strong></a> (T centerX, T centerY, T sizeX, T sizeY) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setfromcenterandxy-22"><strong>setFromCenterAndXY</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; center, T sizeX, T sizeY) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setfromcornerandxy-12"><strong>setFromCornerAndXY</strong></a> (T cornerX, T cornerY, T sizeX, T sizeY) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setfromcornerandxy-22"><strong>setFromCornerAndXY</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; corner, T sizeX, T sizeY) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setmax"><strong>setMax</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; max) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setmin"><strong>setMin</strong></a> (const <a href="./#typedef-vector2"><strong>Vector2</strong></a> &amp; min) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setundef"><strong>setUndef</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="typedef-vector2">typedef Vector2</h3>
+<pre><code class="language-C++">typedef sead::Vector2&lt;T&gt; sead::BoundBox2&lt; T &gt;::Vector2;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-boundbox2-13">function BoundBox2 [1/3]</h3>
+<pre><code class="language-C++">inline sead::BoundBox2::BoundBox2 () 
+</code></pre>
+<hr>
+
+<h3 id="function-boundbox2-23">function BoundBox2 [2/3]</h3>
+<pre><code class="language-C++">inline sead::BoundBox2::BoundBox2 (
+    T x0,
+    T y0,
+    T x1,
+    T y1
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-boundbox2-33">function BoundBox2 [3/3]</h3>
+<pre><code class="language-C++">inline sead::BoundBox2::BoundBox2 (
+    const Vector2 &amp; min,
+    const Vector2 &amp; max
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getbl">function getBL</h3>
+<pre><code class="language-C++">inline Vector2 sead::BoundBox2::getBL () const
+</code></pre>
+<hr>
+
+<h3 id="function-getbr">function getBR</h3>
+<pre><code class="language-C++">inline Vector2 sead::BoundBox2::getBR () const
+</code></pre>
+<hr>
+
+<h3 id="function-getcenter-12">function getCenter [1/2]</h3>
+<pre><code class="language-C++">inline Vector2 sead::BoundBox2::getCenter () const
+</code></pre>
+<hr>
+
+<h3 id="function-getcenter-22">function getCenter [2/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::getCenter (
+    Vector2 * p
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-gethalfsizex">function getHalfSizeX</h3>
+<pre><code class="language-C++">inline T sead::BoundBox2::getHalfSizeX () const
+</code></pre>
+<hr>
+
+<h3 id="function-gethalfsizey">function getHalfSizeY</h3>
+<pre><code class="language-C++">inline T sead::BoundBox2::getHalfSizeY () const
+</code></pre>
+<hr>
+
+<h3 id="function-getmax">function getMax</h3>
+<pre><code class="language-C++">inline const Vector2 &amp; sead::BoundBox2::getMax () const
+</code></pre>
+<hr>
+
+<h3 id="function-getmin">function getMin</h3>
+<pre><code class="language-C++">inline const Vector2 &amp; sead::BoundBox2::getMin () const
+</code></pre>
+<hr>
+
+<h3 id="function-getsizex">function getSizeX</h3>
+<pre><code class="language-C++">inline T sead::BoundBox2::getSizeX () const
+</code></pre>
+<hr>
+
+<h3 id="function-getsizey">function getSizeY</h3>
+<pre><code class="language-C++">inline T sead::BoundBox2::getSizeY () const
+</code></pre>
+<hr>
+
+<h3 id="function-gettl">function getTL</h3>
+<pre><code class="language-C++">inline Vector2 sead::BoundBox2::getTL () const
+</code></pre>
+<hr>
+
+<h3 id="function-gettr">function getTR</h3>
+<pre><code class="language-C++">inline Vector2 sead::BoundBox2::getTR () const
+</code></pre>
+<hr>
+
+<h3 id="function-isinside">function isInside</h3>
+<pre><code class="language-C++">inline bool sead::BoundBox2::isInside (
+    const Vector2 &amp; p
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-isundef">function isUndef</h3>
+<pre><code class="language-C++">inline bool sead::BoundBox2::isUndef () const
+</code></pre>
+<hr>
+
+<h3 id="function-offset-12">function offset [1/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::offset (
+    T dx,
+    T dy
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-offset-22">function offset [2/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::offset (
+    const Vector2 &amp; dv
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-scalex">function scaleX</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::scaleX (
+    T sx
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-scaley">function scaleY</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::scaleY (
+    T sy
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-set-12">function set [1/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::set (
+    T x0,
+    T y0,
+    T x1,
+    T y1
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-set-22">function set [2/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::set (
+    const Vector2 &amp; min,
+    const Vector2 &amp; max
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setfromcenterandxy-12">function setFromCenterAndXY [1/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setFromCenterAndXY (
+    T centerX,
+    T centerY,
+    T sizeX,
+    T sizeY
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setfromcenterandxy-22">function setFromCenterAndXY [2/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setFromCenterAndXY (
+    const Vector2 &amp; center,
+    T sizeX,
+    T sizeY
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setfromcornerandxy-12">function setFromCornerAndXY [1/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setFromCornerAndXY (
+    T cornerX,
+    T cornerY,
+    T sizeX,
+    T sizeY
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setfromcornerandxy-22">function setFromCornerAndXY [2/2]</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setFromCornerAndXY (
+    const Vector2 &amp; corner,
+    T sizeX,
+    T sizeY
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setmax">function setMax</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setMax (
+    const Vector2 &amp; max
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setmin">function setMin</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setMin (
+    const Vector2 &amp; min
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setundef">function setUndef</h3>
+<pre><code class="language-C++">inline void sead::BoundBox2::setUndef () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/math/seadBoundBox.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

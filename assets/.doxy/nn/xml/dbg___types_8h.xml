@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dbg___types_8h" kind="file" language="C++">
+    <compoundname>dbg_Types.h</compoundname>
+    <includedby refid="dbg___api_8h" local="no">dbg_Api.h</includedby>
+    <includedby refid="svc___api_8h" local="no">svc_Api.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>dbg_Api.h</label>
+        <link refid="dbg___api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dbg_Types.h</label>
+        <link refid="dbg___types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>svc_Api.h</label>
+        <link refid="svc___api_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>crt0.cpp</label>
+        <link refid="crt0_8cpp"/>
+      </node>
+      <node id="3">
+        <label>dbg_Api.cpp</label>
+        <link refid="dbg___api_8cpp"/>
+      </node>
+      <node id="6">
+        <label>svc_Api.cpp</label>
+        <link refid="svc___api_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacenn">nn</innernamespace>
+    <innernamespace refid="namespacenn_1_1dbg">nn::dbg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenn" kindref="compound">nn</ref><sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">dbg<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5" kindref="member">BreakReason</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a35e1fe9c27f3e45ac4ab78a1ad9aecc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a35e1fe9c27f3e45ac4ab78a1ad9aecc6" kindref="member">BreakReason_PANIC</ref>,</highlight></codeline>
+<codeline lineno="8" refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5aa29ec61add506a857fa359d95ac922f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5aa29ec61add506a857fa359d95ac922f7" kindref="member">BreakReason_ASSERT</ref>,</highlight></codeline>
+<codeline lineno="9" refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a90ae779544939cb9fd1a59754ad0e2c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a90ae779544939cb9fd1a59754ad0e2c3" kindref="member">BreakReason_USER</ref>,</highlight></codeline>
+<codeline lineno="10" refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a56891372e5cc869079af587be3fee324" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a56891372e5cc869079af587be3fee324" kindref="member">BreakReason_LOAD_RO</ref>,</highlight></codeline>
+<codeline lineno="11" refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a03f0bed14df4fbec76e0b3f74bf3e202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacenn_1_1dbg_1a98b7ff020582cf74e66bec52abdf8dc5a03f0bed14df4fbec76e0b3f74bf3e202" kindref="member">BreakReason_UNLOAD_RO</ref>,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dbg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>nn</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/CTRSDK/include/nn/dbg/dbg_Types.h"/>
+  </compounddef>
+</doxygen>

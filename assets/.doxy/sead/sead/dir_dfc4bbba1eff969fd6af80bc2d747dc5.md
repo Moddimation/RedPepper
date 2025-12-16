@@ -1,6 +1,6 @@
 
 
-# Dir lib/sead/addins/libms/src
+# Dir src
 
 
 
@@ -21,8 +21,8 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**LMS\_Impl.c**](LMS__Impl_8c.md) <br> |
-| file | [**LMS\_Message.c**](LMS__Message_8c.md) <br> |
+| file | [**LMS\_Impl.c**](_l_m_s___impl_8c.md) <br> |
+| file | [**LMS\_Message.c**](_l_m_s___message_8c.md) <br> |
 
 
 

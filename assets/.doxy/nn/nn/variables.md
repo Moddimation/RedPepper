@@ -11,6 +11,7 @@
 
 ## i
 
+* **intptr\_t** ([**types.h**](types_8h.md))
 * **Image$$ZI$$ZI$$Base** ([**crt0.cpp**](crt0_8cpp.md))
 * **Image$$ZI$$ZI$$Limit** ([**crt0.cpp**](crt0_8cpp.md))
 
@@ -29,6 +30,7 @@
 * **u32** ([**types.h**](types_8h.md))
 * **u64** ([**types.h**](types_8h.md))
 * **u8** ([**types.h**](types_8h.md))
+* **uintptr\_t** ([**types.h**](types_8h.md))
 
 
 

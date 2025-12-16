@@ -1,6 +1,6 @@
 
 
-# Dir lib/sead/include/prim/ctr
+# Dir ctr
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**seadMemUtilCtr.hpp**](seadMemUtilCtr_8hpp.md) <br> |
+| file | [**seadMemUtilCtr.hpp**](sead_mem_util_ctr_8hpp.md) <br> |
 
 
 

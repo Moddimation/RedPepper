@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class al::Scene - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-alscene">Class al::Scene</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespaceal/"><strong>al</strong></a> <strong>&gt;</strong> <a href="./"><strong>Scene</strong></a></p>
+<ul>
+<li><code>#include &lt;alScene.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classal_1_1_nerve_executor/">al::NerveExecutor</a>,  <a href="../classal_1_1_i_use_audio_keeper/">al::IUseAudioKeeper</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-scene"><strong>Scene</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-appear"><strong>appear</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-control"><strong>control</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-draw3d"><strong>draw3D</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-draweffect"><strong>drawEffect</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-drawmainbottom"><strong>drawMainBottom</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-drawmaintop"><strong>drawMainTop</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-drawsubbuttom"><strong>drawSubButtom</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-drawsubtop"><strong>drawSubTop</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-endinit"><strong>endInit</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_actor_init_info/"><strong>ActorInitInfo</strong></a> &amp; info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_actor_factory/"><strong>ActorFactory</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-getactorfactory"><strong>getActorFactory</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-init"><strong>init</strong></a> () = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initactorfactory"><strong>initActorFactory</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initandloadstageresource"><strong>initAndLoadStageResource</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * stageName, <a href="../classal_1_1_functor_v0_m/"><strong>int</strong></a> scenario, sead::Heap * heap) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initcameradirector"><strong>initCameraDirector</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initlayoutkit"><strong>initLayoutKit</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initliveactorkit"><strong>initLiveActorKit</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initsceneaudio"><strong>initSceneAudio</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * stageName, <a href="../classal_1_1_functor_v0_m/"><strong>int</strong></a> scenario, <a href="../classal_1_1_functor_v0_m/"><strong>int</strong></a>, <a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> sead::SafeString &amp;, <a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * userName) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-initsceneobjholder"><strong>initSceneObjHolder</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>bool</strong></a></td>
+<td style="text-align: left;"><a href="#function-isalive"><strong>isAlive</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-kill"><strong>kill</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-movement"><strong>movement</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-unk5"><strong>unk5</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-unk6"><strong>unk6</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-unk7"><strong>unk7</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="#function-unk8"><strong>unk8</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-alnerveexecutor">Public Functions inherited from al::NerveExecutor</h2>
+<p>See <a href="../classal_1_1_nerve_executor/">al::NerveExecutor</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classal_1_1_nerve_executor/#function-nerveexecutor"><strong>NerveExecutor</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../classal_1_1_functor_v0_m/"><strong>char</strong></a> * name) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_nerve_executor/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_nerve_executor/#function-initnerve"><strong>initNerve</strong></a> (<a href="../classal_1_1_functor_v0_m/"><strong>const</strong></a> <a href="../structal_1_1_nerve/"><strong>Nerve</strong></a> * nrv, <a href="../classal_1_1_functor_v0_m/"><strong>int</strong></a> step=0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_nerve_executor/#function-updatenerve"><strong>updateNerve</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classal_1_1_nerve_executor/#function-nerveexecutor"><strong>~NerveExecutor</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliusenerve">Public Functions inherited from al::IUseNerve</h2>
+<p>See <a href="../classal_1_1_i_use_nerve/">al::IUseNerve</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_nerve_keeper/"><strong>NerveKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_nerve/#function-getnervekeeper"><strong>getNerveKeeper</strong></a> () const = 0<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-aliuseaudiokeeper">Public Functions inherited from al::IUseAudioKeeper</h2>
+<p>See <a href="../classal_1_1_i_use_audio_keeper/">al::IUseAudioKeeper</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_audio_keeper/"><strong>AudioKeeper</strong></a> *</td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-getaudiokeeper"><strong>getAudioKeeper</strong></a> () const = 0<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-v1"><strong>v1</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual <a href="../classal_1_1_functor_v0_m/"><strong>void</strong></a></td>
+<td style="text-align: left;"><a href="../classal_1_1_i_use_audio_keeper/#function-v2"><strong>v2</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-scene">function Scene</h3>
+<pre><code class="language-C++">al::Scene::Scene (
+    const  char * name
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-appear">function appear</h3>
+<pre><code class="language-C++">virtual void al::Scene::appear () 
+</code></pre>
+<hr>
+
+<h3 id="function-control">function control</h3>
+<pre><code class="language-C++">virtual void al::Scene::control () 
+</code></pre>
+<hr>
+
+<h3 id="function-draw3d">function draw3D</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::draw3D () 
+</code></pre>
+<hr>
+
+<h3 id="function-draweffect">function drawEffect</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::drawEffect () 
+</code></pre>
+<hr>
+
+<h3 id="function-drawmainbottom">function drawMainBottom</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::drawMainBottom () 
+</code></pre>
+<hr>
+
+<h3 id="function-drawmaintop">function drawMainTop</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::drawMainTop () 
+</code></pre>
+<hr>
+
+<h3 id="function-drawsubbuttom">function drawSubButtom</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::drawSubButtom () 
+</code></pre>
+<hr>
+
+<h3 id="function-drawsubtop">function drawSubTop</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::drawSubTop () 
+</code></pre>
+<hr>
+
+<h3 id="function-endinit">function endInit</h3>
+<pre><code class="language-C++">void al::Scene::endInit (
+    const  ActorInitInfo &amp; info
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getactorfactory">function getActorFactory</h3>
+<pre><code class="language-C++">inline ActorFactory * al::Scene::getActorFactory () const
+</code></pre>
+<hr>
+
+<h3 id="function-getaudiokeeper">function getAudioKeeper</h3>
+<pre><code class="language-C++">virtual AudioKeeper * al::Scene::getAudioKeeper () const
+</code></pre>
+<p>Implements <a href="../classal_1_1_i_use_audio_keeper/#function-getaudiokeeper"><em>al::IUseAudioKeeper::getAudioKeeper</em></a></p>
+<hr>
+
+<h3 id="function-init">function init</h3>
+<pre><code class="language-C++">virtual void al::Scene::init () = 0
+</code></pre>
+<hr>
+
+<h3 id="function-initactorfactory">function initActorFactory</h3>
+<pre><code class="language-C++">void al::Scene::initActorFactory () 
+</code></pre>
+<hr>
+
+<h3 id="function-initandloadstageresource">function initAndLoadStageResource</h3>
+<pre><code class="language-C++">void al::Scene::initAndLoadStageResource (
+    const  char * stageName,
+    int scenario,
+    sead::Heap * heap
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-initcameradirector">function initCameraDirector</h3>
+<pre><code class="language-C++">void al::Scene::initCameraDirector () 
+</code></pre>
+<hr>
+
+<h3 id="function-initlayoutkit">function initLayoutKit</h3>
+<pre><code class="language-C++">void al::Scene::initLayoutKit () 
+</code></pre>
+<hr>
+
+<h3 id="function-initliveactorkit">function initLiveActorKit</h3>
+<pre><code class="language-C++">void al::Scene::initLiveActorKit () 
+</code></pre>
+<hr>
+
+<h3 id="function-initsceneaudio">function initSceneAudio</h3>
+<pre><code class="language-C++">void al::Scene::initSceneAudio (
+    const  char * stageName,
+    int scenario,
+    int,
+    const sead::SafeString &amp;,
+    const  char * userName
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-initsceneobjholder">function initSceneObjHolder</h3>
+<pre><code class="language-C++">void al::Scene::initSceneObjHolder () 
+</code></pre>
+<hr>
+
+<h3 id="function-isalive">function isAlive</h3>
+<pre><code class="language-C++">inline bool al::Scene::isAlive () const
+</code></pre>
+<hr>
+
+<h3 id="function-kill">function kill</h3>
+<pre><code class="language-C++">virtual void al::Scene::kill () 
+</code></pre>
+<hr>
+
+<h3 id="function-movement">function movement</h3>
+<pre><code class="language-C++">virtual void al::Scene::movement () 
+</code></pre>
+<hr>
+
+<h3 id="function-unk5">function unk5</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::unk5 () 
+</code></pre>
+<hr>
+
+<h3 id="function-unk6">function unk6</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::unk6 () 
+</code></pre>
+<hr>
+
+<h3 id="function-unk7">function unk7</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::unk7 () 
+</code></pre>
+<hr>
+
+<h3 id="function-unk8">function unk8</h3>
+<pre><code class="language-C++">inline virtual void al::Scene::unk8 () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/al/include/Scene/alScene.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

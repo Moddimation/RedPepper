@@ -1,0 +1,1475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_exp_heap" kind="class" language="C++" prot="public">
+    <compoundname>sead::ExpHeap</compoundname>
+    <basecompoundref refid="classsead_1_1_heap" prot="public" virt="non-virtual">sead::Heap</basecompoundref>
+    <includes refid="sead_exp_heap_8h" local="no">seadExpHeap.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AllocMode</name>
+        <qualifiedname>sead::ExpHeap::AllocMode</qualifiedname>
+        <enumvalue id="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0a8d5f5a08273b132c0ac703aabbfd4020" prot="public">
+          <name>AllocMode_FirstFit</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0af94a7144a19b742e789c003827dacbd9" prot="public">
+          <name>AllocMode_BestFit</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="10" column="5" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="enum" id="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FindFreeBlockMode</name>
+        <qualifiedname>sead::ExpHeap::FindFreeBlockMode</qualifiedname>
+        <enumvalue id="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca00cc43b001caf85eaddf78e0c70639b9" prot="public">
+          <name>FindFreeBlockMode_Auto</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca1c27c10679ebc003a90da767024e4fac" prot="public">
+          <name>FindFreeBlockMode_FromFreeList</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4cae7c0132d76fb5572633ee6851d10cde4" prot="public">
+          <name>FindFreeBlockMode_ByIteratingMemBlock</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="15" column="5" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FindMode</name>
+        <qualifiedname>sead::ExpHeap::FindMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="22" column="5" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" prot="protected" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 sead::ExpHeap::mAllocMode</definition>
+        <argsstring></argsstring>
+        <name>mAllocMode</name>
+        <qualifiedname>sead::ExpHeap::mAllocMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="102" column="8" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_exp_heap_1a68f113be513712d534b7e568a46bd610" compoundref="sead_exp_heap_8h" startline="59" endline="59">getAllocMode</referencedby>
+        <referencedby refid="classsead_1_1_exp_heap_1ad6a227767c7d4664b3de109eb48b0fff" compoundref="sead_exp_heap_8h" startline="61" endline="61">setAllocMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_exp_heap_1a8a3189764c03f7f11fa086d45b8bee24" prot="protected" static="no" mutable="no">
+        <type><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 sead::ExpHeap::mFindFreeBlockMode</definition>
+        <argsstring></argsstring>
+        <name>mFindFreeBlockMode</name>
+        <qualifiedname>sead::ExpHeap::mFindFreeBlockMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="103" column="8" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_exp_heap_1a27a42ba2432e2852b5682916c357e71e" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacesead_1af1d523761c8f1fdbac2b6e5d46dd1d4f" kindref="member">MemBlockList</ref></type>
+        <definition>MemBlockList sead::ExpHeap::mFreeList</definition>
+        <argsstring></argsstring>
+        <name>mFreeList</name>
+        <qualifiedname>sead::ExpHeap::mFreeList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="104" column="18" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_exp_heap_1a36767a263da939c08d9661f73b5c33ea" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacesead_1af1d523761c8f1fdbac2b6e5d46dd1d4f" kindref="member">MemBlockList</ref></type>
+        <definition>MemBlockList sead::ExpHeap::mUseList</definition>
+        <argsstring></argsstring>
+        <name>mUseList</name>
+        <qualifiedname>sead::ExpHeap::mUseList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="105" column="18" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ac5e36511216402d74ec51dc11c1f95c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref> *</type>
+        <definition>static ExpHeap * sead::ExpHeap::create</definition>
+        <argsstring>(size_t size, const SafeString &amp;name, Heap *parent, HeapDirection direction, bool)</argsstring>
+        <name>create</name>
+        <qualifiedname>sead::ExpHeap::create</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacesead_1abac63fd461f7d88d0bafe536f4dd9178" kindref="member">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" kindref="member">HeapDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="24" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a79d060a5ca7406699750f7529dab4284" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref> *</type>
+        <definition>static ExpHeap * sead::ExpHeap::create</definition>
+        <argsstring>(void *address, size_t size, const SafeString &amp;name, bool)</argsstring>
+        <name>create</name>
+        <qualifiedname>sead::ExpHeap::create</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacesead_1abac63fd461f7d88d0bafe536f4dd9178" kindref="member">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="26" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a9249703d7137219579cb59be7e6314de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref> *</type>
+        <definition>static ExpHeap * sead::ExpHeap::tryCreate</definition>
+        <argsstring>(size_t size, const SafeString &amp;name, Heap *parent, HeapDirection direction, bool)</argsstring>
+        <name>tryCreate</name>
+        <qualifiedname>sead::ExpHeap::tryCreate</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacesead_1abac63fd461f7d88d0bafe536f4dd9178" kindref="member">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" kindref="member">HeapDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="28" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a11741039d90918494e3e76952ee3e202" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref> *</type>
+        <definition>static ExpHeap * sead::ExpHeap::tryCreate</definition>
+        <argsstring>(void *address, size_t size, const SafeString &amp;name, bool)</argsstring>
+        <name>tryCreate</name>
+        <qualifiedname>sead::ExpHeap::tryCreate</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacesead_1abac63fd461f7d88d0bafe536f4dd9178" kindref="member">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="30" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1acffa09c3f59a521597fba7105f67d3cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t sead::ExpHeap::getManagementAreaSize</definition>
+        <argsstring>(s32)</argsstring>
+        <name>getManagementAreaSize</name>
+        <qualifiedname>sead::ExpHeap::getManagementAreaSize</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="32" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a364400610a524703dc8bc82174fce3a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>sead::ExpHeap::destroy</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a8929b542f10cf19571c2e08cc915aed2">destroy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="34" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a67f52afab58af6e4dcc99a266c684da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::ExpHeap::adjust</definition>
+        <argsstring>()</argsstring>
+        <name>adjust</name>
+        <qualifiedname>sead::ExpHeap::adjust</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1afe068de43bf1157782d5661ee8875a45">adjust</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="35" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a11059435324cd04f7cd455013d9a4be1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::ExpHeap::tryAlloc</definition>
+        <argsstring>(size_t size, s32 alignment)</argsstring>
+        <name>tryAlloc</name>
+        <qualifiedname>sead::ExpHeap::tryAlloc</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1aeadd608538d75c95aa1ae32c34fac05c">tryAlloc</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a2ddba5b52fdc917ebe82fa4f1da66ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>free</name>
+        <qualifiedname>sead::ExpHeap::free</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a92c8ae4e4e2874afbe3d6db028d605ab">free</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="37" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ac028ef5f1f43617417c337c500c8e8db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::ExpHeap::resizeFront</definition>
+        <argsstring>(void *p_void, size_t size)</argsstring>
+        <name>resizeFront</name>
+        <qualifiedname>sead::ExpHeap::resizeFront</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1ae0d0123885ddfb473be345e3caea66aa">resizeFront</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>p_void</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="38" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ab85b4568d3a137fc222a83ef4c6e3526" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::ExpHeap::resizeBack</definition>
+        <argsstring>(void *p_void, size_t size)</argsstring>
+        <name>resizeBack</name>
+        <qualifiedname>sead::ExpHeap::resizeBack</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>p_void</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a000a081bf0dae5b6c4139deb1df5fbc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void * sead::ExpHeap::tryRealloc</definition>
+        <argsstring>(void *ptr, size_t size, s32 alignment)</argsstring>
+        <name>tryRealloc</name>
+        <qualifiedname>sead::ExpHeap::tryRealloc</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a38429605eff7285eddf7769e45e54418">tryRealloc</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="40" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1aa7f179b37e835b0e5ea6e5594df0beb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::freeAll</definition>
+        <argsstring>()</argsstring>
+        <name>freeAll</name>
+        <qualifiedname>sead::ExpHeap::freeAll</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a9beecd7e0a790e80b4e9c70cdef61a95">freeAll</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="41" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1afe311f78a305a926e052e07affa1e28c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uintptr_t</type>
+        <definition>virtual uintptr_t sead::ExpHeap::getStartAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartAddress</name>
+        <qualifiedname>sead::ExpHeap::getStartAddress</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a1b5dacc85e7052744a9ffe02d1c09818">getStartAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="42" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a811b6a7d0191e9adeec3e626e2a4192a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uintptr_t</type>
+        <definition>virtual uintptr_t sead::ExpHeap::getEndAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getEndAddress</name>
+        <qualifiedname>sead::ExpHeap::getEndAddress</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1afc2a1bfbd2a838f971e745ccac69b912">getEndAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="43" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1af87c010c8d161e1a4082b6578775ca65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::ExpHeap::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>sead::ExpHeap::getSize</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a6f495aaa16d8cd699a196039af510a3d">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="44" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a21700b0c116be4c5f8b9cc55686f54fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::ExpHeap::getFreeSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getFreeSize</name>
+        <qualifiedname>sead::ExpHeap::getFreeSize</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1ad02f63bc03e9f473c83ac8e185e5322f">getFreeSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="45" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a1d0514cf01982aab86c29b8ea8c5f2e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t sead::ExpHeap::getMaxAllocatableSize</definition>
+        <argsstring>(int alignment) const</argsstring>
+        <name>getMaxAllocatableSize</name>
+        <qualifiedname>sead::ExpHeap::getMaxAllocatableSize</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a3392d080c712e40e04fcb241709861ed">getMaxAllocatableSize</reimplements>
+        <param>
+          <type>int</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="46" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a1e3d3d68258c6720c9815760c00e114e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::ExpHeap::isInclude</definition>
+        <argsstring>(const void *p_void) const</argsstring>
+        <name>isInclude</name>
+        <qualifiedname>sead::ExpHeap::isInclude</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a55b9df2129adc1e016d02a574a6516f9">isInclude</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>p_void</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="47" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a9ba9ea7e13fd541682458637f1e698b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::ExpHeap::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>sead::ExpHeap::isEmpty</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1ad1384aa3c5dcb241e8f38b5f3ac7b7cb">isEmpty</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a23cbb1b5d3dbbef44a97f1743ea8f668" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::ExpHeap::isFreeable</definition>
+        <argsstring>() const</argsstring>
+        <name>isFreeable</name>
+        <qualifiedname>sead::ExpHeap::isFreeable</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a4cf93c0eb04c68ac2d4e9491178791c4">isFreeable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="49" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a2095e35388394a13ee17bc602a286738" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::ExpHeap::isResizable</definition>
+        <argsstring>() const</argsstring>
+        <name>isResizable</name>
+        <qualifiedname>sead::ExpHeap::isResizable</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a4b3b09bb5879858395e939309d0439bb">isResizable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1abba4e56a9efca37402394ca38c7df4ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::ExpHeap::isAdjustable</definition>
+        <argsstring>() const</argsstring>
+        <name>isAdjustable</name>
+        <qualifiedname>sead::ExpHeap::isAdjustable</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a114b1df136212ec0227a5ff8bbc0e013">isAdjustable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="51" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a3b4fde4077f92755d155dbe816d7bd37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::dump</definition>
+        <argsstring>() const</argsstring>
+        <name>dump</name>
+        <qualifiedname>sead::ExpHeap::dump</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a94d6d73f967f9a5f63ba89029d89458b">dump</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a2f5cd523e0d2f575f2a01d854930babe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::dumpYAML</definition>
+        <argsstring>(WriteStream &amp;stream, int i) const</argsstring>
+        <name>dumpYAML</name>
+        <qualifiedname>sead::ExpHeap::dumpYAML</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1a5d915ae2c51d579275cc467a3f8506d5">dumpYAML</reimplements>
+        <param>
+          <type>WriteStream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="53" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a8ad334603f8aea14c53ced6938bca9ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::genInformation_</definition>
+        <argsstring>(hostio::Context *context)</argsstring>
+        <name>genInformation_</name>
+        <qualifiedname>sead::ExpHeap::genInformation_</qualifiedname>
+        <reimplements refid="classsead_1_1_heap_1af97156072f382313c3128b2b513d3427">genInformation_</reimplements>
+        <param>
+          <type>hostio::Context *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="54" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ab02d1e7c4ee4af4b691992399862e457" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>virtual s32 sead::ExpHeap::destroyAndGetAllocatableSize</definition>
+        <argsstring>(s32)</argsstring>
+        <name>destroyAndGetAllocatableSize</name>
+        <qualifiedname>sead::ExpHeap::destroyAndGetAllocatableSize</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="56" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1af32ace0bc644cb29e90091374d33cddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::ExpHeap::setFindFreeBlockMode</definition>
+        <argsstring>(FindFreeBlockMode mode)</argsstring>
+        <name>setFindFreeBlockMode</name>
+        <qualifiedname>sead::ExpHeap::setFindFreeBlockMode</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4c" kindref="member">FindFreeBlockMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="57" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a68f113be513712d534b7e568a46bd610" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 sead::ExpHeap::getAllocMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocMode</name>
+        <qualifiedname>sead::ExpHeap::getAllocMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="59" column="8" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="59" bodyend="59"/>
+        <references refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" compoundref="sead_exp_heap_8h" startline="102">mAllocMode</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ad6a227767c7d4664b3de109eb48b0fff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::setAllocMode</definition>
+        <argsstring>(u8 mode)</argsstring>
+        <name>setAllocMode</name>
+        <qualifiedname>sead::ExpHeap::setAllocMode</qualifiedname>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="61" column="10" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="61" bodyend="61"/>
+        <references refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" compoundref="sead_exp_heap_8h" startline="102">mAllocMode</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a4ca133a304504c9542e98dbf572923b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sead::ExpHeap::getAllocatedSize</definition>
+        <argsstring>(void *object)</argsstring>
+        <name>getAllocatedSize</name>
+        <qualifiedname>sead::ExpHeap::getAllocatedSize</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="64" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a5419b4fcb65d98c363a4fc84d6e55677" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::dumpFreeList</definition>
+        <argsstring>() const</argsstring>
+        <name>dumpFreeList</name>
+        <qualifiedname>sead::ExpHeap::dumpFreeList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1aba8d8091d76aa488e6c767cc1630f7d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::dumpUseList</definition>
+        <argsstring>() const</argsstring>
+        <name>dumpUseList</name>
+        <qualifiedname>sead::ExpHeap::dumpUseList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1affcc30db8e2b38a4d0d2dc48da63f921" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::checkFreeList</definition>
+        <argsstring>() const</argsstring>
+        <name>checkFreeList</name>
+        <qualifiedname>sead::ExpHeap::checkFreeList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a116ad494334d919eb799a522601a4457" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ExpHeap::tryCheckFreeList</definition>
+        <argsstring>() const</argsstring>
+        <name>tryCheckFreeList</name>
+        <qualifiedname>sead::ExpHeap::tryCheckFreeList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1aa52ffd389eddfc88008184ed6121cfeb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::checkUseList</definition>
+        <argsstring>() const</argsstring>
+        <name>checkUseList</name>
+        <qualifiedname>sead::ExpHeap::checkUseList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a1f00bf86710c0c23cd2f17e70953971f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::ExpHeap::tryCheckUseList</definition>
+        <argsstring>() const</argsstring>
+        <name>tryCheckUseList</name>
+        <qualifiedname>sead::ExpHeap::tryCheckUseList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="72" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1aebc74bfb0c2768cbb40c5771aa9f2e4a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::ExpHeap::ExpHeap</definition>
+        <argsstring>(const SafeString &amp;name, Heap *parent, void *address, size_t size, HeapDirection direction, bool)</argsstring>
+        <name>ExpHeap</name>
+        <qualifiedname>sead::ExpHeap::ExpHeap</qualifiedname>
+        <param>
+          <type>const <ref refid="namespacesead_1abac63fd461f7d88d0bafe536f4dd9178" kindref="member">SafeString</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" kindref="member">HeapDirection</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="75" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ad4252143db76d3ce1a124ed2fa915bde" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sead::ExpHeap::~ExpHeap</definition>
+        <argsstring>()</argsstring>
+        <name>~ExpHeap</name>
+        <qualifiedname>sead::ExpHeap::~ExpHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="77" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1af6623adc79ca488f1906142e3d686444" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::findFreeMemBlockFromHead_</definition>
+        <argsstring>(size_t, FindMode) const</argsstring>
+        <name>findFreeMemBlockFromHead_</name>
+        <qualifiedname>sead::ExpHeap::findFreeMemBlockFromHead_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="82" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1aab270b225c25412e139ab4b83add5796" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::findFreeMemBlockFromHead_</definition>
+        <argsstring>(size_t, s32, FindMode) const</argsstring>
+        <name>findFreeMemBlockFromHead_</name>
+        <qualifiedname>sead::ExpHeap::findFreeMemBlockFromHead_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="83" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1afab5cbd686857d325905755ed1ba84e2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::findFreeMemBlockFromTail_</definition>
+        <argsstring>(size_t, FindMode) const</argsstring>
+        <name>findFreeMemBlockFromTail_</name>
+        <qualifiedname>sead::ExpHeap::findFreeMemBlockFromTail_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="84" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1aa491960f61917a1b0477365df5c50561" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::findFreeMemBlockFromTail_</definition>
+        <argsstring>(size_t, s32, FindMode) const</argsstring>
+        <name>findFreeMemBlockFromTail_</name>
+        <qualifiedname>sead::ExpHeap::findFreeMemBlockFromTail_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" kindref="member">FindMode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="85" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a3153caac18654780c785f5f9aab01e21" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::findLastMemBlockIfFree_</definition>
+        <argsstring>()</argsstring>
+        <name>findLastMemBlockIfFree_</name>
+        <qualifiedname>sead::ExpHeap::findLastMemBlockIfFree_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="86" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a3d83cb285da4bcf322c97f99ee85c93e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::findFirstMemBlockIfFree_</definition>
+        <argsstring>()</argsstring>
+        <name>findFirstMemBlockIfFree_</name>
+        <qualifiedname>sead::ExpHeap::findFirstMemBlockIfFree_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="87" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1af2608310c307a0cc339f9cd8e8643ea0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::pushToUseList_</definition>
+        <argsstring>(MemBlock *)</argsstring>
+        <name>pushToUseList_</name>
+        <qualifiedname>sead::ExpHeap::pushToUseList_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a7a8d90546fd5f177141ee8acb66be099" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sead::ExpHeap::pushToFreeList_</definition>
+        <argsstring>(MemBlock *)</argsstring>
+        <name>pushToFreeList_</name>
+        <qualifiedname>sead::ExpHeap::pushToFreeList_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a47a28ddde1146fd58825b7c76424c886" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sead::ExpHeap::adjustBack_</definition>
+        <argsstring>()</argsstring>
+        <name>adjustBack_</name>
+        <qualifiedname>sead::ExpHeap::adjustBack_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="92" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a1973709be227b5a4116bd09a4e870c22" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sead::ExpHeap::adjustFront_</definition>
+        <argsstring>()</argsstring>
+        <name>adjustFront_</name>
+        <qualifiedname>sead::ExpHeap::adjustFront_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="93" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a27550ccca0ce5decc736ca52e262841e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::allocFromHead_</definition>
+        <argsstring>(size_t)</argsstring>
+        <name>allocFromHead_</name>
+        <qualifiedname>sead::ExpHeap::allocFromHead_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="95" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a4e09f80ca894427fb1d7c420352bb5ad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::allocFromHead_</definition>
+        <argsstring>(size_t, s32)</argsstring>
+        <name>allocFromHead_</name>
+        <qualifiedname>sead::ExpHeap::allocFromHead_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="96" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a36c83bd8fa48a4201a10ddbaf22c3a33" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::allocFromTail_</definition>
+        <argsstring>(size_t)</argsstring>
+        <name>allocFromTail_</name>
+        <qualifiedname>sead::ExpHeap::allocFromTail_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="97" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1acce20d80b0d3d5351747a1fa166b9a5f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        <definition>MemBlock * sead::ExpHeap::allocFromTail_</definition>
+        <argsstring>(size_t, s32)</argsstring>
+        <name>allocFromTail_</name>
+        <qualifiedname>sead::ExpHeap::allocFromTail_</qualifiedname>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="98" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a98b2a75fdd1bdc670f1fe7a5dd01b06b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sead::ExpHeap::doCreate</definition>
+        <argsstring>(ExpHeap *, Heap *)</argsstring>
+        <name>doCreate</name>
+        <qualifiedname>sead::ExpHeap::doCreate</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="classsead_1_1_heap" kindref="compound">Heap</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="79" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1a6b6bf445f051deb504141b806b4dcdc9" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void sead::ExpHeap::createMaxSizeFreeMemBlock_</definition>
+        <argsstring>(ExpHeap *)</argsstring>
+        <name>createMaxSizeFreeMemBlock_</name>
+        <qualifiedname>sead::ExpHeap::createMaxSizeFreeMemBlock_</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_exp_heap" kindref="compound">ExpHeap</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="81" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_exp_heap_1ae8f079fab9c8981be8690ec8374a51ee" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_l_m_s___types_8h_1a0ce6887c26c1c49ad3be5710dd42bfd6" kindref="member">s32</ref></type>
+        <definition>static s32 sead::ExpHeap::compareMemBlockAddr_</definition>
+        <argsstring>(const MemBlock *, const MemBlock *)</argsstring>
+        <name>compareMemBlockAddr_</name>
+        <qualifiedname>sead::ExpHeap::compareMemBlockAddr_</qualifiedname>
+        <param>
+          <type>const <ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        </param>
+        <param>
+          <type>const <ref refid="classsead_1_1_mem_block" kindref="compound">MemBlock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/heap/seadExpHeap.h" line="100" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::ExpHeap</label>
+        <link refid="classsead_1_1_exp_heap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+      </node>
+      <node id="4">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="14" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="template-instance">
+          <edgelabel>&lt; Heap &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="template-instance">
+          <edgelabel>&lt; IDisposer &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sead::OffsetList&lt; MemBlock &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="template-instance">
+          <edgelabel>&lt; MemBlock &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::SafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+      <node id="12">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1_critical_section"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::ExpHeap</label>
+        <link refid="classsead_1_1_exp_heap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mFreeList</edgelabel>
+          <edgelabel>mUseList</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mDisposerHeap</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mINamableName</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1_list_impl"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/heap/seadExpHeap.h" line="7" column="1" bodyfile="lib/sead/include/heap/seadExpHeap.h" bodystart="7" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_exp_heap_1a67f52afab58af6e4dcc99a266c684da7" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>adjust</name></member>
+      <member refid="classsead_1_1_exp_heap_1a47a28ddde1146fd58825b7c76424c886" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>adjustBack_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a1973709be227b5a4116bd09a4e870c22" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>adjustFront_</name></member>
+      <member refid="classsead_1_1_heap_1a8f1c083a4d61d261b3307219fbb6e9bf" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>alloc</name></member>
+      <member refid="classsead_1_1_exp_heap_1a27550ccca0ce5decc736ca52e262841e" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>allocFromHead_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a4e09f80ca894427fb1d7c420352bb5ad" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>allocFromHead_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a36c83bd8fa48a4201a10ddbaf22c3a33" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>allocFromTail_</name></member>
+      <member refid="classsead_1_1_exp_heap_1acce20d80b0d3d5351747a1fa166b9a5f" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>allocFromTail_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>AllocMode</name></member>
+      <member refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0af94a7144a19b742e789c003827dacbd9" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>AllocMode_BestFit</name></member>
+      <member refid="classsead_1_1_exp_heap_1a880db6d194bc090c053180ef4bd683e0a8d5f5a08273b132c0ac703aabbfd4020" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>AllocMode_FirstFit</name></member>
+      <member refid="classsead_1_1_heap_1abf9e4e4c16b81b41bfe80f625d87ac40" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>appendDisposer_</name></member>
+      <member refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922a9604209759f59f42387e59298a112c48" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>cHeapDirection_Forward</name></member>
+      <member refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922a688aaee6fae97d9cc2dfd25260c350cc" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>cHeapDirection_Reverse</name></member>
+      <member refid="classsead_1_1_exp_heap_1affcc30db8e2b38a4d0d2dc48da63f921" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>checkFreeList</name></member>
+      <member refid="classsead_1_1_exp_heap_1aa52ffd389eddfc88008184ed6121cfeb" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>checkUseList</name></member>
+      <member refid="classsead_1_1_exp_heap_1ae8f079fab9c8981be8690ec8374a51ee" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>compareMemBlockAddr_</name></member>
+      <member refid="classsead_1_1_exp_heap_1ac5e36511216402d74ec51dc11c1f95c9" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>create</name></member>
+      <member refid="classsead_1_1_exp_heap_1a79d060a5ca7406699750f7529dab4284" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>create</name></member>
+      <member refid="classsead_1_1_exp_heap_1a6b6bf445f051deb504141b806b4dcdc9" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>createMaxSizeFreeMemBlock_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a364400610a524703dc8bc82174fce3a2" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>destroy</name></member>
+      <member refid="classsead_1_1_exp_heap_1ab02d1e7c4ee4af4b691992399862e457" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>destroyAndGetAllocatableSize</name></member>
+      <member refid="classsead_1_1_heap_1ac70cb6b9f11f10ef6a77cc4ee24d6fb4" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>DisposerList</name></member>
+      <member refid="classsead_1_1_exp_heap_1a98b2a75fdd1bdc670f1fe7a5dd01b06b" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>doCreate</name></member>
+      <member refid="classsead_1_1_exp_heap_1a3b4fde4077f92755d155dbe816d7bd37" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>dump</name></member>
+      <member refid="classsead_1_1_exp_heap_1a5419b4fcb65d98c363a4fc84d6e55677" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>dumpFreeList</name></member>
+      <member refid="classsead_1_1_heap_1ad50707203b4f25d0825882f226d03ec5" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>dumpTreeYAML</name></member>
+      <member refid="classsead_1_1_exp_heap_1aba8d8091d76aa488e6c767cc1630f7d6" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>dumpUseList</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2f5cd523e0d2f575f2a01d854930babe" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>dumpYAML</name></member>
+      <member refid="classsead_1_1_exp_heap_1aebc74bfb0c2768cbb40c5771aa9f2e4a" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>ExpHeap</name></member>
+      <member refid="classsead_1_1_heap_1a6f26d9a2fcc9e163e55b75a3d0ffda70" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findContainHeap_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a3d83cb285da4bcf322c97f99ee85c93e" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findFirstMemBlockIfFree_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4c" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>FindFreeBlockMode</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca00cc43b001caf85eaddf78e0c70639b9" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>FindFreeBlockMode_Auto</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4cae7c0132d76fb5572633ee6851d10cde4" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>FindFreeBlockMode_ByIteratingMemBlock</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2de4f75ec41bfa150437fd0938174d4ca1c27c10679ebc003a90da767024e4fac" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>FindFreeBlockMode_FromFreeList</name></member>
+      <member refid="classsead_1_1_exp_heap_1af6623adc79ca488f1906142e3d686444" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findFreeMemBlockFromHead_</name></member>
+      <member refid="classsead_1_1_exp_heap_1aab270b225c25412e139ab4b83add5796" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findFreeMemBlockFromHead_</name></member>
+      <member refid="classsead_1_1_exp_heap_1afab5cbd686857d325905755ed1ba84e2" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findFreeMemBlockFromTail_</name></member>
+      <member refid="classsead_1_1_exp_heap_1aa491960f61917a1b0477365df5c50561" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findFreeMemBlockFromTail_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a3153caac18654780c785f5f9aab01e21" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>findLastMemBlockIfFree_</name></member>
+      <member refid="classsead_1_1_exp_heap_1abd56795e71e1ee5c37f1768493aeed22" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>FindMode</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2ddba5b52fdc917ebe82fa4f1da66ee2" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>free</name></member>
+      <member refid="classsead_1_1_exp_heap_1aa7f179b37e835b0e5ea6e5594df0beb9" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>freeAll</name></member>
+      <member refid="classsead_1_1_exp_heap_1a8ad334603f8aea14c53ced6938bca9ef" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>genInformation_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a4ca133a304504c9542e98dbf572923b8" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getAllocatedSize</name></member>
+      <member refid="classsead_1_1_exp_heap_1a68f113be513712d534b7e568a46bd610" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getAllocMode</name></member>
+      <member refid="classsead_1_1_heap_1ac9c73df56def2a1b154561e6ccdf0841" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getCriticalSection</name></member>
+      <member refid="classsead_1_1_i_disposer_1a4787eac6c96ec41a402a87785ca1c1e5" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getDisposerHeap_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a811b6a7d0191e9adeec3e626e2a4192a" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>getEndAddress</name></member>
+      <member refid="classsead_1_1_exp_heap_1a21700b0c116be4c5f8b9cc55686f54fc" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>getFreeSize</name></member>
+      <member refid="classsead_1_1_i_disposer_1ad80f0bcae4db9dc8d86b972cf79242ff" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getListNodeOffset</name></member>
+      <member refid="classsead_1_1_exp_heap_1acffa09c3f59a521597fba7105f67d3cc" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getManagementAreaSize</name></member>
+      <member refid="classsead_1_1_exp_heap_1a1d0514cf01982aab86c29b8ea8c5f2e9" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>getMaxAllocatableSize</name></member>
+      <member refid="classsead_1_1_i_namable_1afbca7ad5cea53df4afb3cf6a2f59f83c" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>getName</name></member>
+      <member refid="classsead_1_1_exp_heap_1af87c010c8d161e1a4082b6578775ca65" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>getSize</name></member>
+      <member refid="classsead_1_1_exp_heap_1afe311f78a305a926e052e07affa1e28c" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>getStartAddress</name></member>
+      <member refid="classsead_1_1_heap_1a2e6fec110511cccf9cc180b27ac51881" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>Heap</name></member>
+      <member refid="classsead_1_1_heap_1a5a04ebfb94aa8051f2a8a231ba950922" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapDirection</name></member>
+      <member refid="classsead_1_1_heap_1a8a43dc0196acbf3d0d5264a8138c158b" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapList</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapNullOption</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a7924dc86bb92083cfe17af344f18efdb" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapNullOption_AlwaysUseSpecifiedHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1ae6e1545ced87f4418a3a522abd0134b7" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapNullOption_DoNotAppendDisposerIfNoHeapSpecified</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a9c3b6e23a61f6b9e12b642cd907a8a49" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapNullOption_UseSpecifiedOrContainHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a895cc222e6fbc909fe05e321660128b1a6fd315b4de876d836ebb7a643d6db3b0" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>HeapNullOption_UseSpecifiedOrCurrentHeap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a2dce641e279c1e5cd489227548dadf78" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1_i_disposer_1a674d1dfb9528774610a5e90fe3d8f394" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>IDisposer</name></member>
+      <member refid="classsead_1_1_i_namable_1a429adcb44a16a9c029fcb39d868c4d7f" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>INamable</name></member>
+      <member refid="classsead_1_1_i_namable_1ae752fa1a117c354f04f96d99248fe605" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>INamable</name></member>
+      <member refid="classsead_1_1_exp_heap_1abba4e56a9efca37402394ca38c7df4ff" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>isAdjustable</name></member>
+      <member refid="classsead_1_1_exp_heap_1a9ba9ea7e13fd541682458637f1e698b7" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>isEmpty</name></member>
+      <member refid="classsead_1_1_exp_heap_1a23cbb1b5d3dbbef44a97f1743ea8f668" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>isFreeable</name></member>
+      <member refid="classsead_1_1_exp_heap_1a1e3d3d68258c6720c9815760c00e114e" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>isInclude</name></member>
+      <member refid="classsead_1_1_exp_heap_1a2095e35388394a13ee17bc602a286738" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>isResizable</name></member>
+      <member refid="classsead_1_1_heap_1a377dd949578eac81d5fad0888f1d0f30" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>makeMetaString_</name></member>
+      <member refid="classsead_1_1_exp_heap_1accdd2f8603d4e7d0d51553dc9728344f" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mAllocMode</name></member>
+      <member refid="classsead_1_1_heap_1a8ab3f3d92a082ab0412d39480ea4685d" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mChildren</name></member>
+      <member refid="classsead_1_1_heap_1ac9ce3053a78a6d1ad5a8b5970035c88d" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mCS</name></member>
+      <member refid="classsead_1_1_heap_1a6f50fdf1a777ac7ba6da5a160b36f73b" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mDirection</name></member>
+      <member refid="classsead_1_1_i_disposer_1a8fba43a568227601ee03c0e021115682" prot="private" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mDisposerHeap</name></member>
+      <member refid="classsead_1_1_heap_1a454e9f5abf05bc462127b00c6e3808ec" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mDisposerList</name></member>
+      <member refid="classsead_1_1_exp_heap_1a8a3189764c03f7f11fa086d45b8bee24" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mFindFreeBlockMode</name></member>
+      <member refid="classsead_1_1_heap_1ac3e6f45dfe3400b03625667a698d8b2b" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mFlag</name></member>
+      <member refid="classsead_1_1_exp_heap_1a27a42ba2432e2852b5682916c357e71e" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mFreeList</name></member>
+      <member refid="classsead_1_1_heap_1a595aae61f964e53584688b8d5ba7482e" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mHeapCheckTag</name></member>
+      <member refid="classsead_1_1_i_namable_1a27d3d45caadcb0abcf88747db7bbc20b" prot="private" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mINamableName</name></member>
+      <member refid="classsead_1_1_heap_1a70e79accea283adb9af900551e35a162" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mListNode</name></member>
+      <member refid="classsead_1_1_heap_1a7fd242eadbd0518b144d81b9a4fed252" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mParent</name></member>
+      <member refid="classsead_1_1_heap_1ab5ff50165120b0b3da4bfbf9c8256880" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mSize</name></member>
+      <member refid="classsead_1_1_heap_1ad98b2eeda07fa03220ca784ddb047bc9" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mStart</name></member>
+      <member refid="classsead_1_1_exp_heap_1a36767a263da939c08d9661f73b5c33ea" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>mUseList</name></member>
+      <member refid="classsead_1_1_heap_1a4f90d60c7ffaa44a8b8dd318ad669c73" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>pushBackChild_</name></member>
+      <member refid="classsead_1_1_exp_heap_1a7a8d90546fd5f177141ee8acb66be099" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>pushToFreeList_</name></member>
+      <member refid="classsead_1_1_exp_heap_1af2608310c307a0cc339f9cd8e8643ea0" prot="protected" virt="non-virtual"><scope>sead::ExpHeap</scope><name>pushToUseList_</name></member>
+      <member refid="classsead_1_1_heap_1a65feeb8c1a2192f655578b734647e638" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>removeDisposer_</name></member>
+      <member refid="classsead_1_1_exp_heap_1ab85b4568d3a137fc222a83ef4c6e3526" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>resizeBack</name></member>
+      <member refid="classsead_1_1_exp_heap_1ac028ef5f1f43617417c337c500c8e8db" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>resizeFront</name></member>
+      <member refid="classsead_1_1_exp_heap_1ad6a227767c7d4664b3de109eb48b0fff" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>setAllocMode</name></member>
+      <member refid="classsead_1_1_exp_heap_1af32ace0bc644cb29e90091374d33cddb" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>setFindFreeBlockMode</name></member>
+      <member refid="classsead_1_1_i_namable_1acd4b503966fa742e89f2507e909b5468" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>setName</name></member>
+      <member refid="classsead_1_1_exp_heap_1a11059435324cd04f7cd455013d9a4be1" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>tryAlloc</name></member>
+      <member refid="classsead_1_1_exp_heap_1a116ad494334d919eb799a522601a4457" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>tryCheckFreeList</name></member>
+      <member refid="classsead_1_1_exp_heap_1a1f00bf86710c0c23cd2f17e70953971f" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>tryCheckUseList</name></member>
+      <member refid="classsead_1_1_exp_heap_1a9249703d7137219579cb59be7e6314de" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>tryCreate</name></member>
+      <member refid="classsead_1_1_exp_heap_1a11741039d90918494e3e76952ee3e202" prot="public" virt="non-virtual"><scope>sead::ExpHeap</scope><name>tryCreate</name></member>
+      <member refid="classsead_1_1_exp_heap_1a000a081bf0dae5b6c4139deb1df5fbc1" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>tryRealloc</name></member>
+      <member refid="classsead_1_1_exp_heap_1ad4252143db76d3ce1a124ed2fa915bde" prot="protected" virt="virtual"><scope>sead::ExpHeap</scope><name>~ExpHeap</name></member>
+      <member refid="classsead_1_1_heap_1a292677273d0f5f623d28640a773406da" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>~Heap</name></member>
+      <member refid="classsead_1_1_i_disposer_1a36e2b9b062febed0893f3530bc427f0a" prot="public" virt="virtual"><scope>sead::ExpHeap</scope><name>~IDisposer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

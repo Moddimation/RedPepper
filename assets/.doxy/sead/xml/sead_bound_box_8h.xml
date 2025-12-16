@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="sead_bound_box_8h" kind="file" language="C++">
+    <compoundname>seadBoundBox.h</compoundname>
+    <includes refid="sead_vector_8h" local="no">math/seadVector.h</includes>
+    <includes refid="sead_bound_box_8hpp" local="no">math/seadBoundBox.hpp</includes>
+    <includedby refid="sead_bound_box_8hpp" local="no">seadBoundBox.hpp</includedby>
+    <includedby refid="sead_controller_base_8h" local="no">seadControllerBase.h</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>basis/seadRawPrint.h</label>
+        <link refid="sead_raw_print_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basis/seadTypes.h</label>
+        <link refid="sead_types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>seadBoundBox.h</label>
+        <link refid="sead_bound_box_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>math/seadBoundBox.hpp</label>
+        <link refid="sead_bound_box_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math/seadMathBase.h</label>
+        <link refid="sead_math_base_8h"/>
+      </node>
+      <node id="11">
+        <label>math/seadMathCalcCommon.h</label>
+        <link refid="sead_math_calc_common_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math/seadMathCalcCommon.hpp</label>
+        <link refid="sead_math_calc_common_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>math/seadMathNumbers.h</label>
+        <link refid="sead_math_numbers_8h"/>
+      </node>
+      <node id="6">
+        <label>math/seadMathPolicies.h</label>
+        <link refid="sead_math_policies_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadVector.h</label>
+        <link refid="sead_vector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>math/seadVector.hpp</label>
+        <link refid="sead_vector_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>math/seadVectorCalcCtr.h</label>
+        <link refid="sead_vector_calc_ctr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>math/seadVectorCalcCtr.hpp</label>
+        <link refid="sead_vector_calc_ctr_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>prim/seadBitUtil.h</label>
+        <link refid="sead_bit_util_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>nn/math/math_VEC3.h</label>
+      </node>
+      <node id="5">
+        <label>nn/types.h</label>
+      </node>
+      <node id="15">
+        <label>stdarg.h</label>
+      </node>
+      <node id="17">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>seadController.h</label>
+        <link refid="sead_controller_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>seadControllerBase.h</label>
+        <link refid="sead_controller_base_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>seadControllerMgr.h</label>
+        <link refid="sead_controller_mgr_8h"/>
+      </node>
+      <node id="1">
+        <label>seadBoundBox.h</label>
+        <link refid="sead_bound_box_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>seadBoundBox.hpp</label>
+        <link refid="sead_bound_box_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsead_1_1_bound_box2" prot="public">sead::BoundBox2</innerclass>
+    <innerclass refid="structsead_1_1_bound_box3" prot="public">sead::BoundBox3</innerclass>
+    <innernamespace refid="namespacesead">sead</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="sead_bound_box_8h_1aa7f3b7598e60890c2797af7cede4c8e5" prot="public" static="no">
+        <name>SEAD_MATH_BOUND_BOX_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/math/seadBoundBox.h" line="120" column="9" bodyfile="lib/sead/include/math/seadBoundBox.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_vector_8h" kindref="compound">math/seadVector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesead" kindref="compound">sead</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="7" refid="structsead_1_1_bound_box2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_bound_box2" kindref="compound">BoundBox2</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="structsead_1_1_bound_box2_1a6c793481a9a9825a8302a011d9e6eec9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">sead::Vector2&lt;T&gt;</ref><sp/><ref refid="structsead_1_1_bound_box2_1a6c793481a9a9825a8302a011d9e6eec9" kindref="member">Vector2</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structsead_1_1_bound_box2_1a68c12dc02bfed07461427813561673f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box2_1a68c12dc02bfed07461427813561673f8" kindref="member">BoundBox2</ref>()<sp/>{<sp/><ref refid="structsead_1_1_bound_box2_1a3cb2af30006923227e231d156e151ae0" kindref="member">setUndef</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structsead_1_1_bound_box2_1a7e97c1cc2b6c75cb72194a53f9d6852d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box2_1a7e97c1cc2b6c75cb72194a53f9d6852d" kindref="member">BoundBox2</ref>(T<sp/>x0,<sp/>T<sp/>y0,<sp/>T<sp/>x1,<sp/>T<sp/>y1)<sp/>{<sp/><ref refid="structsead_1_1_bound_box2_1ac5d04988f6209e94628338f764cf9897" kindref="member">set</ref>(x0,<sp/>y0,<sp/>x1,<sp/>y1);<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structsead_1_1_bound_box2_1af8577ea5cc1f474d42842540c725eebd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box2_1af8577ea5cc1f474d42842540c725eebd" kindref="member">BoundBox2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>max)<sp/>:<sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>(min),<sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>(max)<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structsead_1_1_bound_box2_1af242ddf877d2cee807724fe01358c41c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box2_1af242ddf877d2cee807724fe01358c41c" kindref="member">getSizeX</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref><sp/>-<sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structsead_1_1_bound_box2_1a28f2bd7ae452083ccee0fca97baa592b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box2_1a28f2bd7ae452083ccee0fca97baa592b" kindref="member">getSizeY</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref><sp/>-<sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structsead_1_1_bound_box2_1a43505458afc0980329ef9cf98b1315cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box2_1a43505458afc0980329ef9cf98b1315cb" kindref="member">getHalfSizeX</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref><sp/>-<sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref>)<sp/>/<sp/>2.0f;<sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structsead_1_1_bound_box2_1a776671ecce157dbec422d12aa3a66474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box2_1a776671ecce157dbec422d12aa3a66474" kindref="member">getHalfSizeY</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref><sp/>-<sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref>)<sp/>/<sp/>2.0f;<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structsead_1_1_bound_box2_1a3e02c3c23f755f1432b649a9ac31afd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/><ref refid="structsead_1_1_bound_box2_1a3e02c3c23f755f1432b649a9ac31afd6" kindref="member">getMin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structsead_1_1_bound_box2_1a2c395bbd651ebf723676e07a2e69baf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/><ref refid="structsead_1_1_bound_box2_1a2c395bbd651ebf723676e07a2e69baf8" kindref="member">getMax</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structsead_1_1_bound_box2_1af547da2198696c5d4b5fffe87b3582d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1af547da2198696c5d4b5fffe87b3582d9" kindref="member">getTL</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structsead_1_1_bound_box2_1a231301bb4530bbb21d55322deb701e31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1a231301bb4530bbb21d55322deb701e31" kindref="member">getTR</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a6c793481a9a9825a8302a011d9e6eec9" kindref="member">Vector2</ref>(<ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref>,<sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structsead_1_1_bound_box2_1a3421f69777e504414d54788238a5fd65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1a3421f69777e504414d54788238a5fd65" kindref="member">getBL</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a6c793481a9a9825a8302a011d9e6eec9" kindref="member">Vector2</ref>(<ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref>,<sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structsead_1_1_bound_box2_1a8b25fc284504d46d9a95071807286c69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1a8b25fc284504d46d9a95071807286c69" kindref="member">getBR</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1a999f7826580e8ed1f705743636100b6f" kindref="member">getCenter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a999f7826580e8ed1f705743636100b6f" kindref="member">getCenter</ref>(<ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>*<sp/>p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1afa35c51a5440661798df02efa03c928a" kindref="member">isUndef</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a77b6d044218fd6612174ddc7f6f5949f" kindref="member">isInside</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a3cb2af30006923227e231d156e151ae0" kindref="member">setUndef</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1ac5d04988f6209e94628338f764cf9897" kindref="member">set</ref>(T<sp/>x0,<sp/>T<sp/>y0,<sp/>T<sp/>x1,<sp/>T<sp/>y1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1ac5d04988f6209e94628338f764cf9897" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>max);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a83cee7e21bbf6c364c4db23598e91ba4" kindref="member">setMin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>min);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a8f4c4abd54c47ce13c2f5dfc7c94a1fb" kindref="member">setMax</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>max);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a5edde4e5c7fe7f6c9c7e9a364ee7152d" kindref="member">setFromCenterAndXY</ref>(T<sp/>centerX,<sp/>T<sp/>centerY,<sp/>T<sp/>sizeX,<sp/>T<sp/>sizeY);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a2e17854b88a03cdcaf034030d7e198dd" kindref="member">setFromCornerAndXY</ref>(T<sp/>cornerX,<sp/>T<sp/>cornerY,<sp/>T<sp/>sizeX,<sp/>T<sp/>sizeY);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="structsead_1_1_bound_box2_1a060525e20f64f32a8729f3d4bf140bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a060525e20f64f32a8729f3d4bf140bc6" kindref="member">setFromCenterAndXY</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>center,<sp/>T<sp/>sizeX,<sp/>T<sp/>sizeY)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box2_1a5edde4e5c7fe7f6c9c7e9a364ee7152d" kindref="member">setFromCenterAndXY</ref>(center.<ref refid="structsead_1_1_base_vec2_1abf4dd047b310e8bdf4cc0287e6d37a8e" kindref="member">x</ref>,<sp/>center.<ref refid="structsead_1_1_base_vec2_1ae5417909753e28d79b7d3f228228a5fd" kindref="member">y</ref>,<sp/>sizeX,<sp/>sizeY);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a2e17854b88a03cdcaf034030d7e198dd" kindref="member">setFromCornerAndXY</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>corner,<sp/>T<sp/>sizeX,<sp/>T<sp/>sizeY);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a40e83d74e4d0383ea12a1e1c2be43887" kindref="member">offset</ref>(T<sp/>dx,<sp/>T<sp/>dy);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a40e83d74e4d0383ea12a1e1c2be43887" kindref="member">offset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref>&amp;<sp/>dv);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1ade58b2eeb418091dedcf49de8654e5bd" kindref="member">scaleX</ref>(T<sp/>sx);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2_1a9f1eab9d94989e926d60a3b16320006d" kindref="member">scaleY</ref>(T<sp/>sy);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1adce185265999bda00402bbe5787bf582" kindref="member">mMin</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector2" kindref="compound">Vector2</ref><sp/><ref refid="structsead_1_1_bound_box2_1a77956ce1b31b63ab4c9d89e0fb0ed075" kindref="member">mMax</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="structsead_1_1_bound_box2_1a7f5d7959d5c575e4f62de91908e8fbb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2" kindref="compound">BoundBox2&lt;T&gt;</ref><sp/><ref refid="structsead_1_1_bound_box2_1a7f5d7959d5c575e4f62de91908e8fbb6" kindref="member">cUndefined</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="67" refid="structsead_1_1_bound_box3" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsead_1_1_bound_box3" kindref="compound">BoundBox3</ref><sp/>{</highlight></codeline>
+<codeline lineno="68" refid="structsead_1_1_bound_box3_1acdd8e54f0e3559a1ddd6df00d8532a3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">sead::Vector3&lt;T&gt;</ref><sp/><ref refid="structsead_1_1_bound_box3_1acdd8e54f0e3559a1ddd6df00d8532a3c" kindref="member">Vector3</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structsead_1_1_bound_box3_1ade2a39e6219266afb58c69ccf870fdca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box3_1ade2a39e6219266afb58c69ccf870fdca" kindref="member">BoundBox3</ref>()<sp/>{<sp/><ref refid="structsead_1_1_bound_box3_1afb9c63621b112a3103b42de29e254f99" kindref="member">setUndef</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structsead_1_1_bound_box3_1a242fd01a103fdfe4007824ec62d5449b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box3_1a242fd01a103fdfe4007824ec62d5449b" kindref="member">BoundBox3</ref>(T<sp/>x0,<sp/>T<sp/>y0,<sp/>T<sp/>z0,<sp/>T<sp/>x1,<sp/>T<sp/>y1,<sp/>T<sp/>z1)<sp/>{<sp/><ref refid="structsead_1_1_bound_box3_1adf3cdcce8a3653b840e9732093138ee7" kindref="member">set</ref>(x0,<sp/>y0,<sp/>z0,<sp/>x1,<sp/>y1,<sp/>z1);<sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structsead_1_1_bound_box3_1a839cb320d36dceed99dcebd15caba79e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_bound_box3_1a839cb320d36dceed99dcebd15caba79e" kindref="member">BoundBox3</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>max)<sp/>{<sp/><ref refid="structsead_1_1_bound_box3_1adf3cdcce8a3653b840e9732093138ee7" kindref="member">set</ref>(min,<sp/>max);<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="structsead_1_1_bound_box3_1a322d70e9577c22da98f1273bfe0aff6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box3_1a322d70e9577c22da98f1273bfe0aff6e" kindref="member">getSizeX</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>.x<sp/>-<sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>.x;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structsead_1_1_bound_box3_1a520cc37c36583cbbf9805e6e007ee48d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box3_1a520cc37c36583cbbf9805e6e007ee48d" kindref="member">getSizeY</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>.y<sp/>-<sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>.y;<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="structsead_1_1_bound_box3_1ae915495cd5492fbbe26e9f80ac7e00dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box3_1ae915495cd5492fbbe26e9f80ac7e00dd" kindref="member">getSizeZ</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>.z<sp/>-<sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>.z;<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="structsead_1_1_bound_box3_1a319a0ca2e5cff706464eb0b0c1b9745f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box3_1a319a0ca2e5cff706464eb0b0c1b9745f" kindref="member">getHalfSizeX</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>.x<sp/>-<sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>.x)<sp/>/<sp/>2.0f;<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="structsead_1_1_bound_box3_1a2a8d5bfbb74bd3e2b0d4c0535e45001f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box3_1a2a8d5bfbb74bd3e2b0d4c0535e45001f" kindref="member">getHalfSizeY</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>.y<sp/>-<sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>.y)<sp/>/<sp/>2.0f;<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structsead_1_1_bound_box3_1a3e35469377815e3249e04c8138ceb42e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="structsead_1_1_bound_box3_1a3e35469377815e3249e04c8138ceb42e" kindref="member">getHalfSizeZ</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>.z<sp/>-<sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>.z)<sp/>/<sp/>2.0f;<sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="structsead_1_1_bound_box3_1a6f01ab33f37e9a28f7c26e4420372b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="structsead_1_1_bound_box3_1a6f01ab33f37e9a28f7c26e4420372b66" kindref="member">getMin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="structsead_1_1_bound_box3_1a0e0648a0ae4df924c8ee74bbf53bc045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="structsead_1_1_bound_box3_1a0e0648a0ae4df924c8ee74bbf53bc045" kindref="member">getMax</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref><sp/><ref refid="structsead_1_1_bound_box3_1ad1f00711bf40a4c1227c8460632f5d42" kindref="member">getCenter</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1ad1f00711bf40a4c1227c8460632f5d42" kindref="member">getCenter</ref>(<ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>*<sp/>p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a656083ef46bef75d93156f7d54c03d60" kindref="member">isUndef</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1aa46b3977ce738b51477c9657ed089f7b" kindref="member">isInside</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>p)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1afb9c63621b112a3103b42de29e254f99" kindref="member">setUndef</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1adf3cdcce8a3653b840e9732093138ee7" kindref="member">set</ref>(T<sp/>x0,<sp/>T<sp/>y0,<sp/>T<sp/>z0,<sp/>T<sp/>x1,<sp/>T<sp/>y1,<sp/>T<sp/>z1);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1adf3cdcce8a3653b840e9732093138ee7" kindref="member">set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>max);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a8e377f7efa458c2b3fb39c959fe3128c" kindref="member">setMin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>min);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a0474f2f75da97b0ae0d0db2eaa7a580a" kindref="member">setMax</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>max);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1add9d0ee3c865148060d1348bbff73ec0" kindref="member">offset</ref>(T<sp/>dx,<sp/>T<sp/>dy,<sp/>T<sp/>dz);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1add9d0ee3c865148060d1348bbff73ec0" kindref="member">offset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref>&amp;<sp/>dv);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a39eddc4885a459a90793cbb49a563163" kindref="member">scaleX</ref>(T<sp/>sx);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1ab0e36b81a4f6434a9750beae5ce2d10d" kindref="member">scaleY</ref>(T<sp/>sy);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3_1a8df7323de6060ae34be14f1c5297689d" kindref="member">scaleZ</ref>(T<sp/>sz);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="109" refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref><sp/><ref refid="structsead_1_1_bound_box3_1a851df0a0a039df4996f12e293e68823d" kindref="member">mMin</ref>;</highlight></codeline>
+<codeline lineno="110" refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsead_1_1_vector3" kindref="compound">Vector3</ref><sp/><ref refid="structsead_1_1_bound_box3_1a910c2dc7998a8ad4929e94ee924025b1" kindref="member">mMax</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="structsead_1_1_bound_box3_1a94200507246e4461a757a302dbc00a95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3" kindref="compound">BoundBox3&lt;T&gt;</ref><sp/><ref refid="structsead_1_1_bound_box3_1a94200507246e4461a757a302dbc00a95" kindref="member">cUndefined</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="namespacesead_1ab615273ae74cb3ebd49ce59752c84988" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box2" kindref="compound">BoundBox2&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1ab615273ae74cb3ebd49ce59752c84988" kindref="member">BoundBox2f</ref>;</highlight></codeline>
+<codeline lineno="116" refid="namespacesead_1ab8131f61de7e74022b6aaf69e3645d83" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structsead_1_1_bound_box3" kindref="compound">BoundBox3&lt;f32&gt;</ref><sp/><ref refid="namespacesead_1ab8131f61de7e74022b6aaf69e3645d83" kindref="member">BoundBox3f</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="sead_bound_box_8h_1aa7f3b7598e60890c2797af7cede4c8e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEAD_MATH_BOUND_BOX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sead_bound_box_8hpp" kindref="compound">math/seadBoundBox.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SEAD_MATH_BOUND_BOX_H_</highlight></codeline>
+    </programlisting>
+    <location file="lib/sead/include/math/seadBoundBox.h"/>
+  </compounddef>
+</doxygen>

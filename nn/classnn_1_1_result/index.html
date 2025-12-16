@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class nn::Result - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-nnresult">Class nn::Result</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacenn/"><strong>nn</strong></a> <strong>&gt;</strong> <a href="./"><strong>Result</strong></a></p>
+<ul>
+<li><code>#include &lt;Result.h&gt;</code></li>
+</ul>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-description"><strong>Description</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-level"><strong>Level</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-moduletype"><strong>ModuleType</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-summary"><strong>Summary</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-failed"><strong>Failed</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-getdescription"><strong>GetDescription</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#enum-level"><strong>Level</strong></a></td>
+<td style="text-align: left;"><a href="#function-getlevel"><strong>GetLevel</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#enum-moduletype"><strong>ModuleType</strong></a></td>
+<td style="text-align: left;"><a href="#function-getmoduletype"><strong>GetModuleType</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#enum-summary"><strong>Summary</strong></a></td>
+<td style="text-align: left;"><a href="#function-getsummary"><strong>GetSummary</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-isvalid"><strong>IsValid</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-result-12"><strong>Result</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-result-22"><strong>Result</strong></a> (<a href="./#enum-level"><strong>Level</strong></a> level, <a href="./#enum-summary"><strong>Summary</strong></a> summary, <a href="./#enum-moduletype"><strong>ModuleType</strong></a> module, int desc) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-succeeded"><strong>Succeeded</strong></a> () const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-operator-bool"><strong>operator bool</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="enum-description">enum Description</h3>
+<pre><code class="language-C++">enum nn::Result::Description {
+    Description_InvalidSelection = 1000,
+    Description_TooLarge,
+    Description_NotAuthorized,
+    Description_AlreadyDone,
+    Description_InvalidSize,
+    Description_InvalidEnumValue,
+    Description_InvalidCombination,
+    Description_NoData,
+    Description_Busy,
+    Description_MisalignedAddress,
+    Description_MisalignedSize,
+    Description_OutOfMemory,
+    Description_NotImplemented,
+    Description_InvalidAddress,
+    Description_InvalidPointer,
+    Description_InvalidHandle,
+    Description_NotInitialized,
+    Description_AlreadyInitialized,
+    Description_NotFound,
+    Description_CancelRequested,
+    Description_AlreadyExists,
+    Description_OutOfRange,
+    Description_Timeout,
+    Description_InvalidResultValue,
+    Description_Success = 0
+};
+</code></pre>
+<hr>
+
+<h3 id="enum-level">enum Level</h3>
+<pre><code class="language-C++">enum nn::Result::Level {
+    Level_Status = -7,
+    Level_Temporary,
+    Level_Permanent,
+    Level_Usage,
+    Level_Reinitialize,
+    Level_Reset,
+    Level_Fatal,
+    Level_Info,
+    Level_Success
+};
+</code></pre>
+<hr>
+
+<h3 id="enum-moduletype">enum ModuleType</h3>
+<pre><code class="language-C++">enum nn::Result::ModuleType {
+    ModuleType_COMMON = 0,
+    ModuleType_KERNEL = 1,
+    ModuleType_UTIL = 2,
+    ModuleType_FILE_SERVER = 3,
+    ModuleType_LOADER_SERVER = 4,
+    ModuleType_TCB = 5,
+    ModuleType_OS = 6,
+    ModuleType_DBG = 7,
+    ModuleType_DMNT = 8,
+    ModuleType_PDN = 9,
+    ModuleType_GSP = 10,
+    ModuleType_I2C = 11,
+    ModuleType_GPIO = 12,
+    ModuleType_DD = 13,
+    ModuleType_CODEC = 14,
+    ModuleType_SPI = 15,
+    ModuleType_PXI = 16,
+    ModuleType_FS = 17,
+    ModuleType_DI = 18,
+    ModuleType_HID = 19,
+    ModuleType_CAM = 20,
+    ModuleType_PI = 21,
+    ModuleType_PM = 22,
+    ModuleType_PM_LOW = 23,
+    ModuleType_FSI = 24,
+    ModuleType_SRV = 25,
+    ModuleType_NDM = 26,
+    ModuleType_NWM = 27,
+    ModuleType_SOC = 28,
+    ModuleType_LDR = 29,
+    ModuleType_ACC = 30,
+    ModuleType_ROMFS = 31,
+    ModuleType_AM = 32,
+    ModuleType_HIO = 33,
+    ModuleType_UPDATER = 34,
+    ModuleType_MIC = 35,
+    ModuleType_FND = 36,
+    ModuleType_MP = 37,
+    ModuleType_MPWL = 38,
+    ModuleType_AC = 39,
+    ModuleType_HTTP = 40,
+    ModuleType_DSP = 41,
+    ModuleType_SND = 42,
+    ModuleType_DLP = 43,
+    ModuleType_HIO_LOW = 44,
+    ModuleType_CSND = 45,
+    ModuleType_SSL = 46,
+    ModuleType_AM_LOW = 47,
+    ModuleType_NEX = 48,
+    ModuleType_FRIENDS = 49,
+    ModuleType_RDT = 50,
+    ModuleType_APPLET = 51,
+    ModuleType_NIM = 52,
+    ModuleType_PTM = 53,
+    ModuleType_MIDI = 54,
+    ModuleType_MC = 55,
+    ModuleType_SWC = 56,
+    ModuleType_FATFS = 57,
+    ModuleType_NGC = 58,
+    ModuleType_CARD = 59,
+    ModuleType_CARDNOR = 60,
+    ModuleType_SDMC = 61,
+    ModuleType_BOSS = 62,
+    ModuleType_DBM = 63,
+    ModuleType_CONFIG = 64,
+    ModuleType_PS = 65,
+    ModuleType_CEC = 66,
+    ModuleType_IR = 67,
+    ModuleType_UDS = 68,
+    ModuleType_PL = 69,
+    ModuleType_CUP = 70,
+    ModuleType_GYROSCOPE = 71,
+    ModuleType_MCU = 72,
+    ModuleType_NS = 73,
+    ModuleType_NEWS = 74,
+    ModuleType_RO = 75,
+    ModuleType_GD = 76,
+    ModuleType_CARD_SPI = 77,
+    ModuleType_EC = 78,
+    ModuleType_WEB_BROWSER = 79,
+    ModuleType_TEST = 80,
+    ModuleType_ENC = 81,
+    ModuleType_PIA = 82,
+    ModuleType_ACT = 83,
+    ModuleType_VCTL = 84,
+    ModuleType_OLV = 85,
+    ModuleType_NEIA = 86,
+    ModuleType_NPNS = 87,
+    ModuleType_AVD = 90,
+    ModuleType_L2B = 91,
+    ModuleType_MVD = 92,
+    ModuleType_NFC = 93,
+    ModuleType_UART = 94,
+    ModuleType_SPM = 95,
+    ModuleType_QTM = 96,
+    ModuleType_NFP = 97,
+    ModuleType_APP = 254
+};
+</code></pre>
+<hr>
+
+<h3 id="enum-summary">enum Summary</h3>
+<pre><code class="language-C++">enum nn::Result::Summary {
+    Summary_Success = 0,
+    Summary_Nop = 1,
+    Summary_WouldBlock = 2,
+    Summary_OutOfResources = 3,
+    Summary_NotFound = 4,
+    Summary_InvalidState = 5,
+    Summary_NotSupported = 6,
+    Summary_InvalidArgument = 7,
+    Summary_WrongArgument = 8,
+    Summary_Cancelled = 9,
+    Summary_StatusChanged = 10,
+    Summary_Internal = 11,
+    Summary_InvalidResultValue = 63
+};
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-failed">function Failed</h3>
+<pre><code class="language-C++">inline bool nn::Result::Failed () const
+</code></pre>
+<hr>
+
+<h3 id="function-getdescription">function GetDescription</h3>
+<pre><code class="language-C++">inline int nn::Result::GetDescription () const
+</code></pre>
+<hr>
+
+<h3 id="function-getlevel">function GetLevel</h3>
+<pre><code class="language-C++">inline Level nn::Result::GetLevel () const
+</code></pre>
+<hr>
+
+<h3 id="function-getmoduletype">function GetModuleType</h3>
+<pre><code class="language-C++">inline ModuleType nn::Result::GetModuleType () const
+</code></pre>
+<hr>
+
+<h3 id="function-getsummary">function GetSummary</h3>
+<pre><code class="language-C++">inline Summary nn::Result::GetSummary () const
+</code></pre>
+<hr>
+
+<h3 id="function-isvalid">function IsValid</h3>
+<pre><code class="language-C++">inline bool nn::Result::IsValid () const
+</code></pre>
+<hr>
+
+<h3 id="function-result-12">function Result [1/2]</h3>
+<pre><code class="language-C++">inline nn::Result::Result () 
+</code></pre>
+<hr>
+
+<h3 id="function-result-22">function Result [2/2]</h3>
+<pre><code class="language-C++">inline nn::Result::Result (
+    Level level,
+    Summary summary,
+    ModuleType module,
+    int desc
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-succeeded">function Succeeded</h3>
+<pre><code class="language-C++">inline bool nn::Result::Succeeded () const
+</code></pre>
+<hr>
+
+<h3 id="function-operator-bool">function operator bool</h3>
+<pre><code class="language-C++">inline nn::Result::operator bool () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/CTRSDK/include/nn/Result.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

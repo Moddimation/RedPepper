@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_actor_pose_keeper_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>al::ActorPoseKeeperBase</compoundname>
+    <derivedcompoundref refid="classal_1_1_actor_pose_keeper_t_f_s_v" prot="public" virt="non-virtual">al::ActorPoseKeeperTFSV</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_actor_pose_keeper_t_q_s_v" prot="public" virt="non-virtual">al::ActorPoseKeeperTQSV</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_actor_pose_keeper_t_r_s_v" prot="public" virt="non-virtual">al::ActorPoseKeeperTRSV</derivedcompoundref>
+    <includes refid="al_actor_pose_keeper_8h" local="no">alActorPoseKeeper.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_actor_pose_keeper_base_1ae01bf343cf3c2792ca143cf5179158d3" prot="private" static="no" mutable="no">
+        <type>sead::Vector3f</type>
+        <definition>sead::Vector3f al::ActorPoseKeeperBase::mTrans</definition>
+        <argsstring></argsstring>
+        <name>mTrans</name>
+        <qualifiedname>al::ActorPoseKeeperBase::mTrans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="15" column="24" bodyfile="lib/al/include/LiveActor/alActorPoseKeeper.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classal_1_1_actor_pose_keeper_base_1a6409182860969a20e7287eaf56dc7571" compoundref="al_actor_pose_keeper_8h" startline="18" endline="21">getTrans</referencedby>
+        <referencedby refid="classal_1_1_actor_pose_keeper_base_1ac0c7f98439c3bd84c9a6519aada721f6" compoundref="al_actor_pose_keeper_8h" startline="30" endline="33">getTransPtr</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classal_1_1_actor_pose_keeper_base_1ae4f45a9e45e9a014fe37aca639105900" prot="public" static="yes" mutable="no">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f</type>
+        <definition>const sead::Vector3f al::ActorPoseKeeperBase::sDefaultGravity</definition>
+        <argsstring></argsstring>
+        <name>sDefaultGravity</name>
+        <qualifiedname>al::ActorPoseKeeperBase::sDefaultGravity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="49" column="37" bodyfile="lib/al/include/LiveActor/alActorPoseKeeper.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classal_1_1_actor_pose_keeper_base_1ad28fa21de46b358fdff95c4a3c45348d" compoundref="al_actor_pose_keeper_8cpp" startline="38" endline="41">getGravity</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a6409182860969a20e7287eaf56dc7571" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::ActorPoseKeeperBase::getTrans</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrans</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getTrans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="18" column="37" bodyfile="lib/al/include/LiveActor/alActorPoseKeeper.h" bodystart="18" bodyend="21"/>
+        <references refid="classal_1_1_actor_pose_keeper_base_1ae01bf343cf3c2792ca143cf5179158d3" compoundref="al_actor_pose_keeper_8h" startline="15">mTrans</references>
+        <referencedby refid="namespaceal_1ab9ac85c3ba2c227660523ce91c2ca10e" compoundref="al_actor_pose_keeper_8cpp" startline="268" endline="271">al::getTrans</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a2009e08cbed1f3e38c9a2c2737e75a16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::ActorPoseKeeperBase::getRotate</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotate</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getRotate</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1adb7f7f85a561ce34878e7676ef97e0d4">getRotate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="23" column="38" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="13" bodyend="16"/>
+        <referencedby refid="namespaceal_1a21ee0146e68076d59135441cfe7aec6a" compoundref="al_actor_pose_keeper_8cpp" startline="273" endline="276">al::getRotate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::ActorPoseKeeperBase::getScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getScale</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getScale</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ab776ce8f17f0518c24399369ce9db55e">getScale</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a6b84d5763f117ec3673acfa7f8148256">getScale</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a43898c366f9a5762759050d5cec27033">getScale</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="24" column="38" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="18" bodyend="21"/>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+        <referencedby refid="namespaceal_1ad66111fc56036a7ca800ff136d3a68c5" compoundref="al_actor_pose_keeper_8cpp" startline="278" endline="281">al::getScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1aa22a3a8d780efd9a246fd9fa816e8448" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::ActorPoseKeeperBase::getVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>getVelocity</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getVelocity</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ad3f51f5fcd6ab1da586eb91a8626ef72">getVelocity</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a25a2ac6c3cad141e92c2ae72747c6bdf">getVelocity</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a3de617949d3c3878cd594a150ec62f92">getVelocity</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="25" column="38" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="23" bodyend="26"/>
+        <referencedby refid="namespaceal_1a2a0acded3a32a5abe57b78d112aa9bec" compoundref="al_actor_pose_keeper_8cpp" startline="283" endline="286">al::getVelocity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a0086f3a68154148f141a0f2bdcc1ca17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::ActorPoseKeeperBase::getFront</definition>
+        <argsstring>() const</argsstring>
+        <name>getFront</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getFront</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a7c8b35ead83a02034c316ec12958923d">getFront</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="26" column="38" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="28" bodyend="31"/>
+        <referencedby refid="namespaceal_1a296cbe28bc75d476ef115e2971c89500" compoundref="al_actor_pose_keeper_8cpp" startline="288" endline="291">al::getFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1affcce788a6197060e9c4e42c2386506d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Quatf &amp;</type>
+        <definition>const sead::Quatf &amp; al::ActorPoseKeeperBase::getQuat</definition>
+        <argsstring>() const</argsstring>
+        <name>getQuat</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getQuat</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a646771c9d87fdaf521d1b00dee039914">getQuat</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="27" column="38" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="33" bodyend="36"/>
+        <referencedby refid="namespaceal_1a51d78749b96e2d197ae59ded8faf784e" compoundref="al_actor_pose_keeper_8cpp" startline="293" endline="296">al::getQuat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1ad28fa21de46b358fdff95c4a3c45348d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+        <definition>const sead::Vector3f &amp; al::ActorPoseKeeperBase::getGravity</definition>
+        <argsstring>() const</argsstring>
+        <name>getGravity</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getGravity</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1ac9ecc2b777a7c6da9abe79167b37e747">getGravity</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="28" column="38" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="38" bodyend="41"/>
+        <references refid="classal_1_1_actor_pose_keeper_base_1ae4f45a9e45e9a014fe37aca639105900" compoundref="al_actor_pose_keeper_8h" startline="49">sDefaultGravity</references>
+        <referencedby refid="namespaceal_1a33a72d0594ed1adba698daed83794803" compoundref="al_actor_pose_keeper_8cpp" startline="298" endline="301">al::getGravity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1ac0c7f98439c3bd84c9a6519aada721f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f * al::ActorPoseKeeperBase::getTransPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getTransPtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getTransPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="30" column="31" bodyfile="lib/al/include/LiveActor/alActorPoseKeeper.h" bodystart="30" bodyend="33"/>
+        <references refid="classal_1_1_actor_pose_keeper_base_1ae01bf343cf3c2792ca143cf5179158d3" compoundref="al_actor_pose_keeper_8h" startline="15">mTrans</references>
+        <referencedby refid="namespaceal_1a49dad189ff02d28837741f4192df745f" compoundref="al_actor_pose_keeper_8cpp" startline="303" endline="306">al::getTransPtr</referencedby>
+        <referencedby refid="namespaceal_1a3893d7e6385ef62457746d2409ba745e" compoundref="al_actor_pose_keeper_8cpp" startline="224" endline="227">al::setTrans</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1addf18a3f6e1036ed3aa3989dd48b5cf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f * al::ActorPoseKeeperBase::getRotatePtr</definition>
+        <argsstring>()</argsstring>
+        <name>getRotatePtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getRotatePtr</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1ad92e40a615814a943f7ccb1d6088f005">getRotatePtr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="35" column="32" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="43" bodyend="46"/>
+        <referencedby refid="namespaceal_1af96572d54174dcd97afa31d240690c92" compoundref="al_actor_pose_keeper_8cpp" startline="308" endline="311">al::getRotatePtr</referencedby>
+        <referencedby refid="namespaceal_1acf95646b4531b37e4385dec0fea969f0" compoundref="al_actor_pose_keeper_8cpp" startline="229" endline="232">al::setRotate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1ac04b2c9afa3dd63da8d3f9cd51e095c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f * al::ActorPoseKeeperBase::getScalePtr</definition>
+        <argsstring>()</argsstring>
+        <name>getScalePtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getScalePtr</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1afedec9683d07773a055803e5d3cf26fc">getScalePtr</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a3f0244e1b04b80f7c4eb7546cfd55c07">getScalePtr</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a799cec038dafaafe253c79cccc2c59ab">getScalePtr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="36" column="32" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="48" bodyend="51"/>
+        <referencedby refid="namespaceal_1a9f2e2243753f1015921cda3d586f5238" compoundref="al_actor_pose_keeper_8cpp" startline="313" endline="316">al::getScalePtr</referencedby>
+        <referencedby refid="namespaceal_1a58d52f5333d9398a3b178120c7a61849" compoundref="al_actor_pose_keeper_8cpp" startline="234" endline="237">al::setScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f * al::ActorPoseKeeperBase::getVelocityPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getVelocityPtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getVelocityPtr</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a8290fde397451fbb5d825c776cb2716d">getVelocityPtr</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1af8066fcba5018a7a9036485829636c4d">getVelocityPtr</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a88005313c32c26adb29a632cd1be36db">getVelocityPtr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="37" column="32" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="53" bodyend="56"/>
+        <referencedby refid="namespaceal_1a02231d5f779acbf2649764e154de8629" compoundref="al_actor_pose_keeper_8cpp" startline="318" endline="321">al::getVelocityPtr</referencedby>
+        <referencedby refid="namespaceal_1ac59a4fad6af604bbb165dee7b79ea332" compoundref="al_actor_pose_keeper_8cpp" startline="239" endline="242">al::setVelocity</referencedby>
+        <referencedby refid="namespaceal_1a0f6b69f4bae9b61c180c3e7289f7acfb" compoundref="al_actor_pose_keeper_8cpp" startline="244" endline="251">al::setVelocityZero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a7208b9f33ec2db54bc3ee68f10869cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f * al::ActorPoseKeeperBase::getFrontPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getFrontPtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getFrontPtr</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a5604f27bb757459016b335f3fa0f5c40">getFrontPtr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="38" column="32" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="58" bodyend="61"/>
+        <referencedby refid="namespaceal_1a600e03b1af0ece1d33083782cd50fcee" compoundref="al_actor_pose_keeper_8cpp" startline="323" endline="326">al::getFrontPtr</referencedby>
+        <referencedby refid="namespaceal_1a1a75bc04b03e619858a37d48e7de9256" compoundref="al_actor_pose_keeper_8cpp" startline="253" endline="256">al::setFront</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a1149b82e31e0d9590fe114596d510d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sead::Quatf *</type>
+        <definition>sead::Quatf * al::ActorPoseKeeperBase::getQuatPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getQuatPtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getQuatPtr</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a377d57041c2011f5b54887926fd991ff">getQuatPtr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="39" column="32" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="63" bodyend="66"/>
+        <referencedby refid="namespaceal_1a78b42eb7fb86899e5c46a997ac03dd91" compoundref="al_actor_pose_keeper_8cpp" startline="328" endline="331">al::getQuatPtr</referencedby>
+        <referencedby refid="namespaceal_1a53f6fc4407108ec810b4765f6d0681f3" compoundref="al_actor_pose_keeper_8cpp" startline="258" endline="261">al::setQuat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a3210a95099e71d308a72a48121946d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sead::Vector3f *</type>
+        <definition>sead::Vector3f * al::ActorPoseKeeperBase::getGravityPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getGravityPtr</name>
+        <qualifiedname>al::ActorPoseKeeperBase::getGravityPtr</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1ad60b8cea4d401287108e5f4c8e7d4e1b">getGravityPtr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="40" column="32" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="68" bodyend="71"/>
+        <referencedby refid="namespaceal_1af779b5920d21a1d26011180ec081c802" compoundref="al_actor_pose_keeper_8cpp" startline="333" endline="336">al::getGravityPtr</referencedby>
+        <referencedby refid="namespaceal_1acd5901a1bb65746c57c8e03d849424c2" compoundref="al_actor_pose_keeper_8cpp" startline="263" endline="266">al::setGravity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a8d443ef9d3fc1d9bbd9b33e2dd06ad83" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ActorPoseKeeperBase::updatePoseRotate</definition>
+        <argsstring>(const sead::Vector3f &amp;rot)=0</argsstring>
+        <name>updatePoseRotate</name>
+        <qualifiedname>al::ActorPoseKeeperBase::updatePoseRotate</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a341be5f11fb50b81b5ea9c6007e14d61">updatePoseRotate</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a7fa844ec2f07829e380929c0f22c54a8">updatePoseRotate</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a3b4147ba681faed15b7b9b9737034f0d">updatePoseRotate</reimplementedby>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Vector3f &amp;</type>
+          <declname>rot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="42" column="22"/>
+        <referencedby refid="namespaceal_1aba795665e914da0480bda1b40a151832" compoundref="al_actor_pose_keeper_8cpp" startline="338" endline="341">al::updatePoseRotate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a0aaee6678e5bb2dc42f0dbf3172eb95d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ActorPoseKeeperBase::updatePoseQuat</definition>
+        <argsstring>(const sead::Quatf &amp;quat)=0</argsstring>
+        <name>updatePoseQuat</name>
+        <qualifiedname>al::ActorPoseKeeperBase::updatePoseQuat</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ab7f43bdaf05a4dc172f4b93680c294b5">updatePoseQuat</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a07da0d2e716e7fc0efe37296e7b14726">updatePoseQuat</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a685b53a0d7c6f90df557c72002633aa2">updatePoseQuat</reimplementedby>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Quatf &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="43" column="22"/>
+        <referencedby refid="namespaceal_1a66a993657c57ef7dc3db86cb88f1be78" compoundref="al_actor_pose_keeper_8cpp" startline="343" endline="346">al::updatePoseQuat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a6929beca23c04db9a012444bc59707d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ActorPoseKeeperBase::updatePoseMtx</definition>
+        <argsstring>(const sead::Matrix34f *mtx)=0</argsstring>
+        <name>updatePoseMtx</name>
+        <qualifiedname>al::ActorPoseKeeperBase::updatePoseMtx</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a1520beb19d70d569540b6845f0bdf1f1">updatePoseMtx</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1ac2757eebb80de52957edd03d5b6d7cb6">updatePoseMtx</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1aef920277e280747b462f265853b59dcb">updatePoseMtx</reimplementedby>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> sead::Matrix34f *</type>
+          <declname>mtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="44" column="22"/>
+        <referencedby refid="namespaceal_1a7a9f3683a9f68f407ff0dcb968a3afed" compoundref="al_actor_pose_keeper_8cpp" startline="348" endline="351">al::updatePoseMtx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1aa7779b20e400d7345c1e0c3ddff77ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ActorPoseKeeperBase::copyPose</definition>
+        <argsstring>(const ActorPoseKeeperBase *from)</argsstring>
+        <name>copyPose</name>
+        <qualifiedname>al::ActorPoseKeeperBase::copyPose</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="45" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1ad860e90097f1ee6be0f50a6eb44f4dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>virtual void al::ActorPoseKeeperBase::calcBaseMtx</definition>
+        <argsstring>(sead::Matrix34f *out)=0</argsstring>
+        <name>calcBaseMtx</name>
+        <qualifiedname>al::ActorPoseKeeperBase::calcBaseMtx</qualifiedname>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a79530239cb492d7db730637560c41691">calcBaseMtx</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1a6debb0d34d8dfad2e3202d0654719073">calcBaseMtx</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_q_s_v_1af3137f808ed0e2df94c70c83a7c7e163">calcBaseMtx</reimplementedby>
+        <reimplementedby refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a6e3b79c2fb2ff7e808d2bc96e4cbe52d">calcBaseMtx</reimplementedby>
+        <param>
+          <type>sead::Matrix34f *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="46" column="22"/>
+        <referencedby refid="classal_live_actor_function_1a991a2bcff1f5dfc68c91114af3eae4d0" compoundref="al_live_actor_function_8cpp" startline="21" endline="36">alLiveActorFunction::calcAnimDirect</referencedby>
+        <referencedby refid="classal_actor_pose_function_1ae35e8200d3aaea1d2a788ed587fec2a2" compoundref="al_actor_pose_function_8h" startline="10" endline="13">alActorPoseFunction::calcBaseMtx</referencedby>
+        <referencedby refid="namespaceal_1a6f5065f1f9256e98785da21958d9ed5d" compoundref="al_actor_pose_keeper_8cpp" startline="376" endline="383">al::calcFrontDir</referencedby>
+        <referencedby refid="namespaceal_1a3f7578990844423cf6ef286091ff5f14" compoundref="al_actor_pose_keeper_8cpp" startline="358" endline="365">al::calcSideDir</referencedby>
+        <referencedby refid="namespaceal_1ae7ad48c684668988b0eaab1daab7750c" compoundref="al_actor_pose_keeper_8cpp" startline="367" endline="374">al::calcUpDir</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_actor_pose_keeper_base_1a6ebca71d96de42ac734c748301a6e0d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::ActorPoseKeeperBase::ActorPoseKeeperBase</definition>
+        <argsstring>()</argsstring>
+        <name>ActorPoseKeeperBase</name>
+        <qualifiedname>al::ActorPoseKeeperBase::ActorPoseKeeperBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="52" column="9" bodyfile="lib/al/src/LiveActor/alActorPoseKeeper.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>al::ActorPoseKeeperBase</label>
+        <link refid="classal_1_1_actor_pose_keeper_base"/>
+      </node>
+      <node id="3">
+        <label>al::ActorPoseKeeperTFGSV</label>
+        <link refid="classal_1_1_actor_pose_keeper_t_f_g_s_v"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ActorPoseKeeperTFSV</label>
+        <link refid="classal_1_1_actor_pose_keeper_t_f_s_v"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::ActorPoseKeeperTQSV</label>
+        <link refid="classal_1_1_actor_pose_keeper_t_q_s_v"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::ActorPoseKeeperTRSV</label>
+        <link refid="classal_1_1_actor_pose_keeper_t_r_s_v"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/LiveActor/alActorPoseKeeper.h" line="12" column="1" bodyfile="lib/al/include/LiveActor/alActorPoseKeeper.h" bodystart="13" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a6ebca71d96de42ac734c748301a6e0d0" prot="public" virt="non-virtual"><scope>al::ActorPoseKeeperBase</scope><name>ActorPoseKeeperBase</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ad860e90097f1ee6be0f50a6eb44f4dac" prot="public" virt="pure-virtual"><scope>al::ActorPoseKeeperBase</scope><name>calcBaseMtx</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1aa7779b20e400d7345c1e0c3ddff77ac7" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>copyPose</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a0086f3a68154148f141a0f2bdcc1ca17" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getFront</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a7208b9f33ec2db54bc3ee68f10869cec" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getFrontPtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ad28fa21de46b358fdff95c4a3c45348d" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getGravity</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a3210a95099e71d308a72a48121946d81" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getGravityPtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1affcce788a6197060e9c4e42c2386506d" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getQuat</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a1149b82e31e0d9590fe114596d510d8a" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getQuatPtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a2009e08cbed1f3e38c9a2c2737e75a16" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getRotate</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1addf18a3f6e1036ed3aa3989dd48b5cf3" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getRotatePtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getScale</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ac04b2c9afa3dd63da8d3f9cd51e095c3" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getScalePtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a6409182860969a20e7287eaf56dc7571" prot="public" virt="non-virtual"><scope>al::ActorPoseKeeperBase</scope><name>getTrans</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ac0c7f98439c3bd84c9a6519aada721f6" prot="public" virt="non-virtual"><scope>al::ActorPoseKeeperBase</scope><name>getTransPtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1aa22a3a8d780efd9a246fd9fa816e8448" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getVelocity</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" prot="public" virt="virtual"><scope>al::ActorPoseKeeperBase</scope><name>getVelocityPtr</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ae01bf343cf3c2792ca143cf5179158d3" prot="private" virt="non-virtual"><scope>al::ActorPoseKeeperBase</scope><name>mTrans</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1ae4f45a9e45e9a014fe37aca639105900" prot="public" virt="non-virtual"><scope>al::ActorPoseKeeperBase</scope><name>sDefaultGravity</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a6929beca23c04db9a012444bc59707d3" prot="public" virt="pure-virtual"><scope>al::ActorPoseKeeperBase</scope><name>updatePoseMtx</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a0aaee6678e5bb2dc42f0dbf3172eb95d" prot="public" virt="pure-virtual"><scope>al::ActorPoseKeeperBase</scope><name>updatePoseQuat</name></member>
+      <member refid="classal_1_1_actor_pose_keeper_base_1a8d443ef9d3fc1d9bbd9b33e2dd06ad83" prot="public" virt="pure-virtual"><scope>al::ActorPoseKeeperBase</scope><name>updatePoseRotate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

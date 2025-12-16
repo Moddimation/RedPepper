@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_i_use_nerve" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>al::IUseNerve</compoundname>
+    <derivedcompoundref refid="classal_1_1_layout_actor" prot="public" virt="non-virtual">al::LayoutActor</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_live_actor" prot="public" virt="non-virtual">al::LiveActor</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_nerve_executor" prot="public" virt="non-virtual">al::NerveExecutor</derivedcompoundref>
+    <includes refid="al_nerve_keeper_8h" local="no">alNerveKeeper.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_i_use_nerve_1aa3b5bb2047eaab092052b8d5ffcb580d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref> *</type>
+        <definition>virtual NerveKeeper * al::IUseNerve::getNerveKeeper</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getNerveKeeper</name>
+        <qualifiedname>al::IUseNerve::getNerveKeeper</qualifiedname>
+        <reimplementedby refid="classal_1_1_layout_actor_1ad817acb5e850b2fa1c4c29fc1d4ec143">getNerveKeeper</reimplementedby>
+        <reimplementedby refid="classal_1_1_live_actor_1a5486c54d6e327e41c6596c7cd70bcb22">getNerveKeeper</reimplementedby>
+        <reimplementedby refid="classal_1_1_nerve_executor_1a690ab4d04c68a234537871a10dc0bd7a">getNerveKeeper</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveKeeper.h" line="60" column="29"/>
+        <referencedby refid="namespaceal_nerve_function_1a5ca3ee8a312d5f72b7f13910cd8e2dbb" compoundref="al_nerve_function_8cpp" startline="65" endline="69">alNerveFunction::setNerveAction</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>al::HostStateBase&lt; LiveActor &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="template-instance">
+          <edgelabel>&lt; LiveActor &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>al::ActorStateBase</label>
+        <link refid="classal_1_1_actor_state_base"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::BreakModel</label>
+        <link refid="classal_1_1_break_model"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::ClockMapParts</label>
+        <link refid="classal_1_1_clock_map_parts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::EffectObj</label>
+        <link refid="classal_1_1_effect_obj"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::FallMapParts</label>
+        <link refid="classal_1_1_fall_map_parts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>al::FixMapParts</label>
+        <link refid="classal_1_1_fix_map_parts"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>al::HostStateBase&lt; T &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="2">
+        <label>al::LayoutActor</label>
+        <link refid="classal_1_1_layout_actor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::LiveActor</label>
+        <link refid="classal_1_1_live_actor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::MapObjActor</label>
+        <link refid="classal_1_1_map_obj_actor"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>al::RailMoveMovement</label>
+        <link refid="classal_1_1_rail_move_movement"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>al::Scene</label>
+        <link refid="classal_1_1_scene"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>al::Sequence</label>
+        <link refid="classal_1_1_sequence"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>al::Sky</label>
+        <link refid="classal_1_1_sky"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>al::SwitchAreaDirector</label>
+        <link refid="classal_1_1_switch_area_director"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::WipeSimple</label>
+        <link refid="classal_1_1_wipe_simple"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="lib/al/include/Nerve/alNerveKeeper.h" line="57" column="1" bodyfile="lib/al/include/Nerve/alNerveKeeper.h" bodystart="58" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classal_1_1_i_use_nerve_1aa3b5bb2047eaab092052b8d5ffcb580d" prot="public" virt="pure-virtual"><scope>al::IUseNerve</scope><name>getNerveKeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

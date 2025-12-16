@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_player_action_condition_anim_end" kind="class" language="C++" prot="public">
+    <compoundname>PlayerActionConditionAnimEnd</compoundname>
+    <basecompoundref refid="class_player_action_condition" prot="public" virt="non-virtual">PlayerActionCondition</basecompoundref>
+    <includes refid="_player_action_condition_anim_end_8h" local="no">PlayerActionConditionAnimEnd.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_action_condition_anim_end_1ad81dc65db88d0b21d49794d13a4f06e2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">const</ref> <ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">char</ref> *</type>
+        <definition>const char* PlayerActionConditionAnimEnd::mAnimName</definition>
+        <argsstring></argsstring>
+        <name>mAnimName</name>
+        <qualifiedname>PlayerActionConditionAnimEnd::mAnimName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionConditionAnimEnd.h" line="10" column="28" bodyfile="Game/include/Player/PlayerActionConditionAnimEnd.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_player_action_condition_anim_end_1a084c8634c90cfb549b00164ad336d5fb" compoundref="_player_action_condition_anim_end_8cpp" startline="12" endline="30">check</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_action_condition_anim_end_1a6a6ec7bb99e0e6b9f83bcea9d8599336" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i_use_player_animator" kindref="compound">IUsePlayerAnimator</ref> *</type>
+        <definition>IUsePlayerAnimator* PlayerActionConditionAnimEnd::mUsePlayerAnimator</definition>
+        <argsstring></argsstring>
+        <name>mUsePlayerAnimator</name>
+        <qualifiedname>PlayerActionConditionAnimEnd::mUsePlayerAnimator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionConditionAnimEnd.h" line="11" column="28" bodyfile="Game/include/Player/PlayerActionConditionAnimEnd.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_player_action_condition_anim_end_1a084c8634c90cfb549b00164ad336d5fb" compoundref="_player_action_condition_anim_end_8cpp" startline="12" endline="30">check</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerActionConditionAnimEnd::mAnimEndFrame</definition>
+        <argsstring></argsstring>
+        <name>mAnimEndFrame</name>
+        <qualifiedname>PlayerActionConditionAnimEnd::mAnimEndFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionConditionAnimEnd.h" line="12" column="29" bodyfile="Game/include/Player/PlayerActionConditionAnimEnd.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_player_action_condition_anim_end_1a084c8634c90cfb549b00164ad336d5fb" compoundref="_player_action_condition_anim_end_8cpp" startline="12" endline="30">check</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_action_condition_anim_end_1a084c8634c90cfb549b00164ad336d5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">bool</ref></type>
+        <definition>bool PlayerActionConditionAnimEnd::check</definition>
+        <argsstring>()</argsstring>
+        <name>check</name>
+        <qualifiedname>PlayerActionConditionAnimEnd::check</qualifiedname>
+        <reimplements refid="class_player_action_condition_1a19f2c51a0036a0e653b786ba7b49334d">check</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionConditionAnimEnd.h" line="15" column="22" bodyfile="Game/src/Player/PlayerActionConditionAnimEnd.cpp" bodystart="12" bodyend="30"/>
+        <references refid="class_i_use_player_animator_1af280456aca3b529c5f83ca1402dd38fb">IUsePlayerAnimator::getAnimFrame</references>
+        <references refid="class_i_use_player_animator_1a17e36c9b1f81db6b5e89c429910bf95c">IUsePlayerAnimator::isAnim</references>
+        <references refid="class_i_use_player_animator_1ad6f1b7b44dd4e81aee7f6b98135d0f48">IUsePlayerAnimator::isAnimEnd</references>
+        <references refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" compoundref="_player_action_condition_anim_end_8h" startline="12">mAnimEndFrame</references>
+        <references refid="class_player_action_condition_anim_end_1ad81dc65db88d0b21d49794d13a4f06e2" compoundref="_player_action_condition_anim_end_8h" startline="10">mAnimName</references>
+        <references refid="class_player_action_condition_anim_end_1a6a6ec7bb99e0e6b9f83bcea9d8599336" compoundref="_player_action_condition_anim_end_8h" startline="11">mUsePlayerAnimator</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_action_condition_anim_end_1a3bce4e866bd8580b8e81f063c817d24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlayerActionConditionAnimEnd::PlayerActionConditionAnimEnd</definition>
+        <argsstring>(IUsePlayerAnimator *animator, const char *animName, int animEndFrame)</argsstring>
+        <name>PlayerActionConditionAnimEnd</name>
+        <qualifiedname>PlayerActionConditionAnimEnd::PlayerActionConditionAnimEnd</qualifiedname>
+        <param>
+          <type><ref refid="class_i_use_player_animator" kindref="compound">IUsePlayerAnimator</ref> *</type>
+          <declname>animator</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">const</ref> <ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">char</ref> *</type>
+          <declname>animName</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" kindref="member">int</ref></type>
+          <declname>animEndFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/PlayerActionConditionAnimEnd.h" line="18" column="9" bodyfile="Game/src/Player/PlayerActionConditionAnimEnd.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PlayerActionCondition</label>
+        <link refid="class_player_action_condition"/>
+      </node>
+      <node id="1">
+        <label>PlayerActionConditionAnimEnd</label>
+        <link refid="class_player_action_condition_anim_end"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IUsePlayerAnimator</label>
+        <link refid="class_i_use_player_animator"/>
+      </node>
+      <node id="2">
+        <label>PlayerActionCondition</label>
+        <link refid="class_player_action_condition"/>
+      </node>
+      <node id="1">
+        <label>PlayerActionConditionAnimEnd</label>
+        <link refid="class_player_action_condition_anim_end"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mUsePlayerAnimator</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Player/PlayerActionConditionAnimEnd.h" line="7" column="1" bodyfile="Game/include/Player/PlayerActionConditionAnimEnd.h" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_player_action_condition_anim_end_1a084c8634c90cfb549b00164ad336d5fb" prot="public" virt="virtual"><scope>PlayerActionConditionAnimEnd</scope><name>check</name></member>
+      <member refid="class_player_action_condition_anim_end_1aedb8ed51539ec56082bd3759c6044d80" prot="private" virt="non-virtual"><scope>PlayerActionConditionAnimEnd</scope><name>mAnimEndFrame</name></member>
+      <member refid="class_player_action_condition_anim_end_1ad81dc65db88d0b21d49794d13a4f06e2" prot="private" virt="non-virtual"><scope>PlayerActionConditionAnimEnd</scope><name>mAnimName</name></member>
+      <member refid="class_player_action_condition_anim_end_1a6a6ec7bb99e0e6b9f83bcea9d8599336" prot="private" virt="non-virtual"><scope>PlayerActionConditionAnimEnd</scope><name>mUsePlayerAnimator</name></member>
+      <member refid="class_player_action_condition_anim_end_1a3bce4e866bd8580b8e81f063c817d24d" prot="public" virt="non-virtual"><scope>PlayerActionConditionAnimEnd</scope><name>PlayerActionConditionAnimEnd</name></member>
+      <member refid="class_player_action_condition_1a0f4e6e4f9535c5e724cebe260840b28f" prot="public" virt="virtual"><scope>PlayerActionConditionAnimEnd</scope><name>setup</name></member>
+      <member refid="class_player_action_condition_1a23282e5214a97b3f8714256d9bf78598" prot="public" virt="virtual"><scope>PlayerActionConditionAnimEnd</scope><name>~PlayerActionCondition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

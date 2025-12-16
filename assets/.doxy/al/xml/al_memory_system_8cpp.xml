@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_memory_system_8cpp" kind="file" language="C++">
+    <compoundname>alMemorySystem.cpp</compoundname>
+    <includes refid="al_memory_system_8h" local="no">Memory/alMemorySystem.h</includes>
+    <includes refid="al_resource_8h" local="no">Resource/alResource.h</includes>
+    <includes refid="al_system_kit_8h" local="no">System/alSystemKit.h</includes>
+    <includes refid="al_string_util_8h" local="no">Util/alStringUtil.h</includes>
+    <includes refid="al_byaml_iter_8h" local="no">Yaml/alByamlIter.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Memory/alMemorySystem.h</label>
+        <link refid="al_memory_system_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Resource/alResource.h</label>
+        <link refid="al_resource_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>System/alSystemKit.h</label>
+        <link refid="al_system_kit_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Util/alStringUtil.h</label>
+        <link refid="al_string_util_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Yaml/alByamlIter.h</label>
+        <link refid="al_byaml_iter_8h"/>
+      </node>
+      <node id="1">
+        <label>alMemorySystem.cpp</label>
+        <link refid="al_memory_system_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>heap/seadExpHeap.h</label>
+      </node>
+      <node id="4">
+        <label>heap/seadFrameHeap.h</label>
+      </node>
+      <node id="5">
+        <label>heap/seadHeap.h</label>
+      </node>
+      <node id="6">
+        <label>heap/seadHeapMgr.h</label>
+      </node>
+      <node id="8">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_memory_system_8h" kindref="compound">Memory/alMemorySystem.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_resource_8h" kindref="compound">Resource/alResource.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_system_kit_8h" kindref="compound">System/alSystemKit.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_string_util_8h" kindref="compound">Util/alStringUtil.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_byaml_iter_8h" kindref="compound">Yaml/alByamlIter.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classal_1_1_memory_system_1a2736887ab0a50b265f3fa69bdcad98f7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_memory_system_1a2736887ab0a50b265f3fa69bdcad98f7" kindref="member">MemorySystem::createSequenceHeap</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_memory_system_1a1a8db13575015557fa40267e04bc3ce0" kindref="member">mSequenceHeap</ref><sp/>=<sp/>sead::ExpHeap::create(<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;SequenceHeap&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>sead::ExpHeap::cHeapDirection_Forward,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespaceal_1a4b8b6bfec8c79424d09c8beb2e9cddb9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a4b8b6bfec8c79424d09c8beb2e9cddb9" kindref="member">FUN_002911e8</ref>(<sp/>sead::FrameHeap**<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">heapSize</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref>,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>);<sp/></highlight><highlight class="comment">//<sp/>creates<sp/>FrameHeap(?)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WIP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classal_1_1_memory_system_1a81be662e4b89650a64408a390374b7be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_memory_system_1a81be662e4b89650a64408a390374b7be" kindref="member">MemorySystem::createSceneResourceHeap</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">stageName</ref><sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">heapSize</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">stageName</ref><sp/>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_resource" kindref="compound">al::Resource</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">gameSystemDataTable</ref><sp/>=</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1afbd09f361387e717966b0b98edceb2af" kindref="member">al::findOrCreateResource</ref>(<sp/></highlight><highlight class="stringliteral">&quot;ObjectData/GameSystemDataTable&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref>*<sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">tableData</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">gameSystemDataTable</ref>-&gt;getByml(<sp/></highlight><highlight class="stringliteral">&quot;HeapSizeDefine&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">al::ByamlIter</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">table</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">tableData</ref><sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>=<sp/>0;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>&lt;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">table</ref>.getSize();<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref>++<sp/>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">al::ByamlIter</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">entry</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">table</ref>.tryGetIterByIndex(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">entry</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">i</ref><sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">stage</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">entry</ref>.tryGetStringByKey(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">stage</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Stage&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="namespaceal_1aba76858d014cb644092632111c255ba0" kindref="member">al::isEqualString</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">stage</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">stageName</ref><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">resourceMb</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">entry</ref>.tryGetFloatByKey(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">resourceMb</ref>,<sp/></highlight><highlight class="stringliteral">&quot;SceneResource&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">heapSize</ref><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">resourceMb</ref><sp/>*<sp/>1024<sp/>*<sp/>1024;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">heapSize</ref><sp/>=<sp/>8<sp/>*<sp/>1024<sp/>*<sp/>1024;<sp/></highlight><highlight class="comment">//<sp/>8<sp/>MB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a4b8b6bfec8c79424d09c8beb2e9cddb9" kindref="member">FUN_002911e8</ref>(<sp/>&amp;<ref refid="classal_1_1_memory_system_1aae08b69a6116361a3b21ea77fc369e99" kindref="member">mSceneResourceHeap</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">heapSize</ref>,<sp/></highlight><highlight class="stringliteral">&quot;SceneHeapResource&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classal_1_1_memory_system_1add8c1680f86505443036ca1bbd209ca3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_memory_system_1add8c1680f86505443036ca1bbd209ca3" kindref="member">MemorySystem::freeAllSequenceHeap</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_memory_system_1a1a8db13575015557fa40267e04bc3ce0" kindref="member">mSequenceHeap</ref>-&gt;freeAll();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="namespaceal_1a315aa4913e7c0e939f7488d6fd7734fb" refkind="member"><highlight class="normal">sead::ExpHeap*<sp/><ref refid="namespaceal_1a315aa4913e7c0e939f7488d6fd7734fb" kindref="member">getStationedHeap</ref>()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_project_interface_1afccfa7260e65b4b22035833b97b34556" kindref="member">alProjectInterface::getSystemKit</ref>()-&gt;<ref refid="classal_1_1_system_kit_1a2536a7c7dca05fd3f58f17e5a1628098" kindref="member">getMemorySystem</ref>()-&gt;<ref refid="classal_1_1_memory_system_1a1a626665bffe9d623dfbfd2580e09357" kindref="member">getStationedHeap</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="namespaceal_1a7652b30c07770b23950377f89eac2aac" refkind="member"><highlight class="normal">sead::ExpHeap*<sp/><ref refid="namespaceal_1a7652b30c07770b23950377f89eac2aac" kindref="member">getSequenceHeap</ref>()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_project_interface_1afccfa7260e65b4b22035833b97b34556" kindref="member">alProjectInterface::getSystemKit</ref>()-&gt;<ref refid="classal_1_1_system_kit_1a2536a7c7dca05fd3f58f17e5a1628098" kindref="member">getMemorySystem</ref>()-&gt;<ref refid="classal_1_1_memory_system_1a18eefb2be7c074377be685726aea3b8b" kindref="member">getSequenceHeap</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="namespaceal_1a78562984683e6575eb7cf976e34710fb" refkind="member"><highlight class="normal">sead::FrameHeap*<sp/><ref refid="namespaceal_1a78562984683e6575eb7cf976e34710fb" kindref="member">getSceneResourceHeap</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_project_interface_1afccfa7260e65b4b22035833b97b34556" kindref="member">alProjectInterface::getSystemKit</ref>()-&gt;<ref refid="classal_1_1_system_kit_1a2536a7c7dca05fd3f58f17e5a1628098" kindref="member">getMemorySystem</ref>()-&gt;<ref refid="classal_1_1_memory_system_1a645f4cab81ec9075e8af90166bb7f0ef" kindref="member">getSceneResourceHeap</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespaceal_1aaa8982a5209ff39cbd6fb4059779e212" refkind="member"><highlight class="normal">sead::FrameHeap*<sp/><ref refid="namespaceal_1aaa8982a5209ff39cbd6fb4059779e212" kindref="member">getCourseSelectHeap</ref>()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_project_interface_1afccfa7260e65b4b22035833b97b34556" kindref="member">alProjectInterface::getSystemKit</ref>()-&gt;<ref refid="classal_1_1_system_kit_1a2536a7c7dca05fd3f58f17e5a1628098" kindref="member">getMemorySystem</ref>()-&gt;<ref refid="classal_1_1_memory_system_1a2660dc92cebc7dcf4e5a0cfe6bfd5c5d" kindref="member">getCourseSelectHeap</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="namespaceal_1a66ca88bf7989e1a9eb13620462d0ded5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a66ca88bf7989e1a9eb13620462d0ded5" kindref="member">isCreatedSceneResourceHeap</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a78562984683e6575eb7cf976e34710fb" kindref="member">getSceneResourceHeap</ref>()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Memory/alMemorySystem.cpp"/>
+  </compounddef>
+</doxygen>

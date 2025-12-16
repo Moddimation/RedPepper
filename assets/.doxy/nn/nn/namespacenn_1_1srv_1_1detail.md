@@ -29,7 +29,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| class | [**Service**](classnn_1_1srv_1_1detail_1_1Service.md) <br> |
+| class | [**Service**](classnn_1_1srv_1_1detail_1_1_service.md) <br> |
 
 
 

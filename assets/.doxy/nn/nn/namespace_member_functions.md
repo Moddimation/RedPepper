@@ -52,7 +52,7 @@
 
 ## i
 
-* **Initialize** ([**nn::cfg::CTR**](namespacenn_1_1cfg_1_1CTR.md), [**nn::fs**](namespacenn_1_1fs.md), [**nn::ndm**](namespacenn_1_1ndm.md), [**nn::srv**](namespacenn_1_1srv.md))
+* **Initialize** ([**nn::cfg::CTR**](namespacenn_1_1cfg_1_1_c_t_r.md), [**nn::fs**](namespacenn_1_1fs.md), [**nn::ndm**](namespacenn_1_1ndm.md), [**nn::srv**](namespacenn_1_1srv.md))
 
 
 ## r
@@ -68,15 +68,15 @@
 
 ## t
 
-* **ThrowFatalErr** ([**nn::err::CTR**](namespacenn_1_1err_1_1CTR.md))
+* **ThrowFatalErr** ([**nn::err::CTR**](namespacenn_1_1err_1_1_c_t_r.md))
 
 
 ## v
 
-* **VEC3AddAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **VEC3DivAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **VEC3MulAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
-* **VEC3SubAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md))
+* **VEC3AddAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **VEC3DivAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **VEC3MulAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
+* **VEC3SubAsm** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md))
 
 
 ## w
@@ -86,7 +86,7 @@
 
 ## _
 
-* **\_\_attribute\_\_** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1ARMv6.md), [**nn::svc**](namespacenn_1_1svc.md))
+* **\_\_attribute\_\_** ([**nn::math::ARMv6**](namespacenn_1_1math_1_1_a_r_mv6.md), [**nn::svc**](namespacenn_1_1svc.md))
 
 
 

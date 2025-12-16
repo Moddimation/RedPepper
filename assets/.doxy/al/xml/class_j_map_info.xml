@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_j_map_info" kind="class" language="C++" prot="public">
+    <compoundname>JMapInfo</compoundname>
+    <includes refid="al_j_map_info_8h" local="no">alJMapInfo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_j_map_info_1a4bbf842724717f526ab13128508b466d" prot="private" static="no" mutable="no">
+        <type>const <ref refid="struct_j_map_data" kindref="compound">JMapData</ref> *</type>
+        <definition>const JMapData* JMapInfo::mData</definition>
+        <argsstring></argsstring>
+        <name>mData</name>
+        <qualifiedname>JMapInfo::mData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Util/alJMapInfo.h" line="51" column="24" bodyfile="lib/al/include/Util/alJMapInfo.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_j_map_info_1a017ff323e78552235a34aa13aad25233" compoundref="al_j_map_info_8cpp" startline="7" endline="14">attach</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_j_map_info_1a698caf45a03cfdd58e74e99922378a72" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* JMapInfo::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>JMapInfo::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Util/alJMapInfo.h" line="52" column="24" bodyfile="lib/al/include/Util/alJMapInfo.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j_map_info_1a017ff323e78552235a34aa13aad25233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool JMapInfo::attach</definition>
+        <argsstring>(const void *data)</argsstring>
+        <name>attach</name>
+        <qualifiedname>JMapInfo::attach</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Util/alJMapInfo.h" line="55" column="14" bodyfile="lib/al/src/Util/alJMapInfo.cpp" bodystart="7" bodyend="14"/>
+        <references refid="struct_j_map_data_1a05252803e13f28b80501eb8af83016c5" compoundref="al_j_map_info_8h" startline="42" endline="45">JMapData::fromData</references>
+        <references refid="class_j_map_info_1a4bbf842724717f526ab13128508b466d" compoundref="al_j_map_info_8h" startline="51">mData</references>
+        <referencedby refid="classal_1_1_k_collision_server_1ae6df0a69dc2cc9323c4d9fc36fd98521" compoundref="al_k_collision_server_8cpp" startline="24" endline="29">al::KCollisionServer::initKCollisionServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_j_map_info_1aa315c9495205f2a8eaf15847f2fb419d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int JMapInfo::searchItemInfo</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>searchItemInfo</name>
+        <qualifiedname>JMapInfo::searchItemInfo</qualifiedname>
+        <param>
+          <type>const char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Util/alJMapInfo.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_map_info_1a7b3a5161022f3a1a2408ec5dec9c4fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool JMapInfo::getValueFast</definition>
+        <argsstring>(int, int index, u64 *out)</argsstring>
+        <name>getValueFast</name>
+        <qualifiedname>JMapInfo::getValueFast</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>u64 *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Util/alJMapInfo.h" line="58" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_j_map_info_1a06d800724fb7ff3ef999724fa8045554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JMapInfo::JMapInfo</definition>
+        <argsstring>()</argsstring>
+        <name>JMapInfo</name>
+        <qualifiedname>JMapInfo::JMapInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Util/alJMapInfo.h" line="61" column="9" bodyfile="lib/al/src/Util/alJMapInfo.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>JMapData</label>
+        <link refid="struct_j_map_data"/>
+      </node>
+      <node id="1">
+        <label>JMapInfo</label>
+        <link refid="class_j_map_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Util/alJMapInfo.h" line="48" column="1" bodyfile="lib/al/include/Util/alJMapInfo.h" bodystart="49" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_j_map_info_1a017ff323e78552235a34aa13aad25233" prot="public" virt="non-virtual"><scope>JMapInfo</scope><name>attach</name></member>
+      <member refid="class_j_map_info_1a7b3a5161022f3a1a2408ec5dec9c4fcc" prot="public" virt="non-virtual"><scope>JMapInfo</scope><name>getValueFast</name></member>
+      <member refid="class_j_map_info_1a06d800724fb7ff3ef999724fa8045554" prot="public" virt="non-virtual"><scope>JMapInfo</scope><name>JMapInfo</name></member>
+      <member refid="class_j_map_info_1a4bbf842724717f526ab13128508b466d" prot="private" virt="non-virtual"><scope>JMapInfo</scope><name>mData</name></member>
+      <member refid="class_j_map_info_1a698caf45a03cfdd58e74e99922378a72" prot="private" virt="non-virtual"><scope>JMapInfo</scope><name>mName</name></member>
+      <member refid="class_j_map_info_1aa315c9495205f2a8eaf15847f2fb419d" prot="public" virt="non-virtual"><scope>JMapInfo</scope><name>searchItemInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_camera_8h" kind="file" language="C++">
+    <compoundname>alCamera.h</compoundname>
+    <includes local="no">math/seadVector.h</includes>
+    <includedby refid="al_camera_8cpp" local="no">alCamera.cpp</includedby>
+    <includedby refid="al_camera_factory_8h" local="no">alCameraFactory.h</includedby>
+    <includedby refid="al_sky_8cpp" local="no">alSky.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alCamera.h</label>
+        <link refid="al_camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alCamera.h</label>
+        <link refid="al_camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alCameraFactory.h</label>
+        <link refid="al_camera_factory_8h"/>
+      </node>
+      <node id="2">
+        <label>alCamera.cpp</label>
+        <link refid="al_camera_8cpp"/>
+      </node>
+      <node id="4">
+        <label>alSky.cpp</label>
+        <link refid="al_sky_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_camera_unknown_param" prot="public">al::CameraUnknownParam</innerclass>
+    <innerclass refid="classal_1_1_camera" prot="public">al::Camera</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math/seadVector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ByamlIter;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CameraParamVision;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CameraDashAngleTunerParam;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CameraRotatorParam;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_camera_unknown_param" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_camera_unknown_param" kindref="compound">CameraUnknownParam</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_camera_unknown_param_1aad82c35abc30d89cff5cc212d1c93e16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u8</ref><sp/><ref refid="classal_1_1_camera_unknown_param_1aad82c35abc30d89cff5cc212d1c93e16" kindref="member">_0</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classal_1_1_camera_unknown_param_1a2cd0d4062838d6b52da1d20af95fe7c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_unknown_param_1a2cd0d4062838d6b52da1d20af95fe7c3" kindref="member">CameraUnknownParam</ref>()<sp/>:<sp/><ref refid="classal_1_1_camera_unknown_param_1aad82c35abc30d89cff5cc212d1c93e16" kindref="member">_0</ref>(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classal_1_1_camera" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_camera" kindref="compound">Camera</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classal_1_1_camera_1a6f8ac7cfca5c9669ef95ba55422f6236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1a6f8ac7cfca5c9669ef95ba55422f6236" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_camera_1a08b7e79371f85fc54ed2ba6d58f45e13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1a08b7e79371f85fc54ed2ba6d58f45e13" kindref="member">_8</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classal_1_1_camera_1adb0bab8e6aaf69bf585b91fb6567461c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1adb0bab8e6aaf69bf585b91fb6567461c" kindref="member">mPos</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classal_1_1_camera_1ab21c244d3d2a7049002fde6abc9649ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1ab21c244d3d2a7049002fde6abc9649ac" kindref="member">mTarget</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classal_1_1_camera_1aa7c6a55134ca9aa25b4e9fa6e1c97257" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1aa7c6a55134ca9aa25b4e9fa6e1c97257" kindref="member">_2C</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classal_1_1_camera_1a7da9be00806bb983a4060b40d304f7f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1a7da9be00806bb983a4060b40d304f7f9" kindref="member">mInterpoleFrame</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_camera_1a2f067a00a14eccdcb1876f7e57f9c34c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_param_vision" kindref="compound">CameraParamVision</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1a2f067a00a14eccdcb1876f7e57f9c34c" kindref="member">mVisionParam</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classal_1_1_camera_1af4ae6d63afe534fe5d5a75fa25bbfa02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_dash_angle_tuner_param" kindref="compound">CameraDashAngleTunerParam</ref>*<sp/><ref refid="classal_1_1_camera_1af4ae6d63afe534fe5d5a75fa25bbfa02" kindref="member">mDashAngleTunerParam</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classal_1_1_camera_1a5ad146210796f513290220c7846a0da3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_unknown_param" kindref="compound">CameraUnknownParam</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1a5ad146210796f513290220c7846a0da3" kindref="member">mUnknownParam</ref>;</highlight></codeline>
+<codeline lineno="36" refid="classal_1_1_camera_1a5909227f2cef0a797977ddca511618bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_rotator_param" kindref="compound">CameraRotatorParam</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera_1a5909227f2cef0a797977ddca511618bb" kindref="member">mRotatorParam</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1af6fb29bed068c5ac3b344313f9df486b" kindref="member">load</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_byaml_iter" kindref="compound">ByamlIter</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ticket</ref><sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1a73a8c12b36702d5ffee339f3a87f770c" kindref="member">v1</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1afbef657329b41dd5cc4bd19a1cf32283" kindref="member">v2</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1a910360eb0e7fdae32bd5064f2e62e31c" kindref="member">v3</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1a5066ea446f7bee80ba937be0270f74ea" kindref="member">v4</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1aa5115317b79f3d2723336ec4ea814ce3" kindref="member">v5</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1aba4ca08f1f6daab9f7054441285ea9a8" kindref="member">calc</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_camera_1af2e4522d937bdc61f9b3c7e043533854" kindref="member">v7</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_camera" kindref="compound">Camera</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="namespaceal_1a0dfa0187d4cb37671703ee29d9db8dbb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f*<sp/><ref refid="namespaceal_1a0dfa0187d4cb37671703ee29d9db8dbb" kindref="member">getCameraPos</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Camera/alCamera.h"/>
+  </compounddef>
+</doxygen>

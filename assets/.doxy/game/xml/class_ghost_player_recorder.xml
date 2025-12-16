@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_ghost_player_recorder" kind="class" language="C++" prot="public">
+    <compoundname>GhostPlayerRecorder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">al::ISceneObj</basecompoundref>
+    <includes refid="_ghost_player_recorder_8h" local="no">GhostPlayerRecorder.h</includes>
+    <innerclass refid="struct_ghost_player_recorder_1_1_frame" prot="private">GhostPlayerRecorder::Frame</innerclass>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_ghost_player_recorder_1a3d9dfedc643567b5825e08d93fbbe066" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class GhostPlayer</definition>
+        <argsstring></argsstring>
+        <name>GhostPlayer</name>
+        <qualifiedname>GhostPlayerRecorder::GhostPlayer</qualifiedname>
+        <param>
+          <type><ref refid="class_ghost_player" kindref="compound">GhostPlayer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="10" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ghost_player_recorder_1a231ba9679b376ed92986996986ab0478" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_ghost_player_recorder_1_1_frame" kindref="compound">Frame</ref> *</type>
+        <definition>Frame* GhostPlayerRecorder::mFrames</definition>
+        <argsstring></argsstring>
+        <name>mFrames</name>
+        <qualifiedname>GhostPlayerRecorder::mFrames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="22" column="21" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" compoundref="_ghost_player_recorder_8cpp" startline="9" endline="17">create</referencedby>
+        <referencedby refid="class_ghost_player_1a02af26195671e21e13dd9aca8c59b7fa" compoundref="_ghost_player_8cpp" startline="21" endline="30">GhostPlayer::GhostPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1af5c11d2bb4fb7b7935e3f102f1bc7e6a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ghost_player" kindref="compound">GhostPlayer</ref> *</type>
+        <definition>GhostPlayer* GhostPlayerRecorder::mGhostPlayer</definition>
+        <argsstring></argsstring>
+        <name>mGhostPlayer</name>
+        <qualifiedname>GhostPlayerRecorder::mGhostPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="23" column="21" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_ghost_player_recorder_1aae72848f40885d7e929a79cf758929e0" compoundref="_ghost_player_recorder_8h" startline="41" endline="44">initGhostPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1afbbb0a3337943550f00608ce63f78baa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GhostPlayerRecorder::mNumFrames</definition>
+        <argsstring></argsstring>
+        <name>mNumFrames</name>
+        <qualifiedname>GhostPlayerRecorder::mNumFrames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="24" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" compoundref="_ghost_player_recorder_8cpp" startline="9" endline="17">create</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1a9e99f59d292b9aaddc632efe51f54223" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GhostPlayerRecorder::mCurrentFrame</definition>
+        <argsstring></argsstring>
+        <name>mCurrentFrame</name>
+        <qualifiedname>GhostPlayerRecorder::mCurrentFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="25" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" compoundref="_ghost_player_recorder_8cpp" startline="9" endline="17">create</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1ad443becd25c966d387ec9a9541da3aa8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GhostPlayerRecorder::_14</definition>
+        <argsstring></argsstring>
+        <name>_14</name>
+        <qualifiedname>GhostPlayerRecorder::_14</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="26" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1a82ae3f98f8f9b3c5942c906a98ce9956" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GhostPlayerRecorder::_18</definition>
+        <argsstring></argsstring>
+        <name>_18</name>
+        <qualifiedname>GhostPlayerRecorder::_18</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="27" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1abcad9f565c8fc3b5d3533f67cf72c2e7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GhostPlayerRecorder::_1C</definition>
+        <argsstring></argsstring>
+        <name>_1C</name>
+        <qualifiedname>GhostPlayerRecorder::_1C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="28" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" compoundref="_ghost_player_recorder_8cpp" startline="9" endline="17">create</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ghost_player_recorder_1af8f893b21a37af677cf84710854afe3d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GhostPlayerRecorder::_1D</definition>
+        <argsstring></argsstring>
+        <name>_1D</name>
+        <qualifiedname>GhostPlayerRecorder::_1D</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="29" column="22" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GhostPlayerRecorder::create</definition>
+        <argsstring>(int numFrames)</argsstring>
+        <name>create</name>
+        <qualifiedname>GhostPlayerRecorder::create</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>numFrames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="32" column="14" bodyfile="Game/src/Player/GhostPlayerRecorder.cpp" bodystart="9" bodyend="17"/>
+        <references refid="class_ghost_player_recorder_1abcad9f565c8fc3b5d3533f67cf72c2e7" compoundref="_ghost_player_recorder_8h" startline="28">_1C</references>
+        <references refid="class_ghost_player_recorder_1a9e99f59d292b9aaddc632efe51f54223" compoundref="_ghost_player_recorder_8h" startline="25">mCurrentFrame</references>
+        <references refid="class_ghost_player_recorder_1a231ba9679b376ed92986996986ab0478" compoundref="_ghost_player_recorder_8h" startline="22">mFrames</references>
+        <references refid="class_ghost_player_recorder_1afbbb0a3337943550f00608ce63f78baa" compoundref="_ghost_player_recorder_8h" startline="24">mNumFrames</references>
+        <referencedby refid="class_ghost_player_1a02af26195671e21e13dd9aca8c59b7fa" compoundref="_ghost_player_8cpp" startline="21" endline="30">GhostPlayer::GhostPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ghost_player_recorder_1a90135b43dd6d739de3273d7bf1be7bfe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char * GhostPlayerRecorder::getSceneObjName</definition>
+        <argsstring>() const</argsstring>
+        <name>getSceneObjName</name>
+        <qualifiedname>GhostPlayerRecorder::getSceneObjName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="34" column="28" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ghost_player_recorder_1a1c0e6337ddfba66df5efea330a23ef4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GhostPlayerRecorder::initSceneObj</definition>
+        <argsstring>()</argsstring>
+        <name>initSceneObj</name>
+        <qualifiedname>GhostPlayerRecorder::initSceneObj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="39" column="22" bodyfile="Game/src/Player/GhostPlayerRecorder.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ghost_player_recorder_1aae72848f40885d7e929a79cf758929e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GhostPlayerRecorder::initGhostPlayer</definition>
+        <argsstring>(GhostPlayer *player)</argsstring>
+        <name>initGhostPlayer</name>
+        <qualifiedname>GhostPlayerRecorder::initGhostPlayer</qualifiedname>
+        <param>
+          <type><ref refid="class_ghost_player" kindref="compound">GhostPlayer</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="41" column="14" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="41" bodyend="44"/>
+        <references refid="class_ghost_player_recorder_1af5c11d2bb4fb7b7935e3f102f1bc7e6a" compoundref="_ghost_player_recorder_8h" startline="23">mGhostPlayer</references>
+        <referencedby refid="class_ghost_player_1a02af26195671e21e13dd9aca8c59b7fa" compoundref="_ghost_player_8cpp" startline="21" endline="30">GhostPlayer::GhostPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ghost_player_recorder_1a34aa0098af78a62a421be1d799886216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GhostPlayerRecorder::GhostPlayerRecorder</definition>
+        <argsstring>()</argsstring>
+        <name>GhostPlayerRecorder</name>
+        <qualifiedname>GhostPlayerRecorder::GhostPlayerRecorder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/include/Player/GhostPlayerRecorder.h" line="47" column="9" bodyfile="Game/src/Player/GhostPlayerRecorder.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GhostPlayerRecorder</label>
+        <link refid="class_ghost_player_recorder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ISceneObj</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>GhostPlayer</label>
+        <link refid="class_ghost_player"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GhostPlayerRecorder</label>
+        <link refid="class_ghost_player_recorder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mFrames</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mGhostPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GhostPlayerRecorder::Frame</label>
+        <link refid="struct_ghost_player_recorder_1_1_frame"/>
+      </node>
+      <node id="2">
+        <label>al::ISceneObj</label>
+      </node>
+      <node id="5">
+        <label>al::MapObjActor</label>
+      </node>
+    </collaborationgraph>
+    <location file="Game/include/Player/GhostPlayerRecorder.h" line="8" column="1" bodyfile="Game/include/Player/GhostPlayerRecorder.h" bodystart="9" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_ghost_player_recorder_1ad443becd25c966d387ec9a9541da3aa8" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>_14</name></member>
+      <member refid="class_ghost_player_recorder_1a82ae3f98f8f9b3c5942c906a98ce9956" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>_18</name></member>
+      <member refid="class_ghost_player_recorder_1abcad9f565c8fc3b5d3533f67cf72c2e7" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>_1C</name></member>
+      <member refid="class_ghost_player_recorder_1af8f893b21a37af677cf84710854afe3d" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>_1D</name></member>
+      <member refid="class_ghost_player_recorder_1a3e4246a5978272372cf1a5209e7fb976" prot="public" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>create</name></member>
+      <member refid="class_ghost_player_recorder_1a90135b43dd6d739de3273d7bf1be7bfe" prot="public" virt="virtual"><scope>GhostPlayerRecorder</scope><name>getSceneObjName</name></member>
+      <member refid="class_ghost_player_recorder_1a3d9dfedc643567b5825e08d93fbbe066" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>GhostPlayer</name></member>
+      <member refid="class_ghost_player_recorder_1a34aa0098af78a62a421be1d799886216" prot="public" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>GhostPlayerRecorder</name></member>
+      <member refid="class_ghost_player_recorder_1aae72848f40885d7e929a79cf758929e0" prot="public" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>initGhostPlayer</name></member>
+      <member refid="class_ghost_player_recorder_1a1c0e6337ddfba66df5efea330a23ef4e" prot="public" virt="virtual"><scope>GhostPlayerRecorder</scope><name>initSceneObj</name></member>
+      <member refid="class_ghost_player_recorder_1a9e99f59d292b9aaddc632efe51f54223" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>mCurrentFrame</name></member>
+      <member refid="class_ghost_player_recorder_1a231ba9679b376ed92986996986ab0478" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>mFrames</name></member>
+      <member refid="class_ghost_player_recorder_1af5c11d2bb4fb7b7935e3f102f1bc7e6a" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>mGhostPlayer</name></member>
+      <member refid="class_ghost_player_recorder_1afbbb0a3337943550f00608ce63f78baa" prot="private" virt="non-virtual"><scope>GhostPlayerRecorder</scope><name>mNumFrames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

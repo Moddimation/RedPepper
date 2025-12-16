@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::Matrix34 - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-seadmatrix34">Class sead::Matrix34</h1>
+<p><strong>template &lt;typename T&gt;</strong></p>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>Matrix34</strong></a></p>
+<ul>
+<li><code>#include &lt;seadMatrix.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../structsead_1_1_base_mtx34/">sead::BaseMtx34</a></p>
+<h2 id="public-attributes-inherited-from-seadbasemtx34">Public Attributes inherited from sead::BaseMtx34</h2>
+<p>See <a href="../structsead_1_1_base_mtx34/">sead::BaseMtx34</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="../structsead_1_1_base_mtx34/#variable-m"><strong>m</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes">Public Static Attributes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a></td>
+<td style="text-align: left;"><a href="#variable-ident-14"><strong>ident</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a></td>
+<td style="text-align: left;"><a href="#variable-zero-14"><strong>zero</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-matrix34-15"><strong>Matrix34</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-matrix34-25"><strong>Matrix34</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-matrix34-35"><strong>Matrix34</strong></a> (T _00, T _01, T _02, T _03, T _10, T _11, T _12, T _13, T _20, T _21, T _22, T _23) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-matrix34-45"><strong>Matrix34</strong></a> (const <a href="./#typedef-mtx33"><strong>Mtx33</strong></a> &amp; mtx33, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t=<a href="../structsead_1_1_vector3/#variable-zero-13"><strong>Vec3::zero</strong></a>) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-matrix34-55"><strong>Matrix34</strong></a> (const <a href="./#typedef-mtx44"><strong>Mtx44</strong></a> &amp; mtx44) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-fromquat"><strong>fromQuat</strong></a> (const <a href="../structsead_1_1_quat/"><strong>Quat</strong></a>&lt; T &gt; &amp; q) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-getbase"><strong>getBase</strong></a> (<a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; o, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> axis) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-getrotation"><strong>getRotation</strong></a> (<a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; o) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-getrow"><strong>getRow</strong></a> (<a href="./#typedef-vec4"><strong>Vec4</strong></a> &amp; o, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> row) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-gettranslation"><strong>getTranslation</strong></a> (<a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; o) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f64"><strong>f64</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ident-24"><strong>ident</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ident-34"><strong>ident</strong></a> (1. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 1. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 1. 0f, 0. 0f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f64"><strong>f64</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-ident-44"><strong>ident</strong></a> (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makeidentity"><strong>makeIdentity</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makeqt"><strong>makeQT</strong></a> (const <a href="../structsead_1_1_quat/"><strong>Quat</strong></a>&lt; T &gt; &amp; q, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-maker"><strong>makeR</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; r) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makeridx"><strong>makeRIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> xr, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> yr, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> zr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makert"><strong>makeRT</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; r, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makertidx"><strong>makeRTIdx</strong></a> (const <a href="../structsead_1_1_vector3/"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> &gt; &amp; r, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makerzxyidx"><strong>makeRzxyIdx</strong></a> (<a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> xr, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> yr, <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> zr) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makerzxytidx"><strong>makeRzxyTIdx</strong></a> (const <a href="../structsead_1_1_vector3/"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> &gt; &amp; r, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makes-12"><strong>makeS</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makes-22"><strong>makeS</strong></a> (T x, T y, T z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makesr"><strong>makeSR</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; r) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makesridx"><strong>makeSRIdx</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="../structsead_1_1_vector3/"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> &gt; &amp; r) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makesrt"><strong>makeSRT</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; r, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makesrtidx"><strong>makeSRTIdx</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="../structsead_1_1_vector3/"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> &gt; &amp; r, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makesrzxyidx"><strong>makeSRzxyIdx</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="../structsead_1_1_vector3/"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> &gt; &amp; r) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makesrzxytidx"><strong>makeSRzxyTIdx</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="../structsead_1_1_vector3/"><strong>Vector3</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a> &gt; &amp; r, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makest"><strong>makeST</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; s, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-maket-12"><strong>makeT</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-maket-22"><strong>makeT</strong></a> (T x, T y, T z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-makezero"><strong>makeZero</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T</td>
+<td style="text-align: left;"><a href="#function-operator"><strong>operator()</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> i, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> j) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">T &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_1"><strong>operator()</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> i, <a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> j) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="./#typedef-self"><strong>Self</strong></a> &amp;</td>
+<td style="text-align: left;"><a href="#function-operator_2"><strong>operator=</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-scaleallelements"><strong>scaleAllElements</strong></a> (T s) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-scalebases"><strong>scaleBases</strong></a> (T sx, T sy, T sz) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setbase"><strong>setBase</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> axis, const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setinverse"><strong>setInverse</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setinverse33"><strong>setInverse33</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setinversetranspose"><strong>setInverseTranspose</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setmul-12"><strong>setMul</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; a, const <a href="./#typedef-self"><strong>Self</strong></a> &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setmul-22"><strong>setMul</strong></a> (const <a href="./#typedef-mtx33"><strong>Mtx33</strong></a> &amp; a, const <a href="./#typedef-self"><strong>Self</strong></a> &amp; b) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-setrow"><strong>setRow</strong></a> (<a href="../_l_m_s___types_8h/#typedef-s32"><strong>s32</strong></a> row, const <a href="./#typedef-vec4"><strong>Vec4</strong></a> &amp; v) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-settranslation-12"><strong>setTranslation</strong></a> (const <a href="./#typedef-vec3"><strong>Vec3</strong></a> &amp; t) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-settranslation-22"><strong>setTranslation</strong></a> (T x, T y, T z) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-settranspose"><strong>setTranspose</strong></a> (const <a href="./#typedef-self"><strong>Self</strong></a> &amp; n) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-toquat"><strong>toQuat</strong></a> (<a href="../structsead_1_1_quat/"><strong>Quat</strong></a>&lt; T &gt; &amp; q) const<br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-transpose"><strong>transpose</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f64"><strong>f64</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-zero-24"><strong>zero</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f32"><strong>f32</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-zero-34"><strong>zero</strong></a> (0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f, 0. 0f) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">const <a href="./"><strong>Matrix34</strong></a>&lt; <a href="../_l_m_s___types_8h/#typedef-f64"><strong>f64</strong></a> &gt;</td>
+<td style="text-align: left;"><a href="#function-zero-44"><strong>zero</strong></a> (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-attributes-documentation">Public Static Attributes Documentation</h2>
+<h3 id="variable-ident-14">variable ident [1/4]</h3>
+<pre><code class="language-C++">const Matrix34f sead::Matrix34f::ident;
+</code></pre>
+<hr>
+
+<h3 id="variable-zero-14">variable zero [1/4]</h3>
+<pre><code class="language-C++">const Matrix34f sead::Matrix34f::zero;
+</code></pre>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-matrix34-15">function Matrix34 [1/5]</h3>
+<pre><code class="language-C++">inline sead::Matrix34::Matrix34 () 
+</code></pre>
+<hr>
+
+<h3 id="function-matrix34-25">function Matrix34 [2/5]</h3>
+<pre><code class="language-C++">sead::Matrix34::Matrix34 (
+    const Self &amp; n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-matrix34-35">function Matrix34 [3/5]</h3>
+<pre><code class="language-C++">inline sead::Matrix34::Matrix34 (
+    T _00,
+    T _01,
+    T _02,
+    T _03,
+    T _10,
+    T _11,
+    T _12,
+    T _13,
+    T _20,
+    T _21,
+    T _22,
+    T _23
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-matrix34-45">function Matrix34 [4/5]</h3>
+<pre><code class="language-C++">inline sead::Matrix34::Matrix34 (
+    const Mtx33 &amp; mtx33,
+    const Vec3 &amp; t=Vec3::zero
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-matrix34-55">function Matrix34 [5/5]</h3>
+<pre><code class="language-C++">inline sead::Matrix34::Matrix34 (
+    const Mtx44 &amp; mtx44
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-fromquat">function fromQuat</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::fromQuat (
+    const Quat &lt; T &gt; &amp; q
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-getbase">function getBase</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::getBase (
+    Vec3 &amp; o,
+    s32 axis
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-getrotation">function getRotation</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::getRotation (
+    Vec3 &amp; o
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-getrow">function getRow</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::getRow (
+    Vec4 &amp; o,
+    s32 row
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-gettranslation">function getTranslation</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::getTranslation (
+    Vec3 &amp; o
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-ident-24">function ident [2/4]</h3>
+<pre><code class="language-C++">const Matrix34 &lt; f64 &gt; sead::Matrix34::ident () 
+</code></pre>
+<hr>
+
+<h3 id="function-ident-34">function ident [3/4]</h3>
+<pre><code class="language-C++">const Matrix34 &lt; f32 &gt; sead::Matrix34::ident (
+    1. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    1. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    1. 0f,
+    0. 0f
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-ident-44">function ident [4/4]</h3>
+<pre><code class="language-C++">const Matrix34 &lt; f64 &gt; sead::Matrix34::ident (
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makeidentity">function makeIdentity</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeIdentity () 
+</code></pre>
+<hr>
+
+<h3 id="function-makeqt">function makeQT</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeQT (
+    const Quat &lt; T &gt; &amp; q,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-maker">function makeR</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeR (
+    const Vec3 &amp; r
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makeridx">function makeRIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeRIdx (
+    u32 xr,
+    u32 yr,
+    u32 zr
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makert">function makeRT</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeRT (
+    const Vec3 &amp; r,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makertidx">function makeRTIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeRTIdx (
+    const Vector3 &lt; u32 &gt; &amp; r,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makerzxyidx">function makeRzxyIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeRzxyIdx (
+    u32 xr,
+    u32 yr,
+    u32 zr
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makerzxytidx">function makeRzxyTIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeRzxyTIdx (
+    const Vector3 &lt; u32 &gt; &amp; r,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makes-12">function makeS [1/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeS (
+    const Vec3 &amp; s
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makes-22">function makeS [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeS (
+    T x,
+    T y,
+    T z
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makesr">function makeSR</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeSR (
+    const Vec3 &amp; s,
+    const Vec3 &amp; r
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makesridx">function makeSRIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeSRIdx (
+    const Vec3 &amp; s,
+    const Vector3 &lt; u32 &gt; &amp; r
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makesrt">function makeSRT</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeSRT (
+    const Vec3 &amp; s,
+    const Vec3 &amp; r,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makesrtidx">function makeSRTIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeSRTIdx (
+    const Vec3 &amp; s,
+    const Vector3 &lt; u32 &gt; &amp; r,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makesrzxyidx">function makeSRzxyIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeSRzxyIdx (
+    const Vec3 &amp; s,
+    const Vector3 &lt; u32 &gt; &amp; r
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makesrzxytidx">function makeSRzxyTIdx</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeSRzxyTIdx (
+    const Vec3 &amp; s,
+    const Vector3 &lt; u32 &gt; &amp; r,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makest">function makeST</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeST (
+    const Vec3 &amp; s,
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-maket-12">function makeT [1/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeT (
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-maket-22">function makeT [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeT (
+    T x,
+    T y,
+    T z
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-makezero">function makeZero</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::makeZero () 
+</code></pre>
+<hr>
+
+<h3 id="function-operator">function operator()</h3>
+<pre><code class="language-C++">inline T sead::Matrix34::operator() (
+    s32 i,
+    s32 j
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-operator_1">function operator()</h3>
+<pre><code class="language-C++">inline T &amp; sead::Matrix34::operator() (
+    s32 i,
+    s32 j
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-operator_2">function operator=</h3>
+<pre><code class="language-C++">inline Self &amp; sead::Matrix34::operator= (
+    const Self &amp; n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-scaleallelements">function scaleAllElements</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::scaleAllElements (
+    T s
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-scalebases">function scaleBases</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::scaleBases (
+    T sx,
+    T sy,
+    T sz
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setbase">function setBase</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setBase (
+    s32 axis,
+    const Vec3 &amp; v
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setinverse">function setInverse</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setInverse (
+    const Self &amp; n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setinverse33">function setInverse33</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setInverse33 (
+    const Self &amp; n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setinversetranspose">function setInverseTranspose</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setInverseTranspose (
+    const Self &amp; n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setmul-12">function setMul [1/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setMul (
+    const Self &amp; a,
+    const Self &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setmul-22">function setMul [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setMul (
+    const Mtx33 &amp; a,
+    const Self &amp; b
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-setrow">function setRow</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setRow (
+    s32 row,
+    const Vec4 &amp; v
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-settranslation-12">function setTranslation [1/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setTranslation (
+    const Vec3 &amp; t
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-settranslation-22">function setTranslation [2/2]</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setTranslation (
+    T x,
+    T y,
+    T z
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-settranspose">function setTranspose</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::setTranspose (
+    const Self &amp; n
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-toquat">function toQuat</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::toQuat (
+    Quat &lt; T &gt; &amp; q
+) const
+</code></pre>
+<hr>
+
+<h3 id="function-transpose">function transpose</h3>
+<pre><code class="language-C++">inline void sead::Matrix34::transpose () 
+</code></pre>
+<hr>
+
+<h3 id="function-zero-24">function zero [2/4]</h3>
+<pre><code class="language-C++">const Matrix34 &lt; f64 &gt; sead::Matrix34::zero () 
+</code></pre>
+<hr>
+
+<h3 id="function-zero-34">function zero [3/4]</h3>
+<pre><code class="language-C++">const Matrix34 &lt; f32 &gt; sead::Matrix34::zero (
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f,
+    0. 0f
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-zero-44">function zero [4/4]</h3>
+<pre><code class="language-C++">const Matrix34 &lt; f64 &gt; sead::Matrix34::zero (
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+) 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/math/seadMatrix.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

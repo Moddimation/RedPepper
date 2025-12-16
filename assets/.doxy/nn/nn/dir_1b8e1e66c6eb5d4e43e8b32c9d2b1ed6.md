@@ -1,6 +1,6 @@
 
 
-# Dir lib/CTRSDK/sources/svc
+# Dir svc
 
 
 
@@ -21,7 +21,7 @@
 
 | Type | Name |
 | ---: | :--- |
-| file | [**svc\_Api.cpp**](svc__Api_8cpp.md) <br> |
+| file | [**svc\_Api.cpp**](svc___api_8cpp.md) <br> |
 
 
 

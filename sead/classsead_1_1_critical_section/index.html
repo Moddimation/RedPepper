@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
+    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <title>Class sead::CriticalSection - RedPepper Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+
+      <div id="bar">
+
+          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/files/'">
+                  Files
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/classes/'">
+                  Classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">
+                  Full Wiki
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='https://prp.moddi.dev/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='https://prp.moddi.dev/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
+      </div>
+      
+      <h1 id="class-seadcriticalsection">Class sead::CriticalSection</h1>
+<p><a href="../annotated/"><strong>ClassList</strong></a> <strong>&gt;</strong> <a href="../namespacesead/"><strong>sead</strong></a> <strong>&gt;</strong> <a href="./"><strong>CriticalSection</strong></a></p>
+<ul>
+<li><code>#include &lt;seadCriticalSection.h&gt;</code></li>
+</ul>
+<p>Inherits the following classes: <a href="../classsead_1_1_i_disposer/">sead::IDisposer</a></p>
+<h2 id="public-types-inherited-from-seadidisposer">Public Types inherited from sead::IDisposer</h2>
+<p>See <a href="../classsead_1_1_i_disposer/">sead::IDisposer</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="../classsead_1_1_i_disposer/#enum-heapnulloption"><strong>HeapNullOption</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-criticalsection-13"><strong>CriticalSection</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-criticalsection-23"><strong>CriticalSection</strong></a> (<a href="../classsead_1_1_heap/"><strong>Heap</strong></a> * disposer_heap) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="#function-criticalsection-33"><strong>CriticalSection</strong></a> (<a href="../classsead_1_1_heap/"><strong>Heap</strong></a> * disposer_heap, <a href="../classsead_1_1_i_disposer/#enum-heapnulloption"><strong>HeapNullOption</strong></a> heap_null_option) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-lock"><strong>lock</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-trylock"><strong>tryLock</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-try_lock"><strong>try_lock</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-unlock"><strong>unlock</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="#function-criticalsection"><strong>~CriticalSection</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-inherited-from-seadidisposer">Public Functions inherited from sead::IDisposer</h2>
+<p>See <a href="../classsead_1_1_i_disposer/">sead::IDisposer</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1_i_disposer/#function-idisposer-12"><strong>IDisposer</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="../classsead_1_1_i_disposer/#function-idisposer-22"><strong>IDisposer</strong></a> (<a href="../classsead_1_1_heap/"><strong>Heap</strong></a> * disposer_heap, <a href="../classsead_1_1_i_disposer/#enum-heapnulloption"><strong>HeapNullOption</strong></a> option=HeapNullOption_UseSpecifiedOrCurrentHeap) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">virtual</td>
+<td style="text-align: left;"><a href="../classsead_1_1_i_disposer/#function-idisposer"><strong>~IDisposer</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-static-functions-inherited-from-seadidisposer">Public Static Functions inherited from sead::IDisposer</h2>
+<p>See <a href="../classsead_1_1_i_disposer/">sead::IDisposer</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../_l_m_s___types_8h/#typedef-u32"><strong>u32</strong></a></td>
+<td style="text-align: left;"><a href="../classsead_1_1_i_disposer/#function-getlistnodeoffset"><strong>getListNodeOffset</strong></a> () <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions-inherited-from-seadidisposer">Protected Functions inherited from sead::IDisposer</h2>
+<p>See <a href="../classsead_1_1_i_disposer/">sead::IDisposer</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><a href="../classsead_1_1_heap/"><strong>Heap</strong></a> *</td>
+<td style="text-align: left;"><a href="../classsead_1_1_i_disposer/#function-getdisposerheap_"><strong>getDisposerHeap_</strong></a> () const<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-criticalsection-13">function CriticalSection [1/3]</h3>
+<pre><code class="language-C++">sead::CriticalSection::CriticalSection () 
+</code></pre>
+<hr>
+
+<h3 id="function-criticalsection-23">function CriticalSection [2/3]</h3>
+<pre><code class="language-C++">explicit sead::CriticalSection::CriticalSection (
+    Heap * disposer_heap
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-criticalsection-33">function CriticalSection [3/3]</h3>
+<pre><code class="language-C++">sead::CriticalSection::CriticalSection (
+    Heap * disposer_heap,
+    HeapNullOption heap_null_option
+) 
+</code></pre>
+<hr>
+
+<h3 id="function-lock">function lock</h3>
+<pre><code class="language-C++">void sead::CriticalSection::lock () 
+</code></pre>
+<hr>
+
+<h3 id="function-trylock">function tryLock</h3>
+<pre><code class="language-C++">bool sead::CriticalSection::tryLock () 
+</code></pre>
+<hr>
+
+<h3 id="function-try_lock">function try_lock</h3>
+<pre><code class="language-C++">inline bool sead::CriticalSection::try_lock () 
+</code></pre>
+<hr>
+
+<h3 id="function-unlock">function unlock</h3>
+<pre><code class="language-C++">void sead::CriticalSection::unlock () 
+</code></pre>
+<hr>
+
+<h3 id="function-criticalsection">function ~CriticalSection</h3>
+<pre><code class="language-C++">virtual sead::CriticalSection::~CriticalSection () 
+</code></pre>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>lib/sead/include/thread/seadCriticalSection.h</code></p>
+        <script src="../../search/main.js"></script>
+    </div>
+  </body>
+</html>

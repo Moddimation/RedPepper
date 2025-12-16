@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_area_init_info" kind="class" language="C++" prot="public">
+    <compoundname>al::AreaInitInfo</compoundname>
+    <includes refid="al_area_init_info_8h" local="no">alAreaInitInfo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_area_init_info_1ae5d8fe3dedc892bb6ad9f66c9b38fca5" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceal_1a41c6acd1e8ea2a3fb205bd494602769d" kindref="member">PlacementInfo</ref></type>
+        <definition>PlacementInfo al::AreaInitInfo::mPlacementInfo</definition>
+        <argsstring></argsstring>
+        <name>mPlacementInfo</name>
+        <qualifiedname>al::AreaInitInfo::mPlacementInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaInitInfo.h" line="11" column="23" bodyfile="lib/al/include/AreaObj/alAreaInitInfo.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classal_1_1_area_init_info_1a72921a949725deb7a5b7ed524e7d5462" compoundref="al_area_init_info_8h" startline="14" endline="17">getPlacementInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_area_init_info_1a72921a949725deb7a5b7ed524e7d5462" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceal_1a41c6acd1e8ea2a3fb205bd494602769d" kindref="member">PlacementInfo</ref> &amp;</type>
+        <definition>PlacementInfo &amp; al::AreaInitInfo::getPlacementInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getPlacementInfo</name>
+        <qualifiedname>al::AreaInitInfo::getPlacementInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/AreaObj/alAreaInitInfo.h" line="14" column="23" bodyfile="lib/al/include/AreaObj/alAreaInitInfo.h" bodystart="14" bodyend="17"/>
+        <references refid="classal_1_1_area_init_info_1ae5d8fe3dedc892bb6ad9f66c9b38fca5" compoundref="al_area_init_info_8h" startline="11">mPlacementInfo</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::AreaInitInfo</label>
+        <link refid="classal_1_1_area_init_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mPlacementInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>al::ByamlContainerHeader</label>
+        <link refid="classal_1_1_byaml_container_header"/>
+      </node>
+      <node id="3">
+        <label>al::ByamlHeader</label>
+        <link refid="classal_1_1_byaml_header"/>
+      </node>
+      <node id="2">
+        <label>al::ByamlIter</label>
+        <link refid="classal_1_1_byaml_iter"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mHeader</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mContainerHeader</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/AreaObj/alAreaInitInfo.h" line="8" column="1" bodyfile="lib/al/include/AreaObj/alAreaInitInfo.h" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classal_1_1_area_init_info_1a72921a949725deb7a5b7ed524e7d5462" prot="public" virt="non-virtual"><scope>al::AreaInitInfo</scope><name>getPlacementInfo</name></member>
+      <member refid="classal_1_1_area_init_info_1ae5d8fe3dedc892bb6ad9f66c9b38fca5" prot="private" virt="non-virtual"><scope>al::AreaInitInfo</scope><name>mPlacementInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

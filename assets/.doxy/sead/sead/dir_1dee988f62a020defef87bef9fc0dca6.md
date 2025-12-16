@@ -1,6 +1,6 @@
 
 
-# Dir lib/sead/addins/libms
+# Dir libms
 
 
 

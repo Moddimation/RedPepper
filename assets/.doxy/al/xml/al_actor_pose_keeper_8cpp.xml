@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_actor_pose_keeper_8cpp" kind="file" language="C++">
+    <compoundname>alActorPoseKeeper.cpp</compoundname>
+    <includes refid="al_actor_pose_keeper_8h" local="no">LiveActor/alActorPoseKeeper.h</includes>
+    <includes refid="al_live_actor_8h" local="no">LiveActor/alLiveActor.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>Audio/alAudioKeeper.h</label>
+        <link refid="al_audio_keeper_8h"/>
+      </node>
+      <node id="8">
+        <label>Effect/alEffectKeeper.h</label>
+        <link refid="al_effect_keeper_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LiveActor/alActorPoseKeeper.h</label>
+        <link refid="al_actor_pose_keeper_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LiveActor/alLiveActor.h</label>
+        <link refid="al_live_actor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>LiveActor/alLiveActorFlag.h</label>
+        <link refid="al_live_actor_flag_8h"/>
+      </node>
+      <node id="10">
+        <label>Nerve/alNerveKeeper.h</label>
+        <link refid="al_nerve_keeper_8h"/>
+      </node>
+      <node id="11">
+        <label>Stage/alStageSwitchKeeper.h</label>
+        <link refid="al_stage_switch_keeper_8h"/>
+      </node>
+      <node id="1">
+        <label>alActorPoseKeeper.cpp</label>
+        <link refid="al_actor_pose_keeper_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>math/seadMatrix.h</label>
+      </node>
+      <node id="4">
+        <label>math/seadQuat.h</label>
+      </node>
+      <node id="5">
+        <label>math/seadVector.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_actor_pose_keeper_8h" kindref="compound">LiveActor/alActorPoseKeeper.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_live_actor_8h" kindref="compound">LiveActor/alLiveActor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classal_1_1_actor_pose_keeper_base_1a6ebca71d96de42ac734c748301a6e0d0" refkind="member"><highlight class="normal"><ref refid="classal_1_1_actor_pose_keeper_base_1a6ebca71d96de42ac734c748301a6e0d0" kindref="member">ActorPoseKeeperBase::ActorPoseKeeperBase</ref>()<sp/>:<sp/>mTrans(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>0,<sp/>0,<sp/>0<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f<sp/><ref refid="namespaceal_1a1428c61006a87c2db5da7f94cddcb531" kindref="member">split</ref>(<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1ae4f45a9e45e9a014fe37aca639105900" kindref="member">al::ActorPoseKeeperBase::sDefaultGravity</ref><sp/>)(<sp/>0,<sp/>-1,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_actor_pose_keeper_base_1a2009e08cbed1f3e38c9a2c2737e75a16" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1a2009e08cbed1f3e38c9a2c2737e75a16" kindref="member">ActorPoseKeeperBase::getRotate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="14"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sead::Vector3f::zero;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" kindref="member">ActorPoseKeeperBase::getScale</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="19"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sead::Vector3f::ones;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classal_1_1_actor_pose_keeper_base_1aa22a3a8d780efd9a246fd9fa816e8448" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1aa22a3a8d780efd9a246fd9fa816e8448" kindref="member">ActorPoseKeeperBase::getVelocity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="24"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sead::Vector3f::zero;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classal_1_1_actor_pose_keeper_base_1a0086f3a68154148f141a0f2bdcc1ca17" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1a0086f3a68154148f141a0f2bdcc1ca17" kindref="member">ActorPoseKeeperBase::getFront</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="29"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sead::Vector3f::ez;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classal_1_1_actor_pose_keeper_base_1affcce788a6197060e9c4e42c2386506d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1affcce788a6197060e9c4e42c2386506d" kindref="member">ActorPoseKeeperBase::getQuat</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="34"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sead::Quatf::unit;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classal_1_1_actor_pose_keeper_base_1ad28fa21de46b358fdff95c4a3c45348d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1ad28fa21de46b358fdff95c4a3c45348d" kindref="member">ActorPoseKeeperBase::getGravity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_base_1ae4f45a9e45e9a014fe37aca639105900" kindref="member">sDefaultGravity</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classal_1_1_actor_pose_keeper_base_1addf18a3f6e1036ed3aa3989dd48b5cf3" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1addf18a3f6e1036ed3aa3989dd48b5cf3" kindref="member">ActorPoseKeeperBase::getRotatePtr</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classal_1_1_actor_pose_keeper_base_1ac04b2c9afa3dd63da8d3f9cd51e095c3" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1ac04b2c9afa3dd63da8d3f9cd51e095c3" kindref="member">ActorPoseKeeperBase::getScalePtr</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" kindref="member">ActorPoseKeeperBase::getVelocityPtr</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classal_1_1_actor_pose_keeper_base_1a7208b9f33ec2db54bc3ee68f10869cec" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1a7208b9f33ec2db54bc3ee68f10869cec" kindref="member">ActorPoseKeeperBase::getFrontPtr</ref>()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classal_1_1_actor_pose_keeper_base_1a1149b82e31e0d9590fe114596d510d8a" refkind="member"><highlight class="normal">sead::Quatf*<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1a1149b82e31e0d9590fe114596d510d8a" kindref="member">ActorPoseKeeperBase::getQuatPtr</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classal_1_1_actor_pose_keeper_base_1a3210a95099e71d308a72a48121946d81" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_base_1a3210a95099e71d308a72a48121946d81" kindref="member">ActorPoseKeeperBase::getGravityPtr</ref>()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a57e7484492073b75ac782ac09727a128" refkind="member"><highlight class="normal"><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a57e7484492073b75ac782ac09727a128" kindref="member">ActorPoseKeeperTFSV::ActorPoseKeeperTFSV</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref>(),<sp/>mFront(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">ez</ref><sp/>),<sp/>mScale(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>1,<sp/>1,<sp/>1<sp/>)<sp/>),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mVelocity(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>0,<sp/>0,<sp/>0<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ab776ce8f17f0518c24399369ce9db55e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ab776ce8f17f0518c24399369ce9db55e" kindref="member">ActorPoseKeeperTFSV::getScale</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a2773d3048b52ee4b583470e15c1aa7cf" kindref="member">mScale</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ad3f51f5fcd6ab1da586eb91a8626ef72" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1ad3f51f5fcd6ab1da586eb91a8626ef72" kindref="member">ActorPoseKeeperTFSV::getVelocity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="87"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a38a1f4f18d4532a96018cef1052cee7b" kindref="member">mVelocity</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a7c8b35ead83a02034c316ec12958923d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a7c8b35ead83a02034c316ec12958923d" kindref="member">ActorPoseKeeperTFSV::getFront</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="92"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a41c906a72693b3f431c090f327631eb7" kindref="member">mFront</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1afedec9683d07773a055803e5d3cf26fc" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1afedec9683d07773a055803e5d3cf26fc" kindref="member">ActorPoseKeeperTFSV::getScalePtr</ref>()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a2773d3048b52ee4b583470e15c1aa7cf" kindref="member">mScale</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a8290fde397451fbb5d825c776cb2716d" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a8290fde397451fbb5d825c776cb2716d" kindref="member">ActorPoseKeeperTFSV::getVelocityPtr</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a38a1f4f18d4532a96018cef1052cee7b" kindref="member">mVelocity</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a5604f27bb757459016b335f3fa0f5c40" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a5604f27bb757459016b335f3fa0f5c40" kindref="member">ActorPoseKeeperTFSV::getFrontPtr</ref>()</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_f_s_v_1a41c906a72693b3f431c090f327631eb7" kindref="member">mFront</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1a76f976d7d419587463f43f710c523d03" refkind="member"><highlight class="normal"><ref refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1a76f976d7d419587463f43f710c523d03" kindref="member">ActorPoseKeeperTFGSV::ActorPoseKeeperTFGSV</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v" kindref="compound">ActorPoseKeeperTFSV</ref>(),<sp/>mGravity(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>0,<sp/>-1,<sp/>0<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1ac9ecc2b777a7c6da9abe79167b37e747" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1ac9ecc2b777a7c6da9abe79167b37e747" kindref="member">ActorPoseKeeperTFGSV::getGravity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="119"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1a94e78a192e6394820e708f268e86dd1e" kindref="member">mGravity</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1ad60b8cea4d401287108e5f4c8e7d4e1b" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1ad60b8cea4d401287108e5f4c8e7d4e1b" kindref="member">ActorPoseKeeperTFGSV::getGravityPtr</ref>()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_f_g_s_v_1a94e78a192e6394820e708f268e86dd1e" kindref="member">mGravity</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a41ea31bee84bbbd3a7cd06c30415683d" refkind="member"><highlight class="normal"><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a41ea31bee84bbbd3a7cd06c30415683d" kindref="member">ActorPoseKeeperTQSV::ActorPoseKeeperTQSV</ref>()</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref>(),<sp/>mQuat(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Quatf</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">unit</ref><sp/>),<sp/>mScale(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>1,<sp/>1,<sp/>1<sp/>)<sp/>),</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mVelocity(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>0,<sp/>0,<sp/>0<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a6b84d5763f117ec3673acfa7f8148256" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a6b84d5763f117ec3673acfa7f8148256" kindref="member">ActorPoseKeeperTQSV::getScale</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="137"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1afe096e6c5808dd8dd1b4ca6ee085b8cf" kindref="member">mScale</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a25a2ac6c3cad141e92c2ae72747c6bdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a25a2ac6c3cad141e92c2ae72747c6bdf" kindref="member">ActorPoseKeeperTQSV::getVelocity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="142"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a49893ec48adcf7790b8b4618b8d2e69e" kindref="member">mVelocity</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a646771c9d87fdaf521d1b00dee039914" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a646771c9d87fdaf521d1b00dee039914" kindref="member">ActorPoseKeeperTQSV::getQuat</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="147"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1adb8e42f5fefd5dedb9039ccec3c9dda0" kindref="member">mQuat</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a3f0244e1b04b80f7c4eb7546cfd55c07" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a3f0244e1b04b80f7c4eb7546cfd55c07" kindref="member">ActorPoseKeeperTQSV::getScalePtr</ref>()</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1afe096e6c5808dd8dd1b4ca6ee085b8cf" kindref="member">mScale</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1af8066fcba5018a7a9036485829636c4d" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1af8066fcba5018a7a9036485829636c4d" kindref="member">ActorPoseKeeperTQSV::getVelocityPtr</ref>()</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a49893ec48adcf7790b8b4618b8d2e69e" kindref="member">mVelocity</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a377d57041c2011f5b54887926fd991ff" refkind="member"><highlight class="normal">sead::Quatf*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1a377d57041c2011f5b54887926fd991ff" kindref="member">ActorPoseKeeperTQSV::getQuatPtr</ref>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_q_s_v_1adb8e42f5fefd5dedb9039ccec3c9dda0" kindref="member">mQuat</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>no_inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a47e1e3fa77d0d63abc63d2fd65b3a1e6" refkind="member"><highlight class="normal"><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a47e1e3fa77d0d63abc63d2fd65b3a1e6" kindref="member">ActorPoseKeeperTRSV::ActorPoseKeeperTRSV</ref>()</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classal_1_1_actor_pose_keeper_base" kindref="compound">ActorPoseKeeperBase</ref>(),<sp/>mRotate(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>0,<sp/>0,<sp/>0<sp/>)<sp/>),<sp/>mScale(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>1,<sp/>1,<sp/>1<sp/>)<sp/>),</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mVelocity(<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::<ref refid="classal_1_1_functor_v0_m" kindref="compound">Vector3f</ref>(<sp/>0,<sp/>0,<sp/>0<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="namespaceal_1ab9389568f9c35d648e228f8efbefbd10" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ab9389568f9c35d648e228f8efbefbd10" kindref="member">initActorPoseTFSV</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" kindref="member">initPoseKeeper</ref>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_s_v" kindref="compound">ActorPoseKeeperTFSV</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="namespaceal_1a7945b977c7ce78baf0832ae6247adc47" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7945b977c7ce78baf0832ae6247adc47" kindref="member">initActorPoseTFGSV</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" kindref="member">initPoseKeeper</ref>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_f_g_s_v" kindref="compound">ActorPoseKeeperTFGSV</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="namespaceal_1a8ca853109d39be4968475c5e99d161a0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a8ca853109d39be4968475c5e99d161a0" kindref="member">initActorPoseTQSV</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" kindref="member">initPoseKeeper</ref>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_q_s_v" kindref="compound">ActorPoseKeeperTQSV</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="namespaceal_1a6b9cd163a7677d250f18c5dbad105ed7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a6b9cd163a7677d250f18c5dbad105ed7" kindref="member">initActorPoseTRSV</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1abbbdb65bdad7de91c11c0065c48ce284" kindref="member">initPoseKeeper</ref>(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v" kindref="compound">ActorPoseKeeperTRSV</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1adb7f7f85a561ce34878e7676ef97e0d4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1adb7f7f85a561ce34878e7676ef97e0d4" kindref="member">ActorPoseKeeperTRSV::getRotate</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="195"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a7c55c9a895910ffbdf27a0131fa6db1c" kindref="member">mRotate</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a43898c366f9a5762759050d5cec27033" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a43898c366f9a5762759050d5cec27033" kindref="member">ActorPoseKeeperTRSV::getScale</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="200"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a9baa127391bfb117d03cc43cd8fecb81" kindref="member">mScale</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a3de617949d3c3878cd594a150ec62f92" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a3de617949d3c3878cd594a150ec62f92" kindref="member">ActorPoseKeeperTRSV::getVelocity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="205"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1aae76c3be14f6691dd7b436ab920942fe" kindref="member">mVelocity</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1ad92e40a615814a943f7ccb1d6088f005" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1ad92e40a615814a943f7ccb1d6088f005" kindref="member">ActorPoseKeeperTRSV::getRotatePtr</ref>()</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a7c55c9a895910ffbdf27a0131fa6db1c" kindref="member">mRotate</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a799cec038dafaafe253c79cccc2c59ab" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a799cec038dafaafe253c79cccc2c59ab" kindref="member">ActorPoseKeeperTRSV::getScalePtr</ref>()</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a9baa127391bfb117d03cc43cd8fecb81" kindref="member">mScale</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a88005313c32c26adb29a632cd1be36db" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1a88005313c32c26adb29a632cd1be36db" kindref="member">ActorPoseKeeperTRSV::getVelocityPtr</ref>()</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classal_1_1_actor_pose_keeper_t_r_s_v_1aae76c3be14f6691dd7b436ab920942fe" kindref="member">mVelocity</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="namespaceal_1a3893d7e6385ef62457746d2409ba745e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3893d7e6385ef62457746d2409ba745e" kindref="member">setTrans</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">trans</ref><sp/>)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac0c7f98439c3bd84c9a6519aada721f6" kindref="member">getTransPtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">trans</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="namespaceal_1acf95646b4531b37e4385dec0fea969f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1acf95646b4531b37e4385dec0fea969f0" kindref="member">setRotate</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rotate</ref><sp/>)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1addf18a3f6e1036ed3aa3989dd48b5cf3" kindref="member">getRotatePtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rotate</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="namespaceal_1a58d52f5333d9398a3b178120c7a61849" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a58d52f5333d9398a3b178120c7a61849" kindref="member">setScale</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">scale</ref><sp/>)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac04b2c9afa3dd63da8d3f9cd51e095c3" kindref="member">getScalePtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">scale</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="namespaceal_1ac59a4fad6af604bbb165dee7b79ea332" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ac59a4fad6af604bbb165dee7b79ea332" kindref="member">setVelocity</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">velocity</ref><sp/>)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" kindref="member">getVelocityPtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">velocity</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="namespaceal_1a0f6b69f4bae9b61c180c3e7289f7acfb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a0f6b69f4bae9b61c180c3e7289f7acfb" kindref="member">setVelocityZero</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">zero</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">velocity</ref><sp/>=<sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" kindref="member">getVelocityPtr</ref>();</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">velocity</ref>-&gt;x<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">zero</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">velocity</ref>-&gt;y<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">zero</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">velocity</ref>-&gt;z<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">zero</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="namespaceal_1a1a75bc04b03e619858a37d48e7de9256" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a1a75bc04b03e619858a37d48e7de9256" kindref="member">setFront</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">front</ref><sp/>)</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a7208b9f33ec2db54bc3ee68f10869cec" kindref="member">getFrontPtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">front</ref>;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="namespaceal_1a53f6fc4407108ec810b4765f6d0681f3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a53f6fc4407108ec810b4765f6d0681f3" kindref="member">setQuat</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">quat</ref><sp/>)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a1149b82e31e0d9590fe114596d510d8a" kindref="member">getQuatPtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">quat</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="namespaceal_1acd5901a1bb65746c57c8e03d849424c2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1acd5901a1bb65746c57c8e03d849424c2" kindref="member">setGravity</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">gravity</ref><sp/>)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a3210a95099e71d308a72a48121946d81" kindref="member">getGravityPtr</ref>()<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">gravity</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="namespaceal_1ab9ac85c3ba2c227660523ce91c2ca10e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1ab9ac85c3ba2c227660523ce91c2ca10e" kindref="member">getTrans</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a6409182860969a20e7287eaf56dc7571" kindref="member">getTrans</ref>();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="namespaceal_1a21ee0146e68076d59135441cfe7aec6a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1a21ee0146e68076d59135441cfe7aec6a" kindref="member">getRotate</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a2009e08cbed1f3e38c9a2c2737e75a16" kindref="member">getRotate</ref>();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="namespaceal_1ad66111fc56036a7ca800ff136d3a68c5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1ad66111fc56036a7ca800ff136d3a68c5" kindref="member">getScale</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a9d60162f1d3fb193593bfafea244eba9" kindref="member">getScale</ref>();</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="namespaceal_1a2a0acded3a32a5abe57b78d112aa9bec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1a2a0acded3a32a5abe57b78d112aa9bec" kindref="member">getVelocity</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1aa22a3a8d780efd9a246fd9fa816e8448" kindref="member">getVelocity</ref>();</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="namespaceal_1a296cbe28bc75d476ef115e2971c89500" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1a296cbe28bc75d476ef115e2971c89500" kindref="member">getFront</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a0086f3a68154148f141a0f2bdcc1ca17" kindref="member">getFront</ref>();</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="namespaceal_1a51d78749b96e2d197ae59ded8faf784e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="namespaceal_1a51d78749b96e2d197ae59ded8faf784e" kindref="member">getQuat</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1affcce788a6197060e9c4e42c2386506d" kindref="member">getQuat</ref>();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="namespaceal_1a33a72d0594ed1adba698daed83794803" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="namespaceal_1a33a72d0594ed1adba698daed83794803" kindref="member">getGravity</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ad28fa21de46b358fdff95c4a3c45348d" kindref="member">getGravity</ref>();</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="namespaceal_1a49dad189ff02d28837741f4192df745f" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="namespaceal_1a49dad189ff02d28837741f4192df745f" kindref="member">getTransPtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac0c7f98439c3bd84c9a6519aada721f6" kindref="member">getTransPtr</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="namespaceal_1af96572d54174dcd97afa31d240690c92" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="namespaceal_1af96572d54174dcd97afa31d240690c92" kindref="member">getRotatePtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1addf18a3f6e1036ed3aa3989dd48b5cf3" kindref="member">getRotatePtr</ref>();</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="namespaceal_1a9f2e2243753f1015921cda3d586f5238" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="namespaceal_1a9f2e2243753f1015921cda3d586f5238" kindref="member">getScalePtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac04b2c9afa3dd63da8d3f9cd51e095c3" kindref="member">getScalePtr</ref>();</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318" refid="namespaceal_1a02231d5f779acbf2649764e154de8629" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="namespaceal_1a02231d5f779acbf2649764e154de8629" kindref="member">getVelocityPtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ac5f4312c9ec3ad4605213ad86d245755" kindref="member">getVelocityPtr</ref>();</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="namespaceal_1a600e03b1af0ece1d33083782cd50fcee" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="namespaceal_1a600e03b1af0ece1d33083782cd50fcee" kindref="member">getFrontPtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a7208b9f33ec2db54bc3ee68f10869cec" kindref="member">getFrontPtr</ref>();</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328" refid="namespaceal_1a78b42eb7fb86899e5c46a997ac03dd91" refkind="member"><highlight class="normal">sead::Quatf*<sp/><ref refid="namespaceal_1a78b42eb7fb86899e5c46a997ac03dd91" kindref="member">getQuatPtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a1149b82e31e0d9590fe114596d510d8a" kindref="member">getQuatPtr</ref>();</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="namespaceal_1af779b5920d21a1d26011180ec081c802" refkind="member"><highlight class="normal">sead::Vector3f*<sp/><ref refid="namespaceal_1af779b5920d21a1d26011180ec081c802" kindref="member">getGravityPtr</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a3210a95099e71d308a72a48121946d81" kindref="member">getGravityPtr</ref>();</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="namespaceal_1aba795665e914da0480bda1b40a151832" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1aba795665e914da0480bda1b40a151832" kindref="member">updatePoseRotate</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Vector3f&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rotate</ref><sp/>)</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a8d443ef9d3fc1d9bbd9b33e2dd06ad83" kindref="member">updatePoseRotate</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">rotate</ref><sp/>);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="namespaceal_1a66a993657c57ef7dc3db86cb88f1be78" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a66a993657c57ef7dc3db86cb88f1be78" kindref="member">updatePoseQuat</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Quatf&amp;<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">quat</ref><sp/>)</highlight></codeline>
+<codeline lineno="344"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a0aaee6678e5bb2dc42f0dbf3172eb95d" kindref="member">updatePoseQuat</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">quat</ref><sp/>);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="namespaceal_1a7a9f3683a9f68f407ff0dcb968a3afed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a7a9f3683a9f68f407ff0dcb968a3afed" kindref="member">updatePoseMtx</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::Matrix34f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">mtx</ref><sp/>)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1a6929beca23c04db9a012444bc59707d3" kindref="member">updatePoseMtx</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">mtx</ref><sp/>);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="namespaceal_1a0c159e1e3d5089c2e41244166609b484" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a0c159e1e3d5089c2e41244166609b484" kindref="member">copyPose</ref>(<sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">to</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref><sp/>)</highlight></codeline>
+<codeline lineno="354"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">to</ref>-&gt;getActorPoseKeeper()-&gt;copyPose(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">from</ref>-&gt;getActorPoseKeeper()<sp/>);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="namespaceal_1a3f7578990844423cf6ef286091ff5f14" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a3f7578990844423cf6ef286091ff5f14" kindref="member">calcSideDir</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Matrix34f<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ad860e90097f1ee6be0f50a6eb44f4dac" kindref="member">calcBaseMtx</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref><sp/>);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;x<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>0<sp/>][<sp/>0<sp/>];</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;y<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>1<sp/>][<sp/>0<sp/>];</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;z<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>2<sp/>][<sp/>0<sp/>];</highlight></codeline>
+<codeline lineno="365"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="namespaceal_1ae7ad48c684668988b0eaab1daab7750c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1ae7ad48c684668988b0eaab1daab7750c" kindref="member">calcUpDir</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Matrix34f<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ad860e90097f1ee6be0f50a6eb44f4dac" kindref="member">calcBaseMtx</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref><sp/>);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;x<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>0<sp/>][<sp/>1<sp/>];</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;y<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>1<sp/>][<sp/>1<sp/>];</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;z<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>2<sp/>][<sp/>1<sp/>];</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376" refid="namespaceal_1a6f5065f1f9256e98785da21958d9ed5d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a6f5065f1f9256e98785da21958d9ed5d" kindref="member">calcFrontDir</ref>(<sp/>sead::Vector3f*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_live_actor" kindref="compound">LiveActor</ref>*<sp/>actor<sp/>)</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sead::Matrix34f<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actor-&gt;<ref refid="classal_1_1_live_actor_1a4b1c3689ab2adf50cc3d04c3d24a57cd" kindref="member">getActorPoseKeeper</ref>()-&gt;<ref refid="classal_1_1_actor_pose_keeper_base_1ad860e90097f1ee6be0f50a6eb44f4dac" kindref="member">calcBaseMtx</ref>(<sp/>&amp;<ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref><sp/>);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;x<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>0<sp/>][<sp/>2<sp/>];</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;y<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>1<sp/>][<sp/>2<sp/>];</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">out</ref>-&gt;z<sp/>=<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">baseMtx</ref>.m[<sp/>2<sp/>][<sp/>2<sp/>];</highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/LiveActor/alActorPoseKeeper.cpp"/>
+  </compounddef>
+</doxygen>

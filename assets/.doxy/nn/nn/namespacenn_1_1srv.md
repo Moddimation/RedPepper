@@ -56,8 +56,8 @@
 
 | Type | Name |
 | ---: | :--- |
-|  [**Result**](classnn_1_1Result.md) | [**GetServiceHandle**](#function-getservicehandle) ([**Handle**](structnn_1_1Handle.md) \* out, const char \* service, s32, u32) <br> |
-|  [**Result**](classnn_1_1Result.md) | [**Initialize**](#function-initialize) () <br> |
+|  [**Result**](classnn_1_1_result.md) | [**GetServiceHandle**](#function-getservicehandle) ([**Handle**](structnn_1_1_handle.md) \* out, const char \* service, [**s32**](types_8h.md#typedef-s32) r2, [**u32**](types_8h.md#typedef-u32) r3) <br> |
+|  [**Result**](classnn_1_1_result.md) | [**Initialize**](#function-initialize) () <br> |
 
 
 
@@ -97,8 +97,8 @@
 Result nn::srv::GetServiceHandle (
     Handle * out,
     const char * service,
-    s32,
-    u32
+    s32 r2,
+    u32 r3
 ) 
 ```
 

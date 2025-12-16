@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_actor_execute_info" kind="class" language="C++" prot="public">
+    <compoundname>al::ActorExecuteInfo</compoundname>
+    <includes refid="al_actor_execute_info_8h" local="no">alActorExecuteInfo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_actor_execute_info_1ab8f063175216c1805072e4484103b007" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_execute_request_keeper" kindref="compound">ExecuteRequestKeeper</ref> *</type>
+        <definition>ExecuteRequestKeeper* al::ActorExecuteInfo::mRequestKeeper</definition>
+        <argsstring></argsstring>
+        <name>mRequestKeeper</name>
+        <qualifiedname>al::ActorExecuteInfo::mRequestKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorExecuteInfo.h" line="11" column="30" bodyfile="lib/al/include/LiveActor/alActorExecuteInfo.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classal_1_1_actor_execute_info_1ac37eac679519adc0b8fffdd9e8b4df35" compoundref="al_actor_execute_info_8h" startline="14" endline="17">getRequestKeeper</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_actor_execute_info_1ac37eac679519adc0b8fffdd9e8b4df35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classal_1_1_execute_request_keeper" kindref="compound">ExecuteRequestKeeper</ref> *</type>
+        <definition>ExecuteRequestKeeper * al::ActorExecuteInfo::getRequestKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getRequestKeeper</name>
+        <qualifiedname>al::ActorExecuteInfo::getRequestKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/LiveActor/alActorExecuteInfo.h" line="14" column="30" bodyfile="lib/al/include/LiveActor/alActorExecuteInfo.h" bodystart="14" bodyend="17"/>
+        <references refid="classal_1_1_actor_execute_info_1ab8f063175216c1805072e4484103b007" compoundref="al_actor_execute_info_8h" startline="11">mRequestKeeper</references>
+        <referencedby refid="namespaceal_actor_system_function_1aecd31a65f2e55c3263285e9a90e9aedb" compoundref="al_execute_table_holder_8cpp" startline="30" endline="33">alActorSystemFunction::addToExecutorMovement</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>al::ActorExecuteInfo</label>
+        <link refid="classal_1_1_actor_execute_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mRequestKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::ExecuteRequestKeeper</label>
+        <link refid="classal_1_1_execute_request_keeper"/>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/LiveActor/alActorExecuteInfo.h" line="8" column="1" bodyfile="lib/al/include/LiveActor/alActorExecuteInfo.h" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classal_1_1_actor_execute_info_1ac37eac679519adc0b8fffdd9e8b4df35" prot="public" virt="non-virtual"><scope>al::ActorExecuteInfo</scope><name>getRequestKeeper</name></member>
+      <member refid="classal_1_1_actor_execute_info_1ab8f063175216c1805072e4484103b007" prot="private" virt="non-virtual"><scope>al::ActorExecuteInfo</scope><name>mRequestKeeper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

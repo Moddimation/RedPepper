@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_coin_rotater_8cpp" kind="file" language="C++">
+    <compoundname>CoinRotater.cpp</compoundname>
+    <includes refid="_coin_rotater_8h" local="yes">MapObj/CoinRotater.h</includes>
+    <includes local="no">Scene/alSceneObjHolder.h</includes>
+    <includes refid="_scene_obj_factory_8h" local="yes">Scene/SceneObjFactory.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>MapObj/CoinRotater.h</label>
+        <link refid="_coin_rotater_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Scene/SceneObjFactory.h</label>
+        <link refid="_scene_obj_factory_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CoinRotater.cpp</label>
+        <link refid="_coin_rotater_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LiveActor/alLiveActor.h</label>
+      </node>
+      <node id="4">
+        <label>Scene/alISceneObj.h</label>
+      </node>
+      <node id="5">
+        <label>Scene/alSceneObjHolder.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacerp">rp</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_coin_rotater_8cpp_1acf452f1c1b9f6ba9421f1d1a3cfa4de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FUN_00277de0</definition>
+        <argsstring>(al::LiveActor *, const al::ActorInitInfo &amp;)</argsstring>
+        <name>FUN_00277de0</name>
+        <param>
+          <type>al::LiveActor *</type>
+        </param>
+        <param>
+          <type>const al::ActorInitInfo &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game/src/MapObj/CoinRotater.cpp" line="21" column="17" declfile="Game/src/MapObj/CoinRotater.cpp" declline="21" declcolumn="17"/>
+        <referencedby refid="class_coin_rotater_1a41b5dacdf28a7da5898c152266dccc94" compoundref="_coin_rotater_8cpp" startline="23" endline="27">CoinRotater::initAfterPlacementSceneObj</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_coin_rotater_8h" kindref="compound">MapObj/CoinRotater.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Scene/alSceneObjHolder.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_scene_obj_factory_8h" kindref="compound">Scene/SceneObjFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>NON_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>find<sp/>out<sp/>what<sp/>all<sp/>the<sp/>space<sp/>at<sp/>0x68<sp/>is<sp/>used<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_coin_rotater_1a941546058c86dd0c6a6255386e4f64f0" refkind="member"><highlight class="normal"><ref refid="class_coin_rotater_1a941546058c86dd0c6a6255386e4f64f0" kindref="member">CoinRotater::CoinRotater</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>LiveActor(<sp/></highlight><highlight class="stringliteral">&quot;コイン回転管理&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_coin_rotater_1a5a1090c31498df0ad9514c91f92082a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_coin_rotater_1a5a1090c31498df0ad9514c91f92082a1" kindref="member">CoinRotater::getSceneObjName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="17"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;コインローテータ&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_coin_rotater_8cpp_1acf452f1c1b9f6ba9421f1d1a3cfa4de9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_coin_rotater_8cpp_1acf452f1c1b9f6ba9421f1d1a3cfa4de9" kindref="member">FUN_00277de0</ref>(<sp/>al::LiveActor*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::ActorInitInfo&amp;<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_coin_rotater_1a41b5dacdf28a7da5898c152266dccc94" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_coin_rotater_1a41b5dacdf28a7da5898c152266dccc94" kindref="member">CoinRotater::initAfterPlacementSceneObj</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>al::ActorInitInfo&amp;<sp/>info<sp/>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_coin_rotater_8cpp_1acf452f1c1b9f6ba9421f1d1a3cfa4de9" kindref="member">FUN_00277de0</ref>(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>info<sp/>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeActorAppeared();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerp" kindref="compound">rp</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespacerp_1a25e3e3a7ce26bcfb37889f38280f64c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacerp_1a25e3e3a7ce26bcfb37889f38280f64c6" kindref="member">createCoinRotater</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al::createSceneObj(<sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a9783264edafce4e658638cb9f4123c7b" kindref="member">SceneObjType_CoinRotater</ref><sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacerp_1a4f58ad73f89ce46fb895c8269092a7da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacerp_1a4f58ad73f89ce46fb895c8269092a7da" kindref="member">getCoinRotateY</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_coin_rotater" kindref="compound">CoinRotater</ref>*<sp/>rotater<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="class_coin_rotater" kindref="compound">CoinRotater</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>al::getSceneObj(<sp/><ref refid="_scene_obj_factory_8h_1a2436e592453f0db24c1f61627d4d6220a9783264edafce4e658638cb9f4123c7b" kindref="member">SceneObjType_CoinRotater</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rotater-&gt;<ref refid="class_coin_rotater_1adfae9a55421e0885960013f1ca4c36cf" kindref="member">getRotateY</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rp</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Game/src/MapObj/CoinRotater.cpp"/>
+  </compounddef>
+</doxygen>

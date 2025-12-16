@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_system_kit_8cpp" kind="file" language="C++">
+    <compoundname>alSystemKit.cpp</compoundname>
+    <includes refid="al_file_loader_8h" local="no">File/alFileLoader.h</includes>
+    <includes refid="al_save_data_director_8h" local="no">Save/alSaveDataDirector.h</includes>
+    <includes refid="_application_8h" local="no">System/Application.h</includes>
+    <includes refid="al_system_kit_8h" local="no">System/alSystemKit.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>File/alFileLoader.h</label>
+        <link refid="al_file_loader_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Save/alSaveDataDirector.h</label>
+        <link refid="al_save_data_director_8h"/>
+      </node>
+      <node id="5">
+        <label>System/Application.h</label>
+        <link refid="_application_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>System/alSystemKit.h</label>
+        <link refid="al_system_kit_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>alSystemKit.cpp</label>
+        <link refid="al_system_kit_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>heap/seadDisposer.h</label>
+      </node>
+      <node id="8">
+        <label>heap/seadHeap.h</label>
+      </node>
+      <node id="3">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <innernamespace refid="namespaceal_project_interface">alProjectInterface</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_file_loader_8h" kindref="compound">File/alFileLoader.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_save_data_director_8h" kindref="compound">Save/alSaveDataDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_application_8h" kindref="compound">System/Application.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_system_kit_8h" kindref="compound">System/alSystemKit.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classal_1_1_system_kit_1a272b2c97338e83acc8dfa55805e53d5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_system_kit_1a272b2c97338e83acc8dfa55805e53d5a" kindref="member">SystemKit::createFileLoader</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r1</ref><sp/>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_system_kit_1a91bc19aa665ef33b6271da143eb9f98d" kindref="member">mFileLoader</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_file_loader" kindref="compound">FileLoader</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r1</ref><sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classal_1_1_system_kit_1a0d45834709167eaf374e3a8f829af159" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_system_kit_1a0d45834709167eaf374e3a8f829af159" kindref="member">SystemKit::createSaveDataSystem</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">u32</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r1</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">s32</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r2</ref><sp/>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_system_kit_1a322c899af06c45bde16fe27023cf2a08" kindref="member">mSaveDataDirector</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_save_data_director" kindref="compound">SaveDataDirector</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r1</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">r2</ref><sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal_project_interface" kindref="compound">alProjectInterface</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceal_project_interface_1afccfa7260e65b4b22035833b97b34556" refkind="member"><highlight class="normal"><ref refid="classal_1_1_system_kit" kindref="compound">al::SystemKit</ref>*<sp/><ref refid="namespaceal_project_interface_1afccfa7260e65b4b22035833b97b34556" kindref="member">getSystemKit</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceal_1a93457bd24ef80ce68834c27a4dd02aa3" kindref="member">al::getApplication</ref>()-&gt;<ref refid="class_application_1a12dff10ef149c68221b7ba3258d27a04" kindref="member">getSystemKit</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>alProjectInterface</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/System/alSystemKit.cpp"/>
+  </compounddef>
+</doxygen>

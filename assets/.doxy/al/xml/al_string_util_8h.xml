@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_string_util_8h" kind="file" language="C++">
+    <compoundname>alStringUtil.h</compoundname>
+    <includes local="no">prim/seadSafeString.h</includes>
+    <includedby refid="al_actor_init_util_8cpp" local="no">alActorInitUtil.cpp</includedby>
+    <includedby refid="al_effect_obj_8cpp" local="no">alEffectObj.cpp</includedby>
+    <includedby refid="al_file_function_8cpp" local="no">alFileFunction.cpp</includedby>
+    <includedby refid="al_hit_sensor_function_8cpp" local="no">alHitSensorFunction.cpp</includedby>
+    <includedby refid="al_hit_sensor_keeper_8cpp" local="no">alHitSensorKeeper.cpp</includedby>
+    <includedby refid="al_memory_system_8cpp" local="no">alMemorySystem.cpp</includedby>
+    <includedby refid="al_nerve_action_ctrl_8cpp" local="no">alNerveActionCtrl.cpp</includedby>
+    <includedby refid="al_placement_function_8cpp" local="no">alPlacementFunction.cpp</includedby>
+    <includedby refid="al_sensor_function_8cpp" local="no">alSensorFunction.cpp</includedby>
+    <includedby refid="al_string_util_8cpp" local="no">alStringUtil.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>alStringUtil.h</label>
+        <link refid="al_string_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>prim/seadSafeString.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>alStringUtil.h</label>
+        <link refid="al_string_util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>alFileFunction.cpp</label>
+        <link refid="al_file_function_8cpp"/>
+      </node>
+      <node id="2">
+        <label>alActorInitUtil.cpp</label>
+        <link refid="al_actor_init_util_8cpp"/>
+      </node>
+      <node id="5">
+        <label>alHitSensorFunction.cpp</label>
+        <link refid="al_hit_sensor_function_8cpp"/>
+      </node>
+      <node id="6">
+        <label>alHitSensorKeeper.cpp</label>
+        <link refid="al_hit_sensor_keeper_8cpp"/>
+      </node>
+      <node id="10">
+        <label>alSensorFunction.cpp</label>
+        <link refid="al_sensor_function_8cpp"/>
+      </node>
+      <node id="7">
+        <label>alMemorySystem.cpp</label>
+        <link refid="al_memory_system_8cpp"/>
+      </node>
+      <node id="8">
+        <label>alNerveActionCtrl.cpp</label>
+        <link refid="al_nerve_action_ctrl_8cpp"/>
+      </node>
+      <node id="3">
+        <label>alEffectObj.cpp</label>
+        <link refid="al_effect_obj_8cpp"/>
+      </node>
+      <node id="9">
+        <label>alPlacementFunction.cpp</label>
+        <link refid="al_placement_function_8cpp"/>
+      </node>
+      <node id="11">
+        <label>alStringUtil.cpp</label>
+        <link refid="al_string_util_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classal_1_1_string_tmp" prot="public">al::StringTmp</innerclass>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Temporary<sp/>file<sp/>because<sp/>I<sp/>can&apos;t<sp/>figure<sp/>out<sp/>what<sp/>the<sp/>folder<sp/>is<sp/>(al/A____<sp/>or<sp/>al/B____)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>please<sp/>replace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;prim/seadSafeString.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;s32<sp/>L&gt;</highlight></codeline>
+<codeline lineno="12" refid="classal_1_1_string_tmp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classal_1_1_string_tmp" kindref="compound">StringTmp</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>sead::FixedSafeString&lt;L&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15" refid="classal_1_1_string_tmp_1a1e41a1492d82c367a1fb0e7f2ff5870a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_string_tmp_1a1e41a1492d82c367a1fb0e7f2ff5870a" kindref="member">StringTmp</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">format</ref>,<sp/>...<sp/>)<sp/>:<sp/><ref refid="namespacesead" kindref="compound">sead</ref>::FixedSafeString&lt;<ref refid="classal_1_1_functor_v0_m" kindref="compound">L</ref>&gt;()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">va_list</ref><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">args</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">va_start</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">args</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">format</ref><sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classal_1_1_functor_v0_m" kindref="compound">formatV</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">format</ref>,<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">args</ref><sp/>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">va_end</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">args</ref><sp/>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespaceal_1a12f723569a364cf7e570140779acac6e" kindref="member">getBaseName</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespaceal_1a9d001494620c7e1614f9f7da60dbc4e7" kindref="member">createStringIfInStack</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str<sp/>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aba76858d014cb644092632111c255ba0" kindref="member">isEqualString</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>s2<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1aba76858d014cb644092632111c255ba0" kindref="member">isEqualString</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sead::SafeString&amp;<sp/>s2<sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a5d23b8b9e530df5eb2116f10ca252cc1" kindref="member">isEqualSubString</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>substr<sp/>);</highlight></codeline>
+<codeline lineno="29" refid="namespaceal_1a89ca1031e510765c040b24cc4d8e933c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceal_1a89ca1031e510765c040b24cc4d8e933c" kindref="member">isInStack</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">ptr</ref><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Util/alStringUtil.h"/>
+  </compounddef>
+</doxygen>

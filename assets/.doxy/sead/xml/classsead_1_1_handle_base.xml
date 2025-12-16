@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_handle_base" kind="class" language="C++" prot="public">
+    <compoundname>sead::HandleBase</compoundname>
+    <derivedcompoundref refid="classsead_1_1_directory_handle" prot="public" virt="non-virtual">sead::DirectoryHandle</derivedcompoundref>
+    <derivedcompoundref refid="classsead_1_1_file_handle" prot="public" virt="non-virtual">sead::FileHandle</derivedcompoundref>
+    <includes refid="sead_file_device_8h" local="no">seadFileDevice.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsead_1_1_handle_base_1a5158d810b036e9fba7c6dfa97169bb18" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FileDevice</definition>
+        <argsstring></argsstring>
+        <name>FileDevice</name>
+        <qualifiedname>sead::HandleBase::FileDevice</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_file_device" kindref="compound">FileDevice</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="29" column="18" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsead_1_1_handle_base_1a75b115f78040885746a3db836c607295" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_file_device" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice* sead::HandleBase::mDevice</definition>
+        <argsstring></argsstring>
+        <name>mDevice</name>
+        <qualifiedname>sead::HandleBase::mDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="31" column="16" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_handle_base_1a76eb8863b30950f497dcbaa2bc16bb35" compoundref="sead_file_device_8h" startline="22" endline="22">getDevice</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_handle_base_1af77895b35fd6171a70dee87b0220b13e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_file_device" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice* sead::HandleBase::mOriginalDevice</definition>
+        <argsstring></argsstring>
+        <name>mOriginalDevice</name>
+        <qualifiedname>sead::HandleBase::mOriginalDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="32" column="16" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classsead_1_1_handle_base_1a7923bbc57c7a7d0f8be6af0db566c6e7" compoundref="sead_file_device_8h" startline="24" endline="24">getOriginalDevice</referencedby>
+        <referencedby refid="classsead_1_1_handle_base_1aafdb351f22f7d8efcb3bb0896e698c67" compoundref="sead_file_device_8h" startline="26" endline="26">isOpened</referencedby>
+        <referencedby refid="classsead_1_1_directory_handle_1a1ef605bec9cbab70557dc10e295fec98" compoundref="sead_file_device_8h" startline="380" endline="384">sead::DirectoryHandle::~DirectoryHandle</referencedby>
+        <referencedby refid="classsead_1_1_file_handle_1a4b600c74e318a787934ba5dfc5df156c" compoundref="sead_file_device_8h" startline="342" endline="346">sead::FileHandle::~FileHandle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_handle_base_1ad1102ffbe197fa1b0b7669906a320614" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacesead_1aec9a373a21df5e71f9a3301453a4ab96" kindref="member">HandleBuffer</ref></type>
+        <definition>HandleBuffer sead::HandleBase::mHandleBuffer</definition>
+        <argsstring></argsstring>
+        <name>mHandleBuffer</name>
+        <qualifiedname>sead::HandleBase::mHandleBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="33" column="18" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_handle_base_1a561b3e52a7ca41353246679fc9794b2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sead::HandleBase::HandleBase</definition>
+        <argsstring>()</argsstring>
+        <name>HandleBase</name>
+        <qualifiedname>sead::HandleBase::HandleBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="19" column="5" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_handle_base_1aa8ae3f39c5fa29df13dbbfc9f9d8ed88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual sead::HandleBase::~HandleBase</definition>
+        <argsstring>()</argsstring>
+        <name>~HandleBase</name>
+        <qualifiedname>sead::HandleBase::~HandleBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="20" column="13" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_handle_base_1a76eb8863b30950f497dcbaa2bc16bb35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_file_device" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice * sead::HandleBase::getDevice</definition>
+        <argsstring>() const</argsstring>
+        <name>getDevice</name>
+        <qualifiedname>sead::HandleBase::getDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="22" column="16" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="22" bodyend="22"/>
+        <references refid="classsead_1_1_handle_base_1a75b115f78040885746a3db836c607295" compoundref="sead_file_device_8h" startline="31">mDevice</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_handle_base_1a7923bbc57c7a7d0f8be6af0db566c6e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsead_1_1_file_device" kindref="compound">FileDevice</ref> *</type>
+        <definition>FileDevice * sead::HandleBase::getOriginalDevice</definition>
+        <argsstring>() const</argsstring>
+        <name>getOriginalDevice</name>
+        <qualifiedname>sead::HandleBase::getOriginalDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="24" column="16" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="24" bodyend="24"/>
+        <references refid="classsead_1_1_handle_base_1af77895b35fd6171a70dee87b0220b13e" compoundref="sead_file_device_8h" startline="32">mOriginalDevice</references>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_handle_base_1aafdb351f22f7d8efcb3bb0896e698c67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sead::HandleBase::isOpened</definition>
+        <argsstring>() const</argsstring>
+        <name>isOpened</name>
+        <qualifiedname>sead::HandleBase::isOpened</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/filedevice/seadFileDevice.h" line="26" column="10" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="26" bodyend="26"/>
+        <references refid="classsead_1_1_handle_base_1af77895b35fd6171a70dee87b0220b13e" compoundref="sead_file_device_8h" startline="32">mOriginalDevice</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sead::DirectoryHandle</label>
+        <link refid="classsead_1_1_directory_handle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::FileHandle</label>
+        <link refid="classsead_1_1_file_handle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::HandleBase</label>
+        <link refid="classsead_1_1_handle_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="18">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="19" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sead::FixedSafeString&lt; 32 &gt;</label>
+        <link refid="classsead_1_1_fixed_safe_string"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="template-instance">
+          <edgelabel>&lt; 32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>sead::FixedSafeStringBase&lt; char, L &gt;</label>
+        <link refid="classsead_1_1_fixed_safe_string_base"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="template-instance">
+          <edgelabel>&lt; char, L &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="template-instance">
+          <edgelabel>&lt; Heap &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="template-instance">
+          <edgelabel>&lt; IDisposer &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>sead::SafeArray&lt; u8, 32 &gt;</label>
+        <link refid="classsead_1_1_safe_array"/>
+        <childnode refid="28" relation="template-instance">
+          <edgelabel>&lt; u8, 32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sead::SafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::TList&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; FileDevice * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::TListNode&lt; FileDevice * &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mList</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; FileDevice * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+      <node id="25">
+        <label>sead::BufferedSafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_buffered_safe_string_base"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>sead::BufferedSafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_buffered_safe_string_base"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1_critical_section"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::FileDevice</label>
+        <link refid="classsead_1_1_file_device"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mDriveName</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>sead::FixedSafeString&lt; L &gt;</label>
+        <link refid="classsead_1_1_fixed_safe_string"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>sead::FixedSafeStringBase&lt; T, L &gt;</label>
+        <link refid="classsead_1_1_fixed_safe_string_base"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::HandleBase</label>
+        <link refid="classsead_1_1_handle_base"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mDevice</edgelabel>
+          <edgelabel>mOriginalDevice</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mHandleBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mDisposerHeap</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>mINamableName</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1_list_impl"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>sead::SafeArray&lt; T, N &gt;</label>
+        <link refid="classsead_1_1_safe_array"/>
+      </node>
+      <node id="13">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::TList&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sead::TListNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/filedevice/seadFileDevice.h" line="17" column="1" bodyfile="lib/sead/include/filedevice/seadFileDevice.h" bodystart="17" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_handle_base_1a5158d810b036e9fba7c6dfa97169bb18" prot="protected" virt="non-virtual"><scope>sead::HandleBase</scope><name>FileDevice</name></member>
+      <member refid="classsead_1_1_handle_base_1a76eb8863b30950f497dcbaa2bc16bb35" prot="public" virt="non-virtual"><scope>sead::HandleBase</scope><name>getDevice</name></member>
+      <member refid="classsead_1_1_handle_base_1a7923bbc57c7a7d0f8be6af0db566c6e7" prot="public" virt="non-virtual"><scope>sead::HandleBase</scope><name>getOriginalDevice</name></member>
+      <member refid="classsead_1_1_handle_base_1a561b3e52a7ca41353246679fc9794b2a" prot="public" virt="non-virtual"><scope>sead::HandleBase</scope><name>HandleBase</name></member>
+      <member refid="classsead_1_1_handle_base_1aafdb351f22f7d8efcb3bb0896e698c67" prot="public" virt="non-virtual"><scope>sead::HandleBase</scope><name>isOpened</name></member>
+      <member refid="classsead_1_1_handle_base_1a75b115f78040885746a3db836c607295" prot="protected" virt="non-virtual"><scope>sead::HandleBase</scope><name>mDevice</name></member>
+      <member refid="classsead_1_1_handle_base_1ad1102ffbe197fa1b0b7669906a320614" prot="protected" virt="non-virtual"><scope>sead::HandleBase</scope><name>mHandleBuffer</name></member>
+      <member refid="classsead_1_1_handle_base_1af77895b35fd6171a70dee87b0220b13e" prot="protected" virt="non-virtual"><scope>sead::HandleBase</scope><name>mOriginalDevice</name></member>
+      <member refid="classsead_1_1_handle_base_1aa8ae3f39c5fa29df13dbbfc9f9d8ed88" prot="public" virt="virtual"><scope>sead::HandleBase</scope><name>~HandleBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_j_map_info_8h" kind="file" language="C++">
+    <compoundname>alJMapInfo.h</compoundname>
+    <includedby refid="al_j_map_info_8cpp" local="no">alJMapInfo.cpp</includedby>
+    <includedby refid="al_k_collision_server_8cpp" local="no">alKCollisionServer.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>alJMapInfo.h</label>
+        <link refid="al_j_map_info_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>alKCollisionServer.cpp</label>
+        <link refid="al_k_collision_server_8cpp"/>
+      </node>
+      <node id="2">
+        <label>alJMapInfo.cpp</label>
+        <link refid="al_j_map_info_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_j_map_item" prot="public">JMapItem</innerclass>
+    <innerclass refid="struct_j_map_data" prot="public">JMapData</innerclass>
+    <innerclass refid="class_j_map_info" prot="public">JMapInfo</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="struct_j_map_item" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_j_map_item" kindref="compound">JMapItem</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5" kindref="member">Type</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a7c6a032571f75c9937133c1df7f76df2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a7c6a032571f75c9937133c1df7f76df2" kindref="member">Long</ref>,</highlight></codeline>
+<codeline lineno="8" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a8d7f0611efee4aa30263f27eb6ba4377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a8d7f0611efee4aa30263f27eb6ba4377" kindref="member">String</ref>,</highlight></codeline>
+<codeline lineno="9" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5af82ee05273fc94f7503ed9cc348eb673" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5af82ee05273fc94f7503ed9cc348eb673" kindref="member">Float</ref>,</highlight></codeline>
+<codeline lineno="10" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a1d909b5fe8bdf541d54487560a825716" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a1d909b5fe8bdf541d54487560a825716" kindref="member">Long2</ref>,</highlight></codeline>
+<codeline lineno="11" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a9768ca39ceafd480895a48f6366e53d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a9768ca39ceafd480895a48f6366e53d1" kindref="member">Short</ref>,</highlight></codeline>
+<codeline lineno="12" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a31ad99524fbf4fb70aeda9e962058dfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a31ad99524fbf4fb70aeda9e962058dfb" kindref="member">Byte</ref>,</highlight></codeline>
+<codeline lineno="13" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a05eaba254b176f465ed9ab0d385d1b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5a05eaba254b176f465ed9ab0d385d1b32" kindref="member">StringPtr</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5ad27aa97ae6fc8bda8b7f1cf9067c5dc7" kindref="member">Null</ref></highlight></codeline>
+<codeline lineno="15" refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5ad27aa97ae6fc8bda8b7f1cf9067c5dc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_j_map_item_1a563986359c1e962de82a3e970afac34a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><ref refid="struct_j_map_item_1a563986359c1e962de82a3e970afac34a" kindref="member">mHash</ref>;</highlight></codeline>
+<codeline lineno="18" refid="struct_j_map_item_1a0bf18d9259d6f9d9f2b125abb2bb841e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><ref refid="struct_j_map_item_1a0bf18d9259d6f9d9f2b125abb2bb841e" kindref="member">mMask</ref>;</highlight></codeline>
+<codeline lineno="19" refid="struct_j_map_item_1a0e69ca142e7de4462d2ac8123cfbad14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u16<sp/><sp/><ref refid="struct_j_map_item_1a0e69ca142e7de4462d2ac8123cfbad14" kindref="member">mDataOffset</ref>;</highlight></codeline>
+<codeline lineno="20" refid="struct_j_map_item_1a11604acef050494f33d1bb7bf5361326" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><ref refid="struct_j_map_item_1a11604acef050494f33d1bb7bf5361326" kindref="member">mShift</ref>;</highlight></codeline>
+<codeline lineno="21" refid="struct_j_map_item_1a7065fba41cd51c57e090cfc86bab8a38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_j_map_item_1ab3aca7bf71825df54710039b46aaaec5" kindref="member">Type</ref><sp/><ref refid="struct_j_map_item_1a7065fba41cd51c57e090cfc86bab8a38" kindref="member">mType</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="struct_j_map_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_j_map_data" kindref="compound">JMapData</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26" refid="struct_j_map_data_1ac943e80146bcd4e7a16bd76e3eb1949a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_data_1ac943e80146bcd4e7a16bd76e3eb1949a" kindref="member">_0</ref>;</highlight></codeline>
+<codeline lineno="27" refid="struct_j_map_data_1a51c084f7c00313c52cc99a0b75a799b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_data_1a51c084f7c00313c52cc99a0b75a799b1" kindref="member">mNumData</ref>;</highlight></codeline>
+<codeline lineno="28" refid="struct_j_map_data_1aed06ea12ad235c191b46f9d48a7aa375" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_data_1aed06ea12ad235c191b46f9d48a7aa375" kindref="member">mDataOffset</ref>;</highlight></codeline>
+<codeline lineno="29" refid="struct_j_map_data_1a0e8534b67fa58487e95b32171815a29b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_data_1a0e8534b67fa58487e95b32171815a29b" kindref="member">_C</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct_j_map_data_1a1609f37a5e129910572ac616f0710ba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_item" kindref="compound">JMapItem</ref>*<sp/><ref refid="struct_j_map_data_1a1609f37a5e129910572ac616f0710ba6" kindref="member">getItems</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="struct_j_map_item" kindref="compound">JMapItem</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">u8*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>this<sp/>)<sp/>+</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<sp/><ref refid="struct_j_map_data" kindref="compound">JMapData</ref><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_j_map_data_1a58ead1a9178ac80330fba73a7b6df92a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_item" kindref="compound">JMapItem</ref>*<sp/><ref refid="struct_j_map_data_1a58ead1a9178ac80330fba73a7b6df92a" kindref="member">getItem</ref>(<sp/>s32<sp/>index<sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="struct_j_map_data_1a1609f37a5e129910572ac616f0710ba6" kindref="member">getItems</ref>()[<sp/>index<sp/>];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="struct_j_map_data_1a05252803e13f28b80501eb8af83016c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_data" kindref="compound">JMapData</ref>*<sp/><ref refid="struct_j_map_data_1a05252803e13f28b80501eb8af83016c5" kindref="member">fromData</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="struct_j_map_data" kindref="compound">JMapData</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_j_map_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_j_map_info" kindref="compound">JMapInfo</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="class_j_map_info_1a4bbf842724717f526ab13128508b466d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_j_map_data" kindref="compound">JMapData</ref>*<sp/><ref refid="class_j_map_info_1a4bbf842724717f526ab13128508b466d" kindref="member">mData</ref>;</highlight></codeline>
+<codeline lineno="52" refid="class_j_map_info_1a698caf45a03cfdd58e74e99922378a72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><sp/><sp/><sp/><sp/><ref refid="class_j_map_info_1a698caf45a03cfdd58e74e99922378a72" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_j_map_info_1a017ff323e78552235a34aa13aad25233" kindref="member">attach</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_j_map_info_1aa315c9495205f2a8eaf15847f2fb419d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="class_j_map_info_1aa315c9495205f2a8eaf15847f2fb419d" kindref="member">searchItemInfo</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="58" refid="class_j_map_info_1a7b3a5161022f3a1a2408ec5dec9c4fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_j_map_info_1a7b3a5161022f3a1a2408ec5dec9c4fcc" kindref="member">getValueFast</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/>u64*<sp/>out<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_j_map_info_1a06d800724fb7ff3ef999724fa8045554" kindref="member">JMapInfo</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="lib/al/include/Util/alJMapInfo.h"/>
+  </compounddef>
+</doxygen>

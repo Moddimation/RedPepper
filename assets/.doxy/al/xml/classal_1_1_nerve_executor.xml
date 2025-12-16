@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classal_1_1_nerve_executor" kind="class" language="C++" prot="public">
+    <compoundname>al::NerveExecutor</compoundname>
+    <basecompoundref refid="classal_1_1_i_use_nerve" prot="public" virt="non-virtual">al::IUseNerve</basecompoundref>
+    <derivedcompoundref refid="classal_1_1_nerve_state_base" prot="public" virt="non-virtual">al::NerveStateBase</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_scene" prot="public" virt="non-virtual">al::Scene</derivedcompoundref>
+    <derivedcompoundref refid="classal_1_1_sequence" prot="public" virt="non-virtual">al::Sequence</derivedcompoundref>
+    <includes refid="al_nerve_executor_8h" local="no">alNerveExecutor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classal_1_1_nerve_keeper" kindref="compound">al::NerveKeeper</ref> *</type>
+        <definition>al::NerveKeeper* al::NerveExecutor::mNerveKeeper</definition>
+        <argsstring></argsstring>
+        <name>mNerveKeeper</name>
+        <qualifiedname>al::NerveExecutor::mNerveKeeper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveExecutor.h" line="12" column="25" bodyfile="lib/al/include/Nerve/alNerveExecutor.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classal_1_1_nerve_executor_1a690ab4d04c68a234537871a10dc0bd7a" compoundref="al_nerve_executor_8cpp" startline="10" endline="13">getNerveKeeper</referencedby>
+        <referencedby refid="classal_1_1_nerve_executor_1a19465d1ed2537887d53fb843445f6710" compoundref="al_nerve_executor_8cpp" startline="15" endline="18">initNerve</referencedby>
+        <referencedby refid="classal_1_1_nerve_executor_1a99c75085308c72cbdee3fdbb6c4e1660" compoundref="al_nerve_executor_8cpp" startline="20" endline="24">updateNerve</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classal_1_1_nerve_executor_1a19465d1ed2537887d53fb843445f6710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::NerveExecutor::initNerve</definition>
+        <argsstring>(const Nerve *, int step=0)</argsstring>
+        <name>initNerve</name>
+        <qualifiedname>al::NerveExecutor::initNerve</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="structal_1_1_nerve" kindref="compound">Nerve</ref> *</type>
+          <defname>nrv</defname>
+        </param>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">int</ref></type>
+          <declname>step</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveExecutor.h" line="15" column="14" bodyfile="lib/al/src/Nerve/alNerveExecutor.cpp" bodystart="15" bodyend="18"/>
+        <references refid="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" compoundref="al_nerve_executor_8h" startline="12">mNerveKeeper</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_nerve_executor_1a99c75085308c72cbdee3fdbb6c4e1660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">void</ref></type>
+        <definition>void al::NerveExecutor::updateNerve</definition>
+        <argsstring>()</argsstring>
+        <name>updateNerve</name>
+        <qualifiedname>al::NerveExecutor::updateNerve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveExecutor.h" line="16" column="14" bodyfile="lib/al/src/Nerve/alNerveExecutor.cpp" bodystart="20" bodyend="24"/>
+        <references refid="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" compoundref="al_nerve_executor_8h" startline="12">mNerveKeeper</references>
+        <references refid="classal_1_1_nerve_keeper_1aa773c575bf03ece170235d442b8227ea" compoundref="al_nerve_keeper_8cpp" startline="27" endline="33">al::NerveKeeper::update</references>
+        <referencedby refid="classal_1_1_scene_1a47c5e5b02fcab4b28edfc638dd68b8c7" compoundref="al_scene_8cpp" startline="31" endline="40">al::Scene::movement</referencedby>
+        <referencedby refid="classal_1_1_nerve_state_base_1a30a0d8c9839a35a6cdccf807233f791f" compoundref="al_nerve_state_base_8cpp" startline="24" endline="33">al::NerveStateBase::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_nerve_executor_1a690ab4d04c68a234537871a10dc0bd7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classal_1_1_nerve_keeper" kindref="compound">NerveKeeper</ref> *</type>
+        <definition>NerveKeeper * al::NerveExecutor::getNerveKeeper</definition>
+        <argsstring>() const</argsstring>
+        <name>getNerveKeeper</name>
+        <qualifiedname>al::NerveExecutor::getNerveKeeper</qualifiedname>
+        <reimplements refid="classal_1_1_i_use_nerve_1aa3b5bb2047eaab092052b8d5ffcb580d">getNerveKeeper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveExecutor.h" line="19" column="29" bodyfile="lib/al/src/Nerve/alNerveExecutor.cpp" bodystart="10" bodyend="13"/>
+        <references refid="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" compoundref="al_nerve_executor_8h" startline="12">mNerveKeeper</references>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_nerve_executor_1afe58c1f379540e3436e4ac0678b61991" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual al::NerveExecutor::~NerveExecutor</definition>
+        <argsstring>()</argsstring>
+        <name>~NerveExecutor</name>
+        <qualifiedname>al::NerveExecutor::~NerveExecutor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveExecutor.h" line="20" column="17" bodyfile="lib/al/include/Nerve/alNerveExecutor.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classal_1_1_nerve_executor_1a83059687727fd903b90fdd321baf0b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>al::NerveExecutor::NerveExecutor</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>NerveExecutor</name>
+        <qualifiedname>al::NerveExecutor::NerveExecutor</qualifiedname>
+        <param>
+          <type><ref refid="classal_1_1_functor_v0_m" kindref="compound">const</ref> <ref refid="classal_1_1_functor_v0_m" kindref="compound">char</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/al/include/Nerve/alNerveExecutor.h" line="23" column="9" bodyfile="lib/al/src/Nerve/alNerveExecutor.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>al::HostStateBase&lt; LiveActor &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; LiveActor &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::ActorStateBase</label>
+        <link refid="classal_1_1_actor_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::HostStateBase&lt; T &gt;</label>
+        <link refid="classal_1_1_host_state_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="1">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::RailMoveMovement</label>
+        <link refid="classal_1_1_rail_move_movement"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::Scene</label>
+        <link refid="classal_1_1_scene"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>al::Sequence</label>
+        <link refid="classal_1_1_sequence"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>al::IUseNerve</label>
+        <link refid="classal_1_1_i_use_nerve"/>
+      </node>
+      <node id="4">
+        <label>al::Nerve</label>
+        <link refid="structal_1_1_nerve"/>
+      </node>
+      <node id="9">
+        <label>al::NerveAction</label>
+        <link refid="classal_1_1_nerve_action"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mNextNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>al::NerveActionCtrl</label>
+        <link refid="classal_1_1_nerve_action_ctrl"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mNerveActions</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>al::NerveExecutor</label>
+        <link refid="classal_1_1_nerve_executor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mNerveKeeper</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>al::NerveKeeper</label>
+        <link refid="classal_1_1_nerve_keeper"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mHost</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mEndNerve</edgelabel>
+          <edgelabel>mNerve</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mStateCtrl</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mActionCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>al::NerveStateBase</label>
+        <link refid="classal_1_1_nerve_state_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>al::NerveStateCtrl</label>
+        <link refid="classal_1_1_nerve_state_ctrl"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mCurrentState</edgelabel>
+          <edgelabel>mStates</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>al::NerveStateCtrl::State</label>
+        <link refid="structal_1_1_nerve_state_ctrl_1_1_state"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mState</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mHostStateNerve</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/al/include/Nerve/alNerveExecutor.h" line="9" column="1" bodyfile="lib/al/include/Nerve/alNerveExecutor.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classal_1_1_nerve_executor_1a690ab4d04c68a234537871a10dc0bd7a" prot="public" virt="virtual"><scope>al::NerveExecutor</scope><name>getNerveKeeper</name></member>
+      <member refid="classal_1_1_nerve_executor_1a19465d1ed2537887d53fb843445f6710" prot="public" virt="non-virtual"><scope>al::NerveExecutor</scope><name>initNerve</name></member>
+      <member refid="classal_1_1_nerve_executor_1a0bc7b29567d452b5d9965f8d45d250c8" prot="private" virt="non-virtual"><scope>al::NerveExecutor</scope><name>mNerveKeeper</name></member>
+      <member refid="classal_1_1_nerve_executor_1a83059687727fd903b90fdd321baf0b7b" prot="public" virt="non-virtual"><scope>al::NerveExecutor</scope><name>NerveExecutor</name></member>
+      <member refid="classal_1_1_nerve_executor_1a99c75085308c72cbdee3fdbb6c4e1660" prot="public" virt="non-virtual"><scope>al::NerveExecutor</scope><name>updateNerve</name></member>
+      <member refid="classal_1_1_nerve_executor_1afe58c1f379540e3436e4ac0678b61991" prot="public" virt="virtual"><scope>al::NerveExecutor</scope><name>~NerveExecutor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

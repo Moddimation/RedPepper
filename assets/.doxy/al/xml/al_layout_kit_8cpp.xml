@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="al_layout_kit_8cpp" kind="file" language="C++">
+    <compoundname>alLayoutKit.cpp</compoundname>
+    <includes refid="al_execute_director_8h" local="no">Execute/alExecuteDirector.h</includes>
+    <includes refid="al_layout_kit_8h" local="no">Layout/alLayoutKit.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Execute/alExecuteDirector.h</label>
+        <link refid="al_execute_director_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Functor/alFunctorBase.h</label>
+        <link refid="al_functor_base_8h"/>
+      </node>
+      <node id="4">
+        <label>Layout/alLayoutKit.h</label>
+        <link refid="al_layout_kit_8h"/>
+      </node>
+      <node id="1">
+        <label>alLayoutKit.cpp</label>
+        <link refid="al_layout_kit_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceal">al</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_execute_director_8h" kindref="compound">Execute/alExecuteDirector.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="al_layout_kit_8h" kindref="compound">Layout/alLayoutKit.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceal" kindref="compound">al</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classal_1_1_layout_kit_1a36aa7d9dea3b844b3dde45fee1178511" refkind="member"><highlight class="normal"><ref refid="classal_1_1_layout_kit_1a36aa7d9dea3b844b3dde45fee1178511" kindref="member">LayoutKit::LayoutKit</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">FontHolder</ref>*<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">fontHolder</ref><sp/>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>_0(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>mFontHolder(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">fontHolder</ref><sp/>),<sp/>mExecuteDirector(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_C(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),<sp/>_10(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_14(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">nullptr</ref><sp/>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classal_1_1_layout_kit_1acba43f8973e60aef0a8a9c0c82c700de" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_layout_kit_1acba43f8973e60aef0a8a9c0c82c700de" kindref="member">LayoutKit::createExecuteDirector</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_kit_1ac858b08d8d1ce4e4dad3fd4528b7d7bd" kindref="member">mExecuteDirector</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classal_1_1_execute_director" kindref="compound">ExecuteDirector</ref>(<sp/><ref refid="classal_1_1_functor_v0_m" kindref="compound">p</ref><sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_kit_1ac858b08d8d1ce4e4dad3fd4528b7d7bd" kindref="member">mExecuteDirector</ref>-&gt;<ref refid="classal_1_1_execute_director_1ac6394b543f1233670fb6a7d171a7ea63" kindref="member">_18</ref><sp/>=<sp/><ref refid="classal_1_1_layout_kit_1ae9636fa62771e8e0dd8d7f59ae29b544" kindref="member">_14</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classal_1_1_layout_kit_1ac858b08d8d1ce4e4dad3fd4528b7d7bd" kindref="member">mExecuteDirector</ref>-&gt;<ref refid="classal_1_1_execute_director_1a57bd4e76e9f4dee03f7721ba03dd795d" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>al</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/al/src/Layout/alLayoutKit.cpp"/>
+  </compounddef>
+</doxygen>

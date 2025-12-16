@@ -2,6 +2,11 @@
 # Macros
 
 
-Nothing related to **Macros** found.
+
+## s
+
+* **STUB** ([**Stubs.c**](_stubs_8c.md))
+
+
 
 

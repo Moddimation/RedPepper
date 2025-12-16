@@ -6,7 +6,7 @@
 ## a
 
 * **addVelocityToGravity** ([**al**](namespaceal.md))
-* **addToExecutorMovement** ([**alActorSystemFunction**](namespacealActorSystemFunction.md))
+* **addToExecutorMovement** ([**alActorSystemFunction**](namespaceal_actor_system_function.md))
 
 
 ## c
@@ -52,7 +52,7 @@
 * **FUN\_00268df8** ([**al**](namespaceal.md))
 * **FUN\_002911e8** ([**al**](namespaceal.md))
 * **findOrCreateResource** ([**al**](namespaceal.md))
-* **findSensorTypeByName** ([**alSensorFunction**](namespacealSensorFunction.md))
+* **findSensorTypeByName** ([**alSensorFunction**](namespaceal_sensor_function.md))
 
 
 ## g
@@ -98,8 +98,8 @@
 * **getTransPtr** ([**al**](namespaceal.md))
 * **getVelocity** ([**al**](namespaceal.md))
 * **getVelocityPtr** ([**al**](namespaceal.md))
-* **getClippingViewId** ([**alPlacementFunction**](namespacealPlacementFunction.md))
-* **getSystemKit** ([**alProjectInterface**](namespacealProjectInterface.md))
+* **getClippingViewId** ([**alPlacementFunction**](namespaceal_placement_function.md))
+* **getSystemKit** ([**alProjectInterface**](namespaceal_project_interface.md))
 
 
 ## h
@@ -113,6 +113,7 @@
 
 * **initActor** ([**al**](namespaceal.md))
 * **initActorEffectKeeper** ([**al**](namespaceal.md))
+* **initActorImpl** ([**al**](namespaceal.md))
 * **initActorInitInfo** ([**al**](namespaceal.md))
 * **initActorPoseTFGSV** ([**al**](namespaceal.md))
 * **initActorPoseTFSV** ([**al**](namespaceal.md))
@@ -199,7 +200,7 @@
 
 ## n
 
-* **NERVE\_DEF** ([**al::NrvFallMapParts**](namespaceal_1_1NrvFallMapParts.md))
+* **NERVE\_DEF** ([**al::NrvFallMapParts**](namespaceal_1_1_nrv_fall_map_parts.md))
 
 
 ## o
@@ -224,7 +225,7 @@
 * **rotateQuatXDirDegree** ([**al**](namespaceal.md))
 * **rotateQuatYDirDegree** ([**al**](namespaceal.md))
 * **rotateQuatZDirDegree** ([**al**](namespaceal.md))
-* **removeFromExecutorDraw** ([**alActorSystemFunction**](namespacealActorSystemFunction.md))
+* **removeFromExecutorDraw** ([**alActorSystemFunction**](namespaceal_actor_system_function.md))
 
 
 ## s
@@ -246,14 +247,14 @@
 * **setVelocityZero** ([**al**](namespaceal.md))
 * **showModel** ([**al**](namespaceal.md))
 * **showShadow** ([**al**](namespaceal.md))
-* **split** ([**al**](namespaceal.md), [**alNerveFunction**](namespacealNerveFunction.md))
+* **split** ([**al**](namespaceal.md), [**alNerveFunction**](namespaceal_nerve_function.md))
 * **startAction** ([**al**](namespaceal.md))
 * **startHitReaction** ([**al**](namespaceal.md))
 * **startNerveAction** ([**al**](namespaceal.md))
 * **startSe** ([**al**](namespaceal.md))
 * **stopScene** ([**al**](namespaceal.md))
 * **syncCollisionMtx** ([**al**](namespaceal.md))
-* **setNerveAction** ([**alNerveFunction**](namespacealNerveFunction.md))
+* **setNerveAction** ([**alNerveFunction**](namespaceal_nerve_function.md))
 
 
 ## t
@@ -288,14 +289,14 @@
 * **updatePoseMtx** ([**al**](namespaceal.md))
 * **updatePoseQuat** ([**al**](namespaceal.md))
 * **updatePoseRotate** ([**al**](namespaceal.md))
-* **updateHitSensorsAll** ([**alSensorFunction**](namespacealSensorFunction.md))
+* **updateHitSensorsAll** ([**alSensorFunction**](namespaceal_sensor_function.md))
 
 
 ## v
 
 * **validateClipping** ([**al**](namespaceal.md))
 * **validateCollisionPartsBySystem** ([**al**](namespaceal.md))
-* **verifiByaml** ([**alByamlLocalUtil**](namespacealByamlLocalUtil.md))
+* **verifiByaml** ([**alByamlLocalUtil**](namespaceal_byaml_local_util.md))
 
 
 ## _

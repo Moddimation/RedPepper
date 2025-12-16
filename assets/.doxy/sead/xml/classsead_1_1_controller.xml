@@ -1,0 +1,1202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classsead_1_1_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>sead::Controller</compoundname>
+    <basecompoundref refid="classsead_1_1_controller_base" prot="public" virt="non-virtual">sead::ControllerBase</basecompoundref>
+    <includes refid="sead_controller_8h" local="no">seadController.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PadIdx</name>
+        <qualifiedname>sead::Controller::PadIdx</qualifiedname>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad92aca03ac0e86f73b560d6e9a738781" prot="public">
+          <name>cPadIdx_A</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a349a61b81f0005b7771176e42f32280d" prot="public">
+          <name>cPadIdx_B</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a115c0324448298a7ceaac966b12202ce" prot="public">
+          <name>cPadIdx_C</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aff0e9a4dfe81839c12088f4e7c3b46c8" prot="public">
+          <name>cPadIdx_X</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad5e33d88c5ddd79ae6cbb0a0674285c9" prot="public">
+          <name>cPadIdx_Y</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a90dbef792632b5d1ac9a8dc3e47472bd" prot="public">
+          <name>cPadIdx_Z</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a8f73dcb1fdc318700c0ec60454e4c4de" prot="public">
+          <name>cPadIdx_2</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aee2d9c0333cc5093689f90cddf455bd8" prot="public">
+          <name>cPadIdx_1</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052afd391b4249dfa4a463a35cb4dc6b831a" prot="public">
+          <name>cPadIdx_Home</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a74ee142882216513438f086e4d1ab151" prot="public">
+          <name>cPadIdx_Minus</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a38e53f38559c4c0bd197d3ca7d7bcca4" prot="public">
+          <name>cPadIdx_Plus</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a0fa488c9a3e183e7289ffd5889a396c8" prot="public">
+          <name>cPadIdx_Start</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a1506d5630b354514a234f7878cf630ef" prot="public">
+          <name>cPadIdx_Select</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad113f6a9c79c9a08b563db428196f529" prot="public">
+          <name>cPadIdx_ZL</name>
+          <initializer>= cPadIdx_C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a7593bbc30002051251999faf88653d24" prot="public">
+          <name>cPadIdx_ZR</name>
+          <initializer>= cPadIdx_Z</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ab226abc24b027ae12df0de041c6f22a5" prot="public">
+          <name>cPadIdx_L</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a90737a61758bb0e5be2ff2a16284781a" prot="public">
+          <name>cPadIdx_R</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a0194b1d3711d1bfce390929a08f45dc9" prot="public">
+          <name>cPadIdx_Touch</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a510cfb0ba27b6b1a9ace9ce4d4627f26" prot="public">
+          <name>cPadIdx_Up</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aeee75d473ba1fe3888a496b2292aaeca" prot="public">
+          <name>cPadIdx_Down</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a4ce90245aa81797506b05c3c5b980f80" prot="public">
+          <name>cPadIdx_Left</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a7c5161f8ea4276793915840cb6b03963" prot="public">
+          <name>cPadIdx_Right</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a539ae228437fc6eb1408159ced4a25ea" prot="public">
+          <name>cPadIdx_LeftStickUp</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a13c641c1fa064f9c2df1d45b5e640609" prot="public">
+          <name>cPadIdx_LeftStickDown</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a4d648099633f6e64cfbed8c1d0fc1a5c" prot="public">
+          <name>cPadIdx_LeftStickLeft</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a4753a2a4eab55828b07ff5ec4b7365a8" prot="public">
+          <name>cPadIdx_LeftStickRight</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ac9b80298b8fb569697f56f726feb6a99" prot="public">
+          <name>cPadIdx_RightStickUp</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ab0ac521a01bfaa7f9c7d5a09d84e26fb" prot="public">
+          <name>cPadIdx_RightStickDown</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ab38b30194a5aa3cefe8061c048829f78" prot="public">
+          <name>cPadIdx_RightStickLeft</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad4ec560d3d67297a031ef9b05e7e6e56" prot="public">
+          <name>cPadIdx_RightStickRight</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aff6966854af3fefd13ca417026eb1131" prot="public">
+          <name>cPadIdx_Max</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="15" column="5" bodyfile="lib/sead/include/controller/seadController.h" bodystart="15" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsead_1_1_controller_1ac1146a73411029f3cbdb131c26fc2fcd" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_controller_define_1a9f866f6e000c1c24bf9fac2d516d0e99" kindref="member">ControllerDefine::ControllerId</ref></type>
+        <definition>ControllerDefine::ControllerId sead::Controller::mId</definition>
+        <argsstring></argsstring>
+        <name>mId</name>
+        <qualifiedname>sead::Controller::mId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="66" column="36" bodyfile="lib/sead/include/controller/seadController.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_controller_1aec13393a376f0e0ec7199545191a6763" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_controller_mgr" kindref="compound">ControllerMgr</ref> *</type>
+        <definition>ControllerMgr* sead::Controller::mMgr</definition>
+        <argsstring></argsstring>
+        <name>mMgr</name>
+        <qualifiedname>sead::Controller::mMgr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="67" column="19" bodyfile="lib/sead/include/controller/seadController.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_controller_1a26705a7927c8c33814a4fbb0330342db" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_offset_list" kindref="compound">OffsetList</ref>&lt; ControllerAddon &gt;</type>
+        <definition>OffsetList&lt;ControllerAddon&gt; sead::Controller::mAddons</definition>
+        <argsstring></argsstring>
+        <name>mAddons</name>
+        <qualifiedname>sead::Controller::mAddons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="68" column="16" bodyfile="lib/sead/include/controller/seadController.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsead_1_1_controller_1a28441b7fcd5161bfee7611ecc2015b3e" prot="private" static="no" mutable="no">
+        <type><ref refid="classsead_1_1_offset_list" kindref="compound">OffsetList</ref>&lt; <ref refid="classsead_1_1_controller_1aec1973663c89004e52f6bc63a86e43ad" kindref="member">ControllerWrapperBase</ref> &gt;</type>
+        <definition>OffsetList&lt;ControllerWrapperBase&gt; sead::Controller::mWrappers</definition>
+        <argsstring></argsstring>
+        <name>mWrappers</name>
+        <qualifiedname>sead::Controller::mWrappers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="69" column="16" bodyfile="lib/sead/include/controller/seadController.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsead_1_1_controller_1aec1973663c89004e52f6bc63a86e43ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ControllerWrapperBase</definition>
+        <argsstring></argsstring>
+        <name>ControllerWrapperBase</name>
+        <qualifiedname>sead::Controller::ControllerWrapperBase</qualifiedname>
+        <param>
+          <type>ControllerWrapperBase</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="71" column="18" bodyfile="lib/sead/include/controller/seadController.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classsead_1_1_controller_1af1d2196d05bca7b2ec8e0a4688063dae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ControllerMgr</definition>
+        <argsstring></argsstring>
+        <name>ControllerMgr</name>
+        <qualifiedname>sead::Controller::ControllerMgr</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_controller_mgr" kindref="compound">ControllerMgr</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="72" column="18" bodyfile="lib/sead/include/controller/seadController.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsead_1_1_controller_1a5cfa459c834b80b29bab25243958b320" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sead::Controller::Controller</definition>
+        <argsstring>(ControllerMgr *mgr)</argsstring>
+        <name>Controller</name>
+        <qualifiedname>sead::Controller::Controller</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_controller_mgr" kindref="compound">ControllerMgr</ref> *</type>
+          <declname>mgr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1a903a22982908e24b29ce91361d8c6bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual sead::Controller::~Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~Controller</name>
+        <qualifiedname>sead::Controller::~Controller</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="50" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1a55f52ce33383db0eb826d712f4cfc952" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::Controller::calc</definition>
+        <argsstring>()</argsstring>
+        <name>calc</name>
+        <qualifiedname>sead::Controller::calc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1ad5555a789189fbab65432e2a3113616e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::Controller::isConnected</definition>
+        <argsstring>() const</argsstring>
+        <name>isConnected</name>
+        <qualifiedname>sead::Controller::isConnected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="53" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1a0a87b1cb79d3f8437683ff2874cbf7f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ControllerAddon *</type>
+        <definition>ControllerAddon * sead::Controller::getAddonByOrder</definition>
+        <argsstring>(ControllerDefine::AddonId id, int index) const</argsstring>
+        <name>getAddonByOrder</name>
+        <qualifiedname>sead::Controller::getAddonByOrder</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4" kindref="member">ControllerDefine::AddonId</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="54" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1a9f0f22bfe35d3f37dbab38e4eb0b43d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ControllerAddon *</type>
+        <definition>ControllerAddon * sead::Controller::getAddon</definition>
+        <argsstring>(ControllerDefine::AddonId id) const</argsstring>
+        <name>getAddon</name>
+        <qualifiedname>sead::Controller::getAddon</qualifiedname>
+        <param>
+          <type><ref refid="classsead_1_1_controller_define_1a0f1024cb5a7b450c71067e00a5260cf4" kindref="member">ControllerDefine::AddonId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="55" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1ae2177742e5c548bb8b94ece686f0c26b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T sead::Controller::getAddonAs</definition>
+        <argsstring>() const</argsstring>
+        <name>getAddonAs</name>
+        <qualifiedname>sead::Controller::getAddonAs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="58" column="7"/>
+        <referencedby refid="classsead_1_1_controller_mgr_1a1f82016063064ba9c7aeab2d32de23b4" compoundref="sead_controller_mgr_8h" startline="75" endline="81">sead::ControllerMgr::getControllerAddonAs</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsead_1_1_controller_1aab3e1d7b07a8fe4d3768446e71460bc7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void sead::Controller::calcImpl_</definition>
+        <argsstring>()=0</argsstring>
+        <name>calcImpl_</name>
+        <qualifiedname>sead::Controller::calcImpl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1ae49e41b10f94927a22acda95a841e13e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool sead::Controller::isIdle_</definition>
+        <argsstring>()</argsstring>
+        <name>isIdle_</name>
+        <qualifiedname>sead::Controller::isIdle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="62" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsead_1_1_controller_1a12dabb53eca8284635fbb484561805c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sead::Controller::setIdle_</definition>
+        <argsstring>()</argsstring>
+        <name>setIdle_</name>
+        <qualifiedname>sead::Controller::setIdle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sead/include/controller/seadController.h" line="63" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sead::Controller</label>
+        <link refid="classsead_1_1_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::ControllerBase</label>
+        <link refid="classsead_1_1_controller_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="30">
+        <label>sead::BitFlag&lt; u16 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; u16 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sead::BitFlag&lt; u32 &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; u32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sead::BoundBox2&lt; f32 &gt;</label>
+        <link refid="structsead_1_1_bound_box2"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mMax</edgelabel>
+          <edgelabel>mMin</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>cUndefined</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="template-instance">
+          <edgelabel>&lt; f32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>sead::OffsetList&lt; ControlDevice &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="template-instance">
+          <edgelabel>&lt; ControlDevice &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>sead::OffsetList&lt; ControllerAddon &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="template-instance">
+          <edgelabel>&lt; ControllerAddon &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>sead::OffsetList&lt; ControllerWrapperBase &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="template-instance">
+          <edgelabel>&lt; ControllerWrapperBase &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>sead::OffsetList&lt; Heap &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="template-instance">
+          <edgelabel>&lt; Heap &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>sead::OffsetList&lt; IDisposer &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="template-instance">
+          <edgelabel>&lt; IDisposer &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Policies&lt; T &gt;::Vec2Base</label>
+        <link refid="structsead_1_1_base_vec2"/>
+      </node>
+      <node id="11">
+        <label>Policies&lt; f32  &gt;::Vec2Base</label>
+        <link refid="structsead_1_1_base_vec2"/>
+      </node>
+      <node id="8">
+        <label>Policies&lt; s32  &gt;::Vec2Base</label>
+        <link refid="structsead_1_1_base_vec2"/>
+      </node>
+      <node id="48">
+        <label>sead::PtrArray&lt; sead::Controller &gt;</label>
+        <link refid="classsead_1_1_ptr_array"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="50" relation="template-instance">
+          <edgelabel>&lt; sead::Controller &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>sead::SafeStringBase&lt; char &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="template-instance">
+          <edgelabel>&lt; char &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>sead::TList&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>sead::TListNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mList</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>sead::TTreeNode&lt; MethodTreeNode * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="template-instance">
+          <edgelabel>&lt; MethodTreeNode * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>sead::TTreeNode&lt; TaskBase * &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mData</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="template-instance">
+          <edgelabel>&lt; TaskBase * &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sead::Vector2&lt; f32 &gt;</label>
+        <link refid="structsead_1_1_vector2"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ex</edgelabel>
+          <edgelabel>ey</edgelabel>
+          <edgelabel>ones</edgelabel>
+          <edgelabel>zero</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; f32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sead::Vector2&lt; s32 &gt;</label>
+        <link refid="structsead_1_1_vector2"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ex</edgelabel>
+          <edgelabel>ey</edgelabel>
+          <edgelabel>ones</edgelabel>
+          <edgelabel>zero</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; s32 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sead::BitFlag&lt; T &gt;</label>
+        <link refid="classsead_1_1_bit_flag"/>
+      </node>
+      <node id="12">
+        <label>sead::BoundBox2&lt; T &gt;</label>
+        <link refid="structsead_1_1_bound_box2"/>
+      </node>
+      <node id="14">
+        <label>sead::CalculateTask</label>
+        <link refid="classsead_1_1_calculate_task"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>mCalcNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sead::Controller</label>
+        <link refid="classsead_1_1_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>mMgr</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>mAddons</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>mWrappers</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sead::ControllerBase</label>
+        <link refid="classsead_1_1_controller_base"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cInvalidPointer</edgelabel>
+          <edgelabel>cInvalidPointerS32</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mPadHold</edgelabel>
+          <edgelabel>mPadRelease</edgelabel>
+          <edgelabel>mPadRepeat</edgelabel>
+          <edgelabel>mPadTrig</edgelabel>
+          <edgelabel>mPointerFlag</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mPointerS32</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mPointerBound</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>mLeftStick</edgelabel>
+          <edgelabel>mPointer</edgelabel>
+          <edgelabel>mRightStick</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sead::ControllerMgr</label>
+        <link refid="classsead_1_1_controller_mgr"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>mDevices</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>mControllers</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>sead::CriticalSection</label>
+        <link refid="classsead_1_1_critical_section"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sead::Heap</label>
+        <link refid="classsead_1_1_heap"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mParent</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mChildren</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mDisposerList</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mCS</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mFlag</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>sead::HeapArray</label>
+        <link refid="classsead_1_1_heap_array"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mHeaps</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>sead::HeapPolicies</label>
+        <link refid="structsead_1_1_heap_policies"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>mPolicies</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>sead::HeapPolicy</label>
+        <link refid="structsead_1_1_heap_policy"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>sead::IDelegate2&lt; T, U &gt;</label>
+        <link refid="classsead_1_1_i_delegate2"/>
+      </node>
+      <node id="19">
+        <label>sead::IDisposer</label>
+        <link refid="classsead_1_1_i_disposer"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mDisposerHeap</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mListNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>sead::INamable</label>
+        <link refid="classsead_1_1_i_namable"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mINamableName</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sead::ListImpl</label>
+        <link refid="classsead_1_1_list_impl"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mStartEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>sead::ListNode</label>
+        <link refid="classsead_1_1_list_node"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>sead::MethodTreeNode</label>
+        <link refid="classsead_1_1_method_tree_node"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mPauseFlag</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>mPauseEventDelegate</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>sead::OffsetList&lt; T &gt;</label>
+        <link refid="classsead_1_1_offset_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>sead::PtrArray&lt; T &gt;</label>
+        <link refid="classsead_1_1_ptr_array"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>sead::PtrArrayImpl</label>
+        <link refid="classsead_1_1_ptr_array_impl"/>
+      </node>
+      <node id="23">
+        <label>sead::SafeStringBase&lt; T &gt;</label>
+        <link refid="classsead_1_1_safe_string_base"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>cEmptyString</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>sead::TList&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>sead::TListNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_list_node"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sead::TTreeNode&lt; T &gt;</label>
+        <link refid="classsead_1_1_t_tree_node"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sead::TaskBase</label>
+        <link refid="classsead_1_1_task_base"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mParameter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mInternalFlag</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>mTaskListNode</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>mHeapArray</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>mTaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>mClassID</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>sead::TaskBase::CreateArg</label>
+        <link refid="structsead_1_1_task_base_1_1_create_arg"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>factory</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>heap_policies</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>created_task</edgelabel>
+          <edgelabel>instance_cb</edgelabel>
+          <edgelabel>parent</edgelabel>
+          <edgelabel>src_task</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>user_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>sead::TaskClassID</label>
+        <link refid="classsead_1_1_task_class_i_d"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mFactory</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>sead::TaskMgr</label>
+        <link refid="classsead_1_1_task_mgr"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>mCriticalSection</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>mActiveList</edgelabel>
+          <edgelabel>mDestroyableList</edgelabel>
+          <edgelabel>mDyingList</edgelabel>
+          <edgelabel>mPrepareDoneList</edgelabel>
+          <edgelabel>mPrepareList</edgelabel>
+          <edgelabel>mStaticList</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>mHeapArray</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mRootTask</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>mRootTaskCreateArg</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>mInitializeArg</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>mCalcDestructionTreeNode</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>sead::TaskMgr::InitializeArg</label>
+        <link refid="structsead_1_1_task_mgr_1_1_initialize_arg"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>roottask_create_arg</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>heap</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>sead::TaskParameter</label>
+        <link refid="classsead_1_1_task_parameter"/>
+      </node>
+      <node id="42">
+        <label>sead::TaskUserID</label>
+        <link refid="classsead_1_1_task_user_i_d"/>
+      </node>
+      <node id="17">
+        <label>sead::TreeNode</label>
+        <link refid="classsead_1_1_tree_node"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mChild</edgelabel>
+          <edgelabel>mNext</edgelabel>
+          <edgelabel>mParent</edgelabel>
+          <edgelabel>mPrev</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sead::Vector2&lt; T &gt;</label>
+        <link refid="structsead_1_1_vector2"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ex</edgelabel>
+          <edgelabel>ey</edgelabel>
+          <edgelabel>ones</edgelabel>
+          <edgelabel>zero</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sead/include/controller/seadController.h" line="12" column="1" bodyfile="lib/sead/include/controller/seadController.h" bodystart="12" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classsead_1_1_controller_1a55f52ce33383db0eb826d712f4cfc952" prot="public" virt="virtual"><scope>sead::Controller</scope><name>calc</name></member>
+      <member refid="classsead_1_1_controller_1aab3e1d7b07a8fe4d3768446e71460bc7" prot="protected" virt="pure-virtual"><scope>sead::Controller</scope><name>calcImpl_</name></member>
+      <member refid="classsead_1_1_controller_base_1ac3d7cd06b11bcb5f85683268392a26e3a2f7a72a52c63a0b023daec880c247fdd" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cCrossDown</name></member>
+      <member refid="classsead_1_1_controller_base_1ac3d7cd06b11bcb5f85683268392a26e3a50693b7590a7a733fbfd41fe746df12f" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cCrossLeft</name></member>
+      <member refid="classsead_1_1_controller_base_1ac3d7cd06b11bcb5f85683268392a26e3a7c0bcaa55aca14a9093bae766a3b8809" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cCrossRight</name></member>
+      <member refid="classsead_1_1_controller_base_1ac3d7cd06b11bcb5f85683268392a26e3a4739cc0ff483b8c63e4cc0c919626f8f" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cCrossUp</name></member>
+      <member refid="classsead_1_1_controller_base_1a563cb4b612c01bae775ccebeac3ab2f2" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cInvalidPointer</name></member>
+      <member refid="classsead_1_1_controller_base_1af4c923b8fac4cdf84e9ac3635731697b" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cInvalidPointerS32</name></member>
+      <member refid="classsead_1_1_controller_1a5cfa459c834b80b29bab25243958b320" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>Controller</name></member>
+      <member refid="classsead_1_1_controller_base_1a8b98a45a8cd5256f8217b3f99ddeb4d8" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>ControllerBase</name></member>
+      <member refid="classsead_1_1_controller_1af1d2196d05bca7b2ec8e0a4688063dae" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>ControllerMgr</name></member>
+      <member refid="classsead_1_1_controller_1aec1973663c89004e52f6bc63a86e43ad" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>ControllerWrapperBase</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aee2d9c0333cc5093689f90cddf455bd8" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_1</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a8f73dcb1fdc318700c0ec60454e4c4de" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_2</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad92aca03ac0e86f73b560d6e9a738781" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_A</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a349a61b81f0005b7771176e42f32280d" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_B</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a115c0324448298a7ceaac966b12202ce" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_C</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aeee75d473ba1fe3888a496b2292aaeca" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Down</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052afd391b4249dfa4a463a35cb4dc6b831a" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Home</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ab226abc24b027ae12df0de041c6f22a5" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_L</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a4ce90245aa81797506b05c3c5b980f80" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Left</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a13c641c1fa064f9c2df1d45b5e640609" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_LeftStickDown</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a4d648099633f6e64cfbed8c1d0fc1a5c" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_LeftStickLeft</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a4753a2a4eab55828b07ff5ec4b7365a8" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_LeftStickRight</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a539ae228437fc6eb1408159ced4a25ea" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_LeftStickUp</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aff6966854af3fefd13ca417026eb1131" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Max</name></member>
+      <member refid="classsead_1_1_controller_base_1aeb7cce39988a263ca1e34e0aa5425706a801ef01976bc82a870389826d05be3f6" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_MaxBase</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a74ee142882216513438f086e4d1ab151" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Minus</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a38e53f38559c4c0bd197d3ca7d7bcca4" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Plus</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a90737a61758bb0e5be2ff2a16284781a" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_R</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a7c5161f8ea4276793915840cb6b03963" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Right</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ab0ac521a01bfaa7f9c7d5a09d84e26fb" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_RightStickDown</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ab38b30194a5aa3cefe8061c048829f78" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_RightStickLeft</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad4ec560d3d67297a031ef9b05e7e6e56" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_RightStickRight</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ac9b80298b8fb569697f56f726feb6a99" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_RightStickUp</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a1506d5630b354514a234f7878cf630ef" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Select</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a0fa488c9a3e183e7289ffd5889a396c8" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Start</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a0194b1d3711d1bfce390929a08f45dc9" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Touch</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a510cfb0ba27b6b1a9ace9ce4d4627f26" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Up</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052aff0e9a4dfe81839c12088f4e7c3b46c8" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_X</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad5e33d88c5ddd79ae6cbb0a0674285c9" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Y</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a90dbef792632b5d1ac9a8dc3e47472bd" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_Z</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052ad113f6a9c79c9a08b563db428196f529" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_ZL</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052a7593bbc30002051251999faf88653d24" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cPadIdx_ZR</name></member>
+      <member refid="classsead_1_1_controller_base_1a66133d7bc227bdfd8801d5f5e4522f7ea49bc6c09cf753d3c3c66837e30c6c4bd" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cPointerOffNow</name></member>
+      <member refid="classsead_1_1_controller_base_1a66133d7bc227bdfd8801d5f5e4522f7eae0ec674b8b2fb635f58bc3ddc54351f8" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cPointerOn</name></member>
+      <member refid="classsead_1_1_controller_base_1a66133d7bc227bdfd8801d5f5e4522f7ea5932bc576f0f8d9a2c0cbdf45f0e59be" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cPointerOnNow</name></member>
+      <member refid="classsead_1_1_controller_base_1a66133d7bc227bdfd8801d5f5e4522f7eab5178ed7a83de2132f00e3c80a743dc8" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>cPointerUnkFlag3</name></member>
+      <member refid="classsead_1_1_controller_base_1a4953fcb1a5ff830afca664b1f22b15b6" prot="protected" virt="non-virtual"><scope>sead::Controller</scope><name>createStickCrossMask_</name></member>
+      <member refid="classsead_1_1_controller_base_1aa7fa7ec34e33d8085d539786647029c4" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cStickHoldThresholdDefault</name></member>
+      <member refid="classsead_1_1_controller_base_1ace256c6d81c22b5a2eb2df189ca77f85" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>cStickReleaseThresholdDefault</name></member>
+      <member refid="classsead_1_1_controller_1a9f0f22bfe35d3f37dbab38e4eb0b43d1" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getAddon</name></member>
+      <member refid="classsead_1_1_controller_1ae2177742e5c548bb8b94ece686f0c26b" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getAddonAs</name></member>
+      <member refid="classsead_1_1_controller_1a0a87b1cb79d3f8437683ff2874cbf7f6" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getAddonByOrder</name></member>
+      <member refid="classsead_1_1_controller_base_1af7df087c72b98c751df0ebd9d93c0aea" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getHoldMask</name></member>
+      <member refid="classsead_1_1_controller_base_1a94c67fc458aa6063e210c08addd77ce2" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getHoldMaskPtr</name></member>
+      <member refid="classsead_1_1_controller_base_1acd17cbab1b2115823725e83fa8e9877c" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getLeftAnalogTrigger</name></member>
+      <member refid="classsead_1_1_controller_base_1a51992a5aabca507442edefa6ae7265c1" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getLeftStick</name></member>
+      <member refid="classsead_1_1_controller_base_1af816f4a745aa2eddb30dc595bd30c11b" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getPadHoldCount</name></member>
+      <member refid="classsead_1_1_controller_base_1af16683081410154b9997ccd90436ceb5" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getPointer</name></member>
+      <member refid="classsead_1_1_controller_base_1ac036b5a32cd58b1198b915cd35fdf2c2" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getPointerBound</name></member>
+      <member refid="classsead_1_1_controller_base_1ae75b80f33b981f0750465c1d3284bf6e" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getPointerPrev</name></member>
+      <member refid="classsead_1_1_controller_base_1a202ac21b096115aa4098082a091cc344" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getReleaseMask</name></member>
+      <member refid="classsead_1_1_controller_base_1a7ed75210082cd0f65e3f7f646c5c07ab" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getReleaseMaskPtr</name></member>
+      <member refid="classsead_1_1_controller_base_1af793d8caa305e22feae4cc97b02a2b5c" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getRepeatMask</name></member>
+      <member refid="classsead_1_1_controller_base_1a801cee19077a8ee7178c336fa3130990" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getRepeatMaskPtr</name></member>
+      <member refid="classsead_1_1_controller_base_1a0e22645e0beabd889771d4d7b797db32" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getRightAnalogTrigger</name></member>
+      <member refid="classsead_1_1_controller_base_1a034f4fa02cc0d52f8c3d0ac78daf6df7" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getRightStick</name></member>
+      <member refid="classsead_1_1_controller_base_1a5bf39976f73398cab03efc90ff7a2551" prot="protected" virt="non-virtual"><scope>sead::Controller</scope><name>getStickHold_</name></member>
+      <member refid="classsead_1_1_controller_base_1a90e6ad74d203361c848eb34897b30e14" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getTrigMask</name></member>
+      <member refid="classsead_1_1_controller_base_1a8eb35b9eb011587e57c6f6c4aa986076" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>getTrigMaskPtr</name></member>
+      <member refid="classsead_1_1_controller_1ad5555a789189fbab65432e2a3113616e" prot="public" virt="virtual"><scope>sead::Controller</scope><name>isConnected</name></member>
+      <member refid="classsead_1_1_controller_base_1a9bbaf9e14de0a519195168fb99ac3273" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isHold</name></member>
+      <member refid="classsead_1_1_controller_base_1a7116eabb556e473bb5205ed012291296" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isHoldAll</name></member>
+      <member refid="classsead_1_1_controller_1ae49e41b10f94927a22acda95a841e13e" prot="protected" virt="virtual"><scope>sead::Controller</scope><name>isIdle_</name></member>
+      <member refid="classsead_1_1_controller_base_1a38479bbe991847d576e8f5ede9f8ceec" prot="protected" virt="non-virtual"><scope>sead::Controller</scope><name>isIdleBase_</name></member>
+      <member refid="classsead_1_1_controller_base_1a715b66c50d69e357623dc62e786d722c" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isPointerOffNow</name></member>
+      <member refid="classsead_1_1_controller_base_1ae12e763c47c4e3d9c6529d61b49ded11" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isPointerOn</name></member>
+      <member refid="classsead_1_1_controller_base_1a7137ca6612ad9909b675d7e1a1717f66" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isPointerOnNow</name></member>
+      <member refid="classsead_1_1_controller_base_1ab6ff381694356b5e16a6d181ec7ab935" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isPointerUnkFlag3</name></member>
+      <member refid="classsead_1_1_controller_base_1a6e538af2d2c0318da5aa4104298605b9" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isRelease</name></member>
+      <member refid="classsead_1_1_controller_base_1a93edab6c4a7079f0907f3ae1d09fe829" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isRepeat</name></member>
+      <member refid="classsead_1_1_controller_base_1aaae8a495942bd8a558eebc4a601aca84" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isTrig</name></member>
+      <member refid="classsead_1_1_controller_base_1a4f069c269d660a57336d28668b614b0c" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>isTrigWithRepeat</name></member>
+      <member refid="classsead_1_1_controller_1a26705a7927c8c33814a4fbb0330342db" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mAddons</name></member>
+      <member refid="classsead_1_1_controller_1ac1146a73411029f3cbdb131c26fc2fcd" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mId</name></member>
+      <member refid="classsead_1_1_controller_base_1ad68e07983c05a58e01e04ff3ef8c5171" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mIdleFrame</name></member>
+      <member refid="classsead_1_1_controller_base_1a3aaab948ffbb481da5b0d787c2a6304d" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mLeftAnalogTrigger</name></member>
+      <member refid="classsead_1_1_controller_base_1a436e1ddf389548167e1eebff4a8b6bb9" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mLeftStick</name></member>
+      <member refid="classsead_1_1_controller_base_1ac990778ad0bbf90d52c7ee7c51756035" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mLeftStickCrossStartBit</name></member>
+      <member refid="classsead_1_1_controller_base_1a226d39e87111c6aaf4b40e0398f2e185" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mLeftStickHoldThreshold</name></member>
+      <member refid="classsead_1_1_controller_base_1ab89b71fc092df0de8e740444c5c51949" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mLeftStickReleaseThreshold</name></member>
+      <member refid="classsead_1_1_controller_1aec13393a376f0e0ec7199545191a6763" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mMgr</name></member>
+      <member refid="classsead_1_1_controller_base_1a6beec7b0197143bdebed8677f62daa43" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadBitMax</name></member>
+      <member refid="classsead_1_1_controller_base_1a7c15b81fa07269704276c4f92dfcebf2" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadHold</name></member>
+      <member refid="classsead_1_1_controller_base_1ae0a2ba3a20ffe22d30e27d7a98748fda" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadHoldCounts</name></member>
+      <member refid="classsead_1_1_controller_base_1a6039ffd3e9d0c7d1f621a0e71c664c59" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadRelease</name></member>
+      <member refid="classsead_1_1_controller_base_1a9fe634c7867e4ab666c7cebd7f71c673" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadRepeat</name></member>
+      <member refid="classsead_1_1_controller_base_1a6335823a7cd6ee4f224bbbd792c79735" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadRepeatDelays</name></member>
+      <member refid="classsead_1_1_controller_base_1ab2ab310f0216a0ad2a3dc0b4d52f105a" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadRepeatPulses</name></member>
+      <member refid="classsead_1_1_controller_base_1ac64dbc5d462c60ea0f425cbc1fc737c1" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPadTrig</name></member>
+      <member refid="classsead_1_1_controller_base_1afc2a090e6c1157cb10cc46838d10844c" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPointer</name></member>
+      <member refid="classsead_1_1_controller_base_1ae05c053fb58d44d6eeb9132166a417b4" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPointerBound</name></member>
+      <member refid="classsead_1_1_controller_base_1a7bcdd3fae3b5dd903a4adfa6a8758d54" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPointerFlag</name></member>
+      <member refid="classsead_1_1_controller_base_1a2254dd7a7aa25fbb71df716f19504887" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mPointerS32</name></member>
+      <member refid="classsead_1_1_controller_base_1ae7c8bcc21e32f0cca5d2c7a65aeb909c" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mRightAnalogTrigger</name></member>
+      <member refid="classsead_1_1_controller_base_1aedff6e9d1c6a25b4278b61ea653030c8" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mRightStick</name></member>
+      <member refid="classsead_1_1_controller_base_1a3929bf945dc2ed8500473c3b23a3c6db" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mRightStickCrossStartBit</name></member>
+      <member refid="classsead_1_1_controller_base_1a73ff49728ad4eb7982c830fdfe849303" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mRightStickHoldThreshold</name></member>
+      <member refid="classsead_1_1_controller_base_1a0f16679399336bb7ef5432473a173e8a" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mRightStickReleaseThreshold</name></member>
+      <member refid="classsead_1_1_controller_base_1ad69766038a5a6886f49eacf617d0ad2b" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mTouchKeyBit</name></member>
+      <member refid="classsead_1_1_controller_1a28441b7fcd5161bfee7611ecc2015b3e" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>mWrappers</name></member>
+      <member refid="classsead_1_1_controller_1a8cb66cab9ca2aa036acd709577f49052" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>PadIdx</name></member>
+      <member refid="classsead_1_1_controller_base_1a66133d7bc227bdfd8801d5f5e4522f7e" prot="private" virt="non-virtual"><scope>sead::Controller</scope><name>PointerFlagMask</name></member>
+      <member refid="classsead_1_1_controller_1a12dabb53eca8284635fbb484561805c3" prot="protected" virt="virtual"><scope>sead::Controller</scope><name>setIdle_</name></member>
+      <member refid="classsead_1_1_controller_base_1a0cfe675934dee5403b2c7f53e4f76be1" prot="protected" virt="non-virtual"><scope>sead::Controller</scope><name>setIdleBase_</name></member>
+      <member refid="classsead_1_1_controller_base_1a9da00daf094dd245a46aecfd195ac893" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>setLeftStickCrossThreshold</name></member>
+      <member refid="classsead_1_1_controller_base_1a5b8d3d5c171d33aa91ae69f28ce5b3a5" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>setPadRepeat</name></member>
+      <member refid="classsead_1_1_controller_base_1ab4e7db0b56f4c58c6e7b7514549a15d3" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>setPointerBound</name></member>
+      <member refid="classsead_1_1_controller_base_1ad3df8fd5a2d07c355e74b601499c8267" prot="protected" virt="non-virtual"><scope>sead::Controller</scope><name>setPointerWithBound_</name></member>
+      <member refid="classsead_1_1_controller_base_1af6753759a2185e01c784e235520f65d7" prot="public" virt="non-virtual"><scope>sead::Controller</scope><name>setRightStickCrossThreshold</name></member>
+      <member refid="classsead_1_1_controller_base_1a232b7df03491d4ff5ecaf23034b7be41" prot="protected" virt="non-virtual"><scope>sead::Controller</scope><name>updateDerivativeParams_</name></member>
+      <member refid="classsead_1_1_controller_1a903a22982908e24b29ce91361d8c6bf0" prot="public" virt="virtual"><scope>sead::Controller</scope><name>~Controller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
