@@ -110,4 +110,5 @@ jobs:
           git config --global user.name "Your Name"
           git add data/ || true
           git commit --amend --no-edit || true
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/RedPepperDec/RedPepper.git
           git push -f
