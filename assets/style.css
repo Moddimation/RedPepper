@@ -45,7 +45,6 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 20px solid #103060;
   z-index: 2;
   top: 0;
   left: 0;
@@ -57,12 +56,13 @@ html {
 }
 
 .barTitle {
-  font-family: 'moonGet', sans-serif;
+  font-family: 'Bungee', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
   color: #ff5566;
   text-decoration: none;
   margin-left: 16px;
   margin-right: 20px;
-  font-size: 28px;
   transition: transform 0.5s ease;
 }
 .barTitle:hover {
@@ -74,7 +74,6 @@ html {
   top: 53px;
   left: 3px;
   white-space: nowrap;
-  font-family: 'moonGet', sans-serif;
   font-size: 14px;
   color: #9988ff;
   z-index: 3;
@@ -169,3 +168,45 @@ thead th {
   border-right: 0.1px solid #ffdddd66;
   border-bottom: 1px solid #fdd;
 }
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: transparent; /* transparent background */
+  border: none; /* optional: remove border */
+  z-index: 10;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.1); /* slight transparent hover bg */
+  border-radius: 3px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+

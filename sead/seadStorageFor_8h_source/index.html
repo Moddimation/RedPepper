@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Project RedPepper: Decompilation of Super Mario 3D Land.">
-    <link rel="stylesheet" href="https://prp.moddi.dev/assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&disp=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&disp=swap" rel="stylesheet">
-    <link rel="icon" href="https://prp.moddi.dev/assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&disp=swap" rel="stylesheet">
+    <link rel="icon" href="http://127.0.0.1:8000/assets/favicon.ico" type="image/x-icon">
     <title>File seadStorageFor.h - RedPepper Wiki</title>
   </head>
   <body>
@@ -17,34 +17,85 @@
         </ul>
       </nav>
 
-      <!--Upper bar-->
       <div id="bar">
 
-          <!--Project text / logo-->
-          <a id="barTitle" href="https://prp.moddi.dev/"><b>Project Yasiki</b></a>
-          <div style="display: flex; flex-direction: column; align-items: start;">
-            
-            <!--Both progress badges-->
-            <a href="https://github.com/RedPepperDec">
-              <img style="padding-top:10px; width: 90px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=code&label=Code" alt="Go to github repo">
-            </a>
-            <a href="https://decomp.dev/RedPepperDec">
-              <img style="padding-bottom:0px; width: 123px;" src="https://decomp.dev/Moddimation/Yasiki.svg?mode=shield&measure=functions&label=Progress" alt="Go to progress page">
-            </a>
-          </div>
-          
-          <p> </p>
-          
-          <!--Add each nav head here-->
-            <li>
-              <button onclick="window.location.href='https://prp.moddi.dev/files/'">Files</button>
+          <a id="barTitle" href="http://127.0.0.1:8000/"><b>Project RedPepper</b></a>
+            <li class="nav-item">
+                <button onclick="window.location.href='http://127.0.0.1:8000/files/'">
+                  Files
+                </button>
             </li>
-            <li>
-              <button onclick="window.location.href='https://prp.moddi.dev/classes/'">Classes</button>
+            <li class="nav-item">
+                <button onclick="window.location.href='http://127.0.0.1:8000/classes/'">
+                  Classes
+                </button>
             </li>
-            <li>
-              <button onclick="window.location.href='https://prp.moddi.dev/wiki/'">Full Wiki</button>
+            <li class="nav-item">
+                <button onclick="window.location.href='http://127.0.0.1:8000/wiki/'">
+                  Full Wiki
+                </button>
             </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                  <button class="dropdown-btn"
+                          onclick="window.location.href='http://127.0.0.1:8000/ver/'">
+                    Versions
+                  </button>
+                  <ul class="dropdown-menu"> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/eu/'">
+                          EU
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/eu_d.md'">
+                          EU D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/jp.md'">
+                          JP
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/jp_d.md'">
+                          JP D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/us_0.md'">
+                          US R0
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/us_1.md'">
+                          US R1
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/us_d.md'">
+                          US D
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/cn.md'">
+                          CN
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/kr.md'">
+                          KR
+                        </button>
+                      </li> 
+                      <li>
+                        <button onclick="window.location.href='http://127.0.0.1:8000/ver/tw.md'">
+                          TW
+                        </button>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+
       </div>
       
       <h1 id="file-seadstorageforh">File seadStorageFor.h</h1>

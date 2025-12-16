@@ -47,11 +47,6 @@
 
 
 
-## Public Functions
-
-| Type | Name |
-| ---: | :--- |
-|  void | [**stopScene**](#function-stopscene) (int frames) <br> |
 
 
 
@@ -80,24 +75,7 @@
 
 
 
-## Public Functions Documentation
-
-
-
-
-### function stopScene 
-
-```C++
-void al::stopScene (
-    int frames
-) 
-```
-
-
-
-
-<hr>
 
 ------------------------------
-The documentation for this class was generated from the following file `Game/include/Enemy/EnemyStateUtil.h`
+The documentation for this class was generated from the following file `[generated]`
 
