@@ -32,7 +32,7 @@ def main():
 
     cmd = [
         sys.executable,
-        os.path.join(getProjDir(), "tools/asm-differ/diff.py"),
+        str(Path(getProjDir()) / "tools" / "asm-differ" / "diff.py"),
         str(symbol[0]-0x00100000),
         str(decomp_symbol[0]-0x00100000),
         str(sym_size),

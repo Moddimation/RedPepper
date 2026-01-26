@@ -23,8 +23,11 @@ def rank_symbol(sym, decomp_sym):
     if decomp_size == 0:
         decomp_size = sym_size
 
-    out = str(subprocess.check_output(f"\"{sys.executable}\" {getProjDir()}/tools/asm-differ/diff.py --format json {sym[0] - 0x00100000} {decomp_sym[0] - 0x00100000} {str(sym_size)} {str(decomp_size)}", shell=True))
+    out = str(subprocess.check_output(f'\"{sys.executable}\" "{Path(getProjDir()) / "tools" / "asm-differ" / "diff.py"}" --format json {sym[0] - 0x00100000} {decomp_sym[0] - 0x00100000} {sym_size} {decomp_size}', shell=True))
 
+    if not "CURRENT" in out:
+        raise RuntimeError(f"Unexpected output when running asm-differ:\n{out}")
+    
     rank = 'O'
     if "diff_change" in out:
         rank = 'm'
@@ -213,7 +216,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", action="store_true", help="Skip rank checking (fast)")
     parser.add_argument("-s", action="store_true", help="Simulation mode (don't write file)")
-    parser.add_argument("-c", action="store_true", help="Dont pring progress")
+    parser.add_argument("-c", action="store_true", help="Dont print progress")
     parser.add_argument("sym", nargs="?", help="Only check this symbol")
     args = parser.parse_args()
 
@@ -221,7 +224,7 @@ def main():
     is_sim_mode = args.s
     is_silent = args.c
 
-    with open(f"{getBuildPath()}/compile_commands.json", "r") as f:
+    with open(Path(getBuildPath()) / "compile_commands.json", "r") as f:
         if any("NON_MATCHING" in line for line in f): # check if we compiled for Matching-only build
             found_flag = True
     if not found_flag:

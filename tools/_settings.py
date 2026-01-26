@@ -1,19 +1,20 @@
 import os
 from __manVer import get_ver
+from pathlib import Path
 
 def getProjDir():
-    return os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep)
+    return Path(os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep))
 def getFuncSymFile():
-    return f"{getProjDir()}/data/ver/{get_ver()}/redpepper_functions.csv"
+    return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "redpepper_functions.csv")
 def getDataSymFile():
-    return f"{getProjDir()}/data/ver/{get_ver()}/data_symbols.csv"
+    return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "data_symbols.csv")
 def getExeFile():
-    return f"{getProjDir()}/data/ver/{get_ver()}/code.bin"
+    return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "code.bin")
 def getBuildPath():
-    return f"{getProjDir()}/build"
-def getElfPath():
-    return f"{getBuildPath()}/{getElfName()}"
+    return str(Path(getProjDir()) / "build")
 def getElfName():
-    return 'RedPepper.axf'
+    return "RedPepper.axf"
+def getElfPath():
+    return str(Path(getBuildPath()) / getElfName())
 def getPresetId():
     return 8

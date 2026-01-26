@@ -40,8 +40,8 @@ def genLDScript():
         const_data += "\t}\n"
         const_data += "}\n"
 
-    with open(f"{getProjDir()}/data/template/linker.ld", 'r') as template:
-        with open(f'{getBuildPath()}/linker.ld', 'w') as out:
+    with open(Path(getProjDir()) / "data" / "template" / "linker.ld", 'r') as template:
+        with open(Path(getBuildPath()) / "linker.ld", 'w') as out:
             out.write(template.read().replace("$$$", matching_data).replace("&&&", const_data))
             
 def main():

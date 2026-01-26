@@ -6,7 +6,7 @@ from _settings import *
 
 elf_exists = os.path.exists(getElfPath())
 if elf_exists:
-    readelf_data = str(subprocess.check_output(f"{os.environ.get('DEVKITARM')}/bin/arm-none-eabi-readelf {getElfPath()} -sw -W", shell=True))
+    readelf_data = str(subprocess.check_output(f'"{Path(os.environ.get("DEVKITARM")) / "bin" / "arm-none-eabi-readelf"}" "{getElfPath()}" -sw -W', shell=True))
     if sys.platform == 'win32':
         readelf_data = readelf_data.replace(r'\r\n', '\n')
     else:
@@ -18,7 +18,7 @@ def get_elf_symbol(sym_name: str):
     if not sym_name:
         return None
     # find Stubs.c range (horrible)
-    with open(f"{getBuildPath()}/RedPepper.map") as f:
+    with open(str(Path(getBuildPath()) / "RedPepper.map")) as f:
         s = StringIO(f.read())
         for line in s:
             if len(line.split()) == 6 and line.split()[5] == 'Stubs.o(stubs)':

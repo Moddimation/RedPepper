@@ -23,12 +23,12 @@ def main() -> None:
     parser.add_argument('-m', action='store_true', help="Compile only matching code (BROKEN)")
     parser.add_argument('-w', action='store_true', help="Omit many warnings (nintendo format)")
     args = parser.parse_args()
-
+    
     found_version = sort_bin_if_exist()
     old_version = get_ver()
     version = args.version
 
-    if not version or ("code.bin" in version and found_version):
+    if not version or found_version or ("code.bin" in version):
         version = found_version or old_version
     else:
         if version == "us":
@@ -55,9 +55,7 @@ def main() -> None:
 
     if not os.path.isdir(getBuildPath()) or args.c or (version != old_version):
         shutil.rmtree(getBuildPath(), ignore_errors=True)
-        os.mkdir(getBuildPath())
-        os.chdir(getBuildPath())
-        cmake_args = ['cmake', "..", '-G', 'Unix Makefiles', f"-DRP_VERSION={version.upper()}"]
+        cmake_args = ['cmake', "-B", getBuildPath(), '-G', 'Unix Makefiles', f"-DRP_VERSION={version.upper()}"]
         if args.m == True:
             cmake_args.append("-DONLY_MATCHING=1")
         if args.w == True:
@@ -71,32 +69,30 @@ def main() -> None:
 
     status ("Generating linker.ld ...")
     genLDScript()
-    if not os.path.exists(getBuildPath() + "/linker.ld"):
+    if not os.path.exists(Path(getBuildPath()) / "linker.ld"):
         status ("No linker file generated.")
         return
 
-    os.chdir(getBuildPath())
-
-    verbose = ''
+    cmake_args = ['cmake', '--build', getBuildPath(), '--', '-j', str(multiprocessing.cpu_count())]
     if args.v:
-        verbose = 'VERBOSE=1 '
-    result = subprocess.run(f'make -j {multiprocessing.cpu_count()} {verbose}', shell=True)
+        cmake_args.append('VERBOSE=1')
+
+    result = subprocess.run(cmake_args)
     if result.returncode != 0:
         exit(result)
 
     def fromelf():
         status("Generating code.bin ...")
-        subprocess.run("\"" + os.environ.get('ARMCC_PATH') + f"/bin/fromelf.exe\" --bincombined {getElfName()} --output code.bin", shell=True)
+        subprocess.run([
+            str(Path(os.environ['ARMCC_PATH'], 'bin', 'fromelf').with_suffix('.exe' if sys.platform == 'win32' else '')),
+            '--bincombined', str(Path(getBuildPath()) / getElfName()),
+            '--output', str(Path(getBuildPath()) / 'code.bin')
+        ], check=True)
 
-    if os.path.exists(f"{getExeFile()}") and (os.path.getmtime(f"{getExeFile()}") < os.path.getmtime(getElfName())):
-        fromelf()
-    else:
-        fromelf()
+    fromelf()
 
     if os.path.exists(f'compile_commands.json'):
         shutil.copyfile(f'compile_commands.json', '../compile_commands.json')
-
-    os.chdir(getProjDir())
 
     #status("Generating objdiff.json ...")
     #genObjdiff()

@@ -9,15 +9,15 @@ from elftools.elf.sections import SymbolTableSection
 def get_paths ():
     paths = []
 
-    if not os.path.exists(f'{getBuildPath()}/compile_commands.json'):
+    if not (Path(getBuildPath()) / "compile_commands.json").exists():
         raise FileNotFoundError (f"Cannot find compile_commands.json. Did you build?")
         return None
 
-    with open(f'{getBuildPath()}/compile_commands.json') as f:
+    with open(Path(getBuildPath()) / "compile_commands.json") as f:
         data = json.load(f)
 
     for e in data:
-        paths.append((e.get("file"), f'{getBuildPath()}/{e.get("output")}'))
+        paths.append((e.get("file"), Path(getBuildPath()) / e.get("output")))
 
     return paths
 
@@ -69,21 +69,21 @@ def genObjdiffJson():
         #print(Fore.LIGHTBLUE_EX + "objdiff.json: " + src + Fore.RESET + Style.RESET_ALL)
     data = data[:-2] + "\n"
 
-    with open(f"{getProjDir()}/data/template/objdiff.json", 'r') as template:
-        with open(f'{getProjDir()}/objdiff.json', 'w') as out:
+    with open(Path(getProjDir()) / "data" / "template" / "objdiff.json", 'r') as template:
+        with open(Path(getProjDir()) / "objdiff.json", 'w') as out:
             out.write(template.read().replace("$$$", data))
 
 def genObjdiffMakeRules():
     paths = get_paths()
 
-    with open(f"{getBuildPath()}/Makefile.ctx", 'w') as f:
+    with open(Path(getBuildPath()) / "Makefile.ctx", 'w') as f:
         f.write("main:\n\t$(MAKE) --no-print-directory -f Makefile $(MAKECMDGOALS)\n\n")
 
         for src, obj in paths:
             ctx_path = obj.rsplit(".", 1)[0] + ".ctx"
             f.write(f"{ctx_path}:\n")
             f.write(f"\t@echo \"Generating {ctx_path} ...\"\n")
-            f.write(f"\t@python3 ../tools/__genObjdiffFile.py {src}\n\n")
+            f.write(f"\t@python ../tools/__genObjdiffFile.py {src}\n\n")
 
 def genObjdiff():
     genObjdiffJson()

@@ -106,9 +106,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "bot@rpd.com"
+          git config --global user.name "RedBotter"
           git add data/ || true
           git commit --amend --no-edit || true
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/RedPepperDec/RedPepper.git
           git push -f
+

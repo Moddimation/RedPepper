@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         submodules: recursive
         fetch-depth: 0
@@ -55,10 +55,11 @@ jobs:
               iconv -f SHIFT_JIS -t "$TO_ENCODING" -c "$FILE" > "$FILE.tmp" 2>/dev/null
               
               if [ $? -eq 0 ] && [ -s "$FILE.tmp" ]; then
-                # Apply fixes: ¥ -> \ and ‾ -> ~
+                echo "OK iconv $FILE"
                 sed -i 's/¥/\\/g; s/‾/~/g' "$FILE.tmp"
                 mv "$FILE.tmp" "$FILE"
               else
+                echo "Failed to iconv $FILE"
                 rm -f "$FILE.tmp"
               fi
             done
@@ -70,6 +71,10 @@ jobs:
       run: |
         mkdir priv
         mv RedPepperWiki priv/RedPepperWiki
+        python -m mkdocs build --config-file priv/RedPepperWiki/mkdocs.yml
+        # upload
         git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/RedPepperDec/RedPepper.git
-        python -m mkdocs gh-deploy --config-file priv/RedPepperWiki/mkdocs.yml --force --remote-branch website
+        echo "prp.moddi.dev" >> priv/RedPepperWiki/site/CNAME
+        echo "Set CNAME"
+        python -m ghp_import -n -f -p -b website priv/RedPepperWiki/site
 

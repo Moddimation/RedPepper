@@ -1,19 +1,7 @@
 import os
+from pathlib import Path
 
 versions = {
-    "cn",
-    "eu",
-    "eu_d",
-    "jp",
-    "jp_d",
-    "kr",
-    "tw",
-    "us_0",
-    "us_1",
-    "us_d",
-}
-
-hashes = {
     "cn": "11ca2f6fa7e8b9553737830899787e7236f4fdbf8b96ed03c99fbe6a8939b37d",
     "eu": "e1d7e188ff88467df776c17cec45c44857fadf5b699944baa8cddcae7d939e64",
     "eu_d": "184b8804ccf4aea9f447b2278dfc3171d4f8c4e6abf890d7b24680d649e034c6",
@@ -27,9 +15,9 @@ hashes = {
 }
 
 def _getProjDir():
-    return os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep)
+    return Path(os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep))
 def getVerFile():
-    return f"{_getProjDir()}/data/.version"
+    return str(Path(_getProjDir()) / "data" / ".version")
 def getDefaultVer():
     return 'eu'
 

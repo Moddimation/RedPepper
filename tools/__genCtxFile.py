@@ -1,6 +1,25 @@
 import os
 import re
 from io import StringIO
+from pathlib import Path
+
+include_paths = [
+    "lib",
+    "Game/src",
+    "Game/include",
+    "lib/al/include",
+    "lib/sead/include",
+    "lib/NintendoWare/anim/include",
+    "lib/NintendoWare/font/include",
+    "lib/NintendoWare/gfx/include",
+    "lib/NintendoWare/lyt/include",
+    "lib/NintendoWare/project/include",
+    "lib/NintendoWare/snd/include",
+    "lib/NintendoWare/sys/include",
+    "lib/NintendoWare/ut/include",
+    "lib/CTRSDK/include",
+    "lib/sead/addins/libms/include",
+]
 
 def get_type_inc(sym=None, main_data=None, traversed=None):
     file_path = find_src_file("nn/types.h")
@@ -11,23 +30,30 @@ def get_type_inc(sym=None, main_data=None, traversed=None):
     data, _m = traverse_file (file_path, sym, main_data, traversed)
     return data
 
-def find_src_file(str):
-    if len(str) < 3:
+def find_src_file(pat):
+    if len(pat) < 3:
         print ("Error: Cannot find empty string for path.")
-        return str
-    for path in (str, f"lib/{str}", f"Game/src/{str}", f"Game/include/{str}", f"lib/al/include/{str}", f"lib/sead/include/{str}", f"lib/ctrsdk/include/{str}", f"lib/ms/include/{str}", f"{os.environ.get("ARMCC41INC")}/{str}"):
-        #print(f"{str}: {path}")
-        if os.path.exists(path):
-              return path
+        return pat
 
-    return str
+    p = Path(pat)
+    if p.exists():
+        return str(p)
 
-def traverse_file(str, sym=None, main_data=None, traversed=None):
+    armcc = os.environ.get("ARMCC41INC")
+    for base in include_paths + ([armcc] if armcc else []):
+        candidate = Path(base) / pat
+        #print(f"{pat}: {candidate}")
+        if candidate.exists():
+            return str(candidate)
+
+    return pat
+
+def traverse_file(pat, sym=None, main_data=None, traversed=None):
     if main_data is None:
         main_data = []
 
     content = []
-    file_path = find_src_file(str)
+    file_path = str(Path(find_src_file(pat)).resolve())
     if len(file_path) == 0 or not os.path.exists(file_path):
         return "", main_data
 

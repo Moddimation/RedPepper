@@ -54,10 +54,10 @@ def find_source_path(str):
                     return last_file
 
 def get_obj_path (str):
-    if not os.path.exists(f'{getBuildPath()}/compile_commands.json'):
+    if not os.path.exists(Path(getBuildPath()) / "compile_commands.json"):
         return None
 
-    with open(f'{getBuildPath()}/compile_commands.json') as f:
+    with open(Path(getBuildPath()) / "compile_commands.json") as f:
         data = json.load(f)
 
     for e in data:
@@ -130,8 +130,12 @@ def main():
 
     name = cxxfilt.demangle (sym)
 
-    if not input("Ready to upload? (Y/n): ").strip().lower() in ("n"):
-        claim_url, base_url = upload(sym, name, data, main, path_obj)
+    print(f"Source file: {path}")
+    print(f"Lines: ctx {len(data.splitlines())}, src {len(main.splitlines())}")
+    if input("Ready to upload? (y/N): ").strip().lower() not in ("y", "yes", "j", "ja"):
+        return
+    
+    base_url, claim_url = upload(sym, name, data, main, path_obj)
 
     print (f"Scratch created. Good luck matching {name}!.")
     print (f" -> Claim: {claim_url}")

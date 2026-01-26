@@ -4,7 +4,7 @@ from time import sleep
 from __parseMap import *
 from colorama import Fore
 import json
-
+from pathlib import Path
 import datetime
 from git import Repo
 import os
@@ -26,7 +26,7 @@ def write_release_txt(ver: str, u: str, o: str, m: str, mm: str, total: str, byt
 **Total**: *{total}*
 """
 
-    with open(f"data/stats/{get_ver()}/release.txt",'w') as f:
+    with open(str(Path("data") / "stats" / get_ver() / "release.txt"), 'w') as f:
         f.write(textt)
 
 def get_matching_bytes(orig: str, other: str):
@@ -44,10 +44,10 @@ def main():
     syms_minor = 0
     syms_ok = 0
     syms_total = 0
-    bytes_ok = get_matching_bytes(getExeFile(), getBuildPath() + "/code.bin")
+    bytes_ok = get_matching_bytes(getExeFile(), str(Path(getBuildPath()) / "code.bin"))
     code_bin_size = os.path.getsize(getExeFile())
     ver = get_ver()
-    os.makedirs('data/stats/' + ver, exist_ok=True)
+    os.makedirs(str(Path('data') / 'stats' / ver), exist_ok=True)
     
     syms = read_sym_file()
     for sym in syms:
@@ -72,7 +72,7 @@ def main():
             "color": color,
             "schemaVersion": 1
         }
-        with open('data/stats/' + ver + "/" + rank + '.json','w') as f:
+        with open(str(Path('data') / 'stats' / ver / 'release.txt'), 'w') as f:
             f.write(json.dumps(out))
 
     bytes_ok_str = "{:.4f}% ({:,} bytes/{:,} bytes)".format((bytes_ok / code_bin_size) * 100, int(bytes_ok), int(code_bin_size))
@@ -123,7 +123,7 @@ def main():
     ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter())
     ax.plot(dates, y_values, '-')
 
-    plt.savefig(f"data/stats/{ver}/Progress.png")
+    plt.savefig(str(Path('data') / 'stats' / ver / "Progress.png"))
 
     if 'show' in sys.argv:
         import mplcursors
