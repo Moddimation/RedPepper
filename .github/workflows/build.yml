@@ -10,7 +10,7 @@ on:
 
 concurrency:
   group: building
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -62,10 +62,11 @@ jobs:
           for v in "${VERSIONS[@]}"; do
               echo "Now $v"
               python tools/build.py "$v"
-
-              export DEVKITARM="$PWD/setup/dkp"
-              python tools/check.py -c
+              echo "Checking and updating csv"
+              python tools/check.py -q -w
+              echo "Generating progress info"
               python tools/progress.py
+              echo "Finished $v"
           done
           python tools/build.py
 
@@ -79,7 +80,7 @@ jobs:
               echo "Now $v"
               R="stats-$v"
               DIR="data/stats/$v"
-
+              echo "DBG:$DIR"
               BODY=""
               FILE="$DIR/release.txt"
               if [ -f "$FILE" ]; then
@@ -98,18 +99,18 @@ jobs:
                   if [[ "$(basename "$f")" == "release.txt" ]]; then
                       continue
                   fi
+                  echo "Got: $f"
                   gh release upload "$R" "$f" --clobber
               done
-          done
 
-      - name: Update map
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git config --global user.email "bot@rpd.com"
-          git config --global user.name "RedBotter"
-          git add data/ || true
-          git commit --amend --no-edit || true
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/RedPepperDec/RedPepper.git
-          git push -f
+              echo "Uploaded, now updating action summary..."
+              if ! [-f "data/ver/$v/.changes"]; then
+                  CHANGES="No changes."
+              fi
+              CHANGES=$(cat "data/ver/$v/.changes")
+              echo "Changes for $v:" >> $GITHUB_STEP_SUMMARY
+              echo $CHANGES >> $GITHUB_STEP_SUMMARY
+
+              echo "Finished $v"
+          done
 

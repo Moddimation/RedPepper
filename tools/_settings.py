@@ -1,20 +1,20 @@
 import os
-from __manVer import get_ver
+from low.__manVer import get_ver
 from pathlib import Path
 
-def getProjDir():
+def getProjDir(): # Resolve project path
     return Path(os.path.realpath(__file__).split("tools")[0].rstrip(os.sep))
-def getFuncSymFile():
+def getFuncSymFile(): # Path of functions csv
     return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "redpepper_functions.csv")
-def getDataSymFile():
+def getDataSymFile(): # Path of data symbols csv
     return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "data_symbols.csv")
-def getExeFile():
+def getExeFile(): # Path of original code binary
     return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "code.bin")
-def getBuildPath():
+def getBuildPath(): # Build path
     return str(Path(getProjDir()) / "build")
-def getElfName():
+def getElfName(): # Name of built elf file
     return "RedPepper.axf"
-def getElfPath():
+def getElfPath(): # Path of build elf file
     return str(Path(getBuildPath()) / getElfName())
-def getPresetId():
+def getPresetId(): # Decomp.me PID for 3D Land
     return 8

@@ -1,5 +1,5 @@
 from _settings import *
-from __parseMap import *
+from low.__parseMap import *
 
 def read_data_sym_file():
     import csv

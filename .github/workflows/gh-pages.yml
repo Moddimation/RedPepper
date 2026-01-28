@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   deploy:
     name: Build pages

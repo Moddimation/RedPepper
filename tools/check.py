@@ -1,8 +1,8 @@
 print ("Enumerating and checking ...")
     
 from colorama import Fore, Style
-from __parseMap import *
-from __parseElf import *
+from low.__parseMap import *
+from low.__parseElf import *
 import multiprocessing
 import threading
 import argparse
@@ -13,8 +13,10 @@ import sys
 is_skip_mode = False
 is_sim_mode = False
 is_silent = False
+is_log = False
 found_flag = False
 csv_path = getFuncSymFile()
+log_path = f"{getProjDir()}/data/ver/{get_ver}/.changes"
 
 def rank_symbol(sym, decomp_sym):
     sym_size = int(sym[2])
@@ -97,6 +99,7 @@ def check_syms():
     last_sym_addr = syms[sym_num-1][0]
     first_sym_addr = syms[0][0]
     last_name = ""
+    log = []
 
     for sym in syms:
         size=sym[2]
@@ -132,7 +135,9 @@ def check_syms():
         clear_line()
         print_progress (last_name, progress, rank)
         if oldrank != rank:
-            print (f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})")
+            change = f"{name} {oldrank} -> {rank} ({getRankMsg(oldrank, rank)})"
+            print (change)
+            log.append(change)
             do_rewrite = True
 
     clear_line()
@@ -165,14 +170,23 @@ def check_syms():
         print ("Everything up to date")
         return
 
-    print ("Updating map ...")
-    # read
-    with open(csv_path, 'r') as src, open(csv_path + '_b', 'w') as dst:
-        dst.write(src.read())
-    # write
-    with open(csv_path, 'w') as f:
-        for sym in newsyms:
-            f.write(f"0x{sym[0]:08X},{sym[1]},{sym[2]:06d},{sym[3]},{sym[4]}\n")
+    if is_log:
+        print ("Writing log")
+        with open(log_path, 'w') as f:
+            for line in log:
+                f.write(f"{line}\n")
+
+    else:
+        print ("Updating map ...")
+        # read
+        with open(csv_path, 'r') as src, open(csv_path + '_b', 'w') as dst:
+            dst.write(src.read())
+        # write
+        with open(csv_path, 'w') as f:
+            f.write("Address,Rank,Size,Symbol,Tag\n")
+            for sym in newsyms:
+                f.write(f"0x{sym[0]:08X},{sym[1]},{sym[2]:06d},{sym[3]},{sym[4]}\n")
+        
 
 def check_sym(symbol_name):
     dec = get_elf_symbol(symbol_name)
@@ -212,17 +226,20 @@ def main():
     global is_skip_mode
     global is_sim_mode
     global is_silent
+    global is_log
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", action="store_true", help="Skip rank checking (fast)")
     parser.add_argument("-s", action="store_true", help="Simulation mode (don't write file)")
-    parser.add_argument("-c", action="store_true", help="Dont print progress")
+    parser.add_argument("-q", action="store_true", help="Dont print progress")
+    parser.add_argument("-w", action="store_true", help="Log changes to file (No csv update)")
     parser.add_argument("sym", nargs="?", help="Only check this symbol")
     args = parser.parse_args()
 
     is_skip_mode = args.f
     is_sim_mode = args.s
-    is_silent = args.c
+    is_silent = args.q
+    is_log = args.w
 
     with open(Path(getBuildPath()) / "compile_commands.json", "r") as f:
         if any("NON_MATCHING" in line for line in f): # check if we compiled for Matching-only build

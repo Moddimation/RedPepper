@@ -1,7 +1,7 @@
 print ("Generating progress ...")
 
 from time import sleep
-from __parseMap import *
+from low.__parseMap import *
 from colorama import Fore
 import json
 from pathlib import Path

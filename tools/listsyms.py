@@ -6,8 +6,8 @@ try:
 except ImportError:
     is_filter = False
 from _settings import *
-from __parseElf import *
-from __parseMap import *
+from low.__parseElf import *
+from low.__parseMap import *
 from io import StringIO
 
 def main():

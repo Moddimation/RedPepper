@@ -7,9 +7,9 @@ import shutil
 import hashlib
 import argparse
 
-from __genLinkerScript import genLDScript
-from __genObjdiffFile import genObjdiff
-from __utilsVer import *
+from low.__genLinkerScript import genLDScript
+from low.__genObjdiffFile import genObjdiff
+from low.__utilsVer import *
 from _settings import *
 
 def main() -> None:

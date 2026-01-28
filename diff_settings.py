@@ -1,9 +1,9 @@
 import os
-from tools.__manVer import get_ver
+from tools._settings import getExeFile
 
 def apply(config, args):
     config["make_command"] = ["python3", "tools/build.py"]
-    config["baseimg"] = f"data/ver/{get_ver()}/code.bin"
+    config["baseimg"] = getExeFile()
     config["myimg"] = "build/code.bin"
     config["source_directories"] = ["Game", "lib", "data"]
     config["source_extensions"] = [".c", ".h", ".cpp", ".hpp", ".csv"]

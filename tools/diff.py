@@ -2,8 +2,8 @@ import subprocess
 import os
 import sys
 from _settings import *
-from __parseElf import *
-from __parseMap import *
+from low.__parseElf import *
+from low.__parseMap import *
 
 def fail(msg: str):
     print(msg)

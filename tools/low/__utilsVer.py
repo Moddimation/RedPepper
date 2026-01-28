@@ -2,7 +2,7 @@ import os
 import sys
 import hashlib
 from pathlib import Path
-from __manVer import *
+from low.__manVer import *
 
 def get_versions():
     return list(versions.keys())

@@ -2,7 +2,7 @@ from _settings import *
 import json
 import sys
 from colorama import Fore, Style
-from __genCtxFile import genCtx
+from low.__genCtxFile import genCtx
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
 

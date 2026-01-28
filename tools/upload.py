@@ -5,8 +5,8 @@ import cxxfilt
 import requests
 from elftools.elf.elffile import ELFFile
 from elftools.elf.sections import SymbolTableSection
-from __genCtxFile import genCtxs
-from __parseMap import get_symbol
+from low.__genCtxFile import genCtxs
+from low.__parseMap import get_symbol
 from _settings import *
 
 def find_source_path(str):
