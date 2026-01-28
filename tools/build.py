@@ -65,7 +65,6 @@ def main() -> None:
             subprocess.run(cmake_args, check=True)
         except subprocess.CalledProcessError:
             exit(1)
-        os.chdir("..")
 
     status ("Generating linker.ld ...")
     genLDScript()

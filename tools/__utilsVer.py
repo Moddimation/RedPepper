@@ -14,7 +14,7 @@ def is_ver_exist(version):
     return os.path.exists(_getExeFile(version))
     
 def _getProjDir():
-    return Path(os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep))
+    return Path(os.path.realpath(__file__).split("tools")[0].rstrip(os.sep))
 def _getExeFile(version):
     return str(Path(_getProjDir()) / "data" / "ver" / version / "code.bin")
 

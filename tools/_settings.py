@@ -3,7 +3,7 @@ from __manVer import get_ver
 from pathlib import Path
 
 def getProjDir():
-    return Path(os.getcwd().split("tools")[0].split("build")[0].rstrip(os.sep))
+    return Path(os.path.realpath(__file__).split("tools")[0].rstrip(os.sep))
 def getFuncSymFile():
     return str(Path(getProjDir()) / "data" / "ver" / get_ver() / "redpepper_functions.csv")
 def getDataSymFile():
